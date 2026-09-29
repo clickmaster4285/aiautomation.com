@@ -15,7 +15,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://clickmastersaiautomation.com";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  // Self-referencing canonical for every route that does not set its own.
+  // "./" is resolved against the current pathname.
+  alternates: {
+    canonical: "./",
+  },
   title: "ClickMasters | Automate the Future of Work with AI",
   description:
     "We design and build AI automation systems, AI agents, and workflow automation that eliminate manual work, increase efficiency, and scale your business 24/7.",

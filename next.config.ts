@@ -1,9 +1,46 @@
 // next.config.ts
 import type { NextConfig } from 'next';
 
+// Present on every response. Screaming Frog flags a URL when any of these
+// are absent. The policy allows the site's own assets, Google Tag Manager,
+// YouTube/Vimeo embeds, and the CRM lead endpoint without opening
+// framing or plugin injection.
+const securityHeaders = [
+  { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+  { key: 'X-Content-Type-Options', value: 'nosniff' },
+  { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+  { key: 'Strict-Transport-Security', value: 'max-age=31536000; includeSubDomains' },
+  {
+    key: 'Content-Security-Policy',
+    value: [
+      "default-src 'self'",
+      "base-uri 'self'",
+      "object-src 'none'",
+      "frame-ancestors 'self'",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https:",
+      "style-src 'self' 'unsafe-inline' https:",
+      "img-src 'self' data: blob: https:",
+      "font-src 'self' data: https:",
+      "connect-src 'self' https: wss:",
+      "media-src 'self' blob: https:",
+      "worker-src 'self' blob:",
+      "frame-src 'self' https:",
+      "form-action 'self' https:",
+    ].join('; '),
+  },
+];
+
 const nextConfig: NextConfig = {
   // Allow other devices on the LAN to access the dev server
   allowedDevOrigins: ['192.168.88.53'],
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: securityHeaders,
+      },
+    ];
+  },
   async redirects() {
     return [
       // ── Old main category hub pages → most relevant subpage (hubs removed) ──

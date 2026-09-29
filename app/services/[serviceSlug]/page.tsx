@@ -2,6 +2,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { allServices, getServiceBySlug, getTemplate } from '@/content/index';
+import CmsRoute, { cmsRouteMetadata } from '@/components/cms/CmsRoute';
 
 // ── Only these services are live under /services/<slug> ──
 const activeServiceSlugs = new Set(allServices.map((s) => s.slug));
@@ -19,8 +20,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { serviceSlug } = await params;
 
+  // Not a code-owned service → a Nexus CMS page may live here.
   if (!activeServiceSlugs.has(serviceSlug)) {
-    return { title: 'Service Not Found' };
+    return cmsRouteMetadata(`/services/${serviceSlug}`);
   }
 
   const service = getServiceBySlug(serviceSlug);
@@ -51,7 +53,7 @@ export default async function ServicePage({
   const { serviceSlug } = await params;
 
   if (!activeServiceSlugs.has(serviceSlug)) {
-    notFound();
+    return <CmsRoute path={`/services/${serviceSlug}`} />;
   }
 
   const service = getServiceBySlug(serviceSlug);

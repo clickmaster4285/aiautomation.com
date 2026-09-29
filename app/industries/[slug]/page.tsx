@@ -1,8 +1,8 @@
 // app/industries/[slug]/page.tsx
-import { notFound } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import type { ComponentType } from 'react';
 import { industryContent, industrySlugs } from '@/content/Industries';
+import CmsRoute, { cmsRouteMetadata } from '@/components/cms/CmsRoute';
 
 const Hero = dynamic(() => import('@/components/industries/Hero').then((mod) => mod.default));
 const TextSec = dynamic(() => import('@/components/industries/TextSec').then((mod) => mod.default));
@@ -31,7 +31,8 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const content = industryContent[slug];
-  if (!content) return notFound();
+  // Not a code-owned industry → a Nexus CMS page may live here.
+  if (!content) return cmsRouteMetadata(`/industries/${slug}`);
   return {
     title: content.title,
     description: content.metaDescription,
@@ -41,7 +42,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const content = industryContent[slug];
-  if (!content) return notFound();
+  if (!content) return <CmsRoute path={`/industries/${slug}`} />;
 
   // ── Background alternation ──
   // Hero (index 0) will be 'bg-black' – all sections follow the array order.

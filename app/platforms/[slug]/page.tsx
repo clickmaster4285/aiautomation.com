@@ -1,8 +1,8 @@
 // app/platforms/[slug]/page.tsx
-import { notFound } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import type { ComponentType } from 'react';
 import { platformContent, platformSlugs } from '@/content/Platforms';
+import CmsRoute, { cmsRouteMetadata } from '@/components/cms/CmsRoute';
 
 const Hero = dynamic(() => import('@/components/platforms/Hero').then((mod) => mod.default));
 const TextSec = dynamic(() => import('@/components/platforms/TextSec').then((mod) => mod.default));
@@ -34,7 +34,8 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params; // ✅ unwrap the Promise
   const content = platformContent[slug];
-  if (!content) return notFound();
+  // Not a code-owned platform → a Nexus CMS page may live here.
+  if (!content) return cmsRouteMetadata(`/platforms/${slug}`);
   return {
     title: content.title,
     description: content.metaDescription,
@@ -45,7 +46,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params; // ✅ unwrap the Promise
   const content = platformContent[slug];
-  if (!content) return notFound();
+  if (!content) return <CmsRoute path={`/platforms/${slug}`} />;
 
   return (
     <main className="bg-black text-white">
