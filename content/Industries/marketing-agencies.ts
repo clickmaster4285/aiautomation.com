@@ -120,7 +120,7 @@ export const marketingAgencies: ServiceContent = {
     },
     {
       type: 'features',
-      heading: 'Why Clickmasters',
+      heading: 'Why Clickmasters for Agencies',
       items: [
         {
           title: 'Mapped to agency operations',
@@ -154,7 +154,7 @@ export const marketingAgencies: ServiceContent = {
     },
     {
       type: 'faq',
-      heading: 'Frequently Asked Questions',
+      heading: 'Agency automation questions',
       items: [
         {
           title: 'What can a marketing agency automate?',

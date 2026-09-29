@@ -120,7 +120,7 @@ export const realEstate: ServiceContent = {
     },
     {
       type: 'features',
-      heading: 'Why Clickmasters',
+      heading: 'Why Clickmasters for Real Estate',
       items: [
         {
           title: 'Mapped to brokerage workflows',
@@ -154,7 +154,7 @@ export const realEstate: ServiceContent = {
     },
     {
       type: 'faq',
-      heading: 'Frequently Asked Questions',
+      heading: 'Real estate automation questions',
       items: [
         {
           title: 'How do real estate teams use AI automation?',

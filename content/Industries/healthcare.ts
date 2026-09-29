@@ -5,7 +5,7 @@ export const healthcare: ServiceContent = {
   slug: 'healthcare',
   title: 'AI Automation for Healthcare | Clickmasters',
   metaDescription:
-    'Clickmasters builds AI automation for healthcare practices appointment scheduling, patient intake, reminders, and follow-up built with privacy and human oversight.',
+    'AI automation for healthcare practices: appointment scheduling, patient intake, reminders and follow-up, built with privacy and human oversight.',
   keywords: 'ai automation for healthcare, healthcare automation',
   sections: [
     // ========== HERO ==========
@@ -143,7 +143,7 @@ export const healthcare: ServiceContent = {
     // ========== FEATURES: Why Clickmasters ==========
     {
       type: 'features',
-      heading: 'Why Clickmasters',
+      heading: 'Why Clickmasters for Healthcare',
       items: [
         {
           title: 'Mapped to your industry\'s workflows',
@@ -208,7 +208,7 @@ export const healthcare: ServiceContent = {
     // ========== FAQ ==========
     {
       type: 'faq',
-      heading: 'Frequently Asked Questions',
+      heading: 'Healthcare automation questions',
       items: [
         {
           title: 'How is AI automation used in healthcare?',

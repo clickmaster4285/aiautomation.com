@@ -5,7 +5,7 @@ export const lawFirms: ServiceContent = {
   slug: 'law-firms',
   title: 'AI Automation for Law Firms | Clickmasters',
   metaDescription:
-    'Clickmasters builds AI automation for law firms client intake, document generation, deadline tracking, and follow-up so attorneys spend time on cases, not admin.',
+    'AI automation for law firms: client intake, document generation, deadline tracking and follow-up, so attorneys spend time on cases, not admin.',
   keywords: 'ai automation for law firms, legal automation',
   sections: [
     // ========== HERO ==========
@@ -149,7 +149,7 @@ export const lawFirms: ServiceContent = {
     // ========== FEATURES: Why Clickmasters ==========
     {
       type: 'features',
-      heading: 'Why Clickmasters',
+      heading: 'Why Clickmasters for Law Firms',
       items: [
         {
           title: 'Mapped to your industry\'s workflows',
@@ -213,7 +213,7 @@ export const lawFirms: ServiceContent = {
     // ========== FAQ ==========
     {
       type: 'faq',
-      heading: 'Frequently Asked Questions',
+      heading: 'Law firm automation questions',
       items: [
         {
           title: 'How can law firms use AI automation?',

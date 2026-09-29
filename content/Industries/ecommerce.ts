@@ -5,7 +5,7 @@ export const ecommerce: ServiceContent = {
   slug: 'ecommerce',
   title: 'AI Automation for E-commerce | Clickmasters',
   metaDescription:
-    'Clickmasters builds AI automation for e-commerce customer support, order workflows, abandoned-cart recovery, and marketing so your store runs leaner and converts more.',
+    'AI automation for e-commerce: customer support, order workflows, abandoned-cart recovery and marketing, so your store runs leaner and converts more.',
   keywords: 'ai automation for ecommerce, ecommerce automation',
   sections: [
     // ========== HERO ==========
@@ -139,7 +139,7 @@ export const ecommerce: ServiceContent = {
     // ========== TEXT: Integrations ==========
     {
       type: 'text',
-      heading: 'Integrations',
+      heading: 'E-commerce integrations',
       content: [
         'We build into the e-commerce stack: your store platform (Shopify, WooCommerce, and others), help desks (Gorgias, Zendesk), email and marketing platforms (Klaviyo, Mailchimp), and your fulfillment and inventory tools. The automation fits your existing setup.',
       ],
@@ -148,7 +148,7 @@ export const ecommerce: ServiceContent = {
     // ========== FEATURES: Why Clickmasters ==========
     {
       type: 'features',
-      heading: 'Why Clickmasters',
+      heading: 'Why Clickmasters for E-commerce',
       items: [
         {
           title: 'Mapped to your industry\'s workflows',
@@ -212,7 +212,7 @@ export const ecommerce: ServiceContent = {
     // ========== FAQ ==========
     {
       type: 'faq',
-      heading: 'Frequently Asked Questions',
+      heading: 'E-commerce automation questions',
       items: [
         {
           title: 'How is AI automation used in e-commerce?',

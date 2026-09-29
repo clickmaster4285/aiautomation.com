@@ -24,7 +24,7 @@ import {
 export const metadata: Metadata = {
   title: 'AI Automation Services | Clickmasters',
   description:
-    'Explore all Clickmasters AI automation services: workflow automation, business process automation, RPA, AI reporting, AI agents, chatbots, voice agents, lead generation, knowledge assistants, AI strategy and custom AI development.',
+    'Explore Clickmasters AI automation services: workflow and process automation, RPA, AI agents, chatbots, voice agents, reporting and custom AI development.',
   alternates: {
     canonical: 'https://clickmastersaiautomation.com/services',
   },

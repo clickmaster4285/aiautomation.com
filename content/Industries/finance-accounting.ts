@@ -3,7 +3,7 @@ import { ServiceContent } from '../type';
 export const financeAccounting: ServiceContent = {
   slug: 'finance-accounting',
   title: 'AI Automation for Finance & Accounting | Clickmasters',
-  metaDescription: 'Automate invoicing, reconciliation, reporting, and AP/AR with AI. Clickmasters builds finance automation that cuts manual data entry and closes the books faster.',
+  metaDescription: 'Automate invoicing, reconciliation, reporting and AP/AR with AI. Clickmasters cuts manual data entry so your team closes the books faster.',
   keywords: 'finance automation, invoice automation, accounting automation, AP AR automation',
   sections: [
     // ========== HERO ==========
@@ -147,7 +147,7 @@ export const financeAccounting: ServiceContent = {
     // ========== FEATURES: Why Clickmasters ==========
     {
       type: 'features',
-      heading: 'Why Clickmasters',
+      heading: 'Why Clickmasters for Finance',
       items: [
         {
           title: 'Built for finance stakes',
@@ -188,7 +188,7 @@ export const financeAccounting: ServiceContent = {
     // ========== FAQ ==========
     {
       type: 'faq',
-      heading: 'Frequently Asked Questions',
+      heading: 'Finance automation questions',
       items: [
         {
           title: 'What is finance automation?',

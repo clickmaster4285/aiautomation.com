@@ -193,14 +193,28 @@ export default function FaqSec({ section, variant = 'light' }: Props) {
             FAQ
           </motion.p>
 
-          {/* Title */}
+          {/* Title. Last word stays italic so each industry can use its own heading. */}
           <motion.h2
             variants={fadeUp}
             className="display text-foreground mb-3"
             style={{ fontSize: 'clamp(2.2rem, 5vw, 3.25rem)' }}
           >
-            Frequently asked<br />
-            <em className="display-italic text-brand">questions</em>
+            {(() => {
+              const words = (section.heading || 'Frequently asked questions').trim().split(/\s+/);
+              const tail = words.length > 1 ? words.pop() : '';
+              const head = words.join(' ');
+              return (
+                <>
+                  {head}
+                  {tail && (
+                    <>
+                      <br />
+                      <em className="display-italic text-brand">{tail}</em>
+                    </>
+                  )}
+                </>
+              );
+            })()}
           </motion.h2>
 
           <motion.p

@@ -120,7 +120,7 @@ export const professionalServices: ServiceContent = {
     },
     {
       type: 'features',
-      heading: 'Why Clickmasters',
+      heading: 'Why Clickmasters for Professional Services',
       items: [
         {
           title: 'Mapped to client delivery',
@@ -154,7 +154,7 @@ export const professionalServices: ServiceContent = {
     },
     {
       type: 'faq',
-      heading: 'Frequently Asked Questions',
+      heading: 'Professional services questions',
       items: [
         {
           title: 'What can professional service firms automate?',

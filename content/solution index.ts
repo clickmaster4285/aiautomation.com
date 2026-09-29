@@ -7,6 +7,8 @@ export interface ServicePage {
   url: string;
   title: string;
   description: string;
+  /** Shorter SEO description (≤155 chars); falls back to description. */
+  metaDescription?: string;
   primaryKeyword: string;
   keywords: string[];
   category: string;
@@ -34,6 +36,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     url: '/services/ai-strategy-advisory/',
     title: 'AI Strategy & Advisory | Strategy That Ships | Clickmasters',
     description: 'Clickmasters provides AI strategy and advisory that ends in working systems, not slide decksopportunity audits, roadmaps, tool selection, and implementation by the same team that builds.',
+    metaDescription: 'AI strategy that ends in working systems, not slide decks: opportunity audits, roadmaps, tool selection and implementation by the team that builds.',
     primaryKeyword: 'ai strategy advisory (cluster: 49 keywords, incl. "ai consulting services" 5K bucket at $40, "ai consulting companies/firms" 5K at $39, "ai consultant" 5K at $26)',
     keywords: ["ai strategy advisory", "ai consulting services", "ai consulting companies/firms", "ai consultant"],
     category: 'ai-strategy-development',
@@ -148,12 +151,13 @@ export const SERVICE_PAGES: ServicePage[] = [
     url: '/services/ai-lead-generation/',
     title: 'AI Lead Generation Automation | Clickmasters',
     description: 'Clickmasters builds AI lead generation systems instant response, conversational qualification, enrichment, scoring, and nurture that converts leads your team is currently losing.',
+    metaDescription: 'AI lead generation that responds instantly, then qualifies, enriches, scores and nurtures every lead, so your team stops losing deals to slow follow-up.',
     primaryKeyword: 'ai lead generation (cluster: 190 keywords, incl. "lead generator" 50K bucket, "ai lead generation" 5K bucket, $27–38 CPCs)',
     keywords: ["ai lead generation", "lead generator", "ai lead generation"],
     category: 'ai-agents-and-assistants',
     internalLinks: ["AI Automation Agency pillar", "AI Sales Automation", "AI Chatbots", "AI Voice Agents", "CRM Automation", "Free Automation Audit"],
     schemas: ["Service, FAQPage, BreadcrumbList"],
-    sections: ["The Uncomfortable Math of Lead Response", "What We Build", "What This Replaces", "How It Fits Your Stack", "Where the Return Shows Up", "Why Clickmasters", "Frequently Asked Questions"],
+    sections: ["The Uncomfortable Math of Lead Response", "What We Build for Lead Generation", "What This Replaces", "How It Fits Your Stack", "Where the Return Shows Up", "Why Clickmasters for Lead Generation", "Frequently Asked Questions"],
     faqs: ["What is AI lead generation?", "Does this generate new leads or just handle existing ones?", "Will leads know they're talking to an AI?", "How is this different from a chatbot?", "What does it cost?"],
     summary: 'Here is the pattern we see in almost every audit: a business spends real money making the phone ring and the forms fill ads, SEO, referral programs and then loses a large share of those hard-won l...',
     lastModified: '2026-07-10T18:43:15',
@@ -168,7 +172,7 @@ export const SERVICE_PAGES: ServicePage[] = [
           'Here is the pattern we see in almost every audit: a business spends real money making the phone ring and the forms fill ads, SEO, referral programs and then loses a large share of those hard-won leads to slow response and inconsistent follow-up. The lead that arrives at 9pm gets an answer at 10am. The lead that said "not yet" never hears from anyone again. The lead that filled the form gets one call, no voicemail, and a CRM note that says "no answer."',
           'Speed and persistence are the two levers that decide lead conversion, and both are exactly what humans are worst at sustaining not from lack of skill, but because responding within seconds at any hour and following up for months without slipping is not a job for memory and willpower. It\'s a job for a system.'
         ],
-        'What We Build': [
+        'What We Build for Lead Generation': [
           '• **Instant lead response.** The moment an inquiry arrives form, chat, email, missed call the lead gets a relevant, personalized engagement within seconds. Not an autoresponder that says "we got your message," but a real response that addresses what they asked and moves the conversation forward. At any hour, every time.',
           '• **Conversational qualification.** An AI agent (chat or voice) that establishes need, fit, budget signals, and timeline the way a good SDR would naturally, in conversation, without making the prospect fill out a second form. Qualified leads route forward; poor-fit inquiries get a polite, useful answer that doesn\'t waste anyone\'s time.',
           '• **Enrichment and scoring.** Every lead is automatically researched company, role, size, signals and scored against your actual ideal-customer profile, so your team\'s attention goes where the revenue is.',
@@ -191,7 +195,7 @@ export const SERVICE_PAGES: ServicePage[] = [
           '• **Long-tail nurture converting leads that would have gone silent** systematic follow-up captures leads that would otherwise drop off.',
           'Each is measurable against your own numbers, and we set the tracking up so the system proves itself.'
         ],
-        'Why Clickmasters': [
+        'Why Clickmasters for Lead Generation': [
           '• **We build systems, not campaigns.** This is engineering, not a marketing retainer a documented, owned system that runs.',
           '• **Model- and platform-agnostic.** The right AI and the right automation platform for your volume and stack, chosen honestly.',
           '• **Human handoff done right.** The AI qualifies and routes; your people close. The boundary is designed, not accidental.',
@@ -270,12 +274,13 @@ export const SERVICE_PAGES: ServicePage[] = [
     url: '/services/ai-reporting-automation/',
     title: 'AI Reporting Automation | Reports That Build Themselves | Clickmasters',
     description: 'Clickmasters builds reporting automation recurring reports and live dashboards assembled from your systems automatically, with AI summaries of what changed and why it matters.',
+    metaDescription: 'Reporting automation that builds recurring reports and live dashboards from your systems, with AI summaries of what changed and why it matters.',
     primaryKeyword: 'reporting automation (cluster: 15 direct keywords, "reporting automation" ~500 bucket at up to $200 CPC small cluster, strong commercial intent; validate before prioritizing)',
     keywords: ["reporting automation", "ai reporting automation"],
     category: 'core-automation',
     internalLinks: ["AI Automation Agency pillar", "Document & Data Automation", "Business Process Automation", "CRM Automation", "Free Automation Audit"],
     schemas: ["Service, FAQPage, BreadcrumbList"],
-    sections: ["The Hidden Tax of Manual Reporting", "What We Build", "Accuracy, Honestly Handled", "What It Replaces", "Frequently Asked Questions"],
+    sections: ["The Hidden Tax of Manual Reporting", "What We Build for Reporting", "Accuracy, Honestly Handled", "What It Replaces", "Frequently Asked Questions"],
     faqs: ["What is reporting automation?", "Which systems can it report from?", "Are the AI summaries reliable?", "How is this different from BI tools like Power BI or Looker?", "What does it cost?"],
     summary: 'Manual reporting has a visible cost and two hidden ones. The visible cost is the hours: exporting from three systems, pasting into the spreadsheet, fixing what broke since last week, formatting, distr...',
     lastModified: '2026-07-10T18:43:15',
@@ -291,7 +296,7 @@ export const SERVICE_PAGES: ServicePage[] = [
           'The first hidden cost is latency: decisions made on last week\'s numbers because that\'s when the report was last assembled. The second is fragility: the report depends on the person who knows how it\'s built, and it degrades or dies when they\'re out, busy, or gone.',
           'Automated reporting eliminates all three at once, which is why it\'s frequently among the highest-ROI automations per dollar in an operation the work is pure assembly, exactly what machines do perfectly and people do resentfully.'
         ],
-        'What We Build': [
+        'What We Build for Reporting': [
           '• **Scheduled report generation.** Your recurring reports pipeline, financial, operational, client-facing built from live sources and delivered on schedule to the right people, in the format they actually read (email, Slack, PDF, dashboard).',
           '• **Live dashboards.** Current numbers, always no refresh ritual, no "as of last Tuesday" caveats for the metrics your team checks daily.',
           '• **Multi-source aggregation.** The real work of reporting is joining data across systems: CRM plus billing plus support plus marketing. We build the pipelines that pull, clean, and combine automatically, with validation so silent breakages get caught instead of shipped.',
@@ -375,12 +380,13 @@ export const SERVICE_PAGES: ServicePage[] = [
     url: '/services/custom-ai-development/',
     title: 'Custom AI Development | Clickmasters',
     description: 'Clickmasters builds custom AI solutions on proven models AI applications, agents, and integrations designed for your business. Honest scoping: we\'ll tell you when integration beats development.',
+    metaDescription: 'Custom AI development on proven models: AI apps, agents and integrations built for your business, with honest scoping on when integration beats building.',
     primaryKeyword: 'ai development services (cluster: 291 keywords, incl. "ai development companies" 5K bucket at $77 CPC, "ai development services" 5K at $75)',
     keywords: ["ai development services", "custom ai development", "ai development companies"],
     category: 'ai-strategy-development',
     internalLinks: ["AI Automation Agency pillar", "AI Integration Services", "AI Agent Development", "AI Strategy & Advisory", "Free Automation Audit"],
     schemas: ["Service, FAQPage, BreadcrumbList"],
-    sections: ["What \"Custom AI Development\" Should Mean in 2026", "What We Build", "Build vs. Integrate: The Honest Decision", "How We Work", "Security and Data Control", "What It Costs", "Frequently Asked Questions"],
+    sections: ["What \"Custom AI Development\" Should Mean in 2026", "What We Build for Custom AI", "Build vs. Integrate: The Honest Decision", "How We Work on Custom AI", "Security and Data Control", "What It Costs", "Frequently Asked Questions"],
     faqs: ["What are custom AI development services?", "Do we need our own AI model?", "How much does custom AI development cost?", "How long does a build take?", "Who owns what you build?"],
     summary: 'A few years ago, custom AI meant training your own models expensive, slow, and usually disappointing. Today the frontier models (OpenAI\'s, Anthropic\'s Claude, Google\'s Gemini) are extraordinarily ca...',
     lastModified: '2026-07-10T18:43:15',
@@ -395,7 +401,7 @@ export const SERVICE_PAGES: ServicePage[] = [
           'A few years ago, custom AI meant training your own models expensive, slow, and usually disappointing. Today the frontier models (OpenAI\'s, Anthropic\'s Claude, Google\'s Gemini) are extraordinarily capable, and the real engineering challenge has moved: it\'s no longer "can we build a model that does X" but "can we build a *system* around these models that does X reliably, on your data, inside your workflows, with the accuracy and guardrails a business requires."',
           'That system is what we build. Custom logic, custom integrations, custom interfaces, custom guardrails on foundation models that already work. It\'s faster, dramatically cheaper, and produces better results than bespoke model training for the overwhelming majority of business problems. When someone quotes you a from-scratch model build, the right first question is "why won\'t a proven model with the right system around it do this?" and we\'ll answer that question honestly, including when the answer means a smaller project than we could have sold you.'
         ],
-        'What We Build': [
+        'What We Build for Custom AI': [
           '• **Custom AI applications.** Purpose-built tools around your workflow an underwriting assistant, a proposal generator, a quality-review system with the interface, logic, and integrations your team needs.',
           '• **AI agents.** Goal-driven systems that reason about tasks, use your tools, and take multi-step action inside your systems. (Deep enough that it has its own service page see AI Agent Development.)',
           '• **Retrieval-augmented generation (RAG) systems.** AI grounded in your documents and data, so answers come from your knowledge, not the model\'s guesswork the foundation of accurate internal assistants and customer-facing AI.',
@@ -406,7 +412,7 @@ export const SERVICE_PAGES: ServicePage[] = [
           'This is the conversation most development firms skip, so let\'s have it here. Many "custom AI development" inquiries are actually integration problems: the capability already exists in a proven model or existing tool, and what\'s missing is the connection to your systems and workflow. Integration is faster and cheaper, and we have a dedicated service for it (AI Integration Services).',
           'Custom development is the right call when your problem has genuinely specific logic, interface, or workflow requirements that off-the-shelf tools and simple integrations can\'t meet a custom application, an agent with complex guardrails, a RAG system over specialized documents. In the audit, we\'ll tell you plainly which side of the line your project sits on. Sometimes that costs us a bigger engagement; it also means our clients get what they actually need.'
         ],
-        'How We Work': [
+        'How We Work on Custom AI': [
           '1. **Free audit and scoping.** We map the problem, decide build-vs-integrate honestly, and scope a first deliverable with a concrete return attached.',
           '2. **Design.** Architecture, model selection (we\'re model-agnostic OpenAI, Claude, Gemini, or others by task and cost), data flows, and guardrails, documented before code.',
           '3. **Build in sprints.** Working software early, tested against your real data and cases, with human-in-the-loop checkpoints wherever errors would be costly.',

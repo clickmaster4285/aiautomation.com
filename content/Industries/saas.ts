@@ -139,7 +139,7 @@ export const saas: ServiceContent = {
     // ========== TEXT: Integrations ==========
     {
       type: 'text',
-      heading: 'Integrations',
+      heading: 'SaaS integrations',
       content: [
         'We build into the SaaS stack: your product (via API), support platforms (Intercom, Zendesk), CRM and billing systems, analytics and usage data for churn signals, and internal tools like Slack. The automation connects to where your product and operations already live.',
       ],
@@ -148,7 +148,7 @@ export const saas: ServiceContent = {
     // ========== FEATURES: Why Clickmasters ==========
     {
       type: 'features',
-      heading: 'Why Clickmasters',
+      heading: 'Why Clickmasters for SaaS',
       items: [
         {
           title: 'Mapped to your industry\'s workflows',
@@ -212,7 +212,7 @@ export const saas: ServiceContent = {
     // ========== FAQ ==========
     {
       type: 'faq',
-      heading: 'Frequently Asked Questions',
+      heading: 'SaaS automation questions',
       items: [
         {
           title: 'How do SaaS companies use AI automation?',

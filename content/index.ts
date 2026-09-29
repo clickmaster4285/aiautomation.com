@@ -74,19 +74,24 @@ function createSectionsFromRichContent(page: ServicePage): Section[] {
     });
   }
   
+  const serviceName = title.replace(/\s+Automation$/, '');
+
   if (richContent.featureItems && richContent.featureItems.length > 0) {
     sections.push({
       type: 'features',
-      heading: 'Key Features',
+      heading: `Key features of ${serviceName}`,
       subheading: '',
       items: richContent.featureItems
     });
   }
-  
-  if (richContent.stepItems && richContent.stepItems.length > 0) {
+
+  const alreadyHasHowWeWork = sections.some((section) =>
+    /how we work/i.test(section.heading || '')
+  );
+  if (richContent.stepItems && richContent.stepItems.length > 0 && !alreadyHasHowWeWork) {
     sections.push({
       type: 'steps',
-      heading: 'How We Work',
+      heading: `How ${serviceName} gets built`,
       subheading: '',
       items: richContent.stepItems
     });
@@ -95,7 +100,7 @@ function createSectionsFromRichContent(page: ServicePage): Section[] {
   if (richContent.faqItems && richContent.faqItems.length > 0) {
     sections.push({
       type: 'faq',
-      heading: 'Frequently Asked Questions',
+      heading: `${serviceName} questions`,
       items: richContent.faqItems
     });
   }
@@ -172,7 +177,7 @@ SERVICE_PAGES.forEach(page => {
   const content: ServiceContent = {
     slug: slug,
     title: page.title.split(' | ')[0] || page.title,
-    metaDescription: page.description,
+    metaDescription: page.metaDescription ?? page.description,
     keywords: page.keywords.join(', '),
     template: 'default',
     path: page.url,
