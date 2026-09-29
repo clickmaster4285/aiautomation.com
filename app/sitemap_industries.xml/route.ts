@@ -10,9 +10,7 @@ export async function GET() {
 
   // Define industries to exclude
   const excludeIndustries = [
-    'professional-services',
     'logistics-supply-chain',
-    'real-estate',
     'education'
   ];
 

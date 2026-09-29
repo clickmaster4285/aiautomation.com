@@ -28,6 +28,8 @@ const blogPosts = [
     date: 'March 15, 2026',
     readTime: '8 min read',
     image: '/images/blog1.jpg',
+    imageWidth: 423,
+    imageHeight: 220,
     slug: 'ai-workflow-automation-transforming-business',
     tags: ['AI', 'Workflow Automation', 'Business Efficiency'],
   },
@@ -40,6 +42,8 @@ const blogPosts = [
     date: 'March 12, 2026',
     readTime: '10 min read',
     image: '/images/blog2.jpg',
+    imageWidth: 331,
+    imageHeight: 220,
     slug: 'ultimate-guide-ai-chatbots-customer-service',
     tags: ['Chatbots', 'Customer Service', 'AI'],
   },
@@ -52,6 +56,8 @@ const blogPosts = [
     date: 'March 10, 2026',
     readTime: '6 min read',
     image: '/images/bg3.jpg',
+    imageWidth: 373,
+    imageHeight: 220,
     slug: 'crm-automation-sales-pipeline',
     tags: ['CRM', 'Sales Automation', 'AI'],
   },
@@ -64,6 +70,8 @@ const blogPosts = [
     date: 'March 8, 2026',
     readTime: '7 min read',
     image: '/images/blog4.jpg',
+    imageWidth: 474,
+    imageHeight: 170,
     slug: 'document-automation-eliminating-manual-paperwork',
     tags: ['Document Processing', 'AI', 'Automation'],
   },
@@ -76,6 +84,8 @@ const blogPosts = [
     date: 'March 5, 2026',
     readTime: '9 min read',
     image: '/images/blog5.jpg',
+    imageWidth: 392,
+    imageHeight: 220,
     slug: 'lead-generation-automation-capturing-qualifying',
     tags: ['Lead Generation', 'AI', 'Sales'],
   },
@@ -88,6 +98,8 @@ const blogPosts = [
     date: 'March 3, 2026',
     readTime: '8 min read',
     image: '/images/blog6.jpg',
+    imageWidth: 330,
+    imageHeight: 220,
     slug: 'marketing-automation-scaling-campaigns-ai',
     tags: ['Marketing Automation', 'AI', 'Campaigns'],
   },
@@ -266,8 +278,9 @@ export default function BlogPage() {
                       <Image
                         src={post.image}
                         alt={post.title}
-                        fill
-                        className="object-cover"
+                        width={post.imageWidth}
+                        height={post.imageHeight}
+                        className="absolute inset-0 w-full h-full object-cover"
                         onError={(e) => {
                           // Fallback if image fails to load
                           const target = e.target as HTMLImageElement;

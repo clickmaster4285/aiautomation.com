@@ -27,8 +27,8 @@ export const aiWorkflowAutomationService: ServiceContent = {
       image: {
         src: '/images/workflow.png',
         alt: 'AI Robot Illustration for Workflow Automation',
-        width: 400,
-        height: 300
+        width: 604,
+        height: 413
       }
     },
 

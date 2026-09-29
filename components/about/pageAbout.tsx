@@ -121,8 +121,9 @@ export default function AboutPage() {
               <Image
                 src="/images/about.png"
                 alt="AI Automation Agency"
-                fill
-                className="object-contain drop-shadow-[0_0_60px rgba(249,115,22,0.35)]"
+                width={433}
+                height={577}
+                className="absolute inset-0 w-full h-full object-contain drop-shadow-[0_0_60px rgba(249,115,22,0.35)]"
                 priority
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
@@ -298,6 +299,8 @@ export default function AboutPage() {
                 >
                   <img
                     src="/images/founder.png"
+                    width={1376}
+                    height={768}
                     alt="Amjad Khan Founder & CEO"
                     className="w-full h-full object-cover object-center"
                     onError={(e) => {

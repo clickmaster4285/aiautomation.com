@@ -171,15 +171,12 @@ export function getSolutions(): string[] {
   return solutionRoutes.map(route => route.replace('/solutions/', ''));
 }
 
-// Get industries - UPDATED: Removed professional-services, logistics-supply-chain, real-estate, education
+// Industries that are linked in the UI but do not have a published page yet.
 export function getIndustries(): { slug: string; subPages: string[] }[] {
   const allRoutes = getAllRoutes();
   
-  // Define industries to exclude
   const excludeIndustries = [
-    'professional-services',
     'logistics-supply-chain',
-    'real-estate',
     'education'
   ];
   
@@ -244,7 +241,19 @@ export function getIndustries(): { slug: string; subPages: string[] }[] {
     {
       slug: 'saas',
       subPages: [],
-    }
+    },
+    {
+      slug: 'real-estate',
+      subPages: [],
+    },
+    {
+      slug: 'professional-services',
+      subPages: [],
+    },
+    {
+      slug: 'marketing-agencies',
+      subPages: [],
+    },
   ];
 }
 

@@ -28,8 +28,8 @@ export const aiVoiceAgents: ServiceContent = {
       image: {
         src: '/images/ai-voice-agent.png',
         alt: 'AI Voice Agent illustration',
-        width: 1200,
-        height: 1000,
+        width: 559,
+        height: 447,
         fadeEdges: true,
       },
     },

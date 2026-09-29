@@ -69,7 +69,7 @@ export default function GridSec({ section }: { section: Section }) {
                 variants={wordVariants}
                 className={`inline-block mr-2 ${index === highlightIndex ? 'text-brand' : ''}`}
               >
-                {word}
+                {word}{' '}
               </motion.span>
             ))}
           </motion.h2>

@@ -26,8 +26,8 @@ export const aiIntegrationServices: ServiceContent = {
       image: {
         src: '/images/ai.png',
         alt: 'AI Integration illustration',
-        width: 600,
-        height: 400
+        width: 612,
+        height: 408
       }
     },
 

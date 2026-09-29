@@ -27,8 +27,8 @@ export const aiSalesAutomation: ServiceContent = {
       image: {
         src: '/images/Sales.png',
         alt: 'AI Sales Automation illustration',
-        width: 600,
-        height: 400
+        width: 578,
+        height: 431
       }
     },
 

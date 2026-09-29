@@ -430,7 +430,7 @@ export default function Hero({ section }: HeroProps) {
     if (typeof img === 'string') {
       return { src: img, alt: '' };
     }
-    return { src: img.src, alt: img.alt || '' };
+    return { src: img.src, alt: img.alt || '', width: img.width, height: img.height };
   };
 
   // Floating icon chips that orbit around the original hero image (non-service pages only)
@@ -575,8 +575,7 @@ export default function Hero({ section }: HeroProps) {
               }}
             >
               <img
-                src={getImageProps(section.image).src}
-                alt={getImageProps(section.image).alt}
+                {...getImageProps(section.image)}
                 className="w-full h-full object-contain object-center drop-shadow-[0_0_80px_rgba(249,115,22,0.5)]"
               />
             </motion.div>
@@ -648,7 +647,7 @@ export default function Hero({ section }: HeroProps) {
                       isHighlighted ? 'text-brand display-italic' : ''
                     }`}
                   >
-                    {word}
+                    {word}{' '}
                   </motion.span>
                 );
               })}

@@ -27,8 +27,8 @@ export const aiCustomerSupportAutomation: ServiceContent = {
       image: {
         src: '/images/customer.png',
         alt: 'AI Customer Support Automation illustration',
-        width: 600,
-        height: 400
+        width: 561,
+        height: 444
       }
     },
 

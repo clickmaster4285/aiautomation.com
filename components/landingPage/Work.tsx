@@ -145,8 +145,9 @@ export default function Work({ data }: { data: WorkData }) {
             <Image
               src={featured.img}
               alt={featured.title}
-              fill
-              className="object-cover group-hover:scale-105 transition-transform duration-700"
+              width={900}
+              height={600}
+              className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             />
           </div>
         </motion.div>
@@ -165,8 +166,9 @@ export default function Work({ data }: { data: WorkData }) {
               <Image
                 src={c.img}
                 alt={c.title}
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-700"
+                width={900}
+                height={600}
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />

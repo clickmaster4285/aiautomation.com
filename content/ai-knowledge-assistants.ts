@@ -27,8 +27,8 @@ export const aiKnowledgeAssistants: ServiceContent = {
       image: {
         src: '/images/ai-knowledge.png',
         alt: 'AI Knowledge Assistant illustration',
-        width: 1000,
-        height: 800
+        width: 612,
+        height: 408
       }
     },
 

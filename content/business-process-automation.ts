@@ -28,8 +28,8 @@ export const businessProcessAutomation: ServiceContent = {
       image: {
         src: '/images/bussiness.png',
         alt: 'Business Process Automation illustration',
-        width: 800,
-        height: 600
+        width: 667,
+        height: 374
       }
     },
 

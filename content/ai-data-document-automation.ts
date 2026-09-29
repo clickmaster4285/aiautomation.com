@@ -29,8 +29,8 @@ export const aiDataDocumentAutomation: ServiceContent = {
       image: {
         src: '/images/data.png',
         alt: 'AI Data & Document Automation illustration',
-        width: 1800,
-        height: 1600,
+        width: 666,
+        height: 375,
         fadeEdges: true, // ✅ added
       },
     },

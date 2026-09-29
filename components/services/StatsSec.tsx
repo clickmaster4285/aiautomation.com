@@ -88,7 +88,7 @@ export default function StatsSec({ section }: StatsSectionProps) {
                 variants={wordVariants}
                 className={`inline-block mr-2 ${index === highlightIndex ? 'text-brand' : ''}`}
               >
-                {word}
+                {word}{' '}
               </motion.span>
             ))}
           </motion.h2>

@@ -204,7 +204,7 @@ export default function Hero({ section, form }: HeroProps) {
 
             {/* Container: border-brand/10 instead of white */}
             <div className="relative p-6 md:p-8 rounded-2xl border border-brand/10 bg-transparent backdrop-blur-sm shadow-xl">
-              <h2 className="text-2xl font-bold text-white mb-1">Quick Message</h2>
+              <p className="text-2xl font-bold text-white mb-1">Quick Message</p>
               <p className="text-gray-300 text-sm mb-6">We'll reply within a few hours.</p>
 
               <form onSubmit={handleSubmit} className="space-y-4">

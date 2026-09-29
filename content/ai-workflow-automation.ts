@@ -28,8 +28,8 @@ export const aiWorkflowAutomation: ServiceContent = {
       image: {
         src: '/images/aiworkflow.webp',
         alt: 'AI Workflow Automation illustration',
-        width: 600,
-        height: 400
+        width: 2560,
+        height: 1350
       }
     },
 

@@ -35,7 +35,7 @@ export default function CmsContactSection({ data }: { data: CmsContactData }) {
           )}
           {data.description && <p className="text-base md:text-lg text-muted-foreground mt-4 max-w-md">{data.description}</p>}
           <Link
-            href="/Contact"
+            href="/contact"
             className="inline-flex mt-8 bg-ink text-white text-sm px-6 py-3 hover:bg-brand transition-colors items-center gap-2"
           >
             {data.buttonLabel || "Contact us"} <span>›</span>

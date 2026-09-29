@@ -26,8 +26,8 @@ export const aiAgentDevelopment: ServiceContent = {
       image: {
         src: '/images/agent.png',
         alt: 'AI Agent Development illustration',
-        width: 1000,
-        height: 800
+        width: 666,
+        height: 375
       }
     },
 

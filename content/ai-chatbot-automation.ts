@@ -27,8 +27,8 @@ export const aiChatbotAutomation: ServiceContent = {
       image: {
         src: '/images/chatbot.png',
         alt: 'AI Chatbot Automation illustration',
-        width: 600,
-        height: 400
+        width: 612,
+        height: 408
       }
     },
 

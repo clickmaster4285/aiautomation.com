@@ -17,10 +17,10 @@ type TestimonialsData = {
 };
 
 const portraits = [
-  "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&q=80",
-  "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&q=80",
-  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80",
-  "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&q=80",
+  { src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&q=80", width: 500, height: 749 },
+  { src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&q=80", width: 500, height: 333 },
+  { src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80", width: 500, height: 750 },
+  { src: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&q=80", width: 500, height: 749 },
 ];
 
 const rotations = ["-rotate-3", "rotate-2", "-rotate-2", "rotate-3"];
@@ -68,7 +68,7 @@ export default function Testimonials({ data }: { data: TestimonialsData }) {
             >
               <div className="relative aspect-[4/5] overflow-hidden bg-secondary mb-4">
                 <img
-                  src={portraits[i % portraits.length]}
+                  {...portraits[i % portraits.length]}
                   alt={t.author}
                   loading="lazy"
                   className="absolute inset-0 w-full h-full object-cover grayscale"

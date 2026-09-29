@@ -31,14 +31,14 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${service.title} | Clickmasters AI Automation`,
+    title: service.title,
     description: service.metaDescription,
     keywords: service.keywords,
     alternates: {
       canonical: `${SITE_URL}/services/${serviceSlug}`,
     },
     openGraph: {
-      title: `${service.title} | Clickmasters AI Automation`,
+      title: service.title,
       description: service.metaDescription,
       type: 'website',
     },

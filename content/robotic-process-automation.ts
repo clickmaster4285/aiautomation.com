@@ -26,8 +26,8 @@ export const roboticProcessAutomation: ServiceContent = {
       image: {
         src: '/images/robotic.png',
         alt: 'Robotic Process Automation illustration',
-        width: 1200,
-        height: 1000
+        width: 656,
+        height: 380
       }
     },
 

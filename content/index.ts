@@ -40,7 +40,8 @@ function createSectionsFromRichContent(page: ServicePage): Section[] {
     return getFallbackSections(page);
   }
   
-  const heroImageSrc = page.url?.includes('/ai-lead-generation')
+  const isLeadGen = page.url?.includes('/ai-lead-generation');
+  const heroImageSrc = isLeadGen
     ? '/images/lead.jpg'
     : `/images/${page.filePath.replace('.md', '')}-hero.png`;
 
@@ -57,8 +58,9 @@ function createSectionsFromRichContent(page: ServicePage): Section[] {
     image: {
       src: heroImageSrc,
       alt: `${title} Illustration`,
-      width: 400,
-      height: 300
+      // Intrinsic sizes of lead.jpg and the *-hero.png illustrations.
+      width: isLeadGen ? 768 : 1792,
+      height: isLeadGen ? 512 : 1024
     }
   });
   
