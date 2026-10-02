@@ -98,36 +98,15 @@ const industryIconMap: Record<string, React.ElementType> = {
 
 // ── Solutions data ──
 const solutionsData = [
-  {
-    title: 'AI Chatbot Solutions',
-    slug: 'ai-chatbots',
-    description: 'Intelligent chatbots that answer, qualify, and book automatically.',
-    icon: MessageSquare,
-  },
-  {
-    title: 'AI Voice Agents',
-    slug: 'ai-voice-agents',
-    description: 'Intelligent voice conversations that answer, book, and route automaticallynever miss a call.',
-    icon: PhoneCall,
-  },
-  {
-    title: 'AI Workflow Automation',
-    slug: 'ai-workflow-automation',
-    description: 'Multi-step processes that run automatically across your tools.',
-    icon: Workflow,
-  },
+  
+  
   {
     title: 'Appointment & Booking Automation',
     slug: 'appointment-booking-automation',
     description: 'Automation that books, confirms, and remindsnever miss a booking again.',
     icon: Calendar,
   },
-  {
-    title: 'Business Process Automation',
-    slug: 'bussiness-process-automation',
-    description: 'Automation that runs, coordinates, and completesend-to-end processes that eliminate manual hand-offs.',
-    icon: RefreshCw,
-  },
+  
   {
     title: 'CRM Automation',
     slug: 'crm-automation',
@@ -146,12 +125,7 @@ const solutionsData = [
     description: 'Capture, validate, and post invoices automaticallycut days from the close.',
     icon: Receipt,
   },
-  {
-    title: 'Lead Generation Automation',
-    slug: 'lead-generation-automation',
-    description: 'Capture, qualify, and route leads instantly with AI.',
-    icon: Target,
-  },
+ 
   {
     title: 'Customer Support Automation',
     slug: 'customer-support-automation',
@@ -164,24 +138,14 @@ const solutionsData = [
     description: 'AI-driven content, nurture sequences, and campaign management.',
     icon: TrendingUp,
   },
-  {
-    title: 'Reporting Automation',
-    slug: 'reporting-automation',
-    description: 'Automated reports and dashboards with AI summaries.',
-    icon: BarChart3,
-  },
+  
   {
     title: 'Sales Automation',
     slug: 'sales-automation',
     description: 'Enrich, follow up, and log automatically so reps can sell.',
     icon: Briefcase,
   },
-  {
-    title: 'AI Agent Development',
-    slug: 'ai-agents',
-    description: 'Custom AI agents that reason, act, and complete tasks automatically for your industry.',
-    icon: Brain,
-  },
+ 
 ];
 
 const FallbackIcon = Plug;
