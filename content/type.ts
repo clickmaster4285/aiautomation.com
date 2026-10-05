@@ -19,6 +19,13 @@ export interface SectionItem {
   prefix?: string;
   isViewAll?: boolean;
   columns?: string[];
+  // ✅ NEW — case studies
+  challenge?: string;
+  solution?: string;
+  result?: string;
+  // ✅ NEW — reviews
+  quote?: string;
+  author?: string;
 }
 
 export interface Section {
@@ -32,7 +39,11 @@ export interface Section {
     | 'painpoint'
     | 'image-text'
     | 'faq'
-    | 'cta';
+    | 'cta'
+    // ✅ NEW
+    | 'industries'
+    | 'casestudies'
+    | 'reviews';
   heading?: string;
   subheading?: string;
   content?: string | string[];
@@ -95,7 +106,7 @@ export interface SolutionData {
   url: string;
   platform: string;
   category: string;
-   title: string;
+  title: string;
   primaryKeyword: string;
   titleTag: string;
   metaDescription: string;

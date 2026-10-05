@@ -1,30 +1,31 @@
+
 // content/Platforms/hubspot-automation-services.ts
 import { ServiceContent } from '../type';
 
 export const hubspotAutomationService: ServiceContent = {
   slug: 'hubspot-automation-services',
-  title: 'HubSpot Automation Services | Clickmasters',
+  title: 'HubSpot Automation Services USA - CRM Automation Experts',
   metaDescription:
-    'Clickmasters automates HubSpot workflows, lead routing, data hygiene, and AI-enhanced sequences so your CRM works for you instead of becoming a data-entry chore.',
-  keywords: 'hubspot automation agency, hubspot consultant, hubspot workflows',
+    'Our HubSpot automation experts improve lead routing, CRM workflows, sales automation, marketing follow-up, and customer lifecycle management.',
+  keywords:
+    'hubspot automation services, hubspot automation experts, hubspot consultant, hubspot workflow automation, hubspot CRM automation, hubspot marketing automation, hubspot automation USA',
+
   sections: [
     // ========== HERO ==========
     {
       type: 'hero',
-      heading: 'HubSpot Automation Services',
+      heading: 'Grow Faster With HubSpot Automation Services',
       subheading:
-        'Make HubSpot do more automatically. Workflows, lead routing, data hygiene, and AI-enhanced sequences beyond the native features.',
+        'Our HubSpot automation services help U.S. businesses automate CRM, marketing, sales, and customer processes.',
       content: [
-        'Clickmasters automates HubSpot so it works for you rather than becoming another system your team has to feed by hand. HubSpot is a powerful CRM and marketing platform, but most businesses use a fraction of what it can do, and many find it quietly becoming a data-entry chore. We build the workflows, routing, data hygiene, and AI-enhanced automation that turn HubSpot from a place you log information into a system that drives your sales and marketing on its own.',
-        'This page explains where HubSpot automation delivers value beyond the built-in features, what we build, how we add AI, and how we work inside your existing instance.',
-      ],
-      stats: [
-        { label: 'WORKFLOWS BUILT', value: '180+' },
-        { label: 'CLIENTS', value: '70+' },
+        'Our HubSpot automation services help U.S. businesses automate CRM, marketing, sales, and customer processes. We build custom HubSpot workflows that route leads, manage follow-ups, update records, support nurturing, and reduce repetitive CRM tasks, so your revenue teams can focus more on customers and opportunities.',
       ],
       ctas: [
-        { text: 'Book a Free Audit', link: '/free-automation-audit', primary: true },
-        { text: 'View Work', link: '/work', primary: false },
+        {
+          text: 'Book Your HubSpot Automation Consultation',
+          link: '/free-automation-audit',
+          primary: true,
+        },
       ],
       image: {
         src: '/images/hubspot-hero.png',
@@ -35,164 +36,287 @@ export const hubspotAutomationService: ServiceContent = {
       },
     },
 
-    // ========== TEXT: Beyond HubSpot's Built-In Automation ==========
+    // ========== TEXT: Workflow Automation ==========
     {
       type: 'text',
-      heading: 'Beyond HubSpot\'s Built-In Automation',
+      heading:
+        'HubSpot Workflow Automation for Marketing, Sales, and Customer Success',
       image: '/images/rob.png',
       content: [
-        'HubSpot has solid native automation workflows, sequences, basic routing and for straightforward needs it is enough. The value we add begins where the native features hit their limits: more sophisticated lead routing and scoring than the standard rules allow, data hygiene that keeps your CRM genuinely clean rather than slowly degrading, AI-drafted and personalized content inside workflows, and connections between HubSpot and the rest of your stack so it is not an island.',
-        'The recurring problem we solve is the gap between what HubSpot could do and what a business actually has set up. Most instances are underused workflows that were never built, data that is never cleaned, integrations that were never connected because doing it well takes time and expertise the in-house team does not have to spare. We close that gap.',
+        'HubSpot becomes more valuable when customer information actively drives your sales and marketing processes. Our HubSpot workflow automation services help businesses turn CRM activity into structured actions.',
+        'We review your lifecycle stages, pipelines, CRM properties, ownership rules, and customer journey before creating automation. This prevents disconnected workflows from becoming difficult to manage. The result is a more organized HubSpot environment.',
       ],
     },
 
-    // ========== FEATURES: Our HubSpot Services ==========
+    // ========== FEATURES: Strategy & Implementation ==========
     {
       type: 'features',
-      heading: 'Our HubSpot Services',
+      heading: 'HubSpot Automation Strategies & Implementation',
       items: [
         {
-          title: 'HubSpot workflow automation',
+          title: 'Lifecycle Mapping',
           description:
-            'Lead routing, nurturing, internal task automation, and process workflows built to your actual sales and marketing motions.',
-          icon: 'GitBranch',
+            'Define how contacts move through each stage of the customer journey.',
+          icon: 'Map',
         },
         {
-          title: 'CRM data hygiene',
+          title: 'CRM Data Planning',
           description:
-            'Automated cleaning, deduplication, and enrichment so your HubSpot data stays accurate and your reporting stays trustworthy.',
+            'Standardize properties, values, ownership rules, and CRM data structures.',
           icon: 'Database',
         },
         {
-          title: 'HubSpot plus AI',
+          title: 'Enrollment Criteria',
           description:
-            'AI-drafted emails, smarter lead scoring, and content generation inside your HubSpot workflows.',
-          icon: 'Brain',
+            'Define exactly which records should enter each HubSpot workflow.',
+          icon: 'Filter',
         },
         {
-          title: 'Integrations',
+          title: 'Workflow Branching',
           description:
-            'Connecting HubSpot to your wider stack billing, support, data tools so information flows both ways automatically.',
-          icon: 'Link2',
+            'Create different actions and paths based on CRM conditions and customer data.',
+          icon: 'GitBranch',
         },
         {
-          title: 'Reporting automation',
+          title: 'Conflict Prevention',
           description:
-            'Automated dashboards and pipeline reports assembled from live HubSpot data.',
+            'Review workflow dependencies and overlapping actions to prevent automation conflicts.',
+          icon: 'Shield',
+        },
+        {
+          title: 'Optimization',
+          description:
+            'Simplify automation and improve long-term workflow maintainability.',
           icon: 'BarChart',
         },
+      ],
+    },
+
+    // ========== TEXT: Results ==========
+    {
+      type: 'text',
+      heading: 'What Results Customers Get From HubSpot Automation',
+      content: [
+        'Our HubSpot automation services are designed to create a more structured revenue process.',
+        'The focus spans marketing, sales, and CRM operations.',
+        '• Improve lead response and ownership processes.',
+        '• Reduce repetitive CRM updates and administrative tasks.',
+        '• Create more consistent sales and marketing follow-up.',
+        '• Maintain cleaner and more structured CRM data.',
+      ],
+    },
+
+    // ========== FEATURES: Delivery Process ==========
+    {
+      type: 'features',
+      heading: 'How We Deliver HubSpot Automation Services',
+      items: [
         {
-      title: 'HubSpot custom objects & properties automation',
-      description:
-        'Automating custom objects and property management – syncing, updating, and enriching custom data models across your HubSpot ecosystem.',
-      icon: 'Database',
-    },
-      ],
-    },
-
-    // ========== TEXT: Adding AI to HubSpot ==========
-    {
-      type: 'text',
-      heading: 'Adding AI to HubSpot',
-      image: '/images/rob.png',
-      content: [
-        'HubSpot\'s data is a strong foundation for AI automation, because the AI has context to work with contact history, deal stage, engagement. We layer AI onto that foundation: drafting personalized emails and sequences that reflect where a contact actually is, scoring leads on richer signals than a single field, generating content inside workflows, and adding decision-making that the standard rule-based workflows cannot do.',
-        'As always, this is human-in-the-loop where it matters: AI drafts and suggests, your team approves where appropriate, and the automation runs the routine. The result is a HubSpot instance that does more of the thinking personalizing and prioritizing rather than just executing fixed rules and storing data.',
-      ],
-    },
-
-    // ========== TEXT: How We Work Inside Your Instance ==========
-    {
-      type: 'text',
-      heading: 'How We Work Inside Your Instance',
-      content: [
-        'We build within your existing HubSpot account, working with your setup rather than imposing a new system. Everything we create workflows, integrations, automations is documented and transparent, so your team understands it and can maintain it. We integrate HubSpot with your other tools through reliable connections, and we keep the whole thing aligned with how your sales and marketing actually operate. You own all of it, and you are never locked into depending on us to make a change.',
+          title: 'Audit',
+          description:
+            'Review CRM architecture, workflows, pipelines, and automation requirements.',
+          icon: 'Search',
+        },
+        {
+          title: 'Development',
+          description:
+            'Build workflows, routing rules, lifecycle actions, and CRM automation.',
+          icon: 'Settings',
+        },
+        {
+          title: 'Testing',
+          description:
+            'Test enrollment criteria, branches, actions, and record updates.',
+          icon: 'CheckCircle',
+        },
+        {
+          title: 'Launch & Optimization',
+          description:
+            'Deploy approved workflows and refine them as your business changes.',
+          icon: 'Rocket',
+        },
       ],
     },
 
     // ========== FEATURES: Why Clickmasters ==========
     {
       type: 'features',
-      heading: 'Why Clickmasters',
+      heading: 'Why Choose Clickmasters for HubSpot Automation Services?',
       items: [
         {
-          title: 'Unlock what HubSpot can do',
+          title: 'CRM-First Approach',
           description:
-            'Closing the gap between your instance\'s potential and its current setup.',
+            'Automation built around clean CRM architecture and structured customer data.',
+          icon: 'Database',
+        },
+        {
+          title: 'Custom Workflows',
+          description:
+            'Workflow rules tailored to your sales, marketing, and customer processes.',
+          icon: 'Settings',
+        },
+        {
+          title: 'Revenue Alignment',
+          description:
+            'Better coordination between marketing and sales activities through CRM automation.',
           icon: 'Target',
         },
         {
-          title: 'AI-enhanced',
+          title: 'USA-Focused Service',
           description:
-            'Going beyond native rules with drafting, scoring, and decisions.',
-          icon: 'Brain',
-        },
-        {
-          title: 'Connected',
-          description:
-            'HubSpot integrated with your wider stack, not an island.',
-          icon: 'Link2',
-        },
-        {
-          title: 'You own it',
-          description:
-            'Documented, transparent automation in your own instance.',
-          icon: 'Award',
+            'HubSpot automation support designed for U.S. organizations.',
+          icon: 'Globe',
         },
       ],
     },
 
-    // ========== TEXT: The State of Most HubSpot Instances ==========
+    // ========== INDUSTRIES ==========
     {
-      type: 'text',
-      heading: 'The State of Most HubSpot Instances',
-      content: [
-        'When we audit a business\'s HubSpot, a familiar picture emerges. The company is paying for a capable platform but using a slice of it. A handful of basic workflows exist, often built years ago by someone who has since left. The data has degraded duplicates, incomplete records, stale information so reporting is not fully trusted. Leads come in but are not scored or routed sophisticatedly, so good ones wait while reps work through the pile. Integrations that would connect HubSpot to the rest of the business were planned but never finished. None of this is unusual; it is the default state, because getting HubSpot to its potential takes dedicated time and expertise that busy teams rarely have.',
-        'The opportunity, then, is rarely about buying more software you already have the platform. It is about actually configuring and automating what you are paying for. That is usually the highest-return work available, because the foundation is already there and the cost is already sunk; we are unlocking value you have already purchased rather than adding new expense.',
+      type: 'industries',
+      heading: 'Industries We Serve',
+      subheading:
+        'Our HubSpot automation services in the USA support organizations that depend on structured customer and sales workflows. They are also useful for marketing teams that need reliable CRM-driven follow-up.',
+      items: [
+        {
+          title: 'SaaS Companies',
+          description:
+            'Automate lead nurturing, lifecycle management, and sales processes.',
+        },
+        {
+          title: 'B2B Services',
+          description:
+            'Improve lead routing, follow-up, and CRM administration.',
+        },
+        {
+          title: 'Professional Services',
+          description:
+            'Automate inquiries, client journeys, and pipeline tasks.',
+        },
+        {
+          title: 'Technology Companies',
+          description:
+            'Connect marketing, sales, customer, and CRM processes.',
+        },
+        {
+          title: 'Real Estate',
+          description:
+            'Automate lead distribution, contact management, and follow-up.',
+        },
+        {
+          title: 'Education',
+          description:
+            'Manage inquiries, nurturing, enrollment stages, and CRM workflows.',
+        },
       ],
     },
 
-    // ========== TEXT: A Worked Example: Lead Routing and Follow-Up ==========
+    // ========== CASE STUDIES ==========
     {
-      type: 'text',
-      heading: 'A Worked Example: Lead Routing and Follow-Up',
-      content: [
-        'Take a common scenario: inbound leads arrive in HubSpot and a rep eventually works through them in roughly the order they came in. Good-fit leads wait behind poor-fit ones, follow-up is manual and inconsistent, and some leads never get a timely response at all. The pipeline data is patchy because activity logging depends on reps remembering.',
-        'Automated, the same flow transforms: each lead is enriched and scored on fit the moment it arrives, routed instantly to the right rep, and entered into a personalized follow-up sequence that begins immediately and adapts to engagement. Activity is logged automatically, so the pipeline reflects reality. Reps spend their time on the highest-scoring leads, follow-up never slips, and management finally has data it can trust. This is HubSpot doing what it was bought to do and it is entirely achievable within the platform you already have.',
+      type: 'casestudies',
+      heading: 'HubSpot Automation Case Studies',
+      items: [
+        {
+          title: 'Lead Assignment',
+          challenge:
+            'Managers manually assigned every new inbound lead.',
+          solution:
+            'A HubSpot workflow routed leads according to predefined CRM criteria.',
+          result:
+            'Leads reached the appropriate sales representative faster.',
+        },
+        {
+          title: 'Lead Nurturing',
+          challenge:
+            'Prospects received inconsistent follow-up after entering the CRM.',
+          solution:
+            'HubSpot marketing automation created structured nurture workflows based on lifecycle and engagement.',
+          result:
+            'The customer journey became more consistent.',
+        },
+        {
+          title: 'CRM Data Cleanup',
+          challenge:
+            'Inconsistent CRM property values affected segmentation and reporting.',
+          solution:
+            'HubSpot workflows standardized selected properties and flagged incomplete records.',
+          result:
+            'Teams worked with more consistent CRM data.',
+        },
+      ],
+    },
+
+    // ========== REVIEWS ==========
+    {
+      type: 'reviews',
+      heading: 'Customer Reviews',
+      items: [
+        {
+          quote:
+            'Their HubSpot automation services helped us create a much cleaner lead management process.',
+          author: 'Rachel M.',
+        },
+        {
+          quote:
+            'Our HubSpot automation consultant understood our CRM before recommending workflow changes.',
+          author: 'Daniel P.',
+        },
+        {
+          quote:
+            'The HubSpot marketing automation setup improved how consistently we nurture new leads.',
+          author: 'Sophia L.',
+        },
+        {
+          quote:
+            'Our sales team now spends less time manually updating CRM records because of the new HubSpot workflows.',
+          author: 'Michael T.',
+        },
+        {
+          quote:
+            'Their HubSpot workflow audit helped us identify several conflicting automations and simplify our CRM.',
+          author: 'Emily R.',
+        },
       ],
     },
 
     // ========== FAQ ==========
     {
       type: 'faq',
-      heading: 'Frequently Asked Questions',
+      heading: 'FAQs',
       items: [
         {
-          title: 'Can HubSpot be automated beyond its built-in workflows?',
+          title: 'What are HubSpot automation services?',
           description:
-            'Yes. Beyond native workflows HubSpot can be connected to external automation and AI for advanced routing, enrichment, content generation, and cross-system processes going well past what the standard features do.',
-        },
-
-        {
-          title: 'Do you work inside our HubSpot instance?',
-          description:
-            'Yes. We build within your existing HubSpot account and integrate it with your other tools, with documented, transparent workflows you own and can maintain.',
-        },
-        
-        {
-          title: 'Can AI write emails in HubSpot?',
-          description:
-            'Yes. AI steps can draft and personalize emails and sequences inside HubSpot workflows, using your CRM context, with your team approving as needed.',
+            'HubSpot automation services involve creating workflows that automate CRM, marketing, sales, and customer management processes.',
         },
         {
-          title: 'Can you keep our HubSpot data clean automatically?',
+          title: 'Can HubSpot automate lead routing?',
           description:
-            'Yes. We build automated cleaning, deduplication, and enrichment so your HubSpot data stays accurate over time which keeps your reporting and automation trustworthy.',
+            'Yes. HubSpot workflows can assign records according to defined CRM criteria and ownership rules.',
         },
         {
-          title: 'Can HubSpot connect to our other tools?',
+          title: 'Can HubSpot automate sales processes?',
           description:
-            'Yes. We integrate HubSpot with your billing, support, data, and other systems so information flows automatically between them rather than being re-entered by hand.',
+            'Yes. Sales workflows can automate tasks, notifications, CRM updates, and selected pipeline activities.',
+        },
+        {
+          title: 'Can HubSpot automate marketing follow-up?',
+          description:
+            'Yes. Marketing automation can support lead nurturing, lifecycle-based communication, and campaign follow-up.',
+        },
+        {
+          title: 'Can you audit existing HubSpot workflows?',
+          description:
+            'Yes. Existing workflows can be reviewed for duplication, conflicts, outdated logic, and unnecessary complexity.',
+        },
+        {
+          title: 'How much do HubSpot automation services cost?',
+          description:
+            'Pricing depends on CRM complexity, workflow requirements, automation volume, and integrations.',
+        },
+        {
+          title: 'Do you provide HubSpot automation services in the USA?',
+          description:
+            'Yes. We provide HubSpot CRM and workflow automation services for businesses across the United States.',
         },
       ],
     },
@@ -200,11 +324,11 @@ export const hubspotAutomationService: ServiceContent = {
     // ========== CTA ==========
     {
       type: 'cta',
-      heading: 'Get more out of the HubSpot you already pay for.',
+      heading: 'Ready to Automate Your HubSpot CRM?',
       subheading:
-        "Book a free automation audit we'll find the highest-value automation first.",
+        'Let our HubSpot automation experts build reliable CRM workflows around your sales, marketing, and customer processes.',
       cta: {
-        text: 'Book Your Free Audit',
+        text: 'Book Your HubSpot Automation Consultation',
         link: '/free-automation-audit',
         primary: true,
       },
