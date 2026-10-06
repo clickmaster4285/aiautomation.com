@@ -166,36 +166,36 @@ const caseStudiesData = [
     description: 'How automated lead response recovered lost revenue for a B2B services firm.',
     icon: DollarSign,
   },
-  {
-    title: 'Invoice Processing Automation',
-    slug: 'invoice-processing-automation',
-    description: 'Cut AP processing time from days to hours with AI invoice extraction.',
-    icon: Receipt,
-  },
-  {
-    title: 'Customer Support AI Agent',
-    slug: 'customer-support-ai-agent',
-    description: 'Resolved 70% of routine tickets automatically with RAG-based AI.',
-    icon: Headphones,
-  },
-  {
-    title: 'CRM Data Hygiene at Scale',
-    slug: 'crm-data-hygiene-at-scale',
-    description: 'Continuous deduplication and enrichment for a 50k+ contact database.',
-    icon: Database,
-  },
-  {
-    title: 'Document Workflow Automation',
-    slug: 'document-workflow-automation',
-    description: 'Automated intake, validation, and filing for a document-heavy firm.',
-    icon: FileText,
-  },
-  {
-    title: 'Marketing Campaign Automation',
-    slug: 'marketing-campaign-automation',
-    description: 'Personalized nurture sequences at scale with AI-assisted content.',
-    icon: TrendingUp,
-  },
+  // {
+  //   title: 'Invoice Processing Automation',
+  //   slug: 'invoice-processing-automation',
+  //   description: 'Cut AP processing time from days to hours with AI invoice extraction.',
+  //   icon: Receipt,
+  // },
+  // {
+  //   title: 'Customer Support AI Agent',
+  //   slug: 'customer-support-ai-agent',
+  //   description: 'Resolved 70% of routine tickets automatically with RAG-based AI.',
+  //   icon: Headphones,
+  // },
+  // {
+  //   title: 'CRM Data Hygiene at Scale',
+  //   slug: 'crm-data-hygiene-at-scale',
+  //   description: 'Continuous deduplication and enrichment for a 50k+ contact database.',
+  //   icon: Database,
+  // },
+  // {
+  //   title: 'Document Workflow Automation',
+  //   slug: 'document-workflow-automation',
+  //   description: 'Automated intake, validation, and filing for a document-heavy firm.',
+  //   icon: FileText,
+  // },
+  // {
+  //   title: 'Marketing Campaign Automation',
+  //   slug: 'marketing-campaign-automation',
+  //   description: 'Personalized nurture sequences at scale with AI-assisted content.',
+  //   icon: TrendingUp,
+  // },
 ];
 
 
@@ -833,13 +833,13 @@ export default function Nav() {
                     </div>
 
                     <div className="px-3 pt-3 mt-1 border-t border-gray-100 flex items-center justify-between">
-                      <Link
+                      {/* <Link
                         href="/case-studies"
                         className="text-xs font-semibold text-gray-700 hover:text-brand flex items-center gap-1"
                         onClick={() => setIsCaseStudiesOpen(false)}
                       >
                         View all case studies <ArrowRight className="h-3 w-3" />
-                      </Link>
+                      </Link> */}
                       <Link
                         href="/contact"
                         className="text-xs font-semibold text-brand hover:underline flex items-center gap-1"
