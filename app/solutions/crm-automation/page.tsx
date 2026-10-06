@@ -3,48 +3,106 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowRight,
-  Database,
-  Mail,
-  Cloud,
   CheckCircle,
   Sparkles,
-  Building2,
-  HardHat,
-  ShoppingBag,
-  GraduationCap,
-  Heart,
-  Shield,
-  Scale,
-  Truck,
-  Factory,
-  Home,
-  Utensils,
-  Store,
-  Cpu,
-  Users,
+  Target,
+  GitBranch,
+  RefreshCw,
+  PieChart,
   Link2,
   BarChart3,
+  Database,
+  Users,
+  ChevronDown,
 } from 'lucide-react';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { HeroSection } from '@/components/solutions/sections/Hero';
-import { CTASection } from '@/components/solutions/sections/CTA';
-import { Section } from '@/components/solutions/layout/Section';
-import { FeatureGrid } from '@/components/solutions/sections/FeatureGrid';
+
+// ─── Floating Background Orbs ──────────────────────────
+function FloatingOrbs({ variant = 'dark' }: { variant?: 'dark' | 'light' }) {
+  return (
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <motion.div
+        animate={{ x: [0, 100, 0], y: [0, -80, 0] }}
+        transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
+        className={`absolute top-20 left-10 w-96 h-96 rounded-full blur-3xl ${
+          variant === 'dark' ? 'bg-brand/10' : 'bg-brand/5'
+        }`}
+      />
+      <motion.div
+        animate={{ x: [0, -120, 0], y: [0, 100, 0] }}
+        transition={{ duration: 25, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
+        className={`absolute bottom-20 right-10 w-80 h-80 rounded-full blur-3xl ${
+          variant === 'dark' ? 'bg-brand/5' : 'bg-brand/[0.03]'
+        }`}
+      />
+    </div>
+  );
+}
+
+// ─── Section Eyebrow ───────────────────────────────────
+function Eyebrow({ children, variant = 'dark' }: { children: React.ReactNode; variant?: 'dark' | 'light' }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="inline-flex items-center gap-3 mb-6"
+    >
+      <span className="w-8 h-px bg-brand/60" />
+      <span
+        className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.15em] ${
+          variant === 'dark'
+            ? 'bg-brand/10 text-brand border border-brand/20'
+            : 'bg-brand/10 text-brand border border-brand/30'
+        }`}
+      >
+        <Sparkles className="h-3 w-3" />
+        {children}
+      </span>
+      <span className="w-8 h-px bg-brand/60" />
+    </motion.div>
+  );
+}
+
+// ─── CTA Button ────────────────────────────────────────
+function CTAButton({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.98 }}
+      className="inline-block"
+    >
+      <Link
+        href={href}
+        className="group relative inline-flex items-center gap-2 px-8 py-4 bg-brand text-black font-semibold rounded-full hover:bg-brand/90 transition-all duration-300 shadow-lg shadow-brand/20 hover:shadow-xl hover:shadow-brand/30"
+      >
+        <span>{children}</span>
+        <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+      </Link>
+    </motion.div>
+  );
+}
 
 export default function CRMAutomationPage() {
-  const [hoveredCard, setHoveredCard] = useState<string | null>(null);
-  const [hoveredIndustryCard, setHoveredIndustryCard] = useState<string | null>(null);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
+  // ── HERO ──────────────────────────────────────────────
   const heroData = {
     badge: 'CRM Automation',
-    heading: 'CRM Automation Solutions',
+    heading: 'CRM Automation Solutions for Faster Lead Management and Sales Growth',
     subheading:
-      'Keep your CRM accurate and active automaticallybuilt on the platforms you already use.',
+      'CRM automation from clickmasters connects lead capture, CRM updates, routing, follow-ups and sales pipeline activity into one automated process. Our automated CRM workflows are built around your existing sales process, customer journey and software stack, so automation supports the way your business already works.',
     primaryCta: {
-      text: 'Book a Free Audit',
+      text: 'Talk to an Automation Expert',
       href: '/free-automation-audit',
     },
     image: '/images/crm.png',
@@ -53,328 +111,158 @@ export default function CRMAutomationPage() {
     textSize: 'xlarge' as const,
   };
 
-  const platforms = [
+  // ── SECTION 1: Workflow Steps ─────────────────────────
+  const workflowSteps = [
     {
-      id: 'airtable',
-      title: 'Airtable CRM Automation',
-      icon: Database,
+      id: 'lead-capture',
+      title: 'Lead Capture, Enrichment & Qualification',
       description:
-        'Flexible CRM automation on Airtableperfect for custom operational tools and data workflows without full custom development.',
-      href: '/solutions/crm-automation/with-airtable',
-      features: ['Flexible database', 'Custom workflows', 'Ops teams'],
-      color: 'from-brand/30 to-orange-400/30',
-      iconColor: 'text-brand',
-      bgGradient: 'from-brand/10 to-orange-400/10',
-      borderColor: 'border-brand/30',
-      hoverColor: 'group-hover:border-brand/60',
-      badge: 'Flexible',
-    },
-    {
-      id: 'hubspot',
-      title: 'HubSpot CRM Automation',
-      icon: Mail,
-      description:
-        'Extend HubSpot\'s CRM power with AI workflows connected to your wider stackideal for teams already running sales and marketing on HubSpot.',
-      href: '/solutions/crm-automation/with-hubspot',
-      features: ['Native CRM', 'AI integration', 'Scalable'],
-      color: 'from-brand/30 to-orange-400/30',
-      iconColor: 'text-brand',
-      bgGradient: 'from-brand/10 to-orange-400/10',
-      borderColor: 'border-brand/30',
-      hoverColor: 'group-hover:border-brand/60',
-      badge: 'Popular',
-    },
-    {
-      id: 'salesforce',
-      title: 'Salesforce CRM Automation',
-      icon: Cloud,
-      description:
-        'Enterprise-grade CRM automation on Salesforceideal for organizations with Salesforce at the core of revenue operations.',
-      href: '/solutions/crm-automation/with-salesforce',
-      features: ['Enterprise security', 'Native CRM', 'Scalable'],
-      color: 'from-brand/30 to-orange-400/30',
-      iconColor: 'text-brand',
-      bgGradient: 'from-brand/10 to-orange-400/10',
-      borderColor: 'border-brand/30',
-      hoverColor: 'group-hover:border-brand/60',
-      badge: 'Enterprise',
-    },
-  ];
-
-  const industries = [
-    {
-      id: 'for-accounting-firms',
-      title: 'Accounting Firms',
-      icon: Building2,
-      description: 'CRM automation that handles client data, document collection, and pipeline tracking.',
-      href: '/solutions/crm-automation/for-accounting-firms',
-      features: ['Client data management', 'Document collection', 'Pipeline tracking'],
-      color: 'from-blue-500/30 to-cyan-400/30',
-      badge: 'Popular',
-    },
-    {
-      id: 'for-construction',
-      title: 'Construction',
-      icon: HardHat,
-      description: 'CRM automation that manages bids, project leads, and client communications.',
-      href: '/solutions/crm-automation/for-construction',
-      features: ['Lead management', 'Bid tracking', 'Client communication'],
-      color: 'from-amber-500/30 to-orange-400/30',
-      badge: null,
-    },
-    {
-      id: 'for-ecommerce',
-      title: 'E-commerce',
-      icon: ShoppingBag,
-      description: 'CRM automation that handles customer data, support, and marketing.',
-      href: '/solutions/crm-automation/for-ecommerce',
-      features: ['Customer data', 'Support tracking', 'Marketing automation'],
-      color: 'from-purple-500/30 to-pink-400/30',
-      badge: 'Popular',
-    },
-    {
-      id: 'for-education',
-      title: 'Education',
-      icon: GraduationCap,
-      description: 'CRM automation that manages student inquiries, enrollment, and communication.',
-      href: '/solutions/crm-automation/for-education',
-      features: ['Inquiry management', 'Enrollment tracking', 'Student communication'],
-      color: 'from-green-500/30 to-emerald-400/30',
-      badge: null,
-    },
-    {
-      id: 'for-healthcare',
-      title: 'Healthcare',
-      icon: Heart,
-      description: 'CRM automation that handles patient data, scheduling, and billing.',
-      href: '/solutions/crm-automation/for-healthcare',
-      features: ['Patient data', 'Appointment scheduling', 'Billing follow-up'],
-      color: 'from-red-500/30 to-rose-400/30',
-      badge: 'Popular',
-    },
-    {
-      id: 'for-insurance',
-      title: 'Insurance Agencies',
-      icon: Shield,
-      description: 'CRM automation that manages quotes, policies, and renewals.',
-      href: '/solutions/crm-automation/for-insurance',
-      features: ['Quote management', 'Policy tracking', 'Renewal alerts'],
-      color: 'from-indigo-500/30 to-purple-400/30',
-      badge: null,
-    },
-    {
-      id: 'for-law-firms',
-      title: 'Law Firms',
-      icon: Scale,
-      description: 'CRM automation that handles client intake, case tracking, and deadlines.',
-      href: '/solutions/crm-automation/for-law-firms',
-      features: ['Client intake', 'Case tracking', 'Deadline management'],
-      color: 'from-slate-500/30 to-gray-400/30',
-      badge: 'New',
-    },
-    // NEW INDUSTRIES
-    {
-      id: 'for-logistics',
-      title: 'Logistics & Transportation',
-      icon: Truck,
-      description: 'CRM automation that manages orders, tracking, and customer communication.',
-      href: '/solutions/crm-automation/for-logistics',
-      features: ['Order tracking', 'Customer updates', 'Documentation'],
-      color: 'from-cyan-500/30 to-blue-400/30',
-      badge: 'New',
-    },
-    {
-      id: 'for-manufacturing',
-      title: 'Manufacturing',
-      icon: Factory,
-      description: 'CRM automation that handles orders, inventory, and supplier data.',
-      href: '/solutions/crm-automation/for-manufacturing',
-      features: ['Order management', 'Inventory tracking', 'Supplier data'],
-      color: 'from-yellow-500/30 to-orange-400/30',
-      badge: 'New',
-    },
-    {
-      id: 'for-real-estate',
-      title: 'Real Estate',
-      icon: Home,
-      description: 'CRM automation that handles leads, showings, and transactions.',
-      href: '/solutions/crm-automation/for-real-estate',
-      features: ['Lead management', 'Showing scheduling', 'Transaction tracking'],
-      color: 'from-teal-500/30 to-cyan-400/30',
-      badge: 'New',
-    },
-    {
-      id: 'for-restaurants',
-      title: 'Restaurants & Hospitality',
-      icon: Utensils,
-      description: 'CRM automation that handles reservations, guest data, and loyalty.',
-      href: '/solutions/crm-automation/for-restaurants',
-      features: ['Reservations', 'Guest data', 'Loyalty tracking'],
-      color: 'from-orange-500/30 to-red-400/30',
-      badge: 'New',
-    },
-    {
-      id: 'for-retail',
-      title: 'Retail',
-      icon: Store,
-      description: 'CRM automation that handles customer data, inventory, and reporting.',
-      href: '/solutions/crm-automation/for-retail',
-      features: ['Customer data', 'Inventory tracking', 'Sales reporting'],
-      color: 'from-pink-500/30 to-rose-400/30',
-      badge: 'New',
-    },
-    {
-      id: 'for-saas',
-      title: 'SaaS Companies',
-      icon: Cpu,
-      description: 'CRM automation that handles support, onboarding, and churn monitoring.',
-      href: '/solutions/crm-automation/for-saas',
-      features: ['Support tracking', 'Onboarding', 'Churn monitoring'],
-      color: 'from-violet-500/30 to-indigo-400/30',
-      badge: 'New',
-    },
-  ];
-
-  const features = [
-    {
-      id: 'automatic-record-updates',
-      title: 'Automatic Record Updates',
-      description: 'Activity and data captured without manual entryyour CRM stays current automatically.',
-      icon: Database,
-      color: 'from-blue-500/20 to-cyan-500/20',
-    },
-    {
-      id: 'data-hygiene',
-      title: 'Data Hygiene',
-      description: 'Deduplication, enrichment, and cleaning that runs continuouslykeep your CRM pristine.',
-      icon: Sparkles,
-      color: 'from-green-500/20 to-emerald-500/20',
+        'Use lead management automation to capture inquiries from websites, forms and campaigns, enrich approved lead data and apply qualification rules before the lead reaches sales.',
+      icon: Target,
     },
     {
       id: 'lead-routing',
-      title: 'Lead Routing & Sequencing',
-      description: 'The right lead to the right person with the right follow-upevery time.',
-      icon: Users,
-      color: 'from-purple-500/20 to-pink-500/20',
+      title: 'Lead Routing & CRM Email Automation',
+      description:
+        'Qualified leads can be assigned by location, service, territory or team rules, while CRM email automation triggers the right follow-up task or message.',
+      icon: GitBranch,
     },
     {
-      id: 'cross-system-sync',
-      title: 'Cross-System Sync',
-      description: 'Your CRM connected to billing, support, and marketing toolsdata flows seamlessly.',
-      icon: Link2,
-      color: 'from-orange-500/20 to-red-500/20',
+      id: 'pipeline-management',
+      title: 'Sales Pipeline & CRM Workflow Management',
+      description:
+        'Meetings, proposals and deal activity can trigger sales pipeline automation, CRM stage updates and internal tasks so opportunity data stays current.',
+      icon: RefreshCw,
     },
     {
-      id: 'pipeline-reporting',
-      title: 'Pipeline Reporting',
-      description: 'Trustworthy numbers because the underlying data is maintained accurately.',
-      icon: BarChart3,
-      color: 'from-teal-500/20 to-cyan-500/20',
-    },
-    {
-      id: 'production-ready',
-      title: 'Production-Ready',
-      description: 'Staged rollout, comprehensive documentation, and reliability engineering.',
-      icon: Sparkles,
-      color: 'from-amber-500/20 to-yellow-500/20',
+      id: 'segmentation-reporting',
+      title: 'Customer Segmentation & CRM Reporting Automation',
+      description:
+        'Use customer segmentation and CRM reporting automation to organize contacts, trigger relevant campaigns and keep management dashboards updated.',
+      icon: PieChart,
     },
   ];
 
+  // ── SECTION 2: Integration Groups ─────────────────────
+  const integrationGroups = [
+    {
+      label: 'CRM Platforms',
+      items: ['HubSpot', 'Salesforce', 'Zoho', 'GoHighLevel', 'Microsoft Dynamics'],
+      icon: Database,
+    },
+    {
+      label: 'Lead Generation',
+      items: ['Websites', 'Forms', 'Landing Pages', 'Lead-Generation Sources'],
+      icon: Target,
+    },
+    {
+      label: 'Communication',
+      items: ['Email', 'Slack', 'Microsoft Teams', 'Calendars', 'Communication Tools'],
+      icon: Link2,
+    },
+    {
+      label: 'Data & Reporting',
+      items: ['Monday.com', 'Airtable', 'Databases', 'APIs', 'Reporting Tools'],
+      icon: BarChart3,
+    },
+  ];
+
+  // ── SECTION 3: Problems ───────────────────────────────
+  const problems = [
+    'Reduce manual CRM data entry and duplicate updates',
+    'Prevent missed leads and delayed follow-ups',
+    'Keep pipeline stages and customer records more accurate',
+    'Connect marketing, sales, and customer data across systems',
+  ];
+
+  // ── SECTION 4: Benefits ───────────────────────────────
+  const benefits = [
+    'Faster lead response and assignment',
+    'Less repetitive CRM administration',
+    'Better pipeline visibility and follow-up consistency',
+    'Easier scaling across larger sales and marketing teams',
+  ];
+
+  // ── SECTION 5: Build Steps ────────────────────────────
+  const buildSteps = [
+    'Audit the current CRM process and identify repetitive tasks',
+    'Map lead sources, decisions, fields, handoffs, and required actions',
+    'Build integrations, automation rules, and useful AI components',
+    'Test edge cases, launch the workflow, and optimize performance.',
+  ];
+
+  // ── SECTION 6: Why Choose ─────────────────────────────
+  const whyChoose = [
+    'Custom CRM and sales workflow design',
+    'AI only where it creates practical value',
+    'Human-in-the-loop approvals and decision points',
+    'Ongoing workflow monitoring and optimization',
+  ];
+
+  // ── FAQS ──────────────────────────────────────────────
+  const faqs = [
+    {
+      question: 'What is CRM automation?',
+      answer:
+        'CRM automation uses workflows to automate repetitive CRM tasks such as lead capture, data entry, routing, follow-ups, pipeline updates, and reporting.',
+    },
+    {
+      question: 'What are CRM automation tools used for?',
+      answer:
+        'CRM automation tools connect customer data and business actions so routine steps can happen automatically across sales and marketing systems.',
+    },
+    {
+      question: 'Can CRM marketing automation work with sales automation?',
+      answer:
+        'Yes. CRM marketing automation can nurture and segment leads before handing qualified opportunities to CRM and sales automation workflows.',
+    },
+    {
+      question: 'Can AI be used in CRM workflows?',
+      answer:
+        'Yes. CRM AI automation can support classification, summaries, recommendations, and intelligent routing where those capabilities are useful.',
+    },
+    {
+      question: 'Can you integrate our existing CRM?',
+      answer:
+        'In many cases, yes. Integration depends on the CRM, its available APIs, and the other systems that need to connect.',
+    },
+    {
+      question: 'How much does CRM automation cost?',
+      answer:
+        'Cost depends on workflow complexity, number of integrations, AI requirements, testing, and ongoing support needs.',
+    },
+  ];
+
+  // ── ANIMATION VARIANTS ────────────────────────────────
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.08,
-        delayChildren: 0.2,
-      },
+      transition: { staggerChildren: 0.12, delayChildren: 0.1 },
     },
   };
 
   const cardVariants = {
-    hidden: {
-      opacity: 0,
-      y: 40,
-      scale: 0.95,
-    },
+    hidden: { opacity: 0, y: 40 },
     visible: {
       opacity: 1,
       y: 0,
-      scale: 1,
-      transition: {
-        type: 'spring' as const,
-        stiffness: 100,
-        damping: 15,
-        duration: 0.6,
-      },
-    },
-    hover: {
-      y: -12,
-      scale: 1.02,
-      transition: {
-        type: 'spring' as const,
-        stiffness: 400,
-        damping: 20,
-      },
+      transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
     },
   };
 
-  const iconVariants = {
-    initial: {
-      rotate: 0,
-      scale: 1,
-    },
-    hover: {
-      rotate: [0, -10, 10, -5, 0],
-      scale: 1.15,
-      transition: {
-        duration: 0.6,
-        ease: 'easeInOut' as const,
-      },
-    },
-  };
-
-  const featureVariants = {
-    hidden: { opacity: 0, x: -10 },
-    visible: (i: number) => ({
-      opacity: 1,
-      x: 0,
-      transition: {
-        delay: i * 0.1,
-        duration: 0.3,
-        ease: 'easeOut' as const,
-      },
-    }),
-  };
-
-  const featureContainerVariants = {
-    hidden: { opacity: 0 },
+  const listItemVariants = {
+    hidden: { opacity: 0, x: -30 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
+      x: 0,
+      transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as const },
     },
-  };
-
-  const getBadgeColor = (badge: string | null) => {
-    if (!badge) return '';
-    switch (badge) {
-      case 'Popular':
-        return 'bg-brand/20 text-brand';
-      case 'Enterprise':
-        return 'bg-purple-500/20 text-purple-400';
-      case 'Flexible':
-        return 'bg-blue-500/20 text-blue-400';
-      case 'New':
-        return 'bg-green-500/20 text-green-400';
-      default:
-        return 'bg-brand/20 text-brand';
-    }
   };
 
   return (
     <PageWrapper>
+      {/* ── HERO ────────────────────────────────────────── */}
       <HeroSection
         {...heroData}
         imageWidth={heroData.imageWidth}
@@ -387,18 +275,44 @@ export default function CRMAutomationPage() {
         ]}
       />
 
-      {/* Platform Selection Section */}
-      <Section bg="black" pattern="dots" className="py-20">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <span className="eyebrow inline-flex items-center gap-2 text-brand mb-4">
-              <span className="w-6 h-px bg-brand" />
-              Platform Selection
-            </span>
-            <h2 className="display text-3xl md:text-5xl text-white font-bold">Choose Your Platform</h2>
-            <p className="text-base md:text-lg text-gray-300 mt-4 leading-relaxed max-w-2xl mx-auto">
-              We build CRM automation on the platforms you already usewith honest platform recommendations.
-            </p>
+      {/* ══════════════════════════════════════════════════
+          SECTION 1 — DARK: Automate CRM Workflows
+      ══════════════════════════════════════════════════ */}
+      <section className="relative bg-black py-24 overflow-hidden">
+        <FloatingOrbs variant="dark" />
+
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="text-center mb-16 max-w-4xl mx-auto">
+            <Eyebrow variant="dark">CRM Workflow Automation</Eyebrow>
+            <motion.h2
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-100px' }}
+              transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+              className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-white mb-6"
+            >
+              Automate CRM Workflows From Lead Capture to Customer Follow-Up
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-lg text-gray-300 leading-relaxed"
+            >
+              CRM workflow automation removes repetitive steps from customer relationship management by connecting
+              forms, email, sales activity and CRM records.
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-lg text-gray-400 leading-relaxed mt-4"
+            >
+              With automation in CRM, each customer action can trigger the next business step, from creating a
+              contact record to assigning a salesperson or starting a follow-up sequence.
+            </motion.p>
           </div>
 
           <motion.div
@@ -406,172 +320,74 @@ export default function CRMAutomationPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-100px' }}
-            className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mt-12"
+            className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto"
           >
-            {platforms.map((platform) => {
-              const Icon = platform.icon;
-              const isHovered = hoveredCard === platform.id;
-
+            {workflowSteps.map((step, idx) => {
+              const Icon = step.icon;
               return (
                 <motion.div
-                  key={platform.id}
+                  key={step.id}
                   variants={cardVariants}
-                  whileHover="hover"
-                  onMouseEnter={() => setHoveredCard(platform.id)}
-                  onMouseLeave={() => setHoveredCard(null)}
+                  whileHover={{ y: -8 }}
+                  transition={{ type: 'spring', stiffness: 300, damping: 20 }}
                   className="relative group"
                 >
-                  <div
-                    className={`
-                      absolute -inset-1 rounded-3xl opacity-0 group-hover:opacity-100 
-                      transition-all duration-500 blur-xl
-                      bg-gradient-to-r ${platform.color}
-                    `}
-                  />
-
-                  <Link
-                    href={platform.href}
-                    className={`
-                      relative block h-full p-8 rounded-2xl 
-                      bg-gradient-to-br ${platform.bgGradient}
-                      border-2 ${platform.borderColor} ${platform.hoverColor}
-                      transition-all duration-300 shadow-lg hover:shadow-2xl
-                      backdrop-blur-sm bg-white/5
-                      text-white
-                    `}
-                  >
-                    <div className="absolute top-0 right-0 w-32 h-32 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
-                      <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-brand blur-3xl" />
+                  <div className="absolute -inset-1 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-xl bg-brand/10" />
+                  <div className="relative h-full p-8 rounded-2xl bg-gradient-to-br from-white/10 via-white/5 to-brand/5 border border-white/10 group-hover:border-brand/40 transition-all duration-300 backdrop-blur-sm">
+                    <div className="absolute top-6 right-6 text-6xl font-bold text-white/5 font-serif">
+                      0{idx + 1}
                     </div>
 
-                    <motion.div
-                      className="flex items-start justify-between mb-6"
-                      variants={iconVariants}
-                      initial="initial"
-                      whileHover="hover"
-                    >
-                      <div
-                        className={`
-                          w-16 h-16 rounded-2xl 
-                          bg-gradient-to-br ${platform.color}
-                          flex items-center justify-center
-                          transition-all duration-300
-                          group-hover:shadow-lg
-                        `}
-                      >
-                        <Icon className={`h-8 w-8 ${platform.iconColor}`} />
-                      </div>
-                      {platform.badge && (
-                        <motion.div
-                          initial={{ opacity: 0, scale: 0.8 }}
-                          animate={{
-                            opacity: isHovered ? 1 : 0.6,
-                            scale: isHovered ? 1 : 0.9,
-                          }}
-                          transition={{ duration: 0.3 }}
-                          className={`
-                            flex items-center gap-1 text-sm font-medium
-                            ${getBadgeColor(platform.badge)}
-                            px-3 py-1 rounded-full
-                          `}
-                        >
-                          <Sparkles className="h-3 w-3" />
-                          <span>{platform.badge}</span>
-                        </motion.div>
-                      )}
-                    </motion.div>
-
-                    <div className="relative z-10">
-                      <motion.h3
-                        className="text-2xl font-bold text-white mb-3 font-serif"
-                        initial={{ opacity: 0, x: -10 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: 0.1 }}
-                      >
-                        {platform.title}
-                      </motion.h3>
-
-                      <motion.p
-                        className="text-gray-300 leading-relaxed mb-6"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.2 }}
-                      >
-                        {platform.description}
-                      </motion.p>
-
-                      <motion.div
-                        className="space-y-2 mb-6"
-                        initial="hidden"
-                        animate="visible"
-                        variants={featureContainerVariants}
-                      >
-                        {platform.features.map((feature, idx) => (
-                          <motion.div
-                            key={idx}
-                            variants={featureVariants}
-                            custom={idx}
-                            className="flex items-center gap-2 text-sm text-gray-300"
-                          >
-                            <CheckCircle className="h-4 w-4 text-brand flex-shrink-0" />
-                            <span>{feature}</span>
-                          </motion.div>
-                        ))}
-                      </motion.div>
-
-                      <motion.div
-                        initial={{ opacity: 0, x: -10 }}
-                        animate={{
-                          opacity: isHovered ? 1 : 0.8,
-                          x: isHovered ? 0 : -5,
-                        }}
-                        transition={{ duration: 0.3 }}
-                        className="inline-flex items-center gap-2 text-brand font-medium group/link"
-                      >
-                        <span>Learn More</span>
-                        <motion.span
-                          animate={{
-                            x: isHovered ? 8 : 0,
-                          }}
-                          transition={{ duration: 0.3 }}
-                        >
-                          <ArrowRight className="h-4 w-4" />
-                        </motion.span>
-                      </motion.div>
+                    <div className="w-14 h-14 rounded-2xl bg-brand/10 flex items-center justify-center mb-6 group-hover:bg-brand/20 transition-colors duration-300">
+                      <Icon className="h-7 w-7 text-brand" />
                     </div>
 
-                    <motion.div
-                      className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-brand/0 via-brand to-brand/0 rounded-b-2xl"
-                      initial={{ scaleX: 0, opacity: 0 }}
-                      animate={{
-                        scaleX: isHovered ? 1 : 0,
-                        opacity: isHovered ? 1 : 0,
-                      }}
-                      transition={{ duration: 0.4 }}
-                    />
-                  </Link>
+                    <h3 className="text-xl font-bold text-white mb-3 font-serif relative z-10">
+                      {step.title}
+                    </h3>
+                    <p className="text-gray-300 leading-relaxed relative z-10">{step.description}</p>
+                  </div>
                 </motion.div>
               );
             })}
           </motion.div>
-        </div>
-      </Section>
 
-      {/* Industry Solutions Section */}
-      <Section bg="black" pattern="dots" className="py-20 border-t border-white/5">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 text-brand text-xs font-semibold uppercase tracking-[0.15em] mb-4">
-              <span className="w-8 h-px bg-brand" />
-              Industry Solutions
-              <span className="w-8 h-px bg-brand" />
-            </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-[1.1] tracking-tight">
-              CRM Automation for Every <span className="text-brand">Industry</span>
-            </h2>
-            <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
-              We build CRM automation designed for the workflows, tools, and constraints of your specific industry.
-            </p>
+          <div className="text-center mt-14">
+            <CTAButton href="/free-automation-audit">Automate Your CRM Workflow</CTAButton>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════
+          SECTION 2 — LIGHT: CRM Integrations
+      ══════════════════════════════════════════════════ */}
+      <section className="relative bg-gradient-to-b from-gray-50 via-white to-gray-50 py-24 overflow-hidden">
+        <FloatingOrbs variant="light" />
+
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="text-center mb-16 max-w-4xl mx-auto">
+            <Eyebrow variant="light">Integrations</Eyebrow>
+            <motion.h2
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-100px' }}
+              transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+              className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-gray-900 mb-6"
+            >
+              CRM Integrations for Sales, Marketing and Workflow Management
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-lg text-gray-600 leading-relaxed"
+            >
+              Strong CRM integrations connect customer data with the tools used by sales, marketing, and operations.
+              CRM and workflow management become more effective when the same lead information can move between
+              systems without repeated data entry. Clickmasters can connect supported CRM platforms through native
+              integrations, automation tools, or APIs.
+            </motion.p>
           </div>
 
           <motion.div
@@ -579,183 +395,396 @@ export default function CRMAutomationPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-100px' }}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-12"
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto"
           >
-            {industries.map((industry) => {
-              const Icon = industry.icon;
-              const isHovered = hoveredIndustryCard === industry.id;
-
+            {integrationGroups.map((group) => {
+              const Icon = group.icon;
               return (
                 <motion.div
-                  key={industry.id}
+                  key={group.label}
                   variants={cardVariants}
-                  whileHover="hover"
-                  onMouseEnter={() => setHoveredIndustryCard(industry.id)}
-                  onMouseLeave={() => setHoveredIndustryCard(null)}
-                  className="relative group"
+                  whileHover={{ y: -8 }}
+                  transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+                  className="relative group h-full"
                 >
-                  <div
-                    className="
-                      absolute -inset-1 rounded-3xl opacity-0 group-hover:opacity-100
-                      transition-all duration-500 blur-xl
-                      bg-brand/10
-                    "
-                  />
-
-                  <Link
-                    href={industry.href}
-                    className="
-                      relative block h-full p-6 rounded-2xl
-                      bg-gradient-to-br from-white/10 via-white/5 to-brand/5
-                      border border-white/10 group-hover:border-brand/30
-                      transition-all duration-300 shadow-[0_12px_30px_rgba(0,0,0,0.18)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.24)]
-                      backdrop-blur-sm
-                      text-white
-                    "
-                  >
-                    <div className="absolute top-0 right-0 w-32 h-32 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
-                      <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-brand/25 blur-3xl" />
+                  <div className="absolute -inset-1 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-xl bg-brand/10" />
+                  <div className="relative h-full p-6 rounded-2xl bg-white border border-gray-200/60 group-hover:border-brand/40 shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div className="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center mb-5 group-hover:bg-brand/20 transition-colors duration-300">
+                      <Icon className="h-6 w-6 text-brand" />
                     </div>
-
-                    <motion.div
-                      className="flex items-start justify-between mb-4"
-                      variants={iconVariants}
-                      initial="initial"
-                      whileHover="hover"
-                    >
-                      <div
-                        className="
-                          w-14 h-14 rounded-2xl
-                          bg-brand/10
-                          flex items-center justify-center
-                          transition-all duration-300
-                          group-hover:shadow-lg
-                        "
-                      >
-                        <Icon className="h-7 w-7 text-brand" />
-                      </div>
-                      {industry.badge && (
-                        <motion.div
-                          initial={{ opacity: 0, scale: 0.8 }}
-                          animate={{
-                            opacity: isHovered ? 1 : 0.6,
-                            scale: isHovered ? 1 : 0.9,
-                          }}
-                          transition={{ duration: 0.3 }}
-                          className={`
-                            flex items-center gap-1 text-xs font-medium
-                            ${getBadgeColor(industry.badge)}
-                            px-2.5 py-1 rounded-full
-                          `}
-                        >
-                          <Sparkles className="h-3 w-3" />
-                          <span>{industry.badge}</span>
-                        </motion.div>
-                      )}
-                    </motion.div>
-
-                    <div className="relative z-10">
-                      <motion.h3
-                        className="text-xl font-bold text-white mb-2 font-serif"
-                        initial={{ opacity: 0, x: -10 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: 0.1 }}
-                      >
-                        {industry.title}
-                      </motion.h3>
-
-                      <motion.p
-                        className="text-sm text-gray-300 leading-relaxed mb-4"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.2 }}
-                      >
-                        {industry.description}
-                      </motion.p>
-
-                      <motion.div
-                        className="space-y-1.5 mb-4"
-                        initial="hidden"
-                        animate="visible"
-                        variants={featureContainerVariants}
-                      >
-                        {industry.features.map((feature, idx) => (
-                          <motion.div
-                            key={idx}
-                            variants={featureVariants}
-                            custom={idx}
-                            className="flex items-center gap-2 text-xs text-gray-400"
-                          >
-                            <CheckCircle className="h-3.5 w-3.5 text-brand flex-shrink-0" />
-                            <span>{feature}</span>
-                          </motion.div>
-                        ))}
-                      </motion.div>
-
-                      <motion.div
-                        initial={{ opacity: 0, x: -10 }}
-                        animate={{
-                          opacity: isHovered ? 1 : 0.8,
-                          x: isHovered ? 0 : -5,
-                        }}
-                        transition={{ duration: 0.3 }}
-                        className="inline-flex items-center gap-2 text-brand font-medium text-sm group/link"
-                      >
-                        <span>Learn More</span>
-                        <motion.span
-                          animate={{
-                            x: isHovered ? 8 : 0,
-                          }}
-                          transition={{ duration: 0.3 }}
-                        >
-                          <ArrowRight className="h-4 w-4" />
-                        </motion.span>
-                      </motion.div>
-                    </div>
-
-                    <motion.div
-                      className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-brand/0 via-brand to-brand/0 rounded-b-2xl"
-                      initial={{ scaleX: 0, opacity: 0 }}
-                      animate={{
-                        scaleX: isHovered ? 1 : 0,
-                        opacity: isHovered ? 1 : 0,
-                      }}
-                      transition={{ duration: 0.4 }}
-                    />
-                  </Link>
+                    <h3 className="text-lg font-bold text-gray-900 mb-4 font-serif">{group.label}</h3>
+                    <ul className="space-y-2">
+                      {group.items.map((item, idx) => (
+                        <li key={idx} className="flex items-center gap-2 text-sm text-gray-600">
+                          <CheckCircle className="h-3.5 w-3.5 text-brand flex-shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </motion.div>
               );
             })}
           </motion.div>
+
+          <div className="text-center mt-14">
+            <CTAButton href="/free-automation-audit">Connect Your Existing Business Tools</CTAButton>
+          </div>
         </div>
-      </Section>
+      </section>
 
-      {/* Features Section */}
-      <FeatureGrid
-        eyebrow="Key Features"
-        heading="What Our CRM Automation Can Do"
-        subheading="Every CRM automation we build comes with these core capabilities, tailored to your specific needs."
-        features={features}
-        columns={3}
-        bg="orange-light"
-      />
+      {/* ══════════════════════════════════════════════════
+          SECTION 3 — DARK: Business Problems Solved
+      ══════════════════════════════════════════════════ */}
+      <section className="relative bg-black py-24 overflow-hidden">
+        <FloatingOrbs variant="dark" />
 
-      {/* CTA Section */}
-      <CTASection
-        eyebrow="Get Started"
-        title="Ready to Automate Your CRM?"
-        subtitle="Book a free consultation and let's discuss how CRM automation can keep your data accurate and your team productive."
-        primaryCta={{
-          text: 'Book a Free Audit',
-          href: '/free-automation-audit',
-        }}
-        secondaryCta={{
-          text: 'View All Solutions',
-          href: '/solutions',
-        }}
-        background="light"
-        showForm={true}
-      />
+        <div className="absolute inset-0 opacity-[0.03]">
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                'linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)',
+              backgroundSize: '60px 60px',
+            }}
+          />
+        </div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <Eyebrow variant="dark">Problems Solved</Eyebrow>
+              <motion.h2
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-100px' }}
+                transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-white mb-6"
+              >
+                Business Problems Solved by CRM Sales Automation
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="text-lg text-gray-300 leading-relaxed"
+              >
+                Manual CRM processes create missed follow-ups, incomplete records, and slow lead response. CRM sales
+                automation fixes these gaps by turning repeatable sales actions into reliable workflows. The goal is
+                to remove administrative friction while keeping people in control of important customer
+                conversations.
+              </motion.p>
+            </div>
+
+            <motion.ul
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: '-100px' }}
+              className="space-y-4"
+            >
+              {problems.map((problem, idx) => (
+                <motion.li
+                  key={idx}
+                  variants={listItemVariants}
+                  whileHover={{ x: 8 }}
+                  className="group flex items-start gap-4 p-6 rounded-2xl bg-gradient-to-r from-white/5 to-white/[0.02] border border-white/10 hover:border-brand/40 transition-all duration-300 backdrop-blur-sm"
+                >
+                  <CheckCircle className="h-5 w-5 text-brand flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-200 leading-relaxed text-base">{problem}</span>
+                </motion.li>
+              ))}
+            </motion.ul>
+
+            <div className="text-center mt-14">
+              <CTAButton href="/free-automation-audit">Identify Tasks You Can Automate</CTAButton>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════
+          SECTION 4 — LIGHT: Business Benefits
+      ══════════════════════════════════════════════════ */}
+      <section className="relative bg-gradient-to-b from-white via-gray-50 to-white py-24 overflow-hidden">
+        <FloatingOrbs variant="light" />
+
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <Eyebrow variant="light">Benefits</Eyebrow>
+              <motion.h2
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-100px' }}
+                transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-gray-900 mb-6"
+              >
+                Business Benefits of an Automated CRM
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="text-lg text-gray-600 leading-relaxed"
+              >
+                An automated CRM helps teams respond faster and maintain cleaner customer data as lead volume grows.
+                It also makes the sales process easier to monitor because workflow actions are recorded consistently.
+                Clickmasters focuses on business outcomes that support revenue operations rather than automation for
+                its own sake.
+              </motion.p>
+            </div>
+
+            <motion.ul
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: '-100px' }}
+              className="space-y-4"
+            >
+              {benefits.map((benefit, idx) => (
+                <motion.li
+                  key={idx}
+                  variants={listItemVariants}
+                  whileHover={{ x: 8 }}
+                  className="group flex items-start gap-4 p-6 rounded-2xl bg-white border border-gray-200/60 hover:border-brand/40 shadow-sm hover:shadow-xl transition-all duration-300"
+                >
+                  <Sparkles className="h-5 w-5 text-brand flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-800 leading-relaxed text-base font-medium">{benefit}</span>
+                </motion.li>
+              ))}
+            </motion.ul>
+
+            <div className="text-center mt-14">
+              <CTAButton href="/free-automation-audit">See Where Automation Can Save Time</CTAButton>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════
+          SECTION 5 — DARK: How ClickMaster Builds
+      ══════════════════════════════════════════════════ */}
+      <section className="relative bg-black py-24 overflow-hidden">
+        <FloatingOrbs variant="dark" />
+
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Eyebrow variant="dark">Our Process</Eyebrow>
+              <motion.h2
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-100px' }}
+                transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-white mb-6"
+              >
+                How ClickMaster Builds CRM Workflow Automation
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="text-lg text-gray-300 leading-relaxed"
+              >
+                Successful CRM workflow automation starts with understanding the existing sales process before
+                connecting tools. Clickmasters maps triggers, handoffs, CRM fields, and exceptions so the automation
+                fits real operations.
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="text-lg text-gray-400 leading-relaxed mt-4"
+              >
+                The implementation stays focused on business logic, data quality, and a workflow your team can
+                understand.
+              </motion.p>
+            </div>
+
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: '-100px' }}
+              className="grid md:grid-cols-2 gap-8"
+            >
+              {buildSteps.map((step, idx) => (
+                <motion.div
+                  key={idx}
+                  variants={cardVariants}
+                  whileHover={{ y: -8 }}
+                  transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+                  className="relative group"
+                >
+                  <div className="absolute -inset-1 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-xl bg-brand/10" />
+                  <div className="relative h-full p-8 rounded-2xl bg-gradient-to-br from-white/10 via-white/5 to-brand/5 border border-white/10 group-hover:border-brand/40 transition-all duration-300 backdrop-blur-sm">
+                    <div className="flex items-start gap-5">
+                      <div className="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center flex-shrink-0 group-hover:bg-brand/20 transition-colors">
+                        <span className="text-brand font-bold text-lg">{idx + 1}</span>
+                      </div>
+                      <p className="text-gray-200 leading-relaxed pt-2.5 text-base">{step}</p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            <div className="text-center mt-14">
+              <CTAButton href="/free-automation-audit">Book a Free Automation Audit</CTAButton>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════
+          SECTION 6 — LIGHT: Why Choose Clickmasters
+      ══════════════════════════════════════════════════ */}
+      <section className="relative bg-gradient-to-b from-gray-50 via-white to-gray-50 py-24 overflow-hidden">
+        <FloatingOrbs variant="light" />
+
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <Eyebrow variant="light">Why Clickmasters</Eyebrow>
+              <motion.h2
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-100px' }}
+                transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-gray-900 mb-6"
+              >
+                Why Choose Clickmasters for CRM Automation
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="text-lg text-gray-600 leading-relaxed"
+              >
+                Businesses need CRM automation solutions that match their own sales process instead of generic
+                templates. Clickmasters builds custom workflows that connect customer data, sales actions, and
+                existing software. Our approach keeps automation commercially focused, scalable, and easy for teams
+                to operate.
+              </motion.p>
+            </div>
+
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: '-100px' }}
+              className="grid md:grid-cols-2 gap-6"
+            >
+              {whyChoose.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  variants={cardVariants}
+                  whileHover={{ y: -6 }}
+                  className="group relative p-7 rounded-2xl bg-white border border-gray-200/60 hover:border-brand/40 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-brand/5 to-brand/[0.02] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="relative flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center flex-shrink-0 group-hover:bg-brand/20 transition-colors">
+                      <Users className="h-6 w-6 text-brand" />
+                    </div>
+                    <p className="text-gray-800 leading-relaxed pt-2.5 font-medium">{item}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            <div className="text-center mt-14">
+              <CTAButton href="/free-automation-audit">Discuss Your Automation Project</CTAButton>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════
+          FAQs — DARK
+      ══════════════════════════════════════════════════ */}
+      <section className="relative bg-black py-24 overflow-hidden">
+        <FloatingOrbs variant="dark" />
+
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="text-center mb-16">
+            <Eyebrow variant="dark">FAQs</Eyebrow>
+            <motion.h2
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-100px' }}
+              transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+              className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-white"
+            >
+              Frequently Asked Questions
+            </motion.h2>
+          </div>
+
+          <div className="max-w-3xl mx-auto space-y-4">
+            {faqs.map((faq, index) => {
+              const isOpen = openFaq === index;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.08, duration: 0.5 }}
+                  className={`group rounded-2xl border transition-all duration-300 overflow-hidden ${
+                    isOpen
+                      ? 'bg-brand/5 border-brand/40'
+                      : 'bg-white/5 border-white/10 hover:border-brand/30 hover:bg-white/[0.07]'
+                  }`}
+                >
+                  <button
+                    onClick={() => setOpenFaq(isOpen ? null : index)}
+                    className="w-full flex items-center justify-between gap-4 p-6 text-left"
+                  >
+                    <h3 className="text-lg font-bold text-white pr-4">{faq.question}</h3>
+                    <motion.div
+                      animate={{ rotate: isOpen ? 180 : 0 }}
+                      transition={{ duration: 0.3 }}
+                      className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors ${
+                        isOpen
+                          ? 'bg-brand text-black'
+                          : 'bg-white/10 text-gray-400 group-hover:bg-brand/20 group-hover:text-brand'
+                      }`}
+                    >
+                      <ChevronDown className="h-4 w-4" />
+                    </motion.div>
+                  </button>
+                  <AnimatePresence initial={false}>
+                    {isOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3, ease: 'easeInOut' }}
+                        className="overflow-hidden"
+                      >
+                        <div className="px-6 pb-6 pt-0">
+                          <div className="h-px bg-gradient-to-r from-transparent via-brand/30 to-transparent mb-4" />
+                          <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+              );
+            })}
+          </div>
+
+          <div className="text-center mt-14">
+            <CTAButton href="/free-automation-audit">Talk to an Expert About CRM Automation</CTAButton>
+          </div>
+        </div>
+      </section>
     </PageWrapper>
   );
 }
