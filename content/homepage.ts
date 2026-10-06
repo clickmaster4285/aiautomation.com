@@ -328,11 +328,7 @@ export const homepageData = {
         description: 'We automate customer onboarding, support ticket routing, and user data syncing for SaaS platforms. This improves customer experience while reducing the support team\'s workload.',
         link: '/industries/ai-automation-for-saas'
       },
-      {
-        title: 'AI Automation for Marketing and Creative Agencies',
-        description: 'We automate campaign reporting, client communications, and content workflows for agencies using AI marketing automation tools. This frees up creative teams to focus on strategy instead of repetitive tasks.',
-        link: '/industries/marketing-agencies'
-      }
+     
     ]
   },
 

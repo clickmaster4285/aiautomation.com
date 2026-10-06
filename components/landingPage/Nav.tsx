@@ -833,13 +833,13 @@ export default function Nav() {
                     </div>
 
                     <div className="px-3 pt-3 mt-1 border-t border-gray-100 flex items-center justify-between">
-                      {/* <Link
+                      <Link
                         href="/case-studies"
                         className="text-xs font-semibold text-gray-700 hover:text-brand flex items-center gap-1"
                         onClick={() => setIsCaseStudiesOpen(false)}
                       >
                         View all case studies <ArrowRight className="h-3 w-3" />
-                      </Link> */}
+                      </Link>
                       <Link
                         href="/contact"
                         className="text-xs font-semibold text-brand hover:underline flex items-center gap-1"
