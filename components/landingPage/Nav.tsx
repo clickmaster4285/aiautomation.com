@@ -45,6 +45,7 @@ import {
   CheckCircle,
   Calendar,
   Receipt,
+  Briefcase as BriefcaseIcon,
 } from 'lucide-react';
 import {
   serviceCategories,
@@ -90,6 +91,15 @@ const platformIconMap: Record<string, React.ElementType> = {
 // ── Industry icons ──
 const industryIconMap: Record<string, React.ElementType> = {
   'Finance & Accounting': DollarSign,
+  'Healthcare': Heart,
+  'Law Firms': Scale,
+  'E-commerce': ShoppingBag,
+  'SaaS': Cloud,
+};
+
+
+const CaseStudiesIconMap: Record<string, React.ElementType> = {
+  'AI Lead Response & Revenue Recovery': DollarSign,
   'Healthcare': Heart,
   'Law Firms': Scale,
   'E-commerce': ShoppingBag,
@@ -148,6 +158,49 @@ const solutionsData = [
  
 ];
 
+// ── Case Studies data ──
+const caseStudiesData = [
+  {
+    title: 'AI Lead Response & Revenue Recovery',
+    slug: 'ai-lead-response-revenue-recovery',
+    description: 'How automated lead response recovered lost revenue for a B2B services firm.',
+    icon: DollarSign,
+  },
+  {
+    title: 'Invoice Processing Automation',
+    slug: 'invoice-processing-automation',
+    description: 'Cut AP processing time from days to hours with AI invoice extraction.',
+    icon: Receipt,
+  },
+  {
+    title: 'Customer Support AI Agent',
+    slug: 'customer-support-ai-agent',
+    description: 'Resolved 70% of routine tickets automatically with RAG-based AI.',
+    icon: Headphones,
+  },
+  {
+    title: 'CRM Data Hygiene at Scale',
+    slug: 'crm-data-hygiene-at-scale',
+    description: 'Continuous deduplication and enrichment for a 50k+ contact database.',
+    icon: Database,
+  },
+  {
+    title: 'Document Workflow Automation',
+    slug: 'document-workflow-automation',
+    description: 'Automated intake, validation, and filing for a document-heavy firm.',
+    icon: FileText,
+  },
+  {
+    title: 'Marketing Campaign Automation',
+    slug: 'marketing-campaign-automation',
+    description: 'Personalized nurture sequences at scale with AI-assisted content.',
+    icon: TrendingUp,
+  },
+];
+
+
+
+
 const FallbackIcon = Plug;
 
 // ── All services, flat list (subpages shown directly in the navbar — no category grouping) ──
@@ -165,16 +218,23 @@ export default function Nav() {
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
   const [isPlatformsOpen, setIsPlatformsOpen] = useState(false);
   const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
+  const [isCaseStudiesOpen, setIsCaseStudiesOpen] = useState(false); 
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const [isMobileSolutionsOpen, setIsMobileSolutionsOpen] = useState(false);
   const [isMobilePlatformsOpen, setIsMobilePlatformsOpen] = useState(false);
   const [isMobileIndustriesOpen, setIsMobileIndustriesOpen] = useState(false);
+  const [isMobileCaseStudiesOpen, setIsMobileCaseStudiesOpen] = useState(false);
+
+
   const [scrolled, setScrolled] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const solutionsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const platformTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const industryTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const caseStudiesTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -263,6 +323,21 @@ export default function Nav() {
     industryTimeoutRef.current = setTimeout(() => setIsIndustriesOpen(false), 200);
   };
 
+    const handleCaseStudiesMouseEnter = () => {
+    if (caseStudiesTimeoutRef.current) clearTimeout(caseStudiesTimeoutRef.current);
+    setIsCaseStudiesOpen(true);
+  };
+  const handleCaseStudiesMouseLeave = () => {
+    caseStudiesTimeoutRef.current = setTimeout(() => setIsCaseStudiesOpen(false), 200);
+  };
+  const handleCaseStudiesDropdownMouseEnter = () => {
+    if (caseStudiesTimeoutRef.current) clearTimeout(caseStudiesTimeoutRef.current);
+    setIsCaseStudiesOpen(true);
+  };
+  const handleCaseStudiesDropdownMouseLeave = () => {
+    caseStudiesTimeoutRef.current = setTimeout(() => setIsCaseStudiesOpen(false), 200);
+  };
+
   const dropdownVariants: Variants = {
     hidden: { opacity: 0, y: -12, scale: 0.97 },
     visible: {
@@ -315,6 +390,7 @@ export default function Nav() {
     setIsSolutionsOpen(false);
     setIsPlatformsOpen(false);
     setIsIndustriesOpen(false);
+     setIsCaseStudiesOpen(false); 
   };
 
   return (
@@ -681,6 +757,105 @@ export default function Nav() {
             </AnimatePresence>
           </div>
 
+
+
+          {/* ── Case Studies Dropdown ── */}
+          <div
+            className="relative"
+            onMouseEnter={handleCaseStudiesMouseEnter}
+            onMouseLeave={handleCaseStudiesMouseLeave}
+          >
+            <button
+              className="flex items-center gap-1 text-gray-700 hover:text-black transition-colors"
+              onClick={() => setIsCaseStudiesOpen(!isCaseStudiesOpen)}
+            >
+              Case Studies
+              <ChevronDown
+                className={`h-4 w-4 transition-transform duration-300 ${
+                  isCaseStudiesOpen ? 'rotate-180 text-brand' : ''
+                }`}
+              />
+            </button>
+
+            <AnimatePresence>
+              {isCaseStudiesOpen && (
+                <motion.div
+                  variants={dropdownVariants}
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                  className="absolute left-0 top-full mt-3 w-[560px] rounded-2xl border border-gray-200 bg-white shadow-2xl shadow-black/10 overflow-hidden"
+                  onMouseEnter={handleCaseStudiesDropdownMouseEnter}
+                  onMouseLeave={handleCaseStudiesDropdownMouseLeave}
+                >
+                  <div className="p-4 max-h-[80vh] overflow-y-auto">
+                    <div className="flex items-center gap-2 px-3 pb-3 border-b border-gray-100">
+                      <Sparkles className="h-4 w-4 text-brand" />
+                      <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.12em]">
+                        Case Studies
+                      </p>
+                      <span className="text-[10px] font-medium text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full ml-auto">
+                        {caseStudiesData.length}
+                      </span>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-2 pt-3">
+                      {caseStudiesData.map((study, idx) => {
+                        const Icon = study.icon || Sparkles;
+                        return (
+                          <motion.div
+                            key={study.slug}
+                            custom={idx}
+                            variants={serviceItemVariants}
+                            initial="hidden"
+                            animate="visible"
+                          >
+                            <Link
+                              href={`/case-studies/${study.slug}`}
+                              className="group flex items-start gap-3 p-3 rounded-xl border border-transparent hover:border-gray-200 hover:bg-gray-50 transition-all duration-200"
+                              onClick={() => setIsCaseStudiesOpen(false)}
+                            >
+                              <div className="mt-0.5 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 bg-brand/20 text-brand">
+                                <Icon className="h-4 w-4" />
+                              </div>
+                              <div className="min-w-0">
+                                <span className="text-sm font-medium text-gray-700 group-hover:text-brand transition-colors block leading-tight">
+                                  {study.title}
+                                </span>
+                                <p className="text-xs text-gray-400 mt-0.5 leading-snug line-clamp-2">
+                                  {study.description}
+                                </p>
+                              </div>
+                            </Link>
+                          </motion.div>
+                        );
+                      })}
+                    </div>
+
+                    <div className="px-3 pt-3 mt-1 border-t border-gray-100 flex items-center justify-between">
+                      <Link
+                        href="/case-studies"
+                        className="text-xs font-semibold text-gray-700 hover:text-brand flex items-center gap-1"
+                        onClick={() => setIsCaseStudiesOpen(false)}
+                      >
+                        View all case studies <ArrowRight className="h-3 w-3" />
+                      </Link>
+                      <Link
+                        href="/contact"
+                        className="text-xs font-semibold text-brand hover:underline flex items-center gap-1"
+                        onClick={() => setIsCaseStudiesOpen(false)}
+                      >
+                        Discuss your project <ArrowRight className="h-3 w-3" />
+                      </Link>
+                    </div>
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
+
+
           {/* ── About & Contact Links ── */}
           <Link href="/about" className="text-gray-700 hover:text-black transition-colors">
             About
@@ -905,6 +1080,49 @@ export default function Nav() {
                       ))}
                     </div>
                   ))}
+                </div>
+              )}
+            </div>
+
+            {/* Mobile Case Studies */}
+            <div>
+              <button
+                className="flex items-center justify-between w-full text-gray-700 hover:text-black transition-colors"
+                onClick={() => setIsMobileCaseStudiesOpen(!isMobileCaseStudiesOpen)}
+              >
+                <span className="font-medium">Case Studies</span>
+                <ChevronDown className={`h-4 w-4 transition-transform ${isMobileCaseStudiesOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {isMobileCaseStudiesOpen && (
+                <div className="mt-2 pl-4 space-y-2 border-l border-gray-200">
+                  <div className="flex items-center gap-2 mb-1">
+                    <Sparkles className="h-4 w-4 text-brand" />
+                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
+                      Case Studies
+                    </p>
+                  </div>
+                  {caseStudiesData.map((study, idx) => {
+                    const Icon = study.icon || Sparkles;
+                    return (
+                      <Link
+                        key={idx}
+                        href={`/case-studies/${study.slug}`}
+                        className="flex items-start gap-3 py-2 px-3 rounded-lg hover:bg-brand/10 transition-colors"
+                        onClick={() => {
+                          setIsMobileMenuOpen(false);
+                          setIsMobileCaseStudiesOpen(false);
+                        }}
+                      >
+                        <div className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 bg-brand/20 text-brand text-xs mt-0.5">
+                          <Icon className="h-3.5 w-3.5" />
+                        </div>
+                        <div className="min-w-0">
+                          <p className="text-sm font-medium text-gray-700">{study.title}</p>
+                          <p className="text-xs text-gray-400">{study.description}</p>
+                        </div>
+                      </Link>
+                    );
+                  })}
                 </div>
               )}
             </div>
