@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Marker } from './Shared';
 import type { Block, Part } from '@/content/case-studies/clickmasters-ai-lead-response-case-study-kit';
@@ -118,6 +119,145 @@ function EditorialTable({ rows }: { rows: string[][] }) {
 }
 
 // --------------------------------------------------------------------------- //
+//  Editorial list                                                             //
+// --------------------------------------------------------------------------- //
+
+function EditorialList({ items, ordered = false }: { items: string[]; ordered?: boolean }) {
+  const ListTag = ordered ? 'ol' : 'ul';
+
+  return (
+    <ListTag className="mt-5 space-y-3 max-w-4xl">
+      {items.map((item, i) => (
+        <motion.li
+          key={i}
+          initial={{ opacity: 0, x: -8 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{
+            duration: 0.4,
+            delay: Math.min(i * 0.05, 0.4),
+            ease: [0.16, 1, 0.3, 1],
+          }}
+          className="group flex items-start gap-4 text-sm md:text-base leading-relaxed"
+          style={{ color: 'rgba(0,0,0,0.65)' }}
+        >
+          {ordered ? (
+            <span
+              className="font-mono text-xs tabular-nums pt-1 shrink-0"
+              style={{ color: 'var(--brand)' }}
+            >
+              {String(i + 1).padStart(2, '0')}
+            </span>
+          ) : (
+            <span
+              className="mt-[0.6em] size-1.5 shrink-0 rounded-full transition-transform duration-300 group-hover:scale-125"
+              style={{ backgroundColor: 'var(--brand)' }}
+            />
+          )}
+          <span>{item}</span>
+        </motion.li>
+      ))}
+    </ListTag>
+  );
+}
+
+// --------------------------------------------------------------------------- //
+//  Code block — black background                                              //
+// --------------------------------------------------------------------------- //
+
+function CodeBlock({
+  code,
+  language = 'text',
+  filename,
+}: {
+  code: string;
+  language?: string;
+  filename?: string;
+}) {
+  const [copied, setCopied] = useState(false);
+
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(code);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1600);
+    } catch {
+      /* clipboard unavailable */
+    }
+  };
+
+  const lines = code.replace(/\n$/, '').split('\n');
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 14 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+      className="mt-8 max-w-4xl overflow-hidden rounded-lg bg-black"
+    >
+      {/* Header */}
+      <div
+        className="flex items-center justify-between gap-4 px-4 md:px-5 py-2.5 border-b"
+        style={{ borderColor: 'rgba(255,255,255,0.1)' }}
+      >
+        <div className="flex items-center gap-3 min-w-0">
+          <span
+            className="font-mono text-[11px] uppercase tracking-[0.15em]"
+            style={{ color: 'var(--brand)' }}
+          >
+            {language}
+          </span>
+          {filename && (
+            <span
+              className="font-mono text-[11px] truncate"
+              style={{ color: 'rgba(255,255,255,0.45)' }}
+            >
+              {filename}
+            </span>
+          )}
+        </div>
+
+        <button
+          type="button"
+          onClick={copy}
+          className="shrink-0 font-mono text-[11px] uppercase tracking-[0.15em] transition-colors duration-200 hover:text-white"
+          style={{ color: copied ? 'var(--brand)' : 'rgba(255,255,255,0.45)' }}
+        >
+          {copied ? 'Copied' : 'Copy'}
+        </button>
+      </div>
+
+      {/* Code body */}
+      <div className="overflow-x-auto">
+        <pre className="py-4 text-[12.5px] md:text-[13.5px] leading-relaxed">
+          <code className="block font-mono">
+            {lines.map((line, i) => (
+              <span key={i} className="flex">
+                {/* Line number */}
+                <span
+                  className="select-none w-10 md:w-12 shrink-0 pr-4 text-right tabular-nums"
+                  style={{ color: 'rgba(255,255,255,0.25)' }}
+                >
+                  {i + 1}
+                </span>
+                {/* Line content */}
+                <span
+                  className="pr-4 whitespace-pre"
+                  style={{ color: 'rgba(235,240,245,0.92)' }}
+                >
+                  {line || ' '}
+                </span>
+              </span>
+            ))}
+          </code>
+        </pre>
+      </div>
+    </motion.div>
+  );
+}
+
+// --------------------------------------------------------------------------- //
 //  Block renderer                                                             //
 // --------------------------------------------------------------------------- //
 
@@ -185,6 +325,46 @@ function BlockView({ block }: { block: Block }) {
     return <EditorialTable rows={block.rows} />;
   }
 
+  if (block.kind === 'list') {
+    return <EditorialList items={block.items} ordered={block.ordered} />;
+  }
+
+  if (block.kind === 'code') {
+    return (
+      <CodeBlock
+        code={block.code}
+        language={block.language}
+        filename={block.filename}
+      />
+    );
+  }
+
+  if (block.kind === 'image') {
+    return (
+      <motion.figure
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.5 }}
+        className="mt-8 max-w-4xl"
+      >
+        <Image
+          src={block.src}
+          alt={block.alt}
+          width={block.width}
+          height={block.height}
+          sizes="(max-width: 768px) 100vw, 896px"
+          className="h-auto w-full rounded-lg"
+        />
+        {block.caption && (
+          <figcaption className="mt-3 text-sm text-gray-500">
+            {block.caption}
+          </figcaption>
+        )}
+      </motion.figure>
+    );
+  }
+
   return null;
 }
 
@@ -200,7 +380,6 @@ export function PartsTabs({ parts }: { parts: Part[] }) {
   return (
     <section
       className="py-16 md:py-24 border-t bg-paper"
-    
     >
       <div className="mx-auto max-w-[90vw] md:max-w-[84vw] px-4 md:px-6">
         <motion.div

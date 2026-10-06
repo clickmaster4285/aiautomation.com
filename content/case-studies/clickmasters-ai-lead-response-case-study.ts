@@ -5,6 +5,9 @@ export type Block =
   | { kind: "page"; number: number }
   | { kind: "heading"; level: number; text: string }
   | { kind: "para"; text: string }
+  | { kind: "list"; items: string[]; ordered?: boolean }
+  | { kind: "code"; code: string; language?: string; filename?: string }
+  | { kind: "image"; src: string; alt: string; width: number; height: number; caption?: string }
   | { kind: "table"; rows: string[][] };
 
 export type Part = {
@@ -43,21 +46,27 @@ export const caseStudy: CaseStudy = {
     status: "demo",
     readingMinutes: 9
   },
-  seo: {
-    url: "https://clickmastersaiautomation.com/case-studies/ai-receptionist-lead-response-automation",
-    canonical: "https://clickmastersaiautomation.com/case-studies/ai-receptionist-lead-response-automation",
-    title: "AI Receptionist for Small Business | Clickmasters Case Study",
+
+  
+seo: {
+  url: "https://clickmastersaiautomation.com/case-studies/ai-receptionist-lead-response-automation",
+  canonical: "https://clickmastersaiautomation.com/case-studies/ai-receptionist-lead-response-automation",
+   title: "AI Receptionist for Small Business | Clickmasters Case Study",
     description: "How Clickmasters built an AI receptionist that answers calls, texts back missed calls, replies to emails and books jobs for trades. Call the demo line.",
     h1: "AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds",
     robots: "index, follow",
-    og: {
-      type: "article",
-      title: "We built an AI receptionist that answers every call, text and email in seconds",
-      description: "An AI phone agent, missed-call text-back and instant replies for trades businesses, tested on 40 scripted leads. See the build and call the demo line.",
-      image: "/images/case-studies/ai-receptionist-lead-response-automation/og-ai-receptionist-case-study.jpg",
-      imageWidth: 1200,
-      imageHeight: 630
-    },
+  og: {
+    type: "article",
+    title:
+      "We built an AI receptionist that answers every call, text and email in seconds",
+    description:
+      "An AI phone agent, missed-call text-back and instant replies for trades businesses, tested on 40 scripted leads. See the build and call the demo line.",
+    image:
+      "/images/case-studies/ai-receptionist-lead-response-automation/og-ai-receptionist-case-study.jpg",
+    imageWidth: 1200,
+    imageHeight: 630,
+  },
+
     twitter: {
       card: "summary_large_image"
     },
@@ -152,7 +161,11 @@ export const caseStudy: CaseStudy = {
       }
     ]
   },
-  hero: {
+
+
+  
+  
+    hero: {
     eyebrow: "Case study · Demo build",
     h1: "AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds",
     intro: "Clickmasters built an AI receptionist and lead response system for trades and service businesses such as plumbers, electricians and HVAC contractors. It answers the phone when the owner cannot, texts back missed calls, replies to texts and emails within seconds, qualifies the job and books it into the calendar. Emergencies go straight to a person, and every lead lands in one record with the recording, the transcript and a summary.",
@@ -196,6 +209,11 @@ export const caseStudy: CaseStudy = {
       href: "/free-automation-audit"
     }
   },
+
+
+
+
+
   challenge: {
     h2: "The challenge: the job goes to whoever answers first",
     lead: "A plumber on a roof cannot answer the phone. An electrician under a house does not see the text. By the time they call back, the customer has rung the next name on the list.",
@@ -558,24 +576,24 @@ export const caseStudy: CaseStudy = {
           text: "The design rests on five decisions:"
         },
         {
-          kind: "para",
-          text: "One intake layer for every channel. Calls, missed calls, voicemail, SMS, email, web forms, web chat, WhatsApp and ad lead forms enter through the same gateway and land on the same record."
+          kind: "list",
+          items: ["One intake layer for every channel. Calls, missed calls, voicemail, SMS, email, web forms, web chat, WhatsApp and ad lead forms enter through the same gateway and land on the same record."]
         },
         {
-          kind: "para",
-          text: "Two AI agents, one brain. A real-time voice agent and a text agent share the same business knowledge, qualification rules and guardrails."
+          kind: "list",
+          items: ["Two AI agents, one brain. A real-time voice agent and a text agent share the same business knowledge, qualification rules and guardrails."]
         },
         {
-          kind: "para",
-          text: "Rules in code where it matters. Service area, opening hours, prices, consent, opt-outs and emergency routing never depend on a prompt."
+          kind: "list",
+          items: ["Rules in code where it matters. Service area, opening hours, prices, consent, opt-outs and emergency routing never depend on a prompt."]
         },
         {
-          kind: "para",
-          text: "A system of record. Every lead becomes a contact, an opportunity and a timeline, with transcript, summary, score, owner and source."
+          kind: "list",
+          items: ["A system of record. Every lead becomes a contact, an opportunity and a timeline, with transcript, summary, score, owner and source."]
         },
         {
-          kind: "para",
-          text: "Production discipline. Queues, retries, fallbacks, monitoring, a regression suite of scripted leads, and a human takeover path for every conversation."
+          kind: "list",
+          items: ["Production discipline. Queues, retries, fallbacks, monitoring, a regression suite of scripted leads, and a human takeover path for every conversation."]
         },
         {
           kind: "para",
@@ -607,16 +625,16 @@ export const caseStudy: CaseStudy = {
           text: "A service business rarely has a lead problem. It has a response problem. On an ordinary day the same company receives:"
         },
         {
-          kind: "para",
-          text: "A call while every technician is on a job, and another at 9:30 pm"
+          kind: "list",
+          items: ["A call while every technician is on a job, and another at 9:30 pm"]
         },
         {
-          kind: "para",
-          text: "A Facebook Lead Ad submission and a website form"
+          kind: "list",
+          items: ["A Facebook Lead Ad submission and a website form"]
         },
         {
-          kind: "para",
-          text: "A text to the office mobile, an email to info@ and a website chat message"
+          kind: "list",
+          items: ["A text to the office mobile, an email to info@ and a website chat message"]
         },
         {
           kind: "heading",
@@ -664,14 +682,23 @@ export const caseStudy: CaseStudy = {
           level: 2,
           text: "Solution overview: one engine behind every channel"
         },
+
+
+
         {
           kind: "para",
           text: "The engine is a lead core with channels above it and the business's own systems below it. AI agents do the talking, but they can only act through coded rules and the business's own knowledge."
         },
-        {
-          kind: "para",
-          text: "System architecture: seven layers from channels to analytics"
-        },
+       
+         {
+          kind: "image",
+   src: "/case-study/solution.png",
+   alt: "Architecture diagram showing communication channels feeding a lead core, with AI agents, business rules and a knowledge base connected to integrations and analytics.",
+   width: 1016,
+   height: 748,
+ },
+
+
         {
           kind: "para",
           text: "Read it top to bottom. A channel event is verified and queued, matched to one person in the lead core, handled by an AI agent, and written back to the calendar, the CRM and the analytics store. Part 3 details each agent and part 4 the stack behind each layer."
@@ -685,10 +712,15 @@ export const caseStudy: CaseStudy = {
           kind: "para",
           text: "A lead passes through 17 processing steps, grouped here into five stages. The loop at the bottom is what turns a response tool into a revenue system."
         },
-        {
-          kind: "para",
-          text: "Lead lifecycle: five stages and a reactivation loop"
-        },
+         {
+          kind: "image",
+   src: "/case-study/lifecycle.png",
+   alt: "Architecture diagram showing communication channels feeding a lead core, with AI agents, business rules and a knowledge base connected to integrations and analytics.",
+   width: 1016,
+   height: 748,
+ },
+
+       
         {
           kind: "para",
           text: "The full sequence is: lead source, omnichannel intake, identity resolution, CRM contact, intent detection, qualification, urgency detection, spam detection, lead scoring, AI conversation, the booking, quote or dispatch decision, calendar and CRM integration, automated follow-up, human escalation, conversion, attribution and analytics, then reactivation, review and referral."
@@ -720,9 +752,13 @@ export const caseStudy: CaseStudy = {
           text: "Implementation roadmap"
         },
         {
-          kind: "para",
-          text: "Implementation roadmap: six phases with exit gates"
-        },
+          kind: "image",
+   src: "/case-study/implementation.png",
+   alt: "Implementation roadmap showing six phases with exit gates",
+   width: 1016,
+   height: 748,
+ },
+      
         {
           kind: "para",
           text: "Each phase ships something a business can use, so value does not wait for phase 6. Indicative durations are in part 2, and the phase 1 discovery checklist covers ten items: lead sources, current CRM, phone system, business hours, service areas, qualification logic, calendars, staff, escalation rules and compliance requirements."
@@ -758,20 +794,28 @@ export const caseStudy: CaseStudy = {
           text: "We would rather show the working than make the claim, so this section is short."
         },
         {
-          kind: "para",
-          text: "One team for the whole funnel. Clickmasters is a 13-year-old digital agency and software house. The people who build the automation also run the SEO, paid media and CRM work that produces the leads."
+          kind: "list",
+          items: [
+            "One team for the whole funnel. Clickmasters is a 13-year-old digital agency and software house. The people who build the automation also run the SEO, paid media and CRM work that produces the leads."
+          ]
         },
         {
-          kind: "para",
-          text: "Engineering before prompts. Decisions live in code, every step has a failure path, and scripted leads are replayed before any change goes live."
+          kind: "list",
+          items: [
+            "Engineering before prompts. Decisions live in code, every step has a failure path, and scripted leads are replayed before any change goes live."
+          ]
         },
         {
-          kind: "para",
-          text: "Honest numbers. Targets, modelled scenarios and demonstration results are labelled as such. Nothing in this document is presented as client history."
+          kind: "list",
+          items: [
+            "Honest numbers. Targets, modelled scenarios and demonstration results are labelled as such. Nothing in this document is presented as client history."
+          ]
         },
         {
-          kind: "para",
-          text: "A build path, not a slide. Part 9 is a specification our developers can start on tomorrow."
+          kind: "list",
+          items: [
+            "A build path, not a slide. Part 9 is a specification our developers can start on tomorrow."
+          ]
         },
         {
           kind: "heading",
@@ -823,10 +867,16 @@ export const caseStudy: CaseStudy = {
           level: 2,
           text: "Architecture snapshot"
         },
-        {
-          kind: "para",
-          text: "Architecture snapshot: four stages over a reliability layer"
-        },
+         {
+          kind: "image",
+   src: "/case-study/architecture.png",
+   alt: "Architecture diagram showing communication channels feeding a lead core, with AI agents, business rules and a knowledge base connected to integrations and analytics.",
+   width: 1016,
+   height: 748,
+ },
+
+
+      
         {
           kind: "para",
           text: "Decisions live in code and versioned prompts, not in a tangle of no-code steps. That is what lets us test the whole system with scripted leads before a real customer calls."
@@ -841,40 +891,56 @@ export const caseStudy: CaseStudy = {
           text: "Times are design targets, not measured results."
         },
         {
-          kind: "para",
-          text: "0 s. A customer calls a plumber's number. The owner is on a job and the call rings out."
+          kind: "list",
+          items: [
+            "0 s. A customer calls a plumber's number. The owner is on a job and the call rings out."
+          ]
         },
         {
-          kind: "para",
-          text: "+2 s. The carrier reports the call as unanswered. The engine checks five things in code: business-hours rule, mobile number, not opted out, not a known spam caller, not already texted in the last 24 hours."
+          kind: "list",
+          items: [
+            "+2 s. The carrier reports the call as unanswered. The engine checks five things in code: business-hours rule, mobile number, not opted out, not a known spam caller, not already texted in the last 24 hours."
+          ]
         },
         {
-          kind: "para",
-          text: "+5 s. The caller is matched to an existing contact by phone number, or a new contact is created. The missed call is logged on the lead timeline."
+          kind: "list",
+          items: [
+            "+5 s. The caller is matched to an existing contact by phone number, or a new contact is created. The missed call is logged on the lead timeline."
+          ]
         },
         {
-          kind: "para",
-          text: "+10 s. A text goes out: \"Hi, this is the assistant for [Business]. Sorry we missed your call. What do you need help with? Reply STOP to opt out.\""
+          kind: "list",
+          items: [
+            "+10 s. A text goes out: \"Hi, this is the assistant for [Business]. Sorry we missed your call. What do you need help with? Reply STOP to opt out.\""
+          ]
         },
         {
-          kind: "para",
-          text: "Customer replies \"hot water's out\". The AI classifies the service as water heater and the urgency as same-day, then asks for the postcode."
+          kind: "list",
+          items: [
+            "Customer replies \"hot water's out\". The AI classifies the service as water heater and the urgency as same-day, then asks for the postcode."
+          ]
         },
         {
-          kind: "para",
-          text: "Service area check passes in code. The AI offers two real openings from the calendar."
+          kind: "list",
+          items: [
+            "Service area check passes in code. The AI offers two real openings from the calendar."
+          ]
         },
         {
-          kind: "para",
-          text: "Customer picks one. The booking is created, a confirmation text is sent, the opportunity moves to Booked in the CRM, and the owner gets a summary."
+          kind: "list",
+          items: [
+            "Customer picks one. The booking is created, a confirmation text is sent, the opportunity moves to Booked in the CRM, and the owner gets a summary."
+          ]
         },
         {
-          kind: "para",
-          text: "If the customer goes quiet, nudges go out at 30 minutes, 24 hours and 72 hours. All of them stop on a reply, a booking or STOP."
+          kind: "list",
+          items: ["If the customer goes quiet, nudges go out at 30 minutes, 24 hours and 72 hours. All of them stop on a reply, a booking or STOP."]
         },
         {
-          kind: "para",
-          text: "If anything fails, an undelivered text, a calendar outage or a low-confidence AI answer, the step is retried and queued, and a callback task with the full context reaches staff inside an SLA timer."
+          kind: "list",
+          items: [
+            "If anything fails, an undelivered text, a calendar outage or a low-confidence AI answer, the step is retried and queued, and a callback task with the full context reaches staff inside an SLA timer."
+          ]
         },
         {
           kind: "heading",
@@ -886,40 +952,58 @@ export const caseStudy: CaseStudy = {
           text: "The small demo you asked for is our first milestone. It is fully specified, down to stack, prompts, data model and test scripts, and takes about 15 working days to build. In 5 to 10 minutes it shows:"
         },
         {
-          kind: "para",
-          text: "You call the demo number, and the AI agent answers and says it is an AI assistant."
+          kind: "list",
+          items: [
+            "You call the demo number, and the AI agent answers and says it is an AI assistant."
+          ]
         },
         {
-          kind: "para",
-          text: "It finds out what you need, asks the qualifying questions and checks the service area."
+          kind: "list",
+          items: [
+            "It finds out what you need, asks the qualifying questions and checks the service area."
+          ]
         },
         {
-          kind: "para",
-          text: "A contact appears in the CRM view while you are still talking."
+          kind: "list",
+          items: [
+            "A contact appears in the CRM view while you are still talking."
+          ]
         },
         {
-          kind: "para",
-          text: "It offers real calendar openings and books one."
+          kind: "list",
+          items: [
+            "It offers real calendar openings and books one."
+          ]
         },
         {
-          kind: "para",
-          text: "A confirmation text reaches your phone."
+          kind: "list",
+          items: [
+            "A confirmation text reaches your phone."
+          ]
         },
         {
-          kind: "para",
-          text: "The transcript and an AI summary appear on the lead record."
+          kind: "list",
+          items: [
+            "The transcript and an AI summary appear on the lead record."
+          ]
         },
         {
-          kind: "para",
-          text: "The opportunity moves into the Booked stage of the pipeline."
+          kind: "list",
+          items: [
+            "The opportunity moves into the Booked stage of the pipeline."
+          ]
         },
         {
-          kind: "para",
-          text: "The dashboard records the lead, the response time and the booking."
+          kind: "list",
+          items: [
+            "The dashboard records the lead, the response time and the booking."
+          ]
         },
         {
-          kind: "para",
-          text: "Then the second scene: you call, hang up, and a text arrives within seconds. You reply, the AI qualifies you by SMS and books the job."
+          kind: "list",
+          items: [
+            "Then the second scene: you call, hang up, and a text arrives within seconds. You reply, the AI qualifies you by SMS and books the job."
+          ]
         },
         {
           kind: "heading",
@@ -956,24 +1040,34 @@ export const caseStudy: CaseStudy = {
           text: "How it fails safely"
         },
         {
-          kind: "para",
-          text: "Every inbound event is acknowledged in under a second, stored, then processed from a queue. Duplicate webhooks are ignored by idempotency key."
+          kind: "list",
+          items: [
+            "Every inbound event is acknowledged in under a second, stored, then processed from a queue. Duplicate webhooks are ignored by idempotency key."
+          ]
         },
         {
-          kind: "para",
-          text: "Every external call, to a carrier, an AI model, a calendar or a CRM, has a timeout, retries with backoff and a fallback. Voice falls back to voicemail plus text-back. AI falls back to a templated reply and a staff task. A calendar outage becomes \"we will confirm your time\" plus an alert."
+          kind: "list",
+          items: [
+            "Every external call, to a carrier, an AI model, a calendar or a CRM, has a timeout, retries with backoff and a fallback. Voice falls back to voicemail plus text-back. AI falls back to a templated reply and a staff task. A calendar outage becomes \"we will confirm your time\" plus an alert."
+          ]
         },
         {
-          kind: "para",
-          text: "The rules that matter run in code, not in a prompt: service area, opening hours, price list, opt-out and emergency routing."
+          kind: "list",
+          items: [
+            "The rules that matter run in code, not in a prompt: service area, opening hours, price list, opt-out and emergency routing."
+          ]
         },
         {
-          kind: "para",
-          text: "A person can take over any conversation with the full history in front of them, and automation stops the moment they do."
+          kind: "list",
+          items: [
+            "A person can take over any conversation with the full history in front of them, and automation stops the moment they do."
+          ]
         },
         {
-          kind: "para",
-          text: "Cost, latency, failures and escalations are logged per conversation and alert on thresholds."
+          kind: "list",
+          items: [
+            "Cost, latency, failures and escalations are logged per conversation and alert on thresholds."
+          ]
         },
         {
           kind: "heading",
@@ -1002,29 +1096,36 @@ export const caseStudy: CaseStudy = {
           text: "Ongoing support"
         },
         {
-          kind: "para",
-          text: "The retainer you described maps to five things we would commit to:"
+          kind: "list",
+          items: [
+            "The retainer you described maps to five things we would commit to:"
+          ]
         },
         {
-          kind: "heading",
-          level: 3,
-          text: "Monitoring and incident response against agreed response times"
+          kind: "list",
+        
+          items: [
+            "Monitoring and incident response against agreed response times"
+          ]
         },
         {
-          kind: "para",
-          text: "Prompt, knowledge base and workflow changes as each business's services and prices change"
+          kind: "list",
+          items: [
+            "Prompt, knowledge base and workflow changes as each business's services and prices change",
+            "A monthly review of real conversations, with the failure points found and the fixes shipped"
+          ]
         },
         {
-          kind: "para",
-          text: "A monthly review of real conversations, with the failure points found and the fixes shipped"
+          kind: "list",
+          items: [
+            "Regression tests before every model, carrier or platform upgrade"
+          ]
         },
         {
-          kind: "para",
-          text: "Regression tests before every model, carrier or platform upgrade"
-        },
-        {
-          kind: "para",
-          text: "A monthly report per business: leads, response times, bookings, escalations and cost per conversation"
+          kind: "list",
+          items: [
+            "A monthly report per business: leads, response times, bookings, escalations and cost per conversation"
+          ]
         },
         {
           kind: "para",
@@ -1078,10 +1179,15 @@ export const caseStudy: CaseStudy = {
           kind: "para",
           text: "The voice agent is a phone receptionist that can only act through tools the application controls. It talks freely and decides nothing on its own that matters."
         },
-        {
-          kind: "para",
-          text: "AI voice call flow: three decisions, four outcomes"
-        },
+         {
+          kind: "image",
+   src: "/case-study/AI voice agent.png",
+   alt: "Architecture diagram showing communication channels feeding a lead core, with AI agents, business rules and a knowledge base connected to integrations and analytics.",
+   width: 1016,
+   height: 748,
+ },
+
+       
         {
           kind: "para",
           text: "Every branch ends with a logged lead. No path ends in silence."
@@ -1130,40 +1236,58 @@ export const caseStudy: CaseStudy = {
           text: "Missed-call recovery engine"
         },
         {
-          kind: "para",
-          text: "A missed call becomes a text conversation within seconds, or a timed callback task when texting is not allowed. It never becomes nothing."
+          kind: "list",
+          items: [
+            "A missed call becomes a text conversation within seconds, or a timed callback task when texting is not allowed. It never becomes nothing."
+          ]
         },
         {
-          kind: "para",
-          text: "A call ends unanswered, busy, failed or abandoned."
+          kind: "list",
+          items: [
+            "A call ends unanswered, busy, failed or abandoned."
+          ]
         },
         {
-          kind: "para",
-          text: "The engine checks whether the caller may be texted: mobile line, valid number, permitted country, not opted out."
+          kind: "list",
+          items: [
+            "The engine checks whether the caller may be texted: mobile line, valid number, permitted country, not opted out."
+          ]
         },
         {
-          kind: "para",
-          text: "The contact is created or updated, and repeat callers are recognised."
+          kind: "list",
+          items: [
+            "The contact is created or updated, and repeat callers are recognised."
+          ]
         },
         {
-          kind: "para",
-          text: "Spam checks run. Flagged callers get no text."
+          kind: "list",
+          items: [
+            "Spam checks run. Flagged callers get no text."
+          ]
         },
         {
-          kind: "para",
-          text: "The acknowledgement text is sent and the AI SMS conversation begins."
+          kind: "list",
+          items: [
+            "The acknowledgement text is sent and the AI SMS conversation begins."
+          ]
         },
         {
-          kind: "para",
-          text: "The AI identifies the need, qualifies the lead and offers a booking or a callback."
+          kind: "list",
+          items: [
+            "The AI identifies the need, qualifies the lead and offers a booking or a callback."
+          ]
         },
         {
-          kind: "para",
-          text: "An employee is assigned, the CRM is updated and staff are alerted where the rules say so."
+          kind: "list",
+          items: [
+            "An employee is assigned, the CRM is updated and staff are alerted where the rules say so."
+          ]
         },
         {
-          kind: "para",
-          text: "Follow-up continues until a stop condition is met."
+          kind: "list",
+          items: [
+            "Follow-up continues until a stop condition is met."
+          ]
         },
         {
           kind: "table",
@@ -1215,24 +1339,34 @@ export const caseStudy: CaseStudy = {
           text: "Email gets a stricter path than SMS, because emails are longer, less urgent and more often not leads at all."
         },
         {
-          kind: "para",
-          text: "Detect. A classifier labels each inbound email: sales enquiry, existing job, supplier, invoice, newsletter or spam. Only sales enquiries continue."
+          kind: "list",
+          items: [
+            "Detect. A classifier labels each inbound email: sales enquiry, existing job, supplier, invoice, newsletter or spam. Only sales enquiries continue."
+          ]
         },
         {
-          kind: "para",
-          text: "Extract. Contact details, the service requested, intent and urgency go into typed fields."
+          kind: "list",
+          items: [
+            "Extract. Contact details, the service requested, intent and urgency go into typed fields."
+          ]
         },
         {
-          kind: "para",
-          text: "Draft. The reply engine writes an answer from the knowledge base and asks for what is missing."
+          kind: "list",
+          items: [
+            "Draft. The reply engine writes an answer from the knowledge base and asks for what is missing."
+          ]
         },
         {
-          kind: "para",
-          text: "Decide. The confidence value sets the route in the table below."
+          kind: "list",
+          items: [
+            "Decide. The confidence value sets the route in the table below."
+          ]
         },
         {
-          kind: "para",
-          text: "Record. The contact is created or updated, the lead assigned, tasks and follow-ups scheduled."
+          kind: "list",
+          items: [
+            "Record. The contact is created or updated, the lead assigned, tasks and follow-ups scheduled."
+          ]
         },
         {
           kind: "table",
@@ -1256,12 +1390,16 @@ export const caseStudy: CaseStudy = {
           text: "The website assistant is the same reply engine behind a chat widget, so it qualifies, books and escalates exactly as the SMS agent does. Two things are specific to the web."
         },
         {
-          kind: "para",
-          text: "Source is preserved. The widget stores UTM parameters, landing page and referrer on first visit and attaches them to the conversation, so a chat lead is attributed like a form lead."
+          kind: "list",
+          items: [
+            "Source is preserved. The widget stores UTM parameters, landing page and referrer on first visit and attaches them to the conversation, so a chat lead is attributed like a form lead."
+          ]
         },
         {
-          kind: "para",
-          text: "Contact comes early. The assistant asks for a name and a mobile number or email before it goes into detail, so an abandoned chat can still be followed up."
+          kind: "list",
+          items: [
+            "Contact comes early. The assistant asks for a name and a mobile number or email before it goes into detail, so an abandoned chat can still be followed up."
+          ]
         },
         {
           kind: "table",
@@ -1357,36 +1495,52 @@ export const caseStudy: CaseStudy = {
           text: "Routing rules run in a fixed order, and the first rule that matches assigns the lead."
         },
         {
-          kind: "para",
-          text: "Existing customer ownership: the person who already owns the account."
+          kind: "list",
+          items: [
+            "Existing customer ownership: the person who already owns the account."
+          ]
         },
         {
-          kind: "para",
-          text: "Emergency: whoever is on call."
+          kind: "list",
+          items: [
+            "Emergency: whoever is on call."
+          ]
         },
         {
-          kind: "para",
-          text: "Geography: the territory that contains the postcode."
+          kind: "list",
+          items: [
+            "Geography: the territory that contains the postcode."
+          ]
         },
         {
-          kind: "para",
-          text: "Service category and skill: staff qualified for that service."
+          kind: "list",
+          items: [
+            "Service category and skill: staff qualified for that service."
+          ]
         },
         {
-          kind: "para",
-          text: "Language: staff who speak the caller's language, where recorded."
+          kind: "list",
+          items: [
+            "Language: staff who speak the caller's language, where recorded."
+          ]
         },
         {
-          kind: "para",
-          text: "Availability and working hours: only people on shift with calendar capacity."
+          kind: "list",
+          items: [
+            "Availability and working hours: only people on shift with calendar capacity."
+          ]
         },
         {
-          kind: "para",
-          text: "Lead value: high-value tiers go to senior staff."
+          kind: "list",
+          items: [
+            "Lead value: high-value tiers go to senior staff."
+          ]
         },
         {
-          kind: "para",
-          text: "Round robin, weighted by workload: among whoever is left."
+          kind: "list",
+          items: [
+            "Round robin, weighted by workload: among whoever is left."
+          ]
         },
         {
           kind: "para",
@@ -1447,16 +1601,22 @@ export const caseStudy: CaseStudy = {
           text: "Object names follow each vendor's general model and are confirmed against its current API during discovery. Three sync rules hold on every platform:"
         },
         {
-          kind: "para",
-          text: "Writes go through an outbox with retries, so a CRM outage delays the sync and loses nothing."
+          kind: "list",
+          items: [
+            "Writes go through an outbox with retries, so a CRM outage delays the sync and loses nothing."
+          ]
         },
         {
-          kind: "para",
-          text: "A person's edits to owner or stage in the CRM win over the engine's."
+          kind: "list",
+          items: [
+            "A person's edits to owner or stage in the CRM win over the engine's."
+          ]
         },
         {
-          kind: "para",
-          text: "Conversation data flows one way, from the engine to the CRM."
+          kind: "list",
+          items: [
+            "Conversation data flows one way, from the engine to the CRM."
+          ]
         },
         {
           kind: "heading",
@@ -1533,20 +1693,28 @@ export const caseStudy: CaseStudy = {
           text: "Each business has a versioned knowledge layer that the AI reads and never rewrites. It holds thirteen kinds of content: services, pricing rules, service areas, FAQs, policies, opening hours, emergency rules, staff, scheduling rules, promotions, warranty policies, financing information and qualification rules."
         },
         {
-          kind: "para",
-          text: "Structured facts are looked up, not generated. Prices, hours, areas and availability come from tables through tools, so the model cannot improvise them."
+          kind: "list",
+          items: [
+            "Structured facts are looked up, not generated. Prices, hours, areas and availability come from tables through tools, so the model cannot improvise them."
+          ]
         },
         {
-          kind: "para",
-          text: "Unstructured content is retrieved. FAQs and policies are embedded and searched; the passages used are logged with each answer."
+          kind: "list",
+          items: [
+            "Unstructured content is retrieved. FAQs and policies are embedded and searched; the passages used are logged with each answer."
+          ]
         },
         {
-          kind: "para",
-          text: "Small profiles skip retrieval. A typical trades business fits in the prompt, which is simpler and easier to test."
+          kind: "list",
+          items: [
+            "Small profiles skip retrieval. A typical trades business fits in the prompt, which is simpler and easier to test."
+          ]
         },
         {
-          kind: "para",
-          text: "Updates need no retraining. An administrator edits the profile, a new version is saved, the regression scenarios run, and the next conversation uses it."
+          kind: "list",
+          items: [
+            "Updates need no retraining. An administrator edits the profile, a new version is saved, the regression scenarios run, and the next conversation uses it."
+          ]
         }
       ]
     },
@@ -1614,16 +1782,22 @@ export const caseStudy: CaseStudy = {
           text: "Three reasons decide it:"
         },
         {
-          kind: "para",
-          text: "Voice needs engineering control. Guardrails, a test suite and a failure path for every call are hard to guarantee inside a closed workflow builder."
+          kind: "list",
+          items: [
+            "Voice needs engineering control. Guardrails, a test suite and a failure path for every call are hard to guarantee inside a closed workflow builder."
+          ]
         },
         {
-          kind: "para",
-          text: "The lead record is the asset. Owning the data model keeps identity, consent and attribution portable across CRMs."
+          kind: "list",
+          items: [
+            "The lead record is the asset. Owning the data model keeps identity, consent and attribution portable across CRMs."
+          ]
         },
         {
-          kind: "para",
-          text: "Tenants already have tools. Adapters let one business keep GoHighLevel and another keep Jobber."
+          kind: "list",
+          items: [
+            "Tenants already have tools. Adapters let one business keep GoHighLevel and another keep Jobber."
+          ]
         },
         {
           kind: "para",
@@ -1701,16 +1875,22 @@ export const caseStudy: CaseStudy = {
           text: "Three rules sit under the table:"
         },
         {
-          kind: "para",
-          text: "Store first, act second. An inbound event is written before any processing, so a crash loses nothing."
+          kind: "list",
+          items: [
+            "Store first, act second. An inbound event is written before any processing, so a crash loses nothing."
+          ]
         },
         {
-          kind: "para",
-          text: "Every job is idempotent. Replaying the queue cannot double-book or double-text."
+          kind: "list",
+          items: [
+            "Every job is idempotent. Replaying the queue cannot double-book or double-text."
+          ]
         },
         {
-          kind: "para",
-          text: "Failures are visible. Each one writes an automation event, counts against a monitor and reaches a person inside an SLA."
+          kind: "list",
+          items: [
+            "Failures are visible. Each one writes an automation event, counts against a monitor and reaches a person inside an SLA."
+          ]
         },
         {
           kind: "heading",
@@ -1852,36 +2032,52 @@ export const caseStudy: CaseStudy = {
           text: "Security controls"
         },
         {
-          kind: "para",
-          text: "Tenant isolation: a business ID on every row, row-level security in the database, and per-tenant storage paths."
+          kind: "list",
+          items: [
+            "Tenant isolation: a business ID on every row, row-level security in the database, and per-tenant storage paths."
+          ]
         },
         {
-          kind: "para",
-          text: "Role-based access: owner, manager, agent and read-only roles per business, plus a separate platform administrator role."
+          kind: "list",
+          items: [
+            "Role-based access: owner, manager, agent and read-only roles per business, plus a separate platform administrator role."
+          ]
         },
         {
-          kind: "para",
-          text: "Least privilege: restricted API keys per vendor and scoped CRM tokens, held in a secrets manager and never in workflow definitions."
+          kind: "list",
+          items: [
+            "Least privilege: restricted API keys per vendor and scoped CRM tokens, held in a secrets manager and never in workflow definitions."
+          ]
         },
         {
-          kind: "para",
-          text: "Encryption: TLS in transit and encryption at rest for the database and recordings."
+          kind: "list",
+          items: [
+            "Encryption: TLS in transit and encryption at rest for the database and recordings."
+          ]
         },
         {
-          kind: "para",
-          text: "Webhook verification: signatures checked on every inbound request."
+          kind: "list",
+          items: [
+            "Webhook verification: signatures checked on every inbound request."
+          ]
         },
         {
-          kind: "para",
-          text: "Audit log: who viewed, edited, exported or took over a lead."
+          kind: "list",
+          items: [
+            "Audit log: who viewed, edited, exported or took over a lead."
+          ]
         },
         {
-          kind: "para",
-          text: "Retention: recordings 90 days and transcripts 12 months by default, both configurable per business."
+          kind: "list",
+          items: [
+            "Retention: recordings 90 days and transcripts 12 months by default, both configurable per business."
+          ]
         },
         {
-          kind: "para",
-          text: "Redaction: card numbers and similar strings masked in transcripts before storage."
+          kind: "list",
+          items: [
+            "Redaction: card numbers and similar strings masked in transcripts before storage."
+          ]
         },
         {
           kind: "heading",
@@ -2191,20 +2387,28 @@ export const caseStudy: CaseStudy = {
           text: "A customer calls Demo Plumbing Co., nobody answers, and the job is booked by text four minutes later. Times and wording illustrate the design."
         },
         {
-          kind: "para",
-          text: "14:02:10. The call arrives. The owner's phone rings for 15 seconds and is not accepted."
+          kind: "list",
+          items: [
+            "14:02:10. The call arrives. The owner's phone rings for 15 seconds and is not accepted."
+          ]
         },
         {
-          kind: "para",
-          text: "14:02:21. The caller hangs up before the AI greeting finishes. The status callback marks the call abandoned."
+          kind: "list",
+          items: [
+            "14:02:21. The caller hangs up before the AI greeting finishes. The status callback marks the call abandoned."
+          ]
         },
         {
-          kind: "para",
-          text: "14:02:23. Eligibility checks pass: mobile number, no opt-out, not spam, no text in the last 24 hours. The contact and lead are created."
+          kind: "list",
+          items: [
+            "14:02:23. Eligibility checks pass: mobile number, no opt-out, not spam, no text in the last 24 hours. The contact and lead are created."
+          ]
         },
         {
-          kind: "para",
-          text: "14:02:31. The text-back is sent."
+          kind: "list",
+          items: [
+            "14:02:31. The text-back is sent."
+          ]
         },
         {
           kind: "table",
@@ -2251,62 +2455,25 @@ export const caseStudy: CaseStudy = {
             ["Record attribution", "First touch kept; last touch updated; booking and later revenue roll up to the campaign"]
           ]
         },
-        {
-          kind: "para",
-          text: "{"
-        },
-        {
-          kind: "para",
-          text: "\"name\": \"Alex Example\","
-        },
-        {
-          kind: "para",
-          text: "\"phone\": \"+15550142\","
-        },
-        {
-          kind: "para",
-          text: "\"email\": \"alex@example.com\","
-        },
-        {
-          kind: "para",
-          text: "\"service\": \"Heating repair\","
-        },
-        {
-          kind: "para",
-          text: "\"message\": \"Furnace keeps shutting off\","
-        },
-        {
-          kind: "para",
-          text: "\"consent_sms\": true,"
-        },
-        {
-          kind: "para",
-          text: "\"utm_source\": \"google\","
-        },
-        {
-          kind: "para",
-          text: "\"utm_medium\": \"cpc\","
-        },
-        {
-          kind: "para",
-          text: "\"utm_campaign\": \"heating-repair-winter\","
-        },
-        {
-          kind: "para",
-          text: "\"utm_term\": \"furnace repair near me\","
-        },
-        {
-          kind: "para",
-          text: "\"landing_page\": \"/heating-repair\","
-        },
-        {
-          kind: "para",
-          text: "\"referrer\": \"https://www.google.com/\""
-        },
-        {
-          kind: "para",
-          text: "}"
-        },
+      {
+  kind: 'code',
+  language: 'json',
+  filename: 'webhook payload · inbound lead',
+  code: `{
+  "name": "Alex Example",
+  "phone": "+15550142",
+  "email": "alex@example.com",
+  "service": "Heating repair",
+  "message": "Furnace keeps shutting off",
+  "consent_sms": true,
+  "utm_source": "google",
+  "utm_medium": "cpc",
+  "utm_campaign": "heating-repair-winter",
+  "utm_term": "furnace repair near me",
+  "landing_page": "/heating-repair",
+  "referrer": "https://www.google.com/"
+}`,
+},
         {
           kind: "heading",
           level: 2,
@@ -2338,28 +2505,40 @@ export const caseStudy: CaseStudy = {
           text: "Formulas"
         },
         {
-          kind: "para",
-          text: "Recovered conversations = missed calls × recovery rate"
+          kind: "list",
+          items: [
+            "Recovered conversations = missed calls × recovery rate"
+          ]
         },
         {
-          kind: "para",
-          text: "Additional appointments = recovered conversations × booking rate"
+          kind: "list",
+          items: [
+            "Additional appointments = recovered conversations × booking rate"
+          ]
         },
         {
-          kind: "para",
-          text: "Additional jobs from calls = additional appointments × close rate"
+          kind: "list",
+          items: [
+            "Additional jobs from calls = additional appointments × close rate"
+          ]
         },
         {
-          kind: "para",
-          text: "Additional jobs from faster response = other leads × conversion uplift"
+          kind: "list",
+          items: [
+            "Additional jobs from faster response = other leads × conversion uplift"
+          ]
         },
         {
-          kind: "para",
-          text: "Revenue impact = total additional jobs × average job value"
+          kind: "list",
+          items: [
+            "Revenue impact = total additional jobs × average job value"
+          ]
         },
         {
-          kind: "para",
-          text: "ROI = (revenue impact − automation cost) ÷ automation cost"
+          kind: "list",
+          items: [
+            "ROI = (revenue impact − automation cost) ÷ automation cost"
+          ]
         },
         {
           kind: "heading",
@@ -2485,20 +2664,20 @@ export const caseStudy: CaseStudy = {
           text: "Known gaps"
         },
         {
-          kind: "para",
-          text: "Diagrams. Three of the ten requested diagram types are drawn: system architecture, lead lifecycle and AI voice call flow, alongside four others. Missed-call recovery, CRM pipeline, human escalation, data architecture, multi-tenant, failure and retry, and analytics flow are tables or numbered steps for now."
+          kind: "list",
+          items: ["Diagrams. Three of the ten requested diagram types are drawn: system architecture, lead lifecycle and AI voice call flow, alongside four others. Missed-call recovery, CRM pipeline, human escalation, data architecture, multi-tenant, failure and retry, and analytics flow are tables or numbered steps for now."
+       ] },
+        {
+          kind: "list",
+          items: ["Research depth. Twilio, Gemini, Pipecat, LiveKit, Retell AI, Vapi, Bland, GoHighLevel, Cal.com and Postmark were researched from their own pages. HubSpot, Salesforce, ElevenLabs, OpenAI, Anthropic, Zapier, Make, Calendly, Jobber, Housecall Pro and ServiceTitan appear as integration options only."]
         },
         {
-          kind: "para",
-          text: "Research depth. Twilio, Gemini, Pipecat, LiveKit, Retell AI, Vapi, Bland, GoHighLevel, Cal.com and Postmark were researched from their own pages. HubSpot, Salesforce, ElevenLabs, OpenAI, Anthropic, Zapier, Make, Calendly, Jobber, Housecall Pro and ServiceTitan appear as integration options only."
+          kind: "list",
+          items: ["Results. The demonstration build does not exist yet, so there are no demonstration results to report."]
         },
         {
-          kind: "para",
-          text: "Results. The demonstration build does not exist yet, so there are no demonstration results to report."
-        },
-        {
-          kind: "para",
-          text: "Legal. Nothing here is legal advice."
+          kind: "list",
+          items: ["Legal. Nothing here is legal advice."]
         }
       ]
     },
@@ -2521,16 +2700,22 @@ export const caseStudy: CaseStudy = {
           text: "The demo plays three scenes:"
         },
         {
-          kind: "para",
-          text: "AI call. A prospect calls, the AI agent answers, qualifies and books, and the CRM view, confirmation text, transcript, summary, pipeline and dashboard all update."
+          kind: "list",
+          items: [
+            "AI call. A prospect calls, the AI agent answers, qualifies and books, and the CRM view, confirmation text, transcript, summary, pipeline and dashboard all update."
+          ]
         },
         {
-          kind: "para",
-          text: "Missed call. The prospect calls and hangs up. A text arrives, the AI qualifies by SMS and books."
+          kind: "list",
+          items: [
+            "Missed call. The prospect calls and hangs up. A text arrives, the AI qualifies by SMS and books."
+          ]
         },
         {
-          kind: "para",
-          text: "Web lead. A form with UTM parameters is submitted. The lead is deduplicated, attributed, answered by SMS and email, and booked."
+          kind: "list",
+          items: [
+            "Web lead. A form with UTM parameters is submitted. The lead is deduplicated, attributed, answered by SMS and email, and booked."
+          ]
         },
         {
           kind: "heading",
@@ -2538,36 +2723,52 @@ export const caseStudy: CaseStudy = {
           text: "Must have"
         },
         {
-          kind: "para",
-          text: "Two demo tenants, Demo HVAC Co. and Demo Plumbing Co., each with its own number, profile, voice and calendar"
+          kind: "list",
+          items: [
+            "Two demo tenants, Demo HVAC Co. and Demo Plumbing Co., each with its own number, profile, voice and calendar"
+          ]
         },
         {
-          kind: "para",
-          text: "AI voice agent on inbound calls, with owner-first ringing, emergency transfer, recording, transcript and summary"
+          kind: "list",
+          items: [
+            "AI voice agent on inbound calls, with owner-first ringing, emergency transfer, recording, transcript and summary"
+          ]
         },
         {
-          kind: "para",
-          text: "Missed-call text-back and a two-way AI SMS agent"
+          kind: "list",
+          items: [
+            "Missed-call text-back and a two-way AI SMS agent"
+          ]
         },
         {
-          kind: "para",
-          text: "Web form intake with UTM capture, and AI email replies in the same thread"
+          kind: "list",
+          items: [
+            "Web form intake with UTM capture, and AI email replies in the same thread"
+          ]
         },
         {
-          kind: "para",
-          text: "Lead core: identity resolution by phone and email, contact, opportunity, timeline, consent and opt-out"
+          kind: "list",
+          items: [
+            "Lead core: identity resolution by phone and email, contact, opportunity, timeline, consent and opt-out"
+          ]
         },
         {
-          kind: "para",
-          text: "Built-in pipeline board as the CRM view, calendar booking, confirmation messages"
+          kind: "list",
+          items: [
+            "Built-in pipeline board as the CRM view, calendar booking, confirmation messages"
+          ]
         },
         {
-          kind: "para",
-          text: "Lead score, guardrails in code, human takeover of any conversation"
+          kind: "list",
+          items: [
+            "Lead score, guardrails in code, human takeover of any conversation"
+          ]
         },
         {
-          kind: "para",
-          text: "Dashboard, Test Lab, and tokens, minutes, cost and latency logged on every AI action"
+          kind: "list",
+          items: [
+            "Dashboard, Test Lab, and tokens, minutes, cost and latency logged on every AI action"
+          ]
         },
         {
           kind: "heading",
@@ -2575,12 +2776,16 @@ export const caseStudy: CaseStudy = {
           text: "Should have"
         },
         {
-          kind: "para",
-          text: "One external CRM sync (HubSpot free CRM) to prove the adapter pattern"
+          kind: "list",
+          items: [
+            "One external CRM sync (HubSpot free CRM) to prove the adapter pattern"
+          ]
         },
         {
-          kind: "para",
-          text: "A public demo page with the demo number, rate limits and a masked live lead board"
+          kind: "list",
+          items: [
+            "A public demo page with the demo number, rate limits and a masked live lead board"
+          ]
         },
         {
           kind: "heading",
@@ -2588,12 +2793,16 @@ export const caseStudy: CaseStudy = {
           text: "Out of scope for the demo"
         },
         {
-          kind: "para",
-          text: "WhatsApp, web chat widget, live Meta and Google lead webhooks (the web form stands in for them), multi-employee routing, reactivation campaigns, billing"
+          kind: "list",
+          items: [
+            "WhatsApp, web chat widget, live Meta and Google lead webhooks (the web form stands in for them), multi-employee routing, reactivation campaigns, billing"
+          ]
         },
         {
-          kind: "para",
-          text: "Team and time: 2 developers for 15 working days, plus one person for about 3 days to write the tenant profiles and the test scripts."
+          kind: "list",
+          items: [
+            "Team and time: 2 developers for 15 working days, plus one person for about 3 days to write the tenant profiles and the test scripts."
+          ]
         },
         {
           kind: "heading",
@@ -2601,22 +2810,36 @@ export const caseStudy: CaseStudy = {
           text: "Three rules for the build:"
         },
         {
-          kind: "para",
-          text: "Synthetic data only. No real customer data enters the demo."
+          kind: "list",
+          items: [
+            "Synthetic data only. No real customer data enters the demo."
+          ]
         },
         {
-          kind: "para",
-          text: "Every model ID, timer, price and threshold is a config value per tenant."
+          kind: "list",
+          items: [
+            "Every model ID, timer, price and threshold is a config value per tenant."
+          ]
         },
         {
-          kind: "para",
-          text: "Every AI output is stored with its model, prompt version, cost and latency."
+          kind: "list",
+          items: [
+            "Every AI output is stored with its model, prompt version, cost and latency."
+          ]
         },
         {
           kind: "heading",
           level: 2,
           text: "Architecture"
         },
+
+               {
+          kind: "image",
+   src: "/case-study/demo.png",
+   alt: "Architecture diagram showing communication channels feeding a lead core, with AI agents, business rules and a knowledge base connected to integrations and analytics.",
+   width: 1016,
+   height: 748,
+ },
         {
           kind: "para",
           text: "Demo architecture: three channels, two engines, three outcomes, one lead core"
@@ -2730,93 +2953,68 @@ export const caseStudy: CaseStudy = {
           text: "1. Inbound call"
         },
         {
-          kind: "para",
-          text: "Twilio posts to /api/twilio/voice/incoming. The app verifies the signature, finds the tenant by the dialled number and stores the event with the CallSid as its idempotency key."
+          kind: "list",
+          items: [
+            "Twilio posts to /api/twilio/voice/incoming. The app verifies the signature, finds the tenant by the dialled number and stores the event with the CallSid as its idempotency key."
+          ]
         },
         {
-          kind: "para",
-          text: "In owner_first mode the app returns a Dial to the owner's mobile with a 15-second timeout and call screening: the owner presses 1 to accept, so a personal voicemail can never swallow the lead."
+          kind: "list",
+          items: [
+            "In owner_first mode the app returns a Dial to the owner's mobile with a 15-second timeout and call screening: the owner presses 1 to accept, so a personal voicemail can never swallow the lead."
+          ]
         },
         {
-          kind: "para",
-          text: "If the owner does not accept, the after-dial route connects the call to the voice service as a media stream, passing the tenant, the caller and the CallSid."
+          kind: "list",
+          items: [
+            "If the owner does not accept, the after-dial route connects the call to the voice service as a media stream, passing the tenant, the caller and the CallSid."
+          ]
         },
         {
-          kind: "para",
-          text: "The voice service loads the profile version and any existing contact, opens the Gemini Live session, speaks the fixed opening line and starts the recording through Twilio's REST API."
+          kind: "list",
+          items: [
+            "The voice service loads the profile version and any existing contact, opens the Gemini Live session, speaks the fixed opening line and starts the recording through Twilio's REST API."
+          ]
         },
         {
-          kind: "para",
-          text: "The agent qualifies with the trade's question tree and acts only through six tools: save_lead, check_service_area, get_slots, book_slot, transfer_call and end_call."
+          kind: "list",
+          items: [
+            "The agent qualifies with the trade's question tree and acts only through six tools: save_lead, check_service_area, get_slots, book_slot, transfer_call and end_call."
+          ]
         },
         {
-          kind: "para",
-          text: "Each tool is an HTTP call to the app, which enforces the rules and writes an event."
+          kind: "list",
+          items: [
+            "Each tool is an HTTP call to the app, which enforces the rules and writes an event."
+          ]
         },
         {
-          kind: "para",
-          text: "On hang-up the app stores the transcript, asks Gemini 3.8 Flash for a summary and a score, moves the pipeline stage, sends the confirmation text and notifies the owner."
+          kind: "list",
+          items: [
+            "On hang-up the app stores the transcript, asks Gemini 3.8 Flash for a summary and a score, moves the pipeline stage, sends the confirmation text and notifies the owner."
+          ] 
         },
-        {
-          kind: "para",
-          text: "<!-- /api/twilio/voice/incoming : ring the owner first, with screening -->"
-        },
-        {
-          kind: "para",
-          text: "<Response>"
-        },
-        {
-          kind: "para",
-          text: "<Dial timeout=\"15\" action=\"/api/twilio/voice/after-dial\">"
-        },
-        {
-          kind: "para",
-          text: "<Number url=\"/api/twilio/voice/screen\">+15550100</Number>"
-        },
-        {
-          kind: "para",
-          text: "</Dial>"
-        },
-        {
-          kind: "para",
-          text: "</Response>"
-        },
-        {
-          kind: "para",
-          text: "<!-- /api/twilio/voice/after-dial : owner did not accept, connect the AI agent -->"
-        },
-        {
-          kind: "para",
-          text: "<Response>"
-        },
-        {
-          kind: "para",
-          text: "<Connect>"
-        },
-        {
-          kind: "para",
-          text: "<Stream url=\"wss://voice.example.com/ws\">"
-        },
-        {
-          kind: "para",
-          text: "<Parameter name=\"tenant\" value=\"demo-hvac\" />"
-        },
-        {
-          kind: "para",
-          text: "<Parameter name=\"caller\" value=\"+15550123\" />"
-        },
-        {
-          kind: "para",
-          text: "</Stream>"
-        },
-        {
-          kind: "para",
-          text: "</Connect>"
-        },
-        {
-          kind: "para",
-          text: "</Response>"
-        },
+       {
+  kind: 'code',
+  language: 'xml',
+  filename: '/api/twilio/voice/incoming → after-dial',
+  code: `<!-- /api/twilio/voice/incoming : ring the owner first, with screening -->
+<Response>
+  <Dial timeout="15" action="/api/twilio/voice/after-dial">
+    <Number url="/api/twilio/voice/screen">+15550100</Number>
+  </Dial>
+</Response>
+
+<!-- /api/twilio/voice/after-dial : owner did not accept, connect the AI agent -->
+<Response>
+  <Connect>
+    <Stream url="wss://voice.example.com/ws">
+      <Parameter name="tenant" value="demo-hvac" />
+      <Parameter name="caller" value="+15550123" />
+    </Stream>
+  </Connect>
+</Response>`,
+},
         {
           kind: "heading",
           level: 3,
@@ -2827,27 +3025,34 @@ export const caseStudy: CaseStudy = {
           text: "The call status callback marks a call as missed or abandoned when nobody answered, the stream failed, or the caller left within 20 seconds without a booking or a hand-off. A text-back is queued only if all five checks pass:"
         },
         {
-          kind: "heading",
-          level: 3,
-          text: "The number is a mobile"
+          kind: "list",
+          items: [
+            "The number is a mobile"
+          ]
         },
         {
-          kind: "heading",
-          level: 3,
-          text: "The contact has not opted out"
+          kind: "list",
+          items: [
+            "The contact has not opted out"
+          ]
         },
         {
-          kind: "heading",
-          level: 3,
-          text: "The caller is not flagged as spam"
+          kind: "list",
+          items: [
+            "The caller is not flagged as spam"
+          ]
         },
         {
-          kind: "para",
-          text: "No text-back went to this number in the last 24 hours"
+          kind: "list",
+          items: [
+            "No text-back went to this number in the last 24 hours"
+          ]
         },
         {
-          kind: "para",
-          text: "The tenant's missed-call rule allows it at this hour"
+          kind: "list",
+          items: [
+            "The tenant's missed-call rule allows it at this hour"
+          ]
         },
         {
           kind: "para",
@@ -2859,24 +3064,34 @@ export const caseStudy: CaseStudy = {
           text: "3. Text, email and web form replies"
         },
         {
-          kind: "para",
-          text: "The inbound event is stored, and the sender is matched to a contact by E.164 phone number or email address."
+          kind: "list",
+          items: [
+            "The inbound event is stored, and the sender is matched to a contact by E.164 phone number or email address."
+          ]
         },
         {
-          kind: "para",
-          text: "The engine loads the profile version, the lead, the last 20 messages and the next six open calendar slots."
+          kind: "list",
+          items: [
+            "The engine loads the profile version, the lead, the last 20 messages and the next six open calendar slots."
+          ]
         },
         {
-          kind: "para",
-          text: "Gemini 3.8 Flash returns JSON: the reply, the extracted lead fields, the intent, the next action and a confidence value."
+          kind: "list",
+          items: [
+            "Gemini 3.8 Flash returns JSON: the reply, the extracted lead fields, the intent, the next action and a confidence value."
+          ]
         },
         {
-          kind: "para",
-          text: "Seven guards run in code: price, slot, service area and hours, emergency, opt-out, confidence and loop."
+          kind: "list",
+          items: [
+            "Seven guards run in code: price, slot, service area and hours, emergency, opt-out, confidence and loop."
+          ]
         },
         {
-          kind: "para",
-          text: "The reply is sent, or the lead is escalated. Either way an event is written with model, prompt version, cost and latency."
+          kind: "list",
+          items: [
+            "The reply is sent, or the lead is escalated. Either way an event is written with model, prompt version, cost and latency."
+          ]
         },
         {
           kind: "para",
@@ -2914,102 +3129,51 @@ export const caseStudy: CaseStudy = {
           level: 3,
           text: "Voice agent system prompt (v1)"
         },
-        {
-          kind: "para",
-          text: "You are the phone assistant for {{business_name}}, a {{trade}} company. You are an AI assistant, not a person."
-        },
-        {
-          kind: "heading",
-          level: 3,
-          text: "Opening line, spoken exactly once at the start:"
-        },
-        {
-          kind: "para",
-          text: "\"Thanks for calling {{business_name}}. I'm the AI assistant, and this call is recorded. How can I help?\""
-        },
-        {
-          kind: "heading",
-          level: 3,
-          text: "How you talk"
-        },
-        {
-          kind: "para",
-          text: "- One short sentence at a time. One question at a time. Plain words."
-        },
-        {
-          kind: "para",
-          text: "- If the caller interrupts, stop and listen."
-        },
-        {
-          kind: "para",
-          text: "- Read the phone number and the address back before you book."
-        },
-        {
-          kind: "para",
-          text: "- If asked whether you are a robot or an AI, say yes."
-        },
-        {
-          kind: "para",
-          text: "What you collect, in this order"
-        },
-        {
-          kind: "para",
-          text: "{{qualification_tree}}"
-        },
-        {
-          kind: "heading",
-          level: 3,
-          text: "What you may say"
-        },
-        {
-          kind: "para",
-          text: "- Only facts from the business profile below. If the answer is not there, say the team will confirm, and call save_lead with the open question."
-        },
-        {
-          kind: "para",
-          text: "- Prices: only the listed call-out fee and listed prices. Never estimate the price of a job."
-        },
-        {
-          kind: "para",
-          text: "- Never give technical, safety, legal or medical advice."
-        },
-        {
-          kind: "para",
-          text: "When to hand off, immediately"
-        },
-        {
-          kind: "para",
-          text: "- Any emergency in the emergency rules: say you are connecting them now, then call transfer_call."
-        },
-        {
-          kind: "para",
-          text: "- The caller asks for a person, is upset, or you have misunderstood twice: call transfer_call."
-        },
-        {
-          kind: "para",
-          text: "Booking"
-        },
-        {
-          kind: "para",
-          text: "- Call check_service_area before you offer a time."
-        },
-        {
-          kind: "para",
-          text: "- Call get_slots, offer two times, and call book_slot only after the caller picks one."
-        },
-        {
-          kind: "para",
-          text: "- After booking, repeat the day and time and say a confirmation text is on its way."
-        },
-        {
-          kind: "heading",
-          level: 3,
-          text: "Business profile"
-        },
-        {
-          kind: "para",
-          text: "{{profile}}"
-        },
+      
+
+
+
+
+
+{
+  kind: 'code',
+  language: 'text',
+  filename: 'system-prompt · AI voice agent',
+  code: `You are the phone assistant for {{business_name}}, a {{trade}} company. You are an AI assistant, not a person.
+
+Opening line, spoken exactly once at the start:
+"Thanks for calling {{business_name}}. I'm the AI assistant, and this call is recorded. How can I help?"
+
+How you talk
+- One short sentence at a time. One question at a time. Plain words.
+- If the caller interrupts, stop and listen.
+- Read the phone number and the address back before you book.
+- If asked whether you are a robot or an AI, say yes.
+
+What you collect, in this order
+{{qualification_tree}}
+
+What you may say
+- Only facts from the business profile below. If the answer is not there, say the team will confirm, and call save_lead with the open question.
+- Prices: only the listed call-out fee and listed prices. Never estimate the price of a job.
+- Never give technical, safety, legal or medical advice.
+
+When to hand off, immediately
+- Any emergency in the emergency rules: say you are connecting them now, then call transfer_call.
+- The caller asks for a person, is upset, or you have misunderstood twice: call transfer_call.
+
+Booking
+- Call check_service_area before you offer a time.
+- Call get_slots, offer two times, and call book_slot only after the caller picks one.
+- After booking, repeat the day and time and say a confirmation text is on its way.
+
+Business profile
+{{profile}}`,
+},
+
+
+
+
         {
           kind: "heading",
           level: 3,
@@ -3032,114 +3196,42 @@ export const caseStudy: CaseStudy = {
           level: 3,
           text: "Reply schema for texts, emails and web forms (v1)"
         },
-        {
-          kind: "para",
-          text: "{"
-        },
-        {
-          kind: "para",
-          text: "\"type\": \"object\","
-        },
-        {
-          kind: "para",
-          text: "\"properties\": {"
-        },
-        {
-          kind: "para",
-          text: "\"reply\": { \"type\": \"string\", \"description\": \"The message to send. For SMS, 300 characters at most.\" },"
-        },
-        {
-          kind: "para",
-          text: "\"intent\": { \"type\": \"string\", \"enum\": [\"new_job\", \"quote_request\", \"booking_change\", \"existing_customer\", \"supplier_or_sales\", \"wrong_number\", \"spam\", \"other\"] },"
-        },
-        {
-          kind: "para",
-          text: "\"lead\": {"
-        },
-        {
-          kind: "para",
-          text: "\"type\": \"object\","
-        },
-        {
-          kind: "para",
-          text: "\"properties\": {"
-        },
-        {
-          kind: "para",
-          text: "\"name\": { \"type\": [\"string\", \"null\"] },"
-        },
-        {
-          kind: "para",
-          text: "\"phone\": { \"type\": [\"string\", \"null\"] },"
-        },
-        {
-          kind: "para",
-          text: "\"email\": { \"type\": [\"string\", \"null\"] },"
-        },
-        {
-          kind: "para",
-          text: "\"service\": { \"type\": [\"string\", \"null\"], \"description\": \"One of the services in the business profile.\" },"
-        },
-        {
-          kind: "para",
-          text: "\"job_summary\": { \"type\": [\"string\", \"null\"] },"
-        },
-        {
-          kind: "para",
-          text: "\"urgency\": { \"type\": \"string\", \"enum\": [\"emergency\", \"urgent\", \"routine\", \"unknown\"] },"
-        },
-        {
-          kind: "para",
-          text: "\"address\": { \"type\": [\"string\", \"null\"] },"
-        },
-        {
-          kind: "para",
-          text: "\"postcode\": { \"type\": [\"string\", \"null\"] },"
-        },
-        {
-          kind: "para",
-          text: "\"preferred_time\": { \"type\": [\"string\", \"null\"] }"
-        },
-        {
-          kind: "para",
-          text: "},"
-        },
-        {
-          kind: "para",
-          text: "\"required\": [\"name\", \"phone\", \"email\", \"service\", \"job_summary\", \"urgency\", \"address\", \"postcode\", \"preferred_time\"]"
-        },
-        {
-          kind: "para",
-          text: "},"
-        },
-        {
-          kind: "para",
-          text: "\"next_action\": { \"type\": \"string\", \"enum\": [\"ask_question\", \"offer_slots\", \"book\", \"hand_off\", \"close\", \"none\"] },"
-        },
-        {
-          kind: "para",
-          text: "\"slot_id\": { \"type\": [\"string\", \"null\"], \"description\": \"The slot the customer chose, taken from the list provided.\" },"
-        },
-        {
-          kind: "para",
-          text: "\"hand_off_reason\": { \"type\": [\"string\", \"null\"] },"
-        },
-        {
-          kind: "para",
-          text: "\"confidence\": { \"type\": \"number\", \"minimum\": 0, \"maximum\": 1 }"
-        },
-        {
-          kind: "para",
-          text: "},"
-        },
-        {
-          kind: "para",
-          text: "\"required\": [\"reply\", \"intent\", \"lead\", \"next_action\", \"slot_id\", \"hand_off_reason\", \"confidence\"]"
-        },
-        {
-          kind: "para",
-          text: "}"
-        },
+      
+
+{
+  kind: 'code',
+  language: 'json',
+  filename: 'response-schema · lead extraction',
+  code: `{
+  "type": "object",
+  "properties": {
+    "reply": { "type": "string", "description": "The message to send. For SMS, 300 characters at most." },
+    "intent": { "type": "string", "enum": ["new_job", "quote_request", "booking_change", "existing_customer", "supplier_or_sales", "wrong_number", "spam", "other"] },
+    "lead": {
+      "type": "object",
+      "properties": {
+        "name": { "type": ["string", "null"] },
+        "phone": { "type": ["string", "null"] },
+        "email": { "type": ["string", "null"] },
+        "service": { "type": ["string", "null"], "description": "One of the services in the business profile." },
+        "job_summary": { "type": ["string", "null"] },
+        "urgency": { "type": "string", "enum": ["emergency", "urgent", "routine", "unknown"] },
+        "address": { "type": ["string", "null"] },
+        "postcode": { "type": ["string", "null"] },
+        "preferred_time": { "type": ["string", "null"] }
+      },
+      "required": ["name", "phone", "email", "service", "job_summary", "urgency", "address", "postcode", "preferred_time"]
+    },
+    "next_action": { "type": "string", "enum": ["ask_question", "offer_slots", "book", "hand_off", "close", "none"] },
+    "slot_id": { "type": ["string", "null"], "description": "The slot the customer chose, taken from the list provided." },
+    "hand_off_reason": { "type": ["string", "null"] },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+  },
+  "required": ["reply", "intent", "lead", "next_action", "slot_id", "hand_off_reason", "confidence"]
+}`,
+},
+
+
         {
           kind: "heading",
           level: 3,
@@ -3188,20 +3280,28 @@ export const caseStudy: CaseStudy = {
           text: "The Test Lab replays scripted leads through the real webhooks and reports nine measures. The thresholds are proposed targets, fixed before the build, not results."
         },
         {
-          kind: "para",
-          text: "Scenario record: channel, tenant, customer script, expected lead fields, expected outcome (booked, hand-off, declined or none) and a must-not list, such as \"states a price\"."
+          kind: "list",
+          items: [
+            "Scenario record: channel, tenant, customer script, expected lead fields, expected outcome (booked, hand-off, declined or none) and a must-not list, such as \"states a price\"."
+          ]
         },
         {
-          kind: "para",
-          text: "Sets: 20 practice scenarios for tuning and 40 test scenarios run once for the reported numbers: 15 calls, 12 texts, 8 emails and 5 web forms."
+          kind: "list",
+          items: [
+            "Sets: 20 practice scenarios for tuning and 40 test scenarios run once for the reported numbers: 15 calls, 12 texts, 8 emails and 5 web forms."
+          ]
         },
         {
-          kind: "para",
-          text: "Text, email and form scenarios run automatically: a simulator plays the customer and posts signed webhooks."
+          kind: "list",
+          items: [
+            "Text, email and form scenarios run automatically: a simulator plays the customer and posts signed webhooks."
+          ]
         },
         {
-          kind: "para",
-          text: "Call scenarios are read by a person from a script on a real phone; 15 calls take about an hour."
+          kind: "list",
+          items: [
+            "Call scenarios are read by a person from a script on a real phone; 15 calls take about an hour."
+          ]
         },
         {
           kind: "table",
@@ -3284,6 +3384,13 @@ export const caseStudy: CaseStudy = {
           level: 2,
           text: "Build plan"
         },
+               {
+          kind: "image",
+   src: "/case-study/build.png",
+   alt: "Architecture diagram showing communication channels feeding a lead core, with AI agents, business rules and a knowledge base connected to integrations and analytics.",
+   width: 1016,
+   height: 748,
+ },
         {
           kind: "para",
           text: "Demo build plan: 4 phases, 4 gates, 3 supporting lanes"
@@ -3293,20 +3400,28 @@ export const caseStudy: CaseStudy = {
           text: "The text engine comes before the voice agent on purpose: it proves the lead core, the guards and the booking path, which the voice agent then reuses through its tools."
         },
         {
-          kind: "para",
-          text: "Gate 1, day 3: a text to the demo number is stored, matched to a contact and answered by a fixed reply."
+          kind: "list",
+          items: [
+            "Gate 1, day 3: a text to the demo number is stored, matched to a contact and answered by a fixed reply."
+          ]
         },
         {
-          kind: "para",
-          text: "Gate 2, day 7: a text lead is qualified by AI, booked in the calendar and confirmed; a web form lead keeps its UTM source."
+          kind: "list",
+          items: [
+            "Gate 2, day 7: a text lead is qualified by AI, booked in the calendar and confirmed; a web form lead keeps its UTM source."
+          ]
         },
         {
-          kind: "para",
-          text: "Gate 3, day 12: a live call is answered by the AI agent, booked through its tools, recorded, transcribed and summarised."
+          kind: "list",
+          items: [
+            "Gate 3, day 12: a live call is answered by the AI agent, booked through its tools, recorded, transcribed and summarised."
+          ]
         },
         {
-          kind: "para",
-          text: "Gate 4, day 15: a test run reports all nine measures, and the demo script below runs clean."
+          kind: "list",
+          items: [
+            "Gate 4, day 15: a test run reports all nine measures, and the demo script below runs clean."
+          ]
         },
         {
           kind: "heading",
@@ -3314,56 +3429,82 @@ export const caseStudy: CaseStudy = {
           text: "Acceptance checks and demo script"
         },
         {
-          kind: "para",
-          text: "The demo is accepted when all twelve boxes are ticked."
+          kind: "list",
+          items: [
+            "The demo is accepted when all twelve boxes are ticked."
+          ]
         },
         {
-          kind: "para",
-          text: "☐  A text to the demo number gets an AI reply in under 10 seconds"
+          kind: "list",
+          items: [
+            "A text to the demo number gets an AI reply in under 10 seconds"
+          ]
         },
         {
-          kind: "para",
-          text: "☐  A call the owner does not accept within 15 seconds is answered by the AI agent, which says it is an AI and that the call is recorded"
+          kind: "list",
+          items: [
+            "A call the owner does not accept within 15 seconds is answered by the AI agent, which says it is an AI and that the call is recorded"
+          ]
         },
         {
-          kind: "para",
-          text: "☐  A caller who hangs up early, or a call that fails, gets a text-back within 15 seconds"
+          kind: "list",
+          items: [
+            "A caller who hangs up early, or a call that fails, gets a text-back within 15 seconds"
+          ]
         },
         {
-          kind: "para",
-          text: "☐  An email to the demo address gets a reply in the same thread within 2 minutes"
+          kind: "list",
+          items: [
+            "An email to the demo address gets a reply in the same thread within 2 minutes"
+          ]
         },
         {
-          kind: "para",
-          text: "☐  On each channel a routine job ends with a calendar booking and a confirmation, with no double bookings across 20 rapid test bookings"
+          kind: "list",
+          items: [
+            "On each channel a routine job ends with a calendar booking and a confirmation, with no double bookings across 20 rapid test bookings"
+          ]
         },
         {
-          kind: "para",
-          text: "☐  An emergency scenario is transferred or alerted within 30 seconds on every channel"
+          kind: "list",
+          items: [
+            "An emergency scenario is transferred or alerted within 30 seconds on every channel"
+          ]
         },
         {
-          kind: "para",
-          text: "☐  Across the 40 test scenarios the AI never states a price that is not in the profile"
+          kind: "list",
+          items: [
+            "Across the 40 test scenarios the AI never states a price that is not in the profile"
+          ]
         },
         {
-          kind: "para",
-          text: "☐  One person who calls, then texts, then fills in the form appears as one contact with one timeline"
+          kind: "list",
+          items: [
+            "One person who calls, then texts, then fills in the form appears as one contact with one timeline"
+          ]
         },
         {
-          kind: "para",
-          text: "☐  STOP ends all automated messages to that number"
+          kind: "list",
+          items: [
+            "STOP ends all automated messages to that number"
+          ]
         },
         {
-          kind: "para",
-          text: "☐  A quiet lead receives the three follow-ups on schedule, and they stop on a reply"
+          kind: "list",
+          items: [
+            "A quiet lead receives the three follow-ups on schedule, and they stop on a reply"
+          ]
         },
         {
-          kind: "para",
-          text: "☐  Every AI message and call stores model, prompt version, tokens or minutes, cost and latency"
+          kind: "list",
+          items: [
+            "Every AI message and call stores model, prompt version, tokens or minutes, cost and latency"
+          ]
         },
         {
-          kind: "para",
-          text: "☐  A test run reports all nine measures"
+          kind: "list",
+          items: [
+            "A test run reports all nine measures"
+          ]
         },
         {
           kind: "heading",
@@ -3371,48 +3512,70 @@ export const caseStudy: CaseStudy = {
           text: "Demo script, about eight minutes"
         },
         {
-          kind: "para",
-          text: "The prospect calls the Demo HVAC number. The AI agent answers and says it is an AI assistant."
+          kind: "list",
+          items: [
+            "The prospect calls the Demo HVAC number. The AI agent answers and says it is an AI assistant."
+          ]
         },
         {
-          kind: "para",
-          text: "The prospect says the air conditioning is not cooling. The agent asks the qualifying questions and checks the postcode."
+          kind: "list",
+          items: [
+            "The prospect says the air conditioning is not cooling. The agent asks the qualifying questions and checks the postcode."
+          ]
         },
         {
-          kind: "para",
-          text: "On the shared screen, the contact appears in the lead inbox while the call is still running."
+          kind: "list",
+          items: [
+            "On the shared screen, the contact appears in the lead inbox while the call is still running."
+          ]
         },
         {
-          kind: "para",
-          text: "The agent offers two openings and books one."
+          kind: "list",
+          items: [
+            "The agent offers two openings and books one."
+          ]
         },
         {
-          kind: "para",
-          text: "The confirmation text arrives on the prospect's phone."
+          kind: "list",
+          items: [
+            "The confirmation text arrives on the prospect's phone."
+          ]
         },
         {
-          kind: "para",
-          text: "The lead timeline shows the recording, the transcript and the AI summary."
+          kind: "list",
+          items: [
+            "The lead timeline shows the recording, the transcript and the AI summary."
+          ]
         },
         {
-          kind: "para",
-          text: "The pipeline board shows the opportunity in Booked."
+          kind: "list",
+          items: [
+            "The pipeline board shows the opportunity in Booked."
+          ]
         },
         {
-          kind: "para",
-          text: "The dashboard shows the lead, the response time and the booking."
+          kind: "list",
+          items: [
+            "The dashboard shows the lead, the response time and the booking."
+          ] 
         },
         {
-          kind: "para",
-          text: "The prospect calls the Demo Plumbing number and hangs up after two rings. The text-back arrives."
+          kind: "list",
+          items: [
+            "The prospect calls the Demo Plumbing number and hangs up after two rings. The text-back arrives."
+          ]
         },
         {
-          kind: "para",
-          text: "The prospect replies by text. The AI qualifies, offers times and books, and the same screens update."
+          kind: "list",
+          items: [
+            "The prospect replies by text. The AI qualifies, offers times and books, and the same screens update."
+          ] 
         },
         {
-          kind: "para",
-          text: "Optional close: submit the web form from a link with UTM tags and show the source on the lead."
+          kind: "list",
+          items: [
+            "Optional close: submit the web form from a link with UTM tags and show the source on the lead."
+          ]
         },
         {
           kind: "heading",
@@ -3449,38 +3612,63 @@ export const caseStudy: CaseStudy = {
           text: "These are engineering constraints, not legal advice; each market needs its own legal review."
         },
         {
-          kind: "para",
-          text: "US texting. Any application that texts US numbers from a 10-digit number must register for A2P 10DLC. File it on day 1."
+          kind: "list",
+          items: [
+            "US texting. Any application that texts US numbers from a 10-digit number must register for A2P 10DLC. File it on day 1."
+          ]
         },
+        
+
+
+
+
         {
-          kind: "para",
-          text: "New Zealand texting. Operators accept business SMS only from a dedicated short code, which takes five to six weeks, and require a charge notice in each message (Twilio guidelines)."
-        },
-        {
-          kind: "para",
-          text: "Outbound AI calls. The FCC ruled in February 2024 that AI-generated voices count as artificial voices under the TCPA (summary), so outbound AI calls in the US need prior consent. The demo agent only answers inbound calls."
-        },
-        {
-          kind: "para",
-          text: "Disclosure. The agent says it is an AI and that the call is recorded in its first sentence. Recording-consent rules vary by state and country."
-        },
-        {
-          kind: "heading",
-          level: 3,
-          text: "Limits to design around"
-        },
-        {
-          kind: "para",
-          text: "Gemini Live audio sessions end at 15 minutes without context compression, and connections last about 10 minutes. Enable compression and session resumption, and cap AI calls at 8 minutes."
-        },
-        {
-          kind: "para",
-          text: "Google's capabilities guide still labels the Live API a preview, which is one reason the voice layer sits behind an adapter."
-        },
-        {
-          kind: "para",
-          text: "Phone audio arrives from Twilio at telephone quality, while Gemini Live expects 16 kHz audio in and returns 24 kHz. Pipecat's Twilio transport handles the conversion."
-        },
+  kind: "list",
+  items: [
+    "New Zealand texting. Operators accept business SMS only from a dedicated short code, which takes five to six weeks, and require a charge notice in each message (Twilio guidelines)."
+  ]
+},
+
+{
+  kind: "list",
+  items: [
+    "Outbound AI calls. The FCC ruled in February 2024 that AI-generated voices count as artificial voices under the TCPA (summary), so outbound AI calls in the US need prior consent. The demo agent only answers inbound calls."
+  ]
+},
+
+{
+  kind: "list",
+  items: [
+    "Disclosure. The agent says it is an AI and that the call is recorded in its first sentence. Recording-consent rules vary by state and country."
+  ]
+},
+
+{
+  kind: "heading",
+  level: 3,
+  text: "Limits to design around"
+},
+
+{
+  kind: "list",
+  items: [
+    "Gemini Live audio sessions end at 15 minutes without context compression, and connections last about 10 minutes. Enable compression and session resumption, and cap AI calls at 8 minutes."
+  ]
+},
+
+{
+  kind: "list",
+  items: [
+    "Google's capabilities guide still labels the Live API a preview, which is one reason the voice layer sits behind an adapter."
+  ]
+},
+
+{
+  kind: "list",
+  items: [
+    "Phone audio arrives from Twilio at telephone quality, while Gemini Live expects 16 kHz audio in and returns 24 kHz. Pipecat's Twilio transport handles the conversion."
+  ]
+},
         {
           kind: "heading",
           level: 3,
@@ -3546,16 +3734,22 @@ export const caseStudy: CaseStudy = {
           text: "Seed data"
         },
         {
-          kind: "para",
-          text: "Five existing customers per tenant, to show repeat-caller recognition"
+          kind: "list",
+          items: [
+            "Five existing customers per tenant, to show repeat-caller recognition"
+          ]
         },
         {
-          kind: "para",
-          text: "Two calendars with realistic gaps, including one day that is fully booked"
+          kind: "list",
+          items: [
+            "Two calendars with realistic gaps, including one day that is fully booked"
+          ]
         },
         {
-          kind: "para",
-          text: "60 scripted scenarios: 20 for practice and 40 for the test run"
+          kind: "list",
+          items: [
+            "60 scripted scenarios: 20 for practice and 40 for the test run"
+          ]
         }
       ]
     },
@@ -3581,30 +3775,37 @@ export const caseStudy: CaseStudy = {
           level: 3,
           text: "Three rules for the team:"
         },
+      
+{
+  kind: "list",
+  items: [
+    "Publish only after the demo line is live and the test run in part 9 has produced real numbers."
+  ]
+},
+
+{
+  kind: "list",
+  items: [
+    "Replace every value in [square brackets] with the measured figure from the Test Lab."
+  ]
+},
+
+{
+  kind: "list",
+  items: [
+    "Do not copy the post, name the client or imply they hired Clickmasters. The copy below is already paraphrased."
+  ]
+},
+
+
+      
         {
           kind: "para",
-          text: "Publish only after the demo line is live and the test run in part 9 has produced real numbers."
+          text: "Case study"
         },
         {
           kind: "para",
-          text: "Replace every value in [square brackets] with the measured figure from the Test Lab."
-        },
-        {
-          kind: "para",
-          text: "Do not copy the post, name the client or imply they hired Clickmasters. The copy below is already paraphrased."
-        },
-        {
-          kind: "heading",
-          level: 3,
-          text: "Page copy starts here"
-        },
-        {
-          kind: "para",
-          text: "Eyebrow: Case study · Demo build"
-        },
-        {
-          kind: "para",
-          text: "H1: AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds"
+          text: "AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds"
         },
         {
           kind: "para",
@@ -3658,16 +3859,22 @@ export const caseStudy: CaseStudy = {
           text: "Why speed to lead is hard for a small business"
         },
         {
-          kind: "para",
-          text: "The owner is the receptionist. Whoever does the work also answers the phone, so jobs and enquiries compete for the same pair of hands."
+          kind: "list",
+          items: [
+            "The owner is the receptionist. Whoever does the work also answers the phone, so jobs and enquiries compete for the same pair of hands."
+          ]
         },
         {
-          kind: "para",
-          text: "Three channels, no system. Calls, texts and emails land in three places, and nobody sees the whole picture."
+          kind: "list",
+          items: [
+            "Three channels, no system. Calls, texts and emails land in three places, and nobody sees the whole picture."
+          ]
         },
         {
-          kind: "para",
-          text: "A bad answer is worse than no answer. An AI answering service that invents a price or books a job outside the service area costs more than a missed call."
+          kind: "list",
+          items: [
+            "A bad answer is worse than no answer. An AI answering service that invents a price or books a job outside the service area costs more than a missed call."
+          ]
         },
         {
           kind: "para",
@@ -3706,34 +3913,54 @@ export const caseStudy: CaseStudy = {
           kind: "para",
           text: "A lead can arrive by call, text, email or web form. Each one ends in one of three outcomes: booked, handed to a person, or queued for follow-up."
         },
-        {
-          kind: "para",
-          text: "Answer the call. The business keeps its number. The owner's phone rings first for 15 seconds, and if nobody picks up, the AI phone agent answers. It says it is an AI assistant, says the call is recorded and asks how it can help."
-        },
-        {
-          kind: "para",
-          text: "Text back missed calls. If a caller hangs up early or a call fails, a text goes out within seconds asking what they need. The conversation carries on by text."
-        },
-        {
-          kind: "para",
-          text: "Reply to texts and emails. An inbound text gets an AI reply in seconds, and an email gets one within two minutes, in the same thread. The AI asks one question at a time."
-        },
-        {
-          kind: "para",
-          text: "Qualify the job. On every channel the AI collects the same six details: name, contact number, the job, how urgent it is, the suburb and a preferred time. It answers only from the business profile: services, service area, hours and listed prices."
-        },
-        {
-          kind: "para",
-          text: "Book it. The AI offers two real openings from the calendar, books the one the customer picks and sends a confirmation."
-        },
-        {
-          kind: "para",
-          text: "Hand off what it should not handle. A burst pipe or a flooded kitchen triggers an immediate transfer to the on-call number, with a text alert that summarises the call. Anything outside the profile gets a promised callback and an alert to the owner."
-        },
-        {
-          kind: "para",
-          text: "Follow up and record. A lead who goes quiet gets three polite nudges over three days, which stop the moment they reply or opt out. Every call, text and email lands on one timeline per customer, with the recording, the transcript and a summary."
-        },
+       {
+  kind: "list",
+  items: [
+    "Answer the call. The business keeps its number. The owner's phone rings first for 15 seconds, and if nobody picks up, the AI phone agent answers. It says it is an AI assistant, says the call is recorded and asks how it can help."
+  ]
+},
+
+{
+  kind: "list",
+  items: [
+    "Text back missed calls. If a caller hangs up early or a call fails, a text goes out within seconds asking what they need. The conversation carries on by text."
+  ]
+},
+
+{
+  kind: "list",
+  items: [
+    "Reply to texts and emails. An inbound text gets an AI reply in seconds, and an email gets one within two minutes, in the same thread. The AI asks one question at a time."
+  ]
+},
+
+{
+  kind: "list",
+  items: [
+    "Qualify the job. On every channel the AI collects the same six details: name, contact number, the job, how urgent it is, the suburb and a preferred time. It answers only from the business profile: services, service area, hours and listed prices."
+  ]
+},
+
+{
+  kind: "list",
+  items: [
+    "Book it. The AI offers two real openings from the calendar, books the one the customer picks and sends a confirmation."
+  ]
+},
+
+{
+  kind: "list",
+  items: [
+    "Hand off what it should not handle. A burst pipe or a flooded kitchen triggers an immediate transfer to the on-call number, with a text alert that summarises the call. Anything outside the profile gets a promised callback and an alert to the owner."
+  ]
+},
+
+{
+  kind: "list",
+  items: [
+    "Follow up and record. A lead who goes quiet gets three polite nudges over three days, which stop the moment they reply or opt out. Every call, text and email lands on one timeline per customer, with the recording, the transcript and a summary."
+  ]
+},
         {
           kind: "heading",
           level: 3,
@@ -3847,16 +4074,22 @@ export const caseStudy: CaseStudy = {
           text: "Limits we designed around"
         },
         {
-          kind: "para",
-          text: "A phone agent mishears on noisy job sites and bad lines, so it reads the contact number and the suburb back before it books."
+          kind: "list",
+          items: [
+            "A phone agent mishears on noisy job sites and bad lines, so it reads the contact number and the suburb back before it books."
+          ]
         },
         {
-          kind: "para",
-          text: "Texting rules differ by country. A US number needs carrier registration before it can text, and New Zealand requires a dedicated short code that takes five to six weeks. The demo line is a US number."
+          kind: "list",
+          items: [
+            "Texting rules differ by country. A US number needs carrier registration before it can text, and New Zealand requires a dedicated short code that takes five to six weeks. The demo line is a US number."
+          ]
         },
         {
-          kind: "para",
-          text: "Scripted leads are not real customers. A 30-day pilot with one real business is the next proof."
+          kind: "list",
+          items: [
+            "Scripted leads are not real customers. A 30-day pilot with one real business is the next proof."
+          ]
         },
         {
           kind: "heading",
@@ -3868,30 +4101,41 @@ export const caseStudy: CaseStudy = {
           text: "A production version for an agency or a software founder would add six things:"
         },
         {
-          kind: "para",
-          text: "Self-serve onboarding, so a new business sets up its number, profile and calendar without a developer"
+          kind: "list",
+          items: [
+            "Self-serve onboarding, so a new business sets up its number, profile and calendar without a developer"
+          ]
         },
         {
-          kind: "para",
-          text: "Connections to job-management tools such as ServiceM8, Tradify and Jobber, so bookings land where the team already works"
+          kind: "list",
+          items: [
+            "Connections to job-management tools such as ServiceM8, Tradify and Jobber, so bookings land where the team already works"
+          ]
         },
         {
-          kind: "heading",
-          level: 3,
-          text: "WhatsApp and web chat as extra channels"
+          kind: "list",
+          
+          items: [
+            "WhatsApp and web chat as extra channels"
+          ]
         },
         {
-          kind: "para",
-          text: "A weekly owner report: leads captured, response times, bookings and estimated revenue"
+          kind: "list",
+          items: [
+            "A weekly owner report: leads captured, response times, bookings and estimated revenue"
+          ]
         },
         {
-          kind: "para",
-          text: "White-label accounts for agencies that resell to their own clients"
+          kind: "list",
+          items: [
+            "White-label accounts for agencies that resell to their own clients"
+          ]
         },
         {
-          kind: "heading",
-          level: 3,
-          text: "Usage caps and billing per business"
+          kind: "list",
+          items: [
+            "Usage caps and billing per business"
+          ]
         },
         {
           kind: "heading",
@@ -4069,86 +4313,71 @@ export const caseStudy: CaseStudy = {
           text: "Heading map and on-page rules"
         },
         {
-          kind: "para",
-          text: "H1 AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds"
-        },
-        {
-          kind: "para",
-          text: "H2 The challenge: the job goes to whoever answers first"
-        },
-        {
-          kind: "para",
-          text: "H3 Why speed to lead is hard for a small business"
-        },
-        {
-          kind: "para",
-          text: "H2 What the brief left out: nine gaps we closed"
-        },
-        {
-          kind: "para",
-          text: "H2 The solution: an AI receptionist that answers, qualifies and books on every channel"
-        },
-        {
-          kind: "para",
-          text: "H3 Rules the AI cannot break"
-        },
-        {
-          kind: "para",
-          text: "H3 The Test Lab: proof before a customer calls"
-        },
-        {
-          kind: "para",
-          text: "H3 What a handled lead looks like"
-        },
-        {
-          kind: "para",
-          text: "H2 Tech stack and open-source components"
-        },
-        {
-          kind: "para",
-          text: "H2 Results: how fast and how accurately the AI handled test leads"
-        },
-        {
-          kind: "para",
-          text: "H3 Limits we designed around"
-        },
-        {
-          kind: "para",
-          text: "H2 From demo to product"
-        },
-        {
-          kind: "para",
-          text: "H2 Frequently asked questions (eight H3 questions)"
-        },
-        {
-          kind: "para",
-          text: "H2 Want every lead answered in seconds?"
-        },
+  kind: 'code',
+  language: 'text',
+  filename: 'article outline · AI receptionist',
+  code: `H1  AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds
+
+H2  The challenge: the job goes to whoever answers first
+H3    Why speed to lead is hard for a small business
+
+H2  What the brief left out: nine gaps we closed
+
+H2  The solution: an AI receptionist that answers, qualifies and books on every channel
+H3    Rules the AI cannot break
+H3    The Test Lab: proof before a customer calls
+H3    What a handled lead looks like
+
+H2  Tech stack and open-source components
+
+H2  Results: how fast and how accurately the AI handled test leads
+H3    Limits we designed around
+
+H2  From demo to product
+
+H2  Frequently asked questions (eight H3 questions)
+
+H2  Want every lead answered in seconds?`,
+},
         {
           kind: "heading",
           level: 3,
           text: "On-page rules:"
         },
-        {
-          kind: "para",
-          text: "Keep the \"Demo build\" label in the eyebrow and in the at-a-glance table."
-        },
-        {
-          kind: "para",
-          text: "One H1 only, server-rendered copy, and FAQ answers visible in the HTML."
-        },
-        {
-          kind: "para",
-          text: "Show a named author and technical reviewer with LinkedIn links, plus published and last-updated dates."
-        },
-        {
-          kind: "para",
-          text: "Re-check the cost sentence in FAQ 6 and the New Zealand short-code sentence in FAQ 8 on the day of publishing."
-        },
-        {
-          kind: "para",
-          text: "Before publishing, check the page against the final demo: two demo businesses, an HVAC company and a plumber, and four ways in: call, text, email and web form."
-        },
+       
+{
+  kind: "list",
+  items: [
+    "Keep the \"Demo build\" label in the eyebrow and in the at-a-glance table."
+  ]
+},
+{
+  kind: "list",
+  items: [
+    "One H1 only, server-rendered copy, and FAQ answers visible in the HTML."
+  ]
+},
+{
+  kind: "list",
+  items: [
+    "Show a named author and technical reviewer with LinkedIn links, plus published and last-updated dates."
+  ]
+},
+{
+  kind: "list",
+  items: [
+    "Re-check the cost sentence in FAQ 6 and the New Zealand short-code sentence in FAQ 8 on the day of publishing."
+  ]
+},
+{
+  kind: "list",
+  items: [
+    "Before publishing, check the page against the final demo: two demo businesses, an HVAC company and a plumber, and four ways in: call, text, email and web form."
+  ]
+},
+
+
+
         {
           kind: "heading",
           level: 2,
@@ -4204,17 +4433,18 @@ export const caseStudy: CaseStudy = {
           text: "These were listed in the sitemap, or implied by live sub-pages, and returned 404 on 5 October 2026:"
         },
         {
-          kind: "para",
-          text: "All eight industry pages under /industries/, from finance-accounting to marketing-agencies"
+          kind: "list",
+          items: [
+            "All eight industry pages under /industries/, from finance-accounting to marketing-agencies"
+          ]
         },
         {
-          kind: "para",
-          text: "Seven solution hubs whose sub-pages are live: ai-agents, ai-chatbots, ai-voice-agents, ai-workflow-automation, bussiness-process-automation, lead-generation-automation and reporting-automation"
+          kind: "list",
+          items: [
+            "Seven solution hubs whose sub-pages are live: ai-agents, ai-chatbots, ai-voice-agents, ai-workflow-automation, bussiness-process-automation, lead-generation-automation and reporting-automation"
+          ]
         },
-        {
-          kind: "para",
-          text: "/case-studies"
-        },
+       
         {
           kind: "heading",
           level: 2,
@@ -4251,310 +4481,91 @@ export const caseStudy: CaseStudy = {
           kind: "para",
           text: "Paste this single JSON-LD block into the page head, replace the five bracketed values, and keep the FAQ text identical to the text on the page."
         },
-        {
-          kind: "para",
-          text: "{"
-        },
-        {
-          kind: "para",
-          text: "\"@context\": \"https://schema.org\","
-        },
-        {
-          kind: "para",
-          text: "\"@graph\": ["
-        },
-        {
-          kind: "para",
-          text: "{"
-        },
-        {
-          kind: "para",
-          text: "\"@type\": \"Article\","
-        },
-        {
-          kind: "para",
-          text: "\"@id\": \"https://clickmastersaiautomation.com/case-studies/ai-receptionist-lead-response-automation#article\","
-        },
-        {
-          kind: "para",
-          text: "\"headline\": \"AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds\","
-        },
-        {
-          kind: "para",
-          text: "\"description\": \"How Clickmasters built an AI receptionist that answers calls, texts back missed calls, replies to emails and books jobs for trades. Call the demo line.\","
-        },
-        {
-          kind: "para",
-          text: "\"image\": \"https://clickmastersaiautomation.com/images/case-studies/ai-receptionist-lead-response-automation/og-ai-receptionist-case-study.jpg\","
-        },
-        {
-          kind: "para",
-          text: "\"datePublished\": \"[YYYY-MM-DD]\","
-        },
-        {
-          kind: "para",
-          text: "\"dateModified\": \"[YYYY-MM-DD]\","
-        },
-        {
-          kind: "para",
-          text: "\"author\": { \"@type\": \"Person\", \"name\": \"[author name]\", \"url\": \"[author LinkedIn URL]\" },"
-        },
-        {
-          kind: "para",
-          text: "\"publisher\": {"
-        },
-        {
-          kind: "para",
-          text: "\"@type\": \"Organization\","
-        },
-        {
-          kind: "para",
-          text: "\"name\": \"Clickmasters\","
-        },
-        {
-          kind: "para",
-          text: "\"url\": \"https://clickmastersaiautomation.com\","
-        },
-        {
-          kind: "para",
-          text: "\"logo\": { \"@type\": \"ImageObject\", \"url\": \"[logo URL]\" }"
-        },
-        {
-          kind: "para",
-          text: "},"
-        },
-        {
-          kind: "para",
-          text: "\"mainEntityOfPage\": \"https://clickmastersaiautomation.com/case-studies/ai-receptionist-lead-response-automation\","
-        },
-        {
-          kind: "para",
-          text: "\"about\": [\"AI receptionist\", \"Lead response automation\", \"Missed-call text-back\", \"AI phone agent\"]"
-        },
-        {
-          kind: "para",
-          text: "},"
-        },
-        {
-          kind: "para",
-          text: "{"
-        },
-        {
-          kind: "para",
-          text: "\"@type\": \"BreadcrumbList\","
-        },
-        {
-          kind: "para",
-          text: "\"itemListElement\": ["
-        },
-        {
-          kind: "para",
-          text: "{ \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://clickmastersaiautomation.com/\" },"
-        },
-        {
-          kind: "para",
-          text: "{ \"@type\": \"ListItem\", \"position\": 2, \"name\": \"Case studies\", \"item\": \"https://clickmastersaiautomation.com/case-studies\" },"
-        },
-        {
-          kind: "para",
-          text: "{ \"@type\": \"ListItem\", \"position\": 3, \"name\": \"AI receptionist and lead response automation\", \"item\": \"https://clickmastersaiautomation.com/case-studies/ai-receptionist-lead-response-automation\" }"
-        },
-        {
-          kind: "para",
-          text: "]"
-        },
-        {
-          kind: "para",
-          text: "},"
-        },
-        {
-          kind: "para",
-          text: "{"
-        },
-        {
-          kind: "para",
-          text: "\"@type\": \"FAQPage\","
-        },
-        {
-          kind: "para",
-          text: "\"mainEntity\": ["
-        },
-        {
-          kind: "para",
-          text: "{"
-        },
-        {
-          kind: "para",
-          text: "\"@type\": \"Question\","
-        },
-        {
-          kind: "para",
-          text: "\"name\": \"What is an AI receptionist?\","
-        },
-        {
-          kind: "para",
-          text: "\"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"An AI receptionist answers a business's calls, texts and emails automatically, in natural language. It answers questions from the business's own information, takes the caller's details, books appointments and passes urgent matters to a person.\" }"
-        },
-        {
-          kind: "para",
-          text: "},"
-        },
-        {
-          kind: "para",
-          text: "{"
-        },
-        {
-          kind: "para",
-          text: "\"@type\": \"Question\","
-        },
-        {
-          kind: "para",
-          text: "\"name\": \"How fast should a small business respond to a new lead?\","
-        },
-        {
-          kind: "para",
-          text: "\"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"As fast as it can. Harvard Business Review research found that firms that tried to contact a web lead within an hour were nearly seven times as likely to qualify it as firms that waited one hour longer. This system replies to texts within seconds.\" }"
-        },
-        {
-          kind: "para",
-          text: "},"
-        },
-        {
-          kind: "para",
-          text: "{"
-        },
-        {
-          kind: "para",
-          text: "\"@type\": \"Question\","
-        },
-        {
-          kind: "para",
-          text: "\"name\": \"What is missed-call text-back?\","
-        },
-        {
-          kind: "para",
-          text: "\"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"When a call goes unanswered or the caller hangs up, the system sends a text within seconds asking what they need. The conversation continues by text, so the lead is not lost to the next business on the list.\" }"
-        },
-        {
-          kind: "para",
-          text: "},"
-        },
-        {
-          kind: "para",
-          text: "{"
-        },
-        {
-          kind: "para",
-          text: "\"@type\": \"Question\","
-        },
-        {
-          kind: "para",
-          text: "\"name\": \"Will callers know they are talking to an AI?\","
-        },
-        {
-          kind: "para",
-          text: "\"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Yes. The agent says it is an AI assistant at the start of every call and whenever it is asked, and it says the call is recorded. A caller can ask for a person at any time.\" }"
-        },
-        {
-          kind: "para",
-          text: "},"
-        },
-        {
-          kind: "para",
-          text: "{"
-        },
-        {
-          kind: "para",
-          text: "\"@type\": \"Question\","
-        },
-        {
-          kind: "para",
-          text: "\"name\": \"What happens when a caller has an emergency?\","
-        },
-        {
-          kind: "para",
-          text: "\"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Each business sets its own emergency rules. When a caller describes one, the agent stops qualifying, transfers the call to the on-call number and sends an alert with a summary.\" }"
-        },
-        {
-          kind: "para",
-          text: "},"
-        },
-        {
-          kind: "para",
-          text: "{"
-        },
-        {
-          kind: "para",
-          text: "\"@type\": \"Question\","
-        },
-        {
-          kind: "para",
-          text: "\"name\": \"How much does an AI phone agent cost per call?\","
-        },
-        {
-          kind: "para",
-          text: "\"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"By our estimate, a three-minute call costs roughly 15 to 20 US cents in AI and carrier fees on a US number at October 2026 rates. Texts and emails cost less. The measured figure from our test run is in the results table.\" }"
-        },
-        {
-          kind: "para",
-          text: "},"
-        },
-        {
-          kind: "para",
-          text: "{"
-        },
-        {
-          kind: "para",
-          text: "\"@type\": \"Question\","
-        },
-        {
-          kind: "para",
-          text: "\"name\": \"Does it work with my existing phone number and calendar?\","
-        },
-        {
-          kind: "para",
-          text: "\"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Yes. The business keeps its number and forwards unanswered calls to the AI, or moves the number across. The demo books into Cal.com, and Google Calendar or a job-management tool can be connected instead.\" }"
-        },
-        {
-          kind: "para",
-          text: "},"
-        },
-        {
-          kind: "para",
-          text: "{"
-        },
-        {
-          kind: "para",
-          text: "\"@type\": \"Question\","
-        },
-        {
-          kind: "para",
-          text: "\"name\": \"Does an AI receptionist work outside the United States?\","
-        },
-        {
-          kind: "para",
-          text: "\"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Calls work on local numbers in many countries. Texting rules differ: the US requires carrier registration, and New Zealand requires a dedicated short code that takes five to six weeks to set up. We plan the sender setup for each country before launch.\" }"
-        },
-        {
-          kind: "para",
-          text: "}"
-        },
-        {
-          kind: "para",
-          text: "]"
-        },
-        {
-          kind: "para",
-          text: "}"
-        },
-        {
-          kind: "para",
-          text: "]"
-        },
-        {
-          kind: "para",
-          text: "}"
-        },
+     
+
+
+
+        {
+  kind: 'code',
+  language: 'json',
+  filename: 'structured data · JSON-LD',
+  code: `{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://clickmastersaiautomation.com/case-studies/ai-receptionist-lead-response-automation#article",
+      "headline": "AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds",
+      "description": "How Clickmasters built an AI receptionist that answers calls, texts back missed calls, replies to emails and books jobs for trades. Call the demo line.",
+      "image": "https://clickmastersaiautomation.com/images/case-studies/ai-receptionist-lead-response-automation/og-ai-receptionist-case-study.jpg",
+      "datePublished": "[YYYY-MM-DD]",
+      "dateModified": "[YYYY-MM-DD]",
+      "author": { "@type": "Person", "name": "[author name]", "url": "[author LinkedIn URL]" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Clickmasters",
+        "url": "https://clickmastersaiautomation.com",
+        "logo": { "@type": "ImageObject", "url": "[logo URL]" }
+      },
+      "mainEntityOfPage": "https://clickmastersaiautomation.com/case-studies/ai-receptionist-lead-response-automation",
+      "about": ["AI receptionist", "Lead response automation", "Missed-call text-back", "AI phone agent"]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://clickmastersaiautomation.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Case studies", "item": "https://clickmastersaiautomation.com/case-studies" },
+        { "@type": "ListItem", "position": 3, "name": "AI receptionist and lead response automation", "item": "https://clickmastersaiautomation.com/case-studies/ai-receptionist-lead-response-automation" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is an AI receptionist?",
+          "acceptedAnswer": { "@type": "Answer", "text": "An AI receptionist answers a business's calls, texts and emails automatically, in natural language. It answers questions from the business's own information, takes the caller's details, books appointments and passes urgent matters to a person." }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast should a small business respond to a new lead?",
+          "acceptedAnswer": { "@type": "Answer", "text": "As fast as it can. Harvard Business Review research found that firms that tried to contact a web lead within an hour were nearly seven times as likely to qualify it as firms that waited one hour longer. This system replies to texts within seconds." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is missed-call text-back?",
+          "acceptedAnswer": { "@type": "Answer", "text": "When a call goes unanswered or the caller hangs up, the system sends a text within seconds asking what they need. The conversation continues by text, so the lead is not lost to the next business on the list." }
+        },
+        {
+          "@type": "Question",
+          "name": "Will callers know they are talking to an AI?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The agent says it is an AI assistant at the start of every call and whenever it is asked, and it says the call is recorded. A caller can ask for a person at any time." }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens when a caller has an emergency?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Each business sets its own emergency rules. When a caller describes one, the agent stops qualifying, transfers the call to the on-call number and sends an alert with a summary." }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does an AI phone agent cost per call?",
+          "acceptedAnswer": { "@type": "Answer", "text": "By our estimate, a three-minute call costs roughly 15 to 20 US cents in AI and carrier fees on a US number at October 2026 rates. Texts and emails cost less. The measured figure from our test run is in the results table." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work with my existing phone number and calendar?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The business keeps its number and forwards unanswered calls to the AI, or moves the number across. The demo books into Cal.com, and Google Calendar or a job-management tool can be connected instead." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does an AI receptionist work outside the United States?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Calls work on local numbers in many countries. Texting rules differ: the US requires carrier registration, and New Zealand requires a dedicated short code that takes five to six weeks to set up. We plan the sender setup for each country before launch." }
+        }
+      ]
+    }
+  ]
+}`,
+},
         {
           kind: "para",
           text: "Google stopped showing FAQ rich results in May 2026 (Search Central updates). Keep the FAQPage part as machine-readable context for AI answer engines; the Article and BreadcrumbList parts are the ones Google uses."
@@ -4568,58 +4579,88 @@ export const caseStudy: CaseStudy = {
           kind: "para",
           text: "The website page goes live only when every box is ticked."
         },
-        {
-          kind: "para",
-          text: "☐  The demo line is live at /demos/ai-receptionist and the demo script in part 9 runs end to end"
-        },
-        {
-          kind: "para",
-          text: "☐  The test run is finished and every bracketed value in part 10 holds a measured number"
-        },
-        {
-          kind: "para",
-          text: "☐  \"What the numbers show\" is written from the real results, including any threshold that missed"
-        },
-        {
-          kind: "para",
-          text: "☐  The sample timeline table holds a real handled lead from the demo, with personal details invented or masked"
-        },
-        {
-          kind: "para",
-          text: "☐  The page copy matches the final demo: two demo businesses, and web forms as a fourth channel"
-        },
-        {
-          kind: "para",
-          text: "☐  /case-studies hub is built and linked from the navigation"
-        },
-        {
-          kind: "para",
-          text: "☐  Title, meta description, canonical and Open Graph tags match the Page metadata table"
-        },
-        {
-          kind: "para",
-          text: "☐  JSON-LD is pasted, its five brackets are replaced, and it validates"
-        },
-        {
-          kind: "para",
-          text: "☐  All eight media files are produced from the demo, and the recorded call has its transcript on the page"
-        },
-        {
-          kind: "para",
-          text: "☐  Eight links out and six links in are added"
-        },
-        {
-          kind: "para",
-          text: "☐  Cost and New Zealand short-code sentences are re-checked against the source pages"
-        },
-        {
-          kind: "para",
-          text: "☐  No client is named, no wording is copied from the post, and the \"Demo build\" label is visible"
-        },
-        {
-          kind: "para",
-          text: "☐  Page is in the sitemap with a real lastmod date, and indexing is requested in Search Console"
-        }
+        
+
+{
+  kind: "list",
+  items: [
+    "The demo line is live at /demos/ai-receptionist and the demo script in part 9 runs end to end"
+  ]
+},
+{
+  kind: "list",
+  items: [
+    "The test run is finished and every bracketed value in part 10 holds a measured number"
+  ]
+},
+{
+  kind: "list",
+  items: [
+    "\"What the numbers show\" is written from the real results, including any threshold that missed"
+  ]
+},
+{
+  kind: "list",
+  items: [
+    "The sample timeline table holds a real handled lead from the demo, with personal details invented or masked"
+  ]
+},
+{
+  kind: "list",
+  items: [
+    "The page copy matches the final demo: two demo businesses, and web forms as a fourth channel"
+  ]
+},
+{
+  kind: "list",
+  items: [
+    "/case-studies hub is built and linked from the navigation"
+  ]
+},
+{
+  kind: "list",
+  items: [
+    "Title, meta description, canonical and Open Graph tags match the Page metadata table"
+  ]
+},
+{
+  kind: "list",
+  items: [
+    "JSON-LD is pasted, its five brackets are replaced, and it validates"
+  ]
+},
+{
+  kind: "list",
+  items: [
+    "All eight media files are produced from the demo, and the recorded call has its transcript on the page"
+  ]
+},
+{
+  kind: "list",
+  items: [
+    "Eight links out and six links in are added"
+  ]
+},
+{
+  kind: "list",
+  items: [
+    "Cost and New Zealand short-code sentences are re-checked against the source pages"
+  ]
+},
+{
+  kind: "list",
+  items: [
+    "No client is named, no wording is copied from the post, and the \"Demo build\" label is visible"
+  ]
+},
+{
+  kind: "list",
+  items: [
+    "Page is in the sitemap with a real lastmod date, and indexing is requested in Search Console"
+  ]
+}
+
+
       ]
     },
     {
@@ -4636,13 +4677,16 @@ export const caseStudy: CaseStudy = {
           text: "The opportunity and the case for speed"
         },
         {
-          kind: "heading",
-          level: 3,
-          text: "Create AI Lead response automation for small businesses"
+          kind: "list",
+          items: [
+            "Create AI Lead response automation for small businesses"
+          ]
         },
         {
-          kind: "para",
-          text: "The Short Life of Online Sales Leads, Harvard Business Review, March 2011"
+          kind: "list",
+          items: [
+            "The Short Life of Online Sales Leads, Harvard Business Review, March 2011"
+          ]
         },
         {
           kind: "heading",
@@ -4650,21 +4694,28 @@ export const caseStudy: CaseStudy = {
           text: "Voice AI"
         },
         {
-          kind: "para",
-          text: "Gemini API: Live API, Live API best practices, session management, Gemini 3.8 Live model page, pricing, structured outputs"
+          kind: "list",
+          items: [
+            "Gemini API: Live API, Live API best practices, session management, Gemini 3.8 Live model page, pricing, structured outputs"
+          ]
         },
         {
-          kind: "para",
-          text: "Pipecat: repository, Gemini Live guide, Twilio phone-bot starter"
+          kind: "list",
+          items: [
+            "Pipecat: repository, Gemini Live guide, Twilio phone-bot starter"
+          ]
         },
         {
-          kind: "heading",
-          level: 3,
-          text: "LiveKit Agents"
+          kind: "list",
+          items: [
+            "LiveKit Agents"
+          ]
         },
         {
-          kind: "para",
-          text: "Managed voice platforms: Retell AI pricing, Vapi pricing, Bland pricing"
+          kind: "list",
+          items: [
+            "Managed voice platforms: Retell AI pricing, Vapi pricing, Bland pricing"
+          ]
         },
         {
           kind: "heading",
@@ -4672,16 +4723,22 @@ export const caseStudy: CaseStudy = {
           text: "Telephony and messaging"
         },
         {
-          kind: "para",
-          text: "Twilio docs: Media Streams, Dial, A2P 10DLC"
+          kind: "list",
+          items: [
+            "Twilio docs: Media Streams, Dial, A2P 10DLC"
+          ]
         },
         {
-          kind: "para",
-          text: "Twilio SMS guidelines: New Zealand, United States, United Kingdom, Australia"
+          kind: "list",
+          items: [
+            "Twilio SMS guidelines: New Zealand, United States, United Kingdom, Australia"
+          ]
         },
         {
-          kind: "para",
-          text: "Twilio pricing: US voice, New Zealand voice, US SMS"
+          kind: "list",
+          items: [
+            "Twilio pricing: US voice, New Zealand voice, US SMS"
+          ]
         },
         {
           kind: "heading",
@@ -4689,22 +4746,28 @@ export const caseStudy: CaseStudy = {
           text: "Platforms and components"
         },
         {
-          kind: "heading",
-          level: 3,
-          text: "GoHighLevel pricing"
+          kind: "list",
+          items: [
+            "GoHighLevel pricing"
+          ]
         },
         {
-          kind: "para",
-          text: "Cal.com API reference and the cal.diy repository"
+          kind: "list",
+          items: [
+            "Cal.com API reference and the cal.diy repository"
+          ]
         },
         {
-          kind: "heading",
-          level: 3,
-          text: "Postmark inbound webhook"
+          kind: "list",
+          items: [
+            "Postmark inbound webhook"
+          ]
         },
         {
-          kind: "para",
-          text: "Repositories: n8n, Chatwoot, Supabase, pg-boss, twilio-node, libphonenumber-js"
+          kind: "list",
+          items: [
+            "Repositories: n8n, Chatwoot, Supabase, pg-boss, twilio-node, libphonenumber-js"
+          ]
         },
         {
           kind: "heading",
@@ -4712,16 +4775,22 @@ export const caseStudy: CaseStudy = {
           text: "Regulation"
         },
         {
-          kind: "para",
-          text: "New Zealand: What anti-spam law means for businesses, Department of Internal Affairs"
+          kind: "list",
+          items: [
+            "New Zealand: What anti-spam law means for businesses, Department of Internal Affairs"
+          ]
         },
         {
-          kind: "para",
-          text: "United States: CAN-SPAM Act compliance guide, FTC; FCC Declaratory Ruling 24-17 on AI-generated voices, as summarised by Mayer Brown"
+          kind: "list",
+          items: [
+            "United States: CAN-SPAM Act compliance guide, FTC; FCC Declaratory Ruling 24-17 on AI-generated voices, as summarised by Mayer Brown"
+          ]
         },
         {
-          kind: "para",
-          text: "European Union: AI Act, Article 50"
+          kind: "list",
+          items: [
+            "European Union: AI Act, Article 50"
+          ]
         },
         {
           kind: "heading",

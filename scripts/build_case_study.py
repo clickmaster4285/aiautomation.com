@@ -435,6 +435,9 @@ export type Block =
   | { kind: "page"; number: number }
   | { kind: "heading"; level: number; text: string }
   | { kind: "para"; text: string }
+  | { kind: "list"; items: string[]; ordered?: boolean }
+  | { kind: "code"; code: string; language?: string; filename?: string }
+  | { kind: "image"; src: string; alt: string; width: number; height: number; caption?: string }
   | { kind: "table"; rows: string[][] };
 
 export type Part = {

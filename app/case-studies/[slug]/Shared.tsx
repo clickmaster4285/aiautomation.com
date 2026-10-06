@@ -20,8 +20,17 @@ export function Dot({ className = '' }: { className?: string }) {
  * Pass a wordIndex to control where the split happens.
  */
 export function splitHeading(heading: string, wordIndex?: number) {
+  if (!heading) {
+    console.error('splitHeading received undefined:', heading);
+    return {
+      head: '',
+      tail: '',
+    };
+  }
+
   const parts = heading.split(' ');
   const at = wordIndex ?? Math.ceil(parts.length / 2);
+
   return {
     head: parts.slice(0, at).join(' '),
     tail: parts.slice(at).join(' '),
