@@ -16,9 +16,9 @@ import {
   TrendingUp,
 } from 'lucide-react';
 import { getCaseStudy } from '@/content/case-studies';
-import type { CaseStudy } from '@/content/case-studies/clickmasters-ai-lead-response-case-study-kit';
-import { Marker, splitHeading } from './Shared';
-import { PartsTabs } from './parts-tabs';
+import type { CaseStudy } from '@/content/case-studies/clickmasters-ai-lead-response-case-study';
+import { Marker, splitHeading } from '../../../components/caseStudies/Shared';
+import { PartsTabs } from '../../../components/caseStudies/parts-tabs';
 
 export default function CaseStudyPage({
   params,

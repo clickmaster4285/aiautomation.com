@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Marker } from './Shared';
-import type { Block, Part } from '@/content/case-studies/clickmasters-ai-lead-response-case-study-kit';
+import type { Block, Part } from '@/content/case-studies/clickmasters-ai-lead-response-case-study';
 
 // --------------------------------------------------------------------------- //
 //  Editorial table                                                             //
