@@ -250,10 +250,7 @@ export function getIndustries(): { slug: string; subPages: string[] }[] {
       slug: 'professional-services',
       subPages: [],
     },
-    {
-      slug: 'marketing-agencies',
-      subPages: [],
-    },
+   
   ];
 }
 

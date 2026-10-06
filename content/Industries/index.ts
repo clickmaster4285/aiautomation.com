@@ -17,7 +17,7 @@ export const industryContent: Record<string, ServiceContent> = {
   'ai-automation-for-saas': saas,
   'ai-automation-for-real-estate': realEstate,
   'ai-automation-for-professional-services': professionalServices,
-  'ai-automation-for-marketing-agencies': marketingAgencies,
+  
 };
 
 
