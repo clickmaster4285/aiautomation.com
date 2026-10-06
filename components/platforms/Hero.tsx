@@ -31,6 +31,7 @@ const wordVariants: Variants = {
 export default function Hero({ section, form }: HeroProps) {
   const heading = section.heading || '';
   const subheading = section.subheading || '';
+    const content = section.content || '';
   const stats = section.stats || [];
   const ctas = section.ctas || [];
   const primaryCta = ctas.find((c) => c.primary) || ctas[0];
@@ -93,7 +94,7 @@ export default function Hero({ section, form }: HeroProps) {
             className="flex flex-col justify-center"
           >
             {/* Badge */}
-            <motion.div
+            {/* <motion.div
               variants={wordVariants}
               className="inline-flex items-center gap-2 rounded-full border border-brand/30 bg-brand/10 px-4 py-2 text-sm text-brand backdrop-blur-sm mb-6"
             >
@@ -101,7 +102,7 @@ export default function Hero({ section, form }: HeroProps) {
               <span>AI Automation</span>
               <span className="h-1 w-1 rounded-full bg-brand" />
               <span className="text-brand/70 animate-pulse">INDUSTRIES</span>
-            </motion.div>
+            </motion.div> */}
 
             {/* Heading */}
             <motion.h1
@@ -138,12 +139,20 @@ export default function Hero({ section, form }: HeroProps) {
             </motion.h1>
 
             {/* Subheading */}
-            {subheading && (
+            {/* {subheading && (
               <motion.p
                 variants={wordVariants}
                 className="text-xl text-gray-300 leading-relaxed max-w-2xl text-justify"
               >
                 {subheading}
+              </motion.p>
+            )} */}
+              {subheading && (
+              <motion.p
+                variants={wordVariants}
+                className="text-xl text-gray-300 leading-relaxed max-w-2xl text-justify"
+              >
+                {content}
               </motion.p>
             )}
 

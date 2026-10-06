@@ -282,37 +282,37 @@ export const aiWorkflowAutomation: ServiceContent = {
         {
           title: 'Finance',
           description: 'Automated document processing for loan and account paperwork, compliance workflows that flag missing information, and live reporting instead of manual spreadsheets.',
-          link: '/industries/finance-accounting',
+          link: '/industries/ai-automation-for-finance-accounting',
           icon: 'Briefcase'
         },
         {
           title: 'Real Estate',
           description: 'Lead qualification systems that score and route enquiries within seconds, automated scheduling across agents, and follow-up automation so no lead goes cold.',
-          link: '/industries/real-estate',
+          link: '/industries/ai-automation-for-real-estate',
           icon: 'Building'
         },
         {
           title: 'Healthcare',
           description: 'Automated patient intake, scheduling workflows that reduce no-shows, and streamlined insurance verification and record updates.',
-          link: '/industries/healthcare',
+          link: '/industries/ai-automation-for-healthcare',
           icon: 'Heart'
         },
         {
           title: 'Law Firms',
           description: 'Automated document review that flags key clauses, client intake workflows, and automatic case status updates.',
-          link: '/industries/law-firms',
+          link: '/industries/ai-automation-for-law-firms',
           icon: 'Scale'
         },
         {
           title: 'E-commerce',
           description: 'Order processing from checkout to fulfilment, instant support workflows for order status and returns, and inventory alert systems.',
-          link: '/industries/ecommerce',
+          link: '/industries/ai-automation-for-ecommerce',
           icon: 'ShoppingCart'
         },
         {
           title: 'SaaS',
           description: 'Automated onboarding sequences, churn alert workflows, and connected customer success tools.',
-          link: '/industries/saas',
+          link: '/industries/ai-automation-for-saas',
           icon: 'Cloud'
         }
       ]

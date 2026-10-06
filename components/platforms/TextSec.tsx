@@ -32,6 +32,8 @@ function getIcon(name?: string) {
   return Icon ? <Icon className="h-5 w-5" /> : null;
 }
 
+const CROSS_HATCH = `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`;
+
 /* ─── Right-side animated patterns ──────────────────────────────────────── */
 function RightPattern() {
   return (
@@ -39,7 +41,6 @@ function RightPattern() {
       aria-hidden
       className="pointer-events-none absolute inset-y-0 right-0 w-[55%] overflow-hidden"
     >
-      {/* Warm radial wash top-right */}
       <div
         className="absolute inset-0"
         style={{
@@ -47,7 +48,6 @@ function RightPattern() {
             'radial-gradient(ellipse 65% 55% at 95% 15%, color-mix(in srgb, var(--brand) 9%, transparent), transparent 70%)',
         }}
       />
-      {/* Secondary wash bottom-right */}
       <div
         className="absolute inset-0"
         style={{
@@ -56,7 +56,6 @@ function RightPattern() {
         }}
       />
 
-      {/* Dot grid SVG */}
       <svg className="absolute inset-0 h-full w-full" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern id="ts-dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
@@ -66,7 +65,6 @@ function RightPattern() {
         <rect width="100%" height="100%" fill="url(#ts-dots)" />
       </svg>
 
-      {/* Pulsing rings top-right cluster */}
       {[0, 1, 2, 3].map((i) => (
         <motion.div
           key={`ring-a-${i}`}
@@ -74,20 +72,19 @@ function RightPattern() {
           style={{
             borderColor: 'var(--brand)',
             opacity: 0.13 - i * 0.025,
-            width:  160 + i * 70,
+            width: 160 + i * 70,
             height: 160 + i * 70,
-            top:   -50 + i * -28,
+            top: -50 + i * -28,
             right: -50 + i * -28,
           }}
           animate={{
-            scale:   [1, 1.07, 1],
+            scale: [1, 1.07, 1],
             opacity: [0.13 - i * 0.025, 0.22 - i * 0.025, 0.13 - i * 0.025],
           }}
           transition={{ duration: 5 + i * 1.3, repeat: Infinity, ease: 'easeInOut', delay: i * 0.7 }}
         />
       ))}
 
-      {/* Pulsing rings bottom-right cluster */}
       {[0, 1, 2].map((i) => (
         <motion.div
           key={`ring-b-${i}`}
@@ -95,50 +92,48 @@ function RightPattern() {
           style={{
             borderColor: 'var(--brand)',
             opacity: 0.1 - i * 0.02,
-            width:  110 + i * 55,
+            width: 110 + i * 55,
             height: 110 + i * 55,
             bottom: -30 + i * -18,
-            right:  80  + i * -12,
+            right: 80 + i * -12,
           }}
           animate={{
-            scale:   [1, 1.09, 1],
+            scale: [1, 1.09, 1],
             opacity: [0.1 - i * 0.02, 0.18 - i * 0.02, 0.1 - i * 0.02],
           }}
           transition={{ duration: 6 + i * 1.1, repeat: Infinity, ease: 'easeInOut', delay: 1.2 + i * 0.9 }}
         />
       ))}
 
-      {/* Floating rotated squares */}
       {[
-        { size: 26, top: '15%', right: '20%', rot: 20,  dur: 8  },
-        { size: 15, top: '38%', right:  '9%', rot: -14, dur: 11 },
-        { size: 20, top: '62%', right: '28%', rot:  32, dur: 9  },
-        { size: 11, top: '78%', right: '12%', rot: -22, dur: 7  },
-        { size: 17, top: '28%', right: '42%', rot:   8, dur: 10 },
+        { size: 26, top: '15%', right: '20%', rot: 20, dur: 8 },
+        { size: 15, top: '38%', right: '9%', rot: -14, dur: 11 },
+        { size: 20, top: '62%', right: '28%', rot: 32, dur: 9 },
+        { size: 11, top: '78%', right: '12%', rot: -22, dur: 7 },
+        { size: 17, top: '28%', right: '42%', rot: 8, dur: 10 },
         { size: 13, top: '52%', right: '50%', rot: -18, dur: 13 },
       ].map((s, i) => (
         <motion.div
           key={`sq-${i}`}
           className="absolute rounded-sm border"
           style={{
-            width:  s.size,
+            width: s.size,
             height: s.size,
-            top:    s.top,
-            right:  s.right,
+            top: s.top,
+            right: s.right,
             rotate: s.rot,
             borderColor: 'var(--brand)',
             background: 'color-mix(in srgb, var(--brand) 7%, transparent)',
           }}
           animate={{
-            y:       [0, -10, 0],
-            rotate:  [s.rot, s.rot + 9, s.rot],
+            y: [0, -10, 0],
+            rotate: [s.rot, s.rot + 9, s.rot],
             opacity: [0.3, 0.55, 0.3],
           }}
           transition={{ duration: s.dur, repeat: Infinity, ease: 'easeInOut', delay: i * 0.65 }}
         />
       ))}
 
-      {/* Vertical gradient lines */}
       {[15, 30, 47, 63, 79].map((pct, i) => (
         <motion.div
           key={`line-${i}`}
@@ -157,7 +152,6 @@ function RightPattern() {
         />
       ))}
 
-      {/* Orbiting glow dot top area */}
       <motion.div
         className="absolute rounded-full"
         style={{
@@ -176,7 +170,6 @@ function RightPattern() {
         transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }}
       />
 
-      {/* Second smaller orbiting dot bottom area */}
       <motion.div
         className="absolute rounded-full"
         style={{
@@ -195,7 +188,6 @@ function RightPattern() {
         transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
       />
 
-      {/* Left edge fade blends into the section's light background */}
       <div
         className="absolute inset-y-0 left-0 w-40"
         style={{ background: 'linear-gradient(to right, #f8f9fa, transparent)' }}
@@ -209,24 +201,97 @@ export default function TextSec({ section }: { section: Section }) {
   const content =
     typeof section.content === 'string' ? [section.content] : section.content || [];
 
-  const lead = content.find(p => !p.trim().startsWith('•')) || '';
+  const hasHeading = !!section.heading;
+  const hasImage = !!section.image;
+
+  const leadParas = content.filter(p => p.trim() && !p.trim().startsWith('•'));
   const bulletLines = content
     .filter(p => p.trim().startsWith('•'))
     .map(p => p.trim().slice(1).trim());
 
+  const hasBullets = bulletLines.length > 0;
+
+  // ── Case A: No heading and no image → simple content flow ──
+  if (!hasHeading && !hasImage) {
+    return (
+      <section
+        className="relative py-24 md:py-32 overflow-hidden"
+        style={{
+          background: 'linear-gradient(135deg, #f8f9fa 0%, #eef1f4 100%)',
+          borderTop: '1px solid rgba(0,0,0,0.06)',
+        }}
+      >
+        <div
+          className="absolute inset-0 pointer-events-none opacity-[0.03]"
+          style={{
+            backgroundImage: CROSS_HATCH,
+            backgroundRepeat: 'repeat',
+          }}
+        />
+        <RightPattern />
+
+        <div className="relative mx-auto max-w-[84vw] px-6">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={stagger}
+            className="max-w-3xl"
+          >
+            {leadParas.map((para, idx) => (
+              <motion.p
+                key={idx}
+                custom={idx}
+                variants={fadeUp}
+                className="text-base md:text-lg leading-relaxed text-justify font-sans mb-4"
+                style={{ color: 'rgba(0,0,0,0.7)' }}
+              >
+                {para}
+              </motion.p>
+            ))}
+
+            {hasBullets && (
+              <ul className="space-y-3 mt-6">
+                {bulletLines.map((item, idx) => (
+                  <motion.li
+                    key={idx}
+                    custom={idx}
+                    variants={fadeUp}
+                    className="flex items-start gap-3"
+                  >
+                    <span
+                      className="text-lg leading-6 flex-shrink-0 mt-0.5"
+                      style={{ color: 'var(--brand)' }}
+                    >
+                      •
+                    </span>
+                    <span
+                      className="text-base leading-relaxed font-sans text-justify"
+                      style={{ color: 'rgba(0,0,0,0.7)' }}
+                    >
+                      {item}
+                    </span>
+                  </motion.li>
+                ))}
+              </ul>
+            )}
+          </motion.div>
+        </div>
+      </section>
+    );
+  }
+
+  // ── Case B: With heading and/or image → left/right column layout ──
   const iconKeys = Object.keys(iconMap);
-  const cardData = bulletLines.length > 0
+  const showCards = false;
+
+  const cardData = showCards
     ? bulletLines.map((text, idx) => ({
         icon: iconKeys[idx % iconKeys.length],
         title: text.length > 48 ? text.slice(0, 48) + '…' : text,
         desc: text,
       }))
-    : [
-        { icon: 'Zap',         title: 'Error Handling',  desc: 'Graceful recovery from app hiccups and missing data.' },
-        { icon: 'AlertCircle', title: 'Instant Alerts',   desc: 'Failures surface immediately, not downstream.' },
-        { icon: 'CheckCircle', title: 'Clean Logic',      desc: 'Built for messy, real-world data variations.' },
-        { icon: 'GitBranch',   title: 'Efficient Design', desc: 'No wasted tasks – every step matters.' },
-      ];
+    : [];
 
   return (
     <section
@@ -236,16 +301,13 @@ export default function TextSec({ section }: { section: Section }) {
         borderTop: '1px solid rgba(0,0,0,0.06)',
       }}
     >
-      {/* Existing cross-hatch texture */}
       <div
         className="absolute inset-0 pointer-events-none opacity-[0.03]"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: CROSS_HATCH,
           backgroundRepeat: 'repeat',
         }}
       />
-
-      {/* Animated right-side patterns */}
       <RightPattern />
 
       <div className="relative mx-auto max-w-[84vw] px-6">
@@ -256,114 +318,147 @@ export default function TextSec({ section }: { section: Section }) {
           variants={stagger}
           className="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-12 lg:gap-20 items-start"
         >
-          {/* ── LEFT COLUMN ── */}
+          {/* LEFT COLUMN */}
           <motion.div variants={fadeUp} className="lg:sticky lg:top-32">
-            <div className="w-10 h-1 rounded-full mb-5" style={{ background: 'var(--brand)' }} />
-            <h2
-              className="display"
-              style={{ fontSize: 'clamp(1.8rem, 3vw, 2.6rem)', color: '#111', letterSpacing: '-0.02em' }}
-            >
-              {section.heading}
-            </h2>
-
-            <p
-              className="mt-3 text-sm font-medium text-justify font-sans"
-              style={{ color: 'rgba(0,0,0,0.4)', maxWidth: '280px' }}
-            >
-              Real‑world resilience, not just happy‑path scripting.
-            </p>
-
-            {section.image && (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                viewport={{ once: true }}
-                className="mt-6 relative w-full max-w-[200px] aspect-square"
+            <div
+              className="w-10 h-1 rounded-full mb-5"
+              style={{ background: 'var(--brand)' }}
+            />
+            {hasHeading && (
+              <h2
+                className="display"
+                style={{
+                  fontSize: 'clamp(1.8rem, 3vw, 2.6rem)',
+                  color: '#111',
+                  letterSpacing: '-0.02em',
+                }}
               >
-                <motion.div
-                  animate={{ y: [0, -8, 0] }}
-                  transition={{ repeat: Infinity, duration: 3, ease: 'easeInOut' }}
-                  className="relative w-full h-full"
-                >
-                  <Image
-                    src={typeof section.image === 'string' ? section.image : section.image.src}
-                    alt={typeof section.image === 'string' ? section.heading || 'Section image' : section.image.alt || section.heading || 'Section image'}
-                    fill
-                    className="object-contain drop-shadow-lg"
-                    priority
-                  />
-                </motion.div>
-              </motion.div>
+                {section.heading}
+              </h2>
             )}
+
+                     {section.image && (() => {
+              const img = section.image;
+              const src = typeof img === 'string' ? img : img.src;
+              const alt =
+                typeof img === 'string'
+                  ? section.heading || 'Section image'
+                  : img.alt || section.heading || 'Section image';
+
+              return (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                  viewport={{ once: true }}
+                  className="mt-6 relative w-full max-w-[200px] aspect-square"
+                >
+                  <motion.div
+                    animate={{ y: [0, -8, 0] }}
+                    transition={{ repeat: Infinity, duration: 3, ease: 'easeInOut' }}
+                    className="relative w-full h-full"
+                  >
+                    <Image
+                      src={src}
+                      alt={alt}
+                      fill
+                      className="object-contain drop-shadow-lg"
+                      priority
+                    />
+                  </motion.div>
+                </motion.div>
+              );
+            })()}
           </motion.div>
 
-          {/* ── RIGHT COLUMN ── */}
+          {/* RIGHT COLUMN */}
           <div className="space-y-8">
-            {lead && (
+            {leadParas.map((para, idx) => (
               <motion.p
+                key={idx}
+                custom={idx}
                 variants={fadeUp}
                 className="text-base md:text-lg leading-relaxed text-justify font-sans w-full"
                 style={{ color: 'rgba(0,0,0,0.7)' }}
               >
-                {lead}
+                {para}
               </motion.p>
+            ))}
+
+            {showCards && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {cardData.map((card, idx) => (
+                  <motion.div
+                    key={idx}
+                    custom={idx}
+                    variants={fadeUp}
+                    className="group relative p-5 rounded-xl transition-all duration-300 cursor-default hover:-translate-y-1 hover:shadow-lg"
+                    style={{
+                      background: 'white',
+                      border: '1px solid rgba(0,0,0,0.06)',
+                      boxShadow: '0 1px 3px rgba(0,0,0,0.02)',
+                    }}
+                  >
+                    <div
+                      className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      style={{ boxShadow: '0 8px 30px rgba(249,115,22,0.12)' }}
+                    />
+                    <div className="absolute inset-0 rounded-xl border border-transparent group-hover:border-brand/40 transition-colors duration-300" />
+                    <div className="relative z-10 flex items-start gap-3">
+                      <div
+                        className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center"
+                        style={{
+                          background: 'rgba(249,115,22,0.06)',
+                          color: 'var(--brand)',
+                        }}
+                      >
+                        {getIcon(card.icon)}
+                      </div>
+                      <div>
+                        <h4
+                          className="font-semibold text-sm font-sans"
+                          style={{ color: '#111' }}
+                        >
+                          {card.title}
+                        </h4>
+                        <p
+                          className="text-xs leading-relaxed mt-0.5 text-justify font-sans"
+                          style={{ color: 'rgba(0,0,0,0.5)' }}
+                        >
+                          {card.desc}
+                        </p>
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
             )}
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {cardData.map((card, idx) => (
-                <motion.div
-                  key={idx}
-                  custom={idx}
-                  variants={fadeUp}
-                  className="group relative p-5 rounded-xl transition-all duration-300 cursor-default hover:-translate-y-1 hover:shadow-lg"
-                  style={{
-                    background: 'white',
-                    border: '1px solid rgba(0,0,0,0.06)',
-                    boxShadow: '0 1px 3px rgba(0,0,0,0.02)',
-                  }}
-                >
-                  <div
-                    className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    style={{ boxShadow: '0 8px 30px rgba(249,115,22,0.12)' }}
-                  />
-                  <div className="absolute inset-0 rounded-xl border border-transparent group-hover:border-brand/40 transition-colors duration-300" />
-                  <div className="relative z-10 flex items-start gap-3">
-                    <div
-                      className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center"
-                      style={{ background: 'rgba(249,115,22,0.06)', color: 'var(--brand)' }}
+            {!showCards && hasBullets && (
+              <ul className="space-y-3">
+                {bulletLines.map((item, idx) => (
+                  <motion.li
+                    key={idx}
+                    custom={idx}
+                    variants={fadeUp}
+                    className="flex items-start gap-3"
+                  >
+                    <span
+                      className="text-lg leading-6 flex-shrink-0 mt-0.5"
+                      style={{ color: 'var(--brand)' }}
                     >
-                      {getIcon(card.icon)}
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-sm font-sans" style={{ color: '#111' }}>
-                        {card.title}
-                      </h4>
-                      <p
-                        className="text-xs leading-relaxed mt-0.5 text-justify font-sans"
-                        style={{ color: 'rgba(0,0,0,0.5)' }}
-                      >
-                        {card.desc}
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-
-            <motion.div
-              variants={fadeUp}
-              className="mt-6 pt-4 border-t text-justify font-sans"
-              style={{ borderColor: 'rgba(0,0,0,0.06)' }}
-            >
-              <p
-                className="text-sm font-medium flex items-center gap-2"
-                style={{ color: 'rgba(0,0,0,0.4)' }}
-              >
-                <span>⚡</span>
-                <span>Built for edge cases, not just the ideal path.</span>
-              </p>
-            </motion.div>
+                      •
+                    </span>
+                    <span
+                      className="text-base leading-relaxed font-sans text-justify"
+                      style={{ color: 'rgba(0,0,0,0.7)' }}
+                    >
+                      {item}
+                    </span>
+                  </motion.li>
+                ))}
+              </ul>
+            )}
           </div>
         </motion.div>
       </div>

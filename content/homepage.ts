@@ -301,32 +301,32 @@ export const homepageData = {
       {
         title: 'AI Automation for Real Estate',
         description: 'We automate lead follow-ups, appointment scheduling, and property enquiries for real estate teams. This helps agents respond faster and never miss a potential buyer or renter.',
-        link: '/industries/real-estate'
+        link: '/industries/ai-automation-for-real-estate'
       },
       {
         title: 'AI Automation for E-commerce and Retail',
         description: 'We automate order processing, customer support, and inventory updates for online stores, including Amazon automation workflows. This keeps operations running smoothly during high-traffic sales periods.',
-        link: '/industries/ecommerce'
+        link: '/industries/ai-automation-for-ecommerce'
       },
       {
         title: 'AI Automation for Healthcare and Clinics',
         description: 'We automate appointment scheduling, patient inquiries, and administrative paperwork for healthcare providers. This reduces manual workload while keeping patient data handling secure.',
-        link: '/industries/healthcare'
+        link: '/industries/ai-automation-for-healthcare'
       },
       {
         title: 'AI Automation for Finance and Accounting',
         description: 'We automate invoice processing, data entry, and reporting for finance teams. This cuts manual errors and speeds up month-end and reconciliation tasks.',
-        link: '/industries/finance-accounting'
+        link: '/industries/ai-automation-for-finance-accounting'
       },
       {
         title: 'AI Automation for Professional Services',
         description: 'We automate client onboarding, proposal generation, and follow-ups for service-based businesses. This helps teams manage more clients without adding administrative overhead.',
-        link: '/industries/professional-services'
+        link: '/industries/ai-automation-for-professional-services'
       },
       {
         title: 'AI Automation for SaaS and Technology Companies',
         description: 'We automate customer onboarding, support ticket routing, and user data syncing for SaaS platforms. This improves customer experience while reducing the support team\'s workload.',
-        link: '/industries/saas'
+        link: '/industries/ai-automation-for-saas'
       },
       {
         title: 'AI Automation for Marketing and Creative Agencies',

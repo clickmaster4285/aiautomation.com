@@ -1,30 +1,30 @@
+
 // content/Platforms/make-automation-services.ts
 import { ServiceContent } from '../type';
 
 export const makeAutomationService: ServiceContent = {
   slug: 'make-automation-services',
-  title: 'Make (Integromat) Automation Services | Clickmasters',
+  title: 'Make Automation Services USA - Make Experts',
   metaDescription:
-    'Clickmasters designs Make automations visual, multi-step workflows with real logic at lower run-cost than enterprise tools. Build, migrate, and scale on Make.',
-  keywords: 'make automation agency, make automation services, integromat, make integromat',
+    'Get Make Automation Services to build advanced scenarios, connect systems, automate processes, and streamline operations with custom workflows.',
+  keywords:
+    'make automation services, make automation experts, make automation consultant, make workflow automation, make automation USA, make scenario automation, make integrations',
   sections: [
     // ========== HERO ==========
     {
       type: 'hero',
-      heading: 'Make Automation Services',
+      heading: 'Build Powerful Workflows With Make Automation Services',
       subheading:
-        'Powerful visual workflows for teams that have outgrown simple tools but want lower run-costs than enterprise platforms.',
+        'Our Make automation services help U.S. businesses create visual workflows that connect applications, process data, and automate complex operational tasks.',
       content: [
-        'Clickmasters designs and builds Make automations for businesses that have outgrown the simplest tools but do not want the cost or complexity of enterprise platforms. Make formerly Integromat sits in a genuinely useful middle ground: a visual canvas for building multi-step workflows with real branching logic, at a per-operation price that is usually friendlier than Zapier\'s per-task model once volume climbs. For a lot of growing operations teams, it is the sweet spot.',
-        'This page explains what Make is good at, when it is the right choice, the services we provide, and how it compares to the alternatives, so you can decide whether it fits your situation.',
-      ],
-      stats: [
-        { label: 'WORKFLOWS BUILT', value: '200+' },
-        { label: 'CLIENTS', value: '95+' },
+        'Our Make automation services help U.S. businesses create visual workflows that connect applications, process data, and automate complex operational tasks. From simple scenarios to advanced multi-route automation, our Make experts build reliable workflows that reduce repetitive work and improve how information moves across your business.',
       ],
       ctas: [
-        { text: 'Book a Free Audit', link: '/free-automation-audit', primary: true },
-        { text: 'View Work', link: '/work', primary: false },
+        {
+          text: 'Book Your Make Automation Consultation',
+          link: '/free-automation-audit',
+          primary: true,
+        },
       ],
       image: {
         src: '/images/make-hero.png',
@@ -35,139 +35,243 @@ export const makeAutomationService: ServiceContent = {
       },
     },
 
-    // ========== TEXT: What Make Is Good At ==========
+    // ========== TEXT: Complex Workflows ==========
     {
       type: 'text',
-      heading: 'What Make Is Good At',
-      image: '/images/rob.png',   
-      content: [
-        'Make\'s defining strength is its visual scenario builder. Instead of the linear, step-after-step model of simpler tools, Make gives you a canvas where you can see the whole workflow, branch it down multiple paths, loop over data, and handle real conditional logic. For workflows that are more than a straight line where what happens next depends on the data, or where one trigger fans out into several actions that visual clarity is a real advantage, both for building and for understanding what a workflow does later.',
-        'Its second strength is cost at volume. Make charges per operation rather than per task, and for many real-world workflows that works out cheaper than the equivalent on Zapier, especially as the number of steps and runs grows. It is not always cheaper it depends on the workflow shape but for multi-step automations at volume, Make frequently wins on economics while offering more logical power.',
-      ],
-    },
-
-    // ========== TEXT: When Make Is the Right Choice ==========
-    {
-      type: 'text',
-      heading: 'When Make Is the Right Choice',
+      heading: 'Make Automation for Complex Business Workflows',
       image: '/images/rob.png',
       content: [
-        'Make is the right tool when your automations have real complexity multiple steps, branching, conditional logic, data transformation but you do not need the self-hosting or full data control that pushes a project toward n8n, and you have outgrown the simplicity ceiling of Zapier. It suits operations teams at small and mid-sized businesses who want to see and manage their workflows visually and who care about keeping run-costs reasonable as volume grows.',
-        'It is less ideal at the extremes. For a genuinely simple, linear automation and a non-technical user who wants it live in minutes, Zapier is often easier. For high-volume, data-sensitive, or AI-heavy production workflows where self-hosting and no per-run fees matter, n8n is usually the better home. We will tell you honestly which end of that spectrum your project sits on rather than pushing Make for everything.',
+        'Manual business processes become harder to manage as your company grows. Our Make automation services turn repetitive processes into connected visual workflows that can handle multiple actions and decision paths.',
+        'We start by understanding the complete workflow rather than immediately building individual scenarios. Our Make consultants identify data sources, workflow rules, triggers, outputs, and exceptions before implementation. This creates automation that is easier to manage and scale.',
       ],
     },
 
-    // ========== FEATURES: Our Make Services ==========
+    // ========== FEATURES: Strategy & Implementation ==========
     {
       type: 'features',
-      heading: 'Our Make Services',
+      heading: 'Make Automation Strategies & Implementation',
       items: [
         {
-          title: 'Make scenario design',
+          title: 'Workflow Mapping',
           description:
-            'Multi-step visual workflows with branching, routing, and data handling built around your actual processes.',
+            'Document inputs, outputs, decisions, and dependencies before automation begins.',
+          icon: 'Map',
+        },
+        {
+          title: 'Scenario Architecture',
+          description:
+            'Organize workflows into structured and manageable Make scenarios.',
           icon: 'GitBranch',
         },
         {
-          title: 'Migration to Make',
+          title: 'Routing Logic',
           description:
-            'Moving workflows from Zapier when per-task pricing has become expensive, capturing the same automation at lower run-cost.',
-          icon: 'ArrowRight',
+            'Create conditional paths for different data, customers, or business requirements.',
+          icon: 'GitBranch',
         },
         {
-          title: 'Make plus AI',
+          title: 'Data Transformation',
           description:
-            'Adding OpenAI or Claude steps for drafting, classification, and decisions inside your Make scenarios.',
-          icon: 'Brain',
+            'Convert information into the formats required by connected systems.',
+          icon: 'Database',
         },
         {
-          title: 'Audit and optimization',
+          title: 'Error Handling',
           description:
-            'Reviewing existing scenarios to cut operation usage, fix fragile logic, and improve reliability.',
+            'Plan for missing records, failed requests, and unexpected responses.',
+          icon: 'AlertTriangle',
+        },
+        {
+          title: 'Scenario Optimization',
+          description:
+            'Reduce unnecessary steps and simplify workflow structure for better performance.',
+          icon: 'BarChart',
+        },
+      ],
+    },
+
+    // ========== TEXT: Results ==========
+    {
+      type: 'text',
+      heading: 'What Results Customers Get From Make Automation',
+      content: [
+        'Our Make workflow automation services help businesses transform manual processes into structured scenarios.',
+        'The goal is to improve speed, consistency, and operational efficiency.',
+        '• Reduce repetitive processing and manual data handling.',
+        '• Connect fragmented business systems and workflows.',
+        '• Process incoming information more consistently.',
+        '• Improve workflow visibility and internal handoffs.',
+      ],
+    },
+
+    // ========== FEATURES: Delivery Process ==========
+    {
+      type: 'features',
+      heading: 'How We Deliver Make Automation Services',
+      items: [
+        {
+          title: 'Discovery',
+          description:
+            'Understand your current business process and automation requirements.',
           icon: 'Search',
         },
         {
-          title: 'Ongoing management',
+          title: 'Scenario Development',
           description:
-            'Monitoring and scaling your Make automations as your processes and volume grow.',
-          icon: 'RefreshCw',
+            'Build modules, filters, routes, APIs, and webhook connections.',
+          icon: 'Workflow',
         },
         {
-      title: 'Custom API & webhook integration',
-      description:
-        'Extending Make scenarios with custom API calls, webhooks, and external services to connect tools that don\'t have native integrations.',
-      icon: 'Code',
-    },
-      ],
-    },
-
-    // ========== GRID: Comparison Table (Make vs Zapier vs n8n) ==========
-    {
-      type: 'grid',
-      heading: 'Make vs. Zapier vs. n8n',
-      subheading:
-        'Since these three come up together constantly, here is the honest comparison for choosing between them.',
-      items: [
-        {
-          title: 'Best for',
-          description: 'Visual multi-step logic',
-          icon: 'GitBranch',
+          title: 'Testing',
+          description:
+            'Validate different routes, inputs, and expected workflow outputs.',
+          icon: 'CheckCircle',
         },
         {
-          title: 'Pricing',
-          description: 'Per operation (often cheaper at volume)',
-          icon: 'DollarSign',
+          title: 'Launch & Optimization',
+          description:
+            'Deploy scenarios and improve them as your workflows evolve.',
+          icon: 'Rocket',
         },
-        {
-          title: 'Learning curve',
-          description: 'Moderate',
-          icon: 'Brain',
-        },
-        {
-          title: 'Self-hosting',
-          description: 'No',
-          icon: 'Cloud',
-        },
-        {
-          title: 'Data control',
-          description: 'Cloud only',
-          icon: 'Database',
-        },
-         {
-      title: 'AI & LLM Support',
-      description: 'Native AI nodes for building agents and LLM workflows',
-      icon: 'Brain',
-    },
       ],
     },
 
     // ========== FEATURES: Why Clickmasters ==========
     {
       type: 'features',
-      heading: 'Why Clickmasters',
+      heading: 'Why Choose Clickmasters for Make Automation Experts?',
       items: [
         {
-          title: 'Platform-honest',
+          title: 'Custom Architecture',
           description:
-            'We use Make where it fits and tell you when Zapier or n8n would serve you better.',
-          icon: 'Shield',
+            'Every scenario is built around your actual workflow and operational requirements.',
+          icon: 'Settings',
         },
         {
-          title: 'Reliability-first',
+          title: 'Advanced Logic',
           description:
-            'Scenarios built with error handling and efficient design, not just the happy path.',
-          icon: 'Target',
+            'Support for routes, filters, webhooks, APIs, and data transformations.',
+          icon: 'GitBranch',
         },
         {
-          title: 'Cost-aware',
+          title: 'Scalable Automation',
           description:
-            'We design to keep operation usage and your bill under control.',
-          icon: 'DollarSign',
+            'Scenarios designed to adapt as your business requirements change.',
+          icon: 'TrendingUp',
         },
         {
-          title: 'You own it',
-          description: 'Documented, transparent scenarios you control.',
-          icon: 'Award',
+          title: 'U.S. Business Focus',
+          description:
+            'Commercial automation services designed for companies across the USA.',
+          icon: 'Globe',
+        },
+      ],
+    },
+
+    // ========== INDUSTRIES ==========
+    {
+      type: 'industries',
+      heading: 'Industries We Serve',
+      subheading:
+        'Our Make automation services in the USA help businesses with processes that require data movement and complex routing. They also support repeatable operational workflows across growing teams.',
+      items: [
+        {
+          title: 'SaaS Companies',
+          description:
+            'Automate customer, subscription, support, and operational workflows.',
+        },
+        {
+          title: 'Marketing Agencies',
+          description:
+            'Connect campaign data, lead sources, reporting systems, and client processes.',
+        },
+        {
+          title: 'E-commerce',
+          description:
+            'Automate order, customer, fulfillment, and reporting workflows.',
+        },
+        {
+          title: 'Professional Services',
+          description:
+            'Connect intake, onboarding, project management, and administrative systems.',
+        },
+        {
+          title: 'Real Estate',
+          description:
+            'Automate lead processing, internal routing, and property-related workflows.',
+        },
+        {
+          title: 'Recruitment',
+          description:
+            'Automate candidate data processing, notifications, and internal hiring processes.',
+        },
+      ],
+    },
+
+    // ========== CASE STUDIES ==========
+    {
+      type: 'casestudies',
+      heading: 'Make Automation Case Studies',
+      items: [
+        {
+          title: 'Multi-Source Lead Processing',
+          challenge:
+            'A business received leads from several sources and manually organized each submission.',
+          solution:
+            'A Make scenario normalized incoming data and routed each lead through the appropriate workflow.',
+          result:
+            'Lead processing became faster and more consistent.',
+        },
+        {
+          title: 'Automated Reporting',
+          challenge:
+            'An operations team manually combined data from different systems every week.',
+          solution:
+            'A scheduled Make workflow collected, transformed, and organized the required information.',
+          result:
+            'The team spent less time assembling data manually.',
+        },
+        {
+          title: 'Order Workflow Automation',
+          challenge:
+            'Multiple manual actions were required after every qualifying customer order.',
+          solution:
+            'A multi-step Make scenario processed the order and initiated the appropriate downstream actions.',
+          result:
+            'The business created a more repeatable fulfillment process.',
+        },
+      ],
+    },
+
+    // ========== REVIEWS ==========
+    {
+      type: 'reviews',
+      heading: 'Customer Reviews',
+      items: [
+        {
+          quote:
+            'The Make automation service helped us replace a complicated manual process with a clear visual scenario.',
+          author: 'Olivia M.',
+        },
+        {
+          quote:
+            'Our Make consultant created advanced workflow automation around our actual business rules.',
+          author: 'Ethan R.',
+        },
+        {
+          quote:
+            'The new Make scenarios reduced repetitive processing and made our data workflow easier to manage.',
+          author: 'Sophia T.',
+        },
+        {
+          quote:
+            'We needed API-driven automation, and their Make automation expert built a much more connected process.',
+          author: 'Noah C.',
+        },
+        {
+          quote:
+            'Their Make workflow automation audit helped us simplify several scenarios that had become unnecessarily complicated.',
+          author: 'Ava T.',
         },
       ],
     },
@@ -175,32 +279,42 @@ export const makeAutomationService: ServiceContent = {
     // ========== FAQ ==========
     {
       type: 'faq',
-      heading: 'Frequently Asked Questions',
+      heading: 'Make Automation Services FAQs',
       items: [
         {
-          title: 'What is Make used for?',
+          title: 'What are Make automation services?',
           description:
-            'Make (formerly Integromat) is a visual automation platform for building multi-step workflows that connect apps with branching logic a middle ground between Zapier\'s simplicity and developer-level tools, well suited to operations teams with real workflow complexity.',
+            'Make automation services involve designing and building automated scenarios that connect applications, process data, and perform business actions.',
         },
         {
-          title: 'Is Make cheaper than Zapier?',
+          title: 'What does a Make expert do?',
           description:
-            'Often, yes. Make\'s per-operation pricing is usually more cost-effective than Zapier\'s per-task model at comparable volume, particularly for multi-step workflows though it depends on the specific workflow shape.',
+            'A Make expert creates scenarios using modules, routes, filters, webhooks, APIs, data transformation, and error-handling logic.',
         },
         {
-          title: 'Should I use Make or n8n?',
+          title: 'Can Make automate complex workflows?',
           description:
-            'Make is cloud-only and visual, ideal when you want a managed platform with strong logic. n8n adds self-hosting and full data control, better for high-volume, data-sensitive, or AI-heavy production workflows. We help you choose based on your data needs and volume.',
+            'Yes. Make can support multi-step workflows containing multiple routes, filters, transformations, and connected systems.',
         },
         {
-          title: 'Can Make use AI?',
+          title: 'Can Make connect to custom APIs?',
           description:
-            'Yes. We add OpenAI or Claude steps inside Make scenarios for drafting, classification, and decision-making, extending your automations beyond simple rule-based actions.',
+            'Yes. API connectivity can be used when the required external system provides suitable endpoints.',
         },
         {
-          title: 'Can you migrate our Zapier workflows to Make?',
+          title: 'Can you optimize existing Make scenarios?',
           description:
-            'Yes. When Zapier\'s per-task pricing has become expensive, we migrate the right workflows to Make to cut run-cost while preserving the automation and we tell you honestly when a migration is and isn\'t worth it.',
+            'Yes. Existing scenarios can be reviewed for unnecessary operations, routing issues, errors, and structural improvements.',
+        },
+        {
+          title: 'How much do automation services cost?',
+          description:
+            'Pricing depends on scenario complexity, integrations, data transformations, custom APIs, and support requirements.',
+        },
+        {
+          title: 'Do you provide Make automation services in the USA?',
+          description:
+            'Yes. We provide custom Make automation and workflow development services for U.S. businesses.',
         },
       ],
     },
@@ -208,14 +322,15 @@ export const makeAutomationService: ServiceContent = {
     // ========== CTA ==========
     {
       type: 'cta',
-      heading: 'Wondering if Make is right for your workflows?',
+      heading: 'Ready to Build Powerful Workflows With Make?',
       subheading:
-        "Book a free automation audit we'll recommend the platform that fits, honestly.",
+        'Let our Make automation experts build reliable visual workflows around your business processes.',
       cta: {
-        text: 'Book Your Free Audit',
+        text: 'Book Your Make Automation Consultation',
         link: '/free-automation-audit',
         primary: true,
       },
     },
   ],
 };
+

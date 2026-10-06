@@ -10,15 +10,17 @@ import { professionalServices } from './professional-services';
 import { marketingAgencies } from './marketing-agencies';
 
 export const industryContent: Record<string, ServiceContent> = {
-  'finance-accounting': financeAccounting,
-  'healthcare': healthcare,
-  'law-firms': lawFirms,
-  'ecommerce': ecommerce,
-  'saas': saas,
-  'real-estate': realEstate,
-  'professional-services': professionalServices,
-  'marketing-agencies': marketingAgencies,
+  'ai-automation-for-finance-accounting': financeAccounting,
+  'ai-automation-for-healthcare': healthcare,
+  'ai-automation-for-law-firms': lawFirms,
+  'ai-automation-for-ecommerce': ecommerce,
+  'ai-automation-for-saas': saas,
+  'ai-automation-for-real-estate': realEstate,
+  'ai-automation-for-professional-services': professionalServices,
+  'ai-automation-for-marketing-agencies': marketingAgencies,
 };
+
+
 
 export const industrySlugs = Object.keys(industryContent);
 

@@ -407,27 +407,27 @@ export const industryCategories: IndustryCategory[] = [
     industries: [
       {
         title: 'Finance & Accounting',
-        path: '/industries/finance-accounting',
+        path: '/industries/ai-automation-for-finance-accounting',
         description: 'Automate invoicing, reconciliation, and reporting',
       },
       {
         title: 'Healthcare',
-        path: '/industries/healthcare',
+        path: '/industries/ai-automation-for-healthcare',
         description: 'Appointment scheduling, intake, reminders, and follow-up',
       },
       {
         title: 'Law Firms',
-        path: '/industries/law-firms',
+        path: '/industries/ai-automation-for-law-firms',
         description: 'Client intake, document generation, deadline tracking',
       },
       {
         title: 'E-commerce',
-        path: '/industries/ecommerce',
+        path: '/industries/ai-automation-for-ecommerce',
         description: 'Support, orders, cart recovery, and marketing',
       },
       {
         title: 'SaaS',
-        path: '/industries/saas',
+        path: '/industries/ai-automation-for-saas',
         description: 'Onboarding, support deflection, churn signals, and revenue ops',
       },
     ],

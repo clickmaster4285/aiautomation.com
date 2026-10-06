@@ -12,6 +12,10 @@ const FaqSec = dynamic(() => import('@/components/platforms/FAQSec').then((mod) 
 const CTASec = dynamic(() => import('@/components/platforms/CTASec').then((mod) => mod.default));
 const StepSec = dynamic(() => import('@/components/platforms/StepSec').then((mod) => mod.default));
 const PainPoint = dynamic(() => import('@/components/platforms/PainPoint').then((mod) => mod.default));
+// ✅ NEW
+const IndustriesSec = dynamic(() => import('@/components/platforms/IndustriesSec').then((mod) => mod.default));
+const CaseStudiesSec = dynamic(() => import('@/components/platforms/CaseStudiesSec').then((mod) => mod.default));
+const ReviewsSec = dynamic(() => import('@/components/platforms/ReviewsSec').then((mod) => mod.default));
 
 // Map section type to component
 const sectionMap: Record<string, ComponentType<{ section: any }>> = {
@@ -23,6 +27,10 @@ const sectionMap: Record<string, ComponentType<{ section: any }>> = {
   cta: CTASec,
   steps: StepSec,
   painpoint: PainPoint,
+  // ✅ NEW
+  industries: IndustriesSec,
+  casestudies: CaseStudiesSec,
+  reviews: ReviewsSec,
 };
 
 // Generate static paths for all platforms

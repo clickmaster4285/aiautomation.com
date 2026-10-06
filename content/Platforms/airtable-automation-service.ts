@@ -1,229 +1,287 @@
-// content/Platforms/airtable-automation-service.ts
+// content/Platforms/airtable-automation-services.ts
 import { ServiceContent } from '../type';
 
 export const airtableAutomationService: ServiceContent = {
   slug: 'airtable-automation-services',
-  title: 'Airtable Automation Services | Custom Builds & AI Clickmasters',
+  title: 'Airtable Automation Services USA - Airtable Experts',
   metaDescription:
-    'Clickmasters builds Airtable automation custom operational systems, AI-connected bases, and integrations that turn Airtable from a database into the system your business runs on.',
-  keywords: 'airtable automation, airtable ai, airtable api, airtable integration, airtable workflow automation, airtable custom builds',
+    'Get Airtable automation services to build custom bases, workflows, integrations, interfaces, and database automation for growing businesses.',
+  keywords:
+    'airtable automation services, airtable automation experts, airtable consultant, airtable integrations, airtable workflow automation, airtable database automation, airtable services USA',
   sections: [
-    // ========== HERO ==========
     {
       type: 'hero',
-      heading: 'Airtable Automation Services',
+      heading: 'Build Smarter Operational Systems With Airtable Automation Services',
       subheading:
-        'Turn Airtable from a database into the system your business runs on.',
+        'Our Airtable automation services help U.S. businesses organize operational data, automate repetitive workflows, and build scalable internal systems.',
       content: [
-        'Clickmasters builds Airtable automation: custom operational systems on the platform thousands of teams already quietly run their business on.',
-        "Airtable's genius is that it looks like a spreadsheet and behaves like a database which is why operations teams adopt it without an IT project. Its limitation is that most teams use it as a place where records sit. Automation is what turns those bases into systems: records that update themselves, workflows that fire on changes, AI that reads and enriches your data, and connections to the rest of your stack."
-      ],
-      stats: [
-        { label: 'BASES BUILT', value: '200+' },
-        { label: 'WORKFLOWS', value: '1,000+' }
+        'Our Airtable automation services help U.S. businesses organize operational data, automate repetitive workflows, and build scalable internal systems. From Airtable base design to custom automations, integrations, interfaces, and scripting, we create solutions around the way your team manages work and information.',
       ],
       ctas: [
-        { text: 'Book a Free Audit', link: '/free-automation-audit', primary: true },
-        { text: 'View Work', link: '/work', primary: false }
+        {
+          text: 'Book Your Airtable Automation Consultation',
+          link: '/free-automation-audit',
+          primary: true,
+        },
       ],
       image: {
         src: '/images/airtable-hero.png',
         alt: 'Airtable Automation Services',
         width: 1200,
         height: 1000,
-        fadeEdges: true
-      }
+        fadeEdges: true,
+      },
     },
-
-    // ========== TEXT: What Airtable Automation Actually Means ==========
     {
       type: 'text',
-      heading: 'What Airtable Automation Actually Means',
+      heading: 'Airtable Automation Built Around Your Business Data',
       image: '/images/rob.png',
       content: [
-        'Three layers, in increasing power:',
-        '**Native Airtable automations.** Trigger-action rules inside Airtable itself when a record changes, send an email; when a form is submitted, create a record. Useful, and most teams underuse them. We build these where they\'re sufficient.',
-        '**Airtable + automation platforms.** Airtable connected to n8n, Make, or Zapier, which unlocks the real workflows: multi-step processes across systems, data flowing between Airtable and your CRM, accounting tools, communication channels, and anything with an API. This is where Airtable stops being an island.',
-        '**Airtable + AI.** Language models reading, classifying, enriching, and generating against your Airtable data an intake base where AI summarizes and routes each submission, a content pipeline where drafts are generated into records for review, a CRM base where every company is auto-enriched. This layer is newest and least exploited, and it\'s where we do our most interesting Airtable work.'
-      ]
+        'Airtable becomes more powerful when database structure and automation are designed together. Our Airtable automation consultants help businesses organize information and automate repetitive actions around projects, customers, operations, and internal processes.',
+        'We first review your tables, records, relationships, statuses, and user requirements. This helps us determine which processes should be automated. The result is a cleaner and more scalable Airtable environment.',
+      ],
     },
-
-    // ========== FEATURES: What We Build ==========
     {
       type: 'features',
-      heading: 'What We Build',
+      heading: 'Airtable Automation Strategies & Implementation',
       items: [
         {
-          title: 'Custom Operational Systems',
-          description:
-            'Project trackers, client pipelines, intake systems, content calendars, inventory bases designed around your workflow and automated so they run rather than merely record.',
-          icon: 'Workflow'
+          title: 'Data Mapping',
+          description: 'Identify what information needs to be stored and connected.',
+          icon: 'Database',
         },
         {
-          title: 'Airtable as Lightweight CRM',
-          description:
-            'For teams that don\'t need a heavyweight CRM, an automated Airtable base enrichment, follow-up triggers, activity logging often does the job at a fraction of the cost and complexity.',
-          icon: 'Database'
+          title: 'Base Architecture',
+          description: 'Build tables, fields, relationships, and record structures.',
+          icon: 'Boxes',
         },
         {
-          title: 'Integration with Your Stack',
-          description:
-            'Airtable synced bidirectionally with your accounting, e-commerce, support, and marketing tools, so it reflects reality without manual updates.',
-          icon: 'Link2'
+          title: 'Workflow Triggers',
+          description: 'Define exactly when an automation should run.',
+          icon: 'Zap',
         },
         {
-          title: 'AI-Powered Airtable',
-          description:
-            'Classification, enrichment, summarization, and drafting running against your records with human review built in where judgment matters.',
-          icon: 'Brain'
+          title: 'Automation Actions',
+          description: 'Configure record updates, assignments, and notifications.',
+          icon: 'Settings',
         },
         {
-          title: 'Interface and Portal Builds',
-          description:
-            'Airtable Interfaces configured so your team (or clients) work with clean, purpose-built views instead of raw tables.',
-          icon: 'Layout'
+          title: 'Custom Logic',
+          description: 'Use formulas or scripting where specialized processing is required.',
+          icon: 'Code',
         },
         {
-          title: 'Rescue and Restructuring',
-          description:
-            'The very common case: a base that grew organically into a load-bearing mess. We restructure for scale and reliability without losing your data or your team\'s muscle memory.',
-          icon: 'RefreshCw'
-        }
-      ]
+          title: 'Maintainability',
+          description: 'Organize automation and naming for easier future management.',
+          icon: 'CheckCircle',
+        },
+      ],
     },
-
-    // ========== TEXT: Airtable's Honest Limits ==========
     {
       type: 'text',
-      heading: 'Airtable\'s Honest Limits',
+      heading: 'What Results Customers Get From Airtable Automation',
       content: [
-        'We recommend platforms honestly, so: Airtable is not the right home for everything. Record limits and per-seat pricing bite at scale; heavy relational complexity eventually wants a real database; and deeply regulated data may belong in more controlled infrastructure.',
-        'Part of our audit is telling you whether Airtable is the right foundation for the system you want and when it is (which is often, for operational tooling at SMB and mid-market scale), building it properly.'
-      ]
+        'Our Airtable workflow automation services help businesses combine structured data with repeatable processes.',
+        'The goal is to reduce manual system maintenance while improving team visibility.',
+        '• Reduce repetitive record updates and administrative work.',
+        '• Improve visibility across projects and operational processes.',
+        '• Centralize business information in a structured system.',
+        '• Create more consistent workflows and team responsibilities.',
+      ],
     },
-
-    // ========== STEPS: How We Work ==========
-    {
-      type: 'steps',
-      heading: 'How We Work',
-      items: [
-        {
-          title: 'Free Audit',
-          description: 'We look at your current bases and workflow, and scope the highest-return build.'
-        },
-        {
-          title: 'Design and Build',
-          description: 'Structure, automations, integrations, and AI layers, built against your real data.'
-        },
-        {
-          title: 'Documented Hand-off',
-          description: 'Your team understands and owns the system; Airtable\'s approachability means they can genuinely maintain it.'
-        },
-        {
-          title: 'Extend',
-          description: 'New workflows added as the system proves itself.'
-        }
-      ]
-    },
-
-    // ========== TEXT: A Worked Example ==========
-    {
-      type: 'text',
-      heading: 'A Worked Example: Project Intake and Client Onboarding',
-      content: [
-        'Take a typical operations team: project requests arrive by email, get added to a spreadsheet, assigned in meetings, and tracked in an Airtable base that\'s updated manually. Projects fall through the cracks, status is always out of date, and the team spends Monday mornings catching up on what happened last week.',
-        'Automated, the same flow transforms: a form captures every request and creates an Airtable record automatically. AI classifies the request type, extracts key details, and suggests a priority. A workflow assigns it to the right person, creates follow-up tasks, and triggers onboarding steps. Status updates happen automatically as the work progresses through stages. The team works on the work, not on tracking it, and the Airtable base finally reflects reality without manual effort.'
-      ]
-    },
-
-    // ========== FEATURES: Why Clickmasters ==========
     {
       type: 'features',
-      heading: 'Why Clickmasters',
+      heading: 'How We Deliver Airtable Automation Services',
       items: [
         {
-          title: 'Airtable Specialists',
-          description:
-            'We understand Airtable\'s strengths, limits, and how to build systems that last.',
-          icon: 'Target'
+          title: 'Discovery',
+          description: 'Review existing data, processes, and Airtable requirements.',
+          icon: 'Search',
         },
         {
-          title: 'AI-Enhanced Airtable',
-          description:
-            'We layer AI onto your Airtable bases for classification, enrichment, and summarization.',
-          icon: 'Brain'
+          title: 'Development',
+          description: 'Build bases, interfaces, automations, integrations, and scripts.',
+          icon: 'Code',
         },
         {
-          title: 'Connected',
-          description:
-            'Airtable integrated with your CRM, accounting, and other tools.',
-          icon: 'Link2'
+          title: 'Testing',
+          description: 'Validate record relationships, triggers, actions, and user workflows.',
+          icon: 'CheckCircle',
         },
         {
-          title: 'You Own It',
-          description:
-            'Documented, transparent automation in your own workspace.',
-          icon: 'Award'
-        }
-      ]
+          title: 'Launch & Support',
+          description: 'Deploy the system and optimize it as processes change.',
+          icon: 'Rocket',
+        },
+      ],
     },
-
-    // ========== TEXT: The State of Most Airtable Bases ==========
     {
-      type: 'text',
-      heading: 'The State of Most Airtable Bases',
-      content: [
-        'When we audit a business\'s Airtable workspace, a familiar picture emerges. There are bases that started as simple spreadsheets and grew into load-bearing systems. They\'re used daily, but they\'re fragile data breaks, no one knows how to modify them safely, and they\'re maintained by whoever has the most institutional knowledge at the moment. Records are entered manually. Statuses are updated by memory. Reports are exported and reformatted by hand.',
-        'The opportunity is rarely about buying more software. You already have Airtable. The work is about turning those fragile, manual bases into reliable, automated systems. That\'s where the return lies, because the foundation is already there and your team already knows how to work with it.'
-      ]
+      type: 'features',
+      heading: 'Why Choose Our Airtable Automation Services?',
+      items: [
+        {
+          title: 'Data-First Approach',
+          description: 'Automation built on clean and structured database architecture.',
+          icon: 'Database',
+        },
+        {
+          title: 'Custom Solutions',
+          description: 'Airtable environments tailored to your processes.',
+          icon: 'Settings',
+        },
+        {
+          title: 'Advanced Automation',
+          description: 'Support for integrations, interfaces, and custom scripting.',
+          icon: 'GitBranch',
+        },
+        {
+          title: 'USA-Focused Service',
+          description: 'Airtable solutions for growing U.S. businesses.',
+          icon: 'Globe',
+        },
+      ],
     },
-
-    // ========== FAQ ==========
+    {
+      type: 'industries',
+      heading: 'Industries We Serve',
+      subheading:
+        'Our Airtable automation services in the USA support organizations that need flexible database systems. They are also useful for operational workflows that require better structure and visibility.',
+      items: [
+        {
+          title: 'Marketing Agencies',
+          description: 'Manage campaigns, content, approvals, and production workflows.',
+        },
+        {
+          title: 'Professional Services',
+          description: 'Organize clients, projects, deliverables, and internal processes.',
+        },
+        {
+          title: 'Technology Companies',
+          description: 'Track operational data, projects, product workflows, and internal requests.',
+        },
+        {
+          title: 'Real Estate',
+          description: 'Manage property, customer, project, and operational information.',
+        },
+        {
+          title: 'Construction',
+          description: 'Track projects, tasks, approvals, schedules, and related operational data.',
+        },
+      ],
+    },
+    {
+      type: 'casestudies',
+      heading: 'Airtable Automation Services Case Studies',
+      items: [
+        {
+          title: 'Project Setup Automation',
+          challenge:
+            'A services company manually created project tasks whenever a new client project began.',
+          solution:
+            'An Airtable automation created relevant project records and assigned required tasks automatically.',
+          result: 'Project setup became faster and more consistent.',
+        },
+        {
+          title: 'Content Operations',
+          challenge:
+            'A marketing team tracked content requests and approvals across disconnected spreadsheets.',
+          solution:
+            'Airtable centralized the workflow and automated internal notifications and status changes.',
+          result: 'The team gained clearer visibility into content production.',
+        },
+        {
+          title: 'Client Intake',
+          challenge:
+            'Customer information was manually organized after every new inquiry.',
+          solution:
+            'An Airtable workflow created structured records and initiated the correct onboarding steps.',
+          result:
+            'New client information entered a repeatable process automatically.',
+        },
+      ],
+    },
+    {
+      type: 'reviews',
+      heading: 'Customer Reviews',
+      items: [
+        {
+          quote:
+            'Their Airtable automation services turned our disconnected operational data into a much more structured system.',
+          author: 'Megan R.',
+        },
+        {
+          quote:
+            'Our Airtable consultant rebuilt the base architecture before automating it, which made the entire setup easier to manage.',
+          author: 'Chris D.',
+        },
+        {
+          quote:
+            'The Airtable workflow automation reduced the number of repetitive project updates our team performs manually.',
+          author: 'Laura T.',
+        },
+        {
+          quote:
+            'Our new Airtable interfaces and automations have made it easier for different departments to manage their work.',
+          author: 'Kevin M.',
+        },
+        {
+          quote:
+            'Their Airtable expert helped us connect database structure, integrations, and automation into one operational system.',
+          author: 'Natalie S.',
+        },
+      ],
+    },
     {
       type: 'faq',
-      heading: 'Frequently Asked Questions',
+      heading: 'FAQs',
       items: [
         {
           title: 'What are Airtable automation services?',
           description:
-            'Airtable automation services design and build automated systems on Airtable native automations, integrations with other tools via platforms like n8n and Make, and AI layers that read and enrich your data turning Airtable bases from static records into running operational systems.'
+            'Airtable automation services involve designing databases and automated workflows that perform actions based on record changes, conditions, or business events.',
         },
         {
-          title: 'Can Airtable really replace a CRM or project tool?',
+          title: 'What can Airtable automation do?',
           description:
-            'For many SMB workflows, yes an automated Airtable base handles pipeline, projects, or intake at a fraction of dedicated-tool cost, with exactly the fields and flow you want. At larger scale or complexity, dedicated tools win; the audit gives you an honest read for your case.'
+            'Airtable can automate tasks such as record updates, notifications, assignments, approvals, and other recurring database actions.',
         },
         {
-          title: 'Does Airtable work with AI?',
+          title: 'Can Airtable automate project management?',
           description:
-            'Yes, and it\'s underused: AI models can classify, summarize, enrich, and generate content against Airtable records, with results written back automatically. It\'s one of the fastest paths to useful AI in a business because the data is already structured.'
+            'Yes. Airtable workflows can support project creation, assignments, status changes, notifications, and related operational processes.',
         },
         {
-          title: 'What does an Airtable build cost?',
+          title: 'Can Airtable connect with other applications?',
           description:
-            'Scoped per project a focused single-workflow build is modest; a full operational system is more. The free audit produces a real number, and Airtable projects tend to be among the most affordable custom systems we build.'
+            'Yes. Airtable can be integrated with external systems when the required connectivity is available.',
         },
         {
-          title: 'We already have a messy base can you fix it?',
+          title: 'Can custom code be used with Airtable?',
           description:
-            'That\'s one of our most common Airtable engagements. We restructure for reliability and scale, preserve your data, and automate the workflow around it usually without disrupting day-to-day use during the transition.'
-        }
-      ]
+            'Yes. Custom scripting can support advanced data processing and specialized workflow requirements.',
+        },
+        {
+          title: 'Can you redesign an existing Airtable base?',
+          description:
+            'Yes. Existing Airtable environments can be audited and restructured to improve data architecture and automation.',
+        },
+        {
+          title: 'Do you provide Airtable automation services in the USA?',
+          description:
+            'Yes. We provide custom Airtable base design, workflow automation, integrations, and optimization services for U.S. businesses.',
+        },
+      ],
     },
-
-    // ========== CTA ==========
     {
       type: 'cta',
-      heading: 'Want your Airtable bases to run themselves?',
+      heading: 'Ready to Build a Smarter Airtable System?',
       subheading:
-        'Book a free automation audit we\'ll scope the highest-return build in your workspace.',
+        'Let our Airtable automation experts design reliable databases and workflows around your business processes.',
       cta: {
-        text: 'Book a Free Automation Audit',
+        text: 'Book Your Airtable Automation Consultation',
         link: '/free-automation-audit',
-        primary: true
-      }
-    }
-  ]
+        primary: true,
+      },
+    },
+  ],
 };
-
-export default airtableAutomationService;
