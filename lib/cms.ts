@@ -6,9 +6,12 @@ import { unstable_cache } from 'next/cache';
 // The public API only ever returns the *published* snapshot of a page, so
 // drafts / unpublished pages come back as 404 and are never rendered here.
 
-const CMS_API_URL = process.env.CMS_API_URL?.replace(/\/+$/, '');
-const CMS_SITE_DOMAIN = process.env.CMS_SITE_DOMAIN ?? 'clickmastersaiautomation.com';
+const CMS_API_URL = process.env.CMS_API_URL;
 
+const CMS_SITE_DOMAIN =
+  process.env.CMS_SITE_DOMAIN;
+
+  
 // Seconds before a cached CMS response is refetched in production.
 // In development the cache is bypassed so CMS edits show on the next refresh.
 export const CMS_REVALIDATE_SECONDS = 60;

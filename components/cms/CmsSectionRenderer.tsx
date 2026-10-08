@@ -25,6 +25,7 @@ import CmsGallerySection from "./CmsGallerySection";
 import CmsLogosSection from "./CmsLogosSection";
 import CmsVideoSection, { videoEmbedUrl } from "./CmsVideoSection";
 import CmsContactSection from "./CmsContactSection";
+import CmsBentoSection from "./CmsBentoSection";
 import { button, items, pick, safeHref, safeImage } from "./cmsContent";
 import type { CmsPage, CmsSection } from "@/lib/cms";
 
@@ -161,6 +162,19 @@ function renderSection(section: CmsSection, page: CmsPage) {
         .filter((i) => i.value);
       if (!list.length) return null;
       return <CmsStatsSection data={{ heading: pick(c, "heading"), description: pick(c, "description"), items: list }} />;
+    }
+
+    case "bento": {
+      const list = items(c)
+        .map((i) => ({
+          title: pick(i, "title"),
+          description: pick(i, "description"),
+          span: pick(i, "span"),
+          image: safeImage(pick(i, "image")),
+        }))
+        .filter((i) => i.title);
+      if (!list.length) return null;
+      return <CmsBentoSection data={{ heading: pick(c, "heading"), items: list }} />;
     }
 
     case "author": {
