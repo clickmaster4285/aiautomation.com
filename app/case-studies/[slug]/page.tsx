@@ -387,6 +387,25 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
           <p className="mt-8 text-sm italic text-white/40 max-w-3xl">
             {challenge.h3WhyHard.closing}
           </p>
+
+          {challenge.image && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="mt-10 md:mt-14"
+            >
+              <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] shadow-[0_0_0_1px_rgba(255,255,255,0.03)]">
+                <Image
+                  src={challenge.image.src}
+                  alt={challenge.image.alt || 'Challenge illustration'}
+                  width={challenge.image.width || 1600}
+                  height={challenge.image.height || 1000}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </motion.div>
+          )}
         </div>
       </section>
 
@@ -432,6 +451,25 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
         </motion.div>
       ))}
     </div>
+
+    {gaps.image && (
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mt-10 md:mt-14"
+      >
+        <div className="overflow-hidden rounded-2xl border border-border bg-white shadow-[0_0_0_1px_rgba(15,23,42,0.02)]">
+          <Image
+            src={gaps.image.src}
+            alt={gaps.image.alt || 'Process illustration'}
+            width={gaps.image.width || 1600}
+            height={gaps.image.height || 1000}
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      </motion.div>
+    )}
   </div>
 </section>
 
@@ -624,7 +662,7 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
                 {testLab.intro}
               </motion.p>
 
-              <div className="flex gap-10 mt-10">
+              <div className="flex gap-10 my-10">
                 <div className="border-l-2 border-brand pl-4">
                   <div className="display text-4xl">40</div>
                   <div className="eyebrow text-muted-foreground mt-1">Scripted Scenarios</div>
@@ -634,6 +672,17 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
                   <div className="eyebrow text-muted-foreground mt-1">Pass Thresholds</div>
                 </div>
               </div>
+
+
+               <div className="overflow-hidden rounded-2xl border border-border bg-white">
+                    <Image
+                      src={timeline.image.src}
+                      alt={timeline.image.alt || 'Lead timeline illustration'}
+                      width={timeline.image.width || 1600}
+                      height={timeline.image.height || 1000}
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
             </div>
 
             <div>
@@ -675,6 +724,17 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
                   ))}
                 </ul>
               </div>
+
+              {timeline.image && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="mt-8"
+                >
+                 
+                </motion.div>
+              )}
             </div>
           </div>
         </div>
@@ -718,6 +778,25 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
               </motion.div>
             ))}
           </div>
+
+          {stack.image && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="mt-10 md:mt-14"
+            >
+              <div className="overflow-hidden rounded-2xl border border-border bg-white">
+                <Image
+                  src={stack.image.src}
+                  alt={stack.image.alt || 'Stack architecture illustration'}
+                  width={stack.image.width || 1600}
+                  height={stack.image.height || 1000}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </motion.div>
+          )}
         </div>
       </section>
 
@@ -769,6 +848,25 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
               </motion.div>
             ))}
           </div>
+
+          {results.image && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="mt-10 md:mt-14"
+            >
+              <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#0d0d0d]">
+                <Image
+                  src={results.image.src}
+                  alt={results.image.alt || 'Results illustration'}
+                  width={results.image.width || 1600}
+                  height={results.image.height || 1000}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </motion.div>
+          )}
         </div>
       </section>
 
