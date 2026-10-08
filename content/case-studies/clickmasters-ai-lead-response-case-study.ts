@@ -234,7 +234,13 @@ seo: {
           body: "An AI answering service that invents a price or books a job outside the service area costs more than a missed call."
         }
       ],
-      closing: "We built this demo against that brief, with two fictional service businesses and scripted test leads."
+     
+    },
+    image: {
+      src: "/case-study/ai-reception.jpeg",
+      alt: "AI receptionist platform answering calls, texts and emails for a trades business",
+      width: 1600,
+      height: 1000
     }
   },
   gaps: {
@@ -276,7 +282,14 @@ seo: {
         why: "Texting rules differ by country and can block a launch for weeks",
         added: "AI and recording disclosure on calls, opt-out on texts, sender registration planned per country"
       }
-    ]
+    ],
+
+       image: {
+      src: "/case-study/steps.jpeg",
+      alt: "AI receptionist platform answering calls, texts and emails for a trades business",
+      width: 1600,
+      height: 1000
+    }
   },
   solution: {
     h2: "The solution: an AI receptionist that answers, qualifies and books on every channel",
@@ -351,7 +364,13 @@ seo: {
         channel: "Text",
         what: "Confirmation sent to the caller; summary sent to the owner"
       }
-    ]
+    ],
+     image: {
+      src: "/case-study/dashboard.jpeg",
+      alt: "AI receptionist platform answering calls, texts and emails for a trades business",
+      width: 1600,
+      height: 1000
+    }
   },
   stack: {
     h2: "Tech stack and open-source components",
@@ -412,7 +431,13 @@ seo: {
         what: "Langfuse",
         why: "Tokens, cost and latency recorded for every reply"
       }
-    ]
+    ],
+     image: {
+      src: "/case-study/conversations.jpeg",
+      alt: "AI receptionist platform answering calls, texts and emails for a trades business",
+      width: 1600,
+      height: 1000
+    }
   },
   results: {
     h2: "Results: how fast and how accurately the AI handled test leads",
@@ -473,7 +498,13 @@ seo: {
         how: "AI plus carrier cost per scenario, median",
         target: "$0.30 or less"
       }
-    ]
+    ],
+     image: {
+      src: "/case-study/stages.jpeg",
+      alt: "AI receptionist platform answering calls, texts and emails for a trades business",
+      width: 1600,
+      height: 1000
+    }
   },
   faq: {
     h2: "Frequently asked questions",
@@ -599,6 +630,8 @@ seo: {
           kind: "para",
           text: "The case for speed is well documented. A Harvard Business Review audit of 2,241 US companies found that 23% never responded to a web lead and the rest averaged 42 hours. Its companion study of 1.25 million leads found that firms that tried to make contact within an hour were nearly seven times as likely to qualify the lead as firms that waited one hour longer."
         },
+
+
         {
           kind: "table",
           rows: [
@@ -3876,10 +3909,7 @@ Business profile
             "A bad answer is worse than no answer. An AI answering service that invents a price or books a job outside the service area costs more than a missed call."
           ]
         },
-        {
-          kind: "para",
-          text: "We built this demo against that brief, with two fictional service businesses and scripted test leads."
-        },
+       
         {
           kind: "heading",
           level: 2,
