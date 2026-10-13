@@ -1,5 +1,5 @@
 // content/services/ai-data-document-automation.ts
-import { ServiceContent } from './type';
+import { ServiceContent } from '../type';
 
 export const aiDataDocumentAutomation: ServiceContent = {
   slug: 'ai-data-document-automation',

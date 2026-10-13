@@ -1,46 +1,45 @@
 // content/services/ai-agent-development.ts
-import { ServiceContent } from './type';
+import { ServiceContent } from '../type';
 
 export const aiAgentDevelopment: ServiceContent = {
   slug: 'ai-agent-development',
-  title: 'AI Agent Development Company in USA | Custom AI Agents',
-  metaDescription: 'Partner with a trusted AI agent development company. Custom agentic AI solutions for business automation, CRM integration & more. Book a free call.',
+  title: 'Custom AI Agent Development Services | Clickmasters',
+  metaDescription: 'Build custom AI agents that automate tasks, connect with business tools, and complete multi-step workflows. Explore AI agent development with Clickmasters.',
   keywords: 'ai agent development company, ai agent development services, custom ai agents, agentic ai development, ai agent developers, ai agent development solutions',
   sections: [
     // ========== HERO ==========
-    {
-      type: 'hero',
-      heading: 'AI Agent Development Services for Businesses',
-      subheading: 'We\'re a leading AI agent development company helping businesses across the USA automate work, cut costs, and scale faster. Our AI agent development services turn manual, repetitive processes into intelligent, self-operating workflows—so your team can focus on what actually matters.',
-      content: [
-        'Whether you need a simple task-automation bot or a full agentic AI development system connected to your CRM and ERP, we build it around your business, not a template.'
-      ],
-      stats: [
-        { label: 'PROJECTS', value: '150+' },
-        { label: 'CLIENTS', value: '60+' }
-      ],
-      ctas: [
-        { text: 'Book a Free AI Agent Consultation', link: '/free-automation-audit', primary: true },
-        { text: 'View Work', link: '/work', primary: false }
-      ],
-      image: {
-        src: '/images/agent.png',
-        alt: 'AI Agent Development illustration',
-        width: 666,
-        height: 375
-      }
-    },
+   {
+  type: 'hero',
+  heading: 'Custom AI Agent Development Services for Business Tasks',
+  subheading: 'Build intelligent systems that can understand requests, use business information, and take action with AI agent development services from Clickmasters. We create custom AI agents that work with your business tools, data, APIs, and workflows to complete useful tasks and support your team.',
+  content: [
+    'Build intelligent systems that can understand requests, use business information, and take action with AI agent development services from Clickmasters. We create custom AI agents that work with your business tools, data, APIs, and workflows to complete useful tasks and support your team.',
+  ],
+  stats: [
+    { label: 'BUILD', value: 'Build AI agents for specific business tasks' },
+    { label: 'CONNECT', value: 'Connect agents with CRM and internal tools' },
+    { label: 'AUTOMATE', value: 'Automate multi-step workflows' },
+  ],
+  ctas: [
+    { text: 'Build Your Custom AI Agent', link: '/free-automation-audit', primary: true },
+  ],
+  image: {
+    src: '/images/agent.png',
+    alt: 'AI Agent Development illustration',
+    width: 666,
+    height: 375,
+  },
+},
 
     // ========== TEXT: Custom AI Agent Development Solutions ==========
-    {
-      type: 'text',
-      heading: 'Custom AI Agent Development Solutions',
-      content: [
-        'Every business runs differently — which is why generic software rarely solves real problems. That\'s where custom AI agent development comes in.',
-        'At our core, we\'re a team of AI agent developers who design agents that understand your data, your tools, and your goals. From agentic AI development services for enterprise workflows to lightweight agents for small teams, our AI agent development solutions are built to fit — not force your business to adapt to the tech.',
-        'We don\'t just build agents. We build agents that work, reliably, securely, and at scale.'
-      ]
-    },
+  {
+  type: 'text',
+  heading: 'Create AI Agents That Can Take Real Business Actions',
+  content: [
+    'AI agents can do more than provide simple text responses. A custom AI agent can understand a request, access relevant information, choose the next action, and complete tasks through connected business systems.',
+    'For example, an AI agent may qualify a lead, update CRM records, prepare information, send a follow-up, and notify the correct team member. Clickmasters develops AI agents around real business needs, with clear permissions and human control where required.',
+  ],
+},
 
     // ========== FEATURES: AI Agent Development Services for Business Automation ==========
     {
@@ -307,36 +306,37 @@ export const aiAgentDevelopment: ServiceContent = {
     },
 
     // ========== FAQ ==========
+  {
+  type: 'faq',
+  heading: 'FAQs',
+  items: [
     {
-      type: 'faq',
-      heading: 'FAQs',
-      items: [
-        {
-          title: 'What does an AI agent development company actually do?',
-          description: 'We design, build, and deploy AI-powered agents that automate tasks, integrate with your systems, and operate with minimal human input.'
-        },
-        {
-          title: 'How much does custom AI agent development cost?',
-          description: 'Costs vary based on complexity, integrations, and scope — we provide a clear quote after understanding your requirements.'
-        },
-        {
-          title: 'How long does AI agent development take?',
-          description: 'Simple agents can launch in a few weeks; enterprise-grade agentic systems typically take longer depending on integration needs.'
-        },
-        {
-          title: 'Do you offer AI agent development services in the USA?',
-          description: 'Yes — we work with U.S.-based businesses and understand local compliance, data, and operational needs.'
-        },
-        {
-          title: 'What makes you one of the best AI agent development companies?',
-          description: 'Our focus is on custom-built solutions, deep system integration, and long-term support — not one-size-fits-all bots.'
-        },
-        {
-          title: 'Can AI agents integrate with our existing CRM or ERP?',
-          description: 'Absolutely. Integration is a core part of our agent development process from day one.'
-        }
-      ]
+      title: 'What is an AI agent?',
+      description:
+        'An AI agent is software that can understand a goal, process information, and take actions using connected tools.',
     },
+    {
+      title: 'What can an AI agent automate?',
+      description:
+        'AI agents can automate lead qualification, document processing, customer support, CRM updates, research, reporting, and other multi-step tasks.',
+    },
+    {
+      title: 'How is an AI agent different from a chatbot?',
+      description:
+        'A chatbot mainly responds to messages, while an AI agent can also use tools and complete actions.',
+    },
+    {
+      title: 'Can AI agents connect to business software?',
+      description:
+        'Yes. AI agents can connect with CRM systems, databases, APIs, email tools, calendars, and other software.',
+    },
+    {
+      title: 'Can a human approve AI agent actions?',
+      description:
+        'Yes. Human approval can be added before important or sensitive actions are completed.',
+    },
+  ],
+},
 
     // ========== CTA ==========
     {

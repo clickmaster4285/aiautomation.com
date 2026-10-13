@@ -55,7 +55,7 @@ import {
   PlatformItem,
   IndustryCategory,
   IndustryItem,
-} from '@/content/index';
+} from '@/content/services/index';
 
 // ── Service icons by title (for right panel) ──
 const serviceIconMap: Record<string, React.ElementType> = {

@@ -1,5 +1,5 @@
 // content/services/ai-workflow-automation-service/pageContent.ts
-import { ServiceContent } from './type';  
+import { ServiceContent } from '../type';  
 
 export const aiWorkflowAutomationService: ServiceContent = {
   slug: 'ai-workflow-automation',

@@ -19,7 +19,7 @@ import FAQ from "@/components/landingPage/FAQ";
 import Testimonials from "@/components/landingPage/Testimonials";
 import CTA from "@/components/landingPage/CTA";
 
-import { homepageData } from "@/content/homepage";
+import { homepageData } from "@/content/services/homepage";
 
 // SEO metadata comes straight from the content file
 export function generateMetadata(): Metadata {

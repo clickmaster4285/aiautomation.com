@@ -1,106 +1,86 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Search, Zap, Check, BarChart3, Sparkles, Rocket, Target, Lightbulb } from 'lucide-react';
 import { Section, SectionItem } from '@/content/type';
-import { fadeInUp, staggerContainer } from './Shared/animation';
-
-const stepIcons = [Search, Zap, Check, BarChart3, Rocket, Target, Lightbulb];
+import { Marker, splitHeading } from '../landingPage/Shared';
 
 export default function StepSec({ section }: { section: Section }) {
   const items = section.items || [];
-  
-  const isHowWeWork = section.heading?.includes('How We Work');
+  const { head, tail } = splitHeading(section.heading || '', 1);
 
   return (
-    <section className={`py-20 sm:py-24 lg:py-32 border-t border-gray-800 dark:border-gray-800 ${isHowWeWork ? 'bg-gray-950/80 dark:bg-gray-950/80' : 'bg-black dark:bg-black'} relative overflow-hidden`}>
-      <div className="absolute inset-0 bg-dot-pattern opacity-20" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,rgba(249,115,22,0.02),rgba(0,0,0,0))]" />
-      
-      {isHowWeWork && (
-        <>
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_30%_30%,rgba(249,115,22,0.03),transparent)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_70%_70%,rgba(99,102,241,0.02),transparent)]" />
-        </>
-      )}
+    <section id="process" className="bg-ink text-white py-12 md:py-24">
+      <div className="mx-auto max-w-[90vw] md:max-w-[84vw] px-4 md:px-6">
+       
 
-      <div className="mx-auto max-w-[92vw] sm:max-w-[84vw] px-4 sm:px-6">
-        {section.heading && (
-          <motion.h2
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            variants={fadeInUp}
-            className="display mb-4 text-2xl sm:text-3xl font-bold md:text-4xl text-white text-left relative inline-block"
-          >
-            {section.heading}
-            <motion.span 
-              className="absolute -bottom-2 left-0 h-0.5 bg-brand/50 rounded-full"
-              initial={{ width: 0 }}
-              whileInView={{ width: '100%' }}
-              transition={{ delay: 0.3, duration: 0.6 }}
-              viewport={{ once: true }}
-            />
-          </motion.h2>
-        )}
-        {section.subheading && (
-          <motion.p
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            variants={fadeInUp}
-            className="mb-8 sm:mb-12 text-left text-gray-400 max-w-2xl leading-relaxed text-justify text-sm sm:text-base"
-          >
-            {section.subheading}
-          </motion.p>
-        )}
+        <div className="flex flex-col md:grid md:grid-cols-[1fr_2fr] gap-8 md:gap-12">
+          {/* Left column */}
+          <div className="text-center md:text-left">
+            {section.heading && (
+              <h2 className="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+                {head}
+                {tail && (
+                  <>
+                    <br />
+                    <span className="display-italic text-brand">{tail}</span>
+                  </>
+                )}
+              </h2>
+            )}
 
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
-          variants={staggerContainer}
-          className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-4"
-        >
-          {items.map((item: SectionItem, idx: number) => {
-            const Icon = stepIcons[idx % stepIcons.length] || Sparkles;
-            return (
+            {section.subheading && (
+              <p className="text-white/60 text-xs sm:text-sm mt-3 md:mt-4 max-w-md mx-auto md:mx-0">
+                {section.subheading}
+              </p>
+            )}
+
+            <motion.div
+              animate={{ y: [0, -15, 0] }}
+              transition={{ duration: 4, repeat: Infinity }}
+              className="mt-6 md:mt-8"
+            >
+              <Image
+                src="/images/process.png"
+                alt="Process illustration"
+                width={640}
+                height={640}
+                className="w-40 sm:w-56 md:w-72 lg:w-[28rem] h-auto mx-auto md:mx-0"
+              />
+            </motion.div>
+          </div>
+
+          {/* Right column: steps */}
+          <div className="divide-y divide-white/10 border-t border-white/10">
+            {items.map((item: SectionItem, i: number) => (
               <motion.div
-                key={idx}
-                variants={fadeInUp}
-                whileHover={{
-                  y: -6,
-                  scale: 1.01,
-                  transition: { duration: 0.3 },
-                }}
-                className="relative rounded-2xl border border-gray-800/50 bg-white/5 backdrop-blur-sm p-6 sm:p-8 text-left transition-all duration-300 hover:border-brand/40 hover:bg-white/10 hover:shadow-xl hover:shadow-brand/5 group"
+                key={item.title || i}
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="flex flex-wrap items-center justify-between gap-3 py-6 md:py-8 group"
               >
-                <div className="absolute -top-3 -right-3 h-8 w-8 rounded-full bg-brand text-white text-sm font-bold flex items-center justify-center shadow-lg shadow-brand/30">
-                  {idx + 1}
+                <span className="eyebrow text-white/40 tabular-nums text-sm md:text-base">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+
+                <div className="flex-1 text-center md:text-left px-3">
+                  {item.title && (
+                    <span className="display text-xl sm:text-2xl md:text-3xl group-hover:text-brand group-hover:translate-x-0 md:group-hover:translate-x-2 transition-all block">
+                      {item.title}
+                    </span>
+                  )}
+                  {item.description && (
+                    <span className="text-white/50 text-xs md:text-sm leading-relaxed mt-1 block max-w-xl">
+                      {item.description}
+                    </span>
+                  )}
                 </div>
-
-                <motion.div
-                  className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-brand/10 text-brand group-hover:bg-brand/20 transition-all"
-                  whileHover={{ rotate: 360 }}
-                  transition={{ duration: 0.6 }}
-                >
-                  <Icon className="h-8 w-8" />
-                </motion.div>
-
-                {item.title && (
-                  <h3 className="mb-2 text-xl font-semibold text-white group-hover:text-brand transition-colors">
-                    {item.title}
-                  </h3>
-                )}
-                {item.description && (
-                  <p className="text-gray-400 text-sm leading-relaxed group-hover:text-gray-300 transition-colors text-justify">
-                    {item.description}
-                  </p>
-                )}
               </motion.div>
-            );
-          })}
-        </motion.div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
