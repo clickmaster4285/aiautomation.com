@@ -1,38 +1,40 @@
 // content/services/ai-voice-agents.ts
-import { ServiceContent } from './type';
+import { ServiceContent } from '../type';
 
 export const aiVoiceAgents: ServiceContent = {
-  slug: 'ai-voice-agents',
-  title: 'Top AI Voice Agents Services - AI Voice Agent Agency',
-  metaDescription:
-    'Get custom AI voice agents for support, sales & lead generation. Trusted AI voice agent services with CRM integration. Book a free demo today.',
-  keywords: 'ai voice agent services, ai voice agent agency, ai voice agent company, voice automation, ai caller, conversational voice ai',
-  sections: [
-    // ========== HERO ==========
-    {
-      type: 'hero',
-      heading: 'AI Voice Agent Services — Voice Automation for Customer Support & Sales',
-      subheading:
-        'Our AI voice agent services help businesses automate phone conversations without losing the human touch. We build AI voice agents that answer calls, talk like real people, and get things done—from answering customer questions to booking appointments and qualifying leads.',
-      content: [
-        'Whether you need an AI caller for outbound sales or a full voice AI system for customer support, we design it around how your business actually works.',
-      ],
-      stats: [
-        { label: 'PROJECTS', value: '110+' },
-        { label: 'CLIENTS', value: '55+' },
-      ],
-      ctas: [
-        { text: 'Book a Free Demo', link: '/free-automation-audit', primary: true },
-        { text: 'View Work', link: '/work', primary: false },
-      ],
-      image: {
-        src: '/images/ai-voice-agent.png',
-        alt: 'AI Voice Agent illustration',
-        width: 559,
-        height: 447,
-        fadeEdges: true,
-      },
+ slug: 'ai-voice-agents',
+title: 'AI Voice Agent Services & Development | Clickmasters',
+metaDescription:
+  'Get custom AI voice agent services for customer support, sales calls, lead qualification, and appointment booking. Build smart voice AI with Clickmasters.',
+keywords: 'ai voice agent services, ai voice agent agency, ai voice agent company, voice automation, ai caller, conversational voice ai',
+sections: [
+  // ========== HERO ==========
+  {
+    type: 'hero',
+    heading: 'AI Voice Agent Services for Customer Support & Sales',
+    subheading:
+      'Our AI voice agent services help businesses manage customer calls, qualify leads, and book appointments automatically. Clickmasters is an AI voice agent company that develops intelligent phone agents with natural conversations, CRM integrations, and 24/7 call handling to improve customer communication and sales operations.',
+    content: [
+      'Our AI voice agent services help businesses manage customer calls, qualify leads, and book appointments automatically. Clickmasters is an AI voice agent company that develops intelligent phone agents with natural conversations, CRM integrations, and 24/7 call handling to improve customer communication and sales operations.',
+    ],
+    stats: [
+      { label: 'HANDLING', value: 'Manage customer calls automatically' },
+      { label: 'LEADS', value: 'Qualify leads on every call' },
+      { label: 'BOOKINGS', value: 'Book appointments automatically' },
+      { label: 'INTEGRATIONS', value: 'Connect with your CRM and tools' },
+      { label: 'AVAILABILITY', value: 'Handle calls 24/7' },
+    ],
+    ctas: [
+      { text: 'Book a Free AI Voice Agent Demo', link: '/free-automation-audit', primary: true },
+    ],
+    image: {
+      src: '/images/ai-voice-agent.png',
+      alt: 'AI Voice Agent illustration',
+      width: 559,
+      height: 447,
+      fadeEdges: true,
     },
+  },
 
     // ========== TEXT: Professional AI Voice Agent Company ==========
     {
@@ -285,36 +287,27 @@ export const aiVoiceAgents: ServiceContent = {
     },
 
     // ========== FAQ ==========
+  {
+  type: 'faq',
+  heading: 'FAQs',
+  items: [
     {
-      type: 'faq',
-      heading: 'FAQs',
-      items: [
-        {
-          title: 'What is an AI voice agent?',
-          description: 'An AI voice agent is a conversational system that can answer or place phone calls, understand natural speech, and handle tasks such as support, scheduling, or lead qualification.',
-        },
-        {
-          title: 'How is a voice agent different from a regular IVR system?',
-          description: 'Unlike IVR, which follows fixed menu options, a voice agent understands natural conversation and can reason, respond, and take action—not just route calls.',
-        },
-        {
-          title: 'Can AI voice agents integrate with our CRM?',
-          description: 'Yes. Our voice agents connect directly to your CRM, updating records and logging calls automatically.',
-        },
-        {
-          title: 'Do AI voice agents sound robotic?',
-          description: 'No—our agents use advanced text-to-voice technology designed to sound natural and human-like.',
-        },
-        {
-          title: 'How long does it take to build and deploy a voice agent?',
-          description: 'Simple agents can launch in a few weeks; more complex systems with deep integrations take longer depending on scope.',
-        },
-        {
-          title: 'What\'s the main difference between a voice bot and an AI voice agent?',
-          description: 'A voice bot follows fixed scripts and keyword triggers, while an AI voice agent understands natural conversation, context, and intent—and can take real action like booking appointments or updating CRM records.',
-        },
-      ],
+      title: 'How much does AI voice agent development cost?',
+      description:
+        'The cost of AI voice agent development depends on call volume, conversation complexity, CRM integrations, and required features. Clickmasters provides custom AI voice agent solutions based on your business needs and budget.',
     },
+    {
+      title: 'Can AI voice agents work with my existing phone system?',
+      description:
+        'Yes. Our AI voice agent developers can integrate compatible voice AI solutions with phone systems, CRM platforms, and appointment scheduling tools. We review your existing setup before recommending an integration.',
+    },
+    {
+      title: 'Can AI voice agents qualify leads and book appointments?',
+      description:
+        'Yes. AI calling agents can ask relevant questions, collect customer information, qualify leads, and book available appointments. They can also send conversation details to your sales team for follow-up.',
+    },
+  ],
+},
 
     // ========== CTA ==========
     {

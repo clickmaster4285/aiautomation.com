@@ -4,194 +4,90 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 import { Section, SectionItem } from '@/content/type';
-import { fadeInUp, staggerContainer, glowPulse } from '../services/Shared/animation';
 import { getIcon } from '../services/Shared/icons';
+import { Marker, splitHeading } from '../landingPage/Shared';
 
 export default function FeaturesSec({ section }: { section: Section }) {
   const featuresItems = section.items || [];
-  
-  const isKeyFeatures = section.heading?.includes('Key Features') || section.heading?.includes('What You Get');
-  const isKeyCapabilities = section.heading?.includes('Key Capabilities');
+  const { head, tail } = splitHeading(section.heading || '');
 
-  let bgClasses = 'bg-black dark:bg-black';
-  let borderClasses = 'border-t border-gray-800 dark:border-gray-800';
-  let headingColor = 'text-white';
-  let textColor = 'text-gray-400';
-  let cardBg = 'bg-white/5';
-  let cardBorder = 'border-gray-800/50';
-  let cardHoverBg = 'bg-white/10';
-
-  if (isKeyFeatures) {
-    bgClasses = 'bg-gray-950 dark:bg-gray-950';
-    borderClasses = 'border-t border-gray-800/50 dark:border-gray-800/50';
-    cardBg = 'bg-white/5';
-    cardBorder = 'border-gray-800/50';
-    cardHoverBg = 'bg-white/10';
-  } else if (isKeyCapabilities) {
-    bgClasses = 'bg-black dark:bg-black';
-    borderClasses = 'border-t border-gray-800/50 dark:border-gray-800/50';
-  }
+  const eyebrowLabel = section.heading?.includes('Capabilities')
+    ? 'Capabilities'
+    : 'Features';
 
   return (
-    <section className={`py-20 sm:py-24 lg:py-32 ${borderClasses} ${bgClasses} relative overflow-hidden`}>
-      <div className="absolute inset-0 bg-grid-pattern opacity-30" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,rgba(249,115,22,0.03),rgba(0,0,0,0))]" />
-      <motion.div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand/5 rounded-full blur-3xl"
-        animate={glowPulse}
-      />
+    <section id="features" className="bg-white text-black py-12 md:py-24">
+      <div className="mx-auto max-w-[84vw] px-6">
       
-      {isKeyFeatures && (
-        <>
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_20%_30%,rgba(249,115,22,0.03),transparent)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_80%_70%,rgba(99,102,241,0.02),transparent)]" />
-        </>
-      )}
-      
-      <div className="mx-auto max-w-[92vw] sm:max-w-[84vw] px-4 sm:px-6">
-        {section.heading && (
-          <motion.h2 
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            variants={fadeInUp}
-            className={`display mb-4 text-2xl sm:text-3xl font-bold md:text-4xl ${headingColor} text-left relative inline-block`}
-          >
-            {section.heading}
-            <motion.span 
-              className="absolute -bottom-2 left-0 h-0.5 bg-brand/50 rounded-full"
-              initial={{ width: 0 }}
-              whileInView={{ width: '100%' }}
-              transition={{ delay: 0.3, duration: 0.6 }}
-              viewport={{ once: true }}
-            />
-          </motion.h2>
-        )}
-        {section.subheading && (
-          <motion.p 
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            variants={fadeInUp}
-            className={`mb-8 sm:mb-12 text-left ${textColor} max-w-2xl text-justify text-sm sm:text-base`}
-          >
-            {section.subheading}
-          </motion.p>
-        )}
-        
-        <motion.div 
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
-          variants={staggerContainer}
-          className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3"
-        >
-          {featuresItems.slice(0, 3).map((item: SectionItem, idx: number) => {
+
+        {/* Heading + subheading */}
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
+          {section.heading && (
+            <h2 className="display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-black">
+              {head}
+              {tail && (
+                <>
+                  <br />
+                  <span className="display-italic text-brand">{tail}</span>
+                </>
+              )}
+            </h2>
+          )}
+
+          {section.subheading && (
+            <p className="text-sm md:text-base text-black/60 md:text-right md:self-end">
+              {section.subheading}
+            </p>
+          )}
+        </div>
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          {featuresItems.map((item: SectionItem, i: number) => {
             const Icon = getIcon(item.icon);
             return (
-              <motion.div 
-                key={idx} 
-                variants={fadeInUp}
-                whileHover={{ 
-                  y: -8, 
-                  scale: 1.01,
-                  transition: { duration: 0.3 }
-                }}
-                className={`group relative rounded-2xl border ${cardBorder} ${cardBg} backdrop-blur-sm p-8 transition-all duration-300 hover:border-brand/40 hover:${cardHoverBg} hover:shadow-xl hover:shadow-brand/5`}
+              <motion.div
+                key={item.title || i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08 }}
+                className="bg-white border border-black/10 p-6 md:p-8 hover:border-brand transition-colors group"
               >
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-brand/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="relative">
-                  <motion.div 
-                    className={`mb-4 inline-flex h-14 w-14 items-center justify-center rounded-full bg-brand/10 text-brand group-hover:bg-brand/20 transition-all`}
-                    whileHover={{ rotate: [0, -10, 10, -5, 5, 0] }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <Icon className="h-7 w-7" />
-                  </motion.div>
-                  {item.title && (
-                    <h3 className={`mb-3 text-xl font-semibold ${headingColor} group-hover:text-brand transition-colors`}>
-                      {item.title}
-                    </h3>
-                  )}
-                  {item.description && (
-                    <p className={`${textColor} leading-relaxed group-hover:text-gray-300 transition-colors text-justify`}>
-                      {item.description}
-                    </p>
-                  )}
-                  {item.link && (
-                    <Link 
-                      href={item.link}
-                      className="mt-4 inline-flex items-center text-brand hover:underline font-medium group/link"
-                    >
-                      Learn more 
-                      <ChevronRight className="ml-1 h-4 w-4 group-hover/link:translate-x-1 transition-transform" />
-                    </Link>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="eyebrow text-brand tabular-nums">
+                    {String(i + 1).padStart(2, '0')}
+                  </div>
+                  {Icon && (
+                    <Icon className="h-5 w-5 text-black/40 group-hover:text-brand transition-colors" />
                   )}
                 </div>
+
+                {item.title && (
+                  <h3 className="display text-xl md:text-2xl mb-3 text-black">
+                    {item.title}
+                  </h3>
+                )}
+
+                {item.description && (
+                  <p className="text-sm text-black/60 leading-relaxed">
+                    {item.description}
+                  </p>
+                )}
+
+                {item.link && (
+                  <Link
+                    href={item.link}
+                    className="mt-4 inline-flex items-center text-brand text-sm hover:underline font-medium group/link"
+                  >
+                    Learn more
+                    <ChevronRight className="ml-1 h-4 w-4 group-hover/link:translate-x-1 transition-transform" />
+                  </Link>
+                )}
               </motion.div>
             );
           })}
-        </motion.div>
-
-        {featuresItems.length > 3 && (
-          <motion.div 
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            variants={staggerContainer}
-            className={`grid grid-cols-1 gap-4 sm:gap-6 mt-4 sm:mt-6 md:grid-cols-2 ${
-              featuresItems.length === 4 
-                ? 'lg:grid-cols-1 lg:max-w-md lg:mx-0' 
-                : 'lg:grid-cols-2'
-            }`}
-          >
-            {featuresItems.slice(3).map((item: SectionItem, idx: number) => {
-              const Icon = getIcon(item.icon);
-              return (
-                <motion.div 
-                  key={idx + 3} 
-                  variants={fadeInUp}
-                  whileHover={{ 
-                    y: -8, 
-                    scale: 1.01,
-                    transition: { duration: 0.3 }
-                  }}
-                  className={`group relative rounded-2xl border ${cardBorder} ${cardBg} backdrop-blur-sm p-6 sm:p-8 transition-all duration-300 hover:border-brand/40 hover:${cardHoverBg} hover:shadow-xl hover:shadow-brand/5`}
-                >
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-brand/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="relative">
-                    <motion.div 
-                      className={`mb-4 inline-flex h-14 w-14 items-center justify-center rounded-full bg-brand/10 text-brand group-hover:bg-brand/20 transition-all`}
-                      whileHover={{ rotate: [0, -10, 10, -5, 5, 0] }}
-                      transition={{ duration: 0.5 }}
-                    >
-                      <Icon className="h-7 w-7" />
-                    </motion.div>
-                    {item.title && (
-                      <h3 className={`mb-3 text-xl font-semibold ${headingColor} group-hover:text-brand transition-colors`}>
-                        {item.title}
-                      </h3>
-                    )}
-                    {item.description && (
-                      <p className={`${textColor} leading-relaxed group-hover:text-gray-300 transition-colors text-justify`}>
-                        {item.description}
-                      </p>
-                    )}
-                    {item.link && (
-                      <Link 
-                        href={item.link}
-                        className="mt-4 inline-flex items-center text-brand hover:underline font-medium group/link"
-                      >
-                        Learn more 
-                        <ChevronRight className="ml-1 h-4 w-4 group-hover/link:translate-x-1 transition-transform" />
-                      </Link>
-                    )}
-                  </div>
-                </motion.div>
-              );
-            })}
-          </motion.div>
-        )}
+        </div>
       </div>
     </section>
   );

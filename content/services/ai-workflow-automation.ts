@@ -1,47 +1,47 @@
 ﻿// content/services/ai-workflow-automation.ts
-import { ServiceContent } from './type';
+import { ServiceContent } from '../type';
 
 export const aiWorkflowAutomation: ServiceContent = {
   slug: 'ai-workflow-automation',
-  title: 'Top AI Workflow Automation Services in USA - Clickmasters',
-  metaDescription: 'Get AI workflow automation services in USA. We build custom automated workflow software & tools that save time and cut costs. Book your free audit today!',
+  title: 'AI Workflow Automation Services for Businesses | Clickmasters',
+  metaDescription: 'Automate repetitive workflows, connect business tools, and reduce manual work with AI workflow automation services from Clickmasters. Get started today.',
   keywords: 'ai workflow automation, workflow automation software, automated workflow, workflow automation tools, workflow automation platform, workflow automation services',
   sections: [
     // ========== HERO ==========
-    {
-      type: 'hero',
-      heading: 'Top AI Workflow Automation Services – That Automate Workflows the Smart Way',
-      subheading: 'We help US businesses automate workflows using the right workflow automation software and AI automation tools. Whether you need a single workflow tool for one department or a complete workflow automation platform across your entire business, we design, build, and manage automated workflows that save time, cut costs, and remove the ceiling on what your team can get done. From no-code workflow tools to fully custom AI workflow automation software, we build workflow automation solutions that actually fit your business — not the other way around.',
-      content: [
-        'We help US businesses automate workflows using the right workflow automation software and AI automation tools. Whether you need a single workflow tool for one department or a complete workflow automation platform across your entire business, we design, build, and manage automated workflows that save time, cut costs, and remove the ceiling on what your team can get done. From no-code workflow tools to fully custom AI workflow automation software, we build workflow automation solutions that actually fit your business — not the other way around.'
-      ],
-      stats: [
-        { label: 'PROJECTS', value: '500+ automated workflow projects delivered across 120+ clients' },
-        { label: 'PLATFORM-AGNOSTIC', value: 'Platform-agnostic: we recommend the best workflow automation platform for your budget, not the one we\'re most comfortable selling' },
-        { label: 'END-TO-END', value: 'End-to-end service — from process audit to automated workflow software build, testing, and long-term optimisation' },
-        { label: 'HUMAN-IN-THE-LOOP', value: 'Human-in-the-loop design built into every AI workflow so sensitive actions still get human sign-off' }
-      ],
-      ctas: [
-        { text: 'Book a Free Automation Audit', link: '/free-automation-audit', primary: true },
-        { text: 'View Our Work', link: '/work', primary: false }
-      ],
-      image: {
-        src: '/images/aiworkflow.webp',
-        alt: 'AI Workflow Automation illustration',
-        width: 2560,
-        height: 1350
-      }
-    },
+   {
+  type: 'hero',
+  heading: 'AI Workflow Automation Services to Save Time and Reduce Manual Work',
+  subheading:
+    'Improve how your business operates with AI workflow automation services built for speed, accuracy, and growth. Clickmasters helps businesses automate repetitive tasks, connect different tools, and create smooth workflows across teams.',
+  content: [
+    'Improve how your business operates with AI workflow automation services built for speed, accuracy, and growth. Clickmasters helps businesses automate repetitive tasks, connect different tools, and create smooth workflows across teams.',
+  ],
+  stats: [
+    { label: 'AUTOMATION', value: 'Automate repetitive daily tasks' },
+    { label: 'INTEGRATION', value: 'Connect your business tools and apps' },
+    { label: 'ACCURACY', value: 'Reduce errors and delays' },
+    { label: 'PRODUCTIVITY', value: 'Improve team productivity' },
+    { label: 'SCALABILITY', value: 'Build scalable automated workflows' },
+  ],
+  ctas: [
+    { text: 'Automate Your Workflow', link: '/contact', primary: true },
+  ],
+  image: {
+    src: '/images/aiworkflow.webp',
+    alt: 'AI Workflow Automation illustration',
+    width: 2560,
+    height: 1350,
+  },
+},
 
     // ========== TEXT: What Is AI Workflow Automation ==========
-    {
-      type: 'text',
-      heading: 'AI Workflow Automation Services — Workflow Automation Software',
-      content: [
-        'AI workflow automation is the process of combining artificial intelligence with workflow automation software to run the repetitive steps inside your business — without a person manually touching each one. Instead of your team spending hours on data entry, follow-ups, approvals, and reporting, the right workflow automation tools handle it in seconds, with 98%+ accuracy and zero burnout.',
-        'We\'re not a single-platform reseller. As an AI automation workflow partner, we evaluate your processes and match them to the best workflow management tools available — whether that\'s an off-the-shelf workflow tool or a fully custom automated workflow built from scratch.'
-      ]
-    },
+ {
+  type: 'text',
+  heading: 'Professional AI Workflow Automation Services — Needed by Every Business',
+  content: [
+    'With AI workflow automation, repetitive actions can happen automatically based on triggers, rules, and business conditions. Clickmasters can automate tasks such as updating CRM records, sending emails, creating tasks, moving data between apps, and notifying team members. This helps your business complete routine work faster while your employees focus on customers, strategy, and growth.',
+  ],
+},
 
     // ========== GRID: Services ==========
     {
@@ -405,36 +405,32 @@ export const aiWorkflowAutomation: ServiceContent = {
     },
 
     // ========== FAQ ==========
+  {
+  type: 'faq',
+  heading: 'Workflow Automation FAQs',
+  items: [
     {
-      type: 'faq',
-      heading: 'Workflow Automation FAQs',
-      items: [
-        {
-          title: 'How much does AI workflow automation cost?',
-          description: 'Depends on complexity — simple workflow automation software can cost a few hundred dollars; a custom automated workflow tool or multi-system integration can run into the thousands. We give exact numbers after a free audit.'
-        },
-        {
-          title: 'Are you an agency or a consulting firm?',
-          description: 'Both. We audit your processes first, then build and implement the actual workflow automation solution — no slide deck without execution.'
-        },
-        {
-          title: 'How do you choose which workflow automation platform to use?',
-          description: 'Based on your budget, technical needs, and how complex your workflows are — not on what we\'re most comfortable selling.'
-        },
-        {
-          title: 'Do we need technical staff on our end?',
-          description: 'No. We handle the build and hand it off with documentation your team can use for your new workflow tools.'
-        },
-        {
-          title: 'How long does implementation take?',
-          description: 'Simple workflow automation software can go live in days. Larger business process automation projects typically take a few weeks.'
-        },
-        {
-          title: 'What happens if our tools or volume change later?',
-          description: 'Our automated workflow software is built to scale. We also offer ongoing optimisation so your workflow automation tools grow with your business.'
-        }
-      ]
+      title: 'How does AI workflow automation work?',
+      description: 'AI workflow automation connects different tools and automatically performs tasks when a specific event or condition happens.'
     },
+    {
+      title: 'What tasks can I automate with AI workflows?',
+      description: 'You can automate lead follow-ups, CRM updates, email notifications, data entry, task creation, approvals, and many other repetitive tasks.'
+    },
+    {
+      title: 'Can workflow automation connect multiple apps?',
+      description: 'Yes. Automated workflows can connect CRMs, email platforms, spreadsheets, accounting software, project management tools, and other systems.'
+    },
+    {
+      title: 'Is AI workflow automation good for growing businesses?',
+      description: 'Yes. Automation helps growing businesses manage more work without increasing repetitive manual tasks.'
+    },
+    {
+      title: 'Can I automate only part of a workflow?',
+      description: 'Yes. You can automate one specific task or several steps depending on your business needs.'
+    }
+  ]
+},
 
     // ========== CTA ==========
     {

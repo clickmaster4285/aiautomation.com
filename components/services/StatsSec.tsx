@@ -1,177 +1,127 @@
 'use client';
 
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Section } from '@/content/type';
-import { fadeInUp, staggerContainer } from '../services/Shared/animation';
-import { useInView } from 'react-intersection-observer';
-import { useState, useEffect } from 'react';
+import { Marker, splitHeading } from '../landingPage/Shared';
+import CountUp from '../landingPage/CountUp';
 
 interface StatsSectionProps {
   section: Section;
 }
 
-const AnimatedCounter = ({ value, suffix = '', prefix = '' }: { value: number; suffix?: string; prefix?: string }) => {
-  const [count, setCount] = useState(0);
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
-
-  useEffect(() => {
-    if (inView) {
-      const duration = 2000;
-      const steps = 60;
-      const increment = value / steps;
-      let current = 0;
-      const timer = setInterval(() => {
-        current += increment;
-        if (current >= value) {
-          setCount(value);
-          clearInterval(timer);
-        } else {
-          setCount(Math.floor(current));
-        }
-      }, duration / steps);
-      return () => clearInterval(timer);
-    }
-  }, [inView, value]);
-
-  return (
-    <span ref={ref} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-brand">
-      {prefix}{count}{suffix}
-    </span>
-  );
-};
+// "100+" -> { num: 100, suffix: "+" }
+// "98%"  -> { num: 98,  suffix: "%" }
+function parseStat(value: string) {
+  const match = value.match(/(\d+)/);
+  const num = match ? Number(match[1]) : 0;
+  const suffix = value.replace(match ? match[1] : '', '').trim();
+  return { num, suffix };
+}
 
 export default function StatsSec({ section }: StatsSectionProps) {
   const statsItems = section.items || [];
   const subheading = section.subheading || '';
   const closing = section.content
-    ? (Array.isArray(section.content) ? section.content : [section.content])
+    ? Array.isArray(section.content)
+      ? section.content
+      : [section.content]
     : [];
 
-  // Display heading with a brand-highlighted keyword (matches GridSec style)
-  const heading = section.heading || 'Measurable Results';
-  const words = heading.split(' ');
-  const highlightKeywords = ['Results', 'Outcomes', 'Numbers'];
-  const highlightIndex =
-    words.findIndex(w => highlightKeywords.some(kw => w.toLowerCase().includes(kw.toLowerCase()))) >= 0
-      ? words.findIndex(w => highlightKeywords.some(kw => w.toLowerCase().includes(kw.toLowerCase())))
-      : words.length - 1;
-
-  const wordVariants: Variants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: { delay: 0.1 + i * 0.08, duration: 0.6, ease: [0.22, 1, 0.36, 1] },
-    }),
-  };
+  const { head, tail } = splitHeading(section.heading || 'Numbers that matter.', 2);
 
   return (
-    <section className="py-20 sm:py-24 lg:py-32 border-t border-gray-200 bg-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,rgba(249,115,22,0.03),rgba(0,0,0,0))]" />
+    <section className="bg-paper py-12 md:py-24 relative">
+      <div className="mx-auto max-w-[90vw] md:max-w-[84vw] px-4 md:px-6">
 
-      <div className="mx-auto max-w-[92vw] sm:max-w-[84vw] px-4 sm:px-6">
-        {/* ====== HEADER – plays on mount so the copy is always visible ====== */}
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={staggerContainer}
-          className="mb-12 sm:mb-16"
-        >
-          <motion.h2
-            variants={fadeInUp}
-            className="display mb-0 text-3xl sm:text-4xl md:text-5xl font-bold text-black text-left italic leading-tight"
-          >
-            {words.map((word, index) => (
-              <motion.span
-                key={index}
-                custom={index}
-                variants={wordVariants}
-                className={`inline-block mr-2 ${index === highlightIndex ? 'text-brand' : ''}`}
-              >
-                {word}{' '}
-              </motion.span>
-            ))}
-          </motion.h2>
+      
+      
 
-          {subheading && (
-            <motion.p
-              variants={fadeInUp}
-              className="mt-4 text-base sm:text-lg text-gray-600 max-w-2xl leading-relaxed text-left"
-            >
-              {subheading}
-            </motion.p>
+        {/* Title */}
+        <h2 className="display text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 text-center md:text-left text-foreground">
+          {head}
+          {tail && (
+            <>
+              <br />
+              <span className="text-foreground">{tail}</span>
+            </>
           )}
-        </motion.div>
+        </h2>
 
-        {/* ====== STAT CARDS ====== */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={staggerContainer}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6"
-        >
-          {statsItems.map((item: any, idx: number) => {
-            const rawValue = typeof item.value === 'string' ? item.value : String(item.value ?? '');
-            // Exact string results (e.g. "30–40+ hours", "Up to 45%") render as static
-            // text; purely numeric values keep the animated counter.
+        {/* Optional subheading */}
+        {subheading && (
+          <p className="text-base md:text-lg text-muted-foreground mb-8 md:mb-12 max-w-2xl text-center md:text-left mx-auto md:mx-0">
+            {subheading}
+          </p>
+        )}
+
+        {/* Stats grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-0 border-t border-border pt-6 md:pt-12 md:divide-x divide-border">
+          {statsItems.map((item: any, i: number) => {
+            const rawValue =
+              typeof item.value === 'string'
+                ? item.value
+                : String(item.value ?? '');
+
             const isExactString = /[a-zA-Z–—]/.test(rawValue);
+            const { num, suffix } = parseStat(rawValue);
+
             return (
               <motion.div
-                key={idx}
-                variants={fadeInUp}
-                whileHover={{ y: -8 }}
-                transition={{ duration: 0.3 }}
-                className="group relative rounded-2xl border border-gray-200 bg-white/80 backdrop-blur-sm p-5 sm:p-6 text-left transition-all duration-300 hover:border-brand/50 hover:bg-white hover:shadow-xl hover:shadow-brand/10"
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="px-0 md:px-8 first:pl-0 last:pr-0 text-center md:text-left"
               >
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-brand/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="relative">
-                  <div className="mb-2">
-                    {isExactString ? (
-                      <span className="text-3xl sm:text-4xl font-bold tracking-tight text-brand">
-                        {item.prefix || ''}{rawValue}{item.suffix || ''}
-                      </span>
-                    ) : (
-                      <AnimatedCounter
-                        value={typeof item.value === 'number' ? item.value : parseInt(rawValue) || 0}
-                        suffix={item.suffix || ''}
-                        prefix={item.prefix || ''}
-                      />
-                    )}
-                  </div>
-                  <h3 className="text-base sm:text-lg font-semibold text-black group-hover:text-brand transition-colors">
-                    {item.title}
-                  </h3>
-                  {item.description && (
-                    <p className="mt-2 text-sm text-gray-600 leading-relaxed text-justify">
-                      {item.description}
-                    </p>
+                {/* VALUE + MATH SYMBOLS — brand */}
+                <div className="flex items-baseline justify-center md:justify-start text-brand">
+                  {isExactString ? (
+                    <span className="display text-4xl sm:text-5xl md:text-6xl text-brand">
+                      {item.prefix || ''}
+                      {rawValue}
+                      {item.suffix || ''}
+                    </span>
+                  ) : (
+                    <>
+                      <CountUp to={num} />
+                      {suffix && (
+                        <span className="display text-4xl sm:text-5xl md:text-6xl text-brand">
+                          {suffix}
+                        </span>
+                      )}
+                    </>
                   )}
                 </div>
+
+                {/* LABEL — foreground */}
+                <div className="text-foreground capitalize text-base md:text-md font-medium mt-2 md:mt-3">
+                  {item.title || item.label}
+                </div>
+
+                {/* DESCRIPTION — muted foreground */}
+                {item.description && (
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                    {item.description}
+                  </p>
+                )}
               </motion.div>
             );
           })}
-        </motion.div>
+        </div>
 
-        {/* ====== CLOSING PARAGRAPH ====== */}
+        {/* Closing paragraphs */}
         {closing.length > 0 && (
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-            variants={staggerContainer}
-            className="mt-10 sm:mt-12 max-w-3xl"
-          >
+          <div className="mt-10 md:mt-12 max-w-3xl space-y-4">
             {closing.map((paragraph, idx) => (
-              <motion.p
+              <p
                 key={idx}
-                variants={fadeInUp}
-                className="text-base sm:text-lg text-gray-600 leading-relaxed text-left"
+                className="text-base md:text-lg text-muted-foreground leading-relaxed"
               >
                 {paragraph}
-              </motion.p>
+              </p>
             ))}
-          </motion.div>
+          </div>
         )}
       </div>
     </section>

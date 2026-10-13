@@ -1,57 +1,51 @@
 // content/services/ai-chatbot-automation.ts
-import { ServiceContent } from './type';  
+import { ServiceContent } from '../type';  
 
 export const aiChatbotAutomation: ServiceContent = {
-  slug: 'ai-chatbot-automation',
-  title: 'AI Chatbot Automation & Development | Clickmasters',
-  metaDescription: 'Clickmasters builds AI chatbots that answer from your documentation, book appointments, qualify leads, and route to humans when needed on your site, 24/7.',
-  keywords: 'ai chatbot, conversational ai, chatbot automation, customer service chatbot',
-  sections: [
-    // ========== HERO ==========
-    {
-      type: 'hero',
-      heading: 'AI Chatbot Automation & Development',
-      subheading: 'Chatbots that answer from your own knowledge, book appointments, qualify leads, and take real action not scripted bots that frustrate everyone.',
-      content: [
-        'Clickmasters builds AI chatbots that hold real conversations and take real action. Not the scripted decision-tree bots everyone has learned to dread the ones that misunderstand a simple question and trap you in a loop of "I didn\'t catch that" but modern AI chatbots that understand natural language, answer accurately from your own content, book appointments, qualify leads, and hand off to a human cleanly when needed.',
-        'This page explains why old chatbots failed, what modern AI chatbots do differently, the kinds of chatbots we build and where each one earns its keep, how we keep their answers accurate, and the channels and tools we deploy them across. It is written for a business owner or marketer who has been burned by a bad bot before and is rightly skeptical.'
-      ],
-      stats: [
-        { label: 'PROJECTS', value: '200+' },
-        { label: 'CLIENTS', value: '90+' }
-      ],
-      ctas: [
-        { text: 'Book a Free Audit', link: '/free-automation-audit', primary: true },
-        { text: 'View Work', link: '/work', primary: false }
-      ],
-      image: {
-        src: '/images/chatbot.png',
-        alt: 'AI Chatbot Automation illustration',
-        width: 612,
-        height: 408
-      }
+slug: 'ai-chatbot-automation',
+title: 'AI Chatbot Development Services for Business | Clickmasters',
+metaDescription:
+  'Build custom AI chatbots for customer support, lead generation, sales, and bookings. Improve customer conversations with Clickmasters AI chatbot services.',
+keywords: 'ai chatbot, conversational ai, chatbot automation, customer service chatbot',
+sections: [
+  // ========== HERO ==========
+  {
+    type: 'hero',
+    heading: 'AI Chatbot Development Services for Better Customer Conversations',
+    subheading:
+      'Give customers fast and helpful answers with AI chatbot development services from Clickmasters. We build custom AI chatbots for customer support, lead generation, sales, appointment booking, and everyday customer questions.',
+    content: [
+      'Give customers fast and helpful answers with AI chatbot development services from Clickmasters. We build custom AI chatbots for customer support, lead generation, sales, appointment booking, and everyday customer questions.',
+    ],
+    stats: [
+      { label: 'SUPPORT', value: 'Answer customer questions 24/7' },
+      { label: 'LEADS', value: 'Capture and qualify new leads' },
+      { label: 'BOOKINGS', value: 'Book appointments automatically' },
+      { label: 'INTEGRATIONS', value: 'Connect with CRM and business tools' },
+      { label: 'HANDOFF', value: 'Transfer complex conversations to humans' },
+    ],
+    ctas: [
+      { text: 'Build Your AI Chatbot', link: '/free-automation-audit', primary: true },
+    ],
+    image: {
+      src: '/images/chatbot.png',
+      alt: 'AI Chatbot Development illustration',
+      width: 612,
+      height: 408,
     },
+  },
 
     // ========== TEXT: Why Old Chatbots Failed and What Changed ==========
-    {
-      type: 'text',
-      heading: 'Why Old Chatbots Failed and What Changed',
-      content: [
-        'The first generation of chatbots earned their bad reputation honestly. They ran on rigid decision trees: a fixed set of buttons and pre-written paths. If a customer phrased something in a way the designer had not anticipated, the bot was lost. It could not understand intent, only match keywords, so it constantly misread what people meant. Worst of all, it stood between the customer and a human, turning a simple question into a frustrating maze. Everyone has hammered "speak to a representative" into one of these, and the memory is why so many people distrust the word "chatbot."',
-        'What changed is the underlying technology. Modern AI chatbots are built on large language models that genuinely understand natural language. A customer can ask in their own words, in any phrasing, and the bot grasps what they actually mean. More importantly, the best ones answer from your real content your help docs, product information, and policies rather than a small set of canned responses, and they can take action in your systems rather than only talking. The result is a conversation that feels like talking to someone helpful, not navigating a phone tree from 2010.',
-        'The honest caveat: this is only true when the bot is built well. A modern model plugged in carelessly, without grounding in your content and without clear escalation paths, can still produce a poor experience confidently wrong answers instead of confidently unhelpful ones. The technology makes a great chatbot possible; the build determines whether you get one.'
-      ]
-    },
+{
+  type: 'text',
+  heading: 'Improve Customer Support With a Custom AI Chatbot',
+  content: [
+    'Customers expect quick answers when they visit your website. A custom AI chatbot can help visitors find information, ask questions, submit details, book appointments, and get support without waiting for a team member.',
+    'Clickmasters creates AI chatbots based on your business content, services, FAQs, and customer journey. The chatbot can handle common conversations automatically and transfer the customer to a real person when human support is needed.',
+  ],
+},
 
-    // ========== TEXT: What Modern AI Chatbots Can Actually Do ==========
-    {
-      type: 'text',
-      heading: 'What Modern AI Chatbots Can Actually Do',
-      content: [
-        'The leap from old to new is the leap from informing to acting. An old bot could, at best, show you an FAQ answer. A modern AI chatbot can carry out the task behind the question. It can look up an order and report its real status. It can check availability and book an appointment directly into your calendar. It can qualify a lead through natural conversation and route it to the right salesperson. It can answer a detailed product question from your documentation and, if the visitor is ready, move them toward a purchase or a booking.',
-        'And when it reaches the edge of what it should handle a complex complaint, a sensitive account issue, anything outside its remit it hands off to a human with the full conversation attached, so the customer does not start over. That clean handoff is part of a good build, not an afterthought. The goal is not a bot that refuses to let you reach a person; it is a bot that resolves what it can and connects you smoothly when it cannot.'
-      ]
-    },
+   
 
     // ========== FEATURES: The Chatbots We Build (now 6 items) ==========
     {
@@ -136,7 +130,15 @@ export const aiChatbotAutomation: ServiceContent = {
         }
       ]
     },
-
+ // ========== TEXT: What Modern AI Chatbots Can Actually Do ==========
+    {
+      type: 'text',
+      heading: 'What Modern AI Chatbots Can Actually Do',
+      content: [
+        'The leap from old to new is the leap from informing to acting. An old bot could, at best, show you an FAQ answer. A modern AI chatbot can carry out the task behind the question. It can look up an order and report its real status. It can check availability and book an appointment directly into your calendar. It can qualify a lead through natural conversation and route it to the right salesperson. It can answer a detailed product question from your documentation and, if the visitor is ready, move them toward a purchase or a booking.',
+        'And when it reaches the edge of what it should handle a complex complaint, a sensitive account issue, anything outside its remit it hands off to a human with the full conversation attached, so the customer does not start over. That clean handoff is part of a good build, not an afterthought. The goal is not a bot that refuses to let you reach a person; it is a bot that resolves what it can and connects you smoothly when it cannot.'
+      ]
+    },
     // ========== FEATURES: Why Clickmasters (now 6 items) ==========
     {
       type: 'features',
@@ -243,36 +245,42 @@ export const aiChatbotAutomation: ServiceContent = {
     },
 
     // ========== FAQ ==========
+  {
+  type: 'faq',
+  heading: 'Frequently Asked Questions',
+  items: [
     {
-      type: 'faq',
-      heading: 'Frequently Asked Questions',
-      items: [
-        {
-          title: 'What is an AI chatbot?',
-          description: 'An AI chatbot uses a language model to understand and respond to users in natural language, answering from a business\'s own content and taking actions like booking or routing far beyond old script-based bots that only matched keywords.'
-        },
-        {
-          title: 'How do AI chatbots answer accurately?',
-          description: 'Through retrieval-augmented generation (RAG): the bot answers from your specific documents and data, which keeps responses accurate and on-brand instead of generic or invented. Where your content is silent, a well-built bot says so and escalates rather than guessing.'
-        },
-        {
-          title: 'Can a chatbot book appointments?',
-          description: 'Yes. Connected to your calendar and CRM, an AI chatbot can qualify, check availability, book, and confirm appointments directly in conversation, removing the usual back-and-forth.'
-        },
-        {
-          title: 'Won\'t a chatbot frustrate my customers like the old ones did?',
-          description: 'Old bots frustrated people because they were rigid, misunderstood phrasing, and blocked access to humans. Modern AI bots understand natural language, answer accurately from your content, take real action, and hand off cleanly to a person when needed a fundamentally better experience.'
-        },
-        {
-          title: 'Which channels can the chatbot work on?',
-          description: 'Web chat, WhatsApp, Messenger, Slack, and Teams, among others. The same underlying intelligence can be deployed across multiple channels so customers reach you where they already are.'
-        },
-        {
-          title: 'How long does it take to build and launch?',
-          description: 'We typically ground a bot in your existing content and launch it on a defined set of questions and actions within a few weeks, then expand its scope as it proves accurate and useful.'
-        }
-      ]
+      title: 'What is an AI chatbot?',
+      description:
+        'An AI chatbot is software that uses artificial intelligence to understand customer questions and respond in natural language.',
     },
+    {
+      title: 'Can an AI chatbot generate leads?',
+      description:
+        'Yes. AI chatbots can collect customer details, ask qualification questions, and send leads to your sales team or CRM.',
+    },
+    {
+      title: 'Can an AI chatbot answer questions about my services?',
+      description:
+        'Yes. The chatbot can use approved website content, FAQs, documents, and business information to answer relevant questions.',
+    },
+    {
+      title: 'Can an AI chatbot book appointments?',
+      description:
+        'Yes. It can connect with supported booking or calendar systems to schedule appointments.',
+    },
+    {
+      title: 'Can customers speak to a real person?',
+      description:
+        'Yes. The chatbot can transfer conversations to a human when needed.',
+    },
+    {
+      title: 'Can an AI chatbot connect with CRM software?',
+      description:
+        'Yes. It can create leads, update customer records, and send conversation data to connected CRM systems.',
+    },
+  ],
+},
 
     // ========== CTA ==========
     {

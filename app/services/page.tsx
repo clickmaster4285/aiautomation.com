@@ -2,7 +2,7 @@
 import type { Metadata } from 'next';
 import type { ElementType } from 'react';
 import Link from 'next/link';
-import { serviceCategories } from '@/content/index';
+import { serviceCategories } from '@/content/services/index';
 import { HeroSection } from '@/components/solutions/sections/Hero';
 import { Section, SectionHeading } from '@/components/solutions/layout/Section';
 import {

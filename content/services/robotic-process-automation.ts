@@ -1,47 +1,43 @@
 ﻿// content/robotic-process-automation.ts
-import { ServiceContent } from './type';
+import { ServiceContent } from '../type';
 
 export const roboticProcessAutomation: ServiceContent = {
   slug: 'robotic-process-automation',
-  title: 'Top Robotic Automation Services USA - RPA Automation',
-  metaDescription: 'Custom robotic process automation services for US businesses. Get a free process assessment from ClickMasters\' RPA experts today.',
+  title: 'Robotic Process Automation Services | RPA Automation',
+  metaDescription: 'Automate repetitive digital tasks with robotic process automation services. Reduce manual data entry, improve accuracy, and save time with Clickmasters RPA.',
   keywords: 'robotic process automation services, rpa services company, rpa consulting, custom rpa solutions, rpa development, rpa integration',
   sections: [
     // ========== HERO ==========
-    {
-      type: 'hero',
-      heading: 'Robotic Process Automation Services in USA - RPA Services Company',
-      subheading: 'Robotic process automation is changing how businesses across the USA handle repetitive, time-consuming work. At ClickMasters, our RPA consulting services help you identify which processes are ready for automation and build a clear path to get there—without disrupting how your teams already work.',
-      content: [
-        'Whether you\'re just starting to explore robotic automation or already running an RPA program and want to grow it, our team works right alongside yours. We bring hands-on RPA consulting and practical, business-first thinking to every step.'
-      ],
-      stats: [
-        { label: 'ASSESSMENT', value: 'Free initial process assessment call' },
-        { label: 'USA-BASED', value: 'USA-based RPA experts who understand your compliance and industry needs' },
-        { label: 'FLEXIBLE', value: 'Flexible engagement models — from one-time consulting to full RPA service provider partnerships' }
-      ],
-      ctas: [
-        { text: 'Get Free RPA Consultation', link: '/free-automation-audit', primary: true }
-      ],
-      image: {
-        src: '/images/robotic.png',
-        alt: 'Robotic Process Automation illustration',
-        width: 656,
-        height: 380
-      }
-    },
-
+{
+  type: 'hero',
+  heading: 'Robotic Process Automation Services for Repetitive Digital Tasks',
+  subheading: 'Save time on repetitive computer work with robotic process automation services from Clickmasters. Our RPA solutions can help automate data entry, file handling, system updates, reporting, and other repetitive tasks across your existing business software.',
+  content: [],
+  stats: [
+    { label: 'TASKS', value: 'Automate rule-based tasks' },
+    { label: 'DATA ENTRY', value: 'Reduce repetitive data entry' },
+    { label: 'SPEED', value: 'Improve processing speed' },
+    { label: 'ACCURACY', value: 'Reduce human errors' },
+    { label: 'INTEGRATIONS', value: 'Work with existing business systems' }
+  ],
+  ctas: [
+    { text: 'Start Your RPA Automation', link: '/free-automation-audit', primary: true }
+  ],
+  image: {
+    src: '/images/robotic.png',
+    alt: 'Robotic Process Automation illustration',
+    width: 656,
+    height: 380
+  }
+},
     // ========== TEXT: Custom RPA Development Solutions ==========
-    {
-      type: 'text',
-      heading: 'Custom RPA Development Solutions',
-      content: [
-        'Not every business runs the same way, so we don\'t believe in one-size-fits-all automation. Our custom RPA solutions are built around your actual workflows — your systems, your data, your teams — instead of forcing your business to adapt to generic software.',
-        'As a robotic process automation company, ClickMasters focuses on solutions that are easy to maintain, easy to scale, and easy for your staff to understand. We don\'t just deploy bots and walk away — we design RPA solutions that fit into your daily operations from day one.',
-        '• Built around your existing tools (no need to rip and replace)\n• Designed for both simple task automation and complex, multi-step RPA process flows\n• Backed by ongoing support, not just a one-time handoff'
-      ]
-    },
-
+{
+  type: 'text',
+  heading: 'Let RPA Bots Handle Repetitive Computer Tasks',
+  content: [
+    'Many employees spend valuable time completing the same digital tasks every day. These tasks may include copying data, checking records, downloading files, updating systems, or preparing reports. Robotic process automation uses software bots to complete these predictable tasks automatically. Clickmasters develops RPA automation solutions that help your team spend less time on repetitive work and more time on tasks that require human thinking and decision-making.'
+  ]
+},
     // ========== FEATURES: RPA Implementation and Integration Services ==========
     {
       type: 'features',
@@ -262,29 +258,32 @@ export const roboticProcessAutomation: ServiceContent = {
     },
 
     // ========== FAQ ==========
+  {
+  type: 'faq',
+  heading: 'FAQs',
+  items: [
     {
-      type: 'faq',
-      heading: 'FAQs',
-      items: [
-        {
-          title: 'What is robotic process automation?',
-          description: 'Robotic process automation is a type of software technology that automates routine digital tasks — like data entry, file transfers, or system updates — by mimicking the actions a human would normally take within applications and systems.'
-        },
-        {
-          title: 'How is RPA different from AI?',
-          description: 'Traditional RPA follows predefined rules to complete tasks, while AI can handle more judgement-based decisions. Many modern RPA solutions now combine both, sometimes referred to as intelligent or agentic automation, to handle more complex workflows.'
-        },
-        {
-          title: 'What business processes can be automated with RPA?',
-          description: 'Common candidates include invoice processing, data entry, employee onboarding, claims processing, CRM updates, and routine IT tasks like user provisioning. Generally, if a task is repetitive, rule-based, and high-volume, it\'s a good fit.'
-        },
-        {
-          title: 'How long does an RPA implementation typically take?',
-          description: 'Timelines vary based on complexity, but simple automations can often be built and deployed within a few weeks, while larger, multi-system robotic process automation projects may take a few months from assessment to full rollout.'
-        }
-      ]
+      title: 'What is robotic process automation?',
+      description: 'Robotic process automation uses software bots to complete repetitive and rule-based computer tasks automatically.'
     },
-
+    {
+      title: 'What types of tasks can RPA bots perform?',
+      description: 'RPA bots can handle data entry, file processing, record updates, report creation, data transfers, and other repetitive digital tasks.'
+    },
+    {
+      title: 'Can RPA work with old software?',
+      description: 'Yes. RPA can often work with legacy systems that do not have modern integrations or APIs.'
+    },
+    {
+      title: 'Does RPA replace employees?',
+      description: 'RPA is mainly used to reduce repetitive manual work so employees can focus on more valuable tasks.'
+    },
+    {
+      title: 'What businesses can use RPA?',
+      description: 'RPA can be useful for finance, healthcare, logistics, ecommerce, insurance, customer service, and many other industries.'
+    }
+  ]
+},
     // ========== CTA ==========
     {
       type: 'cta',

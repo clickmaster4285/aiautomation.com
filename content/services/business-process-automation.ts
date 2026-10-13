@@ -1,46 +1,44 @@
 ﻿// content/services/business-process-automation.ts
-import { ServiceContent } from './type';
+import { ServiceContent } from '../type';
 
 export const businessProcessAutomation: ServiceContent = {
   slug: 'business-process-automation',
-  title: 'Business Process Automation Services in USA - Process Automation',
-  metaDescription: 'Get expert business process automation services in the USA. Streamline workflows, reduce errors, and scale faster — request a free assessment today.',
+  title: 'Business Process Automation Services | Improve Operations',
+  metaDescription: 'Improve business operations with process automation services. Automate approvals, onboarding, finance, sales, and other business processes with Clickmasters.',
   keywords: 'business process automation services, business automation services, process automation software, business process automation consulting, automation software',
   sections: [
     // ========== HERO ==========
-    {
-      type: 'hero',
-      heading: 'Business Process Automation Services in USA - Workflow Automation Software',
-      subheading: 'Clickmasters helps US companies fix that with business process automation built around real workflows, not generic templates. Our automation software and automation tools are designed to remove repetitive work from your team\'s plate so people can focus on decisions that actually need a human.',
-      content: [
-        'Whether you\'re a small business trying to keep up with growth or an enterprise managing multiple systems, our business process automation services bring structure, speed, and accuracy to the way work gets done. From finance approvals to customer support routing, we help you turn manual chaos into a smooth, connected process — backed by real business process automation consulting, not just software installation.'
-      ],
-      stats: [
-        { label: 'MANUAL WORK', value: 'Cut manual work with proven workflow automation software built around your real processes' },
-        { label: 'INTEGRATIONS', value: 'Connect your existing tools using modern automation software and API-based integrations' },
-        { label: 'SCALE', value: 'Scale operations without scaling headcount through reliable process automation solutions' },
-        { label: 'EXPERT GUIDANCE', value: 'Get expert guidance from a business process automation consultant who understands US business systems (ERP, CRM, WMS)' },
-        { label: 'FEWER ERRORS', value: 'Reduce errors, delays, and manual handoffs across finance, HR, sales, and support' }
-      ],
-      ctas: [
-        { text: 'Request a Free Automation Assessment', link: '/free-automation-audit', primary: true }
-      ],
-      image: {
-        src: '/images/bussiness.png',
-        alt: 'Business Process Automation illustration',
-        width: 667,
-        height: 374
-      }
-    },
+   {
+  type: 'hero',
+  heading: 'Business Process Automation Services for Faster Operations',
+  subheading: 'Improve efficiency across your company with business process automation services from Clickmasters. We help businesses automate complete processes across sales, finance, HR, customer service, and operations.',
+  content: [],
+  stats: [
+    { label: 'PROCESSES', value: 'Automate complete business processes' },
+    { label: 'APPROVALS', value: 'Reduce manual approvals and data entry' },
+    { label: 'ACCURACY', value: 'Improve process speed and accuracy' },
+    { label: 'INTEGRATIONS', value: 'Connect multiple teams and systems' },
+    { label: 'SCALE', value: 'Build more scalable operations' }
+  ],
+  ctas: [
+    { text: 'Improve Your Business Processes', link: '/free-automation-audit', primary: true }
+  ],
+  image: {
+    src: '/images/bussiness.png',
+    alt: 'Business Process Automation illustration',
+    width: 667,
+    height: 374
+  }
+},
 
     // ========== TEXT: Why Business Automation Services Matter ==========
-    {
-      type: 'text',
-      heading: 'Why Business Automation Services Matter for US Businesses',
-      content: [
-        'Most companies don\'t need more software — they need their existing work to run smarter, and that\'s exactly what business automation services are built to do. Business process automation helps you identify repetitive, rule-based, or high-volume tasks and turn them into automated workflows that run consistently and accurately. Whether you\'re buried in manual data entry or juggling systems that don\'t talk to each other, the right business automation strategy saves time, cuts costly errors, and gives leadership real visibility into daily operations. Clickmasters builds that strategy with you, not a one-size-fits-all package.'
-      ]
-    },
+   {
+  type: 'text',
+  heading: 'Turn Manual Business Processes Into Automated Systems',
+  content: [
+    'Many business processes include several steps, employees, systems, and approvals. When these steps depend too much on manual work, delays and errors become more common. Business process automation helps connect these steps into one structured system. Information can move automatically from one stage to another while employees remain involved where human decisions are required. Clickmasters builds automation solutions that make your processes easier to manage, track, and scale.'
+  ]
+},
 
     // ========== FEATURES: Our Business Process Automation Services ==========
     {
@@ -388,36 +386,32 @@ export const businessProcessAutomation: ServiceContent = {
     },
 
     // ========== FAQ ==========
+   {
+  type: 'faq',
+  heading: 'FAQs',
+  items: [
     {
-      type: 'faq',
-      heading: 'FAQs',
-      items: [
-        {
-          title: 'What is business process automation?',
-          description: 'Business process automation uses software, integrations, and sometimes AI to handle repetitive business tasks automatically, reducing manual work and errors across departments like finance, HR, and operations.'
-        },
-        {
-          title: 'How is business process automation different from RPA?',
-          description: 'RPA is one implementation technology that mimics user actions on digital systems, while business process automation is broader and can combine RPA with AI, workflow engines, and integrations across an entire process.'
-        },
-        {
-          title: 'Which business processes should we automate first?',
-          description: 'Start with processes that are repetitive, high-volume, and rule-based, such as invoice processing or approval routing — our process automation consulting team can help identify the best starting points during a process audit.'
-        },
-        {
-          title: 'Do you integrate with our existing systems?',
-          description: 'Yes, we connect automation software with common ERP, CRM, and WMS platforms so data flows automatically instead of requiring manual re-entry.'
-        },
-        {
-          title: 'How long does implementation take?',
-          description: 'Timelines vary based on process complexity and the number of systems involved, but most business process automation solutions begin with a phased rollout starting with one or two priority workflows.'
-        },
-        {
-          title: 'Will automation replace our employees?',
-          description: 'No — automation handles repetitive tasks while employees manage exceptions, oversight, and higher-value work; we design workflows with human-in-the-loop checkpoints for cases that need review.'
-        }
-      ]
+      title: 'What is business process automation?',
+      description: 'Business process automation uses technology to automate repetitive steps inside a complete business process.'
     },
+    {
+      title: 'Which business processes can be automated?',
+      description: 'You can automate employee onboarding, sales processes, customer onboarding, invoice approvals, reporting, document processing, and order management.'
+    },
+    {
+      title: 'Why should businesses automate processes?',
+      description: 'Automation can reduce delays, improve accuracy, lower manual workload, and make processes easier to manage.'
+    },
+    {
+      title: 'Can business process automation connect different departments?',
+      description: 'Yes. Automation can connect workflows between departments such as sales, finance, operations, HR, and customer support.'
+    },
+    {
+      title: 'What is the difference between workflow automation and process automation?',
+      description: 'Workflow automation often focuses on specific tasks, while business process automation improves a larger end-to-end process.'
+    }
+  ]
+},
 
     // ========== CTA ==========
     {

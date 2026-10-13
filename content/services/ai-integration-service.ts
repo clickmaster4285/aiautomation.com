@@ -1,5 +1,5 @@
 // content/services/ai-integration-services.ts
-import { ServiceContent } from './type';  
+import { ServiceContent } from '../type';  
 
 export const aiIntegrationServices: ServiceContent = {
   slug: 'ai-integration-services',

@@ -1,47 +1,49 @@
 // content/services/ai-knowledge-assistants.ts
-import { ServiceContent } from './type';  
+import { ServiceContent } from '../type';  
 
 export const aiKnowledgeAssistants: ServiceContent = {
   slug: 'ai-knowledge-assistants',
-  title: 'AI Knowledge Assistants & Internal Tools | Clickmasters',
-  metaDescription: 'Clickmasters builds internal AI knowledge assistants that answer from your company\'s documents, policies, and data so your team finds answers in seconds.',
-  keywords: 'ai knowledge assistant, internal ai, knowledge management, ai search',
-  sections: [
-    // ========== HERO ==========
-    {
-      type: 'hero',
-      heading: 'AI Knowledge Assistants',
-      subheading: 'Give your team an AI that knows your business answering from your own documents, policies, and data, where your team already works.',
-      content: [
-        'Clickmasters builds internal AI knowledge assistants that answer your team\'s questions from your company\'s own documents, policies, and data. Instead of digging through shared drives, pinging colleagues, and re-asking the same questions, your people get accurate answers in seconds grounded in your real content and available right where they already work.',
-        'This page explains the cost of scattered internal knowledge, what a knowledge assistant is and how it differs from a public chatbot, what we build, how we keep it secure and accurate, and where it delivers the most value inside an organization.'
-      ],
-      stats: [
-        { label: 'PROJECTS', value: '90+' },
-        { label: 'CLIENTS', value: '40+' }
-      ],
-      ctas: [
-        { text: 'Book a Free Audit', link: '/free-automation-audit', primary: true },
-        { text: 'View Work', link: '/work', primary: false }
-      ],
-      image: {
-        src: '/images/ai-knowledge.png',
-        alt: 'AI Knowledge Assistant illustration',
-        width: 612,
-        height: 408
-      }
+title: 'AI Knowledge Assistant Development | Clickmasters',
+metaDescription:
+  'Build secure AI knowledge assistants using company documents, RAG technology, and business data. Get custom AI knowledge assistant development services.',
+keywords: 'ai knowledge assistant, internal ai, knowledge management, ai search',
+sections: [
+  // ========== HERO ==========
+  {
+    type: 'hero',
+    heading: 'AI Knowledge Assistant Development Services for Businesses',
+    subheading:
+      'Our AI knowledge assistant development services help businesses access internal information quickly and accurately. Clickmasters builds custom AI knowledge assistants that connect company documents, knowledge bases, and business tools to simplify information search, improve employee support, and save valuable working time.',
+    content: [
+      'Our AI knowledge assistant development services help businesses access internal information quickly and accurately. Clickmasters builds custom AI knowledge assistants that connect company documents, knowledge bases, and business tools to simplify information search, improve employee support, and save valuable working time.',
+    ],
+    stats: [
+      { label: 'SEARCH', value: 'Simplify internal information search' },
+      { label: 'SUPPORT', value: 'Improve employee support and answers' },
+      { label: 'TIME', value: 'Save valuable working time every day' },
+      { label: 'CONNECT', value: 'Connect documents, knowledge bases, tools' },
+      { label: 'SECURE', value: 'Secure access grounded in your content' },
+    ],
+    ctas: [
+      { text: 'Get a Free AI Knowledge Assistant Consultation', link: '/free-automation-audit', primary: true },
+    ],
+    image: {
+      src: '/images/ai-knowledge.png',
+      alt: 'AI Knowledge Assistant illustration',
+      width: 612,
+      height: 408,
     },
+  },
 
     // ========== TEXT: The Cost of Knowledge Trapped in Drives and Heads ==========
-    {
-      type: 'text',
-      heading: 'The Cost of Knowledge Trapped in Drives and Heads',
-      content: [
-        'In most organizations, the information people need to do their jobs is scattered: across documents in a shared drive, pages in a wiki, threads in Slack, policies in a PDF nobody can find, and most fragile of all in the heads of a few long-tenured colleagues. Finding an answer means searching several systems, interrupting a coworker, or simply guessing. Studies of knowledge work consistently find that a meaningful share of every week is lost to searching for information that already exists somewhere in the company.',
-        'The costs compound in ways that are easy to miss. New hires take longer to become productive because they do not yet know where anything lives or whom to ask. Experienced staff are constantly interrupted to answer the same questions. Knowledge walks out the door when a key person leaves. And decisions get made on stale or half-remembered information because finding the current, correct answer was too much friction in the moment.',
-        'An AI knowledge assistant addresses this directly. It indexes your internal knowledge and answers questions from it instantly, in natural language, so the right answer is a question away rather than a search-and-interrupt expedition. The knowledge stops being trapped and starts being available.'
-      ]
-    },
+{
+  type: 'text',
+  heading: 'Custom AI Knowledge Assistant Solutions for Your Business',
+  content: [
+    'Our AI knowledge assistant services help organizations bring this information together through intelligent search and conversational AI. Clickmasters develops secure AI knowledge base assistants using retrieval-augmented generation (RAG) technology.',
+    'These assistants retrieve relevant information from approved business sources and provide clear, source-supported answers. Our enterprise AI assistant development approach focuses on information accuracy, access control, and simple integration with existing workflows.',
+  ],
+},
 
     // ========== TEXT: What a Knowledge Assistant Is and Isn't ==========
     {
@@ -207,36 +209,37 @@ export const aiKnowledgeAssistants: ServiceContent = {
     },
 
     // ========== FAQ ==========
+  {
+  type: 'faq',
+  heading: 'Frequently Asked Questions',
+  items: [
     {
-      type: 'faq',
-      heading: 'Frequently Asked Questions',
-      items: [
-        {
-          title: 'What is an AI knowledge assistant?',
-          description: 'An AI knowledge assistant answers employee questions from a company\'s own documents, policies, and data using retrieval-augmented generation, so staff get accurate, sourced internal answers instantly instead of searching multiple systems or interrupting colleagues.'
-        },
-        {
-          title: 'Is our internal data safe?',
-          description: 'Yes assistants can be built with access controls and, where needed, self-hosted infrastructure so sensitive company data stays in your environment. Access is scoped so people see only what they are permitted to.'
-        },
-        {
-          title: 'Where does the assistant get its answers?',
-          description: 'From your indexed internal content documents, wikis, knowledge bases, policies not the open web. This grounding keeps answers accurate and specific to your business, and the assistant can point to the source.'
-        },
-        {
-          title: 'How is this different from using ChatGPT internally?',
-          description: 'A general model answers from its training and does not know your business; a knowledge assistant answers from your specific internal content with proper access controls. The grounding and security are exactly what make it trustworthy for internal use.'
-        },
-        {
-          title: 'What happens if the answer isn\'t in our documents?',
-          description: 'A well-built assistant says it does not have that information rather than inventing an answer. This honesty matters especially internally, because staff act on these answers directly.'
-        },
-        {
-          title: 'How long does it take to set up?',
-          description: 'We typically index your core documentation and launch the assistant for a defined team or use case within a few weeks, then expand its scope and sources as it proves useful.'
-        }
-      ]
+      title: 'What are AI knowledge assistant development services?',
+      description:
+        'AI knowledge assistant development services build intelligent systems that answer questions using company documents, databases, and internal knowledge.',
     },
+    {
+      title: 'Can you build a custom AI knowledge base assistant?',
+      description:
+        'Yes. Clickmasters builds custom AI knowledge assistants that connect business documents, systems, and internal data.',
+    },
+    {
+      title: 'Do your AI knowledge assistants use RAG technology?',
+      description:
+        'Yes. Our RAG-based AI assistants retrieve relevant information from trusted business sources to provide accurate, source-supported answers.',
+    },
+    {
+      title: 'Can an AI knowledge assistant integrate with our existing software?',
+      description:
+        'Yes. Our AI knowledge assistants integrate with compatible business tools, databases, document platforms, and communication systems.',
+    },
+    {
+      title: 'How long does AI knowledge assistant development take?',
+      description:
+        'Development time depends on project complexity, data sources, integrations, and required features. Clickmasters provides a timeline after reviewing your requirements.',
+    },
+  ],
+},
 
     // ========== CTA ==========
     {

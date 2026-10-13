@@ -1,7 +1,7 @@
 // app/services/[serviceSlug]/page.tsx
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { allServices, getServiceBySlug, getTemplate } from '@/content/index';
+import { allServices, getServiceBySlug, getTemplate } from '@/content/services/index';
 import CmsRoute, { cmsRouteMetadata } from '@/components/cms/CmsRoute';
 
 // ── Only these services are live under /services/<slug> ──
