@@ -284,6 +284,11 @@ export const industryCategories: IndustryCategory[] = [
         path: '/industries/ai-automation-for-saas',
         description: 'Onboarding, support deflection, churn signals, and revenue ops',
       },
+      {
+  title: 'Real Estate',
+  path: '/industries/ai-automation-for-real-estate',
+  description: 'Lead qualification, property listings, appointment scheduling, and client communication',
+},
     ],
   },
 ];

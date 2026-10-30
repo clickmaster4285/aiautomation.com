@@ -1,53 +1,47 @@
-import { getIndustries } from '../sitemap_utils';
+// app/sitemap_industries.xml/route.ts
+import { industryContent } from '@/content/Industries';
 
-const siteUrl = "https://clickmastersaiautomation.com";
+const siteUrl = 'https://clickmastersaiautomation.com';
 
 export async function GET() {
   const lastModified = new Date().toISOString();
-  
-  // Get all industries and their sub-pages from the app directory
-  const industries = getIndustries();
-
-  // Define industries to exclude
-  const excludeIndustries = [
-    'logistics-supply-chain',
-    'education'
-  ];
-
-  // Filter out excluded industries
-  const filteredIndustries = industries.filter(
-    industry => !excludeIndustries.includes(industry.slug)
-  );
-
-  // Debug: Log what we found
-  console.log('Generating industries sitemap with:', filteredIndustries);
+  const seen = new Set<string>();
 
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`;
 
-  // Add all industries and their sub-pages (filtered)
-  for (const industry of filteredIndustries) {
-    // Add the main industry page
+  const addUrl = (loc: string, priority: string) => {
+    if (seen.has(loc)) return;
+    seen.add(loc);
     sitemap += `
   <url>
-    <loc>${siteUrl}/industries/${industry.slug}</loc>
+    <loc>${loc}</loc>
     <lastmod>${lastModified}</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>${priority}</priority>
   </url>`;
-    
-    // Add sub-pages if they exist
-    if (industry.subPages && industry.subPages.length > 0) {
-      for (const subPage of industry.subPages) {
-        const cleanSubPage = subPage.replace(/\/index$/, '').replace(/\/page$/, '');
-        sitemap += `
-  <url>
-    <loc>${siteUrl}${cleanSubPage}</loc>
-    <lastmod>${lastModified}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>`;
+  };
+
+  // 👇 Iterate entries, use the KEY as the slug — this is what the route uses.
+  for (const [slug, industry] of Object.entries(industryContent)) {
+    addUrl(`${siteUrl}/industries/${slug}`, '0.8');
+
+    const subPages = (industry as any).subPages as (string | { path: string })[] | undefined;
+    if (!Array.isArray(subPages)) continue;
+
+    for (const subPage of subPages) {
+      const raw = typeof subPage === 'string' ? subPage : subPage?.path;
+      if (!raw) continue;
+      let cleaned = raw.replace(/\/index$/, '').replace(/\/page$/, '').trim();
+      if (!cleaned || cleaned.includes('[') || cleaned.includes(']')) continue;
+      if (cleaned.startsWith('/')) {
+        // absolute — only allow if already under /industries/<slug>
+        if (!cleaned.startsWith(`/industries/${slug}`)) continue;
+        if (cleaned === `/industries/${slug}`) continue;
+      } else {
+        cleaned = `/industries/${slug}/${cleaned.replace(/^\/+|\/+$/g, '')}`;
       }
+      addUrl(`${siteUrl}${cleaned}`, '0.7');
     }
   }
 
@@ -55,8 +49,6 @@ export async function GET() {
 </urlset>`;
 
   return new Response(sitemap, {
-    headers: {
-      "Content-Type": "application/xml",
-    },
+    headers: { 'Content-Type': 'application/xml', 'Cache-Control': 'public, max-age=3600' },
   });
 }

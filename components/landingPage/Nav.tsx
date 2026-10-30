@@ -95,6 +95,7 @@ const industryIconMap: Record<string, React.ElementType> = {
   'Law Firms': Scale,
   'E-commerce': ShoppingBag,
   'SaaS': Cloud,
+   'Real Estate': Briefcase,
 };
 
 

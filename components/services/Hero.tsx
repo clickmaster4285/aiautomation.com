@@ -337,7 +337,7 @@ export default function Hero({ section }: HeroProps) {
 
                   <p className="text-[10px] text-center text-gray-500">
                     By submitting, you agree to our{' '}
-                    <Link href="/privacy" className="text-brand hover:underline">
+                    <Link href="/privacy-policy" className="text-brand hover:underline">
                       Privacy Policy
                     </Link>
                   </p>
