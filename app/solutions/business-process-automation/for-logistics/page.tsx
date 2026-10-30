@@ -1,4 +1,4 @@
-// app/solutions/bussiness-process-automation/for-manufacturing/page.tsx
+// app/solutions/business-process-automation/for-logistics/page.tsx
 import { Metadata } from 'next';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { HeroSection } from '@/components/solutions/sections/Hero';
@@ -16,26 +16,26 @@ import {
 import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
-import { businessProcessAutomationForManufacturing } from '@/content/Solutions/bussiness-process-automation-for-manufacturing';
+import { businessProcessAutomationForLogistics } from '@/content/Solutions/business-process-automation-for-logistics';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
 
 export const metadata: Metadata = {
-  title: businessProcessAutomationForManufacturing.titleTag,
-  description: businessProcessAutomationForManufacturing.metaDescription,
+  title: businessProcessAutomationForLogistics.titleTag,
+  description: businessProcessAutomationForLogistics.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForManufacturing.url,
+    canonical: businessProcessAutomationForLogistics.url,
   },
   openGraph: {
-    title: businessProcessAutomationForManufacturing.titleTag,
-    description: businessProcessAutomationForManufacturing.metaDescription,
-    url: businessProcessAutomationForManufacturing.url,
+    title: businessProcessAutomationForLogistics.titleTag,
+    description: businessProcessAutomationForLogistics.metaDescription,
+    url: businessProcessAutomationForLogistics.url,
     type: 'website',
   },
-  keywords: businessProcessAutomationForManufacturing.primaryKeyword,
+  keywords: businessProcessAutomationForLogistics.primaryKeyword,
 };
 
-export default function ForManufacturingPage() {
-  const content = businessProcessAutomationForManufacturing;
+export default function ForLogisticsPage() {
+  const content = businessProcessAutomationForLogistics;
 
   return (
     <PageWrapper>
@@ -45,7 +45,7 @@ export default function ForManufacturingPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Business Process Automation for Manufacturing',
+            name: 'Business Process Automation for Logistics & Transportation',
             description: content.metaDescription,
             provider: {
               '@type': 'Organization',
@@ -67,41 +67,41 @@ export default function ForManufacturingPage() {
         }}
         secondaryCta={{
           text: 'Learn More',
-          href: '#why-manufacturing-need-bussiness-process-automation',
+          href: '#why-logistics-transportation-need-business-process-automation',
         }}
         visual={
           <AutomationHeroMockup
-            industry="Manufacturing"
-            triggerLabel="New Production Request"
-            actionLabels={['Generate Work Order', 'Allocate Resources', 'Monitor Progress']}
-            metricValue="2,000"
-            metricLabel="production requests managed automatically this month"
-            submetric="85% improved efficiency"
-            platform="ERP + Manufacturing Execution System"
-            accent="#F59E0B"
+            industry="Logistics & Transportation"
+            triggerLabel="New Shipment Inquiry"
+            actionLabels={['Send Quote', 'Schedule Pickup', 'Track Shipment']}
+            metricValue="1,500"
+            metricLabel="shipments managed automatically this month"
+            submetric="90% improved on-time delivery rate"
+            platform="CRM + Fleet Management System"
+            accent="#8B5CF6"
           />
         }
         breadcrumb={[
           { label: 'Home', href: '/' },
           { label: 'Solutions', href: '/solutions' },
-          { label: 'Business Process Automation', href: '/solutions/bussiness-process-automation' },
-          { label: 'Manufacturing', href: content.url },
+          { label: 'Business Process Automation', href: '/solutions/business-process-automation' },
+          { label: 'Logistics', href: content.url },
         ]}
       />
 
       <WhySection
-        title="Why Manufacturing Need Business Process Automation"
-        content={[content.sections['Why Manufacturing Need Business Process Automation']]}
+        title="Why Logistics & Transportation Need Business Process Automation"
+        content={[content.sections['Why Logistics & Transportation Need Business Process Automation']]}
       />
 
       <ProblemsSection
-        title="The Problems This Solves for Manufacturing"
-        content={[content.sections['The Problems This Solves for Manufacturing']]}
+        title="The Problems This Solves for Logistics & Transportation"
+        content={[content.sections['The Problems This Solves for Logistics & Transportation']]}
       />
 
       <AutomationSection
-        title="What We Automate for Manufacturing"
-        content={[content.sections['What We Automate for Manufacturing']]}
+        title="What We Automate for Logistics & Transportation"
+        content={[content.sections['What We Automate for Logistics & Transportation']]}
       />
 
       <StartSection
@@ -120,8 +120,8 @@ export default function ForManufacturingPage() {
       />
 
       <RealitiesSection
-        title="Built for Manufacturing's Realities"
-        content={[content.sections['Built for Manufacturing\'s Realities']]}
+        title="Built for Logistics & Transportation's Realities"
+        content={[content.sections['Built for Logistics & Transportation\'s Realities']]}
       />
 
       <ReturnSection
@@ -137,7 +137,7 @@ export default function ForManufacturingPage() {
 
       <FAQSection
         title="Frequently Asked Questions"
-        subtitle="Common questions about business process automation for manufacturing"
+        subtitle="Common questions about business process automation for logistics & transportation"
         faqs={content.faqQuestions}
       />
 
@@ -149,7 +149,7 @@ export default function ForManufacturingPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for manufacturing."
+        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for logistics & transportation."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

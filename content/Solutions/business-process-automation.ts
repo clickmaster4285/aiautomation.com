@@ -1,6 +1,6 @@
-// content/Solutions/bussiness-process-automation.ts
+// content/Solutions/business-process-automation.ts
 export const businessProcessAutomation = {
-  url: '/solutions/bussiness-process-automation',
+  url: '/solutions/business-process-automation',
   titleTag: 'Business Process Automation Solutions | Clickmasters',
   metaDescription:
     'Business process automation from Clickmasters replaces repetitive manual steps with structured digital workflows — reducing errors, speeding up operations, and freeing teams for higher-value work.',
@@ -101,19 +101,19 @@ export const businessProcessAutomation = {
 
   relatedSolutions: [
     {
-      slug: 'bussiness-process-automation/for-accounting-firms',
+      slug: 'business-process-automation/for-accounting-firms',
       title: 'Business Process Automation for Accounting Firms',
       description:
         'Automate client onboarding, document collection, and compliance workflows for accounting firms.',
     },
     {
-      slug: 'bussiness-process-automation/for-construction',
+      slug: 'business-process-automation/for-construction',
       title: 'Business Process Automation for Construction',
       description:
         'Automate project intake, subcontractor coordination, and documentation workflows in construction.',
     },
     {
-      slug: 'bussiness-process-automation/for-ecommerce',
+      slug: 'business-process-automation/for-ecommerce',
       title: 'Business Process Automation for Ecommerce',
       description:
         'Automate order processing, inventory updates, and fulfillment workflows for ecommerce.',

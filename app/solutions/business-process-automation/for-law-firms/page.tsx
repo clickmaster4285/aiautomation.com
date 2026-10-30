@@ -1,4 +1,4 @@
-// app/solutions/bussiness-process-automation/for-real-estate/page.tsx
+// app/solutions/business-process-automation/for-law-firms/page.tsx
 import { Metadata } from 'next';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { HeroSection } from '@/components/solutions/sections/Hero';
@@ -16,26 +16,26 @@ import {
 import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
-import { businessProcessAutomationForRealEstate } from '@/content/Solutions/bussiness-process-automation-for-real-estate';
+import { businessProcessAutomationForLawFirms } from '@/content/Solutions/business-process-automation-for-law-firms';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
 
 export const metadata: Metadata = {
-  title: businessProcessAutomationForRealEstate.titleTag,
-  description: businessProcessAutomationForRealEstate.metaDescription,
+  title: businessProcessAutomationForLawFirms.titleTag,
+  description: businessProcessAutomationForLawFirms.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForRealEstate.url,
+    canonical: businessProcessAutomationForLawFirms.url,
   },
   openGraph: {
-    title: businessProcessAutomationForRealEstate.titleTag,
-    description: businessProcessAutomationForRealEstate.metaDescription,
-    url: businessProcessAutomationForRealEstate.url,
+    title: businessProcessAutomationForLawFirms.titleTag,
+    description: businessProcessAutomationForLawFirms.metaDescription,
+    url: businessProcessAutomationForLawFirms.url,
     type: 'website',
   },
-  keywords: businessProcessAutomationForRealEstate.primaryKeyword,
+  keywords: businessProcessAutomationForLawFirms.primaryKeyword,
 };
 
-export default function ForRealEstatePage() {
-  const content = businessProcessAutomationForRealEstate;
+export default function ForLawFirmsPage() {
+  const content = businessProcessAutomationForLawFirms;
 
   return (
     <PageWrapper>
@@ -45,7 +45,7 @@ export default function ForRealEstatePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Business Process Automation for Real Estate',
+            name: 'Business Process Automation for Law Firms',
             description: content.metaDescription,
             provider: {
               '@type': 'Organization',
@@ -67,41 +67,41 @@ export default function ForRealEstatePage() {
         }}
         secondaryCta={{
           text: 'Learn More',
-          href: '#why-real-estate-need-bussiness-process-automation',
+          href: '#why-law-firms-need-business-process-automation',
         }}
         visual={
           <AutomationHeroMockup
-            industry="Real Estate"
-            triggerLabel="New Property Inquiry"
-            actionLabels={['Schedule Tour', 'Send Details', 'Follow Up']}
+            industry="Law Firms"
+            triggerLabel="New Client Inquiry"
+            actionLabels={['Send Consultation Offer', 'Schedule Meeting', 'Close Deal']}
             metricValue="1,200"
-            metricLabel="property inquiries managed automatically this month"
-            submetric="80% faster response time"
-            platform="CRM + Property Management System"
+            metricLabel="client inquiries managed automatically this month"
+            submetric="75% improved response time"
+            platform="CRM + Legal Case Management System"
             accent="#10B981"
           />
         }
         breadcrumb={[
           { label: 'Home', href: '/' },
           { label: 'Solutions', href: '/solutions' },
-          { label: 'Business Process Automation', href: '/solutions/bussiness-process-automation' },
-          { label: 'Real Estate', href: content.url },
+          { label: 'Business Process Automation', href: '/solutions/business-process-automation' },
+          { label: 'Law Firms', href: content.url },
         ]}
       />
 
       <WhySection
-        title="Why Real Estate Need Business Process Automation"
-        content={[content.sections['Why Real Estate Need Business Process Automation']]}
+        title="Why Law Firms Need Business Process Automation"
+        content={[content.sections['Why Law Firms Need Business Process Automation']]}
       />
 
       <ProblemsSection
-        title="The Problems This Solves for Real Estate"
-        content={[content.sections['The Problems This Solves for Real Estate']]}
+        title="The Problems This Solves for Law Firms"
+        content={[content.sections['The Problems This Solves for Law Firms']]}
       />
 
       <AutomationSection
-        title="What We Automate for Real Estate"
-        content={[content.sections['What We Automate for Real Estate']]}
+        title="What We Automate for Law Firms"
+        content={[content.sections['What We Automate for Law Firms']]}
       />
 
       <StartSection
@@ -120,8 +120,8 @@ export default function ForRealEstatePage() {
       />
 
       <RealitiesSection
-        title="Built for Real Estate's Realities"
-        content={[content.sections['Built for Real Estate\'s Realities']]}
+        title="Built for Law Firms' Realities"
+        content={[content.sections['Built for Law Firms\' Realities']]}
       />
 
       <ReturnSection
@@ -137,7 +137,7 @@ export default function ForRealEstatePage() {
 
       <FAQSection
         title="Frequently Asked Questions"
-        subtitle="Common questions about business process automation for real estate"
+        subtitle="Common questions about business process automation for law firms"
         faqs={content.faqQuestions}
       />
 
@@ -149,7 +149,7 @@ export default function ForRealEstatePage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for real estate."
+        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for law firms."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

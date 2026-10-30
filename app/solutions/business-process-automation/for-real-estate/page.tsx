@@ -1,4 +1,4 @@
-// app/solutions/bussiness-process-automation/for-insurance/page.tsx
+// app/solutions/business-process-automation/for-real-estate/page.tsx
 import { Metadata } from 'next';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { HeroSection } from '@/components/solutions/sections/Hero';
@@ -16,26 +16,26 @@ import {
 import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
-import { businessProcessAutomationForInsurance } from '@/content/Solutions/bussiness-process-automation-for-insurance';
+import { businessProcessAutomationForRealEstate } from '@/content/Solutions/business-process-automation-for-real-estate';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
 
 export const metadata: Metadata = {
-  title: businessProcessAutomationForInsurance.titleTag,
-  description: businessProcessAutomationForInsurance.metaDescription,
+  title: businessProcessAutomationForRealEstate.titleTag,
+  description: businessProcessAutomationForRealEstate.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForInsurance.url,
+    canonical: businessProcessAutomationForRealEstate.url,
   },
   openGraph: {
-    title: businessProcessAutomationForInsurance.titleTag,
-    description: businessProcessAutomationForInsurance.metaDescription,
-    url: businessProcessAutomationForInsurance.url,
+    title: businessProcessAutomationForRealEstate.titleTag,
+    description: businessProcessAutomationForRealEstate.metaDescription,
+    url: businessProcessAutomationForRealEstate.url,
     type: 'website',
   },
-  keywords: businessProcessAutomationForInsurance.primaryKeyword,
+  keywords: businessProcessAutomationForRealEstate.primaryKeyword,
 };
 
-export default function ForInsurancePage() {
-  const content = businessProcessAutomationForInsurance;
+export default function ForRealEstatePage() {
+  const content = businessProcessAutomationForRealEstate;
 
   return (
     <PageWrapper>
@@ -45,7 +45,7 @@ export default function ForInsurancePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Business Process Automation for Insurance Agencies',
+            name: 'Business Process Automation for Real Estate',
             description: content.metaDescription,
             provider: {
               '@type': 'Organization',
@@ -67,41 +67,41 @@ export default function ForInsurancePage() {
         }}
         secondaryCta={{
           text: 'Learn More',
-          href: '#why-insurance-agencies-need-bussiness-process-automation',
+          href: '#why-real-estate-need-business-process-automation',
         }}
         visual={
           <AutomationHeroMockup
-            industry="Insurance"
-            triggerLabel="New Lead Inquiry"
-            actionLabels={['Send Quote', 'Schedule Consultation', 'Close Deal']}
-            metricValue="2,000"
-            metricLabel="leads managed automatically this month"
-            submetric="80% improved conversion rate"
-            platform="CRM + Policy Management System"
-            accent="#3B82F6"
+            industry="Real Estate"
+            triggerLabel="New Property Inquiry"
+            actionLabels={['Schedule Tour', 'Send Details', 'Follow Up']}
+            metricValue="1,200"
+            metricLabel="property inquiries managed automatically this month"
+            submetric="80% faster response time"
+            platform="CRM + Property Management System"
+            accent="#10B981"
           />
         }
         breadcrumb={[
           { label: 'Home', href: '/' },
           { label: 'Solutions', href: '/solutions' },
-          { label: 'Business Process Automation', href: '/solutions/bussiness-process-automation' },
-          { label: 'Insurance', href: content.url },
+          { label: 'Business Process Automation', href: '/solutions/business-process-automation' },
+          { label: 'Real Estate', href: content.url },
         ]}
       />
 
       <WhySection
-        title="Why Insurance Agencies Need Business Process Automation"
-        content={[content.sections['Why Insurance Agencies Need Business Process Automation']]}
+        title="Why Real Estate Need Business Process Automation"
+        content={[content.sections['Why Real Estate Need Business Process Automation']]}
       />
 
       <ProblemsSection
-        title="The Problems This Solves for Insurance Agencies"
-        content={[content.sections['The Problems This Solves for Insurance Agencies']]}
+        title="The Problems This Solves for Real Estate"
+        content={[content.sections['The Problems This Solves for Real Estate']]}
       />
 
       <AutomationSection
-        title="What We Automate for Insurance Agencies"
-        content={[content.sections['What We Automate for Insurance Agencies']]}
+        title="What We Automate for Real Estate"
+        content={[content.sections['What We Automate for Real Estate']]}
       />
 
       <StartSection
@@ -120,8 +120,8 @@ export default function ForInsurancePage() {
       />
 
       <RealitiesSection
-        title="Built for Insurance Agencies' Realities"
-        content={[content.sections['Built for Insurance Agencies\' Realities']]}
+        title="Built for Real Estate's Realities"
+        content={[content.sections['Built for Real Estate\'s Realities']]}
       />
 
       <ReturnSection
@@ -137,7 +137,7 @@ export default function ForInsurancePage() {
 
       <FAQSection
         title="Frequently Asked Questions"
-        subtitle="Common questions about business process automation for insurance agencies"
+        subtitle="Common questions about business process automation for real estate"
         faqs={content.faqQuestions}
       />
 
@@ -149,7 +149,7 @@ export default function ForInsurancePage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for insurance agencies."
+        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for real estate."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

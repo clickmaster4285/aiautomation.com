@@ -1,4 +1,4 @@
-// app/solutions/bussiness-process-automation/for-healthcare/page.tsx
+// app/solutions/business-process-automation/for-construction/page.tsx
 import { Metadata } from 'next';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { HeroSection } from '@/components/solutions/sections/Hero';
@@ -16,26 +16,26 @@ import {
 import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
-import { businessProcessAutomationForHealthcare } from '@/content/Solutions/bussiness-process-automation-for-healthcare';
+import { businessProcessAutomationForConstruction } from '@/content/Solutions/business-process-automation-for-construction';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
 
 export const metadata: Metadata = {
-  title: businessProcessAutomationForHealthcare.titleTag,
-  description: businessProcessAutomationForHealthcare.metaDescription,
+  title: businessProcessAutomationForConstruction.titleTag,
+  description: businessProcessAutomationForConstruction.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForHealthcare.url,
+    canonical: businessProcessAutomationForConstruction.url,
   },
   openGraph: {
-    title: businessProcessAutomationForHealthcare.titleTag,
-    description: businessProcessAutomationForHealthcare.metaDescription,
-    url: businessProcessAutomationForHealthcare.url,
+    title: businessProcessAutomationForConstruction.titleTag,
+    description: businessProcessAutomationForConstruction.metaDescription,
+    url: businessProcessAutomationForConstruction.url,
     type: 'website',
   },
-  keywords: businessProcessAutomationForHealthcare.primaryKeyword,
+  keywords: businessProcessAutomationForConstruction.primaryKeyword,
 };
 
-export default function ForHealthcarePage() {
-  const content = businessProcessAutomationForHealthcare;
+export default function ForConstructionPage() {
+  const content = businessProcessAutomationForConstruction;
 
   return (
     <PageWrapper>
@@ -45,7 +45,7 @@ export default function ForHealthcarePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Business Process Automation for Healthcare',
+            name: 'Business Process Automation for Construction',
             description: content.metaDescription,
             provider: {
               '@type': 'Organization',
@@ -67,41 +67,41 @@ export default function ForHealthcarePage() {
         }}
         secondaryCta={{
           text: 'Learn More',
-          href: '#why-healthcare-need-bussiness-process-automation',
+          href: '#why-construction-need-business-process-automation',
         }}
         visual={
           <AutomationHeroMockup
-            industry="Healthcare"
-            triggerLabel="New Patient Inquiry"
-            actionLabels={['Send Appointment Confirmation', 'Provide Medical Information', 'Schedule Follow-up']}
-            metricValue="1,500"
-            metricLabel="patient inquiries managed automatically this month"
-            submetric="90% improved response time"
-            platform="CRM + Electronic Health Record System"
-            accent="#EF4444"
+            industry="Construction"
+            triggerLabel="New Project Inquiry"
+            actionLabels={['Schedule Site Visit', 'Provide Quote', 'Submit Contract']}
+            metricValue="500"
+            metricLabel="project inquiries managed automatically this month"
+            submetric="80% improved response time"
+            platform="CRM + Construction Management Software"
+            accent="#F59E0B"
           />
         }
         breadcrumb={[
           { label: 'Home', href: '/' },
           { label: 'Solutions', href: '/solutions' },
-          { label: 'Business Process Automation', href: '/solutions/bussiness-process-automation' },
-          { label: 'Healthcare', href: content.url },
+          { label: 'Business Process Automation', href: '/solutions/business-process-automation' },
+          { label: 'Construction', href: content.url },
         ]}
       />
 
       <WhySection
-        title="Why Healthcare Need Business Process Automation"
-        content={[content.sections['Why Healthcare Need Business Process Automation']]}
+        title="Why Construction Need Business Process Automation"
+        content={[content.sections['Why Construction Need Business Process Automation']]}
       />
 
       <ProblemsSection
-        title="The Problems This Solves for Healthcare"
-        content={[content.sections['The Problems This Solves for Healthcare']]}
+        title="The Problems This Solves for Construction"
+        content={[content.sections['The Problems This Solves for Construction']]}
       />
 
       <AutomationSection
-        title="What We Automate for Healthcare"
-        content={[content.sections['What We Automate for Healthcare']]}
+        title="What We Automate for Construction"
+        content={[content.sections['What We Automate for Construction']]}
       />
 
       <StartSection
@@ -120,8 +120,8 @@ export default function ForHealthcarePage() {
       />
 
       <RealitiesSection
-        title="Built for Healthcare's Realities"
-        content={[content.sections['Built for Healthcare\'s Realities']]}
+        title="Built for Construction's Realities"
+        content={[content.sections['Built for Construction\'s Realities']]}
       />
 
       <ReturnSection
@@ -137,7 +137,7 @@ export default function ForHealthcarePage() {
 
       <FAQSection
         title="Frequently Asked Questions"
-        subtitle="Common questions about business process automation for healthcare"
+        subtitle="Common questions about business process automation for construction"
         faqs={content.faqQuestions}
       />
 
@@ -149,7 +149,7 @@ export default function ForHealthcarePage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for healthcare."
+        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for construction."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

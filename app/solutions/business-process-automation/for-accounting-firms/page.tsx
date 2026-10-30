@@ -1,4 +1,4 @@
-// app/solutions/bussiness-process-automation/for-retail/page.tsx
+// app/solutions/business-process-automation/for-accounting-firms/page.tsx
 import { Metadata } from 'next';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { HeroSection } from '@/components/solutions/sections/Hero';
@@ -16,26 +16,26 @@ import {
 import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
-import { businessProcessAutomationForRetail } from '@/content/Solutions/bussiness-process-automation-for-retail';
+import { businessProcessAutomationForAccountingFirms } from '@/content/Solutions/business-process-automation-for-accounting-firms';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
 
 export const metadata: Metadata = {
-  title: businessProcessAutomationForRetail.titleTag,
-  description: businessProcessAutomationForRetail.metaDescription,
+  title: businessProcessAutomationForAccountingFirms.titleTag,
+  description: businessProcessAutomationForAccountingFirms.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForRetail.url,
+    canonical: businessProcessAutomationForAccountingFirms.url,
   },
   openGraph: {
-    title: businessProcessAutomationForRetail.titleTag,
-    description: businessProcessAutomationForRetail.metaDescription,
-    url: businessProcessAutomationForRetail.url,
+    title: businessProcessAutomationForAccountingFirms.titleTag,
+    description: businessProcessAutomationForAccountingFirms.metaDescription,
+    url: businessProcessAutomationForAccountingFirms.url,
     type: 'website',
   },
-  keywords: businessProcessAutomationForRetail.primaryKeyword,
+  keywords: businessProcessAutomationForAccountingFirms.primaryKeyword,
 };
 
-export default function ForRetailPage() {
-  const content = businessProcessAutomationForRetail;
+export default function ForAccountingFirmsPage() {
+  const content = businessProcessAutomationForAccountingFirms;
 
   return (
     <PageWrapper>
@@ -45,7 +45,7 @@ export default function ForRetailPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Business Process Automation for Retail',
+            name: 'Business Process Automation for Accounting Firms',
             description: content.metaDescription,
             provider: {
               '@type': 'Organization',
@@ -67,41 +67,41 @@ export default function ForRetailPage() {
         }}
         secondaryCta={{
           text: 'Learn More',
-          href: '#why-retail-need-bussiness-process-automation',
+          href: '#why-accounting-firms-need-business-process-automation',
         }}
         visual={
           <AutomationHeroMockup
-            industry="Retail"
-            triggerLabel="New Customer Inquiry"
-            actionLabels={['Process Inquiry', 'Check Inventory', 'Follow Up']}
-            metricValue="3,000"
-            metricLabel="customer inquiries managed automatically this month"
-            submetric="75% faster resolution time"
-            platform="CRM + E-commerce Platform"
-            accent="#8B5CF6"
+            industry="Accounting Firms"
+            triggerLabel="New Client Inquiry"
+            actionLabels={['Schedule Meeting', 'Provide Proposal', 'Submit Report']}
+            metricValue="1,500"
+            metricLabel="client inquiries handled automatically this month"
+            submetric="75% improved efficiency"
+            platform="CRM + Accounting Software"
+            accent="#10B981"
           />
         }
         breadcrumb={[
           { label: 'Home', href: '/' },
           { label: 'Solutions', href: '/solutions' },
-          { label: 'Business Process Automation', href: '/solutions/bussiness-process-automation' },
-          { label: 'Retail', href: content.url },
+          { label: 'Business Process Automation', href: '/solutions/business-process-automation' },
+          { label: 'Accounting Firms', href: content.url },
         ]}
       />
 
       <WhySection
-        title="Why Retail Need Business Process Automation"
-        content={[content.sections['Why Retail Need Business Process Automation']]}
+        title="Why Accounting Firms Need Business Process Automation"
+        content={[content.sections['Why Accounting Firms Need Business Process Automation']]}
       />
 
       <ProblemsSection
-        title="The Problems This Solves for Retail"
-        content={[content.sections['The Problems This Solves for Retail']]}
+        title="The Problems This Solves for Accounting Firms"
+        content={[content.sections['The Problems This Solves for Accounting Firms']]}
       />
 
       <AutomationSection
-        title="What We Automate for Retail"
-        content={[content.sections['What We Automate for Retail']]}
+        title="What We Automate for Accounting Firms"
+        content={[content.sections['What We Automate for Accounting Firms']]}
       />
 
       <StartSection
@@ -120,8 +120,8 @@ export default function ForRetailPage() {
       />
 
       <RealitiesSection
-        title="Built for Retail's Realities"
-        content={[content.sections['Built for Retail\'s Realities']]}
+        title="Built for Accounting Firms' Realities"
+        content={[content.sections['Built for Accounting Firms\' Realities']]}
       />
 
       <ReturnSection
@@ -137,7 +137,7 @@ export default function ForRetailPage() {
 
       <FAQSection
         title="Frequently Asked Questions"
-        subtitle="Common questions about business process automation for retail"
+        subtitle="Common questions about business process automation for accounting firms"
         faqs={content.faqQuestions}
       />
 
@@ -149,7 +149,7 @@ export default function ForRetailPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for retail."
+        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for accounting firms."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

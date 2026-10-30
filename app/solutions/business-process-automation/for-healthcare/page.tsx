@@ -1,4 +1,4 @@
-// app/solutions/bussiness-process-automation/for-accounting-firms/page.tsx
+// app/solutions/business-process-automation/for-healthcare/page.tsx
 import { Metadata } from 'next';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { HeroSection } from '@/components/solutions/sections/Hero';
@@ -16,26 +16,26 @@ import {
 import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
-import { businessProcessAutomationForAccountingFirms } from '@/content/Solutions/bussiness-process-automation-for-accounting-firms';
+import { businessProcessAutomationForHealthcare } from '@/content/Solutions/business-process-automation-for-healthcare';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
 
 export const metadata: Metadata = {
-  title: businessProcessAutomationForAccountingFirms.titleTag,
-  description: businessProcessAutomationForAccountingFirms.metaDescription,
+  title: businessProcessAutomationForHealthcare.titleTag,
+  description: businessProcessAutomationForHealthcare.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForAccountingFirms.url,
+    canonical: businessProcessAutomationForHealthcare.url,
   },
   openGraph: {
-    title: businessProcessAutomationForAccountingFirms.titleTag,
-    description: businessProcessAutomationForAccountingFirms.metaDescription,
-    url: businessProcessAutomationForAccountingFirms.url,
+    title: businessProcessAutomationForHealthcare.titleTag,
+    description: businessProcessAutomationForHealthcare.metaDescription,
+    url: businessProcessAutomationForHealthcare.url,
     type: 'website',
   },
-  keywords: businessProcessAutomationForAccountingFirms.primaryKeyword,
+  keywords: businessProcessAutomationForHealthcare.primaryKeyword,
 };
 
-export default function ForAccountingFirmsPage() {
-  const content = businessProcessAutomationForAccountingFirms;
+export default function ForHealthcarePage() {
+  const content = businessProcessAutomationForHealthcare;
 
   return (
     <PageWrapper>
@@ -45,7 +45,7 @@ export default function ForAccountingFirmsPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Business Process Automation for Accounting Firms',
+            name: 'Business Process Automation for Healthcare',
             description: content.metaDescription,
             provider: {
               '@type': 'Organization',
@@ -67,41 +67,41 @@ export default function ForAccountingFirmsPage() {
         }}
         secondaryCta={{
           text: 'Learn More',
-          href: '#why-accounting-firms-need-bussiness-process-automation',
+          href: '#why-healthcare-need-business-process-automation',
         }}
         visual={
           <AutomationHeroMockup
-            industry="Accounting Firms"
-            triggerLabel="New Client Inquiry"
-            actionLabels={['Schedule Meeting', 'Provide Proposal', 'Submit Report']}
+            industry="Healthcare"
+            triggerLabel="New Patient Inquiry"
+            actionLabels={['Send Appointment Confirmation', 'Provide Medical Information', 'Schedule Follow-up']}
             metricValue="1,500"
-            metricLabel="client inquiries handled automatically this month"
-            submetric="75% improved efficiency"
-            platform="CRM + Accounting Software"
-            accent="#10B981"
+            metricLabel="patient inquiries managed automatically this month"
+            submetric="90% improved response time"
+            platform="CRM + Electronic Health Record System"
+            accent="#EF4444"
           />
         }
         breadcrumb={[
           { label: 'Home', href: '/' },
           { label: 'Solutions', href: '/solutions' },
-          { label: 'Business Process Automation', href: '/solutions/bussiness-process-automation' },
-          { label: 'Accounting Firms', href: content.url },
+          { label: 'Business Process Automation', href: '/solutions/business-process-automation' },
+          { label: 'Healthcare', href: content.url },
         ]}
       />
 
       <WhySection
-        title="Why Accounting Firms Need Business Process Automation"
-        content={[content.sections['Why Accounting Firms Need Business Process Automation']]}
+        title="Why Healthcare Need Business Process Automation"
+        content={[content.sections['Why Healthcare Need Business Process Automation']]}
       />
 
       <ProblemsSection
-        title="The Problems This Solves for Accounting Firms"
-        content={[content.sections['The Problems This Solves for Accounting Firms']]}
+        title="The Problems This Solves for Healthcare"
+        content={[content.sections['The Problems This Solves for Healthcare']]}
       />
 
       <AutomationSection
-        title="What We Automate for Accounting Firms"
-        content={[content.sections['What We Automate for Accounting Firms']]}
+        title="What We Automate for Healthcare"
+        content={[content.sections['What We Automate for Healthcare']]}
       />
 
       <StartSection
@@ -120,8 +120,8 @@ export default function ForAccountingFirmsPage() {
       />
 
       <RealitiesSection
-        title="Built for Accounting Firms' Realities"
-        content={[content.sections['Built for Accounting Firms\' Realities']]}
+        title="Built for Healthcare's Realities"
+        content={[content.sections['Built for Healthcare\'s Realities']]}
       />
 
       <ReturnSection
@@ -137,7 +137,7 @@ export default function ForAccountingFirmsPage() {
 
       <FAQSection
         title="Frequently Asked Questions"
-        subtitle="Common questions about business process automation for accounting firms"
+        subtitle="Common questions about business process automation for healthcare"
         faqs={content.faqQuestions}
       />
 
@@ -149,7 +149,7 @@ export default function ForAccountingFirmsPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for accounting firms."
+        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for healthcare."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

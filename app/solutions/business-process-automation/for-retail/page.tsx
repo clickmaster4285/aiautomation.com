@@ -1,4 +1,4 @@
-// app/solutions/bussiness-process-automation/for-saas/page.tsx
+// app/solutions/business-process-automation/for-retail/page.tsx
 import { Metadata } from 'next';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { HeroSection } from '@/components/solutions/sections/Hero';
@@ -16,26 +16,26 @@ import {
 import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
-import { businessProcessAutomationForSaaS } from '@/content/Solutions/bussiness-process-automation-for-saas';
+import { businessProcessAutomationForRetail } from '@/content/Solutions/business-process-automation-for-retail';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
 
 export const metadata: Metadata = {
-  title: businessProcessAutomationForSaaS.titleTag,
-  description: businessProcessAutomationForSaaS.metaDescription,
+  title: businessProcessAutomationForRetail.titleTag,
+  description: businessProcessAutomationForRetail.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForSaaS.url,
+    canonical: businessProcessAutomationForRetail.url,
   },
   openGraph: {
-    title: businessProcessAutomationForSaaS.titleTag,
-    description: businessProcessAutomationForSaaS.metaDescription,
-    url: businessProcessAutomationForSaaS.url,
+    title: businessProcessAutomationForRetail.titleTag,
+    description: businessProcessAutomationForRetail.metaDescription,
+    url: businessProcessAutomationForRetail.url,
     type: 'website',
   },
-  keywords: businessProcessAutomationForSaaS.primaryKeyword,
+  keywords: businessProcessAutomationForRetail.primaryKeyword,
 };
 
-export default function ForSaaSPage() {
-  const content = businessProcessAutomationForSaaS;
+export default function ForRetailPage() {
+  const content = businessProcessAutomationForRetail;
 
   return (
     <PageWrapper>
@@ -45,7 +45,7 @@ export default function ForSaaSPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Business Process Automation for SaaS Companies',
+            name: 'Business Process Automation for Retail',
             description: content.metaDescription,
             provider: {
               '@type': 'Organization',
@@ -67,41 +67,41 @@ export default function ForSaaSPage() {
         }}
         secondaryCta={{
           text: 'Learn More',
-          href: '#why-saas-companies-need-bussiness-process-automation',
+          href: '#why-retail-need-business-process-automation',
         }}
         visual={
           <AutomationHeroMockup
-            industry="SaaS"
+            industry="Retail"
             triggerLabel="New Customer Inquiry"
-            actionLabels={['Process Inquiry', 'Provide Support', 'Follow Up']}
-            metricValue="2,500"
+            actionLabels={['Process Inquiry', 'Check Inventory', 'Follow Up']}
+            metricValue="3,000"
             metricLabel="customer inquiries managed automatically this month"
-            submetric="85% faster resolution time"
-            platform="CRM + Support Ticketing System"
-            accent="#3B82F6"
+            submetric="75% faster resolution time"
+            platform="CRM + E-commerce Platform"
+            accent="#8B5CF6"
           />
         }
         breadcrumb={[
           { label: 'Home', href: '/' },
           { label: 'Solutions', href: '/solutions' },
-          { label: 'Business Process Automation', href: '/solutions/bussiness-process-automation' },
-          { label: 'SaaS', href: content.url },
+          { label: 'Business Process Automation', href: '/solutions/business-process-automation' },
+          { label: 'Retail', href: content.url },
         ]}
       />
 
       <WhySection
-        title="Why SaaS Companies Need Business Process Automation"
-        content={[content.sections['Why SaaS Companies Need Business Process Automation']]}
+        title="Why Retail Need Business Process Automation"
+        content={[content.sections['Why Retail Need Business Process Automation']]}
       />
 
       <ProblemsSection
-        title="The Problems This Solves for SaaS Companies"
-        content={[content.sections['The Problems This Solves for SaaS Companies']]}
+        title="The Problems This Solves for Retail"
+        content={[content.sections['The Problems This Solves for Retail']]}
       />
 
       <AutomationSection
-        title="What We Automate for SaaS Companies"
-        content={[content.sections['What We Automate for SaaS Companies']]}
+        title="What We Automate for Retail"
+        content={[content.sections['What We Automate for Retail']]}
       />
 
       <StartSection
@@ -120,8 +120,8 @@ export default function ForSaaSPage() {
       />
 
       <RealitiesSection
-        title="Built for SaaS Companies' Realities"
-        content={[content.sections['Built for SaaS Companies\'s Realities']]}
+        title="Built for Retail's Realities"
+        content={[content.sections['Built for Retail\'s Realities']]}
       />
 
       <ReturnSection
@@ -137,7 +137,7 @@ export default function ForSaaSPage() {
 
       <FAQSection
         title="Frequently Asked Questions"
-        subtitle="Common questions about business process automation for SaaS companies"
+        subtitle="Common questions about business process automation for retail"
         faqs={content.faqQuestions}
       />
 
@@ -149,7 +149,7 @@ export default function ForSaaSPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for SaaS companies."
+        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for retail."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

@@ -1,4 +1,4 @@
-// app/solutions/bussiness-process-automation/page.tsx
+// app/solutions/business-process-automation/page.tsx
 import { Metadata } from 'next';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { HeroSection } from '@/components/solutions/sections/Hero';
@@ -16,7 +16,7 @@ import {
 import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
-import { businessProcessAutomation } from '@/content/Solutions/bussiness-process-automation';
+import { businessProcessAutomation } from '@/content/Solutions/business-process-automation';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
 
 export const metadata: Metadata = {

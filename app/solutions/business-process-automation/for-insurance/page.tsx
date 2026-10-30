@@ -1,4 +1,4 @@
-// app/solutions/bussiness-process-automation/for-education/page.tsx
+// app/solutions/business-process-automation/for-insurance/page.tsx
 import { Metadata } from 'next';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { HeroSection } from '@/components/solutions/sections/Hero';
@@ -16,26 +16,26 @@ import {
 import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
-import { businessProcessAutomationForEducation } from '@/content/Solutions/bussiness-process-automation-for-education';
+import { businessProcessAutomationForInsurance } from '@/content/Solutions/business-process-automation-for-insurance';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
 
 export const metadata: Metadata = {
-  title: businessProcessAutomationForEducation.titleTag,
-  description: businessProcessAutomationForEducation.metaDescription,
+  title: businessProcessAutomationForInsurance.titleTag,
+  description: businessProcessAutomationForInsurance.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForEducation.url,
+    canonical: businessProcessAutomationForInsurance.url,
   },
   openGraph: {
-    title: businessProcessAutomationForEducation.titleTag,
-    description: businessProcessAutomationForEducation.metaDescription,
-    url: businessProcessAutomationForEducation.url,
+    title: businessProcessAutomationForInsurance.titleTag,
+    description: businessProcessAutomationForInsurance.metaDescription,
+    url: businessProcessAutomationForInsurance.url,
     type: 'website',
   },
-  keywords: businessProcessAutomationForEducation.primaryKeyword,
+  keywords: businessProcessAutomationForInsurance.primaryKeyword,
 };
 
-export default function ForEducationPage() {
-  const content = businessProcessAutomationForEducation;
+export default function ForInsurancePage() {
+  const content = businessProcessAutomationForInsurance;
 
   return (
     <PageWrapper>
@@ -45,7 +45,7 @@ export default function ForEducationPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Business Process Automation for Education',
+            name: 'Business Process Automation for Insurance Agencies',
             description: content.metaDescription,
             provider: {
               '@type': 'Organization',
@@ -67,41 +67,41 @@ export default function ForEducationPage() {
         }}
         secondaryCta={{
           text: 'Learn More',
-          href: '#why-education-need-bussiness-process-automation',
+          href: '#why-insurance-agencies-need-business-process-automation',
         }}
         visual={
           <AutomationHeroMockup
-            industry="Education"
-            triggerLabel="New Student Inquiry"
-            actionLabels={['Send Information Package', 'Schedule Demo', 'Enroll Student']}
-            metricValue="1,000"
-            metricLabel="student inquiries managed automatically this month"
-            submetric="85% improved response time"
-            platform="CRM + Learning Management System"
-            accent="#10B981"
+            industry="Insurance"
+            triggerLabel="New Lead Inquiry"
+            actionLabels={['Send Quote', 'Schedule Consultation', 'Close Deal']}
+            metricValue="2,000"
+            metricLabel="leads managed automatically this month"
+            submetric="80% improved conversion rate"
+            platform="CRM + Policy Management System"
+            accent="#3B82F6"
           />
         }
         breadcrumb={[
           { label: 'Home', href: '/' },
           { label: 'Solutions', href: '/solutions' },
-          { label: 'Business Process Automation', href: '/solutions/bussiness-process-automation' },
-          { label: 'Education', href: content.url },
+          { label: 'Business Process Automation', href: '/solutions/business-process-automation' },
+          { label: 'Insurance', href: content.url },
         ]}
       />
 
       <WhySection
-        title="Why Education Need Business Process Automation"
-        content={[content.sections['Why Education Need Business Process Automation']]}
+        title="Why Insurance Agencies Need Business Process Automation"
+        content={[content.sections['Why Insurance Agencies Need Business Process Automation']]}
       />
 
       <ProblemsSection
-        title="The Problems This Solves for Education"
-        content={[content.sections['The Problems This Solves for Education']]}
+        title="The Problems This Solves for Insurance Agencies"
+        content={[content.sections['The Problems This Solves for Insurance Agencies']]}
       />
 
       <AutomationSection
-        title="What We Automate for Education"
-        content={[content.sections['What We Automate for Education']]}
+        title="What We Automate for Insurance Agencies"
+        content={[content.sections['What We Automate for Insurance Agencies']]}
       />
 
       <StartSection
@@ -120,8 +120,8 @@ export default function ForEducationPage() {
       />
 
       <RealitiesSection
-        title="Built for Education's Realities"
-        content={[content.sections['Built for Education\'s Realities']]}
+        title="Built for Insurance Agencies' Realities"
+        content={[content.sections['Built for Insurance Agencies\' Realities']]}
       />
 
       <ReturnSection
@@ -137,7 +137,7 @@ export default function ForEducationPage() {
 
       <FAQSection
         title="Frequently Asked Questions"
-        subtitle="Common questions about business process automation for education"
+        subtitle="Common questions about business process automation for insurance agencies"
         faqs={content.faqQuestions}
       />
 
@@ -149,7 +149,7 @@ export default function ForEducationPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for education."
+        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for insurance agencies."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

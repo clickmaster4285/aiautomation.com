@@ -1,4 +1,4 @@
-// app/solutions/bussiness-process-automation/for-logistics/page.tsx
+// app/solutions/business-process-automation/for-ecommerce/page.tsx
 import { Metadata } from 'next';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { HeroSection } from '@/components/solutions/sections/Hero';
@@ -16,26 +16,26 @@ import {
 import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
-import { businessProcessAutomationForLogistics } from '@/content/Solutions/bussiness-process-automation-for-logistics';
+import { businessProcessAutomationForEcommerce } from '@/content/Solutions/business-process-automation-for-ecommerce';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
 
 export const metadata: Metadata = {
-  title: businessProcessAutomationForLogistics.titleTag,
-  description: businessProcessAutomationForLogistics.metaDescription,
+  title: businessProcessAutomationForEcommerce.titleTag,
+  description: businessProcessAutomationForEcommerce.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForLogistics.url,
+    canonical: businessProcessAutomationForEcommerce.url,
   },
   openGraph: {
-    title: businessProcessAutomationForLogistics.titleTag,
-    description: businessProcessAutomationForLogistics.metaDescription,
-    url: businessProcessAutomationForLogistics.url,
+    title: businessProcessAutomationForEcommerce.titleTag,
+    description: businessProcessAutomationForEcommerce.metaDescription,
+    url: businessProcessAutomationForEcommerce.url,
     type: 'website',
   },
-  keywords: businessProcessAutomationForLogistics.primaryKeyword,
+  keywords: businessProcessAutomationForEcommerce.primaryKeyword,
 };
 
-export default function ForLogisticsPage() {
-  const content = businessProcessAutomationForLogistics;
+export default function ForEcommercePage() {
+  const content = businessProcessAutomationForEcommerce;
 
   return (
     <PageWrapper>
@@ -45,7 +45,7 @@ export default function ForLogisticsPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Business Process Automation for Logistics & Transportation',
+            name: 'Business Process Automation for E-commerce',
             description: content.metaDescription,
             provider: {
               '@type': 'Organization',
@@ -67,41 +67,41 @@ export default function ForLogisticsPage() {
         }}
         secondaryCta={{
           text: 'Learn More',
-          href: '#why-logistics-transportation-need-bussiness-process-automation',
+          href: '#why-ecommerce-need-business-process-automation',
         }}
         visual={
           <AutomationHeroMockup
-            industry="Logistics & Transportation"
-            triggerLabel="New Shipment Inquiry"
-            actionLabels={['Send Quote', 'Schedule Pickup', 'Track Shipment']}
-            metricValue="1,500"
-            metricLabel="shipments managed automatically this month"
-            submetric="90% improved on-time delivery rate"
-            platform="CRM + Fleet Management System"
-            accent="#8B5CF6"
+            industry="E-commerce"
+            triggerLabel="New Lead Inquiry"
+            actionLabels={['Send Welcome Email', 'Provide Product Demo', 'Close Deal']}
+            metricValue="2,000"
+            metricLabel="leads converted automatically this month"
+            submetric="90% improved conversion rate"
+            platform="CRM + E-commerce Platform"
+            accent="#3B82F6"
           />
         }
         breadcrumb={[
           { label: 'Home', href: '/' },
           { label: 'Solutions', href: '/solutions' },
-          { label: 'Business Process Automation', href: '/solutions/bussiness-process-automation' },
-          { label: 'Logistics', href: content.url },
+          { label: 'Business Process Automation', href: '/solutions/business-process-automation' },
+          { label: 'E-commerce', href: content.url },
         ]}
       />
 
       <WhySection
-        title="Why Logistics & Transportation Need Business Process Automation"
-        content={[content.sections['Why Logistics & Transportation Need Business Process Automation']]}
+        title="Why E-commerce Need Business Process Automation"
+        content={[content.sections['Why E-commerce Need Business Process Automation']]}
       />
 
       <ProblemsSection
-        title="The Problems This Solves for Logistics & Transportation"
-        content={[content.sections['The Problems This Solves for Logistics & Transportation']]}
+        title="The Problems This Solves for E-commerce"
+        content={[content.sections['The Problems This Solves for E-commerce']]}
       />
 
       <AutomationSection
-        title="What We Automate for Logistics & Transportation"
-        content={[content.sections['What We Automate for Logistics & Transportation']]}
+        title="What We Automate for E-commerce"
+        content={[content.sections['What We Automate for E-commerce']]}
       />
 
       <StartSection
@@ -120,8 +120,8 @@ export default function ForLogisticsPage() {
       />
 
       <RealitiesSection
-        title="Built for Logistics & Transportation's Realities"
-        content={[content.sections['Built for Logistics & Transportation\'s Realities']]}
+        title="Built for E-commerce's Realities"
+        content={[content.sections['Built for E-commerce\'s Realities']]}
       />
 
       <ReturnSection
@@ -137,7 +137,7 @@ export default function ForLogisticsPage() {
 
       <FAQSection
         title="Frequently Asked Questions"
-        subtitle="Common questions about business process automation for logistics & transportation"
+        subtitle="Common questions about business process automation for e-commerce"
         faqs={content.faqQuestions}
       />
 
@@ -149,7 +149,7 @@ export default function ForLogisticsPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for logistics & transportation."
+        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for e-commerce."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

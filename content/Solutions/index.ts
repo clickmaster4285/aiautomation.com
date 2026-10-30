@@ -108,22 +108,22 @@ import { appointmentBookingAutomationForRestaurants } from './appointment-bookin
 import { appointmentBookingAutomationForRetail } from './appointment-booking-automation-for-retail';
 import { appointmentBookingAutomationForSaaS } from './appointment-booking-automation-for-saas';
 
-// Bussiness Process Automation imports - Industry pages (Existing 7)
-import { businessProcessAutomationForAccountingFirms } from './bussiness-process-automation-for-accounting-firms';
-import { businessProcessAutomationForConstruction } from './bussiness-process-automation-for-construction';
-import { businessProcessAutomationForEcommerce } from './bussiness-process-automation-for-ecommerce';
-import { businessProcessAutomationForEducation } from './bussiness-process-automation-for-education';
-import { businessProcessAutomationForHealthcare } from './bussiness-process-automation-for-healthcare';
-import { businessProcessAutomationForInsurance } from './bussiness-process-automation-for-insurance';
-import { businessProcessAutomationForLawFirms } from './bussiness-process-automation-for-law-firms';
+// Business Process Automation imports - Industry pages (Existing 7)
+import { businessProcessAutomationForAccountingFirms } from './business-process-automation-for-accounting-firms';
+import { businessProcessAutomationForConstruction } from './business-process-automation-for-construction';
+import { businessProcessAutomationForEcommerce } from './business-process-automation-for-ecommerce';
+import { businessProcessAutomationForEducation } from './business-process-automation-for-education';
+import { businessProcessAutomationForHealthcare } from './business-process-automation-for-healthcare';
+import { businessProcessAutomationForInsurance } from './business-process-automation-for-insurance';
+import { businessProcessAutomationForLawFirms } from './business-process-automation-for-law-firms';
 
-// Bussiness Process Automation imports - New Industry pages (Logistics, Manufacturing, Real Estate, Restaurants, Retail, SaaS)
-import { businessProcessAutomationForLogistics } from './bussiness-process-automation-for-logistics';
-import { businessProcessAutomationForManufacturing } from './bussiness-process-automation-for-manufacturing';
-import { businessProcessAutomationForRealEstate } from './bussiness-process-automation-for-real-estate';
-import { businessProcessAutomationForRestaurants } from './bussiness-process-automation-for-restaurants';
-import { businessProcessAutomationForRetail } from './bussiness-process-automation-for-retail';
-import { businessProcessAutomationForSaaS } from './bussiness-process-automation-for-saas';
+// Business Process Automation imports - New Industry pages (Logistics, Manufacturing, Real Estate, Restaurants, Retail, SaaS)
+import { businessProcessAutomationForLogistics } from './business-process-automation-for-logistics';
+import { businessProcessAutomationForManufacturing } from './business-process-automation-for-manufacturing';
+import { businessProcessAutomationForRealEstate } from './business-process-automation-for-real-estate';
+import { businessProcessAutomationForRestaurants } from './business-process-automation-for-restaurants';
+import { businessProcessAutomationForRetail } from './business-process-automation-for-retail';
+import { businessProcessAutomationForSaaS } from './business-process-automation-for-saas';
 
 // CRM Automation imports - Industry pages (Existing 7)
 import { crmAutomationForAccountingFirms } from './crm-automation-for-accounting-firms';
@@ -373,19 +373,19 @@ export { appointmentBookingAutomationForRetail } from './appointment-booking-aut
 export { appointmentBookingAutomationForSaaS } from './appointment-booking-automation-for-saas';
 
 // Business Process Automation exports
-export { businessProcessAutomationForAccountingFirms } from './bussiness-process-automation-for-accounting-firms';
-export { businessProcessAutomationForConstruction } from './bussiness-process-automation-for-construction';
-export { businessProcessAutomationForEcommerce } from './bussiness-process-automation-for-ecommerce';
-export { businessProcessAutomationForEducation } from './bussiness-process-automation-for-education';
-export { businessProcessAutomationForHealthcare } from './bussiness-process-automation-for-healthcare';
-export { businessProcessAutomationForInsurance } from './bussiness-process-automation-for-insurance';
-export { businessProcessAutomationForLawFirms } from './bussiness-process-automation-for-law-firms';
-export { businessProcessAutomationForLogistics } from './bussiness-process-automation-for-logistics';
-export { businessProcessAutomationForManufacturing } from './bussiness-process-automation-for-manufacturing';
-export { businessProcessAutomationForRealEstate } from './bussiness-process-automation-for-real-estate';
-export { businessProcessAutomationForRestaurants } from './bussiness-process-automation-for-restaurants';
-export { businessProcessAutomationForRetail } from './bussiness-process-automation-for-retail';
-export { businessProcessAutomationForSaaS } from './bussiness-process-automation-for-saas';
+export { businessProcessAutomationForAccountingFirms } from './business-process-automation-for-accounting-firms';
+export { businessProcessAutomationForConstruction } from './business-process-automation-for-construction';
+export { businessProcessAutomationForEcommerce } from './business-process-automation-for-ecommerce';
+export { businessProcessAutomationForEducation } from './business-process-automation-for-education';
+export { businessProcessAutomationForHealthcare } from './business-process-automation-for-healthcare';
+export { businessProcessAutomationForInsurance } from './business-process-automation-for-insurance';
+export { businessProcessAutomationForLawFirms } from './business-process-automation-for-law-firms';
+export { businessProcessAutomationForLogistics } from './business-process-automation-for-logistics';
+export { businessProcessAutomationForManufacturing } from './business-process-automation-for-manufacturing';
+export { businessProcessAutomationForRealEstate } from './business-process-automation-for-real-estate';
+export { businessProcessAutomationForRestaurants } from './business-process-automation-for-restaurants';
+export { businessProcessAutomationForRetail } from './business-process-automation-for-retail';
+export { businessProcessAutomationForSaaS } from './business-process-automation-for-saas';
 
 // CRM Automation exports
 export { crmAutomationForAccountingFirms } from './crm-automation-for-accounting-firms';
@@ -581,20 +581,20 @@ export const solutionsContent: Record<string, SolutionData> = {
   'appointment-booking-automation/for-retail': appointmentBookingAutomationForRetail,
   'appointment-booking-automation/for-saas': appointmentBookingAutomationForSaaS,
 
-  // Bussiness Process Automation - Existing Industry pages
-  'bussiness-process-automation/for-accounting-firms': businessProcessAutomationForAccountingFirms,
-  'bussiness-process-automation/for-construction': businessProcessAutomationForConstruction,
-  'bussiness-process-automation/for-ecommerce': businessProcessAutomationForEcommerce,
-  'bussiness-process-automation/for-education': businessProcessAutomationForEducation,
-  'bussiness-process-automation/for-healthcare': businessProcessAutomationForHealthcare,
-  'bussiness-process-automation/for-insurance': businessProcessAutomationForInsurance,
-  'bussiness-process-automation/for-law-firms': businessProcessAutomationForLawFirms,
-  'bussiness-process-automation/for-logistics': businessProcessAutomationForLogistics,
-  'bussiness-process-automation/for-manufacturing': businessProcessAutomationForManufacturing,
-  'bussiness-process-automation/for-real-estate': businessProcessAutomationForRealEstate,
-  'bussiness-process-automation/for-restaurants': businessProcessAutomationForRestaurants,
-  'bussiness-process-automation/for-retail': businessProcessAutomationForRetail,
-  'bussiness-process-automation/for-saas': businessProcessAutomationForSaaS,
+  // Business Process Automation - Existing Industry pages
+  'business-process-automation/for-accounting-firms': businessProcessAutomationForAccountingFirms,
+  'business-process-automation/for-construction': businessProcessAutomationForConstruction,
+  'business-process-automation/for-ecommerce': businessProcessAutomationForEcommerce,
+  'business-process-automation/for-education': businessProcessAutomationForEducation,
+  'business-process-automation/for-healthcare': businessProcessAutomationForHealthcare,
+  'business-process-automation/for-insurance': businessProcessAutomationForInsurance,
+  'business-process-automation/for-law-firms': businessProcessAutomationForLawFirms,
+  'business-process-automation/for-logistics': businessProcessAutomationForLogistics,
+  'business-process-automation/for-manufacturing': businessProcessAutomationForManufacturing,
+  'business-process-automation/for-real-estate': businessProcessAutomationForRealEstate,
+  'business-process-automation/for-restaurants': businessProcessAutomationForRestaurants,
+  'business-process-automation/for-retail': businessProcessAutomationForRetail,
+  'business-process-automation/for-saas': businessProcessAutomationForSaaS,
 
   // CRM Automation - Existing Industry pages
   'crm-automation/for-accounting-firms': crmAutomationForAccountingFirms,

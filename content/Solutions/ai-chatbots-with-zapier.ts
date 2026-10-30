@@ -111,11 +111,11 @@ export const aiChatbotsWithZapier: SolutionData = {
       slug: 'ai-workflow-automation/with-zapier',
       description: 'Multi-step automation workflows on Zapier.',
     },
-    {
-      title: 'CRM Automation with Zapier',
-      slug: 'crm-automation/with-zapier',
-      description: 'Keep your CRM accurate without manual entry.',
-    },
+      {
+  title: 'Customer Support Automation with Zapier',
+  slug: 'customer-support-automation/with-zapier',
+  description: 'Automate customer inquiries, support ticket management, and follow-ups across your support tools.',
+},
   ],
   faqQuestions: [
     {

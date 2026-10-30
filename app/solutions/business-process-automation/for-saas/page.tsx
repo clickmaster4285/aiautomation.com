@@ -1,4 +1,4 @@
-// app/solutions/bussiness-process-automation/for-restaurants/page.tsx
+// app/solutions/business-process-automation/for-saas/page.tsx
 import { Metadata } from 'next';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { HeroSection } from '@/components/solutions/sections/Hero';
@@ -16,26 +16,26 @@ import {
 import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
-import { businessProcessAutomationForRestaurants } from '@/content/Solutions/bussiness-process-automation-for-restaurants';
+import { businessProcessAutomationForSaaS } from '@/content/Solutions/business-process-automation-for-saas';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
 
 export const metadata: Metadata = {
-  title: businessProcessAutomationForRestaurants.titleTag,
-  description: businessProcessAutomationForRestaurants.metaDescription,
+  title: businessProcessAutomationForSaaS.titleTag,
+  description: businessProcessAutomationForSaaS.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForRestaurants.url,
+    canonical: businessProcessAutomationForSaaS.url,
   },
   openGraph: {
-    title: businessProcessAutomationForRestaurants.titleTag,
-    description: businessProcessAutomationForRestaurants.metaDescription,
-    url: businessProcessAutomationForRestaurants.url,
+    title: businessProcessAutomationForSaaS.titleTag,
+    description: businessProcessAutomationForSaaS.metaDescription,
+    url: businessProcessAutomationForSaaS.url,
     type: 'website',
   },
-  keywords: businessProcessAutomationForRestaurants.primaryKeyword,
+  keywords: businessProcessAutomationForSaaS.primaryKeyword,
 };
 
-export default function ForRestaurantsPage() {
-  const content = businessProcessAutomationForRestaurants;
+export default function ForSaaSPage() {
+  const content = businessProcessAutomationForSaaS;
 
   return (
     <PageWrapper>
@@ -45,7 +45,7 @@ export default function ForRestaurantsPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Business Process Automation for Restaurants & Hospitality',
+            name: 'Business Process Automation for SaaS Companies',
             description: content.metaDescription,
             provider: {
               '@type': 'Organization',
@@ -67,41 +67,41 @@ export default function ForRestaurantsPage() {
         }}
         secondaryCta={{
           text: 'Learn More',
-          href: '#why-restaurants-hospitality-need-bussiness-process-automation',
+          href: '#why-saas-companies-need-business-process-automation',
         }}
         visual={
           <AutomationHeroMockup
-            industry="Restaurants & Hospitality"
-            triggerLabel="New Customer Order"
-            actionLabels={['Process Order', 'Prepare Food', 'Deliver to Table']}
-            metricValue="5,000"
-            metricLabel="customer orders managed automatically this month"
-            submetric="90% reduced wait times"
-            platform="POS + Kitchen Display System"
-            accent="#EF4444"
+            industry="SaaS"
+            triggerLabel="New Customer Inquiry"
+            actionLabels={['Process Inquiry', 'Provide Support', 'Follow Up']}
+            metricValue="2,500"
+            metricLabel="customer inquiries managed automatically this month"
+            submetric="85% faster resolution time"
+            platform="CRM + Support Ticketing System"
+            accent="#3B82F6"
           />
         }
         breadcrumb={[
           { label: 'Home', href: '/' },
           { label: 'Solutions', href: '/solutions' },
-          { label: 'Business Process Automation', href: '/solutions/bussiness-process-automation' },
-          { label: 'Restaurants', href: content.url },
+          { label: 'Business Process Automation', href: '/solutions/business-process-automation' },
+          { label: 'SaaS', href: content.url },
         ]}
       />
 
       <WhySection
-        title="Why Restaurants & Hospitality Need Business Process Automation"
-        content={[content.sections['Why Restaurants & Hospitality Need Business Process Automation']]}
+        title="Why SaaS Companies Need Business Process Automation"
+        content={[content.sections['Why SaaS Companies Need Business Process Automation']]}
       />
 
       <ProblemsSection
-        title="The Problems This Solves for Restaurants & Hospitality"
-        content={[content.sections['The Problems This Solves for Restaurants & Hospitality']]}
+        title="The Problems This Solves for SaaS Companies"
+        content={[content.sections['The Problems This Solves for SaaS Companies']]}
       />
 
       <AutomationSection
-        title="What We Automate for Restaurants & Hospitality"
-        content={[content.sections['What We Automate for Restaurants & Hospitality']]}
+        title="What We Automate for SaaS Companies"
+        content={[content.sections['What We Automate for SaaS Companies']]}
       />
 
       <StartSection
@@ -120,8 +120,8 @@ export default function ForRestaurantsPage() {
       />
 
       <RealitiesSection
-        title="Built for Restaurants & Hospitality's Realities"
-        content={[content.sections['Built for Restaurants & Hospitality\'s Realities']]}
+        title="Built for SaaS Companies' Realities"
+        content={[content.sections['Built for SaaS Companies\'s Realities']]}
       />
 
       <ReturnSection
@@ -137,7 +137,7 @@ export default function ForRestaurantsPage() {
 
       <FAQSection
         title="Frequently Asked Questions"
-        subtitle="Common questions about business process automation for restaurants & hospitality"
+        subtitle="Common questions about business process automation for SaaS companies"
         faqs={content.faqQuestions}
       />
 
@@ -149,7 +149,7 @@ export default function ForRestaurantsPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for restaurants & hospitality."
+        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for SaaS companies."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

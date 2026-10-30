@@ -1,4 +1,4 @@
-// app/solutions/bussiness-process-automation/for-ecommerce/page.tsx
+// app/solutions/lead-generation-automation/page.tsx
 import { Metadata } from 'next';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { HeroSection } from '@/components/solutions/sections/Hero';
@@ -16,26 +16,26 @@ import {
 import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
-import { businessProcessAutomationForEcommerce } from '@/content/Solutions/bussiness-process-automation-for-ecommerce';
+import { leadGenerationAutomation } from '@/content/Solutions/lead-generation-automation';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
 
 export const metadata: Metadata = {
-  title: businessProcessAutomationForEcommerce.titleTag,
-  description: businessProcessAutomationForEcommerce.metaDescription,
+  title: leadGenerationAutomation.titleTag,
+  description: leadGenerationAutomation.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForEcommerce.url,
+    canonical: leadGenerationAutomation.url,
   },
   openGraph: {
-    title: businessProcessAutomationForEcommerce.titleTag,
-    description: businessProcessAutomationForEcommerce.metaDescription,
-    url: businessProcessAutomationForEcommerce.url,
+    title: leadGenerationAutomation.titleTag,
+    description: leadGenerationAutomation.metaDescription,
+    url: leadGenerationAutomation.url,
     type: 'website',
   },
-  keywords: businessProcessAutomationForEcommerce.primaryKeyword,
+  keywords: leadGenerationAutomation.primaryKeyword,
 };
 
-export default function ForEcommercePage() {
-  const content = businessProcessAutomationForEcommerce;
+export default function LeadGenerationAutomationPage() {
+  const content = leadGenerationAutomation;
 
   return (
     <PageWrapper>
@@ -45,13 +45,13 @@ export default function ForEcommercePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Business Process Automation for E-commerce',
+            name: 'Lead Generation Automation',
             description: content.metaDescription,
             provider: {
               '@type': 'Organization',
               name: 'Clickmasters',
             },
-            serviceType: 'Business Process Automation Development',
+            serviceType: 'Lead Generation Automation Development',
             areaServed: 'Global',
           }),
         }}
@@ -67,77 +67,76 @@ export default function ForEcommercePage() {
         }}
         secondaryCta={{
           text: 'Learn More',
-          href: '#why-ecommerce-need-bussiness-process-automation',
+          href: '#why-lead-generation-automation',
         }}
         visual={
           <AutomationHeroMockup
-            industry="E-commerce"
-            triggerLabel="New Lead Inquiry"
-            actionLabels={['Send Welcome Email', 'Provide Product Demo', 'Close Deal']}
-            metricValue="2,000"
-            metricLabel="leads converted automatically this month"
-            submetric="90% improved conversion rate"
-            platform="CRM + E-commerce Platform"
+            industry="Leads"
+            triggerLabel="New Lead Captured"
+            actionLabels={['Enrich & Qualify', 'Route to Sales', 'Sync to CRM']}
+            metricValue="2,200"
+            metricLabel="leads generated and qualified automatically each month"
+            submetric="70% increase in conversion rates"
+            platform="Lead Generation Automation + CRM"
             accent="#3B82F6"
           />
         }
         breadcrumb={[
           { label: 'Home', href: '/' },
           { label: 'Solutions', href: '/solutions' },
-          { label: 'Business Process Automation', href: '/solutions/bussiness-process-automation' },
-          { label: 'E-commerce', href: content.url },
+          { label: 'Lead Generation Automation', href: content.url },
         ]}
       />
 
       <WhySection
-        title="Why E-commerce Need Business Process Automation"
-        content={[content.sections['Why E-commerce Need Business Process Automation']]}
+        title="Why Businesses Need Lead Generation Automation"
+        content={content.sections['Why Businesses Need Lead Generation Automation']}
       />
 
       <ProblemsSection
-        title="The Problems This Solves for E-commerce"
-        content={[content.sections['The Problems This Solves for E-commerce']]}
+        title="The Problems This Solves"
+        content={content.sections['The Problems This Solves']}
       />
 
       <AutomationSection
-        title="What We Automate for E-commerce"
-        content={[content.sections['What We Automate for E-commerce']]}
+        title="What We Automate"
+        content={content.sections['What We Automate']}
       />
 
       <StartSection
         title="Where to Start: Your First Automation"
-        content={[content.sections['Where to Start: Your First Automation']]}
+        content={content.sections['Where to Start: Your First Automation']}
       />
 
       <ExampleSection
         title="A Worked Example"
-        content={[content.sections['A Worked Example']]}
+        content={content.sections['A Worked Example']}
       />
 
       <BoundariesSection
-        title="What This Isand Isn't"
-        content={[content.sections['What This Isand Isn\'t']]}
+        title="What This Is and Isn't"
+        content={content.sections["What This Is and Isn't"]}
       />
 
       <RealitiesSection
-        title="Built for E-commerce's Realities"
-        content={[content.sections['Built for E-commerce\'s Realities']]}
+        title="Built for Real Business Operations"
+        content={content.sections['Built for Real Business Operations']}
       />
 
       <ReturnSection
         title="What the Return Looks Like"
-        content={[content.sections['What the Return Looks Like']]}
+        content={content.sections['What the Return Looks Like']}
         stats={content.stats}
       />
 
       <WhyUsSection
         title="Why Clickmasters"
-        content={[content.sections['Why Clickmasters']]}
+        content={content.sections['Why Clickmasters']}
       />
 
       <FAQSection
         title="Frequently Asked Questions"
-        subtitle="Common questions about business process automation for e-commerce"
+        subtitle="Common questions about lead generation automation"
         faqs={content.faqQuestions}
       />
 
@@ -149,7 +148,7 @@ export default function ForEcommercePage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for e-commerce."
+        subtitle="Book a free automation audit — 30 minutes, no obligation, and an honest read on where lead generation automation pays off for your business."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

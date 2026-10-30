@@ -1,4 +1,4 @@
-// app/solutions/bussiness-process-automation/for-construction/page.tsx
+// app/solutions/ai-agents/page.tsx
 import { Metadata } from 'next';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { HeroSection } from '@/components/solutions/sections/Hero';
@@ -16,26 +16,26 @@ import {
 import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
-import { businessProcessAutomationForConstruction } from '@/content/Solutions/bussiness-process-automation-for-construction';
+import { aiAgents } from '@/content/Solutions/ai-agents';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
 
 export const metadata: Metadata = {
-  title: businessProcessAutomationForConstruction.titleTag,
-  description: businessProcessAutomationForConstruction.metaDescription,
+  title: aiAgents.titleTag,
+  description: aiAgents.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForConstruction.url,
+    canonical: aiAgents.url,
   },
   openGraph: {
-    title: businessProcessAutomationForConstruction.titleTag,
-    description: businessProcessAutomationForConstruction.metaDescription,
-    url: businessProcessAutomationForConstruction.url,
+    title: aiAgents.titleTag,
+    description: aiAgents.metaDescription,
+    url: aiAgents.url,
     type: 'website',
   },
-  keywords: businessProcessAutomationForConstruction.primaryKeyword,
+  keywords: aiAgents.primaryKeyword,
 };
 
-export default function ForConstructionPage() {
-  const content = businessProcessAutomationForConstruction;
+export default function AIAgentsPage() {
+  const content = aiAgents;
 
   return (
     <PageWrapper>
@@ -45,13 +45,13 @@ export default function ForConstructionPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Business Process Automation for Construction',
+            name: 'AI Agent Development',
             description: content.metaDescription,
             provider: {
               '@type': 'Organization',
               name: 'Clickmasters',
             },
-            serviceType: 'Business Process Automation Development',
+            serviceType: 'AI Agent Development',
             areaServed: 'Global',
           }),
         }}
@@ -67,77 +67,73 @@ export default function ForConstructionPage() {
         }}
         secondaryCta={{
           text: 'Learn More',
-          href: '#why-construction-need-bussiness-process-automation',
+          href: '#why-ai-agents',
         }}
         visual={
           <AutomationHeroMockup
-            industry="Construction"
-            triggerLabel="New Project Inquiry"
-            actionLabels={['Schedule Site Visit', 'Provide Quote', 'Submit Contract']}
-            metricValue="500"
-            metricLabel="project inquiries managed automatically this month"
-            submetric="80% improved response time"
-            platform="CRM + Construction Management Software"
-            accent="#F59E0B"
+            industry="AI Agents"
+            triggerLabel="New Business Task"
+            actionLabels={['Interpret Context', 'Execute Steps', 'Report Outcomes']}
+            metricValue="1,200"
+            metricLabel="business tasks executed end-to-end this week"
+            submetric="80% less manual coordination"
+            platform="AI Agents + Connected Business Systems"
+            accent="#F97316"
           />
         }
         breadcrumb={[
           { label: 'Home', href: '/' },
           { label: 'Solutions', href: '/solutions' },
-          { label: 'Business Process Automation', href: '/solutions/bussiness-process-automation' },
-          { label: 'Construction', href: content.url },
+          { label: 'AI Agents', href: content.url },
         ]}
       />
 
       <WhySection
-        title="Why Construction Need Business Process Automation"
-        content={[content.sections['Why Construction Need Business Process Automation']]}
+        title="Why Businesses Need AI Agents"
+        content={content.sections['Why Businesses Need AI Agents']}
       />
 
       <ProblemsSection
-        title="The Problems This Solves for Construction"
-        content={[content.sections['The Problems This Solves for Construction']]}
+        title="The Problems This Solves"
+        content={content.sections['The Problems This Solves']}
       />
 
-      <AutomationSection
-        title="What We Automate for Construction"
-        content={[content.sections['What We Automate for Construction']]}
-      />
+ 
 
       <StartSection
         title="Where to Start: Your First Automation"
-        content={[content.sections['Where to Start: Your First Automation']]}
+        content={content.sections['Where to Start: Your First Automation']}
       />
 
       <ExampleSection
         title="A Worked Example"
-        content={[content.sections['A Worked Example']]}
+        content={content.sections['A Worked Example']}
       />
 
       <BoundariesSection
-        title="What This Isand Isn't"
-        content={[content.sections['What This Isand Isn\'t']]}
+        title="What This Is and Isn't"
+        content={content.sections["What This Is and Isn't"]}
       />
 
       <RealitiesSection
-        title="Built for Construction's Realities"
-        content={[content.sections['Built for Construction\'s Realities']]}
+        title="Built for Real Business Operations"
+        content={content.sections['Built for Real Business Operations']}
       />
 
       <ReturnSection
         title="What the Return Looks Like"
-        content={[content.sections['What the Return Looks Like']]}
+        content={content.sections['What the Return Looks Like']}
         stats={content.stats}
       />
 
       <WhyUsSection
         title="Why Clickmasters"
-        content={[content.sections['Why Clickmasters']]}
+        content={content.sections['Why Clickmasters']}
       />
 
       <FAQSection
         title="Frequently Asked Questions"
-        subtitle="Common questions about business process automation for construction"
+        subtitle="Common questions about AI agents"
         faqs={content.faqQuestions}
       />
 
@@ -149,7 +145,7 @@ export default function ForConstructionPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for construction."
+        subtitle="Book a free automation audit — 30 minutes, no obligation, and an honest read on where AI agents pay off for your business."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,
