@@ -55,30 +55,29 @@ export default function ForSaaSPage() {
           }),
         }}
       />
-
-      <HeroSection
-        badge={content.heroBadge}
-        heading={content.heroHeading}
-        subheading={content.heroSubheading}
-        primaryCta={{
-          text: 'Book a Free Audit',
-          href: content.bookingLink,
-        }}
-        secondaryCta={{
-          text: 'Learn More',
-          href: '#why-saas-companies-need-reporting-automation',
-        }}
-        image="/images/solutions/reporting-automation-saas-hero.png"
-        imageWidth={700}
-        imageHeight={580}
-        textSize="xlarge"
-        breadcrumb={[
-          { label: 'Home', href: '/' },
-          { label: 'Solutions', href: '/solutions' },
-          { label: 'Reporting Automation', href: '/solutions/reporting-automation' },
-          { label: 'SaaS Companies', href: content.url },
-        ]}
-      />
+<HeroSection
+  badge={content.heroBadge}
+  heading={content.heroHeading}
+  subheading={content.heroSubheading}
+  primaryCta={{
+    text: 'Book a Free Audit',
+    href: content.bookingLink,
+  }}
+  secondaryCta={{
+    text: 'Learn More',
+    href: '#why-saas-companies-need-reporting-automation',
+  }}
+  image="/images/reporting.png"
+  imageWidth={700}
+  imageHeight={580}
+  textSize="xlarge"
+  breadcrumb={[
+    { label: 'Home', href: '/' },
+    { label: 'Solutions', href: '/solutions' },
+    { label: 'Reporting Automation', href: '/solutions/reporting-automation' },
+    { label: 'SaaS Companies', href: content.url },
+  ]}
+/>
 
       <WhySection
         title="Why SaaS Companies Need Reporting Automation"
