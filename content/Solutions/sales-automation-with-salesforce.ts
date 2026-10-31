@@ -46,7 +46,7 @@ export const salesAutomationWithSalesforce = {
       'This is automation built around Salesforce as the system of record. It makes sure the right data reaches Salesforce at the right time, from the right sources, without relying on reps to enter it manually.',
       'This is not a replacement for Salesforce or for your sales process. It is the automation layer that keeps Salesforce accurate and your process consistent.',
     ],
-    'Built for Salesforces Realities': [
+"Built for Salesforce's Realities": [
       'Real Salesforce orgs have custom objects, validation rules, assignment rules, and integrations that must all be respected. We build automation that works with your org — matching custom fields, respecting validation, and syncing without triggering false errors or duplicate records.',
     ],
     'What the Return Looks Like': [
