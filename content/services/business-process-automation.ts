@@ -24,7 +24,7 @@ export const businessProcessAutomation: ServiceContent = {
     { text: 'Improve Your Business Processes', link: '/free-automation-audit', primary: true }
   ],
   image: {
-    src: '/images/bussiness.png',
+    src: '/images/business.png',
     alt: 'Business Process Automation illustration',
     width: 667,
     height: 374

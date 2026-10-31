@@ -4471,7 +4471,7 @@ H2  Want every lead answered in seconds?`,
         {
           kind: "list",
           items: [
-            "Seven solution hubs whose sub-pages are live: ai-agents, ai-chatbots, ai-voice-agents, ai-workflow-automation, bussiness-process-automation, lead-generation-automation and reporting-automation"
+            "Seven solution hubs whose sub-pages are live: ai-agents, ai-chatbots, ai-voice-agents, ai-workflow-automation, business-process-automation, lead-generation-automation and reporting-automation"
           ]
         },
        

@@ -12,7 +12,7 @@ import {
   RealitiesSection,
   ReturnSection,
   WhyUsSection,
-} from '@/components/solutions/sections/variants';
+     } from '@/components/solutions/sections/variants';
 import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';

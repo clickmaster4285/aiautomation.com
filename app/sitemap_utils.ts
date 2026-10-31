@@ -155,7 +155,7 @@ export function getSolutions(): string[] {
       'ai-voice-agents',
       'ai-workflow-automation',
       'appointment-booking-automation',
-      'bussiness-process-automation',
+      'business-process-automation',
       'crm-automation',
       'document-automation',
       'invoice-automation',

@@ -8,7 +8,7 @@ const industries = [
   {
     icon: Banknote,
     title: 'Finance & Accounting',
-    slug: 'finance-accounting',
+    slug: 'ai-automation-for-finance-accounting',
     description:
       'Automate invoice processing, expense approvals, financial reporting, and reconciliation across your accounting stack with AI-powered accuracy.',
     outcomes: ['Auto invoice capture & processing', 'Expense approval flows', 'Financial reporting automation'],
@@ -17,7 +17,7 @@ const industries = [
   {
     icon: Heart,
     title: 'Healthcare',
-    slug: 'healthcare',
+    slug: 'ai-automation-for-healthcare',
     description:
       'Streamline patient scheduling, medical records management, insurance claims processing, and HIPAA-compliant communication workflows.',
     outcomes: ['Patient appointment automation', 'Medical records sync', 'Insurance claims processing'],
@@ -26,7 +26,7 @@ const industries = [
   {
     icon: Scale,
     title: 'Law Firms',
-    slug: 'law-firms',
+    slug: 'ai-automation-for-law-firms',
     description:
       'Automate document review, case management, client intake, billing, and legal research workflows while maintaining strict confidentiality.',
     outcomes: ['Document automation', 'Case management workflows', 'Client intake automation'],
@@ -35,7 +35,7 @@ const industries = [
   {
     icon: ShoppingBag,
     title: 'E-commerce',
-    slug: 'ecommerce',
+    slug: 'ai-automation-for-ecommerce',
     description:
       'Streamline order management, inventory sync, customer support, returns processing, and supplier communication across your e-commerce ecosystem.',
     outcomes: ['Order processing automation', 'Inventory sync', 'Returns management'],
@@ -44,7 +44,7 @@ const industries = [
   {
     icon: Cloud,
     title: 'SaaS',
-    slug: 'saas',
+    slug: 'ai-automation-for-saas',
     description:
       'Automate customer onboarding, subscription management, support ticket routing, product analytics, and customer success workflows.',
     outcomes: ['Customer onboarding automation', 'Subscription management', 'Support ticket routing'],
@@ -53,39 +53,39 @@ const industries = [
   {
     icon: Briefcase,
     title: 'Professional Services',
-    slug: 'professional-services',
+    slug: 'ai-automation-for-professional-services',
     description:
       'Automate project management, resource allocation, client reporting, time tracking, and billing across consulting and professional service firms.',
     outcomes: ['Project management automation', 'Resource allocation', 'Client reporting'],
     color: 'from-teal-50 to-transparent',
   },
-  {
-    icon: Truck,
-    title: 'Logistics & Supply Chain',
-    slug: 'logistics-supply-chain',
-    description:
-      'Streamline shipment tracking, inventory management, supplier communication, and fulfillment processes with AI-powered automation.',
-    outcomes: ['Shipment tracking automation', 'Inventory management', 'Supplier communication'],
-    color: 'from-amber-50 to-transparent',
-  },
+  // {
+  //   icon: Truck,
+  //   title: 'Logistics & Supply Chain',
+  //   slug: 'ai-automation-for-logistics-supply-chain',
+  //   description:
+  //     'Streamline shipment tracking, inventory management, supplier communication, and fulfillment processes with AI-powered automation.',
+  //   outcomes: ['Shipment tracking automation', 'Inventory management', 'Supplier communication'],
+  //   color: 'from-amber-50 to-transparent',
+  // },
   {
     icon: Building,
     title: 'Real Estate',
-    slug: 'real-estate',
+    slug: 'ai-automation-for-real-estate',
     description:
       'Automate lead qualification, property listings, appointment scheduling, document processing, and client communication for real estate professionals.',
     outcomes: ['Lead qualification automation', 'Property listing sync', 'Appointment scheduling'],
     color: 'from-yellow-50 to-transparent',
   },
-  {
-    icon: GraduationCap,
-    title: 'Education',
-    slug: 'education',
-    description:
-      'Automate student enrollment, course management, communication workflows, grading, and reporting for educational institutions and edtech platforms.',
-    outcomes: ['Student enrollment automation', 'Course management', 'Grading workflows'],
-    color: 'from-indigo-50 to-transparent',
-  },
+  // {
+  //   icon: GraduationCap,
+  //   title: 'Education',
+  //   slug: 'ai-automation-for-education',
+  //   description:
+  //     'Automate student enrollment, course management, communication workflows, grading, and reporting for educational institutions and edtech platforms.',
+  //   outcomes: ['Student enrollment automation', 'Course management', 'Grading workflows'],
+  //   color: 'from-indigo-50 to-transparent',
+  // },
 ];
 
 const stats = [
