@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiWorkflowAutomationForEducation: SolutionData = {
   slug: 'ai-workflow-automation/for-education',
-  url: '/solutions/ai-workflow-automation/for-education/',
+  url: '/solutions/ai-workflow-automation/for-education',
   platform: 'AI Workflow Automation',
   category: 'ai-workflow-automation',
   title: 'AI Workflow Automation for Education',

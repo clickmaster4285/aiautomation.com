@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { businessProcessAutomationForInsurance } from '@/content/Solutions/business-process-automation-for-insurance';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: businessProcessAutomationForInsurance.titleTag,
   description: businessProcessAutomationForInsurance.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForInsurance.url,
+    canonical: canonicalUrl(businessProcessAutomationForInsurance.url),
   },
   openGraph: {
     title: businessProcessAutomationForInsurance.titleTag,
     description: businessProcessAutomationForInsurance.metaDescription,
-    url: businessProcessAutomationForInsurance.url,
+    url: canonicalUrl(businessProcessAutomationForInsurance.url),
     type: 'website',
   },
   keywords: businessProcessAutomationForInsurance.primaryKeyword,

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const documentAutomationWithN8n: SolutionData = {
   slug: 'document-automation/with-n8n',
-  url: '/solutions/document-automation/with-n8n/',
+  url: '/solutions/document-automation/with-n8n',
   platform: 'n8n',
   category: 'document-automation',
   title: 'Document & Data Automation with n8n',

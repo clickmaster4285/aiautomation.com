@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const marketingAutomationWithHubspot: SolutionData = {
   slug: 'marketing-automation/with-hubspot',
-  url: '/solutions/marketing-automation/with-hubspot/',
+  url: '/solutions/marketing-automation/with-hubspot',
   platform: 'HubSpot',
   category: 'marketing-automation',
   title: 'AI Marketing Automation with HubSpot',

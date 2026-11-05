@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const documentAutomationForRetail: SolutionData = {
   slug: 'document-automation/for-retail',
-  url: '/solutions/document-automation/for-retail/',
+  url: '/solutions/document-automation/for-retail',
   platform: 'Document & Data Automation',
   category: 'document-automation',
   title: 'Document & Data Automation for Retail',

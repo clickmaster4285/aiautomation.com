@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const crmAutomationForEducation: SolutionData = {
   slug: 'crm-automation/for-education',
-  url: '/solutions/crm-automation/for-education/',
+  url: '/solutions/crm-automation/for-education',
   platform: 'CRM Automation',
   category: 'crm-automation',
   title: 'CRM Automation for Education',

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const documentAutomationForAccountingFirms: SolutionData = {
   slug: 'document-automation/for-accounting-firms',
-  url: '/solutions/document-automation/for-accounting-firms/',
+  url: '/solutions/document-automation/for-accounting-firms',
   platform: 'Document & Data Automation',
   category: 'document-automation',
   title: 'Document & Data Automation for Accounting Firms',

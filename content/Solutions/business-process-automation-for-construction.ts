@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const businessProcessAutomationForConstruction: SolutionData = {
   slug: 'business-process-automation/for-construction',
-  url: '/solutions/business-process-automation/for-construction/',
+  url: '/solutions/business-process-automation/for-construction',
   platform: 'Business Process Automation',
   category: 'business-process-automation',
   title: 'Business Process Automation for Construction',

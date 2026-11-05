@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const documentAutomationWithAirtable: SolutionData = {
   slug: 'document-automation/with-airtable',
-  url: '/solutions/document-automation/with-airtable/',
+  url: '/solutions/document-automation/with-airtable',
   platform: 'Airtable',
   category: 'document-automation',
   title: 'Document & Data Automation with Airtable',

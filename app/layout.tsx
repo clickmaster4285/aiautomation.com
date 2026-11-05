@@ -3,7 +3,8 @@ import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/landingPage/Nav";
-import Footer from "@/components/landingPage/Footer"; 
+import Footer from "@/components/landingPage/Footer";
+import { PHONES, SALES_EMAIL, SITE_NAME, SITE_URL } from "@/lib/site-contact"; 
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,12 +16,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://clickmastersaiautomation.com";
+const siteUrl = SITE_URL;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  // Self-referencing canonical for every route that does not set its own.
-  // "./" is resolved against the current pathname.
+  // Self-referencing canonical for routes that do not set their own.
+  // With trailingSlash: false, Next resolves this to the non-slash URL.
+  // Pages that set alternates.canonical must pass the value through canonicalUrl().
   alternates: {
     canonical: "./",
   },
@@ -74,6 +76,30 @@ export default function RootLayout({
       </head>
 
       <body className="min-h-full flex flex-col bg-white text-black">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  name: SITE_NAME,
+                  url: siteUrl,
+                  logo: `${siteUrl}/logo.png`,
+                  email: SALES_EMAIL,
+                  telephone: PHONES.map((phone) => phone.display),
+                  areaServed: PHONES.map((phone) => phone.label),
+                },
+                {
+                  "@type": "WebSite",
+                  name: "Clickmasters",
+                  url: siteUrl,
+                },
+              ],
+            }),
+          }}
+        />
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe

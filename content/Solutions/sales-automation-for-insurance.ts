@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const salesAutomationForInsurance: SolutionData = {
   slug: 'sales-automation/for-insurance',
-  url: '/solutions/sales-automation/for-insurance/',
+  url: '/solutions/sales-automation/for-insurance',
   platform: 'AI Sales Automation',
   category: 'sales-automation',
   title: 'AI Sales Automation for Insurance Agencies',

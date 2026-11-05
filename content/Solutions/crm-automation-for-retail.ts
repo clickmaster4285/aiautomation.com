@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const crmAutomationForRetail: SolutionData = {
   slug: 'crm-automation/for-retail',
-  url: '/solutions/crm-automation/for-retail/',
+  url: '/solutions/crm-automation/for-retail',
   platform: 'CRM Automation',
   category: 'crm-automation',
   title: 'CRM Automation for Retail',

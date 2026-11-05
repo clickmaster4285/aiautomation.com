@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { businessProcessAutomationForLawFirms } from '@/content/Solutions/business-process-automation-for-law-firms';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: businessProcessAutomationForLawFirms.titleTag,
   description: businessProcessAutomationForLawFirms.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForLawFirms.url,
+    canonical: canonicalUrl(businessProcessAutomationForLawFirms.url),
   },
   openGraph: {
     title: businessProcessAutomationForLawFirms.titleTag,
     description: businessProcessAutomationForLawFirms.metaDescription,
-    url: businessProcessAutomationForLawFirms.url,
+    url: canonicalUrl(businessProcessAutomationForLawFirms.url),
     type: 'website',
   },
   keywords: businessProcessAutomationForLawFirms.primaryKeyword,

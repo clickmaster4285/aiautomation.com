@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const leadGenerationAutomationForHealthcare: SolutionData = {
   slug: 'lead-generation-automation/for-healthcare',
-  url: '/solutions/lead-generation-automation/for-healthcare/',
+  url: '/solutions/lead-generation-automation/for-healthcare',
   platform: 'Lead Generation Automation',
   category: 'lead-generation-automation',
   title: 'Lead Generation Automation for Healthcare',

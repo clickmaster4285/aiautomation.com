@@ -13,17 +13,18 @@ import { StatsSection } from '@/components/solutions/sections/Stats';
 import { BackButton } from '@/components/ui/backButton';
 import { ChatbotHeroMockup } from '@/components/solutions/sections/ChatbotHeroMockup';
 import { reportingAutomationWithSalesforce } from '@/content/Solutions';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: reportingAutomationWithSalesforce.titleTag,
   description: reportingAutomationWithSalesforce.metaDescription,
   alternates: {
-    canonical: reportingAutomationWithSalesforce.url,
+    canonical: canonicalUrl(reportingAutomationWithSalesforce.url),
   },
   openGraph: {
     title: reportingAutomationWithSalesforce.titleTag,
     description: reportingAutomationWithSalesforce.metaDescription,
-    url: reportingAutomationWithSalesforce.url,
+    url: canonicalUrl(reportingAutomationWithSalesforce.url),
     type: 'website',
   },
   keywords: reportingAutomationWithSalesforce.primaryKeyword,

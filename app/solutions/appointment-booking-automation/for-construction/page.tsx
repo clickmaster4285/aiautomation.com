@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { appointmentBookingAutomationForConstruction } from '@/content/Solutions/appointment-booking-automation-for-construction';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: appointmentBookingAutomationForConstruction.titleTag,
   description: appointmentBookingAutomationForConstruction.metaDescription,
   alternates: {
-    canonical: appointmentBookingAutomationForConstruction.url,
+    canonical: canonicalUrl(appointmentBookingAutomationForConstruction.url),
   },
   openGraph: {
     title: appointmentBookingAutomationForConstruction.titleTag,
     description: appointmentBookingAutomationForConstruction.metaDescription,
-    url: appointmentBookingAutomationForConstruction.url,
+    url: canonicalUrl(appointmentBookingAutomationForConstruction.url),
     type: 'website',
   },
   keywords: appointmentBookingAutomationForConstruction.primaryKeyword,

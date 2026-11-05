@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const salesAutomationForConstruction: SolutionData = {
   slug: 'sales-automation/for-construction',
-  url: '/solutions/sales-automation/for-construction/',
+  url: '/solutions/sales-automation/for-construction',
   platform: 'AI Sales Automation',
   category: 'sales-automation',
   title: 'AI Sales Automation for Construction',

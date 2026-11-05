@@ -13,17 +13,18 @@ import { StatsSection } from '@/components/solutions/sections/Stats';
 import { BackButton } from '@/components/ui/backButton';
 import { ChatbotHeroMockup } from '@/components/solutions/sections/ChatbotHeroMockup';
 import { leadGenerationAutomationWithHubspot } from '@/content/Solutions';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: leadGenerationAutomationWithHubspot.titleTag,
   description: leadGenerationAutomationWithHubspot.metaDescription,
   alternates: {
-    canonical: leadGenerationAutomationWithHubspot.url,
+    canonical: canonicalUrl(leadGenerationAutomationWithHubspot.url),
   },
   openGraph: {
     title: leadGenerationAutomationWithHubspot.titleTag,
     description: leadGenerationAutomationWithHubspot.metaDescription,
-    url: leadGenerationAutomationWithHubspot.url,
+    url: canonicalUrl(leadGenerationAutomationWithHubspot.url),
     type: 'website',
   },
   keywords: leadGenerationAutomationWithHubspot.primaryKeyword,

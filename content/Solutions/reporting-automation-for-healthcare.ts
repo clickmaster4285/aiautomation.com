@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const reportingAutomationForHealthcare: SolutionData = {
   slug: 'reporting-automation/for-healthcare',
-  url: '/solutions/reporting-automation/for-healthcare/',
+  url: '/solutions/reporting-automation/for-healthcare',
   platform: 'Reporting Automation',
   category: 'reporting-automation',
   title: 'Reporting Automation for Healthcare',

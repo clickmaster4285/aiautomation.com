@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { invoiceAutomationForLawFirms } from '@/content/Solutions/invoice-automation-for-law-firms';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: invoiceAutomationForLawFirms.titleTag,
   description: invoiceAutomationForLawFirms.metaDescription,
   alternates: {
-    canonical: invoiceAutomationForLawFirms.url,
+    canonical: canonicalUrl(invoiceAutomationForLawFirms.url),
   },
   openGraph: {
     title: invoiceAutomationForLawFirms.titleTag,
     description: invoiceAutomationForLawFirms.metaDescription,
-    url: invoiceAutomationForLawFirms.url,
+    url: canonicalUrl(invoiceAutomationForLawFirms.url),
     type: 'website',
   },
   keywords: invoiceAutomationForLawFirms.primaryKeyword,

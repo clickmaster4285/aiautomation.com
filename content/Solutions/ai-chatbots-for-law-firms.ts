@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiChatbotsForLawFirms: SolutionData = {
   slug: 'ai-chatbots/for-law-firms',
-  url: '/solutions/ai-chatbots/for-law-firms/',
+  url: '/solutions/ai-chatbots/for-law-firms',
   platform: 'AI Chatbots',
   category: 'ai-chatbots',
   title: 'AI Chatbots for Law Firms',

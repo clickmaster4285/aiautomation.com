@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const reportingAutomationForInsurance: SolutionData = {
   slug: 'reporting-automation/for-insurance',
-  url: '/solutions/reporting-automation/for-insurance/',
+  url: '/solutions/reporting-automation/for-insurance',
   platform: 'Reporting Automation',
   category: 'reporting-automation',
   title: 'Reporting Automation for Insurance Agencies',

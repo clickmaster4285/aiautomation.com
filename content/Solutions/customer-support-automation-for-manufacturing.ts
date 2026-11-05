@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const customerSupportAutomationForManufacturing: SolutionData = {
   slug: 'customer-support-automation/for-manufacturing',
-  url: '/solutions/customer-support-automation/for-manufacturing/',
+  url: '/solutions/customer-support-automation/for-manufacturing',
   platform: 'Customer Support Automation',
   category: 'customer-support-automation',
   title: 'Customer Support Automation for Manufacturing',

@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import { HubJsonLd } from '@/components/seo/HubJsonLd';
+import { hubSeo } from '@/lib/hub-seo';
 import { motion, Variants } from 'framer-motion';
 import { ArrowRight, CheckCircle2, Building2, Banknote, Heart, Scale, ShoppingBag, Cloud, Briefcase, BarChart3, Users, Shield, Truck, Building, GraduationCap, Home, Utensils, Plane, Factory, Gavel, Stethoscope } from 'lucide-react';
 
@@ -136,6 +138,7 @@ const cardVariants: Variants = {
 export default function IndustriesClient() {
   return (
     <div className="bg-white text-gray-900 overflow-x-hidden">
+      <HubJsonLd hub={hubSeo.industries} />
       {/* ── HERO ── */}
       <motion.section
         initial="hidden"

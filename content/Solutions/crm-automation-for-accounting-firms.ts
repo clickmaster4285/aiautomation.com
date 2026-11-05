@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const crmAutomationForAccountingFirms: SolutionData = {
   slug: 'crm-automation/for-accounting-firms',
-  url: '/solutions/crm-automation/for-accounting-firms/',
+  url: '/solutions/crm-automation/for-accounting-firms',
   platform: 'CRM Automation',
   category: 'crm-automation',
   title: 'CRM Automation for Accounting Firms',

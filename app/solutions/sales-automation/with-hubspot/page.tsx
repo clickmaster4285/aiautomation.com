@@ -13,17 +13,18 @@ import { StatsSection } from '@/components/solutions/sections/Stats';
 import { BackButton } from '@/components/ui/backButton';
 import { ChatbotHeroMockup } from '@/components/solutions/sections/ChatbotHeroMockup';
 import { salesAutomationWithHubspot } from '@/content/Solutions';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: salesAutomationWithHubspot.titleTag,
   description: salesAutomationWithHubspot.metaDescription,
   alternates: {
-    canonical: salesAutomationWithHubspot.url,
+    canonical: canonicalUrl(salesAutomationWithHubspot.url),
   },
   openGraph: {
     title: salesAutomationWithHubspot.titleTag,
     description: salesAutomationWithHubspot.metaDescription,
-    url: salesAutomationWithHubspot.url,
+    url: canonicalUrl(salesAutomationWithHubspot.url),
     type: 'website',
   },
   keywords: salesAutomationWithHubspot.primaryKeyword,

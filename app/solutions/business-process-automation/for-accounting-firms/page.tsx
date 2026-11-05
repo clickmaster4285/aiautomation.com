@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { businessProcessAutomationForAccountingFirms } from '@/content/Solutions/business-process-automation-for-accounting-firms';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: businessProcessAutomationForAccountingFirms.titleTag,
   description: businessProcessAutomationForAccountingFirms.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForAccountingFirms.url,
+    canonical: canonicalUrl(businessProcessAutomationForAccountingFirms.url),
   },
   openGraph: {
     title: businessProcessAutomationForAccountingFirms.titleTag,
     description: businessProcessAutomationForAccountingFirms.metaDescription,
-    url: businessProcessAutomationForAccountingFirms.url,
+    url: canonicalUrl(businessProcessAutomationForAccountingFirms.url),
     type: 'website',
   },
   keywords: businessProcessAutomationForAccountingFirms.primaryKeyword,

@@ -68,12 +68,13 @@ export default function FAQSec({ section }: FAQSecProps) {
             </div>
 
             <Image
-              src="/images/robot-mascot2.png"
-              alt=""
-              width={640}
-              height={640}
+              src="/images/robot-mascot2.jpg"
+              alt="Clickmasters robot mascot"
+              width={479}
+              height={479}
+              sizes="(min-width: 1280px) 256px, (min-width: 1024px) 224px, (min-width: 768px) 192px, 160px"
+              quality={60}
               className="w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64 mt-8 md:mt-10 float-y select-none"
-              priority={false}
             />
           </motion.div>
 

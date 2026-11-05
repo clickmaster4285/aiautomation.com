@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const documentAutomationForSaaS: SolutionData = {
   slug: 'document-automation/for-saas',
-  url: '/solutions/document-automation/for-saas/',
+  url: '/solutions/document-automation/for-saas',
   platform: 'Document & Data Automation',
   category: 'document-automation',
   title: 'Document & Data Automation for SaaS Companies',

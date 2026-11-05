@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiChatbotsForEducation: SolutionData = {
   slug: 'ai-chatbots/for-education',
-  url: '/solutions/ai-chatbots/for-education/',
+  url: '/solutions/ai-chatbots/for-education',
   platform: 'AI Chatbots',
   category: 'ai-chatbots',
   title: 'AI Chatbots for Education',

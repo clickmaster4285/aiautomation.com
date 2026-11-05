@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const documentAutomationForLawFirms: SolutionData = {
   slug: 'document-automation/for-law-firms',
-  url: '/solutions/document-automation/for-law-firms/',
+  url: '/solutions/document-automation/for-law-firms',
   platform: 'Document & Data Automation',
   category: 'document-automation',
   title: 'Document & Data Automation for Law Firms',

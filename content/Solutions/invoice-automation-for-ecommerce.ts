@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const invoiceAutomationForEcommerce: SolutionData = {
   slug: 'invoice-automation/for-ecommerce',
-  url: '/solutions/invoice-automation/for-ecommerce/',
+  url: '/solutions/invoice-automation/for-ecommerce',
   platform: 'Invoice & Finance Automation',
   category: 'invoice-automation',
   title: 'Invoice & Finance Automation for E-commerce',

@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { invoiceAutomationForManufacturing } from '@/content/Solutions/invoice-automation-for-manufacturing';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: invoiceAutomationForManufacturing.titleTag,
   description: invoiceAutomationForManufacturing.metaDescription,
   alternates: {
-    canonical: invoiceAutomationForManufacturing.url,
+    canonical: canonicalUrl(invoiceAutomationForManufacturing.url),
   },
   openGraph: {
     title: invoiceAutomationForManufacturing.titleTag,
     description: invoiceAutomationForManufacturing.metaDescription,
-    url: invoiceAutomationForManufacturing.url,
+    url: canonicalUrl(invoiceAutomationForManufacturing.url),
     type: 'website',
   },
   keywords: invoiceAutomationForManufacturing.primaryKeyword,

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const appointmentBookingAutomationForLawFirms: SolutionData = {
   slug: 'appointment-booking-automation/for-law-firms',
-  url: '/solutions/appointment-booking-automation/for-law-firms/',
+  url: '/solutions/appointment-booking-automation/for-law-firms',
   platform: 'Appointment & Booking Automation',
   category: 'appointment-booking-automation',
   title: 'Appointment & Booking Automation for Law Firms',

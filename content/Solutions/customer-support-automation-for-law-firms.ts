@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const customerSupportAutomationForLawFirms: SolutionData = {
   slug: 'customer-support-automation/for-law-firms',
-  url: '/solutions/customer-support-automation/for-law-firms/',
+  url: '/solutions/customer-support-automation/for-law-firms',
   platform: 'Customer Support Automation',
   category: 'customer-support-automation',
   title: 'Customer Support Automation for Law Firms',

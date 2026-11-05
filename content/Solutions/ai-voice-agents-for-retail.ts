@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiVoiceAgentsForRetail: SolutionData = {
   slug: 'ai-voice-agents/for-retail',
-  url: '/solutions/ai-voice-agents/for-retail/',
+  url: '/solutions/ai-voice-agents/for-retail',
   platform: 'AI Voice Agents',
   category: 'ai-voice-agents',
   title: 'AI Voice Agents for Retail',

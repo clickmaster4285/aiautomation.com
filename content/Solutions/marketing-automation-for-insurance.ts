@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const marketingAutomationForInsurance: SolutionData = {
   slug: 'marketing-automation/for-insurance',
-  url: '/solutions/marketing-automation/for-insurance/',
+  url: '/solutions/marketing-automation/for-insurance',
   platform: 'AI Marketing Automation',
   category: 'marketing-automation',
   title: 'AI Marketing Automation for Insurance Agencies',

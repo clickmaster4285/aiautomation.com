@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic';
 import type { ComponentType } from 'react';
 import { industryContent, industrySlugs } from '@/content/Industries';
 import CmsRoute, { cmsRouteMetadata } from '@/components/cms/CmsRoute';
+import { canonicalUrl } from '@/lib/canonical';
 
 const Hero = dynamic(() => import('@/components/industries/Hero').then((mod) => mod.default));
 const TextSec = dynamic(() => import('@/components/industries/TextSec').then((mod) => mod.default));
@@ -36,6 +37,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: content.title,
     description: content.metaDescription,
+    alternates: {
+      canonical: canonicalUrl(`/industries/${slug}`),
+    },
   };
 }
 

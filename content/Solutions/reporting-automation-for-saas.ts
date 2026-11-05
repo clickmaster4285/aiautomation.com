@@ -4,7 +4,7 @@ import { SolutionData } from '@/content/type';
 
 export const reportingAutomationForSaaS: SolutionData = {
   slug: 'reporting-automation/for-saas',
-  url: '/solutions/reporting-automation/for-saas/',
+  url: '/solutions/reporting-automation/for-saas',
   platform: 'Reporting Automation',
   category: 'reporting-automation',
   title: 'Reporting Automation for SaaS Companies',

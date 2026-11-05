@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const marketingAutomationForEcommerce: SolutionData = {
   slug: 'marketing-automation/for-ecommerce',
-  url: '/solutions/marketing-automation/for-ecommerce/',
+  url: '/solutions/marketing-automation/for-ecommerce',
   platform: 'AI Marketing Automation',
   category: 'marketing-automation',
   title: 'AI Marketing Automation for E-commerce',

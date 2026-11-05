@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { businessProcessAutomationForConstruction } from '@/content/Solutions/business-process-automation-for-construction';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: businessProcessAutomationForConstruction.titleTag,
   description: businessProcessAutomationForConstruction.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForConstruction.url,
+    canonical: canonicalUrl(businessProcessAutomationForConstruction.url),
   },
   openGraph: {
     title: businessProcessAutomationForConstruction.titleTag,
     description: businessProcessAutomationForConstruction.metaDescription,
-    url: businessProcessAutomationForConstruction.url,
+    url: canonicalUrl(businessProcessAutomationForConstruction.url),
     type: 'website',
   },
   keywords: businessProcessAutomationForConstruction.primaryKeyword,

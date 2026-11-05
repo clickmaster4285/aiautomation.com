@@ -31,6 +31,13 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // Preferred URLs have no trailing slash. /path/ 308s to /path.
+  // Canonical tags must use the non-slash form (see lib/canonical.ts).
+  trailingSlash: false,
+  images: {
+    qualities: [60, 75],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1400, 1920, 2048],
+  },
   // Allow other devices on the LAN to access the dev server
   allowedDevOrigins: ['192.168.88.53'],
   async headers() {
@@ -43,6 +50,54 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Legacy paths from the crawl that 404 or duplicate a live page.
+      { source: '/privacy', destination: '/privacy-policy', permanent: true },
+      { source: '/industries/ecommerce', destination: '/industries/ai-automation-for-ecommerce', permanent: true },
+      { source: '/industries/finance-accounting', destination: '/industries/ai-automation-for-finance-accounting', permanent: true },
+      { source: '/industries/healthcare', destination: '/industries/ai-automation-for-healthcare', permanent: true },
+      { source: '/industries/law-firms', destination: '/industries/ai-automation-for-law-firms', permanent: true },
+      { source: '/industries/professional-services', destination: '/industries/ai-automation-for-professional-services', permanent: true },
+      { source: '/industries/real-estate', destination: '/industries/ai-automation-for-real-estate', permanent: true },
+      { source: '/industries/saas', destination: '/industries/ai-automation-for-saas', permanent: true },
+      {
+        source: '/solutions/bussiness-process-automation',
+        destination: '/solutions/business-process-automation',
+        permanent: true,
+      },
+      {
+        source: '/solutions/bussiness-process-automation/:path*',
+        destination: '/solutions/business-process-automation/:path*',
+        permanent: true,
+      },
+      {
+        source: '/solutions/crm-automation/with-zapier',
+        destination: '/solutions/crm-automation',
+        permanent: true,
+      },
+
+      // Mistyped live routes. The page content already names the preferred URL.
+      {
+        source: '/solutions/document-automation/for-restaurants.ts',
+        destination: '/solutions/document-automation/for-restaurants',
+        permanent: true,
+      },
+      {
+        source: '/solutions/customer-support-automation/for-accounting-firm',
+        destination: '/solutions/customer-support-automation/for-accounting-firms',
+        permanent: true,
+      },
+      // Same case study is registered under three slugs. One URL stays indexable.
+      {
+        source: '/case-studies/clickmasters-ai-lead-response-case-study',
+        destination: '/case-studies/ai-receptionist-lead-response-automation',
+        permanent: true,
+      },
+      {
+        source: '/case-studies/ai-lead-response-revenue-recovery',
+        destination: '/case-studies/ai-receptionist-lead-response-automation',
+        permanent: true,
+      },
+
       // ── Old main category hub pages → most relevant subpage (hubs removed) ──
       {
         source: '/core-automation',

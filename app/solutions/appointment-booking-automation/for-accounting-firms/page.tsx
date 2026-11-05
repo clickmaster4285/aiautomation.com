@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { appointmentBookingAutomationForAccountingFirms } from '@/content/Solutions/appointment-booking-automation-for-accounting-firms';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: appointmentBookingAutomationForAccountingFirms.titleTag,
   description: appointmentBookingAutomationForAccountingFirms.metaDescription,
   alternates: {
-    canonical: appointmentBookingAutomationForAccountingFirms.url,
+    canonical: canonicalUrl(appointmentBookingAutomationForAccountingFirms.url),
   },
   openGraph: {
     title: appointmentBookingAutomationForAccountingFirms.titleTag,
     description: appointmentBookingAutomationForAccountingFirms.metaDescription,
-    url: appointmentBookingAutomationForAccountingFirms.url,
+    url: canonicalUrl(appointmentBookingAutomationForAccountingFirms.url),
     type: 'website',
   },
   keywords: appointmentBookingAutomationForAccountingFirms.primaryKeyword,

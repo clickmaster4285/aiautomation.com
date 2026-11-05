@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const businessProcessAutomationForEcommerce: SolutionData = {
   slug: 'business-process-automation/for-ecommerce',
-  url: '/solutions/business-process-automation/for-ecommerce/',
+  url: '/solutions/business-process-automation/for-ecommerce',
   platform: 'Business Process Automation',
   category: 'business-process-automation',
   title: 'Business Process Automation for E-commerce',

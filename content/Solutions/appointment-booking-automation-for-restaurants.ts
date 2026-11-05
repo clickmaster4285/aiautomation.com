@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const appointmentBookingAutomationForRestaurants: SolutionData = {
   slug: 'appointment-booking-automation/for-restaurants',
-  url: '/solutions/appointment-booking-automation/for-restaurants/',
+  url: '/solutions/appointment-booking-automation/for-restaurants',
   platform: 'Appointment & Booking Automation',
   category: 'appointment-booking-automation',
   title: 'Appointment & Booking Automation for Restaurants & Hospitality',

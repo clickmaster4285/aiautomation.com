@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const marketingAutomationForEducation: SolutionData = {
   slug: 'marketing-automation/for-education',
-  url: '/solutions/marketing-automation/for-education/',
+  url: '/solutions/marketing-automation/for-education',
   platform: 'AI Marketing Automation',
   category: 'marketing-automation',
   title: 'AI Marketing Automation for Education',

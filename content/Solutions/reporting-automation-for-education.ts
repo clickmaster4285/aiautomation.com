@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const reportingAutomationForEducation: SolutionData = {
   slug: 'reporting-automation/for-education',
-  url: '/solutions/reporting-automation/for-education/',
+  url: '/solutions/reporting-automation/for-education',
   platform: 'Reporting Automation',
   category: 'reporting-automation',
   title: 'Reporting Automation for Education',

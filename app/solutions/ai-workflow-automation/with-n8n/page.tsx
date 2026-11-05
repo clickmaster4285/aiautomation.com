@@ -12,17 +12,18 @@ import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutio
 import { StatsSection } from '@/components/solutions/sections/Stats';
 import { ChatbotHeroMockup } from '@/components/solutions/sections/ChatbotHeroMockup';
 import { aiWorkflowAutomationWithN8n } from '@/content/Solutions';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: aiWorkflowAutomationWithN8n.titleTag,
   description: aiWorkflowAutomationWithN8n.metaDescription,
   alternates: {
-    canonical: aiWorkflowAutomationWithN8n.url,
+    canonical: canonicalUrl(aiWorkflowAutomationWithN8n.url),
   },
   openGraph: {
     title: aiWorkflowAutomationWithN8n.titleTag,
     description: aiWorkflowAutomationWithN8n.metaDescription,
-    url: aiWorkflowAutomationWithN8n.url,
+    url: canonicalUrl(aiWorkflowAutomationWithN8n.url),
     type: 'website',
   },
   keywords: aiWorkflowAutomationWithN8n.primaryKeyword,

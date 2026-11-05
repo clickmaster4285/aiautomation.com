@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const crmAutomationForRestaurants: SolutionData = {
   slug: 'crm-automation/for-restaurants',
-  url: '/solutions/crm-automation/for-restaurants/',
+  url: '/solutions/crm-automation/for-restaurants',
   platform: 'CRM Automation',
   category: 'crm-automation',
   title: 'CRM Automation for Restaurants & Hospitality',

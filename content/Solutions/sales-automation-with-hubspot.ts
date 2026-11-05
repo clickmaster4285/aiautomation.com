@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const salesAutomationWithHubspot: SolutionData = {
   slug: 'sales-automation/with-hubspot',
-  url: '/solutions/sales-automation/with-hubspot/',
+  url: '/solutions/sales-automation/with-hubspot',
   platform: 'HubSpot',
   category: 'sales-automation',
   title: 'AI Sales Automation with HubSpot',

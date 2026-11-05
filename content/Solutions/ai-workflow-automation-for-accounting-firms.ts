@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiWorkflowAutomationForAccountingFirms: SolutionData = {
   slug: 'ai-workflow-automation/for-accounting-firms',
-  url: '/solutions/ai-workflow-automation/for-accounting-firms/',
+  url: '/solutions/ai-workflow-automation/for-accounting-firms',
   platform: 'AI Workflow Automation',
   category: 'ai-workflow-automation',
   title: 'AI Workflow Automation for Accounting Firms',

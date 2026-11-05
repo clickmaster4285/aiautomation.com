@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const marketingAutomationForSaaS: SolutionData = {
   slug: 'marketing-automation/for-saas',
-  url: '/solutions/marketing-automation/for-saas/',
+  url: '/solutions/marketing-automation/for-saas',
   platform: 'AI Marketing Automation',
   category: 'marketing-automation',
   title: 'AI Marketing Automation for SaaS Companies',

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const leadGenerationAutomationForLawFirms: SolutionData = {
   slug: 'lead-generation-automation/for-law-firms',
-  url: '/solutions/lead-generation-automation/for-law-firms/',
+  url: '/solutions/lead-generation-automation/for-law-firms',
   platform: 'Lead Generation Automation',
   category: 'lead-generation-automation',
   title: 'Lead Generation Automation for Law Firms',

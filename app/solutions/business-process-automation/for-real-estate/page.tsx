@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { businessProcessAutomationForRealEstate } from '@/content/Solutions/business-process-automation-for-real-estate';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: businessProcessAutomationForRealEstate.titleTag,
   description: businessProcessAutomationForRealEstate.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForRealEstate.url,
+    canonical: canonicalUrl(businessProcessAutomationForRealEstate.url),
   },
   openGraph: {
     title: businessProcessAutomationForRealEstate.titleTag,
     description: businessProcessAutomationForRealEstate.metaDescription,
-    url: businessProcessAutomationForRealEstate.url,
+    url: canonicalUrl(businessProcessAutomationForRealEstate.url),
     type: 'website',
   },
   keywords: businessProcessAutomationForRealEstate.primaryKeyword,

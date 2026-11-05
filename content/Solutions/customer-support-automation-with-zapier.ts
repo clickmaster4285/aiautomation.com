@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const customerSupportAutomationWithZapier: SolutionData = {
   slug: 'customer-support-automation/with-zapier',
-  url: '/solutions/customer-support-automation/with-zapier/',
+  url: '/solutions/customer-support-automation/with-zapier',
   platform: 'Zapier',
   category: 'customer-support-automation',
   title: 'Customer Support Automation with Zapier',

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const businessProcessAutomationForSaaS: SolutionData = {
   slug: 'business-process-automation/for-saas',
-  url: '/solutions/business-process-automation/for-saas/',
+  url: '/solutions/business-process-automation/for-saas',
   platform: 'Business Process Automation',
   category: 'business-process-automation',
   title: 'Business Process Automation for SaaS Companies',

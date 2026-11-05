@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiAgentsForInsurance: SolutionData = {
   slug: 'ai-agents/for-insurance',
-  url: '/solutions/ai-agents/for-insurance/',
+  url: '/solutions/ai-agents/for-insurance',
   platform: 'Custom AI Agents',
   category: 'ai-agents',
   title: 'AI Agent Development for Insurance Agencies',

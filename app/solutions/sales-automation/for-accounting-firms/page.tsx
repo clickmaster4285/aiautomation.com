@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { salesAutomationForAccountingFirms } from '@/content/Solutions/sales-automation-for-accounting-firms';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: salesAutomationForAccountingFirms.titleTag,
   description: salesAutomationForAccountingFirms.metaDescription,
   alternates: {
-    canonical: salesAutomationForAccountingFirms.url,
+    canonical: canonicalUrl(salesAutomationForAccountingFirms.url),
   },
   openGraph: {
     title: salesAutomationForAccountingFirms.titleTag,
     description: salesAutomationForAccountingFirms.metaDescription,
-    url: salesAutomationForAccountingFirms.url,
+    url: canonicalUrl(salesAutomationForAccountingFirms.url),
     type: 'website',
   },
   keywords: salesAutomationForAccountingFirms.primaryKeyword,

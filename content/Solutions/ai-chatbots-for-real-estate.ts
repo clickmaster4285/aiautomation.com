@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiChatbotsForRealEstate: SolutionData = {
   slug: 'ai-chatbots/for-real-estate',
-  url: '/solutions/ai-chatbots/for-real-estate/',
+  url: '/solutions/ai-chatbots/for-real-estate',
   platform: 'AI Chatbots',
   category: 'ai-chatbots',
   title: 'AI Chatbots for Real Estate',

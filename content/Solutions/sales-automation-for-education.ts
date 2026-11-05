@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const salesAutomationForEducation: SolutionData = {
   slug: 'sales-automation/for-education',
-  url: '/solutions/sales-automation/for-education/',
+  url: '/solutions/sales-automation/for-education',
   platform: 'AI Sales Automation',
   category: 'sales-automation',
   title: 'AI Sales Automation for Education',

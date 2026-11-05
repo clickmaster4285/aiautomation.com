@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiWorkflowAutomationForRestaurants: SolutionData = {
   slug: 'ai-workflow-automation/for-restaurants',
-  url: '/solutions/ai-workflow-automation/for-restaurants/',
+  url: '/solutions/ai-workflow-automation/for-restaurants',
   platform: 'AI Workflow Automation',
   category: 'ai-workflow-automation',
   title: 'AI Workflow Automation for Restaurants & Hospitality',

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const leadGenerationAutomationForAccountingFirms: SolutionData = {
   slug: 'lead-generation-automation/for-accounting-firms',
-  url: '/solutions/lead-generation-automation/for-accounting-firms/',
+  url: '/solutions/lead-generation-automation/for-accounting-firms',
   platform: 'Lead Generation Automation',
   category: 'lead-generation-automation',
   title: 'Lead Generation Automation for Accounting Firms',

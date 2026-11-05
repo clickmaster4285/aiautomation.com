@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const salesAutomationForSaaS: SolutionData = {
   slug: 'sales-automation/for-saas',
-  url: '/solutions/sales-automation/for-saas/',
+  url: '/solutions/sales-automation/for-saas',
   platform: 'AI Sales Automation',
   category: 'sales-automation',
   title: 'AI Sales Automation for SaaS Companies',

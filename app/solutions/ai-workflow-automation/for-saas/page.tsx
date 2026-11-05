@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { aiWorkflowAutomationForSaaS } from '@/content/Solutions/ai-workflow-automation-for-saas';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: aiWorkflowAutomationForSaaS.titleTag,
   description: aiWorkflowAutomationForSaaS.metaDescription,
   alternates: {
-    canonical: aiWorkflowAutomationForSaaS.url,
+    canonical: canonicalUrl(aiWorkflowAutomationForSaaS.url),
   },
   openGraph: {
     title: aiWorkflowAutomationForSaaS.titleTag,
     description: aiWorkflowAutomationForSaaS.metaDescription,
-    url: aiWorkflowAutomationForSaaS.url,
+    url: canonicalUrl(aiWorkflowAutomationForSaaS.url),
     type: 'website',
   },
   keywords: aiWorkflowAutomationForSaaS.primaryKeyword,

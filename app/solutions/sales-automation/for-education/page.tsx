@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { salesAutomationForEducation } from '@/content/Solutions/sales-automation-for-education';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: salesAutomationForEducation.titleTag,
   description: salesAutomationForEducation.metaDescription,
   alternates: {
-    canonical: salesAutomationForEducation.url,
+    canonical: canonicalUrl(salesAutomationForEducation.url),
   },
   openGraph: {
     title: salesAutomationForEducation.titleTag,
     description: salesAutomationForEducation.metaDescription,
-    url: salesAutomationForEducation.url,
+    url: canonicalUrl(salesAutomationForEducation.url),
     type: 'website',
   },
   keywords: salesAutomationForEducation.primaryKeyword,

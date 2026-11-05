@@ -1,6 +1,5 @@
 import { getServices } from '../sitemap_utils';
-
-const siteUrl = "https://clickmastersaiautomation.com";
+import { canonicalUrl } from '@/lib/canonical';
 
 export async function GET() {
   const lastModified = new Date().toISOString();
@@ -29,7 +28,7 @@ export async function GET() {
     // Add the main service page
     sitemap += `
   <url>
-    <loc>${siteUrl}${service.path}</loc>
+    <loc>${canonicalUrl(service.path)}</loc>
     <lastmod>${lastModified}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -41,7 +40,7 @@ export async function GET() {
         const cleanSubPage = subPage.replace(/\/index$/, '').replace(/\/page$/, '');
         sitemap += `
   <url>
-    <loc>${siteUrl}${cleanSubPage}</loc>
+    <loc>${canonicalUrl(cleanSubPage)}</loc>
     <lastmod>${lastModified}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

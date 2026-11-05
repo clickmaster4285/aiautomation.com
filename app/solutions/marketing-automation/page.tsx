@@ -1,6 +1,9 @@
 // app/solutions/marketing-automation/page.tsx
 'use client';
 
+import { HubJsonLd } from '@/components/seo/HubJsonLd';
+import { hubSeo } from '@/lib/hub-seo';
+
 import { useState } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -113,7 +116,7 @@ export default function MarketingAutomationPage() {
       text: 'Talk to an Automation Expert',
       href: '/free-automation-audit',
     },
-    image: '/images/marketings.png',
+    image: '/images/marketings.jpg',
     imageWidth: 600,
     imageHeight: 500,
     textSize: 'xlarge' as const,
@@ -278,6 +281,7 @@ export default function MarketingAutomationPage() {
 
   return (
     <PageWrapper>
+      <HubJsonLd hub={hubSeo.marketing} faqs={faqs} />
       {/* ── HERO ────────────────────────────────────────── */}
       <HeroSection
         {...heroData}

@@ -278,7 +278,7 @@ export const homepageData = {
         title: 'Customer Support Automation (E-commerce Brand)',
         description: "We built an AI chatbot integrated with their order and CRM systems, automatically resolving over 60% of incoming support tickets without human intervention.",
         results: [
-          { metric: 'Support tickets resolved automatically', before: '0%', after: 'Over 60%' },
+          { metric: 'Support tickets resolved automatically', before: 'None', after: 'Over 60%' },
           { metric: 'Human intervention needed', before: '100%', after: 'Under 40%' }
         ]
       },

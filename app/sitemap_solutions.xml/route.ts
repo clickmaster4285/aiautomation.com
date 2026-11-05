@@ -1,6 +1,5 @@
 import { getSolutions } from '../sitemap_utils';
-
-const siteUrl = "https://clickmastersaiautomation.com";
+import { canonicalUrl } from '@/lib/canonical';
 
 export async function GET() {
   const lastModified = new Date().toISOString();
@@ -15,7 +14,7 @@ export async function GET() {
   for (const solution of solutions) {
     sitemap += `
   <url>
-    <loc>${siteUrl}/solutions/${solution}</loc>
+    <loc>${canonicalUrl(`/solutions/${solution}`)}</loc>
     <lastmod>${lastModified}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

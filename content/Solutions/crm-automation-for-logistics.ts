@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const crmAutomationForLogistics: SolutionData = {
   slug: 'crm-automation/for-logistics',
-  url: '/solutions/crm-automation/for-logistics/',
+  url: '/solutions/crm-automation/for-logistics',
   platform: 'CRM Automation',
   category: 'crm-automation',
   title: 'CRM Automation for Logistics & Transportation',

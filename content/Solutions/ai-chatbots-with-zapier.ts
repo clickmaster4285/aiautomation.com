@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiChatbotsWithZapier: SolutionData = {
   slug: 'ai-chatbots/with-zapier',
-  url: '/solutions/ai-chatbots/with-zapier/',
+  url: '/solutions/ai-chatbots/with-zapier',
   platform: 'Zapier',
   category: 'ai-chatbots',
   title: 'AI Chatbots with Zapier', // ✅ Added missing title

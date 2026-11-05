@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { documentAutomationForInsurance } from '@/content/Solutions/document-automation-for-insurance';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: documentAutomationForInsurance.titleTag,
   description: documentAutomationForInsurance.metaDescription,
   alternates: {
-    canonical: documentAutomationForInsurance.url,
+    canonical: canonicalUrl(documentAutomationForInsurance.url),
   },
   openGraph: {
     title: documentAutomationForInsurance.titleTag,
     description: documentAutomationForInsurance.metaDescription,
-    url: documentAutomationForInsurance.url,
+    url: canonicalUrl(documentAutomationForInsurance.url),
     type: 'website',
   },
   keywords: documentAutomationForInsurance.primaryKeyword,

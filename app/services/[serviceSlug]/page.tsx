@@ -3,11 +3,10 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { allServices, getServiceBySlug, getTemplate } from '@/content/services/index';
 import CmsRoute, { cmsRouteMetadata } from '@/components/cms/CmsRoute';
+import { canonicalUrl } from '@/lib/canonical';
 
 // ── Only these services are live under /services/<slug> ──
 const activeServiceSlugs = new Set(allServices.map((s) => s.slug));
-
-const SITE_URL = 'https://clickmastersaiautomation.com';
 
 export async function generateStaticParams() {
   return allServices.map((s) => ({ serviceSlug: s.slug }));
@@ -35,7 +34,7 @@ export async function generateMetadata({
     description: service.metaDescription,
     keywords: service.keywords,
     alternates: {
-      canonical: `${SITE_URL}/services/${serviceSlug}`,
+      canonical: canonicalUrl(`/services/${serviceSlug}`),
     },
     openGraph: {
       title: service.title,

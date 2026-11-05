@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const reportingAutomationForRealEstate: SolutionData = {
   slug: 'reporting-automation/for-real-estate',
-  url: '/solutions/reporting-automation/for-real-estate/',
+  url: '/solutions/reporting-automation/for-real-estate',
   platform: 'Reporting Automation',
   category: 'reporting-automation',
   title: 'Reporting Automation for Real Estate',

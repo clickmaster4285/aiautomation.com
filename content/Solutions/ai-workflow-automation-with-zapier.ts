@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiWorkflowAutomationWithZapier: SolutionData = {
   slug: 'ai-workflow-automation/with-zapier',
-  url: '/solutions/ai-workflow-automation/with-zapier/',
+  url: '/solutions/ai-workflow-automation/with-zapier',
   platform: 'Zapier',
   category: 'ai-workflow-automation',
   title: 'AI Workflow Automation with Zapier',

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiChatbotsForAccountingFirms: SolutionData = {
   slug: 'ai-chatbots/for-accounting-firms',
-  url: '/solutions/ai-chatbots/for-accounting-firms/',
+  url: '/solutions/ai-chatbots/for-accounting-firms',
   platform: 'AI Chatbots',
   category: 'ai-chatbots',
   title: 'AI Chatbots for Accounting Firms',

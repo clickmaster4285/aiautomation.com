@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const businessProcessAutomationForLawFirms: SolutionData = {
   slug: 'business-process-automation/for-law-firms',
-  url: '/solutions/business-process-automation/for-law-firms/',
+  url: '/solutions/business-process-automation/for-law-firms',
   platform: 'Business Process Automation',
   category: 'business-process-automation',
   title: 'Business Process Automation for Law Firms',

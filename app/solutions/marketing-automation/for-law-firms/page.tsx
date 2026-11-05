@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { marketingAutomationForLawFirms } from '@/content/Solutions/marketing-automation-for-law-firms';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: marketingAutomationForLawFirms.titleTag,
   description: marketingAutomationForLawFirms.metaDescription,
   alternates: {
-    canonical: marketingAutomationForLawFirms.url,
+    canonical: canonicalUrl(marketingAutomationForLawFirms.url),
   },
   openGraph: {
     title: marketingAutomationForLawFirms.titleTag,
     description: marketingAutomationForLawFirms.metaDescription,
-    url: marketingAutomationForLawFirms.url,
+    url: canonicalUrl(marketingAutomationForLawFirms.url),
     type: 'website',
   },
   keywords: marketingAutomationForLawFirms.primaryKeyword,

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiChatbotsForHealthcare: SolutionData = {
   slug: 'ai-chatbots/for-healthcare',
-  url: '/solutions/ai-chatbots/for-healthcare/',
+  url: '/solutions/ai-chatbots/for-healthcare',
   platform: 'AI Chatbots',
   category: 'ai-chatbots',
   title: 'AI Chatbots for Healthcare',

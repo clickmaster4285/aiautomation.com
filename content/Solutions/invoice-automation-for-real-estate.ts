@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const invoiceAutomationForRealEstate: SolutionData = {
   slug: 'invoice-automation/for-real-estate',
-  url: '/solutions/invoice-automation/for-real-estate/',
+  url: '/solutions/invoice-automation/for-real-estate',
   platform: 'Invoice & Finance Automation',
   category: 'invoice-automation',
   title: 'Invoice & Finance Automation for Real Estate',

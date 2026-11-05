@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const leadGenerationAutomationForManufacturing: SolutionData = {
   slug: 'lead-generation-automation/for-manufacturing',
-  url: '/solutions/lead-generation-automation/for-manufacturing/',
+  url: '/solutions/lead-generation-automation/for-manufacturing',
   platform: 'Lead Generation Automation',
   category: 'lead-generation-automation',
   title: 'Lead Generation Automation for Manufacturing',

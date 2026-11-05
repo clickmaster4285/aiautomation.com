@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const documentAutomationForEducation: SolutionData = {
   slug: 'document-automation/for-education',
-  url: '/solutions/document-automation/for-education/',
+  url: '/solutions/document-automation/for-education',
   platform: 'Document & Data Automation',
   category: 'document-automation',
   title: 'Document & Data Automation for Education',

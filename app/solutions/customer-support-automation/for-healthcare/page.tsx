@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { customerSupportAutomationForHealthcare } from '@/content/Solutions/customer-support-automation-for-healthcare';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: customerSupportAutomationForHealthcare.titleTag,
   description: customerSupportAutomationForHealthcare.metaDescription,
   alternates: {
-    canonical: customerSupportAutomationForHealthcare.url,
+    canonical: canonicalUrl(customerSupportAutomationForHealthcare.url),
   },
   openGraph: {
     title: customerSupportAutomationForHealthcare.titleTag,
     description: customerSupportAutomationForHealthcare.metaDescription,
-    url: customerSupportAutomationForHealthcare.url,
+    url: canonicalUrl(customerSupportAutomationForHealthcare.url),
     type: 'website',
   },
   keywords: customerSupportAutomationForHealthcare.primaryKeyword,

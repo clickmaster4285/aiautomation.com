@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const salesAutomationForEcommerce: SolutionData = {
   slug: 'sales-automation/for-ecommerce',
-  url: '/solutions/sales-automation/for-ecommerce/',
+  url: '/solutions/sales-automation/for-ecommerce',
   platform: 'AI Sales Automation',
   category: 'sales-automation',
   title: 'AI Sales Automation for E-commerce',

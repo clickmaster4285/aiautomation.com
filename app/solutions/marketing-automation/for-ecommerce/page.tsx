@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { marketingAutomationForEcommerce } from '@/content/Solutions/marketing-automation-for-ecommerce';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: marketingAutomationForEcommerce.titleTag,
   description: marketingAutomationForEcommerce.metaDescription,
   alternates: {
-    canonical: marketingAutomationForEcommerce.url,
+    canonical: canonicalUrl(marketingAutomationForEcommerce.url),
   },
   openGraph: {
     title: marketingAutomationForEcommerce.titleTag,
     description: marketingAutomationForEcommerce.metaDescription,
-    url: marketingAutomationForEcommerce.url,
+    url: canonicalUrl(marketingAutomationForEcommerce.url),
     type: 'website',
   },
   keywords: marketingAutomationForEcommerce.primaryKeyword,

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const leadGenerationAutomationForRestaurants: SolutionData = {
   slug: 'lead-generation-automation/for-restaurants',
-  url: '/solutions/lead-generation-automation/for-restaurants/',
+  url: '/solutions/lead-generation-automation/for-restaurants',
   platform: 'Lead Generation Automation',
   category: 'lead-generation-automation',
   title: 'Lead Generation Automation for Restaurants & Hospitality',

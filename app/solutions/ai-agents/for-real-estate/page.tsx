@@ -1,8 +1,8 @@
-// app/solutions/customer-support-automation/for-accounting-firms/page.tsx
+// app/solutions/ai-agents/for-real-estate/page.tsx
 import { Metadata } from 'next';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { HeroSection } from '@/components/solutions/sections/Hero';
-import {
+import { 
   WhySection,
   ProblemsSection,
   AutomationSection,
@@ -16,26 +16,27 @@ import {
 import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
-import { customerSupportAutomationForAccountingFirms } from '@/content/Solutions/customer-support-automation-for-accounting-firms';
+import { aiAgentsForRealEstate } from '@/content/Solutions';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
-  title: customerSupportAutomationForAccountingFirms.titleTag,
-  description: customerSupportAutomationForAccountingFirms.metaDescription,
+  title: aiAgentsForRealEstate.titleTag,
+  description: aiAgentsForRealEstate.metaDescription,
   alternates: {
-    canonical: customerSupportAutomationForAccountingFirms.url,
+    canonical: canonicalUrl(aiAgentsForRealEstate.url),
   },
   openGraph: {
-    title: customerSupportAutomationForAccountingFirms.titleTag,
-    description: customerSupportAutomationForAccountingFirms.metaDescription,
-    url: customerSupportAutomationForAccountingFirms.url,
+    title: aiAgentsForRealEstate.titleTag,
+    description: aiAgentsForRealEstate.metaDescription,
+    url: canonicalUrl(aiAgentsForRealEstate.url),
     type: 'website',
   },
-  keywords: customerSupportAutomationForAccountingFirms.primaryKeyword,
+  keywords: aiAgentsForRealEstate.primaryKeyword,
 };
 
-export default function ForAccountingFirmsPage() {
-  const content = customerSupportAutomationForAccountingFirms;
+export default function ForRealEstatePage() {
+  const content = aiAgentsForRealEstate;
 
   return (
     <PageWrapper>
@@ -45,13 +46,13 @@ export default function ForAccountingFirmsPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Customer Support Automation for Accounting Firms',
+            name: 'AI Agent Development for Real Estate',
             description: content.metaDescription,
             provider: {
               '@type': 'Organization',
               name: 'Clickmasters',
             },
-            serviceType: 'Customer Support Automation Development',
+            serviceType: 'AI Agent Development',
             areaServed: 'Global',
           }),
         }}
@@ -67,41 +68,41 @@ export default function ForAccountingFirmsPage() {
         }}
         secondaryCta={{
           text: 'Learn More',
-          href: '#why-accounting-firms-need-customer-support-automation',
+          href: '#why-real-estate-need-ai-agent-development',
         }}
         visual={
-          <AutomationHeroMockup
-            industry="Accounting"
-            triggerLabel="New Client Inquiry"
-            actionLabels={['Respond to Inquiry', 'Schedule Meeting', 'Provide Quote']}
-            metricValue="500"
-            metricLabel="new client inquiries handled automatically each month"
-            submetric="85% reduction in response time"
-            platform="Customer Support + Accounting Software"
-            accent="#8B5CF6"
-          />
-        }
+                              <AutomationHeroMockup
+                                industry="Real Estate"
+                                triggerLabel="New Lead Inquiry"
+                                actionLabels={['Send Property Details', 'Schedule Tour', 'Provide Market Insights']}
+                                metricValue="1,800"
+                                metricLabel="leads engaged automatically this week"
+                                submetric="90% improved response time"
+                                platform="CRM + Marketing Automation"
+                                accent="#F97316"
+                              />
+                            }
         breadcrumb={[
           { label: 'Home', href: '/' },
           { label: 'Solutions', href: '/solutions' },
-          { label: 'Customer Support Automation', href: '/solutions/customer-support-automation' },
-          { label: 'Accounting Firms', href: content.url },
+          { label: 'AI Agents', href: '/solutions/ai-agents' },
+          { label: 'Real Estate', href: content.url },
         ]}
       />
 
       <WhySection
-        title="Why Accounting Firms Need Customer Support Automation"
-        content={[content.sections['Why Accounting Firms Need Customer Support Automation']]}
+        title="Why Real Estate Need AI Agent Development"
+        content={[content.sections['Why Real Estate Need AI Agent Development']]}
       />
 
       <ProblemsSection
-        title="The Problems This Solves for Accounting Firms"
-        content={[content.sections['The Problems This Solves for Accounting Firms']]}
+        title="The Problems This Solves for Real Estate"
+        content={[content.sections['The Problems This Solves for Real Estate']]}
       />
 
       <AutomationSection
-        title="What We Automate for Accounting Firms"
-        content={[content.sections['What We Automate for Accounting Firms']]}
+        title="What We Automate for Real Estate"
+        content={[content.sections['What We Automate for Real Estate']]}
       />
 
       <StartSection
@@ -120,8 +121,8 @@ export default function ForAccountingFirmsPage() {
       />
 
       <RealitiesSection
-        title="Built for Accounting Firms' Realities"
-        content={[content.sections['Built for Accounting Firms\' Realities']]}
+        title="Built for Real Estate's Realities"
+        content={[content.sections['Built for Real Estate\'s Realities']]}
       />
 
       <ReturnSection
@@ -137,7 +138,7 @@ export default function ForAccountingFirmsPage() {
 
       <FAQSection
         title="Frequently Asked Questions"
-        subtitle="Common questions about customer support automation for accounting firms"
+        subtitle="Common questions about AI agents for real estate"
         faqs={content.faqQuestions}
       />
 
@@ -149,7 +150,7 @@ export default function ForAccountingFirmsPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where support automation pays off for accounting firms."
+        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where AI agent pays off for real estate."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

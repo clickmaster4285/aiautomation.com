@@ -1,4 +1,4 @@
-// app/solutions/ai-voice-agents/for-insurance/page.tsx
+// app/solutions/ai-voice-agents/for-law-firms/page.tsx
 import { Metadata } from 'next';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { HeroSection } from '@/components/solutions/sections/Hero';
@@ -16,25 +16,27 @@ import {
 import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
-import { aiVoiceAgentsForInsurance } from '@/content/Solutions';
+import { aiVoiceAgentsForLawFirms } from '@/content/Solutions/ai-voice-agents-for-law-firms';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
+
 export const metadata: Metadata = {
-  title: aiVoiceAgentsForInsurance.titleTag,
-  description: aiVoiceAgentsForInsurance.metaDescription,
+  title: aiVoiceAgentsForLawFirms.titleTag,
+  description: aiVoiceAgentsForLawFirms.metaDescription,
   alternates: {
-    canonical: aiVoiceAgentsForInsurance.url,
+    canonical: canonicalUrl(aiVoiceAgentsForLawFirms.url),
   },
   openGraph: {
-    title: aiVoiceAgentsForInsurance.titleTag,
-    description: aiVoiceAgentsForInsurance.metaDescription,
-    url: aiVoiceAgentsForInsurance.url,
+    title: aiVoiceAgentsForLawFirms.titleTag,
+    description: aiVoiceAgentsForLawFirms.metaDescription,
+    url: canonicalUrl(aiVoiceAgentsForLawFirms.url),
     type: 'website',
   },
-  keywords: aiVoiceAgentsForInsurance.primaryKeyword,
+  keywords: aiVoiceAgentsForLawFirms.primaryKeyword,
 };
 
-export default function ForInsurancePage() {
-  const content = aiVoiceAgentsForInsurance;
+export default function ForLawFirmsPage() {
+  const content = aiVoiceAgentsForLawFirms;
 
   return (
     <PageWrapper>
@@ -44,7 +46,7 @@ export default function ForInsurancePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'AI Voice Agents for Insurance Agencies',
+            name: 'AI Voice Agents for Law Firms',
             description: content.metaDescription,
             provider: {
               '@type': 'Organization',
@@ -66,41 +68,41 @@ export default function ForInsurancePage() {
         }}
         secondaryCta={{
           text: 'Learn More',
-          href: '#why-insurance-agencies-need-ai-voice-agents',
+          href: '#why-law-firms-need-ai-voice-agents',
         }}
         visual={
-                              <AutomationHeroMockup
-                                industry="Law Firms"
-                                triggerLabel="New Client Inquiry"
-                                actionLabels={['Provide Legal Information', 'Schedule Consultation', 'Submit Case Details']}
-                                metricValue="1,500"
-                                metricLabel="client inquiries handled automatically this week"
-                                submetric="90% improved response time"
-                                platform="CRM + Legal Platform"
-                                accent="#F97316"
-                              />
-                            }
+          <AutomationHeroMockup
+            industry="Law Firms"
+            triggerLabel="New Client Inquiry"
+            actionLabels={['Provide Legal Information', 'Schedule Consultation', 'Submit Case Details']}
+            metricValue="1,500"
+            metricLabel="client inquiries handled automatically this week"
+            submetric="90% improved response time"
+            platform="CRM + Legal Platform"
+            accent="#F97316"
+          />
+        }
         breadcrumb={[
           { label: 'Home', href: '/' },
           { label: 'Solutions', href: '/solutions' },
           { label: 'AI Voice Agents', href: '/solutions/ai-voice-agents' },
-          { label: 'Insurance', href: content.url },
+          { label: 'Law Firms', href: content.url },
         ]}
       />
 
       <WhySection
-        title="Why Insurance Agencies Need AI Voice Agents"
-        content={[content.sections['Why Insurance Agencies Need AI Voice Agents']]}
+        title="Why Law Firms Need AI Voice Agents"
+        content={[content.sections['Why Law Firms Need AI Voice Agents']]}
       />
 
       <ProblemsSection
-        title="The Problems This Solves for Insurance Agencies"
-        content={[content.sections['The Problems This Solves for Insurance Agencies']]}
+        title="The Problems This Solves for Law Firms"
+        content={[content.sections['The Problems This Solves for Law Firms']]}
       />
 
       <AutomationSection
-        title="What We Automate for Insurance Agencies"
-        content={[content.sections['What We Automate for Insurance Agencies']]}
+        title="What We Automate for Law Firms"
+        content={[content.sections['What We Automate for Law Firms']]}
       />
 
       <StartSection
@@ -119,8 +121,8 @@ export default function ForInsurancePage() {
       />
 
       <RealitiesSection
-        title="Built for Insurance Agencies' Realities"
-        content={[content.sections['Built for Insurance Agencies\' Realities']]}
+        title="Built for Law Firms' Realities"
+        content={[content.sections['Built for Law Firms\' Realities']]}
       />
 
       <ReturnSection
@@ -136,7 +138,7 @@ export default function ForInsurancePage() {
 
       <FAQSection
         title="Frequently Asked Questions"
-        subtitle="Common questions about AI voice agents for insurance agencies"
+        subtitle="Common questions about AI voice agents for law firms"
         faqs={content.faqQuestions}
       />
 
@@ -148,7 +150,7 @@ export default function ForInsurancePage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where voice agent pays off for insurance agencies."
+        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where voice agent pays off for law firms."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

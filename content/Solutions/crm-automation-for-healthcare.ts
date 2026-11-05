@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const crmAutomationForHealthcare: SolutionData = {
   slug: 'crm-automation/for-healthcare',
-  url: '/solutions/crm-automation/for-healthcare/',
+  url: '/solutions/crm-automation/for-healthcare',
   platform: 'CRM Automation',
   category: 'crm-automation',
   title: 'CRM Automation for Healthcare',

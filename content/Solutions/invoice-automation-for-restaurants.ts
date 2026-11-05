@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const invoiceAutomationForRestaurants: SolutionData = {
   slug: 'invoice-automation/for-restaurants',
-  url: '/solutions/invoice-automation/for-restaurants/',
+  url: '/solutions/invoice-automation/for-restaurants',
   platform: 'Invoice & Finance Automation',
   category: 'invoice-automation',
   title: 'Invoice & Finance Automation for Restaurants & Hospitality',

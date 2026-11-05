@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiVoiceAgentsForManufacturing: SolutionData = {
   slug: 'ai-voice-agents/for-manufacturing',
-  url: '/solutions/ai-voice-agents/for-manufacturing/',
+  url: '/solutions/ai-voice-agents/for-manufacturing',
   platform: 'AI Voice Agents',
   category: 'ai-voice-agents',
   title: 'AI Voice Agents for Manufacturing',

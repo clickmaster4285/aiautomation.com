@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { leadGenerationAutomationForAccountingFirms } from '@/content/Solutions/lead-generation-automation-for-accounting-firms';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: leadGenerationAutomationForAccountingFirms.titleTag,
   description: leadGenerationAutomationForAccountingFirms.metaDescription,
   alternates: {
-    canonical: leadGenerationAutomationForAccountingFirms.url,
+    canonical: canonicalUrl(leadGenerationAutomationForAccountingFirms.url),
   },
   openGraph: {
     title: leadGenerationAutomationForAccountingFirms.titleTag,
     description: leadGenerationAutomationForAccountingFirms.metaDescription,
-    url: leadGenerationAutomationForAccountingFirms.url,
+    url: canonicalUrl(leadGenerationAutomationForAccountingFirms.url),
     type: 'website',
   },
   keywords: leadGenerationAutomationForAccountingFirms.primaryKeyword,

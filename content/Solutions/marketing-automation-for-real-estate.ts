@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const marketingAutomationForRealEstate: SolutionData = {
   slug: 'marketing-automation/for-real-estate',
-  url: '/solutions/marketing-automation/for-real-estate/',
+  url: '/solutions/marketing-automation/for-real-estate',
   platform: 'AI Marketing Automation',
   category: 'marketing-automation',
   title: 'AI Marketing Automation for Real Estate',

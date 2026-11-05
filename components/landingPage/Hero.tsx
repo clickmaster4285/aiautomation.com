@@ -119,10 +119,12 @@ export default function Hero({
             className="relative md:absolute md:right-0 md:top-0 md:w-[42%] md:h-full flex items-end justify-center md:justify-end pointer-events-none z-0 mt-4 md:mt-0"
           >
             <Image
-              src="/images/hero.png"
+              src="/images/hero.jpg"
               alt="AI robot"
-              width={1024}
-              height={1280}
+              width={800}
+              height={800}
+              sizes="(min-width: 768px) 400px, 80vw"
+              quality={60}
               priority
               className="w-full max-w-sm md:max-w-none object-contain max-h-[50vh] md:max-h-full"
             />

@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { aiChatbotsForHealthcare } from '@/content/Solutions';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: aiChatbotsForHealthcare.titleTag,
   description: aiChatbotsForHealthcare.metaDescription,
   alternates: {
-    canonical: aiChatbotsForHealthcare.url,
+    canonical: canonicalUrl(aiChatbotsForHealthcare.url),
   },
   openGraph: {
     title: aiChatbotsForHealthcare.titleTag,
     description: aiChatbotsForHealthcare.metaDescription,
-    url: aiChatbotsForHealthcare.url,
+    url: canonicalUrl(aiChatbotsForHealthcare.url),
     type: 'website',
   },
   keywords: aiChatbotsForHealthcare.primaryKeyword,

@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { businessProcessAutomationForLogistics } from '@/content/Solutions/business-process-automation-for-logistics';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: businessProcessAutomationForLogistics.titleTag,
   description: businessProcessAutomationForLogistics.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForLogistics.url,
+    canonical: canonicalUrl(businessProcessAutomationForLogistics.url),
   },
   openGraph: {
     title: businessProcessAutomationForLogistics.titleTag,
     description: businessProcessAutomationForLogistics.metaDescription,
-    url: businessProcessAutomationForLogistics.url,
+    url: canonicalUrl(businessProcessAutomationForLogistics.url),
     type: 'website',
   },
   keywords: businessProcessAutomationForLogistics.primaryKeyword,

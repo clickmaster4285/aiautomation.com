@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { aiWorkflowAutomationForRestaurants } from '@/content/Solutions/ai-workflow-automation-for-restaurants';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: aiWorkflowAutomationForRestaurants.titleTag,
   description: aiWorkflowAutomationForRestaurants.metaDescription,
   alternates: {
-    canonical: aiWorkflowAutomationForRestaurants.url,
+    canonical: canonicalUrl(aiWorkflowAutomationForRestaurants.url),
   },
   openGraph: {
     title: aiWorkflowAutomationForRestaurants.titleTag,
     description: aiWorkflowAutomationForRestaurants.metaDescription,
-    url: aiWorkflowAutomationForRestaurants.url,
+    url: canonicalUrl(aiWorkflowAutomationForRestaurants.url),
     type: 'website',
   },
   keywords: aiWorkflowAutomationForRestaurants.primaryKeyword,

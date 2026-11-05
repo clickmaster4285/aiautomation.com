@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const invoiceAutomationForHealthcare: SolutionData = {
   slug: 'invoice-automation/for-healthcare',
-  url: '/solutions/invoice-automation/for-healthcare/',
+  url: '/solutions/invoice-automation/for-healthcare',
   platform: 'Invoice & Finance Automation',
   category: 'invoice-automation',
   title: 'Invoice & Finance Automation for Healthcare',

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiWorkflowAutomationWithN8n: SolutionData = {
   slug: 'ai-workflow-automation/with-n8n',
-  url: '/solutions/ai-workflow-automation/with-n8n/',
+  url: '/solutions/ai-workflow-automation/with-n8n',
   platform: 'n8n',
   category: 'ai-workflow-automation',
   title: 'AI Workflow Automation with n8n',

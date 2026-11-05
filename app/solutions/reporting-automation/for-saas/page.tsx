@@ -17,17 +17,18 @@ import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { reportingAutomationForSaaS } from '@/content/Solutions/reporting-automation-for-saas';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: reportingAutomationForSaaS.titleTag,
   description: reportingAutomationForSaaS.metaDescription,
   alternates: {
-    canonical: reportingAutomationForSaaS.url,
+    canonical: canonicalUrl(reportingAutomationForSaaS.url),
   },
   openGraph: {
     title: reportingAutomationForSaaS.titleTag,
     description: reportingAutomationForSaaS.metaDescription,
-    url: reportingAutomationForSaaS.url,
+    url: canonicalUrl(reportingAutomationForSaaS.url),
     type: 'website',
   },
   keywords: reportingAutomationForSaaS.primaryKeyword,

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const businessProcessAutomationForInsurance: SolutionData = {
   slug: 'business-process-automation/for-insurance',
-  url: '/solutions/business-process-automation/for-insurance/',
+  url: '/solutions/business-process-automation/for-insurance',
   platform: 'Business Process Automation',
   category: 'business-process-automation',
   title: 'Business Process Automation for Insurance Agencies',

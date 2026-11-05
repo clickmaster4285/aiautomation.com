@@ -1,8 +1,8 @@
-// app/solutions/ai-agents/for-real-estate/page.tsx
+// app/solutions/document-automation/for-restaurants/page.tsx
 import { Metadata } from 'next';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { HeroSection } from '@/components/solutions/sections/Hero';
-import { 
+import {
   WhySection,
   ProblemsSection,
   AutomationSection,
@@ -16,26 +16,27 @@ import {
 import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
-import { aiAgentsForRealEstate } from '@/content/Solutions';
+import { documentAutomationForRestaurants } from '@/content/Solutions/document-automation-for-restaurants';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
-  title: aiAgentsForRealEstate.titleTag,
-  description: aiAgentsForRealEstate.metaDescription,
+  title: documentAutomationForRestaurants.titleTag,
+  description: documentAutomationForRestaurants.metaDescription,
   alternates: {
-    canonical: aiAgentsForRealEstate.url,
+    canonical: canonicalUrl(documentAutomationForRestaurants.url),
   },
   openGraph: {
-    title: aiAgentsForRealEstate.titleTag,
-    description: aiAgentsForRealEstate.metaDescription,
-    url: aiAgentsForRealEstate.url,
+    title: documentAutomationForRestaurants.titleTag,
+    description: documentAutomationForRestaurants.metaDescription,
+    url: canonicalUrl(documentAutomationForRestaurants.url),
     type: 'website',
   },
-  keywords: aiAgentsForRealEstate.primaryKeyword,
+  keywords: documentAutomationForRestaurants.primaryKeyword,
 };
 
-export default function ForRealEstatePage() {
-  const content = aiAgentsForRealEstate;
+export default function ForRestaurantsPage() {
+  const content = documentAutomationForRestaurants;
 
   return (
     <PageWrapper>
@@ -45,13 +46,13 @@ export default function ForRealEstatePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'AI Agent Development for Real Estate',
+            name: 'Document & Data Automation for Restaurants & Hospitality',
             description: content.metaDescription,
             provider: {
               '@type': 'Organization',
               name: 'Clickmasters',
             },
-            serviceType: 'AI Agent Development',
+            serviceType: 'Document & Data Automation Development',
             areaServed: 'Global',
           }),
         }}
@@ -67,41 +68,41 @@ export default function ForRealEstatePage() {
         }}
         secondaryCta={{
           text: 'Learn More',
-          href: '#why-real-estate-need-ai-agent-development',
+          href: '#why-restaurants-hospitality-need-document-data-automation',
         }}
         visual={
-                              <AutomationHeroMockup
-                                industry="Real Estate"
-                                triggerLabel="New Lead Inquiry"
-                                actionLabels={['Send Property Details', 'Schedule Tour', 'Provide Market Insights']}
-                                metricValue="1,800"
-                                metricLabel="leads engaged automatically this week"
-                                submetric="90% improved response time"
-                                platform="CRM + Marketing Automation"
-                                accent="#F97316"
-                              />
-                            }
+          <AutomationHeroMockup
+            industry="Restaurants & Hospitality"
+            triggerLabel="New Document Request"
+            actionLabels={['Generate Reports', 'Create Menu Documents', 'Manage Customer Data']}
+            metricValue="2000"
+            metricLabel="documents processed automatically each month"
+            submetric="80% reduction in processing time"
+            platform="Document & Data Automation + Restaurant Management System"
+            accent="#10B981"
+          />
+        }
         breadcrumb={[
           { label: 'Home', href: '/' },
           { label: 'Solutions', href: '/solutions' },
-          { label: 'AI Agents', href: '/solutions/ai-agents' },
-          { label: 'Real Estate', href: content.url },
+          { label: 'Document & Data Automation', href: '/solutions/document-automation' },
+          { label: 'Restaurants & Hospitality', href: content.url },
         ]}
       />
 
       <WhySection
-        title="Why Real Estate Need AI Agent Development"
-        content={[content.sections['Why Real Estate Need AI Agent Development']]}
+        title="Why Restaurants & Hospitality Need Document & Data Automation"
+        content={[content.sections['Why Restaurants & Hospitality Need Document & Data Automation']]}
       />
 
       <ProblemsSection
-        title="The Problems This Solves for Real Estate"
-        content={[content.sections['The Problems This Solves for Real Estate']]}
+        title="The Problems This Solves for Restaurants & Hospitality"
+        content={[content.sections['The Problems This Solves for Restaurants & Hospitality']]}
       />
 
       <AutomationSection
-        title="What We Automate for Real Estate"
-        content={[content.sections['What We Automate for Real Estate']]}
+        title="What We Automate for Restaurants & Hospitality"
+        content={[content.sections['What We Automate for Restaurants & Hospitality']]}
       />
 
       <StartSection
@@ -120,8 +121,8 @@ export default function ForRealEstatePage() {
       />
 
       <RealitiesSection
-        title="Built for Real Estate's Realities"
-        content={[content.sections['Built for Real Estate\'s Realities']]}
+        title="Built for Restaurants & Hospitality's Realities"
+        content={[content.sections['Built for Restaurants & Hospitality\'s Realities']]}
       />
 
       <ReturnSection
@@ -137,7 +138,7 @@ export default function ForRealEstatePage() {
 
       <FAQSection
         title="Frequently Asked Questions"
-        subtitle="Common questions about AI agents for real estate"
+        subtitle="Common questions about document automation for restaurants & hospitality"
         faqs={content.faqQuestions}
       />
 
@@ -149,7 +150,7 @@ export default function ForRealEstatePage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where AI agent pays off for real estate."
+        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where document automation pays off for restaurants & hospitality."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

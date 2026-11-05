@@ -12,17 +12,18 @@ import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutio
 import { StatsSection } from '@/components/solutions/sections/Stats';
 import { ChatbotHeroMockup } from '@/components/solutions/sections/ChatbotHeroMockup';
 import { crmAutomationWithAirtable } from '@/content/Solutions';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: crmAutomationWithAirtable.titleTag,
   description: crmAutomationWithAirtable.metaDescription,
   alternates: {
-    canonical: crmAutomationWithAirtable.url,
+    canonical: canonicalUrl(crmAutomationWithAirtable.url),
   },
   openGraph: {
     title: crmAutomationWithAirtable.titleTag,
     description: crmAutomationWithAirtable.metaDescription,
-    url: crmAutomationWithAirtable.url,
+    url: canonicalUrl(crmAutomationWithAirtable.url),
     type: 'website',
   },
   keywords: crmAutomationWithAirtable.primaryKeyword,

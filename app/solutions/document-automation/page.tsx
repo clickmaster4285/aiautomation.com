@@ -1,6 +1,9 @@
 // app/solutions/document-automation/page.tsx
 'use client';
 
+import { HubJsonLd } from '@/components/seo/HubJsonLd';
+import { hubSeo } from '@/lib/hub-seo';
+
 import { useState } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -294,6 +297,7 @@ const heroData = {
 
   return (
     <PageWrapper>
+      <HubJsonLd hub={hubSeo.document} faqs={faqs} />
       {/* ── HERO ────────────────────────────────────────── */}
       <HeroSection
         {...heroData}

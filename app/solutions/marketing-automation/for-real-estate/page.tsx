@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { marketingAutomationForRealEstate } from '@/content/Solutions/marketing-automation-for-real-estate';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: marketingAutomationForRealEstate.titleTag,
   description: marketingAutomationForRealEstate.metaDescription,
   alternates: {
-    canonical: marketingAutomationForRealEstate.url,
+    canonical: canonicalUrl(marketingAutomationForRealEstate.url),
   },
   openGraph: {
     title: marketingAutomationForRealEstate.titleTag,
     description: marketingAutomationForRealEstate.metaDescription,
-    url: marketingAutomationForRealEstate.url,
+    url: canonicalUrl(marketingAutomationForRealEstate.url),
     type: 'website',
   },
   keywords: marketingAutomationForRealEstate.primaryKeyword,

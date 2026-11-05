@@ -36,7 +36,7 @@ export default function CmsBentoSection({
                 <>
                   <Image
                     src={item.image}
-                    alt=""
+                    alt={item.title}
                     fill
                     unoptimized
                     sizes="(min-width: 768px) 50vw, 100vw"
