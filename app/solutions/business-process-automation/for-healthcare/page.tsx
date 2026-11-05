@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { businessProcessAutomationForHealthcare } from '@/content/Solutions/business-process-automation-for-healthcare';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: businessProcessAutomationForHealthcare.titleTag,
   description: businessProcessAutomationForHealthcare.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForHealthcare.url,
+    canonical: canonicalUrl(businessProcessAutomationForHealthcare.url),
   },
   openGraph: {
     title: businessProcessAutomationForHealthcare.titleTag,
     description: businessProcessAutomationForHealthcare.metaDescription,
-    url: businessProcessAutomationForHealthcare.url,
+    url: canonicalUrl(businessProcessAutomationForHealthcare.url),
     type: 'website',
   },
   keywords: businessProcessAutomationForHealthcare.primaryKeyword,

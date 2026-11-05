@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { aiAgentsForManufacturing } from '@/content/Solutions';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: aiAgentsForManufacturing.titleTag,
   description: aiAgentsForManufacturing.metaDescription,
   alternates: {
-    canonical: aiAgentsForManufacturing.url,
+    canonical: canonicalUrl(aiAgentsForManufacturing.url),
   },
   openGraph: {
     title: aiAgentsForManufacturing.titleTag,
     description: aiAgentsForManufacturing.metaDescription,
-    url: aiAgentsForManufacturing.url,
+    url: canonicalUrl(aiAgentsForManufacturing.url),
     type: 'website',
   },
   keywords: aiAgentsForManufacturing.primaryKeyword,

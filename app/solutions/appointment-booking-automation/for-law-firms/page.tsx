@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { appointmentBookingAutomationForLawFirms } from '@/content/Solutions/appointment-booking-automation-for-law-firms';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: appointmentBookingAutomationForLawFirms.titleTag,
   description: appointmentBookingAutomationForLawFirms.metaDescription,
   alternates: {
-    canonical: appointmentBookingAutomationForLawFirms.url,
+    canonical: canonicalUrl(appointmentBookingAutomationForLawFirms.url),
   },
   openGraph: {
     title: appointmentBookingAutomationForLawFirms.titleTag,
     description: appointmentBookingAutomationForLawFirms.metaDescription,
-    url: appointmentBookingAutomationForLawFirms.url,
+    url: canonicalUrl(appointmentBookingAutomationForLawFirms.url),
     type: 'website',
   },
   keywords: appointmentBookingAutomationForLawFirms.primaryKeyword,

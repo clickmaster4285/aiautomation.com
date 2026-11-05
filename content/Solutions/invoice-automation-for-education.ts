@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const invoiceAutomationForEducation: SolutionData = {
   slug: 'invoice-automation/for-education',
-  url: '/solutions/invoice-automation/for-education/',
+  url: '/solutions/invoice-automation/for-education',
   platform: 'Invoice & Finance Automation',
   category: 'invoice-automation',
   title: 'Invoice & Finance Automation for Education',

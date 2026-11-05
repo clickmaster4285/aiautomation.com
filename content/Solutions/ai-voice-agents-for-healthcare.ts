@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiVoiceAgentsForHealthcare: SolutionData = {
   slug: 'ai-voice-agents/for-healthcare',
-  url: '/solutions/ai-voice-agents/for-healthcare/',
+  url: '/solutions/ai-voice-agents/for-healthcare',
   platform: 'AI Voice Agents',
   category: 'ai-voice-agents',
   title: 'AI Voice Agents for Healthcare',

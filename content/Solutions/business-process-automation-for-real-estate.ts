@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const businessProcessAutomationForRealEstate: SolutionData = {
   slug: 'business-process-automation/for-real-estate',
-  url: '/solutions/business-process-automation/for-real-estate/',
+  url: '/solutions/business-process-automation/for-real-estate',
   platform: 'Business Process Automation',
   category: 'business-process-automation',
   title: 'Business Process Automation for Real Estate',

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const marketingAutomationForManufacturing: SolutionData = {
   slug: 'marketing-automation/for-manufacturing',
-  url: '/solutions/marketing-automation/for-manufacturing/',
+  url: '/solutions/marketing-automation/for-manufacturing',
   platform: 'AI Marketing Automation',
   category: 'marketing-automation',
   title: 'AI Marketing Automation for Manufacturing',

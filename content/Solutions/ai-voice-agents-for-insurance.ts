@@ -4,7 +4,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiVoiceAgentsForInsurance: SolutionData = {
   slug: 'ai-voice-agents/for-insurance',
-  url: '/solutions/ai-voice-agents/for-insurance/',
+  url: '/solutions/ai-voice-agents/for-insurance',
   platform: 'AI Voice Agents',
   category: 'ai-voice-agents',
   title: 'AI Voice Agents for Insurance Agencies',

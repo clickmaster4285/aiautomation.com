@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const crmAutomationWithHubspot: SolutionData = {
   slug: 'crm-automation/with-hubspot',
-  url: '/solutions/crm-automation/with-hubspot/',
+  url: '/solutions/crm-automation/with-hubspot',
   platform: 'HubSpot',
   category: 'crm-automation',
   title: 'CRM Automation with HubSpot',

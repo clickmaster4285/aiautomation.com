@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const appointmentBookingAutomationForEducation: SolutionData = {
   slug: 'appointment-booking-automation/for-education',
-  url: '/solutions/appointment-booking-automation/for-education/',
+  url: '/solutions/appointment-booking-automation/for-education',
   platform: 'Appointment & Booking Automation',
   category: 'appointment-booking-automation',
   title: 'Appointment & Booking Automation for Education',

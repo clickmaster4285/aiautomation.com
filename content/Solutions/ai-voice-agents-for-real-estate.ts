@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiVoiceAgentsForRealEstate: SolutionData = {
   slug: 'ai-voice-agents/for-real-estate',
-  url: '/solutions/ai-voice-agents/for-real-estate/',
+  url: '/solutions/ai-voice-agents/for-real-estate',
   platform: 'AI Voice Agents',
   category: 'ai-voice-agents',
   title: 'AI Voice Agents for Real Estate',

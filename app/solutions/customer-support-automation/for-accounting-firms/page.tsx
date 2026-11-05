@@ -1,4 +1,4 @@
-// app/solutions/document-automation/for-restaurants/page.tsx
+// app/solutions/customer-support-automation/for-accounting-firms/page.tsx
 import { Metadata } from 'next';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { HeroSection } from '@/components/solutions/sections/Hero';
@@ -16,26 +16,27 @@ import {
 import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
-import { documentAutomationForRestaurants } from '@/content/Solutions/document-automation-for-restaurants';
+import { customerSupportAutomationForAccountingFirms } from '@/content/Solutions/customer-support-automation-for-accounting-firms';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
-  title: documentAutomationForRestaurants.titleTag,
-  description: documentAutomationForRestaurants.metaDescription,
+  title: customerSupportAutomationForAccountingFirms.titleTag,
+  description: customerSupportAutomationForAccountingFirms.metaDescription,
   alternates: {
-    canonical: documentAutomationForRestaurants.url,
+    canonical: canonicalUrl(customerSupportAutomationForAccountingFirms.url),
   },
   openGraph: {
-    title: documentAutomationForRestaurants.titleTag,
-    description: documentAutomationForRestaurants.metaDescription,
-    url: documentAutomationForRestaurants.url,
+    title: customerSupportAutomationForAccountingFirms.titleTag,
+    description: customerSupportAutomationForAccountingFirms.metaDescription,
+    url: canonicalUrl(customerSupportAutomationForAccountingFirms.url),
     type: 'website',
   },
-  keywords: documentAutomationForRestaurants.primaryKeyword,
+  keywords: customerSupportAutomationForAccountingFirms.primaryKeyword,
 };
 
-export default function ForRestaurantsPage() {
-  const content = documentAutomationForRestaurants;
+export default function ForAccountingFirmsPage() {
+  const content = customerSupportAutomationForAccountingFirms;
 
   return (
     <PageWrapper>
@@ -45,13 +46,13 @@ export default function ForRestaurantsPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Document & Data Automation for Restaurants & Hospitality',
+            name: 'Customer Support Automation for Accounting Firms',
             description: content.metaDescription,
             provider: {
               '@type': 'Organization',
               name: 'Clickmasters',
             },
-            serviceType: 'Document & Data Automation Development',
+            serviceType: 'Customer Support Automation Development',
             areaServed: 'Global',
           }),
         }}
@@ -67,41 +68,41 @@ export default function ForRestaurantsPage() {
         }}
         secondaryCta={{
           text: 'Learn More',
-          href: '#why-restaurants-hospitality-need-document-data-automation',
+          href: '#why-accounting-firms-need-customer-support-automation',
         }}
         visual={
           <AutomationHeroMockup
-            industry="Restaurants & Hospitality"
-            triggerLabel="New Document Request"
-            actionLabels={['Generate Reports', 'Create Menu Documents', 'Manage Customer Data']}
-            metricValue="2000"
-            metricLabel="documents processed automatically each month"
-            submetric="80% reduction in processing time"
-            platform="Document & Data Automation + Restaurant Management System"
-            accent="#10B981"
+            industry="Accounting"
+            triggerLabel="New Client Inquiry"
+            actionLabels={['Respond to Inquiry', 'Schedule Meeting', 'Provide Quote']}
+            metricValue="500"
+            metricLabel="new client inquiries handled automatically each month"
+            submetric="85% reduction in response time"
+            platform="Customer Support + Accounting Software"
+            accent="#8B5CF6"
           />
         }
         breadcrumb={[
           { label: 'Home', href: '/' },
           { label: 'Solutions', href: '/solutions' },
-          { label: 'Document & Data Automation', href: '/solutions/document-automation' },
-          { label: 'Restaurants & Hospitality', href: content.url },
+          { label: 'Customer Support Automation', href: '/solutions/customer-support-automation' },
+          { label: 'Accounting Firms', href: content.url },
         ]}
       />
 
       <WhySection
-        title="Why Restaurants & Hospitality Need Document & Data Automation"
-        content={[content.sections['Why Restaurants & Hospitality Need Document & Data Automation']]}
+        title="Why Accounting Firms Need Customer Support Automation"
+        content={[content.sections['Why Accounting Firms Need Customer Support Automation']]}
       />
 
       <ProblemsSection
-        title="The Problems This Solves for Restaurants & Hospitality"
-        content={[content.sections['The Problems This Solves for Restaurants & Hospitality']]}
+        title="The Problems This Solves for Accounting Firms"
+        content={[content.sections['The Problems This Solves for Accounting Firms']]}
       />
 
       <AutomationSection
-        title="What We Automate for Restaurants & Hospitality"
-        content={[content.sections['What We Automate for Restaurants & Hospitality']]}
+        title="What We Automate for Accounting Firms"
+        content={[content.sections['What We Automate for Accounting Firms']]}
       />
 
       <StartSection
@@ -120,8 +121,8 @@ export default function ForRestaurantsPage() {
       />
 
       <RealitiesSection
-        title="Built for Restaurants & Hospitality's Realities"
-        content={[content.sections['Built for Restaurants & Hospitality\'s Realities']]}
+        title="Built for Accounting Firms' Realities"
+        content={[content.sections['Built for Accounting Firms\' Realities']]}
       />
 
       <ReturnSection
@@ -137,7 +138,7 @@ export default function ForRestaurantsPage() {
 
       <FAQSection
         title="Frequently Asked Questions"
-        subtitle="Common questions about document automation for restaurants & hospitality"
+        subtitle="Common questions about customer support automation for accounting firms"
         faqs={content.faqQuestions}
       />
 
@@ -149,7 +150,7 @@ export default function ForRestaurantsPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where document automation pays off for restaurants & hospitality."
+        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where support automation pays off for accounting firms."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

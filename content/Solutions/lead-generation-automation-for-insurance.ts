@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const leadGenerationAutomationForInsurance: SolutionData = {
   slug: 'lead-generation-automation/for-insurance',
-  url: '/solutions/lead-generation-automation/for-insurance/',
+  url: '/solutions/lead-generation-automation/for-insurance',
   platform: 'Lead Generation Automation',
   category: 'lead-generation-automation',
   title: 'Lead Generation Automation for Insurance Agencies',

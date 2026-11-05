@@ -2,6 +2,7 @@
 // Server-only client for the Nexus CMS public (read-only) API.
 import type { Metadata } from 'next';
 import { unstable_cache } from 'next/cache';
+import { canonicalUrl } from '@/lib/canonical';
 
 // The public API only ever returns the *published* snapshot of a page, so
 // drafts / unpublished pages come back as 404 and are never rendered here.
@@ -121,7 +122,7 @@ export function buildCmsMetadata(page: CmsPage | null): Metadata {
     // An explicit alternates object replaces the layout canonical, so always
     // set one. Fall back to the page slug when the CMS field is empty.
     alternates: {
-      canonical: seo.canonicalUrl || page.slug,
+      canonical: canonicalUrl(seo.canonicalUrl || page.slug),
     },
     openGraph: {
       title: seo.ogTitle || title,

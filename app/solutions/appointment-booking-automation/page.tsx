@@ -1,6 +1,9 @@
 // app/solutions/appointment-booking-automation/page.tsx
 'use client';
 
+import { HubJsonLd } from '@/components/seo/HubJsonLd';
+import { hubSeo } from '@/lib/hub-seo';
+
 import { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -299,6 +302,7 @@ export default function AppointmentBookingAutomationPage() {
 
   return (
     <PageWrapper>
+      <HubJsonLd hub={hubSeo.booking} />
       <HeroSection
         {...heroData}
         imageWidth={heroData.imageWidth}

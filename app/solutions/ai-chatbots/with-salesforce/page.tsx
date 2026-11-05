@@ -13,17 +13,18 @@ import { StatsSection } from '@/components/solutions/sections/Stats';
 
 import { ChatbotHeroMockup } from '@/components/solutions/sections/ChatbotHeroMockup';
 import { aiChatbotsWithSalesforce } from '@/content/Solutions';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: aiChatbotsWithSalesforce.titleTag,
   description: aiChatbotsWithSalesforce.metaDescription,
   alternates: {
-    canonical: aiChatbotsWithSalesforce.url,
+    canonical: canonicalUrl(aiChatbotsWithSalesforce.url),
   },
   openGraph: {
     title: aiChatbotsWithSalesforce.titleTag,
     description: aiChatbotsWithSalesforce.metaDescription,
-    url: aiChatbotsWithSalesforce.url,
+    url: canonicalUrl(aiChatbotsWithSalesforce.url),
     type: 'website',
   },
   keywords: aiChatbotsWithSalesforce.primaryKeyword,

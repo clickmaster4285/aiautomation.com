@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const salesAutomationForAccountingFirms: SolutionData = {
   slug: 'sales-automation/for-accounting-firms',
-  url: '/solutions/sales-automation/for-accounting-firms/',
+  url: '/solutions/sales-automation/for-accounting-firms',
   platform: 'AI Sales Automation',
   category: 'sales-automation',
   title: 'AI Sales Automation for Accounting Firms',

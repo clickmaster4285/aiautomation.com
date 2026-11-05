@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const leadGenerationAutomationForEducation: SolutionData = {
   slug: 'lead-generation-automation/for-education',
-  url: '/solutions/lead-generation-automation/for-education/',
+  url: '/solutions/lead-generation-automation/for-education',
   platform: 'Lead Generation Automation',
   category: 'lead-generation-automation',
   title: 'Lead Generation Automation for Education',

@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import Image from 'next/image';
 import Script from 'next/script';
+import { LOCATION_STATEMENT, PHONES, SALES_EMAIL, SERVICE_AREA, SITE_NAME, SITE_URL } from '@/lib/site-contact';
 
 export default function AboutPage() {
   return (
@@ -29,13 +30,20 @@ export default function AboutPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Organization',
-            name: 'Clickmasters',
-            url: 'https://clickmasters.io',
-            logo: 'https://clickmasters.io/logo.png',
-            description:
-              'Clickmasters is a US AI automation agency that builds production AI agents and workflow automation businesses actually own.',
-            address: { '@type': 'PostalAddress', addressCountry: 'US' },
-            contactPoint: { '@type': 'ContactPoint', contactType: 'Sales', email: 'hello@clickmasters.io' },
+            name: SITE_NAME,
+            url: SITE_URL,
+            logo: `${SITE_URL}/logo.png`,
+            description: `Clickmasters builds production AI automation for businesses in ${SERVICE_AREA}.`,
+            areaServed: PHONES.map((phone) => phone.label),
+            email: SALES_EMAIL,
+            telephone: PHONES.map((phone) => phone.display),
+            contactPoint: PHONES.map((phone) => ({
+              '@type': 'ContactPoint',
+              contactType: 'Sales',
+              email: SALES_EMAIL,
+              telephone: phone.display,
+              areaServed: phone.label,
+            })),
           }),
         }}
       />
@@ -47,8 +55,8 @@ export default function AboutPage() {
             '@context': 'https://schema.org',
             '@type': 'AboutPage',
             name: 'About Clickmasters | AI Automation Agency',
-            description: 'Clickmasters is a US AI automation agency that builds production AI agents and workflow automation businesses actually own.',
-            url: 'https://clickmasters.io/about',
+            description: `Clickmasters builds production AI automation for businesses in ${SERVICE_AREA}.`,
+            url: `${SITE_URL}/about`,
             mainEntity: { '@type': 'Organization', name: 'Clickmasters' },
           }),
         }}
@@ -107,7 +115,7 @@ export default function AboutPage() {
                 variants={fadeInUp}
                 className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl text-justify"
               >
-                Clickmasters is a US-based AI automation agency focused on production systems, not demonstrations automation our clients own, understand, and rely on.
+                Clickmasters builds production AI automation for businesses in the United States, the United Kingdom, and Pakistan. The systems are owned by the client, not left as a demonstration. {LOCATION_STATEMENT}
               </motion.p>
             </motion.div>
             <motion.div
@@ -297,23 +305,14 @@ export default function AboutPage() {
                 <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden z-10 border-2 border-brand/20 shadow-xl shadow-brand/10"
                   style={{ background: 'linear-gradient(180deg, rgba(249,115,22,0.12), rgba(249,115,22,0.06))' }}
                 >
-                  <img
-                    src="/images/founder.png"
-                    width={1376}
-                    height={768}
+                  <Image
+                    src="/images/founder.jpg"
+                    width={1200}
+                    height={670}
                     alt="Amjad Khan Founder & CEO"
+                    sizes="(min-width: 1024px) 600px, 100vw"
+                    quality={60}
                     className="w-full h-full object-cover object-center"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.style.display = 'none';
-                      const parent = target.parentElement;
-                      if (parent) {
-                        const fallback = document.createElement('div');
-                        fallback.className = 'w-full h-full flex items-center justify-center text-5xl font-black text-brand/30';
-                        fallback.textContent = 'AK';
-                        parent.appendChild(fallback);
-                      }
-                    }}
                   />
                 </div>
               </div>

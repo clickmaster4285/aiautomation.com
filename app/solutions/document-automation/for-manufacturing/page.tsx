@@ -1,4 +1,4 @@
-// app/solutions/document-automation/for-logistics/page.tsx
+// app/solutions/document-automation/for-manufacturing/page.tsx
 import { Metadata } from 'next';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { HeroSection } from '@/components/solutions/sections/Hero';
@@ -16,26 +16,27 @@ import {
 import { FAQSection } from '@/components/solutions/sections/FAQ';
 import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
-import { documentAutomationForLogistics } from '@/content/Solutions/document-automation-for-logistics';
+import { documentAutomationForManufacturing } from '@/content/Solutions/document-automation-for-manufacturing';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
-  title: documentAutomationForLogistics.titleTag,
-  description: documentAutomationForLogistics.metaDescription,
+  title: documentAutomationForManufacturing.titleTag,
+  description: documentAutomationForManufacturing.metaDescription,
   alternates: {
-    canonical: documentAutomationForLogistics.url,
+    canonical: canonicalUrl(documentAutomationForManufacturing.url),
   },
   openGraph: {
-    title: documentAutomationForLogistics.titleTag,
-    description: documentAutomationForLogistics.metaDescription,
-    url: documentAutomationForLogistics.url,
+    title: documentAutomationForManufacturing.titleTag,
+    description: documentAutomationForManufacturing.metaDescription,
+    url: canonicalUrl(documentAutomationForManufacturing.url),
     type: 'website',
   },
-  keywords: documentAutomationForLogistics.primaryKeyword,
+  keywords: documentAutomationForManufacturing.primaryKeyword,
 };
 
-export default function ForLogisticsPage() {
-  const content = documentAutomationForLogistics;
+export default function ForManufacturingPage() {
+  const content = documentAutomationForManufacturing;
 
   return (
     <PageWrapper>
@@ -45,7 +46,7 @@ export default function ForLogisticsPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Service',
-            name: 'Document & Data Automation for Logistics & Transportation',
+            name: 'Document & Data Automation for Manufacturing',
             description: content.metaDescription,
             provider: {
               '@type': 'Organization',
@@ -67,7 +68,7 @@ export default function ForLogisticsPage() {
         }}
         secondaryCta={{
           text: 'Learn More',
-          href: '#why-logistics-transportation-need-document-data-automation',
+          href: '#why-manufacturing-need-document-data-automation',
         }}
         visual={
           <AutomationHeroMockup
@@ -85,23 +86,23 @@ export default function ForLogisticsPage() {
           { label: 'Home', href: '/' },
           { label: 'Solutions', href: '/solutions' },
           { label: 'Document & Data Automation', href: '/solutions/document-automation' },
-          { label: 'Logistics & Transportation', href: content.url },
+          { label: 'Manufacturing', href: content.url },
         ]}
       />
 
       <WhySection
-        title="Why Logistics & Transportation Need Document & Data Automation"
-        content={[content.sections['Why Logistics & Transportation Need Document & Data Automation']]}
+        title="Why Manufacturing Need Document & Data Automation"
+        content={[content.sections['Why Manufacturing Need Document & Data Automation']]}
       />
 
       <ProblemsSection
-        title="The Problems This Solves for Logistics & Transportation"
-        content={[content.sections['The Problems This Solves for Logistics & Transportation']]}
+        title="The Problems This Solves for Manufacturing"
+        content={[content.sections['The Problems This Solves for Manufacturing']]}
       />
 
       <AutomationSection
-        title="What We Automate for Logistics & Transportation"
-        content={[content.sections['What We Automate for Logistics & Transportation']]}
+        title="What We Automate for Manufacturing"
+        content={[content.sections['What We Automate for Manufacturing']]}
       />
 
       <StartSection
@@ -120,8 +121,8 @@ export default function ForLogisticsPage() {
       />
 
       <RealitiesSection
-        title="Built for Logistics & Transportation's Realities"
-        content={[content.sections['Built for Logistics & Transportation\'s Realities']]}
+        title="Built for Manufacturing's Realities"
+        content={[content.sections['Built for Manufacturing\'s Realities']]}
       />
 
       <ReturnSection
@@ -137,7 +138,7 @@ export default function ForLogisticsPage() {
 
       <FAQSection
         title="Frequently Asked Questions"
-        subtitle="Common questions about document automation for logistics & transportation"
+        subtitle="Common questions about document automation for manufacturing"
         faqs={content.faqQuestions}
       />
 
@@ -149,7 +150,7 @@ export default function ForLogisticsPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where document automation pays off for logistics & transportation."
+        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where document automation pays off for manufacturing."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

@@ -1,6 +1,9 @@
 // app/solutions/page.tsx
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { canonicalPath, canonicalUrl } from '@/lib/canonical';
+import { HubJsonLd } from '@/components/seo/HubJsonLd';
+import { hubSeo } from '@/lib/hub-seo';
 import { getAllSolutions } from '@/content/Solutions';
 import { HeroSection } from '@/components/solutions/sections/Hero';
 import { Section, SectionHeading } from '@/components/solutions/layout/Section';
@@ -35,6 +38,9 @@ import {
 export const metadata: Metadata = {
   title: 'AI Automation Solutions | Clickmasters',
   description: 'Explore our comprehensive AI automation solutions for business efficiency.',
+  alternates: {
+    canonical: canonicalUrl('/solutions'),
+  },
 };
 
 // Icon mapping for solution cards - Expanded with all icons
@@ -107,6 +113,7 @@ export default function SolutionsPage() {
 
   return (
     <>
+      <HubJsonLd hub={hubSeo.solutions} />
       <HeroSection {...heroData} />
       
       <Section bg="muted" pattern="dots" className="py-20">
@@ -130,7 +137,9 @@ export default function SolutionsPage() {
             return (
               <div key={category} className={`${categoryIndex > 0 ? 'mt-16' : 'mt-12'}`}>
                 <h2 className="text-2xl font-bold text-gray-900 mb-6 capitalize">
-                  {displayName}
+                  <Link href={`/solutions/${category}`} className="hover:text-brand">
+                    {displayName}
+                  </Link>
                 </h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {solutions.map((solution) => {
@@ -141,7 +150,7 @@ export default function SolutionsPage() {
                     return (
                       <Link
                         key={solution.slug}
-                        href={solution.url}
+                        href={canonicalPath(solution.url)}
                         className="group p-6 bg-white rounded-2xl border border-gray-200 hover:border-brand/30 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
                       >
                         <div className="flex items-center gap-3 mb-3">

@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { invoiceAutomationForRestaurants } from '@/content/Solutions/invoice-automation-for-restaurants';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: invoiceAutomationForRestaurants.titleTag,
   description: invoiceAutomationForRestaurants.metaDescription,
   alternates: {
-    canonical: invoiceAutomationForRestaurants.url,
+    canonical: canonicalUrl(invoiceAutomationForRestaurants.url),
   },
   openGraph: {
     title: invoiceAutomationForRestaurants.titleTag,
     description: invoiceAutomationForRestaurants.metaDescription,
-    url: invoiceAutomationForRestaurants.url,
+    url: canonicalUrl(invoiceAutomationForRestaurants.url),
     type: 'website',
   },
   keywords: invoiceAutomationForRestaurants.primaryKeyword,

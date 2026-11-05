@@ -8,6 +8,7 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { documentAutomationForAccountingFirms } from '@/content/Solutions/document-automation-for-accounting-firms';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 const WhySection = dynamic(() => import('@/components/solutions/sections/variants').then((mod) => mod.WhySection));
 const ProblemsSection = dynamic(() => import('@/components/solutions/sections/variants').then((mod) => mod.ProblemsSection));
@@ -23,12 +24,12 @@ export const metadata: Metadata = {
   title: documentAutomationForAccountingFirms.titleTag,
   description: documentAutomationForAccountingFirms.metaDescription,
   alternates: {
-    canonical: documentAutomationForAccountingFirms.url,
+    canonical: canonicalUrl(documentAutomationForAccountingFirms.url),
   },
   openGraph: {
     title: documentAutomationForAccountingFirms.titleTag,
     description: documentAutomationForAccountingFirms.metaDescription,
-    url: documentAutomationForAccountingFirms.url,
+    url: canonicalUrl(documentAutomationForAccountingFirms.url),
     type: 'website',
   },
   keywords: documentAutomationForAccountingFirms.primaryKeyword,

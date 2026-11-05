@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const customerSupportAutomationForSaaS: SolutionData = {
   slug: 'customer-support-automation/for-saas',
-  url: '/solutions/customer-support-automation/for-saas/',
+  url: '/solutions/customer-support-automation/for-saas',
   platform: 'Customer Support Automation',
   category: 'customer-support-automation',
   title: 'Customer Support Automation for SaaS Companies',

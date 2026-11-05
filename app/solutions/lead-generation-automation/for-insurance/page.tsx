@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { leadGenerationAutomationForInsurance } from '@/content/Solutions/lead-generation-automation-for-insurance';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: leadGenerationAutomationForInsurance.titleTag,
   description: leadGenerationAutomationForInsurance.metaDescription,
   alternates: {
-    canonical: leadGenerationAutomationForInsurance.url,
+    canonical: canonicalUrl(leadGenerationAutomationForInsurance.url),
   },
   openGraph: {
     title: leadGenerationAutomationForInsurance.titleTag,
     description: leadGenerationAutomationForInsurance.metaDescription,
-    url: leadGenerationAutomationForInsurance.url,
+    url: canonicalUrl(leadGenerationAutomationForInsurance.url),
     type: 'website',
   },
   keywords: leadGenerationAutomationForInsurance.primaryKeyword,

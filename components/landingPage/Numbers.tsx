@@ -24,7 +24,7 @@ export default function Numbers({ stats = [] }: { stats?: StatItem[] }) {
           <Marker n="10" />
           <div className="flex-1 h-px bg-black/10" />
           <span className="eyebrow text-muted-foreground whitespace-nowrap text-xs md:text-sm">
-            Real Results
+            Published figures
           </span>
         </div>
 
@@ -35,10 +35,12 @@ export default function Numbers({ stats = [] }: { stats?: StatItem[] }) {
         </h2>
 
         <Image
-          src="/images/robot-mascot2.png"
-          alt=""
-          width={640}
-          height={640}
+          src="/images/robot-mascot2.jpg"
+          alt="Clickmasters robot mascot"
+          width={479}
+          height={479}
+          sizes="(min-width: 1024px) 272px, 192px"
+          quality={60}
           className="absolute right-12 top-64 w-48 lg:w-68 h-auto float-y hidden md:block"
         />
 

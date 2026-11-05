@@ -44,10 +44,12 @@ export default function Intelligence({ data }: { data: IntelligenceData }) {
               transition={{ duration: 8, repeat: Infinity }}
             >
               <Image
-                src="/images/robot-mascot2.png"
-                alt="mascot"
-                width={640}
-                height={640}
+                src="/images/robot-mascot2.jpg"
+                alt="Clickmasters robot mascot"
+                width={479}
+                height={479}
+                sizes="(min-width: 768px) 256px, 208px"
+                quality={60}
                 className="w-full h-auto"
               />
             </motion.div>

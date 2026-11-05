@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { leadGenerationAutomationForManufacturing } from '@/content/Solutions/lead-generation-automation-for-manufacturing';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: leadGenerationAutomationForManufacturing.titleTag,
   description: leadGenerationAutomationForManufacturing.metaDescription,
   alternates: {
-    canonical: leadGenerationAutomationForManufacturing.url,
+    canonical: canonicalUrl(leadGenerationAutomationForManufacturing.url),
   },
   openGraph: {
     title: leadGenerationAutomationForManufacturing.titleTag,
     description: leadGenerationAutomationForManufacturing.metaDescription,
-    url: leadGenerationAutomationForManufacturing.url,
+    url: canonicalUrl(leadGenerationAutomationForManufacturing.url),
     type: 'website',
   },
   keywords: leadGenerationAutomationForManufacturing.primaryKeyword,

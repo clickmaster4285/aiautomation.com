@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const customerSupportAutomationForEducation: SolutionData = {
   slug: 'customer-support-automation/for-education',
-  url: '/solutions/customer-support-automation/for-education/',
+  url: '/solutions/customer-support-automation/for-education',
   platform: 'Customer Support Automation',
   category: 'customer-support-automation',
   title: 'Customer Support Automation for Education',

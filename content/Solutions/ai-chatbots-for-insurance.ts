@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiChatbotsForInsurance: SolutionData = {
   slug: 'ai-chatbots/for-insurance',
-  url: '/solutions/ai-chatbots/for-insurance/',
+  url: '/solutions/ai-chatbots/for-insurance',
   platform: 'AI Chatbots',
   category: 'ai-chatbots',
   title: 'AI Chatbots for Insurance Agencies',

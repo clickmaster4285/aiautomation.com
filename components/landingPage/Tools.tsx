@@ -2,7 +2,15 @@
 
 import { motion } from "framer-motion";
 import type { ReactNode } from "react";
+import Link from "next/link";
 import { Marker } from "./Shared";
+
+const platformHref: Record<string, string> = {
+  Zapier: "/platforms/zapier-automation-services",
+  Make: "/platforms/make-automation-services",
+  n8n: "/platforms/n8n-automation-services",
+  HubSpot: "/platforms/hubspot-automation-services",
+};
 
 const icons: Record<string, ReactNode> = {
 OpenAI: (
@@ -115,23 +123,32 @@ Our Stack
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-        {tools.map((t, i) => (
-          <motion.div
-            key={t[0]}
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.05 }}
-            className="bg-paper border border-border p-4 hover:border-brand transition-colors"
-          >
-            <div className="text-muted-foreground mb-3">
-              {icons[iconAlias[t[0]] ?? t[0]] ?? fallbackIcon}
-            </div>
+        {tools.map((t, i) => {
+          const href = platformHref[t[0]];
+          const card = (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.05 }}
+              className="bg-paper border border-border p-4 hover:border-brand transition-colors h-full"
+            >
+              <div className="text-muted-foreground mb-3">
+                {icons[iconAlias[t[0]] ?? t[0]] ?? fallbackIcon}
+              </div>
 
-            <div className="font-semibold text-sm">{t[0]}</div>
-            <div className="text-xs text-muted-foreground">{t[1]}</div>
-          </motion.div>
-        ))}
+              <div className="font-semibold text-sm">{t[0]}</div>
+              <div className="text-xs text-muted-foreground">{t[1]}</div>
+            </motion.div>
+          );
+          return href ? (
+            <Link key={t[0]} href={href} className="block">
+              {card}
+            </Link>
+          ) : (
+            <div key={t[0]}>{card}</div>
+          );
+        })}
       </div>
     </div>
   </div>

@@ -1,0 +1,17 @@
+{
+  "summary": {
+    "checked": 253,
+    "indexable": 253,
+    "canonical200": 253,
+    "conflicts": 0,
+    "missing": 0,
+    "multiple": 0,
+    "httpCanon": 0,
+    "hostMismatch": 0,
+    "slash": 0,
+    "cross": 0,
+    "loops": 0,
+    "chains": 0
+  },
+  "cross": []
+}

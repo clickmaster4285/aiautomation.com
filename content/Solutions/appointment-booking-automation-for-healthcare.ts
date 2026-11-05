@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const appointmentBookingAutomationForHealthcare: SolutionData = {
   slug: 'appointment-booking-automation/for-healthcare',
-  url: '/solutions/appointment-booking-automation/for-healthcare/',
+  url: '/solutions/appointment-booking-automation/for-healthcare',
   platform: 'Appointment & Booking Automation',
   category: 'appointment-booking-automation',
   title: 'Appointment & Booking Automation for Healthcare',

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiWorkflowAutomationForInsurance: SolutionData = {
   slug: 'ai-workflow-automation/for-insurance',
-  url: '/solutions/ai-workflow-automation/for-insurance/',
+  url: '/solutions/ai-workflow-automation/for-insurance',
   platform: 'AI Workflow Automation',
   category: 'ai-workflow-automation',
   title: 'AI Workflow Automation for Insurance Agencies',

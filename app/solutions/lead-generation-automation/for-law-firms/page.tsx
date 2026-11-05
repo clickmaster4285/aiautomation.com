@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { leadGenerationAutomationForLawFirms } from '@/content/Solutions/lead-generation-automation-for-law-firms';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: leadGenerationAutomationForLawFirms.titleTag,
   description: leadGenerationAutomationForLawFirms.metaDescription,
   alternates: {
-    canonical: leadGenerationAutomationForLawFirms.url,
+    canonical: canonicalUrl(leadGenerationAutomationForLawFirms.url),
   },
   openGraph: {
     title: leadGenerationAutomationForLawFirms.titleTag,
     description: leadGenerationAutomationForLawFirms.metaDescription,
-    url: leadGenerationAutomationForLawFirms.url,
+    url: canonicalUrl(leadGenerationAutomationForLawFirms.url),
     type: 'website',
   },
   keywords: leadGenerationAutomationForLawFirms.primaryKeyword,

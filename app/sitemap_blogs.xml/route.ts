@@ -1,7 +1,6 @@
 // app/sitemap_blogs.xml/route.ts
 import { getBlogPosts } from '../sitemap_utils';
-
-const siteUrl = "https://clickmastersaiautomation.com";
+import { canonicalUrl } from '@/lib/canonical';
 
 export async function GET() {
   const lastModified = new Date().toISOString();
@@ -13,7 +12,7 @@ export async function GET() {
   // The main blog page will be the only entry
   for (const post of blogPosts) {
     // The URL will be siteUrl/blog because the slug is an empty string
-    const loc = post.slug ? `${siteUrl}/blog/${post.slug}` : `${siteUrl}/blog`;
+    const loc = canonicalUrl(post.slug ? `/blog/${post.slug}` : '/blog');
     sitemap += `
   <url>
     <loc>${loc}</loc>

@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { salesAutomationForRestaurants } from '@/content/Solutions/sales-automation-for-restaurants';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: salesAutomationForRestaurants.titleTag,
   description: salesAutomationForRestaurants.metaDescription,
   alternates: {
-    canonical: salesAutomationForRestaurants.url,
+    canonical: canonicalUrl(salesAutomationForRestaurants.url),
   },
   openGraph: {
     title: salesAutomationForRestaurants.titleTag,
     description: salesAutomationForRestaurants.metaDescription,
-    url: salesAutomationForRestaurants.url,
+    url: canonicalUrl(salesAutomationForRestaurants.url),
     type: 'website',
   },
   keywords: salesAutomationForRestaurants.primaryKeyword,

@@ -1,6 +1,9 @@
 // app/solutions/crm-automation/page.tsx
 'use client';
 
+import { HubJsonLd } from '@/components/seo/HubJsonLd';
+import { hubSeo } from '@/lib/hub-seo';
+
 import { useState } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -262,6 +265,7 @@ export default function CRMAutomationPage() {
 
   return (
     <PageWrapper>
+      <HubJsonLd hub={hubSeo.crm} faqs={faqs} />
       {/* ── HERO ────────────────────────────────────────── */}
       <HeroSection
         {...heroData}

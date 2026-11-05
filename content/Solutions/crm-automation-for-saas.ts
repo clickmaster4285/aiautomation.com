@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const crmAutomationForSaaS: SolutionData = {
   slug: 'crm-automation/for-saas',
-  url: '/solutions/crm-automation/for-saas/',
+  url: '/solutions/crm-automation/for-saas',
   platform: 'CRM Automation',
   category: 'crm-automation',
   title: 'CRM Automation for SaaS Companies',

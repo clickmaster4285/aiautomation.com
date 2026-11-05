@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const customerSupportAutomationForRealEstate: SolutionData = {
   slug: 'customer-support-automation/for-real-estate',
-  url: '/solutions/customer-support-automation/for-real-estate/',
+  url: '/solutions/customer-support-automation/for-real-estate',
   platform: 'Customer Support Automation',
   category: 'customer-support-automation',
   title: 'Customer Support Automation for Real Estate',

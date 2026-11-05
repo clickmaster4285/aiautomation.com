@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { reportingAutomationForLawFirms } from '@/content/Solutions/reporting-automation-for-law-firms';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: reportingAutomationForLawFirms.titleTag,
   description: reportingAutomationForLawFirms.metaDescription,
   alternates: {
-    canonical: reportingAutomationForLawFirms.url,
+    canonical: canonicalUrl(reportingAutomationForLawFirms.url),
   },
   openGraph: {
     title: reportingAutomationForLawFirms.titleTag,
     description: reportingAutomationForLawFirms.metaDescription,
-    url: reportingAutomationForLawFirms.url,
+    url: canonicalUrl(reportingAutomationForLawFirms.url),
     type: 'website',
   },
   keywords: reportingAutomationForLawFirms.primaryKeyword,

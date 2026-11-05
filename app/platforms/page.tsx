@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import { HubJsonLd } from '@/components/seo/HubJsonLd';
+import { hubSeo } from '@/lib/hub-seo';
 import { motion, Variants } from 'framer-motion';
 import { ArrowRight, CheckCircle2, Zap, Workflow, GitBranch, Mail, Rocket, Database, Cloud, Sparkles, Cpu, Layers, GitMerge, Server, Globe, Shield, BarChart3, Users, Settings, Code, RefreshCw } from 'lucide-react';
 
@@ -153,9 +155,19 @@ const cardVariants: Variants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
 };
 
+const platformPaths: Record<string, string> = {
+  zapier: '/platforms/zapier-automation-services',
+  make: '/platforms/make-automation-services',
+  n8n: '/platforms/n8n-automation-services',
+  hubspot: '/platforms/hubspot-automation-services',
+  gohighlevel: '/platforms/gohighlevel-automation-services',
+  airtable: '/platforms/airtable-automation-services',
+};
+
 export default function PlatformsClient() {
   return (
     <div className="bg-white text-gray-900 overflow-x-hidden">
+      <HubJsonLd hub={hubSeo.platforms} />
       {/* ── HERO ── */}
       <motion.section
         initial="hidden"
@@ -372,6 +384,15 @@ export default function PlatformsClient() {
                           </motion.li>
                         ))}
                       </ul>
+                      {platformPaths[platform.slug] ? (
+                        <Link
+                          href={platformPaths[platform.slug]}
+                          className="relative mt-5 inline-flex items-center gap-1 text-sm font-semibold text-brand"
+                        >
+                          View {platform.title} automation
+                          <ArrowRight className="h-4 w-4" />
+                        </Link>
+                      ) : null}
                     </div>
                   </div>
                 </motion.div>

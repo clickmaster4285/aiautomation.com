@@ -13,17 +13,18 @@ import { StatsSection } from '@/components/solutions/sections/Stats';
 import { BackButton } from '@/components/ui/backButton';
 import { ChatbotHeroMockup } from '@/components/solutions/sections/ChatbotHeroMockup';
 import { aiWorkflowAutomationWithHubspot } from '@/content/Solutions';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: aiWorkflowAutomationWithHubspot.titleTag,
   description: aiWorkflowAutomationWithHubspot.metaDescription,
   alternates: {
-    canonical: aiWorkflowAutomationWithHubspot.url,
+    canonical: canonicalUrl(aiWorkflowAutomationWithHubspot.url),
   },
   openGraph: {
     title: aiWorkflowAutomationWithHubspot.titleTag,
     description: aiWorkflowAutomationWithHubspot.metaDescription,
-    url: aiWorkflowAutomationWithHubspot.url,
+    url: canonicalUrl(aiWorkflowAutomationWithHubspot.url),
     type: 'website',
   },
   keywords: aiWorkflowAutomationWithHubspot.primaryKeyword,

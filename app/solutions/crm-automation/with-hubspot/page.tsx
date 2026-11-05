@@ -12,17 +12,18 @@ import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutio
 import { StatsSection } from '@/components/solutions/sections/Stats';
 import { ChatbotHeroMockup } from '@/components/solutions/sections/ChatbotHeroMockup';
 import { crmAutomationWithHubspot } from '@/content/Solutions';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: crmAutomationWithHubspot.titleTag,
   description: crmAutomationWithHubspot.metaDescription,
   alternates: {
-    canonical: crmAutomationWithHubspot.url,
+    canonical: canonicalUrl(crmAutomationWithHubspot.url),
   },
   openGraph: {
     title: crmAutomationWithHubspot.titleTag,
     description: crmAutomationWithHubspot.metaDescription,
-    url: crmAutomationWithHubspot.url,
+    url: canonicalUrl(crmAutomationWithHubspot.url),
     type: 'website',
   },
   keywords: crmAutomationWithHubspot.primaryKeyword,

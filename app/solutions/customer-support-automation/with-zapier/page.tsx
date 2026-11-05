@@ -13,17 +13,18 @@ import { StatsSection } from '@/components/solutions/sections/Stats';
 import { BackButton } from '@/components/ui/backButton';
 import { ChatbotHeroMockup } from '@/components/solutions/sections/ChatbotHeroMockup';
 import { customerSupportAutomationWithZapier } from '@/content/Solutions';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: customerSupportAutomationWithZapier.titleTag,
   description: customerSupportAutomationWithZapier.metaDescription,
   alternates: {
-    canonical: customerSupportAutomationWithZapier.url,
+    canonical: canonicalUrl(customerSupportAutomationWithZapier.url),
   },
   openGraph: {
     title: customerSupportAutomationWithZapier.titleTag,
     description: customerSupportAutomationWithZapier.metaDescription,
-    url: customerSupportAutomationWithZapier.url,
+    url: canonicalUrl(customerSupportAutomationWithZapier.url),
     type: 'website',
   },
   keywords: customerSupportAutomationWithZapier.primaryKeyword,

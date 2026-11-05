@@ -24,10 +24,12 @@ export default function CTA({ data }: { data: FinalCtaData }) {
           transition={{ duration: 5, repeat: Infinity }}
         >
           <Image
-            src="/images/robot-mascot2.png"
-            alt=""
-            width={640}
-            height={640}
+            src="/images/robot-mascot2.jpg"
+            alt="Clickmasters robot mascot"
+            width={479}
+            height={479}
+            sizes="(min-width: 768px) 208px, 96px"
+            quality={60}
             className="w-full h-auto"
           />
         </motion.div>
@@ -39,10 +41,12 @@ export default function CTA({ data }: { data: FinalCtaData }) {
           transition={{ duration: 5, repeat: Infinity }}
         >
           <Image
-            src="/images/robot-mascot2.png"
-            alt=""
-            width={640}
-            height={640}
+            src="/images/robot-mascot2.jpg"
+            alt="Clickmasters robot mascot"
+            width={479}
+            height={479}
+            sizes="(min-width: 768px) 208px, 96px"
+            quality={60}
             className="w-full h-auto"
           />
         </motion.div>

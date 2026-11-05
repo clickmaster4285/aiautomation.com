@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const crmAutomationForLawFirms: SolutionData = {
   slug: 'crm-automation/for-law-firms',
-  url: '/solutions/crm-automation/for-law-firms/',
+  url: '/solutions/crm-automation/for-law-firms',
   platform: 'CRM Automation',
   category: 'crm-automation',
   title: 'CRM Automation for Law Firms',

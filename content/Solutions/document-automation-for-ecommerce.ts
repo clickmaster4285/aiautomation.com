@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const documentAutomationForEcommerce: SolutionData = {
   slug: 'document-automation/for-ecommerce',
-  url: '/solutions/document-automation/for-ecommerce/',
+  url: '/solutions/document-automation/for-ecommerce',
   platform: 'Document & Data Automation',
   category: 'document-automation',
   title: 'Document & Data Automation for E-commerce',

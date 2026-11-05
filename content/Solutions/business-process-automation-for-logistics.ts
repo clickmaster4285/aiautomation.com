@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const businessProcessAutomationForLogistics: SolutionData = {
   slug: 'business-process-automation/for-logistics',
-  url: '/solutions/business-process-automation/for-logistics/',
+  url: '/solutions/business-process-automation/for-logistics',
   platform: 'Business Process Automation',
   category: 'business-process-automation',
   title: 'Business Process Automation for Logistics & Transportation',

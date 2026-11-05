@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiWorkflowAutomationForHealthcare: SolutionData = {
   slug: 'ai-workflow-automation/for-healthcare',
-  url: '/solutions/ai-workflow-automation/for-healthcare/',
+  url: '/solutions/ai-workflow-automation/for-healthcare',
   platform: 'AI Workflow Automation',
   category: 'ai-workflow-automation',
   title: 'AI Workflow Automation for Healthcare',

@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { aiWorkflowAutomationForLawFirms } from '@/content/Solutions';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: aiWorkflowAutomationForLawFirms.titleTag,
   description: aiWorkflowAutomationForLawFirms.metaDescription,
   alternates: {
-    canonical: aiWorkflowAutomationForLawFirms.url,
+    canonical: canonicalUrl(aiWorkflowAutomationForLawFirms.url),
   },
   openGraph: {
     title: aiWorkflowAutomationForLawFirms.titleTag,
     description: aiWorkflowAutomationForLawFirms.metaDescription,
-    url: aiWorkflowAutomationForLawFirms.url,
+    url: canonicalUrl(aiWorkflowAutomationForLawFirms.url),
     type: 'website',
   },
   keywords: aiWorkflowAutomationForLawFirms.primaryKeyword,

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiAgentsForHealthcare: SolutionData = {
   slug: 'ai-agents/for-healthcare',
-  url: '/solutions/ai-agents/for-healthcare/',
+  url: '/solutions/ai-agents/for-healthcare',
   platform: 'Custom AI Agents',
   category: 'ai-agents',
   title: 'AI Agent Development for Healthcare',

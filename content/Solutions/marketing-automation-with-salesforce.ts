@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const marketingAutomationWithSalesforce: SolutionData = {
   slug: 'marketing-automation/with-salesforce',
-  url: '/solutions/marketing-automation/with-salesforce/',
+  url: '/solutions/marketing-automation/with-salesforce',
   platform: 'Salesforce',
   category: 'marketing-automation',
   title: 'AI Marketing Automation with Salesforce',

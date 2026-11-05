@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const crmAutomationForRealEstate: SolutionData = {
   slug: 'crm-automation/for-real-estate',
-  url: '/solutions/crm-automation/for-real-estate/',
+  url: '/solutions/crm-automation/for-real-estate',
   platform: 'CRM Automation',
   category: 'crm-automation',
   title: 'CRM Automation for Real Estate',

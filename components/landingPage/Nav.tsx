@@ -108,9 +108,50 @@ const CaseStudiesIconMap: Record<string, React.ElementType> = {
 };
 
 // ── Solutions data ──
+// Solution hubs live at /solutions/<slug>. Service pages stay at /services/<slug>.
 const solutionsData = [
-  
-  
+  {
+    title: 'AI Workflow Automation',
+    slug: 'ai-workflow-automation',
+    description: 'Connect your apps and run multi-step work without manual hand-offs.',
+    icon: Workflow,
+  },
+  {
+    title: 'AI Chatbots',
+    slug: 'ai-chatbots',
+    description: 'Answer, qualify, and book from the channels your customers already use.',
+    icon: MessageSquare,
+  },
+  {
+    title: 'AI Voice Agents',
+    slug: 'ai-voice-agents',
+    description: 'Answer and place calls when the team cannot pick up.',
+    icon: PhoneCall,
+  },
+  {
+    title: 'AI Agents',
+    slug: 'ai-agents',
+    description: 'Agents that look up, draft, send, and log inside your systems.',
+    icon: Brain,
+  },
+  {
+    title: 'Business Process Automation',
+    slug: 'business-process-automation',
+    description: 'Run a whole repeatable process, including the hand-offs.',
+    icon: RefreshCw,
+  },
+  {
+    title: 'Lead Generation Automation',
+    slug: 'lead-generation-automation',
+    description: 'Capture, qualify, and route new leads without a manual queue.',
+    icon: Target,
+  },
+  {
+    title: 'Reporting Automation',
+    slug: 'reporting-automation',
+    description: 'Assemble the recurring reports from live data on a schedule.',
+    icon: BarChart3,
+  },
   {
     title: 'Appointment & Booking Automation',
     slug: 'appointment-booking-automation',
@@ -163,7 +204,7 @@ const solutionsData = [
 const caseStudiesData = [
   {
     title: 'AI Lead Response & Revenue Recovery',
-    slug: 'ai-lead-response-revenue-recovery',
+    slug: 'ai-receptionist-lead-response-automation',
     description: 'How automated lead response recovered lost revenue for a B2B services firm.',
     icon: DollarSign,
   },
@@ -600,17 +641,20 @@ export default function Nav() {
             onMouseEnter={handlePlatformsMouseEnter}
             onMouseLeave={handlePlatformsMouseLeave}
           >
-            <button
-              className="flex items-center gap-1 text-gray-700 hover:text-black transition-colors"
-              onClick={() => setIsPlatformsOpen(!isPlatformsOpen)}
-            >
-              Platforms
-              <ChevronDown
-                className={`h-4 w-4 transition-transform duration-300 ${
-                  isPlatformsOpen ? 'rotate-180 text-brand' : ''
-                }`}
-              />
-            </button>
+            <div className="flex items-center gap-1 text-gray-700 hover:text-black transition-colors">
+              <Link href="/platforms">Platforms</Link>
+              <button
+                type="button"
+                aria-label="Open platforms menu"
+                onClick={() => setIsPlatformsOpen(!isPlatformsOpen)}
+              >
+                <ChevronDown
+                  className={`h-4 w-4 transition-transform duration-300 ${
+                    isPlatformsOpen ? 'rotate-180 text-brand' : ''
+                  }`}
+                />
+              </button>
+            </div>
 
             <AnimatePresence>
               {isPlatformsOpen && (
@@ -699,17 +743,20 @@ export default function Nav() {
             onMouseEnter={handleIndustriesMouseEnter}
             onMouseLeave={handleIndustriesMouseLeave}
           >
-            <button
-              className="flex items-center gap-1 text-gray-700 hover:text-black transition-colors"
-              onClick={() => setIsIndustriesOpen(!isIndustriesOpen)}
-            >
-              Industries
-              <ChevronDown
-                className={`h-4 w-4 transition-transform duration-300 ${
-                  isIndustriesOpen ? 'rotate-180 text-brand' : ''
-                }`}
-              />
-            </button>
+            <div className="flex items-center gap-1 text-gray-700 hover:text-black transition-colors">
+              <Link href="/industries">Industries</Link>
+              <button
+                type="button"
+                aria-label="Open industries menu"
+                onClick={() => setIsIndustriesOpen(!isIndustriesOpen)}
+              >
+                <ChevronDown
+                  className={`h-4 w-4 transition-transform duration-300 ${
+                    isIndustriesOpen ? 'rotate-180 text-brand' : ''
+                  }`}
+                />
+              </button>
+            </div>
 
             <AnimatePresence>
               {isIndustriesOpen && (

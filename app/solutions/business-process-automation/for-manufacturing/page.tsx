@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { businessProcessAutomationForManufacturing } from '@/content/Solutions/business-process-automation-for-manufacturing';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: businessProcessAutomationForManufacturing.titleTag,
   description: businessProcessAutomationForManufacturing.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForManufacturing.url,
+    canonical: canonicalUrl(businessProcessAutomationForManufacturing.url),
   },
   openGraph: {
     title: businessProcessAutomationForManufacturing.titleTag,
     description: businessProcessAutomationForManufacturing.metaDescription,
-    url: businessProcessAutomationForManufacturing.url,
+    url: canonicalUrl(businessProcessAutomationForManufacturing.url),
     type: 'website',
   },
   keywords: businessProcessAutomationForManufacturing.primaryKeyword,

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const leadGenerationAutomationForSaaS: SolutionData = {
   slug: 'lead-generation-automation/for-saas',
-  url: '/solutions/lead-generation-automation/for-saas/',
+  url: '/solutions/lead-generation-automation/for-saas',
   platform: 'Lead Generation Automation',
   category: 'lead-generation-automation',
   title: 'Lead Generation Automation for SaaS Companies',

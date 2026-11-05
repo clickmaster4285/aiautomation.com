@@ -12,17 +12,18 @@ import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutio
 import { StatsSection } from '@/components/solutions/sections/Stats';
 import { ChatbotHeroMockup } from '@/components/solutions/sections/ChatbotHeroMockup';
 import { aiWorkflowAutomationWithZapier } from '@/content/Solutions';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: aiWorkflowAutomationWithZapier.titleTag,
   description: aiWorkflowAutomationWithZapier.metaDescription,
   alternates: {
-    canonical: aiWorkflowAutomationWithZapier.url,
+    canonical: canonicalUrl(aiWorkflowAutomationWithZapier.url),
   },
   openGraph: {
     title: aiWorkflowAutomationWithZapier.titleTag,
     description: aiWorkflowAutomationWithZapier.metaDescription,
-    url: aiWorkflowAutomationWithZapier.url,
+    url: canonicalUrl(aiWorkflowAutomationWithZapier.url),
     type: 'website',
   },
   keywords: aiWorkflowAutomationWithZapier.primaryKeyword,

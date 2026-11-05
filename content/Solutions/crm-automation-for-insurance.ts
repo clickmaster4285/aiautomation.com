@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const crmAutomationForInsurance: SolutionData = {
   slug: 'crm-automation/for-insurance',
-  url: '/solutions/crm-automation/for-insurance/',
+  url: '/solutions/crm-automation/for-insurance',
   platform: 'CRM Automation',
   category: 'crm-automation',
   title: 'CRM Automation for Insurance Agencies',

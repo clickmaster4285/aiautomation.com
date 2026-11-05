@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiWorkflowAutomationForLawFirms: SolutionData = {
   slug: 'ai-workflow-automation/for-law-firms',
-  url: '/solutions/ai-workflow-automation/for-law-firms/',
+  url: '/solutions/ai-workflow-automation/for-law-firms',
   platform: 'AI Workflow Automation',
   category: 'ai-workflow-automation',
   title: 'AI Workflow Automation for Law Firms',

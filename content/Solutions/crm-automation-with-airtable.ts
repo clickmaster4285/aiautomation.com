@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const crmAutomationWithAirtable: SolutionData = {
   slug: 'crm-automation/with-airtable',
-  url: '/solutions/crm-automation/with-airtable/',
+  url: '/solutions/crm-automation/with-airtable',
   platform: 'Airtable',
   category: 'crm-automation',
   title: 'CRM Automation with Airtable',

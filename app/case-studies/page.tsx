@@ -14,13 +14,14 @@ import {
 } from 'lucide-react';
 import { HeroSection } from '@/components/solutions/sections/Hero';
 import { Section, SectionHeading } from '@/components/solutions/layout/Section';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: 'Case studies | Clickmasters',
   description:
     'Every Clickmasters build, documented end to end — the brief, the gaps we closed, the rules the system cannot break, the test results and the limits we designed around.',
   alternates: {
-    canonical: 'https://clickmastersaiautomation.com/case-studies',
+    canonical: canonicalUrl('https://clickmastersaiautomation.com/case-studies'),
   },
 };
 
@@ -58,7 +59,7 @@ const heroData = {
     text: 'Book a Free Audit',
     href: '/free-automation-audit',
   },
-  image: '/images/hero-robot.png',
+  image: '/images/hero-robot.jpg',
   imageWidth: 700,
   imageHeight: 580,
   textSize: 'xlarge' as const,

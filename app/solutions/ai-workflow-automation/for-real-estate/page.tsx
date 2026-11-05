@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { aiWorkflowAutomationForRealEstate } from '@/content/Solutions/ai-workflow-automation-for-real-estate';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: aiWorkflowAutomationForRealEstate.titleTag,
   description: aiWorkflowAutomationForRealEstate.metaDescription,
   alternates: {
-    canonical: aiWorkflowAutomationForRealEstate.url,
+    canonical: canonicalUrl(aiWorkflowAutomationForRealEstate.url),
   },
   openGraph: {
     title: aiWorkflowAutomationForRealEstate.titleTag,
     description: aiWorkflowAutomationForRealEstate.metaDescription,
-    url: aiWorkflowAutomationForRealEstate.url,
+    url: canonicalUrl(aiWorkflowAutomationForRealEstate.url),
     type: 'website',
   },
   keywords: aiWorkflowAutomationForRealEstate.primaryKeyword,

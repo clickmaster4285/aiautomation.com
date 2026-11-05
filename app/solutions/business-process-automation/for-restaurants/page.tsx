@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { businessProcessAutomationForRestaurants } from '@/content/Solutions/business-process-automation-for-restaurants';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: businessProcessAutomationForRestaurants.titleTag,
   description: businessProcessAutomationForRestaurants.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForRestaurants.url,
+    canonical: canonicalUrl(businessProcessAutomationForRestaurants.url),
   },
   openGraph: {
     title: businessProcessAutomationForRestaurants.titleTag,
     description: businessProcessAutomationForRestaurants.metaDescription,
-    url: businessProcessAutomationForRestaurants.url,
+    url: canonicalUrl(businessProcessAutomationForRestaurants.url),
     type: 'website',
   },
   keywords: businessProcessAutomationForRestaurants.primaryKeyword,

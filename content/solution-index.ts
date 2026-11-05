@@ -23,7 +23,7 @@ export interface ServicePage {
 export const SERVICE_PAGES: ServicePage[] = [
   // ── AI Strategy & Advisory ──
   {
-    url: '/services/ai-strategy-advisory/',
+    url: '/services/ai-strategy-advisory',
     title: 'AI Strategy & Advisory | Strategy That Ships | Clickmasters',
     description:
       'Clickmasters provides AI strategy and advisory that ends in working systems, not slide decks — opportunity audits, roadmaps, tool selection, and implementation by the same team that builds.',
@@ -69,7 +69,7 @@ export const SERVICE_PAGES: ServicePage[] = [
 
   // ── AI Lead Generation ──
   {
-    url: '/services/ai-lead-generation/',
+    url: '/services/ai-lead-generation',
     title: 'AI Lead Generation Automation | Clickmasters',
     description:
       'Clickmasters builds AI lead generation systems — instant response, conversational qualification, enrichment, scoring, and nurture — that converts leads your team is currently losing.',
@@ -112,7 +112,7 @@ export const SERVICE_PAGES: ServicePage[] = [
 
   // ── AI Reporting Automation ──
   {
-    url: '/services/ai-reporting-automation/',
+    url: '/services/ai-reporting-automation',
     title: 'AI Reporting Automation | Reports That Build Themselves | Clickmasters',
     description:
       'Clickmasters builds reporting automation — recurring reports and live dashboards assembled from your systems automatically, with AI summaries of what changed and why it matters.',
@@ -152,7 +152,7 @@ export const SERVICE_PAGES: ServicePage[] = [
 
   // ── Custom AI Development ──
   {
-    url: '/services/custom-ai-development/',
+    url: '/services/custom-ai-development',
     title: 'Custom AI Development | Clickmasters',
     description:
       'Clickmasters builds custom AI solutions on proven models — AI applications, agents, and integrations designed for your business. Honest scoping: we\'ll tell you when integration beats development.',

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const crmAutomationForManufacturing: SolutionData = {
   slug: 'crm-automation/for-manufacturing',
-  url: '/solutions/crm-automation/for-manufacturing/',
+  url: '/solutions/crm-automation/for-manufacturing',
   platform: 'CRM Automation',
   category: 'crm-automation',
   title: 'CRM Automation for Manufacturing',

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const appointmentBookingAutomationForRealEstate: SolutionData = {
   slug: 'appointment-booking-automation/for-real-estate',
-  url: '/solutions/appointment-booking-automation/for-real-estate/',
+  url: '/solutions/appointment-booking-automation/for-real-estate',
   platform: 'Appointment & Booking Automation',
   category: 'appointment-booking-automation',
   title: 'Appointment & Booking Automation for Real Estate',

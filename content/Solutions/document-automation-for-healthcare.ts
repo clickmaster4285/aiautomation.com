@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const documentAutomationForHealthcare: SolutionData = {
   slug: 'document-automation/for-healthcare',
-  url: '/solutions/document-automation/for-healthcare/',
+  url: '/solutions/document-automation/for-healthcare',
   platform: 'Document & Data Automation',
   category: 'document-automation',
   title: 'Document & Data Automation for Healthcare',

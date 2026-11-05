@@ -20,13 +20,16 @@ import {
   ArrowRight,
   Sparkles,
 } from 'lucide-react';
+import { canonicalUrl } from '@/lib/canonical';
+import { HubJsonLd } from '@/components/seo/HubJsonLd';
+import { hubSeo } from '@/lib/hub-seo';
 
 export const metadata: Metadata = {
   title: 'AI Automation Services | Clickmasters',
   description:
     'Explore Clickmasters AI automation services: workflow and process automation, RPA, AI agents, chatbots, voice agents, reporting and custom AI development.',
   alternates: {
-    canonical: 'https://clickmastersaiautomation.com/services',
+    canonical: canonicalUrl('https://clickmastersaiautomation.com/services'),
   },
 };
 
@@ -54,7 +57,7 @@ const heroData = {
     text: 'Book a Free Audit',
     href: '/free-automation-audit',
   },
-  image: '/images/hero-robot.png',
+  image: '/images/hero-robot.jpg',
   imageWidth: 700,
   imageHeight: 580,
   textSize: 'xlarge' as const,
@@ -67,6 +70,7 @@ const heroData = {
 export default function ServicesPage() {
   return (
     <>
+      <HubJsonLd hub={hubSeo.services} />
       <HeroSection {...heroData} />
 
       <Section bg="muted" pattern="dots" className="py-20">
@@ -109,6 +113,26 @@ export default function ServicesPage() {
                 );
               })
             )}
+          </div>
+
+          <div className="mt-14">
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">Platforms we implement</h2>
+            <ul className="flex flex-wrap gap-3">
+              {[
+                ['Zapier', '/platforms/zapier-automation-services'],
+                ['Make', '/platforms/make-automation-services'],
+                ['n8n', '/platforms/n8n-automation-services'],
+                ['HubSpot', '/platforms/hubspot-automation-services'],
+                ['Airtable', '/platforms/airtable-automation-services'],
+                ['GoHighLevel', '/platforms/gohighlevel-automation-services'],
+              ].map(([label, href]) => (
+                <li key={href}>
+                  <Link href={href} className="text-sm font-medium text-brand hover:underline">
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </Section>

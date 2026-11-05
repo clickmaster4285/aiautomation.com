@@ -63,15 +63,15 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
     datePublished: cs.meta.publishedAt,
     dateModified: cs.meta.updatedAt,
     author: { '@type': 'Organization', name: 'Clickmasters' },
-    publisher: { '@type': 'Organization', name: 'Clickmasters', url: 'https://clickmasters.io' },
+    publisher: { '@type': 'Organization', name: 'Clickmasters', url: 'https://clickmastersaiautomation.com' },
     mainEntityOfPage: seo.url,
   };
   const breadcrumbLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://clickmasters.io/' },
-      { '@type': 'ListItem', position: 2, name: 'Case studies', item: 'https://clickmasters.io/case-studies' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://clickmastersaiautomation.com' },
+      { '@type': 'ListItem', position: 2, name: 'Case studies', item: 'https://clickmastersaiautomation.com/case-studies' },
       { '@type': 'ListItem', position: 3, name: seo.h1, item: seo.url },
     ],
   };
@@ -274,10 +274,12 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
       className="absolute -right-8 top-[35%] w-32 md:w-40 pointer-events-none hidden lg:block opacity-70"
     >
       <Image
-        src="/images/robo-side.png"
-        alt=""
-        width={512}
-        height={512}
+        src="/images/robo-side.jpg"
+        alt="Robot illustration"
+        width={480}
+        height={541}
+        sizes="160px"
+        quality={60}
         className="w-full h-auto scale-x-[-1]"
       />
     </motion.div>
@@ -939,10 +941,12 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
             transition={{ duration: 5, repeat: Infinity }}
           >
             <Image
-              src="/images/robot-mascot2.png"
-              alt=""
-              width={640}
-              height={640}
+              src="/images/robot-mascot2.jpg"
+              alt="Clickmasters robot mascot"
+              width={479}
+              height={479}
+              sizes="(min-width: 768px) 176px, 80px"
+              quality={60}
               className="w-full h-auto"
             />
           </motion.div>
@@ -954,10 +958,12 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
             transition={{ duration: 5, repeat: Infinity }}
           >
             <Image
-              src="/images/robot-mascot2.png"
-              alt=""
-              width={640}
-              height={640}
+              src="/images/robot-mascot2.jpg"
+              alt="Clickmasters robot mascot"
+              width={479}
+              height={479}
+              sizes="(min-width: 768px) 176px, 80px"
+              quality={60}
               className="w-full h-auto"
             />
           </motion.div>

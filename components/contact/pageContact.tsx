@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { fadeInUp, staggerContainer } from '../services/Shared/animation';
 import { Button } from '@/components/ui/button';
+import { PHONES, SALES_EMAIL } from '@/lib/site-contact';
 import {
   ArrowRight,
   Mail,
@@ -456,8 +457,12 @@ export default function ContactPage() {
               <motion.div variants={fadeInUp} className="space-y-4">
                 <h3 className="display text-lg font-semibold text-gray-700">Other ways to reach us</h3>
                 {[
-                  { icon: Mail, label: 'Email', value: 'sales@clickmastersdigitalmarketing.com' },
-                  { icon: Phone, label: 'Phone', value: '+44 7988 576086' },
+                  { icon: Mail, label: 'Email', value: SALES_EMAIL },
+                  ...PHONES.map((phone) => ({
+                    icon: Phone,
+                    label: phone.label,
+                    value: phone.display,
+                  })),
                   { icon: Clock, label: 'Response time', value: 'Within a few hours' },
                 ].map((item, idx) => (
                   <motion.div

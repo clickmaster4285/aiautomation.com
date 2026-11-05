@@ -1,10 +1,9 @@
 // components/solutions/sections/ContentSection.tsx
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { motion, useInView, animate } from 'framer-motion';
+import { motion } from 'framer-motion';
 import {
   ArrowRight,
   CheckCircle2,
@@ -42,36 +41,11 @@ interface ContentSectionProps {
 }
 
 /* ── Count-up stat ── */
-function AnimatedStat({ value, label, delay = 0 }: { value: string; label: string; delay?: number }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const inView = useInView(ref, { once: true, margin: '-40px' });
-  const [display, setDisplay] = useState('0');
-
-  const match = value.match(/^([\d,.]+)(.*)$/);
-  const target = match ? parseFloat(match[1].replace(/,/g, '')) : null;
-  const suffix = match ? match[2] : '';
-  const decimals = match && match[1].includes('.') ? match[1].split('.')[1].length : 0;
-
-  useEffect(() => {
-    if (!inView) return;
-    if (target === null) {
-      setDisplay(value);
-      return;
-    }
-    const controls = animate(0, target, {
-      duration: 1.4,
-      delay,
-      ease: [0.16, 1, 0.3, 1],
-      onUpdate: (v) => setDisplay(v.toFixed(decimals)),
-    });
-    return () => controls.stop();
-  }, [inView, target, value, delay, decimals]);
-
+function AnimatedStat({ value, label }: { value: string; label: string; delay?: number }) {
   return (
-    <div ref={ref} className="text-center">
+    <div className="text-center">
       <div className="text-3xl md:text-4xl font-bold text-brand tracking-tight tabular-nums">
-        {display}
-        {suffix}
+        {value}
       </div>
       <div className="mt-1.5 text-sm font-medium text-gray-500">{label}</div>
     </div>

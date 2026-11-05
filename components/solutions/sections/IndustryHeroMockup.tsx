@@ -126,7 +126,7 @@ export function AutomationHeroMockup({
               className="text-[9px] font-mono uppercase tracking-[0.15em]"
               style={{ color: teal }}
             >
-              Live
+              Example
             </span>
           </span>
         </div>
@@ -287,7 +287,7 @@ export function AutomationHeroMockup({
               className="text-[9px] font-mono uppercase tracking-wide"
               style={{ color: teal }}
             >
-              This week
+              Example figures
             </span>
           </div>
 

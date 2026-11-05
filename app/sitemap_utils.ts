@@ -105,15 +105,21 @@ export function getStaticPages(): string[] {
   const mainPages = [
     '',           // Home page
     '/about',
-    '/blog',
     '/contact',
     '/platforms',
     '/industries',
-    '/services',  // Main services hub page
+    '/services',
+    '/solutions',
+    '/case-studies',
+    '/free-automation-audit',
+    '/privacy-policy',
+    '/terms-conditions',
+    // Declared canonical for the live case study. Alias slugs 301 here.
+    '/case-studies/ai-receptionist-lead-response-automation',
   ];
   
-  const existingMainPages = mainPages.filter(route => 
-    allRoutes.includes(route) || route === ''
+  const existingMainPages = mainPages.filter(route =>
+    allRoutes.includes(route) || route === '' || route.startsWith('/case-studies/')
   );
   
   return existingMainPages;
@@ -254,15 +260,9 @@ export function getIndustries(): { slug: string; subPages: string[] }[] {
   ];
 }
 
-// Get blogs - Only returns the main /blog page
+// /blog is noindexed until real posts exist, so it stays out of the sitemap.
 export function getBlogPosts(): { slug: string; subPages: string[]; date?: string }[] {
-  return [
-    {
-      slug: '', // Empty slug means the main /blog page
-      subPages: [], // No sub-pages
-      date: new Date().toISOString().split('T')[0],
-    },
-  ];
+  return [];
 }
 
 // Get platforms

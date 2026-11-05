@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiAgentsForRestaurants: SolutionData = {
   slug: 'ai-agents/for-restaurants',
-  url: '/solutions/ai-agents/for-restaurants/',
+  url: '/solutions/ai-agents/for-restaurants',
   platform: 'Custom AI Agents',
   category: 'ai-agents',
   title: 'AI Agent Development for Restaurants & Hospitality',

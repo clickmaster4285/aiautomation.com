@@ -1,6 +1,5 @@
 import { getPlatforms } from '../sitemap_utils';
-
-const siteUrl = "https://clickmastersaiautomation.com";
+import { canonicalUrl } from '@/lib/canonical';
 
 export async function GET() {
   const lastModified = new Date().toISOString();
@@ -27,21 +26,12 @@ export async function GET() {
   for (const platform of platforms) {
     sitemap += `
   <url>
-    <loc>${siteUrl}/platforms/${platform}</loc>
+    <loc>${canonicalUrl(`/platforms/${platform}`)}</loc>
     <lastmod>${lastModified}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>`;
   }
-
-  // Add the main platforms page
-  sitemap += `
-  <url>
-    <loc>${siteUrl}/platforms</loc>
-    <lastmod>${lastModified}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>`;
 
   sitemap += `
 </urlset>`;

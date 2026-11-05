@@ -116,6 +116,9 @@ export function ReturnSection({ title, content, stats }: ReturnSectionProps) {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="grid grid-cols-2 gap-4"
           >
+            <p className="col-span-2 text-sm text-white/70">
+              Example outcomes for this type of work. These are not a live dashboard.
+            </p>
             {metrics.map((metric, idx) => (
               <motion.div
                 key={idx}

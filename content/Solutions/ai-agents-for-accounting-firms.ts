@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiAgentsForAccountingFirms: SolutionData = {
   slug: 'ai-agents/for-accounting-firms',
-  url: '/solutions/ai-agents/for-accounting-firms/',
+  url: '/solutions/ai-agents/for-accounting-firms',
   platform: 'Custom AI Agents',
   category: 'ai-agents',
   title: 'AI Agent Development for Accounting Firms',

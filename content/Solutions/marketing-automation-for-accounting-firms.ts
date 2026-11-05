@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const marketingAutomationForAccountingFirms: SolutionData = {
   slug: 'marketing-automation/for-accounting-firms',
-  url: '/solutions/marketing-automation/for-accounting-firms/',
+  url: '/solutions/marketing-automation/for-accounting-firms',
   platform: 'AI Marketing Automation',
   category: 'marketing-automation',
   title: 'AI Marketing Automation for Accounting Firms',

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const crmAutomationWithSalesforce: SolutionData = {
   slug: 'crm-automation/with-salesforce',
-  url: '/solutions/crm-automation/with-salesforce/',
+  url: '/solutions/crm-automation/with-salesforce',
   platform: 'Salesforce',
   category: 'crm-automation',
   title: 'CRM Automation with Salesforce',

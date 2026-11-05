@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const salesAutomationForLawFirms: SolutionData = {
   slug: 'sales-automation/for-law-firms',
-  url: '/solutions/sales-automation/for-law-firms/',
+  url: '/solutions/sales-automation/for-law-firms',
   platform: 'AI Sales Automation',
   category: 'sales-automation',
   title: 'AI Sales Automation for Law Firms',

@@ -13,17 +13,18 @@ import { StatsSection } from '@/components/solutions/sections/Stats';
 import { BackButton } from '@/components/ui/backButton';
 import { ChatbotHeroMockup } from '@/components/solutions/sections/ChatbotHeroMockup';
 import { documentAutomationWithN8n } from '@/content/Solutions';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: documentAutomationWithN8n.titleTag,
   description: documentAutomationWithN8n.metaDescription,
   alternates: {
-    canonical: documentAutomationWithN8n.url,
+    canonical: canonicalUrl(documentAutomationWithN8n.url),
   },
   openGraph: {
     title: documentAutomationWithN8n.titleTag,
     description: documentAutomationWithN8n.metaDescription,
-    url: documentAutomationWithN8n.url,
+    url: canonicalUrl(documentAutomationWithN8n.url),
     type: 'website',
   },
   keywords: documentAutomationWithN8n.primaryKeyword,

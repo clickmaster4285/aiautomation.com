@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { businessProcessAutomationForEducation } from '@/content/Solutions/business-process-automation-for-education';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: businessProcessAutomationForEducation.titleTag,
   description: businessProcessAutomationForEducation.metaDescription,
   alternates: {
-    canonical: businessProcessAutomationForEducation.url,
+    canonical: canonicalUrl(businessProcessAutomationForEducation.url),
   },
   openGraph: {
     title: businessProcessAutomationForEducation.titleTag,
     description: businessProcessAutomationForEducation.metaDescription,
-    url: businessProcessAutomationForEducation.url,
+    url: canonicalUrl(businessProcessAutomationForEducation.url),
     type: 'website',
   },
   keywords: businessProcessAutomationForEducation.primaryKeyword,

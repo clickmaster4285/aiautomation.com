@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiAgentsForLogistics: SolutionData = {
   slug: 'ai-agents/for-logistics',
-  url: '/solutions/ai-agents/for-logistics/',
+  url: '/solutions/ai-agents/for-logistics',
   platform: 'Custom AI Agents',
   category: 'ai-agents',
   title: 'AI Agent Development for Logistics & Transportation',

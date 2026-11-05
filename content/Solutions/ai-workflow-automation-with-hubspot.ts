@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiWorkflowAutomationWithHubspot: SolutionData = {
   slug: 'ai-workflow-automation/with-hubspot',
-  url: '/solutions/ai-workflow-automation/with-hubspot/',
+  url: '/solutions/ai-workflow-automation/with-hubspot',
   platform: 'HubSpot',
   category: 'ai-workflow-automation',
   title: 'AI Workflow Automation with HubSpot',

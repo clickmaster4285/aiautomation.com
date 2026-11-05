@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiChatbotsForEcommerce: SolutionData = {
   slug: 'ai-chatbots/for-ecommerce',
-  url: '/solutions/ai-chatbots/for-ecommerce/',
+  url: '/solutions/ai-chatbots/for-ecommerce',
   platform: 'AI Chatbots',
   category: 'ai-chatbots',
   title: 'AI Chatbots for E-commerce',

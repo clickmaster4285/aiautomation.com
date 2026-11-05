@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const salesAutomationForRestaurants: SolutionData = {
   slug: 'sales-automation/for-restaurants',
-  url: '/solutions/sales-automation/for-restaurants/',
+  url: '/solutions/sales-automation/for-restaurants',
   platform: 'AI Sales Automation',
   category: 'sales-automation',
   title: 'AI Sales Automation for Restaurants & Hospitality',

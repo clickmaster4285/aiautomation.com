@@ -58,10 +58,12 @@ export default function Problem({ data }: { data: ProblemData }) {
         </div>
 
         <Image
-          src="/images/robo-side.png"
-          alt=""
-          width={512}
-          height={512}
+          src="/images/robo-side.jpg"
+          alt="Robot illustration beside the problem section"
+          width={480}
+          height={541}
+          sizes="144px"
+          quality={60}
           className="absolute left-0 top-[40%] w-36 h-auto opacity-90 hidden md:block"
         />
 

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const leadGenerationAutomationWithHubspot: SolutionData = {
   slug: 'lead-generation-automation/with-hubspot',
-  url: '/solutions/lead-generation-automation/with-hubspot/',
+  url: '/solutions/lead-generation-automation/with-hubspot',
   platform: 'HubSpot',
   category: 'lead-generation-automation',
   title: 'Lead Generation Automation with HubSpot',

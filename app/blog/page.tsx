@@ -17,94 +17,22 @@ const Dot = ({ className }: { className?: string }) => {
   );
 };
 
-// Blog post data
-const blogPosts = [
-  {
-    id: 1,
-    title: 'How AI Workflow Automation is Transforming Business Operations',
-    excerpt: 'Discover how AI-powered workflow automation is helping businesses streamline operations, reduce costs, and improve efficiency across departments.',
-    category: 'AI Automation',
-    author: 'Sarah Mitchell',
-    date: 'March 15, 2026',
-    readTime: '8 min read',
-    image: '/images/blog1.jpg',
-    imageWidth: 423,
-    imageHeight: 220,
-    slug: 'ai-workflow-automation-transforming-business',
-    tags: ['AI', 'Workflow Automation', 'Business Efficiency'],
-  },
-  {
-    id: 2,
-    title: 'The Ultimate Guide to AI Chatbots for Customer Service',
-    excerpt: 'Learn how AI chatbots are revolutionizing customer service with 24/7 support, instant responses, and intelligent problem-solving capabilities.',
-    category: 'AI Chatbots',
-    author: 'James Anderson',
-    date: 'March 12, 2026',
-    readTime: '10 min read',
-    image: '/images/blog2.jpg',
-    imageWidth: 331,
-    imageHeight: 220,
-    slug: 'ultimate-guide-ai-chatbots-customer-service',
-    tags: ['Chatbots', 'Customer Service', 'AI'],
-  },
-  {
-    id: 3,
-    title: 'CRM Automation: Keeping Your Sales Pipeline Active and Accurate',
-    excerpt: 'Explore how CRM automation helps sales teams maintain accurate data, automate follow-ups, and close deals faster with AI-powered insights.',
-    category: 'CRM Automation',
-    author: 'Emily Roberts',
-    date: 'March 10, 2026',
-    readTime: '6 min read',
-    image: '/images/bg3.jpg',
-    imageWidth: 373,
-    imageHeight: 220,
-    slug: 'crm-automation-sales-pipeline',
-    tags: ['CRM', 'Sales Automation', 'AI'],
-  },
-  {
-    id: 4,
-    title: 'Document Automation: How AI is Eliminating Manual Paperwork',
-    excerpt: 'See how document automation is helping businesses eliminate manual data entry, reduce errors, and process documents at scale with AI.',
-    category: 'Document Automation',
-    author: 'Michael Chen',
-    date: 'March 8, 2026',
-    readTime: '7 min read',
-    image: '/images/blog4.jpg',
-    imageWidth: 474,
-    imageHeight: 170,
-    slug: 'document-automation-eliminating-manual-paperwork',
-    tags: ['Document Processing', 'AI', 'Automation'],
-  },
-  {
-    id: 5,
-    title: 'Lead Generation Automation: Capturing and Qualifying Leads at Scale',
-    excerpt: 'Discover how AI-powered lead generation is helping businesses capture, qualify, and route leads instantly for faster sales conversions.',
-    category: 'Lead Generation',
-    author: 'Amanda Johnson',
-    date: 'March 5, 2026',
-    readTime: '9 min read',
-    image: '/images/blog5.jpg',
-    imageWidth: 392,
-    imageHeight: 220,
-    slug: 'lead-generation-automation-capturing-qualifying',
-    tags: ['Lead Generation', 'AI', 'Sales'],
-  },
-  {
-    id: 6,
-    title: 'Marketing Automation: Scaling Your Campaigns with AI',
-    excerpt: 'Learn how AI-powered marketing automation is helping businesses create personalized campaigns, nurture leads, and measure ROI effectively.',
-    category: 'Marketing Automation',
-    author: 'David Kim',
-    date: 'March 3, 2026',
-    readTime: '8 min read',
-    image: '/images/blog6.jpg',
-    imageWidth: 330,
-    imageHeight: 220,
-    slug: 'marketing-automation-scaling-campaigns-ai',
-    tags: ['Marketing Automation', 'AI', 'Campaigns'],
-  },
-];
-
+// No posts are published. The hub stays noindex until real articles exist.
+type BlogPost = {
+  id: number;
+  title: string;
+  excerpt: string;
+  category: string;
+  author: string;
+  date: string;
+  readTime: string;
+  image: string;
+  imageWidth: number;
+  imageHeight: number;
+  slug: string;
+  tags: string[];
+};
+const blogPosts: BlogPost[] = [];
 export default function BlogPage() {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -204,17 +132,16 @@ export default function BlogPage() {
               </h1>
 
               <p className="blog-meta text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed mt-4">
-                Stay updated with the latest trends, best practices, and insights 
-                in AI automation, chatbots, and workflow optimization.
+                Articles are not published yet. This page stays out of search until there are real posts to read.
               </p>
 
               <div className="blog-meta flex flex-wrap justify-center gap-3 mt-6">
-                <div
-                  className="bg-ink text-white text-sm md:text-base px-5 py-3 hover:bg-brand transition-colors inline-flex items-center justify-center gap-2 text-center cursor-default"
-                  onClick={handlePreventClick}
+                <Link
+                  href="/contact"
+                  className="bg-ink text-white text-sm md:text-base px-5 py-3 hover:bg-brand transition-colors inline-flex items-center justify-center gap-2 text-center"
                 >
-                  View Latest Posts <span>›</span>
-                </div>
+                  Talk to the team <span>›</span>
+                </Link>
                 <div
                   className="border border-ink text-ink text-sm md:text-base px-5 py-3 font-medium hover:bg-ink hover:text-white transition-colors text-center cursor-default"
                   onClick={handlePreventClick}
@@ -244,14 +171,14 @@ export default function BlogPage() {
           >
             <span className="inline-flex items-center gap-2 text-brand text-xs font-semibold uppercase tracking-[0.15em] mb-4">
               <span className="w-8 h-px bg-brand" />
-              Latest Articles
+              Coming later
               <span className="w-8 h-px bg-brand" />
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-ink mb-4">
-              Featured <span className="bg-gradient-to-r from-brand to-orange-400 bg-clip-text text-transparent">Posts</span>
+              No articles <span className="bg-gradient-to-r from-brand to-orange-400 bg-clip-text text-transparent">yet</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Expert insights on AI automation, chatbots, and business process optimization.
+              There are no posts on this hub. The cards that used to appear here were placeholders and have been removed.
             </p>
           </motion.div>
 
@@ -354,13 +281,13 @@ export default function BlogPage() {
             transition={{ delay: 0.4, duration: 0.5 }}
             className="text-center mt-12"
           >
-            <div
-              className="inline-flex items-center gap-2 border-2 border-brand text-brand hover:bg-brand hover:text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 group cursor-default"
-              onClick={handlePreventClick}
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 border-2 border-brand text-brand hover:bg-brand hover:text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 group"
             >
-              Load More Articles
+              Contact the team
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </div>
+            </Link>
           </motion.div>
         </div>
       </Section>

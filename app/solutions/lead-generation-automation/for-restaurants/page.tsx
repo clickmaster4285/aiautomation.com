@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { leadGenerationAutomationForRestaurants } from '@/content/Solutions/lead-generation-automation-for-restaurants';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: leadGenerationAutomationForRestaurants.titleTag,
   description: leadGenerationAutomationForRestaurants.metaDescription,
   alternates: {
-    canonical: leadGenerationAutomationForRestaurants.url,
+    canonical: canonicalUrl(leadGenerationAutomationForRestaurants.url),
   },
   openGraph: {
     title: leadGenerationAutomationForRestaurants.titleTag,
     description: leadGenerationAutomationForRestaurants.metaDescription,
-    url: leadGenerationAutomationForRestaurants.url,
+    url: canonicalUrl(leadGenerationAutomationForRestaurants.url),
     type: 'website',
   },
   keywords: leadGenerationAutomationForRestaurants.primaryKeyword,

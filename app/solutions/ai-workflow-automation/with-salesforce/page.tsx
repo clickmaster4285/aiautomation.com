@@ -12,17 +12,18 @@ import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutio
 import { StatsSection } from '@/components/solutions/sections/Stats';
 import { ChatbotHeroMockup } from '@/components/solutions/sections/ChatbotHeroMockup';
 import { aiWorkflowAutomationWithSalesforce } from '@/content/Solutions';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: aiWorkflowAutomationWithSalesforce.titleTag,
   description: aiWorkflowAutomationWithSalesforce.metaDescription,
   alternates: {
-    canonical: aiWorkflowAutomationWithSalesforce.url,
+    canonical: canonicalUrl(aiWorkflowAutomationWithSalesforce.url),
   },
   openGraph: {
     title: aiWorkflowAutomationWithSalesforce.titleTag,
     description: aiWorkflowAutomationWithSalesforce.metaDescription,
-    url: aiWorkflowAutomationWithSalesforce.url,
+    url: canonicalUrl(aiWorkflowAutomationWithSalesforce.url),
     type: 'website',
   },
   keywords: aiWorkflowAutomationWithSalesforce.primaryKeyword,

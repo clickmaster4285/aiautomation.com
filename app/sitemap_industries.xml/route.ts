@@ -1,7 +1,6 @@
 // app/sitemap_industries.xml/route.ts
 import { industryContent } from '@/content/Industries';
-
-const siteUrl = 'https://clickmastersaiautomation.com';
+import { canonicalUrl } from '@/lib/canonical';
 
 export async function GET() {
   const lastModified = new Date().toISOString();
@@ -24,7 +23,7 @@ export async function GET() {
 
   // 👇 Iterate entries, use the KEY as the slug — this is what the route uses.
   for (const [slug, industry] of Object.entries(industryContent)) {
-    addUrl(`${siteUrl}/industries/${slug}`, '0.8');
+    addUrl(canonicalUrl(`/industries/${slug}`), '0.8');
 
     const subPages = (industry as any).subPages as (string | { path: string })[] | undefined;
     if (!Array.isArray(subPages)) continue;
@@ -41,7 +40,7 @@ export async function GET() {
       } else {
         cleaned = `/industries/${slug}/${cleaned.replace(/^\/+|\/+$/g, '')}`;
       }
-      addUrl(`${siteUrl}${cleaned}`, '0.7');
+      addUrl(canonicalUrl(cleaned), '0.7');
     }
   }
 

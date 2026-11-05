@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiAgentsForLawFirms: SolutionData = {
   slug: 'ai-agents/for-law-firms',
-  url: '/solutions/ai-agents/for-law-firms/',
+  url: '/solutions/ai-agents/for-law-firms',
   platform: 'Custom AI Agents',
   category: 'ai-agents',
   title: 'AI Agent Development for Law Firms',

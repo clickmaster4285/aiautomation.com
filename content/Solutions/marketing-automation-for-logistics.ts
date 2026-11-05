@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const marketingAutomationForLogistics: SolutionData = {
   slug: 'marketing-automation/for-logistics',
-  url: '/solutions/marketing-automation/for-logistics/',
+  url: '/solutions/marketing-automation/for-logistics',
   platform: 'AI Marketing Automation',
   category: 'marketing-automation',
   title: 'AI Marketing Automation for Logistics & Transportation',

@@ -13,7 +13,7 @@ export default function Footer() {
     <footer className="bg-muted text-gray-600 border-t border-muted-foreground/10 py-12 md:py-20">
       <div className="mx-auto max-w-[84vw] px-6">
         {/* ── Flex layout: equal visual gaps between column content, not just equal tracks ── */}
-        <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 lg:flex lg:flex-nowrap lg:justify-between lg:items-start lg:gap-x-0">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 lg:flex lg:flex-wrap lg:justify-between lg:items-start lg:gap-x-8 lg:gap-y-10">
           
           {/* Brand - Column 1 */}
           <div className="space-y-4 lg:max-w-[220px] lg:flex-shrink-0">
@@ -113,8 +113,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-sm hover:text-brand transition-colors duration-200">
-                  Blog
+                <Link href="/platforms" className="text-sm hover:text-brand transition-colors duration-200">
+                  Platforms
+                </Link>
+              </li>
+              <li>
+                <Link href="/industries" className="text-sm hover:text-brand transition-colors duration-200">
+                  Industries
                 </Link>
               </li>
               <li>
@@ -122,6 +127,48 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
+            </ul>
+          </div>
+
+          {/* Platforms and industries stay in the initial HTML. Nav dropdowns open on hover. */}
+          <div className="lg:flex-shrink-0">
+            <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider mb-5">Platforms</h4>
+            <ul className="space-y-3">
+              {[
+                ['Zapier', '/platforms/zapier-automation-services'],
+                ['Make', '/platforms/make-automation-services'],
+                ['n8n', '/platforms/n8n-automation-services'],
+                ['HubSpot', '/platforms/hubspot-automation-services'],
+                ['Airtable', '/platforms/airtable-automation-services'],
+                ['GoHighLevel', '/platforms/gohighlevel-automation-services'],
+              ].map(([label, href]) => (
+                <li key={href}>
+                  <Link href={href} className="text-sm hover:text-brand transition-colors duration-200">
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="lg:flex-shrink-0">
+            <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider mb-5">Industries</h4>
+            <ul className="space-y-3">
+              {[
+                ['Finance & Accounting', '/industries/ai-automation-for-finance-accounting'],
+                ['Healthcare', '/industries/ai-automation-for-healthcare'],
+                ['Law Firms', '/industries/ai-automation-for-law-firms'],
+                ['E-commerce', '/industries/ai-automation-for-ecommerce'],
+                ['SaaS', '/industries/ai-automation-for-saas'],
+                ['Professional Services', '/industries/ai-automation-for-professional-services'],
+                ['Real Estate', '/industries/ai-automation-for-real-estate'],
+              ].map(([label, href]) => (
+                <li key={href}>
+                  <Link href={href} className="text-sm hover:text-brand transition-colors duration-200">
+                    {label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 

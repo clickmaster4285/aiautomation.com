@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const documentAutomationForRestaurants: SolutionData = {
   slug: 'document-automation/for-restaurants',
-  url: '/solutions/document-automation/for-restaurants/',
+  url: '/solutions/document-automation/for-restaurants',
   platform: 'Document & Data Automation',
   category: 'document-automation',
   title: 'Document & Data Automation for Restaurants & Hospitality',

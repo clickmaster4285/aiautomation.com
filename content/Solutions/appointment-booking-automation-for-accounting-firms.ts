@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const appointmentBookingAutomationForAccountingFirms: SolutionData = {
   slug: 'appointment-booking-automation/for-accounting-firms',
-  url: '/solutions/appointment-booking-automation/for-accounting-firms/',
+  url: '/solutions/appointment-booking-automation/for-accounting-firms',
   platform: 'Appointment & Booking Automation',
   category: 'appointment-booking-automation',
   title: 'Appointment & Booking Automation for Accounting Firms',

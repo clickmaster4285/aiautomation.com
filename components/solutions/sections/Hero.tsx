@@ -375,6 +375,8 @@ export function HeroSection({
                       alt={heading}
                       width={imageWidth}
                       height={imageHeight}
+                      sizes="(min-width: 1024px) 540px, (min-width: 768px) 480px, 92vw"
+                      quality={60}
                       className="w-full h-auto object-contain"
                       priority
                     />

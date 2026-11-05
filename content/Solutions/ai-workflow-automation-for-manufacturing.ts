@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiWorkflowAutomationForManufacturing: SolutionData = {
   slug: 'ai-workflow-automation/for-manufacturing',
-  url: '/solutions/ai-workflow-automation/for-manufacturing/',
+  url: '/solutions/ai-workflow-automation/for-manufacturing',
   platform: 'AI Workflow Automation',
   category: 'ai-workflow-automation',
   title: 'AI Workflow Automation for Manufacturing',

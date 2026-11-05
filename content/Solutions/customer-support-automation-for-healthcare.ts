@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const customerSupportAutomationForHealthcare: SolutionData = {
   slug: 'customer-support-automation/for-healthcare',
-  url: '/solutions/customer-support-automation/for-healthcare/',
+  url: '/solutions/customer-support-automation/for-healthcare',
   platform: 'Customer Support Automation',
   category: 'customer-support-automation',
   title: 'Customer Support Automation for Healthcare',

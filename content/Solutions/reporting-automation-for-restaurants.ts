@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const reportingAutomationForRestaurants: SolutionData = {
   slug: 'reporting-automation/for-restaurants',
-  url: '/solutions/reporting-automation/for-restaurants/',
+  url: '/solutions/reporting-automation/for-restaurants',
   platform: 'Reporting Automation',
   category: 'reporting-automation',
   title: 'Reporting Automation for Restaurants & Hospitality',

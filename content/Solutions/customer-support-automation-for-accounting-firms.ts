@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const customerSupportAutomationForAccountingFirms: SolutionData = {
   slug: 'customer-support-automation/for-accounting-firms',
-  url: '/solutions/customer-support-automation/for-accounting-firms/',
+  url: '/solutions/customer-support-automation/for-accounting-firms',
   platform: 'Customer Support Automation',
   category: 'customer-support-automation',
   title: 'Customer Support Automation for Accounting Firms',

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiWorkflowAutomationForRealEstate: SolutionData = {
   slug: 'ai-workflow-automation/for-real-estate',
-  url: '/solutions/ai-workflow-automation/for-real-estate/',
+  url: '/solutions/ai-workflow-automation/for-real-estate',
   platform: 'AI Workflow Automation',
   category: 'ai-workflow-automation',
   title: 'AI Workflow Automation for Real Estate',

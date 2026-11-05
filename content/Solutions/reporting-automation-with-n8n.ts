@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const reportingAutomationWithN8n: SolutionData = {
   slug: 'reporting-automation/with-n8n',
-  url: '/solutions/reporting-automation/with-n8n/',
+  url: '/solutions/reporting-automation/with-n8n',
   platform: 'n8n',
   category: 'reporting-automation',
   title: 'Reporting Automation with n8n',

@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const leadGenerationAutomationForRealEstate: SolutionData = {
   slug: 'lead-generation-automation/for-real-estate',
-  url: '/solutions/lead-generation-automation/for-real-estate/',
+  url: '/solutions/lead-generation-automation/for-real-estate',
   platform: 'Lead Generation Automation',
   category: 'lead-generation-automation',
   title: 'Lead Generation Automation for Real Estate',

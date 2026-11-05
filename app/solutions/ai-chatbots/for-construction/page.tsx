@@ -18,16 +18,17 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { aiChatbotsForConstruction } from '@/content/Solutions';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 export const metadata: Metadata = {
   title: aiChatbotsForConstruction.titleTag,
   description: aiChatbotsForConstruction.metaDescription,
   alternates: {
-    canonical: aiChatbotsForConstruction.url,
+    canonical: canonicalUrl(aiChatbotsForConstruction.url),
   },
   openGraph: {
     title: aiChatbotsForConstruction.titleTag,
     description: aiChatbotsForConstruction.metaDescription,
-    url: aiChatbotsForConstruction.url,
+    url: canonicalUrl(aiChatbotsForConstruction.url),
     type: 'website',
   },
   keywords: aiChatbotsForConstruction.primaryKeyword,

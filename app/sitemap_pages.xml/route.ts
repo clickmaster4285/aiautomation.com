@@ -1,6 +1,5 @@
 import { getStaticPages } from '../sitemap_utils';
-
-const siteUrl = "https://clickmastersaiautomation.com";
+import { canonicalUrl } from '@/lib/canonical';
 
 export async function GET() {
   const lastModified = new Date().toISOString();
@@ -18,7 +17,7 @@ export async function GET() {
 
   // Add all pages
   for (const page of pages) {
-    let url = page === '' ? siteUrl : `${siteUrl}${page}`;
+    const url = canonicalUrl(page === '' ? '/' : page);
     let priority = page === '' ? '1.0' : '0.8';
     let changefreq = page === '' ? 'yearly' : 'monthly';
     

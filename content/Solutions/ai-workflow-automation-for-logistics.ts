@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const aiWorkflowAutomationForLogistics: SolutionData = {
   slug: 'ai-workflow-automation/for-logistics',
-  url: '/solutions/ai-workflow-automation/for-logistics/',
+  url: '/solutions/ai-workflow-automation/for-logistics',
   platform: 'AI Workflow Automation',
   category: 'ai-workflow-automation',
   title: 'AI Workflow Automation for Logistics & Transportation',

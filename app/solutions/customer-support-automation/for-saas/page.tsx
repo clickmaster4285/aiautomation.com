@@ -18,17 +18,18 @@ import { CTASection } from '@/components/solutions/sections/CTA';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
 import { customerSupportAutomationForSaaS } from '@/content/Solutions/customer-support-automation-for-saas';
 import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
+import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
   title: customerSupportAutomationForSaaS.titleTag,
   description: customerSupportAutomationForSaaS.metaDescription,
   alternates: {
-    canonical: customerSupportAutomationForSaaS.url,
+    canonical: canonicalUrl(customerSupportAutomationForSaaS.url),
   },
   openGraph: {
     title: customerSupportAutomationForSaaS.titleTag,
     description: customerSupportAutomationForSaaS.metaDescription,
-    url: customerSupportAutomationForSaaS.url,
+    url: canonicalUrl(customerSupportAutomationForSaaS.url),
     type: 'website',
   },
   keywords: customerSupportAutomationForSaaS.primaryKeyword,

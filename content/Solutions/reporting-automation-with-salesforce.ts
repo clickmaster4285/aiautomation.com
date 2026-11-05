@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const reportingAutomationWithSalesforce: SolutionData = {
   slug: 'reporting-automation/with-salesforce',
-  url: '/solutions/reporting-automation/with-salesforce/',
+  url: '/solutions/reporting-automation/with-salesforce',
   platform: 'Salesforce',
   category: 'reporting-automation',
   title: 'Reporting Automation with Salesforce',

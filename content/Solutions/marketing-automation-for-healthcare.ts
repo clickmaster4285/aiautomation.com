@@ -3,7 +3,7 @@ import { SolutionData } from '@/content/type';
 
 export const marketingAutomationForHealthcare: SolutionData = {
   slug: 'marketing-automation/for-healthcare',
-  url: '/solutions/marketing-automation/for-healthcare/',
+  url: '/solutions/marketing-automation/for-healthcare',
   platform: 'AI Marketing Automation',
   category: 'marketing-automation',
   title: 'AI Marketing Automation for Healthcare',
