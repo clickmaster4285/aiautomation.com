@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Section } from '@/content/type';
+import { Section, SectionItem } from '@/content/type';
 import { Clock, DollarSign, TrendingDown } from 'lucide-react';
 
 interface PainPointSecProps {
@@ -11,18 +11,20 @@ interface PainPointSecProps {
 export default function PainPointSec({ section }: PainPointSecProps) {
   const items = section?.items || [];
 
-  const stats = items.slice(0, 2).map((item: any) => ({
-    label: item?.title || 'N/A',
-    value: item?.value || 'N/A',
-    icon: item?.icon === 'Clock' ? Clock : DollarSign,
-  }));
+  const stats = items
+    .filter((item): item is SectionItem & { value: string } => typeof item.value === 'string' && item.value.trim().length > 0)
+    .slice(0, 2)
+    .map((item) => ({
+      label: item.title || '',
+      value: item.value,
+      icon: item.icon === 'Clock' ? Clock : DollarSign,
+    }))
+    .filter((item) => {
+      const match = item.value.match(/\d+(?:\.\d+)?/);
+      return !match || Number(match[0]) > 0;
+    });
 
-  const displayStats = stats.length === 2 ? stats : [
-    { label: 'HRS/WEEK WASTED', value: '40+', icon: Clock },
-    { label: 'AVG WASTED COST', value: '$180K', icon: DollarSign },
-  ];
-
-  const problems = items.slice(2).map((item: any) => item?.title) || ['Manual Tasks', 'Slow Operations'];
+  const problems = items.slice(2).map((item) => item.title).filter((title): title is string => Boolean(title));
   const displayProblems = problems.length > 0 ? problems : ['Manual Tasks', 'Slow Operations'];
 
   const data = {
@@ -82,7 +84,7 @@ export default function PainPointSec({ section }: PainPointSecProps) {
               transition={{ delay: 0.3, duration: 0.5 }}
               className="flex flex-wrap gap-4 sm:gap-6 md:gap-8 mb-8"
             >
-              {displayStats.map((stat: any, idx: number) => {
+              {stats.map((stat, idx) => {
                 const Icon = stat.icon;
                 return (
                   <div key={idx} className="flex items-center gap-3">
@@ -119,7 +121,7 @@ export default function PainPointSec({ section }: PainPointSecProps) {
             </motion.div>
           </motion.div>
 
-          {/* Right Content - Animates on scroll */}
+          {stats[0] && (
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -130,33 +132,35 @@ export default function PainPointSec({ section }: PainPointSecProps) {
             <div className="relative bg-gradient-to-br from-gray-900/50 to-gray-800/30 rounded-2xl border border-gray-800/50 p-8 md:p-10">
               <div className="absolute top-0 right-0 w-32 h-32 bg-brand/10 rounded-full blur-2xl" />
               <div className="relative">
-                <motion.div
-                  initial={{ scale: 0.5, opacity: 0 }}
-                  whileInView={{ scale: 1, opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.2, duration: 0.6, ease: 'easeOut' }}
-                  className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-brand mb-2"
-                >
-                  {displayStats[0]?.value || '40+'}
-                </motion.div>
+                {stats[0] && (
+                  <motion.div
+                    initial={{ scale: 0.5, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2, duration: 0.6, ease: 'easeOut' }}
+                    className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-brand mb-2"
+                  >
+                    {stats[0].value}
+                  </motion.div>
+                )}
 
-                <p className="text-lg text-gray-400">
-                  Hours of manual work <br />
-                  <span className="text-gray-500">wasted every week</span>
-                </p>
+                {stats[0].label && (
+                  <p className="text-lg text-gray-400">{stats[0].label}</p>
+                )}
 
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.4, duration: 0.5 }}
-                  className="mt-6 flex items-center gap-2 text-sm text-gray-500"
-                >
-                  <TrendingDown className="h-4 w-4 text-brand" />
-                  <span>Manual tasks are costing you</span>
-                  <span className="text-white font-medium">{displayStats[1]?.value || '$180K'}</span>
-                  <span>annually</span>
-                </motion.div>
+                {stats[1] && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.4, duration: 0.5 }}
+                    className="mt-6 flex items-center gap-2 text-sm text-gray-500"
+                  >
+                    <TrendingDown className="h-4 w-4 text-brand" />
+                    {stats[1].label ? <span>{stats[1].label}</span> : null}
+                    <span className="text-white font-medium">{stats[1].value}</span>
+                  </motion.div>
+                )}
               </div>
             </div>
 
@@ -171,6 +175,7 @@ export default function PainPointSec({ section }: PainPointSecProps) {
               <span className="text-sm font-medium text-black">Inefficiency Alert</span>
             </motion.div>
           </motion.div>
+          )}
         </div>
       </div>
     </section>

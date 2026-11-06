@@ -3,9 +3,8 @@ import { ServiceContent } from '../type';
 
 export const aiVoiceAgents: ServiceContent = {
  slug: 'ai-voice-agents',
-title: 'AI Voice Agent Services & Development | Clickmasters',
-metaDescription:
-  'Get custom AI voice agent services for customer support, sales calls, lead qualification, and appointment booking. Build smart voice AI with Clickmasters.',
+title: 'AI Voice Agent Development Services | Clickmasters AI',
+metaDescription: 'Clickmasters builds AI voice agents that answer and place calls, capture details, and hand off with context. Book a free audit. Ask the team today.',
 keywords: 'ai voice agent services, ai voice agent agency, ai voice agent company, voice automation, ai caller, conversational voice ai',
 sections: [
   // ========== HERO ==========

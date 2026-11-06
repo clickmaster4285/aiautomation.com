@@ -4,8 +4,7 @@ import { ServiceContent } from '../type';
 export const professionalServices: ServiceContent = {
   slug: 'professional-services',
   title: 'AI Automation for Professional Services | Clickmasters',
-  metaDescription:
-    'Clickmasters builds AI automation for consulting and professional service firms: client onboarding, proposals, follow-ups, time tracking, and billing.',
+  metaDescription: 'AI automation for professional services covers intake, scheduling, documents, and follow-up, with judgment left to the firm. Start with one workflow.',
   keywords: 'ai automation for professional services, consulting automation',
   sections: [
     {

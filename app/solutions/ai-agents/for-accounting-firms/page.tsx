@@ -48,10 +48,7 @@ export default function ForAccountingFirmsPage() {
             '@type': 'Service',
             name: 'AI Agent Development for Accounting Firms',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'AI Agent Development',
             areaServed: 'Global',
           }),
@@ -126,8 +123,8 @@ export default function ForAccountingFirmsPage() {
 
       {/* Boundaries Section */}
       <BoundariesSection
-        title="What This Isand Isn't"
-        content={[content.sections['What This Isand Isn\'t']]}
+        title="What This Is and Isn't"
+        content={[content.sections['What This Is and Isn\'t']]}
         />
 
       {/* Realities Section */}
@@ -166,7 +163,7 @@ export default function ForAccountingFirmsPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where AI agent pays off for accounting firms."
+        subtitle="Book a free automation audit. 30 minutes, no obligation, and an honest read on where AI agent pays off for accounting firms."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

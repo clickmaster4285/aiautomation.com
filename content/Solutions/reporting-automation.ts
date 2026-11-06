@@ -1,9 +1,8 @@
 // content/Solutions/reporting-automation.ts
 export const reportingAutomation = {
   url: '/solutions/reporting-automation',
-  titleTag: 'Reporting Automation Solutions | Clickmasters',
-  metaDescription:
-    'Reporting automation from Clickmasters turns manual reporting into a structured, automated workflow. Automate data collection, report generation, distribution, and dashboard updates for faster, more consistent business reporting.',
+  titleTag: 'Reporting Automation Solutions for Faster, More Reliable',
+  metaDescription: 'Operations teams use Clickmasters Reporting Automation Solutions for Faster, More Reliable Business Reporting to remove repetitive work from the current.',
   primaryKeyword: 'reporting automation',
   bookingLink: '/free-automation-audit',
 

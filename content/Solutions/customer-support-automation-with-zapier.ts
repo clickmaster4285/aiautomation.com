@@ -8,8 +8,8 @@ export const customerSupportAutomationWithZapier: SolutionData = {
   category: 'customer-support-automation',
   title: 'Customer Support Automation with Zapier',
   primaryKeyword: 'zapier support automation',
-  titleTag: 'Customer Support Automation with Zapier | Clickmasters',
-  metaDescription: 'Clickmasters builds support automation on Zapier  resolves, routes, and escalates automatically on the most accessible automation platform. Expert builds, documented and owned by you.',
+  titleTag: 'Customer Support Automation Built on Zapier | Clickmasters',
+  metaDescription: 'Teams running Zapier use Clickmasters customer support automation to resolve routine requests and escalate the cases that need a person. Ask the team.',
   keywordEvidence: '1 matching keywords, ~500 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

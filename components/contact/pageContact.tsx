@@ -632,18 +632,6 @@ export default function ContactPage() {
             variants={fadeInUp}
             className="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 md:gap-x-8 lg:gap-x-12"
           >
-            <div className="flex items-center gap-2">
-              <span className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand">500+</span>
-              <span className="text-[10px] sm:text-xs md:text-sm font-medium text-gray-400 uppercase tracking-wider">Projects</span>
-            </div>
-            <span className="hidden sm:inline-block w-px h-8 bg-gray-700" />
-
-            <div className="flex items-center gap-2">
-              <span className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand">120+</span>
-              <span className="text-[10px] sm:text-xs md:text-sm font-medium text-gray-400 uppercase tracking-wider">Clients</span>
-            </div>
-            <span className="hidden sm:inline-block w-px h-8 bg-gray-700" />
-
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
                 size="lg"

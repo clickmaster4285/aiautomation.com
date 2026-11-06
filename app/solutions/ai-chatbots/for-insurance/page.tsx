@@ -47,10 +47,7 @@ export default function ForInsurancePage() {
             '@type': 'Service',
             name: 'AI Chatbots for Insurance Agencies',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'AI Chatbot Development',
             areaServed: 'Global',
           }),
@@ -115,8 +112,8 @@ export default function ForInsurancePage() {
       />
 
       <BoundariesSection
-        title="What This Isand Isn't"
-        content={[content.sections['What This Isand Isn\'t']]}
+        title="What This Is and Isn't"
+        content={[content.sections['What This Is and Isn\'t']]}
       />
 
       <RealitiesSection
@@ -149,7 +146,7 @@ export default function ForInsurancePage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where chatbot pays off for insurance agencies."
+        subtitle="Book a free automation audit. 30 minutes, no obligation, and an honest read on where chatbot pays off for insurance agencies."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

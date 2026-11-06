@@ -48,10 +48,7 @@ export default function ForRestaurantsPage() {
             '@type': 'Service',
             name: 'Sales Automation for Restaurants & Hospitality',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'Sales Automation Development',
             areaServed: 'Global',
           }),
@@ -116,8 +113,8 @@ export default function ForRestaurantsPage() {
       />
 
       <BoundariesSection
-        title="What This Isand Isn't"
-        content={[content.sections['What This Isand Isn\'t']]}
+        title="What This Is and Isn't"
+        content={[content.sections['What This Is and Isn\'t']]}
       />
 
       <RealitiesSection
@@ -150,7 +147,7 @@ export default function ForRestaurantsPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where sales automation pays off for restaurants & hospitality."
+        subtitle="Book a free automation audit. 30 minutes, no obligation, and an honest read on where sales automation pays off for restaurants & hospitality."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

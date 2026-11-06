@@ -48,10 +48,7 @@ export default function SalesforceMarketingPage() {
             '@type': 'Service',
             name: 'AI Marketing Automation with Salesforce',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'Marketing Automation',
             areaServed: 'Global',
           }),
@@ -74,8 +71,9 @@ export default function SalesforceMarketingPage() {
         stats={content.stats.slice(0, 3)}
          breadcrumb={[
           { label: 'Home', href: '/' },
+          { label: 'Solutions', href: '/solutions' },
           { label: 'Marketing Automation', href: '/solutions/marketing-automation' },
-          { label: 'With salesforce', href: '/solutions/marketingautomation/with-salesforce' },
+          { label: 'With salesforce', href: '/solutions/marketing. Automation/with-salesforce' },
         ]}
       />
 
@@ -159,7 +157,7 @@ export default function SalesforceMarketingPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit  we'll scope the build and confirm the platform fit honestly."
+        subtitle="Book a free automation audit. We'll scope the build and confirm the platform fit honestly."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

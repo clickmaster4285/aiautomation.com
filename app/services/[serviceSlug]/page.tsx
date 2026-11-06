@@ -4,6 +4,8 @@ import type { Metadata } from 'next';
 import { allServices, getServiceBySlug, getTemplate } from '@/content/services/index';
 import CmsRoute, { cmsRouteMetadata } from '@/components/cms/CmsRoute';
 import { canonicalUrl } from '@/lib/canonical';
+import { RelatedLinks } from '@/components/seo/RelatedLinks';
+import { SERVICE_SOLUTION_LINKS } from '@/lib/internal-links';
 
 // ── Only these services are live under /services/<slug> ──
 const activeServiceSlugs = new Set(allServices.map((s) => s.slug));
@@ -61,5 +63,11 @@ export default async function ServicePage({
   }
 
   const Template = getTemplate(serviceSlug);
-  return <Template data={service} />;
+  const related = SERVICE_SOLUTION_LINKS[serviceSlug] || [];
+  return (
+    <>
+      <Template data={service} />
+      <RelatedLinks title="Related solutions" links={related} />
+    </>
+  );
 }

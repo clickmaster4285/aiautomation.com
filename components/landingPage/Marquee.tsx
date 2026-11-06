@@ -1,18 +1,23 @@
 type StatItem = { label: string; value: string };
 
 const fallbackItems = [
-  "25+ Countries",
-  "98% Satisfaction",
-  "24/7 AI Active",
-  "500+ Projects Delivered",
-  "120+ Global Clients",
+  "Workflow automation",
+  "AI agents",
+  "Chatbots and voice",
+  "Systems you own",
 ];
 
 export default function Marquee({ stats = [] }: { stats?: StatItem[] }) {
-  const items = stats.length
-    ? stats.map((s) => `${s.value} ${s.label}`)
-    : fallbackItems;
-  const row = [...items, ...items, ...items];
+  const items = stats
+    .map((stat) => {
+      const value = (stat.value || "").trim();
+      const match = value.match(/\d+(?:\.\d+)?/);
+      if (!value || (match && Number(match[0]) <= 0) || /^[+%.\s]*$/.test(value)) return "";
+      return `${value} ${stat.label}`.trim();
+    })
+    .filter(Boolean);
+  const rowSource = items.length ? items : fallbackItems;
+  const row = [...rowSource, ...rowSource, ...rowSource];
 
   return (
     <div className="bg-ink text-white py-6 overflow-hidden">

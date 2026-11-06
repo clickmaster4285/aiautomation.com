@@ -8,8 +8,8 @@ export const documentAutomationWithAirtable: SolutionData = {
   category: 'document-automation',
   title: 'Document & Data Automation with Airtable',
   primaryKeyword: 'airtable document automation',
-  titleTag: 'Document & Data Automation with Airtable | Clickmasters',
-  metaDescription: 'Clickmasters builds document automation on Airtablereads, validates, and files automatically on the flexible database-meets-spreadsheet platform that many operations teams quietly run their business on. Expert builds, documented and owned by you.',
+  titleTag: 'Document & Data Automation Built on Airtable | Clickmasters',
+  metaDescription: 'Teams running Airtable use Clickmasters document automation to extract, check, and route data from invoices, forms, and files. Book a free audit.',
   keywordEvidence: '3 matching keywords, ~1,050 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -22,42 +22,42 @@ export const documentAutomationWithAirtable: SolutionData = {
   heroBadge: 'Document Automation × Airtable',
   description: 'Clickmasters builds document automation on Airtable. Airtable is the flexible database-meets-spreadsheet platform that many operations teams quietly run their business onand it\'s an excellent fit for custom operational tools and data workflows without full custom development. Combined with document automation, which reads documents and moves data so nobody keys it by handAI extraction that understands invoices, forms, and PDFs across varied layouts, validation that catches what doesn\'t look right, and routing that puts clean data into your systems automatically. The manual entry disappears; the exceptions get exactly the human attention they need, the result is automation that runs on a platform matched to the job.',
   sections: {
-    'Why Airtable for Document & Data Automation': 'Airtable is the flexible database-meets-spreadsheet platform that many operations teams quietly run their business on. Automation turns airtable bases from records into running systems. For document automation specifically, that means your automation gets the platform strengthswhile we handle the design, build, and reliability engineering that separates a production system from a fragile demo.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. Airtable is the right home for this work when it matches custom operational tools and data workflows without full custom developmentand when it does, this combination is hard to beat.',
+    'Why Airtable for Document & Data Automation': 'Airtable is the flexible database-meets-spreadsheet platform that many operations teams quietly run their business on. Automation turns airtable bases from records into running systems. For document automation specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile demo.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. Airtable is the right home for this work when it matches custom operational tools and data workflows without full custom development, and when it does, this combination is hard to beat.',
     'What We Build': '**AI document extraction**structured data pulled from PDFs, forms, and images, built on Airtable.\n**Validation and exception flagging**errors caught before they enter your systems, built on Airtable.\n**Data entry elimination**information moved between systems without re-keying, built on Airtable.\n**Document workflows**routing, approval, and filing automated, built on Airtable.\n**Processing pipelines**data cleaned and transformed at scale, built on Airtable.',
     'What a Production Build Includes': 'The gap between a demo and a system you can rely on is everything that happens when things go wrong. Every document automation build we ship on Airtable includes error handling on every step (failures caught and retried or escalated, never silent), monitoring and alerting (you know the system is running without checking), documentation (your team can understand and modify the build), and staged rollout (the automation proves itself on real cases with human oversight before it runs unattended).\n\nThis is the difference between automation that saves hours and automation that quietly breaks and costs trust. Most of the rescue projects we take on are builds that skipped these steps.',
-    'Typical Workflows on Airtable': 'The document automation workflows we most often build on Airtable follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is neededclassification, extraction, draftingand the result is executed and logged. Airtable\'s strengths make it particularly suited to custom operational tools and data workflows without full custom development, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
+    'Typical Workflows on Airtable': 'The document automation workflows we most often build on Airtable follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is neededclassification, extraction, drafting, and the result is executed and logged. Airtable\'s strengths make it particularly suited to custom operational tools and data workflows without full custom development, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
     'How We Work': '1. **Free audit**we map the workflow and confirm Airtable is genuinely the right platform for it.\n2. **Build in sprints**constructed against your real tools and data, with error handling and monitoring built in.\n3. **Documented hand-off**you own the build; nothing is a black box.\n4. **Optimize**we monitor, refine, and expand as the system proves itself.',
   },
   features: [
     {
       icon: 'FileText',
       title: 'AI Document Extraction',
-      description: 'Structured data pulled from PDFs, forms, and imagesbuilt on Airtable.',
+      description: 'Structured data pulled from PDFs, forms, and images, built on Airtable.',
     },
     {
       icon: 'Shield',
       title: 'Validation & Exception Flagging',
-      description: 'Errors caught before they enter your systemsbuilt on Airtable.',
+      description: 'Errors caught before they enter your systems, built on Airtable.',
     },
     {
       icon: 'Database',
       title: 'Data Entry Elimination',
-      description: 'Information moved between systems without re-keyingbuilt on Airtable.',
+      description: 'Information moved between systems without re-keying, built on Airtable.',
     },
     {
       icon: 'GitMerge',
       title: 'Document Workflows',
-      description: 'Routing, approval, and filing automatedbuilt on Airtable.',
+      description: 'Routing, approval, and filing automated, built on Airtable.',
     },
     {
       icon: 'Workflow',
       title: 'Processing Pipelines',
-      description: 'Data cleaned and transformed at scalebuilt on Airtable.',
+      description: 'Data cleaned and transformed at scale, built on Airtable.',
     },
     {
       icon: 'Sparkles',
       title: 'Production-Ready',
-      description: 'Staged rollout, documentation, and reliability engineeringbuilt for scale on Airtable.',
+      description: 'Staged rollout, documentation, and reliability engineering, built for scale on Airtable.',
     },
   ],
   processSteps: [

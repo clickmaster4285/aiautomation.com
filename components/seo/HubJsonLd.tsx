@@ -1,6 +1,7 @@
 "use client";
 
-import { canonicalUrl, SITE_ORIGIN } from "@/lib/canonical";
+import { canonicalUrl } from "@/lib/canonical";
+import { ORGANIZATION_ID } from "@/lib/organization";
 import type { HubSeo } from "@/lib/hub-seo";
 
 type Faq = { question: string; answer: string };
@@ -27,11 +28,7 @@ export function HubJsonLd({
       name: hub.name,
       description: hub.description,
       url: canonicalUrl(hub.path),
-      provider: {
-        "@type": "Organization",
-        name: "Clickmasters",
-        url: SITE_ORIGIN,
-      },
+      provider: { "@id": ORGANIZATION_ID },
     },
   ];
 

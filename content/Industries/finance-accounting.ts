@@ -2,8 +2,8 @@ import { ServiceContent } from '../type';
 
 export const financeAccounting: ServiceContent = {
   slug: 'finance-accounting',
-  title: 'AI Automation for Finance & Accounting | Clickmasters',
-  metaDescription: 'Automate invoicing, reconciliation, reporting and AP/AR with AI. Clickmasters cuts manual data entry so your team closes the books faster.',
+  title: 'AI Automation for Finance and Accounting | Clickmasters',
+  metaDescription: 'AI automation for finance and accounting covers invoices, reconciliations, reporting, and files teams re-key. Book a free audit. Ask the team today.',
   keywords: 'finance automation, invoice automation, accounting automation, AP AR automation',
   sections: [
     // ========== HERO ==========

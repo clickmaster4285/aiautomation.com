@@ -3,8 +3,8 @@ import { ServiceContent } from '../type';
 
 export const aiAgentDevelopment: ServiceContent = {
   slug: 'ai-agent-development',
-  title: 'Custom AI Agent Development Services | Clickmasters',
-  metaDescription: 'Build custom AI agents that automate tasks, connect with business tools, and complete multi-step workflows. Explore AI agent development with Clickmasters.',
+  title: 'AI Agent Development for Business Teams | Clickmasters',
+  metaDescription: 'Clickmasters builds AI agents that look up, draft, update, and log work inside the systems your team already uses. It uses tools you already run.',
   keywords: 'ai agent development company, ai agent development services, custom ai agents, agentic ai development, ai agent developers, ai agent development solutions',
   sections: [
     // ========== HERO ==========

@@ -91,10 +91,7 @@ const industries = [
 ];
 
 const stats = [
-  { value: '9', label: 'Industries covered' },
-  { value: '45%', label: 'Avg. operational cost saved' },
-  { value: '3 weeks', label: 'Avg. time to first automation live' },
-  { value: '300+', label: 'Industry-specific workflows' },
+  { value: String(industries.length), label: 'Industry pages' },
 ];
 
 const howItWorks = [

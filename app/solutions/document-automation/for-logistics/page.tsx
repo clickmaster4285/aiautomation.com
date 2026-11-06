@@ -48,10 +48,7 @@ export default function ForLogisticsPage() {
             '@type': 'Service',
             name: 'Document & Data Automation for Logistics & Transportation',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'Document & Data Automation Development',
             areaServed: 'Global',
           }),
@@ -116,8 +113,8 @@ export default function ForLogisticsPage() {
       />
 
       <BoundariesSection
-        title="What This Isand Isn't"
-        content={[content.sections['What This Isand Isn\'t']]}
+        title="What This Is and Isn't"
+        content={[content.sections['What This Is and Isn\'t']]}
       />
 
       <RealitiesSection
@@ -150,7 +147,7 @@ export default function ForLogisticsPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where document automation pays off for logistics & transportation."
+        subtitle="Book a free automation audit. 30 minutes, no obligation, and an honest read on where document automation pays off for logistics & transportation."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

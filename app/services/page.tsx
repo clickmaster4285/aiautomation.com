@@ -25,11 +25,11 @@ import { HubJsonLd } from '@/components/seo/HubJsonLd';
 import { hubSeo } from '@/lib/hub-seo';
 
 export const metadata: Metadata = {
-  title: 'AI Automation Services | Clickmasters',
+  title: 'AI Automation Services for Operating Teams | Clickmasters',
   description:
-    'Explore Clickmasters AI automation services: workflow and process automation, RPA, AI agents, chatbots, voice agents, reporting and custom AI development.',
+    'Clickmasters AI automation services cover workflows, process automation, agents, chatbots, voice, reporting, and custom development. Book a free audit.',
   alternates: {
-    canonical: canonicalUrl('https://clickmastersaiautomation.com/services'),
+    canonical: canonicalUrl('/services'),
   },
 };
 
@@ -63,6 +63,7 @@ const heroData = {
   textSize: 'xlarge' as const,
   breadcrumb: [
     { label: 'Home', href: '/' },
+          { label: 'Solutions', href: '/solutions' },
     { label: 'Services', href: '/services' },
   ],
 };

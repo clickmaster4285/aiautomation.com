@@ -2,7 +2,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Shield, Database, Users, Sparkles, CheckCircle2, ArrowRight, Building2, Target, TrendingUp, Award, LucideIcon } from 'lucide-react';
+import { Shield, Database, Users, Sparkles, CheckCircle2, ArrowRight, LucideIcon } from 'lucide-react';
 import Link from 'next/link';
 
 interface WhyUsSectionProps {
@@ -30,16 +30,7 @@ export function WhyUsSection({ title, content, cta, stats }: WhyUsSectionProps) 
   };
 
   const displayItems = items.length > 0 ? items : content;
-
-  // Stats for right side
-  const defaultStats = [
-    { icon: Building2, label: 'Industries Served', value: '12+', desc: 'Across every sector' },
-    { icon: Target, label: 'Projects Delivered', value: '500+', desc: 'Shipped and running' },
-    { icon: TrendingUp, label: 'Avg. Efficiency Gain', value: '85%', desc: 'Measured post-launch' },
-    { icon: Users, label: 'Happy Clients', value: '120+', desc: 'And counting' },
-  ];
-
-  const displayStats = stats || defaultStats;
+  const displayStats = stats || [];
 
   return (
     <section className="relative overflow-hidden py-20 md:py-28 bg-white">
@@ -50,7 +41,7 @@ export function WhyUsSection({ title, content, cta, stats }: WhyUsSectionProps) 
       </div>
 
       <div className="mx-auto max-w-[84vw] px-6 relative">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className={`grid gap-16 items-start ${displayStats.length > 0 ? "lg:grid-cols-2" : ""}`}>
           {/* Left Content */}
           <div>
             <motion.div
@@ -131,7 +122,7 @@ export function WhyUsSection({ title, content, cta, stats }: WhyUsSectionProps) 
             )}
           </div>
 
-          {/* Right Content - Stats Cards - Updated text sizes */}
+          {displayStats.length > 0 && (
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -172,34 +163,8 @@ export function WhyUsSection({ title, content, cta, stats }: WhyUsSectionProps) 
               );
             })}
 
-            {/* Trust badge card - Updated text sizes */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 1 }}
-              whileHover={{ y: -8, scale: 1.02 }}
-              className="col-span-2 p-6 rounded-2xl bg-white border border-gray-100 hover:border-brand/20 hover:shadow-xl transition-all duration-300"
-            >
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-base font-medium text-gray-900">Trust Score</span>
-                <span className="text-base font-bold text-brand">98%</span>
-              </div>
-              <div className="w-full h-2 bg-gray-100 rounded-full overflow-hidden">
-                <motion.div
-                  initial={{ width: 0 }}
-                  whileInView={{ width: '98%' }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 1.5, delay: 1.2, ease: [0.16, 1, 0.3, 1] }}
-                  className="h-full bg-gradient-to-r from-brand to-orange-400 rounded-full"
-                />
-              </div>
-              <div className="mt-3 flex items-center justify-between text-sm text-gray-500">
-                <span>Client Satisfaction</span>
-                <span>Industry Leading</span>
-              </div>
-            </motion.div>
           </motion.div>
+          )}
         </div>
       </div>
     </section>

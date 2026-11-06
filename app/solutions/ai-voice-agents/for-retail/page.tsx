@@ -48,10 +48,7 @@ export default function ForRetailPage() {
             '@type': 'Service',
             name: 'AI Voice Agents for Retail',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'AI Voice Agent Development',
             areaServed: 'Global',
           }),
@@ -91,8 +88,8 @@ export default function ForRetailPage() {
       />
 
       <WhySection
-        title="Why Retail Need AI Voice Agents"
-        content={[content.sections['Why Retail Need AI Voice Agents']]}
+        title="Why Retail Needs AI Voice Agents"
+        content={[content.sections['Why Retail Needs AI Voice Agents']]}
       />
 
       <ProblemsSection
@@ -116,8 +113,8 @@ export default function ForRetailPage() {
       />
 
       <BoundariesSection
-        title="What This Isand Isn't"
-        content={[content.sections['What This Isand Isn\'t']]}
+        title="What This Is and Isn't"
+        content={[content.sections['What This Is and Isn\'t']]}
       />
 
       <RealitiesSection
@@ -150,7 +147,7 @@ export default function ForRetailPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where voice agent pays off for retail."
+        subtitle="Book a free automation audit. 30 minutes, no obligation, and an honest read on where voice agent pays off for retail."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

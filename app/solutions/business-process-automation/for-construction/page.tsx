@@ -48,10 +48,7 @@ export default function ForConstructionPage() {
             '@type': 'Service',
             name: 'Business Process Automation for Construction',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'Business Process Automation Development',
             areaServed: 'Global',
           }),
@@ -91,8 +88,8 @@ export default function ForConstructionPage() {
       />
 
       <WhySection
-        title="Why Construction Need Business Process Automation"
-        content={[content.sections['Why Construction Need Business Process Automation']]}
+        title="Why Construction Needs Business Process Automation"
+        content={[content.sections['Why Construction Needs Business Process Automation']]}
       />
 
       <ProblemsSection
@@ -116,8 +113,8 @@ export default function ForConstructionPage() {
       />
 
       <BoundariesSection
-        title="What This Isand Isn't"
-        content={[content.sections['What This Isand Isn\'t']]}
+        title="What This Is and Isn't"
+        content={[content.sections['What This Is and Isn\'t']]}
       />
 
       <RealitiesSection
@@ -150,7 +147,7 @@ export default function ForConstructionPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for construction."
+        subtitle="Book a free automation audit. 30 minutes, no obligation, and an honest read on where process automation pays off for construction."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

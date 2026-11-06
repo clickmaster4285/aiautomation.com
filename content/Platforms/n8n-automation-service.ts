@@ -4,9 +4,9 @@ import { ServiceContent } from '../type';
 
 export const n8nAutomationService: ServiceContent = {
   slug: 'n8n-automation-services',
-  title: 'n8n Automation Services USA - n8n Developers',
+  title: 'n8n Workflow Automation for Your Stack | Clickmasters',
   metaDescription:
-    'Our n8n automation experts provide custom workflows, API integrations, AI automation, webhooks, and self-hosted solutions built for your business.',
+    'Clickmasters builds n8n workflows that connect the APIs and data your team already uses, including steps you can host yourself. Book a free audit.',
   keywords:
     'n8n automation services, n8n automation experts, n8n developers, n8n workflow automation, n8n consultant, n8n integrations, n8n automation USA, self-hosted n8n',
 

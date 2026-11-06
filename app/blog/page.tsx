@@ -9,6 +9,7 @@ import { gsap } from 'gsap';
 import { ArrowRight, Calendar, Clock, User, Tag, Sparkles, BookOpen } from 'lucide-react';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { Section } from '@/components/solutions/layout/Section';
+import { BLOG_RESOURCE_LINKS } from '@/lib/internal-links';
 
 // Dot component - declared directly in the page
 const Dot = ({ className }: { className?: string }) => {
@@ -180,6 +181,15 @@ export default function BlogPage() {
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               There are no posts on this hub. The cards that used to appear here were placeholders and have been removed.
             </p>
+            <ul className="mt-8 flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
+              {BLOG_RESOURCE_LINKS.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-sm text-ink border border-border rounded-full px-4 py-2 hover:text-brand hover:border-brand">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </motion.div>
 
           <motion.div

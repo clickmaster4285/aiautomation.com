@@ -1,9 +1,8 @@
 // content/Solutions/business-process-automation.ts
 export const businessProcessAutomation = {
   url: '/solutions/business-process-automation',
-  titleTag: 'Business Process Automation Solutions | Clickmasters',
-  metaDescription:
-    'Business process automation from Clickmasters replaces repetitive manual steps with structured digital workflows — reducing errors, speeding up operations, and freeing teams for higher-value work.',
+  titleTag: 'Business for Faster, More Reliable Operations | Clickmasters',
+  metaDescription: 'Operations teams use Clickmasters Business Process Automation for Faster, More Reliable Operations to remove repetitive work from the current process.',
   primaryKeyword: 'business process automation',
   bookingLink: '/free-automation-audit',
 

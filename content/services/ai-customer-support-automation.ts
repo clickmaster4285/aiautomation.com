@@ -3,8 +3,8 @@ import { ServiceContent } from '../type';
 
 export const aiCustomerSupportAutomation: ServiceContent = {
   slug: 'ai-customer-support-automation',
-  title: 'AI Customer Support Automation | 24/7 AI Support Agents Clickmasters',
-  metaDescription: 'Automate customer support with AI agents that resolve tickets, answer from your docs, and route what needs a human. Clickmasters cuts response time and ticket volume.',
+  title: 'AI Customer Support Automation Services | Clickmasters',
+  metaDescription: 'Clickmasters automates routine customer support and routes the conversations that still need a person. Book a free audit. People keep the exceptions.',
   keywords: 'ai customer support, support automation, ticket automation, customer service ai',
   sections: [
     // ========== HERO ==========

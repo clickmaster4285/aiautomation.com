@@ -48,10 +48,7 @@ export default function AIChatbotsPage() {
             '@type': 'Service',
             name: 'AI Chatbots',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'AI Chatbot Development',
             areaServed: 'Global',
           }),

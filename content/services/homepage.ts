@@ -439,12 +439,8 @@ export const homepageData = {
   },
 
   // ── STATS (for hero or numbers section) ──
-  stats: [
-    { label: 'Businesses Automated', value: '100+' },
-    { label: 'Hours Saved Weekly', value: '1000+' },
-    { label: 'Client Satisfaction', value: '98%' },
-    { label: 'Automation Success Rate', value: '99%' }
-  ]
+  // No verified operating totals are published. Do not render placeholder counters.
+  stats: [] as { label: string; value: string }[],
 };
 
 // ── Helper function to get homepage data for specific sections ──

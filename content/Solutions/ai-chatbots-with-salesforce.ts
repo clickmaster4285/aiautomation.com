@@ -8,8 +8,8 @@ export const aiChatbotsWithSalesforce: SolutionData = {
   category: 'ai-chatbots',
   title: 'AI Chatbots with Salesforce', // ✅ Added missing title
   primaryKeyword: 'salesforce chatbot',
-  titleTag: 'AI Chatbots with Salesforce | Clickmasters',
-  metaDescription: 'Clickmasters builds chatbot on Salesforce answers, qualifies, and books automatically on the enterprise CRM standard. Expert builds, documented and owned by you.',
+  titleTag: 'AI Chatbots Built on Salesforce Services | Clickmasters',
+  metaDescription: 'Teams running Salesforce use Clickmasters AI chatbots to answer questions, qualify leads, and book appointments. Start with one high-volume workflow.',
   keywordEvidence: '12 matching keywords, ~1,450 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

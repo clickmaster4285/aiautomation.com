@@ -1,9 +1,8 @@
 // content/Solutions/ai-workflow-automation.ts
 export const aiWorkflowAutomation = {
   url: '/solutions/ai-workflow-automation',
-  titleTag: 'AI Workflow Automation Solutions | Clickmasters',
-  metaDescription:
-    'AI workflow automation from Clickmasters combines workflow logic with AI to interpret context, route tasks, and update connected systems. Automate multi-step business processes that traditional rules alone cannot handle.',
+  titleTag: 'AI Workflow Automation for Smarter, Context-Aware Business',
+  metaDescription: 'Operations teams use Clickmasters AI Workflow Automation for Smarter, Context-Aware Business Processes to remove repetitive work from the current process.',
   primaryKeyword: 'ai workflow automation',
   bookingLink: '/free-automation-audit',
 

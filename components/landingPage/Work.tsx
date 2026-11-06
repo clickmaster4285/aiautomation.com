@@ -83,7 +83,7 @@ export default function Work({ data }: { data: WorkData }) {
             <span className="display-italic text-brand">{tail}</span>
           </h2>
 
-          <a href="#" className="text-sm hover:text-brand">
+          <a href="/case-studies" className="text-sm hover:text-brand">
             View all work →
           </a>
         </div>

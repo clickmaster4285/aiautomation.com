@@ -24,7 +24,14 @@ export default function Hero({ section }: HeroProps) {
 
   const heading = section.heading || 'AI Automation Agency';
   const subheading = section.subheading || '';
-  const stats = section.stats || [];
+  const stats = (section.stats || []).filter((stat) => {
+    const value = String(stat.value ?? '').trim();
+    if (!value || /^[+%.\s]*$/.test(value)) return false;
+    const match = value.match(/\d+(?:\.\d+)?/);
+    const letters = value.replace(/[0-9.+%\s,]/g, '');
+    if (match && Number(match[0]) <= 0 && letters.length === 0) return false;
+    return true;
+  });
   const ctas = section.ctas || [];
 
   const words = heading.split(' ');
@@ -184,22 +191,6 @@ export default function Hero({ section }: HeroProps) {
             </motion.div>
 
             {/* Trust badge */}
-            <motion.div
-              variants={fadeInUp}
-              className="mt-10 flex items-center gap-3 text-xs text-gray-500"
-            >
-              <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map(i => (
-                  <div
-                    key={i}
-                    className="w-7 h-7 rounded-full bg-gray-800 border-2 border-black flex items-center justify-center text-[10px] font-medium text-gray-400"
-                  >
-                    {String.fromCharCode(64 + i)}
-                  </div>
-                ))}
-              </div>
-              <span className="text-gray-500">Trusted by 500+ companies</span>
-            </motion.div>
           </motion.div>
 
           {/* ==================== RIGHT — CONTACT FORM ==================== */}

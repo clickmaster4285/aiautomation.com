@@ -48,10 +48,7 @@ export default function ForEcommercePage() {
             '@type': 'Service',
             name: 'AI Workflow Automation for E-commerce',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'AI Workflow Automation Development',
             areaServed: 'Global',
           }),
@@ -91,8 +88,8 @@ export default function ForEcommercePage() {
       />
 
       <WhySection
-        title="Why E-commerce Need AI Workflow Automation"
-        content={[content.sections['Why E-commerce Need AI Workflow Automation']]}
+        title="Why E-commerce Needs AI Workflow Automation"
+        content={[content.sections['Why E-commerce Needs AI Workflow Automation']]}
       />
 
       <ProblemsSection
@@ -116,8 +113,8 @@ export default function ForEcommercePage() {
       />
 
       <BoundariesSection
-        title="What This Isand Isn't"
-        content={[content.sections['What This Isand Isn\'t']]}
+        title="What This Is and Isn't"
+        content={[content.sections['What This Is and Isn\'t']]}
       />
 
       <RealitiesSection
@@ -150,7 +147,7 @@ export default function ForEcommercePage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where workflow automation pays off for e-commerce."
+        subtitle="Book a free automation audit. 30 minutes, no obligation, and an honest read on where workflow automation pays off for e-commerce."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

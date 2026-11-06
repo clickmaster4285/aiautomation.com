@@ -4,6 +4,8 @@ import type { ComponentType } from 'react';
 import { industryContent, industrySlugs } from '@/content/Industries';
 import CmsRoute, { cmsRouteMetadata } from '@/components/cms/CmsRoute';
 import { canonicalUrl } from '@/lib/canonical';
+import { RelatedLinks } from '@/components/seo/RelatedLinks';
+import { INDUSTRY_SOLUTION_LINKS } from '@/lib/internal-links';
 
 const Hero = dynamic(() => import('@/components/industries/Hero').then((mod) => mod.default));
 const TextSec = dynamic(() => import('@/components/industries/TextSec').then((mod) => mod.default));
@@ -73,6 +75,10 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         const bg = bgColors[idx % bgColors.length];
         return <Component key={idx} section={section} bg={bg} />;
       })}
+      <RelatedLinks
+        title="Solutions for this industry"
+        links={INDUSTRY_SOLUTION_LINKS[slug] || []}
+      />
     </main>
   );
 }

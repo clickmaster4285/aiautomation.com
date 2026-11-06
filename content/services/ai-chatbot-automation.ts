@@ -3,9 +3,8 @@ import { ServiceContent } from '../type';
 
 export const aiChatbotAutomation: ServiceContent = {
 slug: 'ai-chatbot-automation',
-title: 'AI Chatbot Development Services for Business | Clickmasters',
-metaDescription:
-  'Build custom AI chatbots for customer support, lead generation, sales, and bookings. Improve customer conversations with Clickmasters AI chatbot services.',
+title: 'Custom AI Chatbots for Support Teams | Clickmasters',
+metaDescription: 'Clickmasters builds custom AI chatbots for support, lead capture, sales questions, and appointment booking. Book a free audit. Ask the team today.',
 keywords: 'ai chatbot, conversational ai, chatbot automation, customer service chatbot',
 sections: [
   // ========== HERO ==========

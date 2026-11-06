@@ -3,9 +3,8 @@ import { ServiceContent } from '../type';
 
 export const saas: ServiceContent = {
   slug: 'saas',
-  title: 'AI Automation for SaaS | Clickmasters',
-  metaDescription:
-    'Clickmasters builds AI automation for SaaS user onboarding, support deflection, churn signals, and revenue operations so you scale without scaling headcount.',
+  title: 'AI Automation for SaaS Product Teams | Clickmasters',
+  metaDescription: 'AI automation for SaaS companies covers lead routing, onboarding, support, and the product work that repeats. Book a free audit. Ask the team today.',
   keywords: 'ai automation for saas, saas automation',
   sections: [
     // ========== HERO ==========

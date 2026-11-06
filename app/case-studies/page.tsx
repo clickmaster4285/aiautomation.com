@@ -17,11 +17,10 @@ import { Section, SectionHeading } from '@/components/solutions/layout/Section';
 import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
-  title: 'Case studies | Clickmasters',
-  description:
-    'Every Clickmasters build, documented end to end — the brief, the gaps we closed, the rules the system cannot break, the test results and the limits we designed around.',
+  title: 'Clickmasters AI Automation Case Studies | Clickmasters',
+  description: 'Clickmasters case studies document the brief, the gaps closed, the rules a system cannot break, and the limits designed around the work. Book a free audit.',
   alternates: {
-    canonical: canonicalUrl('https://clickmastersaiautomation.com/case-studies'),
+    canonical: canonicalUrl('/case-studies'),
   },
 };
 
@@ -65,6 +64,7 @@ const heroData = {
   textSize: 'xlarge' as const,
   breadcrumb: [
     { label: 'Home', href: '/' },
+          { label: 'Solutions', href: '/solutions' },
     { label: 'Case studies', href: '/case-studies' },
   ],
 };

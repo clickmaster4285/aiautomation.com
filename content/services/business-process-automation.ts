@@ -3,8 +3,8 @@ import { ServiceContent } from '../type';
 
 export const businessProcessAutomation: ServiceContent = {
   slug: 'business-process-automation',
-  title: 'Business Process Automation Services | Improve Operations',
-  metaDescription: 'Improve business operations with process automation services. Automate approvals, onboarding, finance, sales, and other business processes with Clickmasters.',
+  title: 'Business Process Automation Services | Clickmasters AI',
+  metaDescription: 'Clickmasters automates repeated operational steps across delivery, finance, support, and approvals. Book a free audit. It uses tools you already run.',
   keywords: 'business process automation services, business automation services, process automation software, business process automation consulting, automation software',
   sections: [
     // ========== HERO ==========

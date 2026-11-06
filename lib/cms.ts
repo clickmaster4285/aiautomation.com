@@ -18,7 +18,7 @@ const CMS_SITE_DOMAIN =
   
 // Seconds before a cached CMS response is refetched in production.
 // In development the cache is bypassed so CMS edits show on the next refresh.
-export const CMS_REVALIDATE_SECONDS = 60;
+export const CMS_REVALIDATE_SECONDS = 300;
 const CMS_TIMEOUT_MS = 5000;
 
 // Same format the CMS stores: "/segment" or "/nested/segment", lowercase.

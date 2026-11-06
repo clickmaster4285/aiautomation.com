@@ -47,10 +47,7 @@ export default function ForEducationPage() {
             '@type': 'Service',
             name: 'AI Voice Agents for Education',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'AI Voice Agent Development',
             areaServed: 'Global',
           }),
@@ -90,8 +87,8 @@ export default function ForEducationPage() {
       />
 
       <WhySection
-        title="Why Education Need AI Voice Agents"
-        content={[content.sections['Why Education Need AI Voice Agents']]}
+        title="Why Education Needs AI Voice Agents"
+        content={[content.sections['Why Education Needs AI Voice Agents']]}
       />
 
       <ProblemsSection
@@ -115,8 +112,8 @@ export default function ForEducationPage() {
       />
 
       <BoundariesSection
-        title="What This Isand Isn't"
-        content={[content.sections['What This Isand Isn\'t']]}
+        title="What This Is and Isn't"
+        content={[content.sections['What This Is and Isn\'t']]}
       />
 
       <RealitiesSection
@@ -149,7 +146,7 @@ export default function ForEducationPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where voice agent pays off for education."
+        subtitle="Book a free automation audit. 30 minutes, no obligation, and an honest read on where voice agent pays off for education."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

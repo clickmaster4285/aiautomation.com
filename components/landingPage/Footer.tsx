@@ -123,6 +123,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/case-studies" className="text-sm hover:text-brand transition-colors duration-200">
+                  Case studies
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="text-sm hover:text-brand transition-colors duration-200">
                   Contact
                 </Link>

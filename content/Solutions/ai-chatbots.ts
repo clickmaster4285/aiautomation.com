@@ -1,9 +1,8 @@
 // content/Solutions/ai-chatbots.ts
 export const aiChatbots = {
   url: '/solutions/ai-chatbots',
-  titleTag: 'AI Chatbots Solutions | Clickmasters',
-  metaDescription:
-    'AI chatbots from Clickmasters answer customer questions, qualify leads, and route conversations 24/7 — connected to your CRM, helpdesk, and business systems.',
+  titleTag: 'AI Chatbots That Answer, Qualify, and Route | Clickmasters',
+  metaDescription: 'Operations teams use Clickmasters AI Chatbots That Answer, Qualify, and Route Every Conversation to remove repetitive work from the current process.',
   primaryKeyword: 'ai chatbots',
   bookingLink: '/free-automation-audit',
 

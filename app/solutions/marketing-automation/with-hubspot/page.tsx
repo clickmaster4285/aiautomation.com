@@ -48,10 +48,7 @@ export default function HubspotMarketingPage() {
             '@type': 'Service',
             name: 'AI Marketing Automation with HubSpot',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'Marketing Automation',
             areaServed: 'Global',
           }),
@@ -74,6 +71,7 @@ export default function HubspotMarketingPage() {
         stats={content.stats.slice(0, 3)}
          breadcrumb={[
           { label: 'Home', href: '/' },
+          { label: 'Solutions', href: '/solutions' },
           { label: 'Marketing Automation', href: '/solutions/marketing-automation' },
           { label: 'With hubspot', href: '/solutions/marketing-automation/with-hubspot' },
         ]}
@@ -159,7 +157,7 @@ export default function HubspotMarketingPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit  we'll scope the build and confirm the platform fit honestly."
+        subtitle="Book a free automation audit. We'll scope the build and confirm the platform fit honestly."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

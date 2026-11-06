@@ -48,10 +48,7 @@ export default function ForSaaSPage() {
             '@type': 'Service',
             name: 'Lead Generation Automation for SaaS Companies',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'Lead Generation Automation Development',
             areaServed: 'Global',
           }),
@@ -116,8 +113,8 @@ export default function ForSaaSPage() {
       />
 
       <BoundariesSection
-        title="What This Isand Isn't"
-        content={[content.sections['What This Isand Isn\'t']]}
+        title="What This Is and Isn't"
+        content={[content.sections['What This Is and Isn\'t']]}
       />
 
       <RealitiesSection
@@ -138,7 +135,7 @@ export default function ForSaaSPage() {
 
       <FAQSection
         title="Frequently Asked Questions"
-        subtitle="Common questions about lead generation automation for saas companies"
+        subtitle="Common questions about lead generation automation for SaaS companies"
         faqs={content.faqQuestions}
       />
 
@@ -150,7 +147,7 @@ export default function ForSaaSPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where lead generation system pays off for saas companies."
+        subtitle="Book a free automation audit. 30 minutes, no obligation, and an honest read on where lead generation system pays off for SaaS companies."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

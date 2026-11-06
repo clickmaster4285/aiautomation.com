@@ -35,25 +35,9 @@ export default function Problem({ data }: { data: ProblemData }) {
           </h2>
 
           <div>
-            <p className="text-white/70 max-w-md mb-8">
+            <p className="text-white/70 max-w-md">
               {data.subheading}
             </p>
-
-            <div className="flex gap-10">
-              <div className="border-l-2 border-brand pl-4">
-                <div className="display text-4xl">40+</div>
-                <div className="eyebrow text-white/60 mt-1">
-                  Hrs/Week Wasted
-                </div>
-              </div>
-
-              <div className="border-l-2 border-brand pl-4">
-                <div className="display text-4xl">$180K</div>
-                <div className="eyebrow text-white/60 mt-1">
-                  Avg Wasted Cost
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 

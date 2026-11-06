@@ -1,9 +1,8 @@
 // content/Solutions/lead-generation-automation.ts
 export const leadGenerationAutomation = {
   url: '/solutions/lead-generation-automation',
-  titleTag: 'Lead Generation Automation Solutions | Clickmasters',
-  metaDescription:
-    'Lead generation automation from Clickmasters captures, qualifies, and routes leads automatically — syncing with your CRM so sales spends time on real opportunities, not manual triage.',
+  titleTag: 'Lead Generation Automation That Captures, | Clickmasters',
+  metaDescription: 'Operations teams use Clickmasters Lead Generation Automation That Captures, Qualifies, and Routes Every Lead to remove repetitive work from the current.',
   primaryKeyword: 'lead generation automation',
   bookingLink: '/free-automation-audit',
 

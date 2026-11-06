@@ -3,9 +3,8 @@ import { ServiceContent } from '../type';
 
 export const healthcare: ServiceContent = {
   slug: 'healthcare',
-  title: 'AI Automation for Healthcare | Clickmasters',
-  metaDescription:
-    'AI automation for healthcare practices: appointment scheduling, patient intake, reminders and follow-up, built with privacy and human oversight.',
+  title: 'AI Automation for Healthcare Practices | Clickmasters AI',
+  metaDescription: 'AI automation for healthcare practices covers scheduling, intake, reminders, and follow-up, with clinical decisions left to staff. Book a free audit.',
   keywords: 'ai automation for healthcare, healthcare automation',
   sections: [
     // ========== HERO ==========
@@ -15,7 +14,7 @@ export const healthcare: ServiceContent = {
       subheading:
         'Automate scheduling, intake, reminders, and follow-up securely, with privacy and human oversight built in.',
       content: [
-        'Clickmasters builds AI automation for healthcare practices, focused on the heavy administrative load that pulls staff away from patients appointment scheduling, patient intake, reminders, and follow-up. We automate the repetitive front-office work while keeping sensitive data controlled and every clinical decision firmly with your clinicians. The goal is to free your team for patient care, not to insert AI where judgment belongs.',
+        'Clickmasters builds AI automation for healthcare practices, focused on the heavy administrative load that pulls staff away from patients: appointment scheduling, patient intake, reminders, and follow-up. We automate the repetitive front-office work while keeping sensitive data controlled and every clinical decision firmly with your clinicians. The goal is to free your team for patient care, not to insert AI where judgment belongs.',
         'This page explains where healthcare automation delivers value, what we build, and how we approach the privacy and oversight that healthcare rightly demands.',
       ],
       stats: [

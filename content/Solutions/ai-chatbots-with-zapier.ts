@@ -8,8 +8,8 @@ export const aiChatbotsWithZapier: SolutionData = {
   category: 'ai-chatbots',
   title: 'AI Chatbots with Zapier', // ✅ Added missing title
   primaryKeyword: 'zapier chatbot',
-  titleTag: 'AI Chatbots with Zapier | Clickmasters',
-  metaDescription: 'Clickmasters builds chatbot on Zapier answers, qualifies, and books automatically on the most accessible automation platform. Expert builds, documented and owned by you.',
+  titleTag: 'AI Chatbots Built on Zapier Services | Clickmasters',
+  metaDescription: 'Teams running Zapier use Clickmasters AI chatbots to answer questions, qualify leads, and book appointments. It runs on the tools the team already has.',
   keywordEvidence: '2 matching keywords, ~1,000 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

@@ -1,9 +1,8 @@
 // content/Solutions/ai-voice-agents.ts
 export const aiVoiceAgents = {
   url: '/solutions/ai-voice-agents',
-  titleTag: 'AI Voice Agents Solutions | Clickmasters',
-  metaDescription:
-    'AI voice agents from Clickmasters handle inbound and outbound calls, understand intent, answer questions, and route or book automatically — so your team stops losing leads to voicemail and slow response times.',
+  titleTag: 'AI Voice Agents That Answer, Qualify, and | Clickmasters',
+  metaDescription: 'Operations teams use Clickmasters AI Voice Agents That Answer, Qualify, and Route Every Call to remove repetitive work from the current process.',
   primaryKeyword: 'ai voice agents',
   bookingLink: '/free-automation-audit',
 

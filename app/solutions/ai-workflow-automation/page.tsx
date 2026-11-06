@@ -48,10 +48,7 @@ export default function AIWorkflowAutomationPage() {
             '@type': 'Service',
             name: 'AI Workflow Automation',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'AI Workflow Automation Development',
             areaServed: 'Global',
           }),

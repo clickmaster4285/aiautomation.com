@@ -3,6 +3,7 @@
 
 import { motion } from 'framer-motion';
 import { CheckCircle2, XCircle } from 'lucide-react';
+import { splitBoundaries } from './parseCopy';
 
 interface BoundariesSectionProps {
   title: string;
@@ -14,20 +15,9 @@ export function BoundariesSection({ title, content }: BoundariesSectionProps) {
     (line): line is string => typeof line === 'string' && line.trim().length > 0
   );
   
-  // Split content into "is" and "isn't" categories
-  const isItems = paragraphs.filter(p => p.includes('not about') || p.includes('is:'));
-  const isNotItems = paragraphs.filter(p => p.includes('is:') || p.includes('not about'));
-
-  // If the content doesn't have clear "is/isn't" markers, create them from the text
-  let whatIsItems = isItems.length > 0 ? isItems : paragraphs.slice(0, Math.ceil(paragraphs.length / 2));
-  let whatIsNotItems = isNotItems.length > 0 ? isNotItems : paragraphs.slice(Math.ceil(paragraphs.length / 2));
-
-  // If no clear separation, use the first half as "is" and second half as "isn't"
-  if (whatIsItems.length === 0 || whatIsNotItems.length === 0) {
-    const mid = Math.ceil(paragraphs.length / 2);
-    whatIsItems = paragraphs.slice(0, mid);
-    whatIsNotItems = paragraphs.slice(mid);
-  }
+  const split = splitBoundaries(paragraphs);
+  const whatIsItems = split.is.length > 0 ? split.is : paragraphs.slice(0, 1);
+  const whatIsNotItems = split.isNot;
 
   // Animation variants
   const containerVariants = {
@@ -167,7 +157,7 @@ export function BoundariesSection({ title, content }: BoundariesSectionProps) {
               <div className="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center flex-shrink-0">
                 <XCircle className="h-6 w-6 text-gray-400" />
               </div>
-              <h3 className="text-xl font-bold text-white">What It Isn't</h3>
+              <h3 className="text-xl font-bold text-white">What It Is Not</h3>
             </div>
             
             <motion.ul 

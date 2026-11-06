@@ -3,9 +3,8 @@ import { ServiceContent } from '../type';
 
 export const aiLeadGeneration: ServiceContent = {
 slug: 'ai-lead-generation',
-title: 'AI Lead Generation Automation Services | Clickmasters',
-metaDescription:
-  'Automate lead qualification, scoring, follow-ups, and CRM updates with AI lead generation automation services. Improve your sales process with Clickmasters.',
+title: 'AI Lead Generation for Revenue Teams | Clickmasters',
+metaDescription: 'Clickmasters builds lead generation that captures, qualifies, and routes demand while the inquiry is warm. Book a free audit. Start with one workflow.',
 keywords: 'ai lead generation, lead generator, ai sales automation, crm automation',
 
 sections: [

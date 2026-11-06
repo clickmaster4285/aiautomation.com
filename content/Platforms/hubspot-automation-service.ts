@@ -4,9 +4,9 @@ import { ServiceContent } from '../type';
 
 export const hubspotAutomationService: ServiceContent = {
   slug: 'hubspot-automation-services',
-  title: 'HubSpot Automation Services USA - CRM Automation Experts',
+  title: 'HubSpot Automation Services for Sales Teams | Clickmasters',
   metaDescription:
-    'Our HubSpot automation experts improve lead routing, CRM workflows, sales automation, marketing follow-up, and customer lifecycle management.',
+    'Clickmasters builds HubSpot automation for lead routing, follow-up, and CRM updates so the sales team spends time on conversations. Book a free audit.',
   keywords:
     'hubspot automation services, hubspot automation experts, hubspot consultant, hubspot workflow automation, hubspot CRM automation, hubspot marketing automation, hubspot automation USA',
 

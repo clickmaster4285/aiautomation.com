@@ -3,9 +3,8 @@ import { canonicalUrl } from '@/lib/canonical';
 
 // page.tsx is a client component, so its metadata lives here.
 export const metadata: Metadata = {
-  title: 'AI Automation Blog | Clickmasters',
-  description:
-    'Guides and insights on AI workflow automations, AI agents, chatbots, CRM and document automation from the Clickmasters team.',
+  title: 'Clickmasters AI Automation Blog and Guides | Clickmasters',
+  description: 'Guides from Clickmasters on AI workflows, agents, chatbots, CRM automation, and document automation for operating teams. People keep the exceptions.',
   alternates: {
     canonical: canonicalUrl('/blog'),
   },

@@ -6,6 +6,8 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { buildCmsMetadata, getCmsPage } from "@/lib/cms";
 import CmsSectionRenderer from "./CmsSectionRenderer";
+import { RelatedLinks } from "@/components/seo/RelatedLinks";
+import { BLOG_RESOURCE_LINKS } from "@/lib/internal-links";
 
 /** "/a/b" from route segments (["a", "b"]). */
 export function cmsPath(segments: string[]) {
@@ -19,5 +21,13 @@ export async function cmsRouteMetadata(path: string): Promise<Metadata> {
 export default async function CmsRoute({ path }: { path: string }) {
   const page = await getCmsPage(path);
   if (!page) notFound();
-  return <CmsSectionRenderer page={page} />;
+  const showResources = page.pageType === "blog" || page.slug.startsWith("/blog/");
+  return (
+    <>
+      <CmsSectionRenderer page={page} />
+      {showResources && (
+        <RelatedLinks title="Related services and solutions" links={BLOG_RESOURCE_LINKS} />
+      )}
+    </>
+  );
 }

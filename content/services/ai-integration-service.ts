@@ -3,8 +3,8 @@ import { ServiceContent } from '../type';
 
 export const aiIntegrationServices: ServiceContent = {
   slug: 'ai-integration-services',
-  title: 'AI Integration Services | Connect AI to Your Tools Clickmasters',
-  metaDescription: 'Clickmasters integrates AI into the tools you already use CRM, support, email, and ops. Custom OpenAI, Claude, and Gemini integrations that automate real work.',
+  title: 'AI Integration Services for Business | Clickmasters AI',
+  metaDescription: 'Clickmasters connects AI automation to the CRM, database, and SaaS tools your team already runs. People keep the exceptions. Start with one workflow.',
   keywords: 'ai integration services, ai integration, api integration, ai workflow, system integration',
   sections: [
     // ========== HERO ==========

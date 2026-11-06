@@ -48,10 +48,7 @@ export default function ForRetailPage() {
             '@type': 'Service',
             name: 'Business Process Automation for Retail',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'Business Process Automation Development',
             areaServed: 'Global',
           }),
@@ -91,8 +88,8 @@ export default function ForRetailPage() {
       />
 
       <WhySection
-        title="Why Retail Need Business Process Automation"
-        content={[content.sections['Why Retail Need Business Process Automation']]}
+        title="Why Retail Needs Business Process Automation"
+        content={[content.sections['Why Retail Needs Business Process Automation']]}
       />
 
       <ProblemsSection
@@ -116,8 +113,8 @@ export default function ForRetailPage() {
       />
 
       <BoundariesSection
-        title="What This Isand Isn't"
-        content={[content.sections['What This Isand Isn\'t']]}
+        title="What This Is and Isn't"
+        content={[content.sections['What This Is and Isn\'t']]}
       />
 
       <RealitiesSection
@@ -150,7 +147,7 @@ export default function ForRetailPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where process automation pays off for retail."
+        subtitle="Book a free automation audit. 30 minutes, no obligation, and an honest read on where process automation pays off for retail."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

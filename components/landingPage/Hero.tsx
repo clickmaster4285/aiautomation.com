@@ -71,7 +71,15 @@ export default function Hero({
   }, []);
 
   const lines = toLines(data.headline);
-  const heroStats = stats.slice(0, 2);
+  const heroStats = stats
+    .filter((stat) => {
+      const value = (stat.value || "").trim();
+      const match = value.match(/\d+(?:\.\d+)?/);
+      if (!value || /^[+%.\s]*$/.test(value)) return false;
+      if (match && Number(match[0]) <= 0) return false;
+      return true;
+    })
+    .slice(0, 2);
 
   return (
     <section
