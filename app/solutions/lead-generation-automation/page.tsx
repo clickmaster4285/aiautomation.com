@@ -48,10 +48,7 @@ export default function LeadGenerationAutomationPage() {
             '@type': 'Service',
             name: 'Lead Generation Automation',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'Lead Generation Automation Development',
             areaServed: 'Global',
           }),

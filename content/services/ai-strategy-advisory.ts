@@ -3,9 +3,8 @@ import { ServiceContent } from '../type';
 
 export const aiStrategyAdvisory: ServiceContent = {
   slug: 'ai-strategy-advisory',
-title: 'AI Strategy Consulting & Advisory | Clickmasters',
-metaDescription:
-  'Get AI strategy consulting services for business automation, AI implementation, technology selection, and development roadmaps. Book an AI consultation.',
+title: 'AI Strategy Advisory for Operating Teams | Clickmasters',
+metaDescription: 'Clickmasters advises which workflow to automate first, which tool fits, and where a person should stay involved. Book a free audit. Ask the team today.',
 keywords: 'ai strategy advisory, ai consulting services, ai consulting companies/firms, ai consultant',
 
 sections: [

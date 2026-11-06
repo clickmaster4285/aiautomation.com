@@ -3,23 +3,20 @@
 import { motion } from 'framer-motion';
 import { Section } from '@/content/type';
 import { Marker, splitHeading } from '../landingPage/Shared';
-import CountUp from '../landingPage/CountUp';
+import { metricDisplay } from '@/lib/visible-metric';
 
 interface StatsSectionProps {
   section: Section;
 }
 
-// "100+" -> { num: 100, suffix: "+" }
-// "98%"  -> { num: 98,  suffix: "%" }
-function parseStat(value: string) {
-  const match = value.match(/(\d+)/);
-  const num = match ? Number(match[1]) : 0;
-  const suffix = value.replace(match ? match[1] : '', '').trim();
-  return { num, suffix };
-}
-
 export default function StatsSec({ section }: StatsSectionProps) {
-  const statsItems = section.items || [];
+  const statsItems = (section.items || []).filter((item) => {
+    const rawValue = typeof item.value === 'string' ? item.value : String(item.value ?? '');
+    if (!rawValue.trim()) return false;
+    if (/[a-zA-Z]/.test(rawValue)) return true;
+    return metricDisplay(rawValue) !== null;
+  });
+  if (statsItems.length === 0) return null;
   const subheading = section.subheading || '';
   const closing = section.content
     ? Array.isArray(section.content)
@@ -62,8 +59,7 @@ export default function StatsSec({ section }: StatsSectionProps) {
                 ? item.value
                 : String(item.value ?? '');
 
-            const isExactString = /[a-zA-Z–—]/.test(rawValue);
-            const { num, suffix } = parseStat(rawValue);
+            const shown = metricDisplay(rawValue) || rawValue;
 
             return (
               <motion.div
@@ -74,24 +70,12 @@ export default function StatsSec({ section }: StatsSectionProps) {
                 transition={{ delay: i * 0.1 }}
                 className="px-0 md:px-8 first:pl-0 last:pr-0 text-center md:text-left"
               >
-                {/* VALUE + MATH SYMBOLS — brand */}
                 <div className="flex items-baseline justify-center md:justify-start text-brand">
-                  {isExactString ? (
-                    <span className="display text-4xl sm:text-5xl md:text-6xl text-brand">
-                      {item.prefix || ''}
-                      {rawValue}
-                      {item.suffix || ''}
-                    </span>
-                  ) : (
-                    <>
-                      <CountUp to={num} />
-                      {suffix && (
-                        <span className="display text-4xl sm:text-5xl md:text-6xl text-brand">
-                          {suffix}
-                        </span>
-                      )}
-                    </>
-                  )}
+                  <span className="display text-4xl sm:text-5xl md:text-6xl text-brand">
+                    {item.prefix || ''}
+                    {shown}
+                    {item.suffix || ''}
+                  </span>
                 </div>
 
                 {/* LABEL — foreground */}

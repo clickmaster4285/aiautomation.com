@@ -8,8 +8,8 @@ export const documentAutomationWithN8n: SolutionData = {
   category: 'document-automation',
   title: 'Document & Data Automation with n8n',
   primaryKeyword: 'n8n document automation',
-  titleTag: 'Document & Data Automation with n8n | Clickmasters',
-  metaDescription: 'Clickmasters builds document automation on n8n reads, validates, and files automatically on an open-source. Expert builds, documented and owned by you.',
+  titleTag: 'Document & Data Automation Built on n8n | Clickmasters',
+  metaDescription: 'Teams running n8n use Clickmasters document automation to extract, check, and route data from invoices, forms, and files. Book a free audit. Ask the team.',
   keywordEvidence: '1 matching keywords, ~500 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

@@ -48,10 +48,7 @@ export default function WithSalesforcePage() {
             '@type': 'Service',
             name: 'Sales Automation with Salesforce',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'Sales Automation Development',
             areaServed: 'Global',
           }),

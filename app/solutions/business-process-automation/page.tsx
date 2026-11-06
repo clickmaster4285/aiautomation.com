@@ -48,10 +48,7 @@ export default function BusinessProcessAutomationPage() {
             '@type': 'Service',
             name: 'Business Process Automation',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'Business Process Automation Development',
             areaServed: 'Global',
           }),

@@ -3,11 +3,10 @@ import ContactPage from '@/components/contact/pageContact';
 import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
-  title: 'Free Automation Audit | Clickmasters',
-  description:
-    'Book a free automation audit with Clickmasters. We map one workflow, tell you where the hours go, and say honestly if we are the right fit.',
+  title: 'Schedule Your Free Automation Audit | Clickmasters AI',
+  description: 'Book a free automation audit. We map one workflow, show where the hours go, and say honestly if we are the right fit. It uses tools you already run.',
   alternates: {
-    canonical: canonicalUrl('https://clickmastersaiautomation.com/free-automation-audit'),
+    canonical: canonicalUrl('/free-automation-audit'),
   },
 };
 

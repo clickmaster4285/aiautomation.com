@@ -48,10 +48,7 @@ export default function ForManufacturingPage() {
             '@type': 'Service',
             name: 'Document & Data Automation for Manufacturing',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'Document & Data Automation Development',
             areaServed: 'Global',
           }),
@@ -91,8 +88,8 @@ export default function ForManufacturingPage() {
       />
 
       <WhySection
-        title="Why Manufacturing Need Document & Data Automation"
-        content={[content.sections['Why Manufacturing Need Document & Data Automation']]}
+        title="Why Manufacturing Needs Document & Data Automation"
+        content={[content.sections['Why Manufacturing Needs Document & Data Automation']]}
       />
 
       <ProblemsSection
@@ -116,8 +113,8 @@ export default function ForManufacturingPage() {
       />
 
       <BoundariesSection
-        title="What This Isand Isn't"
-        content={[content.sections['What This Isand Isn\'t']]}
+        title="What This Is and Isn't"
+        content={[content.sections['What This Is and Isn\'t']]}
       />
 
       <RealitiesSection
@@ -150,7 +147,7 @@ export default function ForManufacturingPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where document automation pays off for manufacturing."
+        subtitle="Book a free automation audit. 30 minutes, no obligation, and an honest read on where document automation pays off for manufacturing."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

@@ -48,10 +48,7 @@ export default function N8nDocumentPage() {
             '@type': 'Service',
             name: 'Document & Data Automation with n8n',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'Document Automation',
             areaServed: 'Global',
           }),
@@ -74,6 +71,7 @@ export default function N8nDocumentPage() {
         stats={content.stats.slice(0, 3)}
          breadcrumb={[
           { label: 'Home', href: '/' },
+          { label: 'Solutions', href: '/solutions' },
           { label: 'Document Automation', href: '/solutions/document-automation' },
           { label: 'With n8n', href: '/solutions/document-automation/with-n8n' },
         ]}
@@ -159,7 +157,7 @@ export default function N8nDocumentPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit  we'll scope the build and confirm the platform fit honestly."
+        subtitle="Book a free automation audit. We'll scope the build and confirm the platform fit honestly."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

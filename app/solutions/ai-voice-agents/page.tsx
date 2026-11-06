@@ -48,10 +48,7 @@ export default function AIVoiceAgentsPage() {
             '@type': 'Service',
             name: 'AI Voice Agents',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'AI Voice Agent Development',
             areaServed: 'Global',
           }),

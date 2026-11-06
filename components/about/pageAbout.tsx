@@ -2,51 +2,24 @@
 
 import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer } from '@/components/services/Shared/animation';
-import { Button } from '@/components/ui/button';
 import {
-  ArrowRight,
   Sparkles,
   Code,
   Shield,
   BookOpen,
   BarChart,
-  TrendingUp,
-  Star,
   Zap,
 } from 'lucide-react';
 import Image from 'next/image';
 import Script from 'next/script';
-import { LOCATION_STATEMENT, PHONES, SALES_EMAIL, SERVICE_AREA, SITE_NAME, SITE_URL } from '@/lib/site-contact';
+import { LOCATION_STATEMENT, SERVICE_AREA, SITE_URL } from '@/lib/site-contact';
+import { ORGANIZATION_ID } from '@/lib/organization';
 
 export default function AboutPage() {
   return (
     <main className="bg-white text-gray-900 overflow-hidden">
 
       {/* ====== SCHEMA MARKUP ====== */}
-      <Script
-        id="organization-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Organization',
-            name: SITE_NAME,
-            url: SITE_URL,
-            logo: `${SITE_URL}/logo.png`,
-            description: `Clickmasters builds production AI automation for businesses in ${SERVICE_AREA}.`,
-            areaServed: PHONES.map((phone) => phone.label),
-            email: SALES_EMAIL,
-            telephone: PHONES.map((phone) => phone.display),
-            contactPoint: PHONES.map((phone) => ({
-              '@type': 'ContactPoint',
-              contactType: 'Sales',
-              email: SALES_EMAIL,
-              telephone: phone.display,
-              areaServed: phone.label,
-            })),
-          }),
-        }}
-      />
       <Script
         id="aboutpage-schema"
         type="application/ld+json"
@@ -57,7 +30,7 @@ export default function AboutPage() {
             name: 'About Clickmasters | AI Automation Agency',
             description: `Clickmasters builds production AI automation for businesses in ${SERVICE_AREA}.`,
             url: `${SITE_URL}/about`,
-            mainEntity: { '@type': 'Organization', name: 'Clickmasters' },
+            mainEntity: { '@id': ORGANIZATION_ID },
           }),
         }}
       />
@@ -71,7 +44,7 @@ export default function AboutPage() {
             name: 'Amjad Khan',
             jobTitle: 'Founder & CEO',
             description: 'Founder of Clickmasters Digital Marketing Agency, specializing in AI automation and digital growth strategies.',
-            worksFor: { '@type': 'Organization', name: 'Clickmasters' },
+            worksFor: { '@id': ORGANIZATION_ID },
           }),
         }}
       />
@@ -261,25 +234,10 @@ export default function AboutPage() {
                 Amjad personally oversees every project, ensuring that each automation is not just technically sound but also strategically aligned with your business goals. His hands‑on approach means you get a partner who understands both the code and the client journey – no hand‑off, no disconnect.
               </motion.p>
 
-              <motion.div variants={fadeInUp} className="flex flex-wrap items-center gap-4 sm:gap-6 md:gap-8 mb-6 md:mb-8">
-                {[
-                  { value: '5+',   label: 'Years Building' },
-                  { value: '80+',  label: 'Clients Served' },
-                  { value: '120+', label: 'Projects Live' },
-                ].map((stat, i) => (
-                  <div key={i} className="flex items-center gap-4 sm:gap-6 md:gap-8">
-                    <div>
-                      <div className="font-black leading-none text-white"
-                        style={{ fontSize: 'clamp(1.4rem, 3vw, 2rem)', letterSpacing: '-0.03em' }}>
-                        {stat.value}
-                      </div>
-                      <div className="text-[9px] md:text-[10px] font-bold tracking-[0.12em] uppercase text-gray-500 mt-1">
-                        {stat.label}
-                      </div>
-                    </div>
-                    {i < 2 && <div className="w-px h-6 md:h-8 bg-gray-800" />}
-                  </div>
-                ))}
+              <motion.div variants={fadeInUp} className="mb-6 md:mb-8">
+                <p className="text-sm text-gray-400 leading-relaxed max-w-xl">
+                  Clickmasters serves businesses in the United States, the United Kingdom, and Pakistan.
+                </p>
               </motion.div>
 
               <motion.div variants={fadeInUp} className="flex flex-wrap gap-2">
@@ -321,35 +279,6 @@ export default function AboutPage() {
               <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 w-full max-w-sm sm:max-w-md md:max-w-xl lg:max-w-2xl">
                 <motion.div
                   whileHover={{ y: -2, scale: 1.02 }}
-                  transition={{ duration: 0.2 }}
-                  className="px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-xl bg-white border border-gray-200 shadow-sm flex items-center gap-1.5 sm:gap-2"
-                >
-                  <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-lg flex items-center justify-center flex-shrink-0"
-                    style={{ background: 'rgba(249,115,22,0.1)' }}>
-                    <TrendingUp className="h-2.5 w-2.5 sm:h-3 sm:w-3 text-brand" />
-                  </div>
-                  <div>
-                    <span className="text-xs sm:text-sm font-black text-gray-900">120+</span>
-                    <span className="text-[8px] sm:text-[9px] text-gray-400 ml-0.5 sm:ml-1">Projects</span>
-                  </div>
-                </motion.div>
-
-                <motion.div
-                  whileHover={{ y: -2, scale: 1.02 }}
-                  transition={{ duration: 0.2, delay: 0.05 }}
-                  className="px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-xl bg-white border border-gray-200 shadow-sm flex items-center gap-1.5 sm:gap-2"
-                >
-                  <span className="text-xs sm:text-sm font-black text-gray-900">4.9</span>
-                  <div className="flex gap-px">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-2 w-2 sm:h-2.5 sm:w-2.5 fill-brand text-brand" />
-                    ))}
-                  </div>
-                  <span className="text-[8px] sm:text-[9px] text-gray-400">(80+)</span>
-                </motion.div>
-
-                <motion.div
-                  whileHover={{ y: -2, scale: 1.02 }}
                   transition={{ duration: 0.2, delay: 0.1 }}
                   className="px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-xl bg-black border border-brand/20 shadow-sm flex items-center gap-1.5 sm:gap-2"
                 >
@@ -386,7 +315,7 @@ export default function AboutPage() {
                 Close the gaps between strategy and production
               </h2>
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto text-justify px-2 sm:px-0">
-                Most failed AI initiatives die in the gap between a strategy and a system in production. We exist to close that gap to be the partner that actually builds, that tells you the truth about what's worth doing, and that hands you something you own and understand. That's the whole point of Clickmasters.
+                Most failed AI initiatives die in the gap between a strategy and a system in production. We exist to close that gap to be the partner that actually builds, that tells you the truth about what is worth doing, and that hands you something you own and understand. That is the whole point of Clickmasters.
               </p>
             </motion.div>
           </motion.div>

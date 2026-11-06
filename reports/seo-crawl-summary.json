@@ -1,0 +1,96 @@
+{
+  "crawled": 253,
+  "ok": 253,
+  "not200": [],
+  "chains": 0,
+  "badTitle": [],
+  "badDesc": [],
+  "dupTitles": [],
+  "dupDescs": [],
+  "badCanon": [],
+  "multiOrg": [],
+  "noOrg": [],
+  "slow": [],
+  "zeros": [],
+  "oneIncoming": [
+    "/case-studies/ai-receptionist-lead-response-automation"
+  ],
+  "wrongIndustry": [
+    {
+      "path": "/solutions/ai-agents/for-ecommerce",
+      "h1": "AI Agent Development for E-commerce",
+      "title": "AI Agent Development for E-commerce | Clickmasters AI"
+    },
+    {
+      "path": "/solutions/ai-chatbots/for-ecommerce",
+      "h1": "AI Chatbots for E-commerce",
+      "title": "AI Chatbots for E-commerce Services | Clickmasters"
+    },
+    {
+      "path": "/solutions/ai-voice-agents/for-ecommerce",
+      "h1": "AI Voice Agents for E-commerce",
+      "title": "AI Voice Agents for E-commerce Services | Clickmasters"
+    },
+    {
+      "path": "/solutions/ai-workflow-automation/for-ecommerce",
+      "h1": "AI Workflow Automation for E-commerce",
+      "title": "AI Workflow Automation for E-commerce | Clickmasters AI"
+    },
+    {
+      "path": "/solutions/appointment-booking-automation/for-ecommerce",
+      "h1": "Appointment &amp; Booking Automation for E-commerce",
+      "title": "Booking Automation for E-commerce Systems | Clickmasters"
+    },
+    {
+      "path": "/solutions/business-process-automation/for-ecommerce",
+      "h1": "Business Process Automation for E-commerce",
+      "title": "Business Process Automation for E-commerce | Clickmasters"
+    },
+    {
+      "path": "/solutions/crm-automation/for-ecommerce",
+      "h1": "CRM Automation for E-commerce",
+      "title": "CRM Automation for E-commerce Services | Clickmasters"
+    },
+    {
+      "path": "/solutions/customer-support-automation/for-ecommerce",
+      "h1": "Customer Support Automation for E-commerce",
+      "title": "Customer Support Automation for E-commerce | Clickmasters"
+    },
+    {
+      "path": "/solutions/document-automation/for-ecommerce",
+      "h1": "Document &amp; Data Automation for E-commerce",
+      "title": "Document & Data Automation for E-commerce | Clickmasters"
+    },
+    {
+      "path": "/solutions/invoice-automation/for-ecommerce",
+      "h1": "Invoice &amp; Finance Automation for E-commerce",
+      "title": "Invoice & Finance Automation for E-commerce | Clickmasters"
+    },
+    {
+      "path": "/solutions/lead-generation-automation/for-ecommerce",
+      "h1": "Lead Generation Automation for E-commerce",
+      "title": "Lead Generation Automation for E-commerce | Clickmasters"
+    },
+    {
+      "path": "/solutions/marketing-automation/for-ecommerce",
+      "h1": "AI Marketing Automation for E-commerce",
+      "title": "AI Marketing Automation for E-commerce | Clickmasters AI"
+    },
+    {
+      "path": "/solutions/reporting-automation/for-ecommerce",
+      "h1": "Reporting Automation for E-commerce",
+      "title": "Reporting Automation for E-commerce | Clickmasters AI"
+    },
+    {
+      "path": "/solutions/sales-automation/for-ecommerce",
+      "h1": "AI Sales Automation for E-commerce",
+      "title": "AI Sales Automation for E-commerce Systems | Clickmasters"
+    }
+  ],
+  "timing": {
+    "median": 124,
+    "max": 402,
+    "over250": 8,
+    "over1000": 0
+  }
+}

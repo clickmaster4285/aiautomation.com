@@ -48,10 +48,7 @@ export default function ZapierSupportPage() {
             '@type': 'Service',
             name: 'Customer Support Automation with Zapier',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'Customer Support Automation',
             areaServed: 'Global',
           }),
@@ -74,6 +71,7 @@ export default function ZapierSupportPage() {
         stats={content.stats.slice(0, 3)}
         breadcrumb={[
           { label: 'Home', href: '/' },
+          { label: 'Solutions', href: '/solutions' },
           { label: 'Customer Support Automation', href: '/solutions/customer-support-automation' },
           { label: 'With Zapier', href: '/solutions/customer-support-automation/with-zapier' },
         ]}
@@ -160,7 +158,7 @@ export default function ZapierSupportPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit  we'll scope the build and confirm the platform fit honestly."
+        subtitle="Book a free automation audit. We'll scope the build and confirm the platform fit honestly."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

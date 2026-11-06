@@ -3,9 +3,8 @@ import { ServiceContent } from '../type';
 
 export const aiKnowledgeAssistants: ServiceContent = {
   slug: 'ai-knowledge-assistants',
-title: 'AI Knowledge Assistant Development | Clickmasters',
-metaDescription:
-  'Build secure AI knowledge assistants using company documents, RAG technology, and business data. Get custom AI knowledge assistant development services.',
+title: 'AI Knowledge Assistants for Internal Teams | Clickmasters',
+metaDescription: 'Clickmasters builds knowledge assistants that answer from your material and send unclear cases to a person. Book a free audit. Ask the team today.',
 keywords: 'ai knowledge assistant, internal ai, knowledge management, ai search',
 sections: [
   // ========== HERO ==========

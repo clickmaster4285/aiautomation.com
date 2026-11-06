@@ -705,22 +705,6 @@ export function ContentSection({
                   transition={{ duration: 0.5, delay: 0.4 }}
                   className="flex flex-wrap items-center justify-between gap-6 pt-6"
                 >
-                  <div className="flex items-center gap-2.5">
-                    <div className="flex -space-x-2">
-                      {[...Array(3)].map((_, i) => (
-                        <div
-                          key={i}
-                          className="w-8 h-8 rounded-full bg-gradient-to-br from-brand/30 to-brand/10 border-2 border-white flex items-center justify-center text-xs font-semibold text-brand"
-                        >
-                          {String.fromCharCode(65 + i)}
-                        </div>
-                      ))}
-                    </div>
-                    <span className="text-sm text-gray-400">
-                      Trusted by <span className="text-gray-600 font-medium">50+</span> companies
-                    </span>
-                  </div>
-
                   <motion.div
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}

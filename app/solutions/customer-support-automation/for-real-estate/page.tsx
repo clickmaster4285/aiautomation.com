@@ -48,10 +48,7 @@ export default function ForRealEstatePage() {
             '@type': 'Service',
             name: 'Customer Support Automation for Real Estate',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'Customer Support Automation Development',
             areaServed: 'Global',
           }),
@@ -91,8 +88,8 @@ export default function ForRealEstatePage() {
       />
 
       <WhySection
-        title="Why Real Estate Need Customer Support Automation"
-        content={[content.sections['Why Real Estate Need Customer Support Automation']]}
+        title="Why Real Estate Needs Customer Support Automation"
+        content={[content.sections['Why Real Estate Needs Customer Support Automation']]}
       />
 
       <ProblemsSection
@@ -116,8 +113,8 @@ export default function ForRealEstatePage() {
       />
 
       <BoundariesSection
-        title="What This Isand Isn't"
-        content={[content.sections['What This Isand Isn\'t']]}
+        title="What This Is and Isn't"
+        content={[content.sections['What This Is and Isn\'t']]}
       />
 
       <RealitiesSection
@@ -150,7 +147,7 @@ export default function ForRealEstatePage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where support automation pays off for real estate."
+        subtitle="Book a free automation audit. 30 minutes, no obligation, and an honest read on where support automation pays off for real estate."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

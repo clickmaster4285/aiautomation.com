@@ -3,9 +3,8 @@ import { ServiceContent } from '../type';
 
 export const realEstate: ServiceContent = {
   slug: 'real-estate',
-  title: 'AI Automation for Real Estate | Clickmasters',
-  metaDescription:
-    'Clickmasters builds AI automation for real estate teams: lead follow-up, appointment scheduling, listing enquiries, and document workflows so agents respond faster.',
+  title: 'AI Automation for Real Estate Teams | Clickmasters AI',
+  metaDescription: 'AI automation for real estate covers inquiries, follow-up, CRM updates, and the paperwork that piles up. Book a free audit. Start with one workflow.',
   keywords: 'ai automation for real estate, real estate automation',
   sections: [
     {

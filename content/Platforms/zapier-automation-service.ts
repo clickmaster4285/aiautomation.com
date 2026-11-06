@@ -3,9 +3,9 @@ import { ServiceContent } from '../type';
 
 export const zapierAutomationService: ServiceContent = {
   slug: 'zapier-automation-services',
-  title: 'Hire Zapier Automation Experts USA - Custom Zapier Services',
+  title: 'Zapier Automation Services for Your Stack | Clickmasters',
   metaDescription:
-    'Our Zapier automation experts connect apps, automate workflows, and reduce manual work. Custom Zaps, integrations, APIs, and ongoing support.',
+    'Clickmasters builds Zapier automation that connects the apps your team already runs and takes the repeated handoffs off the queue. Book a free audit.',
   keywords:
     'zapier automation services, zapier automation experts, zapier consultant, zapier integrations, zapier workflow automation, zapier services USA',
   sections: [

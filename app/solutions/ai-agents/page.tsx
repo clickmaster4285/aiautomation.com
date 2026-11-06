@@ -48,10 +48,7 @@ export default function AIAgentsPage() {
             '@type': 'Service',
             name: 'AI Agent Development',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'AI Agent Development',
             areaServed: 'Global',
           }),

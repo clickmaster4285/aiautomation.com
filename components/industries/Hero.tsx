@@ -30,7 +30,6 @@ const wordVariants: Variants = {
 export default function Hero({ section, form }: HeroProps) {
   const heading = section.heading || '';
   const subheading = section.subheading || '';
-  const stats = section.stats || [];
   const ctas = section.ctas || [];
   const primaryCta = ctas.find((c) => c.primary) || ctas[0];
   const secondaryCtas = ctas.filter((c) => !c.primary);
@@ -155,17 +154,6 @@ export default function Hero({ section, form }: HeroProps) {
               variants={wordVariants}
               className="flex flex-wrap items-center gap-6 mt-8"
             >
-              {stats.map((stat, idx) => (
-                <div key={idx} className="flex flex-col items-start">
-                  <span className="text-2xl md:text-3xl font-black text-white leading-none">
-                    {stat.value}
-                  </span>
-                  <span className="text-[9px] tracking-widest uppercase text-gray-400 mt-0.5">
-                    {stat.label}
-                  </span>
-                </div>
-              ))}
-
               {primaryCta && (
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Button

@@ -49,10 +49,7 @@ export default function ForRealEstatePage() {
             '@type': 'Service',
             name: 'Document & Data Automation for Real Estate',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'Document & Data Automation Development',
             areaServed: 'Global',
           }),
@@ -92,8 +89,8 @@ export default function ForRealEstatePage() {
       />
 
       <WhySection
-        title="Why Real Estate Need Document & Data Automation"
-        content={[content.sections['Why Real Estate Need Document & Data Automation']]}
+        title="Why Real Estate Needs Document & Data Automation"
+        content={[content.sections['Why Real Estate Needs Document & Data Automation']]}
       />
 
       <ProblemsSection
@@ -117,8 +114,8 @@ export default function ForRealEstatePage() {
       />
 
       <BoundariesSection
-        title="What This Isand Isn't"
-        content={[content.sections['What This Isand Isn\'t']]}
+        title="What This Is and Isn't"
+        content={[content.sections['What This Is and Isn\'t']]}
       />
 
       <RealitiesSection
@@ -151,7 +148,7 @@ export default function ForRealEstatePage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where document automation pays off for real estate."
+        subtitle="Book a free automation audit. 30 minutes, no obligation, and an honest read on where document automation pays off for real estate."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

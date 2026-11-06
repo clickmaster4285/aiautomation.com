@@ -47,10 +47,7 @@ export default function N8nWorkflowPage() {
             '@type': 'Service',
             name: 'AI Workflow Automation with n8n',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'AI Workflow Automation',
             areaServed: 'Global',
           }),
@@ -73,6 +70,7 @@ export default function N8nWorkflowPage() {
         stats={content.stats.slice(0, 3)}
         breadcrumb={[
           { label: 'Home', href: '/' },
+          { label: 'Solutions', href: '/solutions' },
           { label: 'AI workflow automation', href: '/solutions/ai-workflow-automation' },
           { label: 'With n8n', href: '/solutions/ai-workflow-automation/with-n8n' },
         ]}
@@ -159,7 +157,7 @@ export default function N8nWorkflowPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit  we'll scope the build and confirm the platform fit honestly."
+        subtitle="Book a free automation audit. We'll scope the build and confirm the platform fit honestly."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

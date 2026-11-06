@@ -3,8 +3,8 @@ import { ServiceContent } from '../type';
 
 export const aiSalesAutomation: ServiceContent = {
   slug: 'ai-sales-automation',
-  title: 'AI Sales Automation Services | Clickmasters',
-  metaDescription: 'Clickmasters automates the sales grind lead enrichment, scoring, follow-up, CRM updates, and reporting so your reps spend time selling, not on data entry.',
+  title: 'AI Sales Automation for Revenue Teams | Clickmasters',
+  metaDescription: 'Clickmasters automates lead follow-up, enrichment, and activity logging so selling time stays on conversations. Book a free audit. Ask the team today.',
   keywords: 'ai sales automation, sales automation, lead scoring, crm automation',
   sections: [
     // ========== HERO ==========

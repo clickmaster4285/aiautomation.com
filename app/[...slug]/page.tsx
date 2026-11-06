@@ -17,7 +17,7 @@ const pages: Record<string, ComponentType> = {
 };
 
 // Keep in sync with CMS_REVALIDATE_SECONDS in lib/cms.ts (must be a literal).
-export const revalidate = 60;
+export const revalidate = 300;
 
 type Props = { params: Promise<{ slug: string[] }> };
 

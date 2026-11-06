@@ -1,9 +1,8 @@
 // content/Solutions/sales-automation-with-salesforce.ts
 export const salesAutomationWithSalesforce = {
   url: '/solutions/sales-automation/with-salesforce',
-  titleTag: 'Sales Automation with Salesforce | Clickmasters',
-  metaDescription:
-    'Sales automation with Salesforce from Clickmasters keeps your pipeline accurate without manual entry — leads captured, enriched, routed, and synced into Salesforce automatically, so reps focus on selling, not data updates.',
+  titleTag: 'Sales Automation with Salesforce: Clean Data, | Clickmasters',
+  metaDescription: 'Teams running Salesforce use Clickmasters Sales Automation with Salesforce: Clean Data, Faster Pipeline, Less Manual Entry to remove repetitive work from.',
   primaryKeyword: 'sales automation with salesforce',
   bookingLink: '/free-automation-audit',
 

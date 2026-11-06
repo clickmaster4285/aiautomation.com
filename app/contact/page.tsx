@@ -3,8 +3,8 @@ import ContactPage from '@/components/contact/pageContact';
 import { canonicalUrl } from '@/lib/canonical';
 
 export const metadata: Metadata = {
-  title: 'Contact Clickmasters | AI Automation Agency',
-  description: 'Get in touch with Clickmasters. Book a free automation audit or ask a question we reply fast and tell you honestly if we\'re the right fit.',
+  title: 'Contact Clickmasters for an Automation Audit | Clickmasters',
+  description: 'Contact Clickmasters to book a free automation audit or ask a question. We reply with an honest read on fit. Book a free audit. Ask the team today.',
   alternates: {
     canonical: canonicalUrl('/contact'),
   },

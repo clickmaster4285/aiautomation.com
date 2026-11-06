@@ -47,10 +47,7 @@ export default function HubspotCRMPage() {
             '@type': 'Service',
             name: 'CRM Automation with HubSpot',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'CRM Automation',
             areaServed: 'Global',
           }),
@@ -73,6 +70,7 @@ export default function HubspotCRMPage() {
         stats={content.stats.slice(0, 3)}
         breadcrumb={[
           { label: 'Home', href: '/' },
+          { label: 'Solutions', href: '/solutions' },
           { label: 'Crm automation', href: '/solutions/crm-automation' },
           { label: 'With hubspot', href: '/solutions/crm-automation/with-hubspot' },
         ]}
@@ -159,7 +157,7 @@ export default function HubspotCRMPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit  we'll scope the build and confirm the platform fit honestly."
+        subtitle="Book a free automation audit. We'll scope the build and confirm the platform fit honestly."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

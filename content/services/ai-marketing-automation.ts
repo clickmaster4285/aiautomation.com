@@ -3,8 +3,8 @@ import { ServiceContent } from '../type';
 
 export const aiMarketingAutomation: ServiceContent = {
   slug: 'ai-marketing-automation',
-  title: 'AI Marketing Automation Services | Clickmasters',
-  metaDescription: 'Clickmasters builds AI marketing automation content generation, lead nurturing, and campaign workflows that run themselves, so marketing scales without more headcount.',
+  title: 'AI Marketing Automation for Growth Teams | Clickmasters',
+  metaDescription: 'Clickmasters connects marketing automation so nurture and follow-up continue without a manual queue. People keep the exceptions. Ask the team today.',
   keywords: 'ai marketing automation, marketing automation, content generation, lead nurturing',
   sections: [
     // ========== HERO ==========

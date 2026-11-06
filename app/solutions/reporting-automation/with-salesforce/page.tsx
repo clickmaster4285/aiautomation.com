@@ -48,10 +48,7 @@ export default function SalesforceReportingPage() {
             '@type': 'Service',
             name: 'Reporting Automation with Salesforce',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'Reporting Automation',
             areaServed: 'Global',
           }),
@@ -74,6 +71,7 @@ export default function SalesforceReportingPage() {
         stats={content.stats.slice(0, 3)}
          breadcrumb={[
           { label: 'Home', href: '/' },
+          { label: 'Solutions', href: '/solutions' },
           { label: 'Reporting Automation', href: '/solutions/reporting-automation' },
           { label: 'With salesforce', href: '/solutions/reporting-automation/with-salesforce' },
         ]}
@@ -160,7 +158,7 @@ export default function SalesforceReportingPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit  we'll scope the build and confirm the platform fit honestly."
+        subtitle="Book a free automation audit. We'll scope the build and confirm the platform fit honestly."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

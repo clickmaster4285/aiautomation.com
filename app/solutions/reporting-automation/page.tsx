@@ -49,10 +49,7 @@ export default function ReportingAutomationPage() {
             '@type': 'Service',
             name: 'Reporting Automation',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'Reporting Automation Development',
             areaServed: 'Global',
           }),

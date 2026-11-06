@@ -47,10 +47,7 @@ export default function AirtableCRMPage() {
             '@type': 'Service',
             name: 'CRM Automation with Airtable',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'CRM Automation',
             areaServed: 'Global',
           }),
@@ -73,6 +70,7 @@ export default function AirtableCRMPage() {
         stats={content.stats.slice(0, 3)}
         breadcrumb={[
           { label: 'Home', href: '/' },
+          { label: 'Solutions', href: '/solutions' },
           { label: 'Crm automation', href: '/solutions/crm-automation' },
           { label: 'With airtable', href: '/solutions/crm-automation/with-airtable' },
         ]}
@@ -159,7 +157,7 @@ export default function AirtableCRMPage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit  we'll scope the build and confirm the platform fit honestly."
+        subtitle="Book a free automation audit. We'll scope the build and confirm the platform fit honestly."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

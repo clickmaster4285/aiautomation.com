@@ -48,10 +48,7 @@ export default function ForHealthcarePage() {
             '@type': 'Service',
             name: 'Invoice & Finance Automation for Healthcare',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'Invoice & Finance Automation Development',
             areaServed: 'Global',
           }),
@@ -91,8 +88,8 @@ export default function ForHealthcarePage() {
       />
 
       <WhySection
-        title="Why Healthcare Need Invoice & Finance Automation"
-        content={[content.sections['Why Healthcare Need Invoice & Finance Automation']]}
+        title="Why Healthcare Needs Invoice & Finance Automation"
+        content={[content.sections['Why Healthcare Needs Invoice & Finance Automation']]}
       />
 
       <ProblemsSection
@@ -116,8 +113,8 @@ export default function ForHealthcarePage() {
       />
 
       <BoundariesSection
-        title="What This Isand Isn't"
-        content={[content.sections['What This Isand Isn\'t']]}
+        title="What This Is and Isn't"
+        content={[content.sections['What This Is and Isn\'t']]}
       />
 
       <RealitiesSection
@@ -150,7 +147,7 @@ export default function ForHealthcarePage() {
 
       <CTASection
         title={content.cta}
-        subtitle="Book a free automation audit30 minutes, no obligation, and an honest read on where finance automation pays off for healthcare."
+        subtitle="Book a free automation audit. 30 minutes, no obligation, and an honest read on where finance automation pays off for healthcare."
         primaryCta={{
           text: 'Book a Free Automation Audit',
           href: content.bookingLink,

@@ -2,7 +2,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { TrendingUp, BarChart3, Clock, Users, DollarSign, ArrowRight, Sparkles } from 'lucide-react';
 
 interface ReturnSectionProps {
   title: string;
@@ -11,29 +10,10 @@ interface ReturnSectionProps {
 }
 
 export function ReturnSection({ title, content, stats }: ReturnSectionProps) {
+  void stats;
   const paragraphs = (content || []).filter(
     (line): line is string => typeof line === 'string' && line.trim().length > 0
   );
-
-  const defaultMetrics = [
-    { icon: Clock, label: 'Time Saved', value: '20+', unit: 'hours/week' },
-    { icon: BarChart3, label: 'Efficiency', value: '85%', unit: 'faster' },
-    { icon: TrendingUp, label: 'Productivity', value: '3x', unit: 'increase' },
-    { icon: DollarSign, label: 'ROI', value: '500%', unit: 'first year' },
-  ];
-
-  const metrics = stats ? stats.map((stat, index) => {
-    const icons = [Clock, BarChart3, TrendingUp, DollarSign];
-    const labels = ['Time Saved', 'Efficiency', 'Productivity', 'ROI'];
-    const units = ['hours/week', 'faster', 'increase', 'first year'];
-    
-    return {
-      icon: icons[index % icons.length],
-      label: stat.label || labels[index % labels.length],
-      value: stat.value,
-      unit: units[index % units.length],
-    };
-  }) : defaultMetrics;
 
   return (
     <section className="relative overflow-hidden py-20 md:py-28 bg-black">
@@ -73,7 +53,7 @@ export function ReturnSection({ title, content, stats }: ReturnSectionProps) {
       </div>
 
       <div className="mx-auto max-w-[84vw] px-6 relative">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid gap-16 items-start">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -106,36 +86,6 @@ export function ReturnSection({ title, content, stats }: ReturnSectionProps) {
                 </motion.p>
               ))}
             </div>
-          </motion.div>
-
-          {/* Right Content - Metrics Cards */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="grid grid-cols-2 gap-4"
-          >
-            <p className="col-span-2 text-sm text-white/70">
-              Example outcomes for this type of work. These are not a live dashboard.
-            </p>
-            {metrics.map((metric, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 + 0.3 }}
-                className="group p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-brand/30 hover:bg-white/10 transition-all duration-300"
-              >
-                <div className="w-12 h-12 rounded-xl bg-brand/20 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
-                  <metric.icon className="h-6 w-6 text-brand" />
-                </div>
-                <div className="text-3xl font-bold text-brand mb-1">{metric.value}</div>
-                <div className="text-sm font-semibold text-white">{metric.label}</div>
-                <div className="text-xs text-gray-400">{metric.unit}</div>
-              </motion.div>
-            ))}
           </motion.div>
         </div>
       </div>

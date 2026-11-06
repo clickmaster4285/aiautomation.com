@@ -1,9 +1,8 @@
 // content/Solutions/ai-agents.ts
 export const aiAgents = {
   url: '/solutions/ai-agents',
-  titleTag: 'AI Agents Development Solutions | Clickmasters',
-  metaDescription:
-    'AI agents from Clickmasters handle multi-step business tasks end to end — interpreting context, executing actions, and updating your systems, with human review where it matters.',
+  titleTag: 'AI Agents That Execute Multi-Step Business | Clickmasters',
+  metaDescription: 'Operations teams use Clickmasters AI Agents That Execute Multi-Step Business Workflows End to End to remove repetitive work from the current process.',
   primaryKeyword: 'ai agents',
   bookingLink: '/free-automation-audit',
 

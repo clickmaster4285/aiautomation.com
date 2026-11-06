@@ -4,9 +4,9 @@ import { ServiceContent } from '../type';
 
 export const gohighlevelAutomationService : ServiceContent = {
   slug: 'gohighlevel-automation-services',
-  title: 'GoHighLevel Automation Services USA - GHL Experts',
+  title: 'GoHighLevel Automation for Sales Pipelines | Clickmasters',
   metaDescription:
-    'Our GoHighLevel automation experts automate lead follow-up, pipelines, appointments, CRM tasks, and nurture workflows for faster growth.',
+    'Clickmasters builds GoHighLevel automation for follow-up, pipelines, and appointments so leads keep moving after the first inquiry. Book a free audit.',
   keywords:
     'gohighlevel automation services, gohighlevel automation experts, GHL automation, gohighlevel consultant, gohighlevel workflow automation, GHL CRM automation, gohighlevel automation USA',
 

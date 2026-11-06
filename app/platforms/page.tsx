@@ -90,10 +90,7 @@ const platforms = [
 ];
 
 const stats = [
-  { value: '8', label: 'Platforms supported' },
-  { value: '500+', label: 'Integrations built' },
-  { value: '10K+', label: 'Automations deployed' },
-  { value: '99.9%', label: 'Uptime achieved' },
+  { value: String(platforms.length), label: 'Platforms we implement' },
 ];
 
 const features = [
@@ -104,7 +101,7 @@ const features = [
   },
   {
     icon: Server,
-    title: '99.9% Uptime',
+    title: 'Monitored uptime',
     desc: 'Reliable automation infrastructure with monitoring, error handling, and automatic retries.',
   },
   {

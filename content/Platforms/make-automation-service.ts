@@ -4,9 +4,9 @@ import { ServiceContent } from '../type';
 
 export const makeAutomationService: ServiceContent = {
   slug: 'make-automation-services',
-  title: 'Make Automation Services USA - Make Experts',
+  title: 'Make Automation Services for Operating Teams | Clickmasters',
   metaDescription:
-    'Get Make Automation Services to build advanced scenarios, connect systems, automate processes, and streamline operations with custom workflows.',
+    'Clickmasters builds Make scenarios that connect your systems and keep repeated operations moving without a person watching the queue. Book a free audit.',
   keywords:
     'make automation services, make automation experts, make automation consultant, make workflow automation, make automation USA, make scenario automation, make integrations',
   sections: [

@@ -8,7 +8,6 @@ import { motion } from 'framer-motion';
 import {
   ArrowRight,
   ChevronRight,
-  Phone,
   ShieldCheck,
   Zap,
   Bot,
@@ -19,6 +18,8 @@ import { getCaseStudy } from '@/content/case-studies';
 import type { CaseStudy } from '@/content/case-studies/clickmasters-ai-lead-response-case-study';
 import { Marker, splitHeading } from '../../../components/caseStudies/Shared';
 import { PartsTabs } from '../../../components/caseStudies/parts-tabs';
+import { ORGANIZATION_ID } from '@/lib/organization';
+import { canonicalUrl } from '@/lib/canonical';
 
 export default function CaseStudyPage({
   params,
@@ -62,16 +63,16 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
     image: seo.og?.image ? [seo.og.image] : undefined,
     datePublished: cs.meta.publishedAt,
     dateModified: cs.meta.updatedAt,
-    author: { '@type': 'Organization', name: 'Clickmasters' },
-    publisher: { '@type': 'Organization', name: 'Clickmasters', url: 'https://clickmastersaiautomation.com' },
+    author: { '@id': ORGANIZATION_ID },
+    publisher: { '@id': ORGANIZATION_ID },
     mainEntityOfPage: seo.url,
   };
   const breadcrumbLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://clickmastersaiautomation.com' },
-      { '@type': 'ListItem', position: 2, name: 'Case studies', item: 'https://clickmastersaiautomation.com/case-studies' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: canonicalUrl('/') },
+      { '@type': 'ListItem', position: 2, name: 'Case studies', item: canonicalUrl('/case-studies') },
       { '@type': 'ListItem', position: 3, name: seo.h1, item: seo.url },
     ],
   };

@@ -49,10 +49,7 @@ export default function SalesforceChatbotPage() {
             '@type': 'Service',
             name: 'AI Chatbots with Salesforce',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'AI Chatbot Development',
             areaServed: 'Global',
           }),
@@ -76,6 +73,7 @@ export default function SalesforceChatbotPage() {
         // Breadcrumb for the subpage
         breadcrumb={[
           { label: 'Home', href: '/' },
+          { label: 'Solutions', href: '/solutions' },
           { label: 'AI Chatbots', href: '/solutions/ai-chatbots' },
           { label: 'With Salesforce', href: '/solutions/ai-chatbots/with-salesforce' },
         ]}

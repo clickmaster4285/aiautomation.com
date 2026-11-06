@@ -4,7 +4,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/landingPage/Nav";
 import Footer from "@/components/landingPage/Footer";
-import { PHONES, SALES_EMAIL, SITE_NAME, SITE_URL } from "@/lib/site-contact"; 
+import { organizationNode, websiteNode } from "@/lib/organization";
+import { SITE_URL } from "@/lib/site-contact"; 
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,9 +27,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "./",
   },
-  title: "ClickMasters | Automate the Future of Work with AI",
+  title: "Clickmasters AI Automation for Business | Clickmasters",
   description:
-    "We design and build AI automation systems, AI agents, and workflow automation that eliminate manual work, increase efficiency, and scale your business 24/7.",
+    "Growing companies use Clickmasters AI automation to take repetitive work off the team without replacing the people who decide. Book a free audit.",
   icons: {
     icon: "/logo.png",
     shortcut: "/logo.png",
@@ -81,22 +82,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@graph": [
-                {
-                  "@type": "Organization",
-                  name: SITE_NAME,
-                  url: siteUrl,
-                  logo: `${siteUrl}/logo.png`,
-                  email: SALES_EMAIL,
-                  telephone: PHONES.map((phone) => phone.display),
-                  areaServed: PHONES.map((phone) => phone.label),
-                },
-                {
-                  "@type": "WebSite",
-                  name: "Clickmasters",
-                  url: siteUrl,
-                },
-              ],
+              "@graph": [organizationNode(), websiteNode()],
             }),
           }}
         />

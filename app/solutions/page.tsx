@@ -36,8 +36,8 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'AI Automation Solutions | Clickmasters',
-  description: 'Explore our comprehensive AI automation solutions for business efficiency.',
+  title: 'AI Automation Solutions for Business Teams | Clickmasters',
+  description: 'Explore Clickmasters AI automation solutions for sales, support, documents, reporting, and the tools your team already uses. Book a free audit.',
   alternates: {
     canonical: canonicalUrl('/solutions'),
   },

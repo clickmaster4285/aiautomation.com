@@ -48,10 +48,7 @@ export default function ZapierChatbotPage() {
             '@type': 'Service',
             name: 'AI Chatbots with Zapier',
             description: content.metaDescription,
-            provider: {
-              '@type': 'Organization',
-              name: 'Clickmasters',
-            },
+            provider: { '@id': 'https://clickmastersaiautomation.com/#organization' },
             serviceType: 'AI Chatbot Development',
             areaServed: 'Global',
           }),
@@ -74,6 +71,7 @@ export default function ZapierChatbotPage() {
         stats={content.stats.slice(0, 3)}
    breadcrumb={[
           { label: 'Home', href: '/' },
+          { label: 'Solutions', href: '/solutions' },
           { label: 'AI Chatbots', href: '/solutions/ai-chatbots' },
           { label: 'With Zapier', href: '/solutions/ai-chatbots/with-zapier' },
         ]}
