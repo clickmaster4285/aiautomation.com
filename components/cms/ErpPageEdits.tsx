@@ -1,7 +1,7 @@
 'use client';
 // components/cms/ErpPageEdits.tsx
 // Applies published ERP "edited page" instructions (text, styles, section
-// moves/removals) to the current route's DOM in the browser. Mounted once in
+// moves/removals/duplicates) to the current route's DOM in the browser. Mounted once in
 // the root layout so it covers code-owned and CMS pages, on first load and on
 // every client-side navigation. Renders nothing.
 //
@@ -9,11 +9,12 @@
 // cleanup. React runs that cleanup during the commit's mutation phase, and this
 // component sits before <main> in <body>, so the DOM is back to the shape React
 // expects before React patches or removes the old route's nodes. Removals only
-// hide (display: none), and moved nodes go back to their original parent and
-// sibling, so React's tree is never left inconsistent.
+// hide (display: none), moved nodes go back to their original parent and
+// sibling, and copies (data-erp-clone) are removed, so React's tree is never
+// left inconsistent and no copy leaks into the next page.
 import { usePathname } from 'next/navigation';
 import { useLayoutEffect } from 'react';
-import { isSafeStyle, normalizeEditPath, type ErpEdit } from '@/lib/erp-edits-shared';
+import { isCopySelector, isSafeStyle, normalizeEditPath, type ErpEdit } from '@/lib/erp-edits-shared';
 
 const CACHE_TTL_MS = 60_000;
 const MAX_HIDE_MS = 1500;
@@ -74,7 +75,9 @@ if (typeof window !== 'undefined') editedPaths();
 /* ---------------------------- DOM resolution ---------------------------- */
 
 type Styled = HTMLElement | SVGElement;
-type Resolved = { edit: ErpEdit; el: Styled; target?: Styled };
+// `null` = a copy selector ([data-erp-clone="…"]): looked up when the step runs,
+// because copies only exist once their sectionDuplicate step has run.
+type Resolved = { edit: ErpEdit; el: Styled | null; target?: Styled | null };
 
 function query(selector: string): Styled | null {
   try {
@@ -85,18 +88,23 @@ function query(selector: string): Styled | null {
   }
 }
 
-/** Resolves every selector against the current (original) DOM, before any change. */
+/**
+ * Resolves every selector against the current (original) DOM, before any
+ * change. Copy selectors are deferred (null) and never count as missing.
+ */
 function resolveAll(edits: ErpEdit[]): { resolved: Resolved[]; missing: number } {
   const resolved: Resolved[] = [];
   let missing = 0;
+  const resolve = (selector: string) => (isCopySelector(selector) ? null : query(selector));
+  const found = (selector: string, el: Styled | null) => !!el || isCopySelector(selector);
   for (const edit of edits) {
-    const el = query(edit.selector);
-    const target = edit.type === 'sectionMove' ? query(edit.target) : undefined;
-    if (!el || target === null) {
+    const el = resolve(edit.selector);
+    const target = edit.type === 'sectionMove' ? resolve(edit.target) : undefined;
+    if (!found(edit.selector, el) || (edit.type === 'sectionMove' && !found(edit.target, target!))) {
       missing++;
       continue;
     }
-    resolved.push({ edit, el, target: target ?? undefined });
+    resolved.push({ edit, el, target });
   }
   return { resolved, missing };
 }
@@ -135,65 +143,153 @@ function waitForTargets(edits: ErpEdit[], isCancelled: () => boolean): Promise<R
 
 /* ---------------------------- apply / revert ---------------------------- */
 
+// Containers that manage their own layout; makeRoomForCopy leaves them alone.
+const SLIDER_CLASS = /swiper|slick|carousel|owl-|splide|flickity|glide/i;
+const MAX_ROOM_DEPTH = 12;
+
 class EditSession {
+  // Original style attribute of every element touched (restored last).
   private styles = new Map<Styled, string | null>();
-  private texts: { el: Element; nodes: Node[] }[] = [];
-  private moves: { el: Element; parent: Node; next: Node | null }[] = [];
+  // Structural changes (text, moves, copies), undone in reverse order.
+  private undo: (() => void)[] = [];
 
   private setStyle(el: Styled, property: string, value: string) {
     if (!this.styles.has(el)) this.styles.set(el, el.getAttribute('style'));
     el.style.setProperty(property, value, 'important');
   }
 
-  apply(resolved: Resolved[]) {
-    // 1. Element edits (text + styles).
-    for (const { edit, el } of resolved) {
-      if (edit.type !== 'elementEdit' || !el.isConnected) continue;
-      if (typeof edit.text === 'string') {
-        this.texts.push({ el, nodes: Array.from(el.childNodes) });
-        el.textContent = edit.text;
-      }
-      for (const [property, value] of edit.styles) {
-        if (!isSafeStyle(property, value)) continue;
-        this.setStyle(el, property, value);
-        if (property === 'color' || property === 'text-decoration') {
-          el.querySelectorAll('*').forEach((child) => {
-            if ('style' in child) this.setStyle(child as Styled, property, value);
-          });
-        }
-      }
+  /** The step's element: resolved up front, or looked up now for copy selectors. */
+  private live(selector: string, early: Styled | null | undefined): Styled | null {
+    const el = early ?? (isCopySelector(selector) ? query(selector) : null);
+    return el?.isConnected ? el : null;
+  }
+
+  private editElement(el: Styled, edit: Extract<ErpEdit, { type: 'elementEdit' }>) {
+    if (typeof edit.text === 'string') {
+      const nodes = Array.from(el.childNodes);
+      this.undo.push(() => el.replaceChildren(...nodes));
+      el.textContent = edit.text;
     }
-    // 2. Moves and removals, in order.
-    for (const { edit, el, target } of resolved) {
-      if (!el.isConnected) continue;
-      if (edit.type === 'sectionRemove') {
-        this.setStyle(el, 'display', 'none');
-      } else if (edit.type === 'sectionMove' && target?.isConnected && target !== el && !el.contains(target)) {
-        const parent = el.parentNode;
-        if (!parent) continue;
-        this.moves.push({ el, parent, next: el.nextSibling });
-        if (edit.position === 'before') target.before(el);
-        else target.after(el);
+    for (const [property, value] of edit.styles) {
+      if (!isSafeStyle(property, value)) continue;
+      this.setStyle(el, property, value);
+      if (property === 'color' || property === 'text-decoration') {
+        el.querySelectorAll('*').forEach((child) => {
+          if ('style' in child) this.setStyle(child as Styled, property, value);
+        });
       }
     }
   }
 
-  revert() {
-    for (const { el, parent, next } of this.moves.reverse()) {
+  private move(el: Styled, target: Styled, position: 'before' | 'after') {
+    const parent = el.parentNode;
+    if (!parent || target === el || el.contains(target)) return;
+    const next = el.nextSibling;
+    this.undo.push(() => {
       try {
         if (next && next.parentNode === parent) parent.insertBefore(el, next);
         else if (!next) parent.appendChild(el);
       } catch (error) {
         warn('could not restore moved section', error);
       }
+    });
+    if (position === 'before') target.before(el);
+    else target.after(el);
+  }
+
+  private duplicate(el: Styled, id: string) {
+    const copy = el.cloneNode(true) as Styled;
+    copy.setAttribute('data-erp-clone', id);
+    el.after(copy);
+    // React doesn't know about copies: always take them out again on cleanup.
+    this.undo.push(() => copy.remove());
+    this.makeRoomForCopy(copy);
+  }
+
+  /**
+   * Lifts fixed heights, no-wrap rows and horizontal clipping on the copy's
+   * ancestors so the copy isn't hidden. Sliders are left alone, and a height is
+   * only lifted when that actually makes the container grow.
+   */
+  private makeRoomForCopy(copy: Styled) {
+    let node = copy.parentElement;
+    for (let depth = 0; node && node !== document.body && depth < MAX_ROOM_DEPTH; depth++, node = node.parentElement) {
+      if (typeof node.className === 'string' && SLIDER_CLASS.test(node.className)) break;
+      const style = getComputedStyle(node);
+      let box = node.getBoundingClientRect();
+      let copyBox = copy.getBoundingClientRect();
+
+      if (
+        style.display.includes('flex') &&
+        style.flexDirection.startsWith('row') &&
+        style.flexWrap === 'nowrap' &&
+        copyBox.right > box.right + 1
+      ) {
+        this.setStyle(node, 'flex-wrap', 'wrap');
+      }
+
+      copyBox = copy.getBoundingClientRect();
+      box = node.getBoundingClientRect();
+      if (copyBox.bottom > box.bottom + 1) {
+        const saved = (['height', 'max-height'] as const).map(
+          (p) => [p, node!.style.getPropertyValue(p), node!.style.getPropertyPriority(p)] as const,
+        );
+        this.setStyle(node, 'height', 'auto');
+        this.setStyle(node, 'max-height', 'none');
+        if (node.getBoundingClientRect().height <= box.height + 1) {
+          // Didn't grow: not a fixed height. Put the inline values back.
+          for (const [p, value, priority] of saved) {
+            if (value) node.style.setProperty(p, value, priority);
+            else node.style.removeProperty(p);
+          }
+        }
+      }
+
+      if (copyBox.right > box.right + 1 && (style.overflowX === 'hidden' || style.overflowX === 'clip')) {
+        this.setStyle(node, 'width', 'auto');
+        this.setStyle(node, 'max-width', 'none');
+      }
     }
-    for (const { el, nodes } of this.texts.reverse()) el.replaceChildren(...nodes);
+  }
+
+  apply(resolved: Resolved[]) {
+    // 1. Element edits on the original page (text + styles).
+    for (const { edit, el } of resolved) {
+      if (edit.type !== 'elementEdit' || isCopySelector(edit.selector)) continue;
+      const live = this.live(edit.selector, el);
+      if (live) this.editElement(live, edit);
+    }
+    // 2. Moves, removals and duplicates, in order. Copy selectors resolve now.
+    for (const { edit, el, target } of resolved) {
+      if (edit.type === 'elementEdit') continue;
+      const live = this.live(edit.selector, el);
+      if (!live) continue;
+      if (edit.type === 'sectionRemove') {
+        this.setStyle(live, 'display', 'none');
+      } else if (edit.type === 'sectionMove') {
+        const liveTarget = this.live(edit.target, target);
+        if (liveTarget) this.move(live, liveTarget, edit.position);
+      } else if (edit.type === 'sectionDuplicate') {
+        this.duplicate(live, edit.id);
+      }
+    }
+    // 3. Last: element edits on copies (their own text and colours).
+    for (const { edit } of resolved) {
+      if (edit.type !== 'elementEdit' || !isCopySelector(edit.selector)) continue;
+      const live = this.live(edit.selector, null);
+      if (live) this.editElement(live, edit);
+    }
+  }
+
+  revert() {
+    // Reverse order: a moved node's recorded sibling may be a copy, and copies
+    // may have been moved, so each change is undone against the DOM it saw.
+    for (const step of this.undo.reverse()) step();
     this.styles.forEach((original, el) => {
       if (original === null) el.removeAttribute('style');
       else el.setAttribute('style', original);
     });
-    this.moves = [];
-    this.texts = [];
+    this.undo = [];
     this.styles.clear();
   }
 }
