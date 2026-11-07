@@ -12,7 +12,19 @@ export type ErpStyle = [property: string, value: string];
 export type ErpEdit =
   | { type: 'elementEdit'; selector: string; text?: string; styles: ErpStyle[] }
   | { type: 'sectionMove'; selector: string; target: string; position: 'before' | 'after' }
-  | { type: 'sectionRemove'; selector: string };
+  | { type: 'sectionRemove'; selector: string }
+  | { type: 'sectionDuplicate'; selector: string; id: string };
+
+/**
+ * Selectors that point at (or inside) a copy made by a sectionDuplicate edit.
+ * Copies don't exist in the original page, so these resolve only after the
+ * duplicate step has run.
+ */
+export const isCopySelector = (selector: unknown): boolean =>
+  typeof selector === 'string' && selector.startsWith('[data-erp-clone="');
+
+// Copy ids end up in a data-erp-clone attribute and in selectors.
+const COPY_ID_REGEX = /^[A-Za-z0-9-]{1,64}$/;
 
 const ALLOWED_STYLE_PROPERTIES = new Set([
   'color',
@@ -117,6 +129,11 @@ export function parseErpSections(raw: unknown): ErpEdit[] {
         }
         case 'sectionRemove':
           return { type: 'sectionRemove', selector: sel };
+        case 'sectionDuplicate': {
+          const id = str(content.id);
+          if (!COPY_ID_REGEX.test(id)) return null;
+          return { type: 'sectionDuplicate', selector: sel, id };
+        }
         default:
           return null;
       }
