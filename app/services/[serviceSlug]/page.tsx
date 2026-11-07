@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { allServices, getServiceBySlug, getTemplate } from '@/content/services/index';
 import CmsRoute, { cmsRouteMetadata } from '@/components/cms/CmsRoute';
 import { canonicalUrl } from '@/lib/canonical';
+import { withEditedPageSeo } from '@/lib/erp-edits';
 import { RelatedLinks } from '@/components/seo/RelatedLinks';
 import { SERVICE_SOLUTION_LINKS } from '@/lib/internal-links';
 
@@ -20,7 +21,11 @@ export async function generateMetadata({
   params: Promise<{ serviceSlug: string }>;
 }): Promise<Metadata> {
   const { serviceSlug } = await params;
+  // ERP edited-page SEO fields (if any) override only the fields they set.
+  return withEditedPageSeo(`/services/${serviceSlug}`, await serviceMetadata(serviceSlug));
+}
 
+async function serviceMetadata(serviceSlug: string): Promise<Metadata> {
   // Not a code-owned service → a Nexus CMS page may live here.
   if (!activeServiceSlugs.has(serviceSlug)) {
     return cmsRouteMetadata(`/services/${serviceSlug}`);
