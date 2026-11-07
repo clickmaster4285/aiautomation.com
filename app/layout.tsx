@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/landingPage/Nav";
 import Footer from "@/components/landingPage/Footer";
+import ErpPageEdits from "@/components/cms/ErpPageEdits";
 import { organizationNode, websiteNode } from "@/lib/organization";
 import { SITE_URL } from "@/lib/site-contact"; 
 
@@ -96,6 +97,8 @@ export default function RootLayout({
           />
         </noscript>
 
+        {/* Applies published ERP page edits. Keep it before <main>: see the component. */}
+        <ErpPageEdits />
         <Nav />
         <main className="flex-1 pt-16">
           {children}

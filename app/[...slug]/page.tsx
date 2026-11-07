@@ -6,6 +6,7 @@ import dynamic from 'next/dynamic';
 import type { ComponentType } from 'react';
 import type { Metadata } from 'next';
 import CmsRoute, { cmsPath, cmsRouteMetadata } from '@/components/cms/CmsRoute';
+import { withEditedPageSeo } from '@/lib/erp-edits';
 
 const AboutPage = dynamic(() => import('@/components/about/pageAbout').then((mod) => mod.default));
 const ContactPage = dynamic(() => import('@/components/contact/pageContact').then((mod) => mod.default));
@@ -27,8 +28,10 @@ const pageKey = (slug: string[]) => (slug.length === 1 && Object.hasOwn(pages, s
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  if (pages[pageKey(slug)]) return {};
-  return cmsRouteMetadata(cmsPath(slug));
+  const path = cmsPath(slug);
+  // ERP edited-page SEO fields (if any) override only the fields they set.
+  if (pages[pageKey(slug)]) return withEditedPageSeo(path, {});
+  return withEditedPageSeo(path, await cmsRouteMetadata(path));
 }
 
 // ── Service pages now live at /services/<slug> (see app/services/[serviceSlug]) ──
