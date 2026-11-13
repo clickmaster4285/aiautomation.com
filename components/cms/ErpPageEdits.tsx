@@ -34,6 +34,8 @@ const MAX_WAIT_FOR_DOM_MS = 1500;
 const REAPPLY_WINDOW_MS = 1000;
 const MAX_REAPPLIES_PER_WINDOW = 10;
 const API = '/api/erp-edits';
+// Coming back to the tab re-checks the edits, at most this often.
+const REFRESH_MIN_GAP_MS = 2000;
 
 const warn = (...args: unknown[]) => {
   if (process.env.NODE_ENV !== 'production') console.warn('[erp-edits]', ...args);
@@ -148,6 +150,25 @@ const MAX_ROOM_DEPTH = 12;
 const NO_TEXT_TAGS = new Set(['IMG', 'INPUT', 'TEXTAREA', 'SELECT', 'BR', 'HR', 'VIDEO', 'IFRAME', 'svg']);
 
 type StyleRecord = { original: string; priority: string; applied: string };
+
+/**
+ * A copy is cloned from the section as it is right now. Entrance animations
+ * (framer-motion initial / whileInView) leave sections that haven't animated
+ * yet at inline opacity 0 with an offset transform, and only the original is
+ * ever animated, so the copy would stay invisible. Put the copy in the
+ * animation's end state instead: fully visible, no offset.
+ */
+function showAnimatedContent(copy: Styled) {
+  const nodes = [copy, ...Array.from(copy.querySelectorAll<Styled>('[style]'))];
+  for (const node of nodes) {
+    if (!('style' in node)) continue;
+    const opacity = node.style.getPropertyValue('opacity');
+    if (opacity === '' || Number.parseFloat(opacity) >= 1) continue;
+    node.style.removeProperty('opacity');
+    node.style.removeProperty('transform');
+    if (node.style.getPropertyValue('visibility') === 'hidden') node.style.removeProperty('visibility');
+  }
+}
 
 class EditSession {
   // Per element and property: the value before the edit and the value we set.
@@ -275,6 +296,7 @@ class EditSession {
   private duplicate(el: Styled, id: string) {
     const copy = el.cloneNode(true) as Styled;
     copy.setAttribute('data-erp-clone', id);
+    showAnimatedContent(copy);
     el.after(copy);
     // React doesn't know about copies: always take them out again on cleanup.
     this.undo.push(() => copy.remove());
@@ -490,6 +512,16 @@ export default function ErpPageEdits() {
     // still loading, and hiding late would flash more than it hides.
     if (knownPaths?.has(path)) reveal = hideMain();
 
+    // JSON of the edits currently on the page, to skip re-applying unchanged ones.
+    let applied = '[]';
+    const show = (edits: ErpEdit[]) => {
+      stopWatching();
+      stopWatching = () => {};
+      session.revert();
+      applied = JSON.stringify(edits);
+      if (edits.length) stopWatching = applyAndWatch(edits, session);
+    };
+
     (async () => {
       const edits = await pageEdits(path);
       if (cancelled || edits.length === 0) return;
@@ -498,13 +530,31 @@ export default function ErpPageEdits() {
       // Reveal and apply in the same task: no paint in between, and the
       // recorded <main> style never includes the temporary opacity.
       reveal();
-      stopWatching = applyAndWatch(edits, session);
+      show(edits);
     })()
       .catch((error) => warn('could not apply edits', error))
       .finally(() => reveal());
 
+    // A page left open in another tab while it is edited in the ERP: when the
+    // visitor comes back to the tab, fetch the edits again and show the newly
+    // published version without a reload.
+    let lastCheck = Date.now();
+    const refresh = () => {
+      if (document.visibilityState !== 'visible' || Date.now() - lastCheck < REFRESH_MIN_GAP_MS) return;
+      lastCheck = Date.now();
+      pageEdits(path)
+        .then((edits) => {
+          if (!cancelled && JSON.stringify(edits) !== applied) show(edits);
+        })
+        .catch((error) => warn('could not refresh edits', error));
+    };
+    document.addEventListener('visibilitychange', refresh);
+    window.addEventListener('focus', refresh);
+
     return () => {
       cancelled = true;
+      document.removeEventListener('visibilitychange', refresh);
+      window.removeEventListener('focus', refresh);
       stopWatching();
       reveal();
       session.revert();
