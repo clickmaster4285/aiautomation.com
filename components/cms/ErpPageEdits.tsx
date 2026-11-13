@@ -32,11 +32,14 @@ type Cached<T> = { at: number; promise: Promise<T>; value?: T };
 let pathsCache: Cached<Set<string>> | null = null;
 const editsCache = new Map<string, Cached<ErpEdit[]>>();
 
+// No result is kept: a request is only shared while it is still loading (the
+// list starts loading when the bundle runs and the first route reuses it).
+// Every navigation after that asks again, so ERP publishes show immediately.
 const fresh = <T,>(c: Cached<T> | null | undefined): c is Cached<T> =>
-  !!c && Date.now() - c.at < CACHE_TTL_MS;
+  !!c && c.value === undefined && Date.now() - c.at < CACHE_TTL_MS;
 
 async function getJson(url: string): Promise<Record<string, unknown>> {
-  const res = await fetch(url, { headers: { Accept: 'application/json' } });
+  const res = await fetch(url, { cache: 'no-store', headers: { Accept: 'application/json' } });
   if (!res.ok) throw new Error(`${url} responded ${res.status}`);
   return (await res.json()) ?? {};
 }
@@ -63,9 +66,9 @@ function pageEdits(path: string): Promise<ErpEdit[]> {
   const promise = getJson(`${API}?path=${encodeURIComponent(path)}`).then((json) =>
     Array.isArray(json.edits) ? (json.edits as ErpEdit[]) : [],
   );
-  // Don't keep a failed request: the next navigation retries.
-  promise.catch(() => editsCache.delete(path));
-  editsCache.set(path, { at: Date.now(), promise });
+  const entry: Cached<ErpEdit[]> = { at: Date.now(), promise };
+  promise.then((value) => (entry.value = value)).catch(() => editsCache.delete(path));
+  editsCache.set(path, entry);
   return promise;
 }
 
