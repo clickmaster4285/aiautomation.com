@@ -104,13 +104,22 @@ const fetchEditedPageCached = isDev
 
 let lastFailureAt = 0;
 
+// `fresh: true` skips the cache and asks the ERP directly. Used by
+// /api/erp-edits (the edits the browser applies), so a publish shows on the
+// very next page view. Server-rendered metadata keeps the cache, so pages
+// stay static; /api/erp-revalidate clears it on publish.
+type FetchOptions = { fresh?: boolean };
+
 /** Normalized paths ("/a/b", home "/") that have published edits. Empty on any error. */
-export async function getEditedPaths(): Promise<string[]> {
-  if (!CMS_API_URL || Date.now() - lastFailureAt < FAILURE_BACKOFF_MS) return [];
+export async function getEditedPaths({ fresh = false }: FetchOptions = {}): Promise<string[]> {
+  if (!CMS_API_URL) return [];
+  // The backoff only protects builds and server renders. Fresh (browser) reads
+  // always ask the ERP: one slow response must not hide edits for 30s.
+  if (!fresh && Date.now() - lastFailureAt < FAILURE_BACKOFF_MS) return [];
   try {
-    return await fetchEditedPathsCached();
+    return await (fresh ? fetchEditedPaths() : fetchEditedPathsCached());
   } catch (error) {
-    lastFailureAt = Date.now();
+    if (!fresh) lastFailureAt = Date.now();
     if (isDev) console.warn('[erp-edits] failed to fetch edited pages list:', error);
     return [];
   }
@@ -121,12 +130,15 @@ export async function getEditedPaths(): Promise<string[]> {
  * unreachable). Checks the cached list first, so unedited paths never hit the
  * per-page endpoint.
  */
-export async function getEditedPage(path: string): Promise<EditedPage | null> {
+export async function getEditedPage(
+  path: string,
+  { fresh = false }: FetchOptions = {},
+): Promise<EditedPage | null> {
   const slug = normalizeEditPath(path);
-  const paths = await getEditedPaths();
+  const paths = await getEditedPaths({ fresh });
   if (!paths.includes(slug)) return null;
   try {
-    return await fetchEditedPageCached(slug);
+    return await (fresh ? fetchEditedPage(slug) : fetchEditedPageCached(slug));
   } catch (error) {
     if (isDev) console.warn(`[erp-edits] failed to fetch edited page ${slug}:`, error);
     return null;
