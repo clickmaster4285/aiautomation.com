@@ -78,6 +78,13 @@ export default function RootLayout({
       </head>
 
       <body className="min-h-full flex flex-col bg-white text-black">
+        {/* First focusable element on every page */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:bg-ink focus:text-white focus:px-4 focus:py-2 focus:text-sm"
+        >
+          Skip to content
+        </a>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -100,7 +107,7 @@ export default function RootLayout({
         {/* Applies published ERP page edits. Keep it before <main>: see the component. */}
         <ErpPageEdits />
         <Nav />
-        <main className="flex-1 pt-16">
+        <main id="main-content" tabIndex={-1} className="flex-1 pt-16 focus:outline-none">
           {children}
         </main>
      

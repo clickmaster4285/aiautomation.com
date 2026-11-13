@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { Marker } from "./Shared";
 
 const platformHref: Record<string, string> = {
   Zapier: "/platforms/zapier-automation-services",
@@ -62,10 +61,10 @@ Google: (
 ),
 };
 
-type ToolsData = {
+export type ToolsData = {
   heading: string;
-  subheading: string;
   categories: { category: string; items: string[] }[];
+  allPlatformsLink?: { text: string; link: string };
 };
 
 // Map tool names from the data file to available brand icons
@@ -87,6 +86,7 @@ const fallbackIcon = (
   </svg>
 );
 
+// "Platforms and tools" sub-section, rendered inside the Integrations section (H3).
 export default function Tools({ data }: { data: ToolsData }) {
   // Flatten the categories into unique [name, category] pairs
   const seen = new Set<string>();
@@ -100,59 +100,52 @@ export default function Tools({ data }: { data: ToolsData }) {
     }
   }
 
-return (
-<section className="bg-secondary py-24">
-<div className="mx-auto max-w-[84vw] px-6">
-<div className="flex items-center w-full gap-4 mb-12">
-<Marker n="13" />
-<div className="flex-1 h-px bg-black/10" />
-<span className="eyebrow text-muted-foreground whitespace-nowrap">
-Our Stack
-</span>
-</div>
-
-    <div className="grid md:grid-cols-[1fr_2fr] gap-12">
-      <div>
-        <h2 className="display text-3xl sm:text-4xl md:text-5xl">
-          {data.heading}
-        </h2>
-
-        <p className="text-muted-foreground text-md mt-6 max-w-xs">
-          {data.subheading}
-        </p>
+  return (
+    <div className="mt-16 md:mt-20">
+      <div className="flex flex-wrap items-end justify-between gap-4 mb-6 md:mb-8">
+        <h3 className="display text-2xl sm:text-3xl md:text-4xl">{data.heading}</h3>
+        {data.allPlatformsLink && (
+          <Link
+            href={data.allPlatformsLink.link}
+            className="eyebrow text-brand text-xs md:text-sm hover:underline"
+          >
+            {data.allPlatformsLink.text} <span aria-hidden="true">→</span>
+          </Link>
+        )}
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-        {tools.map((t, i) => {
-          const href = platformHref[t[0]];
+      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+        {tools.map(([name, category], i) => {
+          const href = platformHref[name];
           const card = (
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.05 }}
+              transition={{ delay: i * 0.03 }}
               className="bg-paper border border-border p-4 hover:border-brand transition-colors h-full"
             >
-              <div className="text-muted-foreground mb-3">
-                {icons[iconAlias[t[0]] ?? t[0]] ?? fallbackIcon}
+              <div className="text-muted-foreground mb-3" aria-hidden="true">
+                {icons[iconAlias[name] ?? name] ?? fallbackIcon}
               </div>
 
-              <div className="font-semibold text-sm">{t[0]}</div>
-              <div className="text-xs text-muted-foreground">{t[1]}</div>
+              <div className="font-semibold text-sm">{name}</div>
+              <div className="text-xs text-muted-foreground">{category}</div>
             </motion.div>
           );
-          return href ? (
-            <Link key={t[0]} href={href} className="block">
-              {card}
-            </Link>
-          ) : (
-            <div key={t[0]}>{card}</div>
+          return (
+            <li key={name}>
+              {href ? (
+                <Link href={href} className="block h-full">
+                  {card}
+                </Link>
+              ) : (
+                card
+              )}
+            </li>
           );
         })}
-      </div>
+      </ul>
     </div>
-  </div>
-</section>
-
-);
+  );
 }

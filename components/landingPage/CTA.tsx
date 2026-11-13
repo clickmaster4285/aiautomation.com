@@ -11,7 +11,15 @@ type FinalCtaData = {
   cta: { text: string; link: string; primary?: boolean };
 };
 
-export default function CTA({ data }: { data: FinalCtaData }) {
+// Final call to action (handover 4.14)
+export default function CTA({
+  data,
+  ctaPosition,
+}: {
+  data: FinalCtaData;
+  /** Sent to analytics as the audit button position (e.g. "footer"). */
+  ctaPosition?: string;
+}) {
   const { head, tail } = splitHeading(data.heading);
   return (
     <section className="bg-paper py-24 relative overflow-hidden">
@@ -25,7 +33,7 @@ export default function CTA({ data }: { data: FinalCtaData }) {
         >
           <Image
             src="/images/robot-mascot2.jpg"
-            alt="Clickmasters robot mascot"
+            alt=""
             width={479}
             height={479}
             sizes="(min-width: 768px) 208px, 96px"
@@ -42,7 +50,7 @@ export default function CTA({ data }: { data: FinalCtaData }) {
         >
           <Image
             src="/images/robot-mascot2.jpg"
-            alt="Clickmasters robot mascot"
+            alt=""
             width={479}
             height={479}
             sizes="(min-width: 768px) 208px, 96px"
@@ -55,23 +63,23 @@ export default function CTA({ data }: { data: FinalCtaData }) {
         <div className="mb-6 flex justify-center">
           <Image
             src="/images/clickmasters-logo.png"
-            alt="ClickMasters"
+            alt="Clickmasters"
             width={160}
             height={40}
             className="h-10 md:h-12 w-auto"
-            priority
+            loading="lazy"
           />
         </div>
 
-        {/* Headings */}
-        {head && (
-          <h2 className="display text-4xl sm:text-5xl md:text-7xl py-8">
-            {head}
-          </h2>
-        )}
-
-        <h2 className="display-italic text-4xl sm:text-5xl md:text-7xl mt-2">
-          {tail}
+        {/* One heading: normal head + italic tail */}
+        <h2 className="display text-4xl sm:text-5xl md:text-7xl py-4 md:py-8">
+          {head && (
+            <>
+              {head}{" "}
+              <br />
+            </>
+          )}
+          <span className="display-italic">{tail}</span>
         </h2>
 
         <p className="text-lg text-muted-foreground mt-10 max-w-md mx-auto">
@@ -81,14 +89,15 @@ export default function CTA({ data }: { data: FinalCtaData }) {
         {data.cta && (
           <a
             href={data.cta.link}
+            data-cta-position={ctaPosition}
             className="inline-block mt-8 bg-ink text-white text-sm px-8 py-4 hover:bg-brand transition-colors"
           >
-            {data.cta.text} <span>›</span>
+            {data.cta.text} <span aria-hidden="true">›</span>
           </a>
         )}
 
         {/* Bottom marquee text – left to right continuous slide */}
-<div className="mt-16 overflow-hidden">
+<div className="mt-16 overflow-hidden" aria-hidden="true">
   <div className="display text-[8vw] text-ink/5 whitespace-nowrap flex">
     <div className="flex animate-marquee">
       <span>CLICKMASTERS · CLICKMASTERS · CLICKMASTERS · CLICKMASTERS · </span>
@@ -104,6 +113,11 @@ export default function CTA({ data }: { data: FinalCtaData }) {
   }
   .animate-marquee {
     animation: marquee 20s linear infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .animate-marquee {
+      animation: none;
+    }
   }
 `}</style>
       </div>

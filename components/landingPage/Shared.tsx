@@ -7,6 +7,32 @@ export const Marker = ({ n }: { n: string }) => (
 );
 
 /**
+ * Section label row: optional sequential marker, a rule, and the eyebrow label.
+ * Markers are passed in from the page so they stay in order.
+ */
+export const SectionLabel = ({
+  label,
+  marker,
+  dark = false,
+}: {
+  label: string;
+  marker?: string;
+  dark?: boolean;
+}) => (
+  <div className="flex items-center w-full gap-3 md:gap-4 mb-8 md:mb-12">
+    {marker && <Marker n={marker} />}
+    <div className={`flex-1 h-px ${dark ? "bg-white/10" : "bg-black/10"}`} />
+    <p
+      className={`eyebrow whitespace-nowrap text-xs md:text-sm ${
+        dark ? "text-white/60" : "text-muted-foreground"
+      }`}
+    >
+      {label}
+    </p>
+  </div>
+);
+
+/**
  * Splits a heading into a "head" part and an italic-accent "tail" part
  * (the last `tailWords` words) so headings follow the landing design
  * pattern: normal display text + display-italic text-brand tail.

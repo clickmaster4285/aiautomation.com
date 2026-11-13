@@ -915,7 +915,8 @@ export default function Nav() {
         </nav>
 
         <Link
-          href="/contact"
+          href="/free-automation-audit"
+          data-cta-position="header"
           className="hidden md:inline-block bg-black hover:bg-gray-800 text-white text-sm px-5 py-2 transition-colors rounded-none font-medium"
         >
           Book a Call
@@ -1193,7 +1194,8 @@ export default function Nav() {
             </Link>
 
             <Link
-              href="/contact"
+              href="/free-automation-audit"
+              data-cta-position="header"
               className="block w-full text-center bg-black hover:bg-gray-800 text-white text-sm px-5 py-3 transition-colors rounded-none font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
