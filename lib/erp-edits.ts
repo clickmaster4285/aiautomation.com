@@ -49,15 +49,22 @@ const obj = (v: unknown): Record<string, unknown> =>
 
 const base = () => `${CMS_API_URL}/public/${encodeURIComponent(CMS_SITE_DOMAIN)}`;
 
-async function getJson(url: string): Promise<unknown | null> {
-  const res = await fetch(url, { cache: 'no-store', signal: AbortSignal.timeout(EDITS_TIMEOUT_MS) });
+async function getJson(url: string, fresh = false): Promise<unknown | null> {
+  // Fresh reads add a cache-buster and no-cache header so a CDN or proxy in
+  // front of the ERP can't hand back the version from before the publish.
+  const target = fresh ? `${url}${url.includes('?') ? '&' : '?'}_t=${Date.now()}` : url;
+  const res = await fetch(target, {
+    cache: 'no-store',
+    headers: fresh ? { 'Cache-Control': 'no-cache', Pragma: 'no-cache' } : undefined,
+    signal: AbortSignal.timeout(EDITS_TIMEOUT_MS),
+  });
   if (res.status === 404) return null;
   if (!res.ok) throw new Error(`${url} responded ${res.status}`);
   return res.json();
 }
 
-async function fetchEditedPaths(): Promise<string[]> {
-  const json = await getJson(`${base()}/edited-pages`);
+async function fetchEditedPaths(fresh = false): Promise<string[]> {
+  const json = await getJson(`${base()}/edited-pages`, fresh);
   const pages = obj(obj(json).data).pages;
   if (!Array.isArray(pages)) return [];
   const paths = pages
@@ -66,12 +73,12 @@ async function fetchEditedPaths(): Promise<string[]> {
   return [...new Set(paths)];
 }
 
-async function fetchEditedPage(slug: string): Promise<EditedPage | null> {
+async function fetchEditedPage(slug: string, fresh = false): Promise<EditedPage | null> {
   const url =
     slug === '/'
       ? `${base()}/edited-page?slug=${encodeURIComponent('/')}`
       : `${base()}/edited-pages${slug.split('/').map(encodeURIComponent).join('/')}`;
-  const json = await getJson(url);
+  const json = await getJson(url, fresh);
   if (json === null) return null;
   const page = obj(obj(obj(json).data).page);
   const seo = obj(page.seo);
@@ -96,11 +103,11 @@ async function fetchEditedPage(slug: string): Promise<EditedPage | null> {
 const isDev = process.env.NODE_ENV === 'development';
 const cacheOptions = { revalidate: EDITS_REVALIDATE_SECONDS, tags: ['erp-edited-pages'] };
 const fetchEditedPathsCached = isDev
-  ? fetchEditedPaths
-  : unstable_cache(fetchEditedPaths, ['erp-edited-paths', CMS_SITE_DOMAIN], cacheOptions);
+  ? () => fetchEditedPaths()
+  : unstable_cache(() => fetchEditedPaths(), ['erp-edited-paths', CMS_SITE_DOMAIN], cacheOptions);
 const fetchEditedPageCached = isDev
-  ? fetchEditedPage
-  : unstable_cache(fetchEditedPage, ['erp-edited-page', CMS_SITE_DOMAIN], cacheOptions);
+  ? (slug: string) => fetchEditedPage(slug)
+  : unstable_cache((slug: string) => fetchEditedPage(slug), ['erp-edited-page', CMS_SITE_DOMAIN], cacheOptions);
 
 let lastFailureAt = 0;
 
@@ -108,16 +115,17 @@ let lastFailureAt = 0;
 // /api/erp-edits (the edits the browser applies), so a publish shows on the
 // very next page view. Server-rendered metadata keeps the cache, so pages
 // stay static; /api/erp-revalidate clears it on publish.
-type FetchOptions = { fresh?: boolean };
+// `paths` reuses a list the caller already fetched.
+type FetchOptions = { fresh?: boolean; paths?: string[] };
 
 /** Normalized paths ("/a/b", home "/") that have published edits. Empty on any error. */
-export async function getEditedPaths({ fresh = false }: FetchOptions = {}): Promise<string[]> {
+export async function getEditedPaths({ fresh = false }: Pick<FetchOptions, 'fresh'> = {}): Promise<string[]> {
   if (!CMS_API_URL) return [];
   // The backoff only protects builds and server renders. Fresh (browser) reads
   // always ask the ERP: one slow response must not hide edits for 30s.
   if (!fresh && Date.now() - lastFailureAt < FAILURE_BACKOFF_MS) return [];
   try {
-    return await (fresh ? fetchEditedPaths() : fetchEditedPathsCached());
+    return await (fresh ? fetchEditedPaths(true) : fetchEditedPathsCached());
   } catch (error) {
     if (!fresh) lastFailureAt = Date.now();
     if (isDev) console.warn('[erp-edits] failed to fetch edited pages list:', error);
@@ -132,13 +140,13 @@ export async function getEditedPaths({ fresh = false }: FetchOptions = {}): Prom
  */
 export async function getEditedPage(
   path: string,
-  { fresh = false }: FetchOptions = {},
+  { fresh = false, paths: known }: FetchOptions = {},
 ): Promise<EditedPage | null> {
   const slug = normalizeEditPath(path);
-  const paths = await getEditedPaths({ fresh });
+  const paths = known ?? (await getEditedPaths({ fresh }));
   if (!paths.includes(slug)) return null;
   try {
-    return await (fresh ? fetchEditedPage(slug) : fetchEditedPageCached(slug));
+    return await (fresh ? fetchEditedPage(slug, true) : fetchEditedPageCached(slug));
   } catch (error) {
     if (isDev) console.warn(`[erp-edits] failed to fetch edited page ${slug}:`, error);
     return null;

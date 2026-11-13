@@ -17,7 +17,7 @@ import { ORGANIZATION_ID } from '@/lib/organization';
 
 export default function AboutPage() {
   return (
-    <main className="bg-white text-gray-900 overflow-hidden">
+    <div className="bg-white text-gray-900 overflow-hidden">
 
       {/* ====== SCHEMA MARKUP ====== */}
       <Script
@@ -51,7 +51,7 @@ export default function AboutPage() {
 
       {/* ====== HERO – Light with Image ====== */}
       <section className="relative min-h-[40vh] flex items-center py-8 sm:py-12 md:py-16 bg-gradient-to-br from-brand/5 via-white to-white">
-        <div className="absolute inset-0 overflow-hidden">
+        <div aria-hidden="true" className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
             className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-brand/20 rounded-full blur-3xl"
             animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.5, 0.3] }}
@@ -63,7 +63,7 @@ export default function AboutPage() {
             transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
           />
         </div>
-        <div className="mx-auto max-w-[84vw] px-6 pt-4 pb-4 sm:pt-6 sm:pb-6 md:pt-8 md:pb-8">
+        <div className="relative mx-auto max-w-[84vw] px-6 pt-4 pb-4 sm:pt-6 sm:pb-6 md:pt-8 md:pb-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <motion.div initial="hidden" animate="visible" variants={staggerContainer} className="max-w-3xl">
               <motion.div
@@ -322,6 +322,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-    </main>
+    </div>
   );
 }

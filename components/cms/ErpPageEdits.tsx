@@ -12,68 +12,69 @@
 // hide (display: none), moved nodes go back to their original parent and
 // sibling, and copies (data-erp-clone) are removed, so React's tree is never
 // left inconsistent and no copy leaks into the next page.
+//
+// Text edits never delete nodes React owns: React's text nodes are emptied and
+// its child elements hidden, and the new text goes in an extra span.
+//
+// Edits are watched while the route is shown. When React re-renders or
+// re-hydrates a section, framer-motion rewrites an inline style, or a target
+// only appears later (lazy or in-view content), the edits are applied again.
+// Without this, an edit could be lost depending on timing, so it showed only
+// on some page loads.
 import { usePathname } from 'next/navigation';
 import { useLayoutEffect } from 'react';
 import { isCopySelector, isSafeStyle, normalizeEditPath, type ErpEdit } from '@/lib/erp-edits-shared';
 
-const CACHE_TTL_MS = 60_000;
 const MAX_HIDE_MS = 1500;
 const MAX_WAIT_FOR_DOM_MS = 1500;
+// Re-applies are rate limited, not capped: when something keeps undoing an
+// edit (a typewriter or rotating headline rewriting the same element), the
+// edit still wins, at most this many times per window, so the page never
+// spends every frame fighting it.
+const REAPPLY_WINDOW_MS = 1000;
+const MAX_REAPPLIES_PER_WINDOW = 10;
 const API = '/api/erp-edits';
 
 const warn = (...args: unknown[]) => {
   if (process.env.NODE_ENV !== 'production') console.warn('[erp-edits]', ...args);
 };
 
-/* ------------------------------ data cache ------------------------------ */
+/* --------------------------------- data --------------------------------- */
 
-type Cached<T> = { at: number; promise: Promise<T>; value?: T };
-
-let pathsCache: Cached<Set<string>> | null = null;
-const editsCache = new Map<string, Cached<ErpEdit[]>>();
-
-// No result is kept: a request is only shared while it is still loading (the
-// list starts loading when the bundle runs and the first route reuses it).
-// Every navigation after that asks again, so ERP publishes show immediately.
-const fresh = <T,>(c: Cached<T> | null | undefined): c is Cached<T> =>
-  !!c && c.value === undefined && Date.now() - c.at < CACHE_TTL_MS;
-
-async function getJson(url: string): Promise<Record<string, unknown>> {
-  const res = await fetch(url, { cache: 'no-store', headers: { Accept: 'application/json' } });
-  if (!res.ok) throw new Error(`${url} responded ${res.status}`);
-  return (await res.json()) ?? {};
-}
-
-function editedPaths(): Cached<Set<string>> {
-  if (fresh(pathsCache)) return pathsCache;
-  const entry: Cached<Set<string>> = {
-    at: Date.now(),
-    promise: getJson(API)
-      .then((json) => new Set((Array.isArray(json.paths) ? json.paths : []).filter((p): p is string => typeof p === 'string')))
-      .catch((error) => {
-        warn('could not load edited pages list', error);
-        return new Set<string>();
-      }),
-  };
-  entry.promise.then((value) => (entry.value = value));
-  pathsCache = entry;
-  return entry;
-}
+// Edited paths as of the latest API response. Only used to hide <main> before
+// paint on client navigations; the edits themselves are always fetched fresh.
+let knownPaths: Set<string> | null = null;
+// A request is shared only while it is loading (the first route reuses the
+// one started when the bundle runs). Every navigation asks again, so ERP
+// publishes show on the next page view.
+const inflight = new Map<string, Promise<ErpEdit[]>>();
 
 function pageEdits(path: string): Promise<ErpEdit[]> {
-  const cached = editsCache.get(path);
-  if (fresh(cached)) return cached.promise;
-  const promise = getJson(`${API}?path=${encodeURIComponent(path)}`).then((json) =>
-    Array.isArray(json.edits) ? (json.edits as ErpEdit[]) : [],
-  );
-  const entry: Cached<ErpEdit[]> = { at: Date.now(), promise };
-  promise.then((value) => (entry.value = value)).catch(() => editsCache.delete(path));
-  editsCache.set(path, entry);
+  const pending = inflight.get(path);
+  if (pending) return pending;
+  const promise = fetch(`${API}?path=${encodeURIComponent(path)}&_t=${Date.now()}`, {
+    cache: 'no-store',
+    headers: { Accept: 'application/json' },
+  })
+    .then(async (res) => {
+      if (!res.ok) throw new Error(`${API} responded ${res.status}`);
+      const json = ((await res.json()) ?? {}) as Record<string, unknown>;
+      if (Array.isArray(json.paths)) {
+        knownPaths = new Set(json.paths.filter((p): p is string => typeof p === 'string'));
+      }
+      return Array.isArray(json.edits) ? (json.edits as ErpEdit[]) : [];
+    })
+    .catch((error) => {
+      warn('could not load edits', error);
+      return [] as ErpEdit[];
+    })
+    .finally(() => inflight.delete(path));
+  inflight.set(path, promise);
   return promise;
 }
 
-// Start loading the list as soon as the client bundle runs.
-if (typeof window !== 'undefined') editedPaths();
+// Start loading the first page's edits as soon as the client bundle runs.
+if (typeof window !== 'undefined') pageEdits(normalizeEditPath(window.location.pathname));
 
 /* ---------------------------- DOM resolution ---------------------------- */
 
@@ -114,33 +115,28 @@ function resolveAll(edits: ErpEdit[]): { resolved: Resolved[]; missing: number }
 
 /**
  * Waits (briefly) until the route's content is in the DOM: resolves as soon as
- * every selector matches, or with whatever matched at the deadline.
+ * every selector matches, or at the deadline. Targets that show up later are
+ * picked up by the watcher.
  */
-function waitForTargets(edits: ErpEdit[], isCancelled: () => boolean): Promise<Resolved[]> {
+function waitForTargets(edits: ErpEdit[], isCancelled: () => boolean): Promise<void> {
   return new Promise((resolve) => {
-    let result = resolveAll(edits);
-    if (result.missing === 0) return resolve(result.resolved);
-
+    if (resolveAll(edits).missing === 0) return resolve();
     let frame = 0;
     const finish = () => {
       observer.disconnect();
       clearTimeout(timer);
       cancelAnimationFrame(frame);
-      resolve(isCancelled() ? [] : result.resolved);
+      resolve();
     };
     const observer = new MutationObserver(() => {
       if (frame) return;
       frame = requestAnimationFrame(() => {
         frame = 0;
-        result = resolveAll(edits);
-        if (result.missing === 0 || isCancelled()) finish();
+        if (isCancelled() || resolveAll(edits).missing === 0) finish();
       });
     });
     observer.observe(document.body, { childList: true, subtree: true });
-    const timer = setTimeout(() => {
-      if (result.missing) warn(`${result.missing} edit target(s) not found on this page`);
-      finish();
-    }, MAX_WAIT_FOR_DOM_MS);
+    const timer = setTimeout(finish, MAX_WAIT_FOR_DOM_MS);
   });
 }
 
@@ -149,16 +145,40 @@ function waitForTargets(edits: ErpEdit[], isCancelled: () => boolean): Promise<R
 // Containers that manage their own layout; makeRoomForCopy leaves them alone.
 const SLIDER_CLASS = /swiper|slick|carousel|owl-|splide|flickity|glide/i;
 const MAX_ROOM_DEPTH = 12;
+const NO_TEXT_TAGS = new Set(['IMG', 'INPUT', 'TEXTAREA', 'SELECT', 'BR', 'HR', 'VIDEO', 'IFRAME', 'svg']);
+
+type StyleRecord = { original: string; priority: string; applied: string };
 
 class EditSession {
-  // Original style attribute of every element touched (restored last).
-  private styles = new Map<Styled, string | null>();
+  // Per element and property: the value before the edit and the value we set.
+  // Only properties we set are restored, and only while they still hold our
+  // value, so inline styles written meanwhile (framer-motion's opacity and
+  // transform) are never rolled back to a stale snapshot.
+  private styles = new Map<Styled, Map<string, StyleRecord>>();
   // Structural changes (text, moves, copies), undone in reverse order.
   private undo: (() => void)[] = [];
+  // Each returns false once React or anything else has undone that change.
+  private checks: (() => boolean)[] = [];
 
   private setStyle(el: Styled, property: string, value: string) {
-    if (!this.styles.has(el)) this.styles.set(el, el.getAttribute('style'));
+    let props = this.styles.get(el);
+    if (!props) this.styles.set(el, (props = new Map()));
+    const record = props.get(property);
+    const original = record ? record.original : el.style.getPropertyValue(property);
+    const priority = record ? record.priority : el.style.getPropertyPriority(property);
     el.style.setProperty(property, value, 'important');
+    // Read back: the browser normalizes values (#f00 -> rgb(255, 0, 0)).
+    props.set(property, { original, priority, applied: el.style.getPropertyValue(property) });
+  }
+
+  private restoreStyle(el: Styled, property: string) {
+    const record = this.styles.get(el)?.get(property);
+    if (!record) return;
+    this.styles.get(el)!.delete(property);
+    const current = el.style.getPropertyValue(property);
+    if (current !== record.applied || el.style.getPropertyPriority(property) !== 'important') return;
+    if (record.original) el.style.setProperty(property, record.original, record.priority);
+    else el.style.removeProperty(property);
   }
 
   /** The step's element: resolved up front, or looked up now for copy selectors. */
@@ -167,12 +187,56 @@ class EditSession {
     return el?.isConnected ? el : null;
   }
 
-  private editElement(el: Styled, edit: Extract<ErpEdit, { type: 'elementEdit' }>) {
-    if (typeof edit.text === 'string') {
-      const nodes = Array.from(el.childNodes);
-      this.undo.push(() => el.replaceChildren(...nodes));
-      el.textContent = edit.text;
+  private setText(el: Styled, text: string) {
+    if (NO_TEXT_TAGS.has(el.tagName)) return;
+    const children = Array.from(el.childNodes);
+    const texts = children.filter((n): n is Text => n.nodeType === Node.TEXT_NODE);
+    const elements = children.filter((n): n is Styled => n.nodeType === Node.ELEMENT_NODE && 'style' in n);
+
+    // Plain text only: rewrite React's own text nodes in place.
+    if (elements.length === 0 && texts.length > 0) {
+      const saved = texts.map((t) => t.data);
+      texts.forEach((t, i) => (t.data = i === 0 ? text : ''));
+      this.undo.push(() => texts.forEach((t, i) => (t.data = saved[i])));
+      this.checks.push(
+        () => texts[0].parentNode === el && el.textContent === text,
+      );
+      return;
     }
+    if (el instanceof SVGElement) {
+      warn('text edit on an SVG element with child elements skipped');
+      return;
+    }
+
+    // Mixed content (e.g. <h1>Text <span>more</span></h1>): keep React's nodes
+    // in place but empty/hidden, and show the new text in our own span.
+    const saved = texts.map((t) => t.data);
+    texts.forEach((t) => (t.data = ''));
+    elements.forEach((child) => this.setStyle(child, 'display', 'none'));
+    const span = document.createElement('span');
+    span.setAttribute('data-erp-text', '');
+    span.textContent = text;
+    el.appendChild(span);
+    this.undo.push(() => {
+      span.remove();
+      texts.forEach((t, i) => (t.data = saved[i]));
+    });
+    this.checks.push(() => {
+      if (span.parentNode !== el || span.textContent !== text) return false;
+      for (const node of Array.from(el.childNodes)) {
+        if (node === span || node.nodeType === Node.COMMENT_NODE) continue;
+        if (node.nodeType === Node.TEXT_NODE) {
+          if ((node as Text).data.trim() !== '') return false;
+        } else if ('style' in node && (node as Styled).style.getPropertyValue('display') !== 'none') {
+          return false;
+        }
+      }
+      return true;
+    });
+  }
+
+  private editElement(el: Styled, edit: Extract<ErpEdit, { type: 'elementEdit' }>) {
+    if (typeof edit.text === 'string') this.setText(el, edit.text);
     for (const [property, value] of edit.styles) {
       if (!isSafeStyle(property, value)) continue;
       this.setStyle(el, property, value);
@@ -198,6 +262,14 @@ class EditSession {
     });
     if (position === 'before') target.before(el);
     else target.after(el);
+    const expected = position === 'before' ? Node.DOCUMENT_POSITION_FOLLOWING : Node.DOCUMENT_POSITION_PRECEDING;
+    this.checks.push(
+      () =>
+        el.isConnected &&
+        target.isConnected &&
+        el.parentNode === target.parentNode &&
+        (el.compareDocumentPosition(target) & expected) !== 0,
+    );
   }
 
   private duplicate(el: Styled, id: string) {
@@ -206,6 +278,7 @@ class EditSession {
     el.after(copy);
     // React doesn't know about copies: always take them out again on cleanup.
     this.undo.push(() => copy.remove());
+    this.checks.push(() => el.isConnected && copy.isConnected);
     this.makeRoomForCopy(copy);
   }
 
@@ -234,17 +307,12 @@ class EditSession {
       copyBox = copy.getBoundingClientRect();
       box = node.getBoundingClientRect();
       if (copyBox.bottom > box.bottom + 1) {
-        const saved = (['height', 'max-height'] as const).map(
-          (p) => [p, node!.style.getPropertyValue(p), node!.style.getPropertyPriority(p)] as const,
-        );
         this.setStyle(node, 'height', 'auto');
         this.setStyle(node, 'max-height', 'none');
         if (node.getBoundingClientRect().height <= box.height + 1) {
           // Didn't grow: not a fixed height. Put the inline values back.
-          for (const [p, value, priority] of saved) {
-            if (value) node.style.setProperty(p, value, priority);
-            else node.style.removeProperty(p);
-          }
+          this.restoreStyle(node, 'height');
+          this.restoreStyle(node, 'max-height');
         }
       }
 
@@ -284,15 +352,35 @@ class EditSession {
     }
   }
 
+  /** False when something (React, an animation) has undone one of the edits. */
+  intact(): boolean {
+    for (const [el, props] of this.styles) {
+      if (!el.isConnected) {
+        // Our own span/copy removed with its owner is covered by `checks`.
+        if (el.hasAttribute('data-erp-text') || el.closest('[data-erp-clone]')) continue;
+        return false;
+      }
+      for (const [property, record] of props) {
+        if (
+          el.style.getPropertyValue(property) !== record.applied ||
+          el.style.getPropertyPriority(property) !== 'important'
+        ) {
+          return false;
+        }
+      }
+    }
+    return this.checks.every((check) => check());
+  }
+
   revert() {
     // Reverse order: a moved node's recorded sibling may be a copy, and copies
     // may have been moved, so each change is undone against the DOM it saw.
     for (const step of this.undo.reverse()) step();
-    this.styles.forEach((original, el) => {
-      if (original === null) el.removeAttribute('style');
-      else el.setAttribute('style', original);
-    });
+    for (const [el, props] of this.styles) {
+      for (const property of Array.from(props.keys())) this.restoreStyle(el, property);
+    }
     this.undo = [];
+    this.checks = [];
     this.styles.clear();
   }
 }
@@ -316,6 +404,75 @@ function hideMain(): () => void {
   return reveal;
 }
 
+/**
+ * Applies the edits and keeps them applied until `stop()` is called: when React
+ * re-renders a section (hydration, state, framer-motion) and undoes an edit,
+ * or a missing target appears, everything is reverted and applied again.
+ */
+function applyAndWatch(edits: ErpEdit[], session: EditSession): () => void {
+  let missing = 0;
+  let frame = 0;
+  let structural = false;
+  let windowStart = 0;
+  let windowCount = 0;
+  let deferred: ReturnType<typeof setTimeout> | undefined;
+
+  const run = () => {
+    session.revert();
+    const result = resolveAll(edits);
+    missing = result.missing;
+    session.apply(result.resolved);
+  };
+
+  const check = () => {
+    frame = 0;
+    const lookForMissing = structural && missing > 0;
+    structural = false;
+    const drifted = !session.intact();
+    if (!drifted && !(lookForMissing && resolveAll(edits).missing < missing)) return;
+    const now = Date.now();
+    if (now - windowStart > REAPPLY_WINDOW_MS) {
+      windowStart = now;
+      windowCount = 0;
+    }
+    if (++windowCount > MAX_REAPPLIES_PER_WINDOW) {
+      // Too busy: try again once the window is over.
+      if (!deferred) {
+        deferred = setTimeout(() => {
+          deferred = undefined;
+          structural = true;
+          check();
+        }, REAPPLY_WINDOW_MS - (now - windowStart));
+      }
+      return;
+    }
+    run();
+    observer.takeRecords(); // ignore our own changes
+  };
+
+  const observer = new MutationObserver((records) => {
+    if (records.some((r) => r.type === 'childList')) structural = true;
+    if (frame) return;
+    frame = requestAnimationFrame(check);
+  });
+
+  run();
+  if (missing) warn(`${missing} edit target(s) not found yet on this page`);
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+    characterData: true,
+    attributes: true,
+    attributeFilter: ['style'],
+  });
+
+  return () => {
+    observer.disconnect();
+    cancelAnimationFrame(frame);
+    clearTimeout(deferred);
+  };
+}
+
 /* ------------------------------- component ------------------------------ */
 
 export default function ErpPageEdits() {
@@ -325,31 +482,30 @@ export default function ErpPageEdits() {
     const path = normalizeEditPath(pathname ?? '/');
     const session = new EditSession();
     let cancelled = false;
+    let stopWatching = () => {};
     let reveal = () => {};
 
-    // When the list is already known (client navigations), hide before paint
-    // so the unedited page never flashes. On a first load the list is still
-    // loading, and hiding late would flash more than it hides.
-    const paths = editedPaths();
-    if (paths.value?.has(path)) reveal = hideMain();
+    // When this path is known to have edits (client navigations), hide before
+    // paint so the unedited page never flashes. On a first load the list is
+    // still loading, and hiding late would flash more than it hides.
+    if (knownPaths?.has(path)) reveal = hideMain();
 
     (async () => {
-      const edited = paths.value ?? (await paths.promise);
-      if (cancelled || !edited.has(path)) return;
       const edits = await pageEdits(path);
       if (cancelled || edits.length === 0) return;
-      const resolved = await waitForTargets(edits, () => cancelled);
+      await waitForTargets(edits, () => cancelled);
       if (cancelled) return;
       // Reveal and apply in the same task: no paint in between, and the
       // recorded <main> style never includes the temporary opacity.
       reveal();
-      session.apply(resolved);
+      stopWatching = applyAndWatch(edits, session);
     })()
       .catch((error) => warn('could not apply edits', error))
       .finally(() => reveal());
 
     return () => {
       cancelled = true;
+      stopWatching();
       reveal();
       session.revert();
     };

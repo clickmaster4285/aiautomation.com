@@ -4,9 +4,10 @@
 // allows https: connections). Always 200 with an empty result when there is
 // nothing to apply, so the console never shows a 404.
 //   GET /api/erp-edits              -> { paths: string[] }
-//   GET /api/erp-edits?path=/a/b    -> { edits: ErpEdit[] }
+//   GET /api/erp-edits?path=/a/b    -> { edits: ErpEdit[], paths: string[] }
 import { NextResponse, type NextRequest } from 'next/server';
 import { getEditedPage, getEditedPaths } from '@/lib/erp-edits';
+import { normalizeEditPath } from '@/lib/erp-edits-shared';
 
 // Never cached (not here, not on the server, not in the browser): every page
 // view gets the edits as currently published in the ERP.
@@ -24,8 +25,13 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ paths: await getEditedPaths({ fresh: true }) }, { headers });
   }
   if (path.length > 1024) {
-    return NextResponse.json({ edits: [] }, { headers });
+    return NextResponse.json({ edits: [], paths: [] }, { headers });
   }
-  const page = await getEditedPage(path, { fresh: true });
-  return NextResponse.json({ edits: page?.edits ?? [] }, { headers });
+  // One round trip for the browser: the edits for this path plus the list of
+  // edited paths (so later client navigations can hide <main> before paint).
+  const paths = await getEditedPaths({ fresh: true });
+  const page = paths.includes(normalizeEditPath(path))
+    ? await getEditedPage(path, { fresh: true, paths })
+    : null;
+  return NextResponse.json({ edits: page?.edits ?? [], paths }, { headers });
 }
