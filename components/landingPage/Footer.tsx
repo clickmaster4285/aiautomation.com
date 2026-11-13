@@ -4,11 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Mail, Phone, ArrowRight } from 'lucide-react';
 import { Gb, Us, Pk } from 'react-flag-icons';
-import { useRouter } from 'next/navigation';
 
 export default function Footer() {
-  const router = useRouter();
-
   return (
     <footer className="bg-muted text-gray-600 border-t border-muted-foreground/10 py-12 md:py-20">
       <div className="mx-auto max-w-[84vw] px-6">
@@ -30,15 +27,21 @@ export default function Footer() {
             <p className="text-sm text-muted-foreground leading-relaxed">
               AI automation that businesses actually use and own built for production, not presentations.
             </p>
-            <div className="flex items-center gap-3 pt-2">
-              <span className="inline-block w-8 h-0.5 bg-brand" />
-              <span className="text-xs font-medium tracking-widest text-brand uppercase">Trusted partner</span>
-            </div>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Clickmasters AI Automation is part of{' '}
+              <a
+                href="https://clickmasters.pk/"
+                className="text-foreground underline underline-offset-2 hover:text-brand transition-colors"
+              >
+                Clickmasters
+              </a>
+              .
+            </p>
           </div>
 
           {/* Services - Column 2 */}
           <div className="lg:flex-shrink-0">
-            <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider mb-5">Services</h4>
+            <h2 className="text-foreground font-semibold text-sm uppercase tracking-wider mb-5">Services</h2>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-3 min-w-[340px]">
               <li className="sm:col-span-2">
                 <Link href="/services" className="text-sm font-semibold text-foreground hover:text-brand transition-colors duration-200">
@@ -105,7 +108,7 @@ export default function Footer() {
 
           {/* Company - Column 3 */}
           <div className="lg:flex-shrink-0">
-            <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider mb-5">Company</h4>
+            <h2 className="text-foreground font-semibold text-sm uppercase tracking-wider mb-5">Company</h2>
             <ul className="space-y-4">
               <li>
                 <Link href="/about" className="text-sm hover:text-brand transition-colors duration-200">
@@ -137,7 +140,7 @@ export default function Footer() {
 
           {/* Platforms and industries stay in the initial HTML. Nav dropdowns open on hover. */}
           <div className="lg:flex-shrink-0">
-            <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider mb-5">Platforms</h4>
+            <h2 className="text-foreground font-semibold text-sm uppercase tracking-wider mb-5">Platforms</h2>
             <ul className="space-y-3">
               {[
                 ['Zapier', '/platforms/zapier-automation-services'],
@@ -157,7 +160,7 @@ export default function Footer() {
           </div>
 
           <div className="lg:flex-shrink-0">
-            <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider mb-5">Industries</h4>
+            <h2 className="text-foreground font-semibold text-sm uppercase tracking-wider mb-5">Industries</h2>
             <ul className="space-y-3">
               {[
                 ['Finance & Accounting', '/industries/ai-automation-for-finance-accounting'],
@@ -179,7 +182,7 @@ export default function Footer() {
 
           {/* Contact - Column 4 */}
           <div className="lg:flex-shrink-0">
-            <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider mb-5">Contact</h4>
+            <h2 className="text-foreground font-semibold text-sm uppercase tracking-wider mb-5">Contact</h2>
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <Mail className="h-4 w-4 text-brand mt-0.5 flex-shrink-0" />
@@ -187,7 +190,7 @@ export default function Footer() {
                   href="mailto:sales@clickmastersdigitalmarketing.com" 
                   className="hover:text-brand transition-colors"
                 >
-                  sales@clickmastersdigital<br />marketing.com
+                  <span className="break-all">sales@clickmastersdigitalmarketing.com</span>
                 </a>
               </li>
               <li className="flex items-start gap-3">
@@ -215,9 +218,9 @@ export default function Footer() {
 
           {/* Get in Touch - Column 5 */}
           <div className="flex flex-col gap-4 lg:items-end lg:flex-shrink-0">
-            <h4 className="text-foreground font-semibold text-sm uppercase tracking-wider w-full lg:text-right">
+            <h2 className="text-foreground font-semibold text-sm uppercase tracking-wider w-full lg:text-right">
               Get in Touch
-            </h4>
+            </h2>
             <Link
               href="/contact"
               className="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-medium px-6 py-3 rounded-none transition-all shadow-lg shadow-brand/25 hover:shadow-brand/40 group"
@@ -233,7 +236,7 @@ export default function Footer() {
 
         {/* ── Bottom bar ── */}
         <div className="mt-10 pt-6 border-t border-muted-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
-          <p>© 2026 Clickmastersaiautomationcompany. All rights reserved.</p>
+          <p>© 2026 Clickmasters AI Automation. All rights reserved.</p>
           <div className="flex flex-wrap justify-center gap-6">
             <Link 
               href="/privacy-policy" 
@@ -246,14 +249,6 @@ export default function Footer() {
               className="hover:text-brand transition-colors"
             >
               Terms of Service
-            </Link>
-            <Link 
-              href="/sitemap.xml" 
-              className="hover:text-brand transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Sitemap
             </Link>
           </div>
         </div>

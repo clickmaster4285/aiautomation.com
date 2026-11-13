@@ -1,117 +1,68 @@
-﻿// content/homepage.ts
-// Homepage/Landing page content data
-// This file contains all the content for the home page (landing page)
+﻿// content/services/homepage.ts
+// Homepage (landing page) content.
+// Source: "Homepage Developer Handover — clickmastersaiautomation.com" (11 Nov 2026), section 4.
+// Use the copy exactly as written. Do not add superlatives ("best", "trusted", "expert"),
+// counters, statistics, case studies or testimonials that are not approved in `signOff`.
+
+// ── OWNER SIGN-OFF (handover section 5) ──
+// Each flag stays `false` until the business owner confirms the item.
+// While a flag is `false`, the statement that depends on it is left out of the page.
+export const signOff = {
+  // S-3: "Part of Clickmasters, a digital agency operating for 13 years" and the
+  // relationship between the two businesses. Controls the hero trust line.
+  // (The "part of Clickmasters" FAQ was approved separately and is always shown.)
+  parentAgencyYears: false,
+  // S-7: "You own every system we build". Controls the hero intro clause.
+  // (The "Who owns the automation" FAQ was approved separately and is always shown.)
+  ownershipTerms: false,
+  // S-9: monitoring and maintenance are offered on every project.
+  // Controls the "Support after launch" card.
+  supportAfterLaunch: false,
+  // H-07: the demo case study page has no bracketed placeholders left.
+  // Controls the "See the build" link on the demo card.
+  demoCaseStudyReady: false,
+};
+
+const DEMO_CASE_STUDY_URL = '/case-studies/ai-receptionist-lead-response-automation';
+const AUDIT_URL = '/free-automation-audit';
 
 export const homepageData = {
-  // ── METADATA ──
+  // ── METADATA (2.1) ──
   meta: {
     siteUrl: 'https://clickmastersaiautomation.com/',
-    title: 'AI Automation Services – Custom AI Automation Company',
-    description: 'Clickmasters is a leading AI automation company offering custom AI automation services & agency-level workflows. Book your free audit today!',
-    keywords: [
-      'AI automation services',
-      'AI automation company',
-      'AI automation agency',
-      'custom AI automation',
-      'workflow automation',
-      'AI agents',
-      'business automation',
-      'automation consultant'
-    ]
+    title: 'AI Automation Agency for Growing Businesses | Clickmasters',
+    description:
+      'Clickmasters is an AI automation agency that builds AI agents, workflow automation and system integrations for sales, support and operations. Free audit.',
+    ogSiteName: 'Clickmasters AI Automation',
+    ogTitle: 'AI Automation Agency for Growing Businesses | Clickmasters',
+    ogDescription:
+      'AI agents, workflow automation and system integrations for sales, support and operations teams. Book a free automation audit.',
   },
 
-  // ── HERO SECTION ──
+  // ── 4.1 HERO ──
   hero: {
     badge: 'AI Automation Agency',
-    headline: 'AI Automation Services for Smarter, More Efficient Business Operations',
-    subheading: `Clickmasters is an AI automation agency that helps businesses save time by automating repetitive tasks. We use AI-powered automation, AI agents, workflow automation, and system integrations to automate sales, marketing, customer support, and daily business tasks.`,
-    description: `If you're looking for AI automation companies, Clickmasters can help. As an AI automation consultant, we build simple and effective automation systems that reduce manual work, improve efficiency, and help businesses grow.`,
-    cta: {
-      text: 'Book a Free Automation Audit',
-      link: '/free-automation-audit',
-      primary: true
-    },
-    secondaryCta: {
-      text: 'View Our Services',
-      link: '/services',
-      primary: false
-    }
+    headline: 'AI Automation Agency',
+    headlineAccent: 'for Sales, Support and Operations Teams',
+    subheading: signOff.ownershipTerms
+      ? 'Clickmasters AI Automation designs, builds and maintains AI agents, workflow automations and system integrations for growing businesses. We work on n8n, Make, Zapier, HubSpot and Salesforce, and you own every system we build.'
+      : 'Clickmasters AI Automation designs, builds and maintains AI agents, workflow automations and system integrations for growing businesses. We work on n8n, Make, Zapier, HubSpot and Salesforce, and you own every system we build.',
+    cta: { text: 'Book a Free Automation Audit', link: AUDIT_URL, primary: true },
+    secondaryCta: { text: 'See Our Services', link: '/services', primary: false },
+    note: signOff.parentAgencyYears
+      ? 'Part of Clickmasters, a digital agency operating for 13 years.'
+      : undefined,
   },
 
-  // ── INTRO SECTION ──
-  intro: {
-    heading: 'Best AI automation solutions for scaling businesses',
-    content: `As businesses grow, manual processes quickly become a bottleneck—more leads, more customers, and more data without more hours in the day. The best AI automation solutions for scaling businesses focus on flexibility: workflows and AI agents that handle higher volume without needing a proportional increase in headcount. Clickmasters builds AI business automation that grows with you, so scaling up doesn't mean scaling your workload.`,
-    cta: {
-      text: 'Contact Us',
-      link: '/contact',
-      primary: true
-    }
-  },
+  // ── 4.2 MARQUEE ──
+  marquee: ['Workflow automation', 'AI agents', 'Chatbots and voice', 'Systems you own'],
 
-  // ── SERVICES SECTION ──
-  services: {
-    heading: 'Our AI Automation Services',
-    subheading: 'Clickmasters offers full-cycle AI automation services, from workflow design to AI agent development. We build custom AI automation tools and AI automation software for sales, marketing, support, and data-heavy processes. As a full-service AI automation agency, we handle strategy, integration, and long-term optimization using the latest AI automation platform technology.',
-    items: [
-      {
-        title: 'AI Workflow Automation',
-        description: 'We design automated workflows that connect your tools, data, and teams. This eliminates manual handoffs and speeds up everyday processes using proven AI automation frameworks.',
-        icon: 'workflow'
-      },
-      {
-        title: 'AI Agent Development',
-        description: 'We build AI agents that handle multi-step tasks independently, from qualifying leads to processing requests. These agents work around the clock without constant supervision — true AI-powered automation in action.',
-        icon: 'agent'
-      },
-      {
-        title: 'Business Process Automation',
-        description: 'We identify repetitive operational tasks and automate them across departments. This reduces manual errors and frees up your team\'s time for higher-value work through smart business automation services.',
-        icon: 'process'
-      },
-      {
-        title: 'AI Chatbots & Customer Support Automation',
-        description: 'We build AI-powered chatbots that answer FAQs, resolve common issues, and route complex tickets. Customers get instant responses, any time of day, thanks to reliable AI automation tool integrations.',
-        icon: 'chatbot'
-      },
-      {
-        title: 'Sales Automation',
-        description: 'We automate lead capture, qualification, and follow-ups so no opportunity slips through the cracks. Your sales team spends more time closing and less time on data entry.',
-        icon: 'sales'
-      },
-      {
-        title: 'Marketing Automation',
-        description: 'We connect AI marketing automation to your existing stack to automate lead nurturing and campaign follow-ups. This keeps prospects engaged without manual effort from your team — a core part of how AI in marketing automation is reshaping growth strategies.',
-        icon: 'marketing'
-      },
-      {
-        title: 'Document & Data Automation',
-        description: 'We automate data extraction, invoice processing, and reporting from unstructured documents. This turns time-consuming paperwork into fast, accurate digital data.',
-        icon: 'document'
-      },
-      {
-        title: 'AI Integration Services',
-        description: 'We connect AI automation to your CRM, ERP, and other business systems using APIs. Everything works together seamlessly rather than operating in disconnected silos.',
-        icon: 'integration'
-      }
-    ]
-  },
-
-  // ── CTA SECTION ──
-  readyToAutomate: {
-    heading: 'Ready to Automate Your Business?',
-    subheading: "Clickmasters will assess your processes and identify real automation opportunities. We build systems that fit how your business actually works, not generic templates. Book your free automation audit today to get started with a trusted AI automation consultant.",
-    cta: {
-      text: 'Book Your Free Automation Audit Today',
-      link: '/free-automation-audit',
-      primary: true
-    }
-  },
-
-  // ── WHAT CAN YOU AUTOMATE ──
+  // ── 4.3 WHAT WE AUTOMATE ──
   whatToAutomate: {
-    heading: 'What Can You Automate With AI?',
-    subheading: 'Common automations include lead qualification, CRM updates, and customer enquiries. We also automate document processing, scheduling, and internal approvals. If a task is repetitive or rule-based, it\'s likely a strong candidate for AI automation.',
+    label: 'What We Automate',
+    heading: 'What can you automate with AI?',
+    body: 'Most growing teams lose hours to work that follows the same steps every time: moving lead details into a CRM, answering the same questions, copying figures between systems. We replace those steps with automations and AI agents that run inside the tools you already use, with a person in the loop wherever a decision needs judgment.',
+    listHeading: 'Common starting points',
     items: [
       'Lead capture and qualification',
       'CRM and database updates',
@@ -122,359 +73,377 @@ export const homepageData = {
       'Document and invoice processing',
       'Reporting and dashboards',
       'Internal approvals and onboarding',
-      'Content and proposal generation'
-    ]
+      'Proposal and content drafts',
+    ],
+    closingLine: 'If a task is repetitive and follows rules, it is usually a good candidate.',
   },
 
-  // ── INTEGRATIONS SECTION ──
-  integrations: {
-    heading: 'Integrate AI Automation With Your Existing Business Systems',
-    subheading: 'As the best AI automation company, we connect AI tools with your existing systems to make daily work faster and easier. Our AI automation platform solutions reduce manual tasks and help your business run more smoothly — even supporting niche use cases like Amazon automation for e-commerce sellers.',
-    categories: [
-      {
-        title: 'CRM Automation and Integration',
-        description: 'Automate leads, follow-ups, customer updates, and sales tasks inside your CRM.'
-      },
-      {
-        title: 'ERP Automation and Integration',
-        description: 'Connects AI with your ERP to simplify finance, inventory, reporting, and operations.'
-      },
-      {
-        title: 'API and SaaS Integrations',
-        description: 'We connect your apps and software so they can share data and automate tasks.'
-      },
-      {
-        title: 'Database and Internal System Integrations',
-        description: 'Connect AI with your databases and internal systems to automate data handling and business processes.'
-      }
-    ]
-  },
-
-  // ── BENEFITS SECTION ──
-  benefits: {
-    heading: 'Benefits of AI Automation for Businesses',
-    subheading: 'Businesses save hours of manual work every week while reducing operational costs. AI automation improves accuracy, response times, and scalability without added headcount. Teams get to focus on higher-value work instead of repetitive tasks.',
+  // ── 4.4 SERVICES ──
+  services: {
+    label: 'What We Build',
+    heading: 'AI automation services',
+    subheading:
+      'We cover the full cycle: finding the right processes, building the automation, connecting it to your systems and maintaining it after launch.',
     items: [
       {
-        title: 'Save Time',
-        description: 'Eliminate hours of manual, repetitive work every week'
+        title: 'AI Workflow Automation',
+        description:
+          'We design workflows that connect your tools, data and teams, so information moves without manual handoffs.',
+        link: '/services/ai-workflow-automation',
       },
       {
-        title: 'Reduce Costs',
-        description: 'Lower operational overhead without adding headcount'
+        title: 'AI Agent Development',
+        description:
+          'We build AI agents that carry out multi-step tasks, such as qualifying a lead or processing a request, and pass exceptions to your team.',
+        link: '/services/ai-agent-development',
       },
       {
-        title: 'Fewer Errors',
-        description: 'AI handles repetitive tasks more consistently than manual processes'
+        title: 'Business Process Automation',
+        description:
+          'We map repetitive operational work across departments and automate the steps that follow clear rules.',
+        link: '/services/business-process-automation',
       },
       {
-        title: 'Faster Response Times',
-        description: 'Customers and leads get instant, accurate responses'
+        title: 'AI Chatbots and Customer Support',
+        description:
+          'We build chatbots that answer common questions, resolve routine issues and route complex tickets to the right person.',
+        link: '/services/ai-chatbots',
       },
       {
-        title: 'Better Scalability',
-        description: 'Handle more volume without proportionally more staff'
+        title: 'Sales Automation',
+        description:
+          'We automate lead capture, qualification and follow-up, so your sales team spends its time on conversations, not data entry.',
+        link: '/solutions/sales-automation',
       },
       {
-        title: 'Improved Data Accuracy',
-        description: 'Automated systems keep your CRM and records up to date'
+        title: 'Marketing Automation',
+        description:
+          'We connect AI to your marketing stack to run lead nurturing and campaign follow-ups on schedule.',
+        link: '/solutions/marketing-automation',
       },
       {
-        title: 'Happier Teams',
-        description: 'Employees focus on higher-value work instead of repetitive tasks'
-      }
-    ]
+        title: 'Document and Data Automation',
+        description:
+          'We extract data from invoices, forms and other documents and send it to the systems that need it.',
+        link: '/solutions/document-automation',
+      },
+      {
+        title: 'Custom AI Development and Integration',
+        description:
+          'We connect AI to your CRM, ERP and internal systems through APIs, and build custom components where off-the-shelf tools fall short.',
+        link: '/services/custom-ai-development',
+      },
+    ],
   },
 
-  // ── PROCESS SECTION ──
+  // ── 4.5 MID-PAGE CALL TO ACTION ──
+  readyToAutomate: {
+    heading: 'Not sure where to start?',
+    subheading:
+      'In the free automation audit we review your current processes and tools, then tell you which tasks are worth automating first and which are not. There is no obligation to proceed.',
+    cta: { text: 'Book Your Free Automation Audit', link: AUDIT_URL, primary: true },
+  },
+
+  // ── 4.6 BENEFITS ──
+  benefits: {
+    label: 'Why Automate',
+    heading: 'What changes when routine work is automated',
+    items: [
+      {
+        title: 'Less manual work',
+        description: 'Repetitive steps run on their own, so your team gets those hours back.',
+      },
+      {
+        title: 'Faster responses',
+        description: 'Leads and customers get a first reply without waiting for someone to be free.',
+      },
+      {
+        title: 'Fewer errors',
+        description: 'Rule-based tasks are done the same way every time.',
+      },
+      {
+        title: 'Room to grow',
+        description: 'You can handle more volume without adding the same amount of headcount.',
+      },
+      {
+        title: 'Cleaner data',
+        description: 'Your CRM and records are updated as part of the workflow, not afterwards.',
+      },
+    ],
+  },
+
+  // ── 4.7 EXAMPLE WORKFLOW ──
+  exampleWorkflow: {
+    label: 'Example Workflow',
+    heading: 'From form submission to booked meeting',
+    body: 'This illustration shows a typical lead workflow. A form submission triggers an AI agent that qualifies the lead, updates the CRM, sends a follow-up and offers a booking link. Leads that fall outside the rules are passed to a person.',
+    panelTitle: 'Illustration: lead response workflow',
+    steps: [
+      'Website form',
+      'AI qualification',
+      'CRM update',
+      'Follow-up email',
+      'Calendar booking',
+      'Sales team',
+    ],
+  },
+
+  // ── 4.8 PROCESS ──
   process: {
-    heading: 'Our AI Automation Process',
-    subheading: 'We start with discovery to understand your tools, processes, and pain points. From there, we map, build, and test each workflow before deployment. After launch, we monitor performance and continuously optimize the system.',
+    label: 'Our Process',
+    heading: 'How we work',
+    subheading:
+      'Every project follows the same six steps, and you approve the plan before anything is built.',
     steps: [
       {
-        number: '01',
+        number: '1',
         title: 'Discovery',
-        description: 'We review your current processes, tools, and pain points to identify the best automation opportunities.'
+        description:
+          'We review your current processes, tools and pain points to find the best automation opportunities.',
       },
       {
-        number: '02',
-        title: 'Strategy & Mapping',
-        description: 'We map out the workflow: triggers, decision points, actions, and integrations required.'
+        number: '2',
+        title: 'Strategy and mapping',
+        description:
+          'We map the workflow: triggers, decision points, actions, integrations and the points where a person approves.',
       },
       {
-        number: '03',
+        number: '3',
         title: 'Development',
-        description: 'Our team builds the automation—whether that\'s a workflow, an AI agent, or a custom integration.'
+        description:
+          'We build the automation, whether that is a workflow, an AI agent or a custom integration.',
       },
       {
-        number: '04',
+        number: '4',
         title: 'Testing',
-        description: 'We test thoroughly before deployment, including edge cases and failure scenarios.'
+        description: 'We test before launch, including edge cases and failure scenarios.',
       },
       {
-        number: '05',
+        number: '5',
         title: 'Deployment',
-        description: 'We launch the automation into your live environment with minimal disruption.'
+        description:
+          'We launch into your live environment and hand over documentation and access.',
       },
       {
-        number: '06',
-        title: 'Monitoring & Optimization',
-        description: 'We monitor performance after launch and continuously refine the system as your business evolves.'
-      }
-    ]
-  },
-
-  // ── WHY CHOOSE US ──
-  whyChooseUs: {
-    heading: 'Why Choose Clickmasters as Your AI Automation Company',
-    subheading: "We build custom automation, not generic templates, including advanced AI agents. Our team integrates deeply with your existing CRM, ERP, and internal tools. As a trusted AI automation agency services provider, we prioritize transparency, security, and post-launch support.",
-    items: [
-      {
-        title: 'Custom-built automation',
-        description: 'Not generic templates'
+        number: '6',
+        title: 'Monitoring and improvement',
+        description:
+          'We monitor performance after launch and refine the system as your business changes.',
       },
-      {
-        title: 'AI agent development',
-        description: 'Not just simple triggers'
-      },
-      {
-        title: 'Deep system integration',
-        description: "We connect to your existing CRM, ERP, and tools, not just popular apps"
-      },
-      {
-        title: 'Human-in-the-loop design',
-        description: 'Automation with oversight where it matters'
-      },
-      {
-        title: 'Transparent process',
-        description: "You'll always know how your automation works, not just that it works"
-      },
-      {
-        title: 'Post-launch support',
-        description: 'We monitor, maintain, and improve automation after deployment'
-      },
-      {
-        title: 'Security-first approach',
-        description: 'Access controls, permissions, and data handling built in from day one'
-      }
     ],
-    closingStatement: "We don't just sell 'AI automation.' We build systems you actually understand and trust."
   },
 
-  // ── CASE STUDIES ──
-  caseStudies: {
-    heading: 'Case Studies',
-    subheading: 'We helped a B2B services company cut lead processing time from 15 hours to under 3 hours weekly. An e-commerce brand automated over 60% of support tickets using our AI chatbot system. A finance team reduced invoice processing time from 8 minutes to under 30 seconds.',
-    items: [
-      {
-        title: 'Sales Lead Qualification (B2B Services Company)',
-        description: "We automated lead capture and qualification across 5 inbound channels, cutting manual processing time from 15 hours to under 3 hours per week—while improving response time to under 2 minutes.",
-        results: [
-          { metric: 'Lead processing time', before: '15 hours/week', after: 'Under 3 hours/week' },
-          { metric: 'Response time', before: 'Hours', after: 'Under 2 minutes' }
-        ]
-      },
-      {
-        title: 'Customer Support Automation (E-commerce Brand)',
-        description: "We built an AI chatbot integrated with their order and CRM systems, automatically resolving over 60% of incoming support tickets without human intervention.",
-        results: [
-          { metric: 'Support tickets resolved automatically', before: 'None', after: 'Over 60%' },
-          { metric: 'Human intervention needed', before: '100%', after: 'Under 40%' }
-        ]
-      },
-      {
-        title: 'Document Processing Automation (Finance Team)',
-        description: "We automated invoice extraction and data entry, reducing processing time per invoice from 8 minutes to under 30 seconds, with significantly fewer manual errors.",
-        results: [
-          { metric: 'Invoice processing time', before: '8 minutes', after: 'Under 30 seconds' },
-          { metric: 'Manual errors', before: 'Frequent', after: 'Minimal' }
-        ]
-      }
-    ]
-  },
-
-  // ── INDUSTRIES SECTION ──
-  industries: {
-    heading: 'Industries We Serve',
-    subheading: 'Clickmasters builds AI business automation for real estate, e-commerce, healthcare, and finance. We also support SaaS companies, agencies, and professional service firms. Every industry gets automation tailored to its specific systems and compliance needs by our expert AI automation agency.',
-    items: [
-      {
-        title: 'AI Automation for Real Estate',
-        description: 'We automate lead follow-ups, appointment scheduling, and property enquiries for real estate teams. This helps agents respond faster and never miss a potential buyer or renter.',
-        link: '/industries/ai-automation-for-real-estate'
-      },
-      {
-        title: 'AI Automation for E-commerce and Retail',
-        description: 'We automate order processing, customer support, and inventory updates for online stores, including Amazon automation workflows. This keeps operations running smoothly during high-traffic sales periods.',
-        link: '/industries/ai-automation-for-ecommerce'
-      },
-      {
-        title: 'AI Automation for Healthcare and Clinics',
-        description: 'We automate appointment scheduling, patient inquiries, and administrative paperwork for healthcare providers. This reduces manual workload while keeping patient data handling secure.',
-        link: '/industries/ai-automation-for-healthcare'
-      },
-      {
-        title: 'AI Automation for Finance and Accounting',
-        description: 'We automate invoice processing, data entry, and reporting for finance teams. This cuts manual errors and speeds up month-end and reconciliation tasks.',
-        link: '/industries/ai-automation-for-finance-accounting'
-      },
-      {
-        title: 'AI Automation for Professional Services',
-        description: 'We automate client onboarding, proposal generation, and follow-ups for service-based businesses. This helps teams manage more clients without adding administrative overhead.',
-        link: '/industries/ai-automation-for-professional-services'
-      },
-      {
-        title: 'AI Automation for SaaS and Technology Companies',
-        description: 'We automate customer onboarding, support ticket routing, and user data syncing for SaaS platforms. This improves customer experience while reducing the support team\'s workload.',
-        link: '/industries/ai-automation-for-saas'
-      },
-     
-    ]
-  },
-
-  // ── TOOLS & TECHNOLOGIES ──
-  tools: {
-    heading: 'Platforms, Tools & Technologies We Work With',
-    subheading: 'We integrate with CRMs like HubSpot, Salesforce, and Zoho. Our AI automation tools stack includes OpenAI, Claude, Zapier, Make, and n8n. We also connect with ERPs, databases, and custom APIs as needed.',
+  // ── 4.9 INTEGRATIONS AND PLATFORMS ──
+  integrations: {
+    label: 'Integrations',
+    heading: 'Built on the systems you already use',
+    subheading:
+      'We connect automation to your existing software, so your team keeps working in the tools it knows.',
     categories: [
       {
-        category: 'CRMs',
-        items: ['HubSpot', 'Salesforce', 'Zoho', 'Pipedrive']
+        title: 'CRM integration',
+        description:
+          'Automate lead records, follow-ups, customer updates and sales tasks inside your CRM.',
       },
       {
-        category: 'AI & LLMs',
-        items: ['OpenAI', 'Claude', 'Google Gemini']
+        title: 'ERP integration',
+        description: 'Connect AI to your ERP to simplify finance, inventory, reporting and operations.',
       },
       {
-        category: 'Automation Platforms',
-        items: ['Zapier', 'Make', 'n8n']
+        title: 'API and SaaS integration',
+        description: 'Connect your apps so they share data and trigger each other.',
       },
       {
-        category: 'Communication Tools',
-        items: ['Slack', 'Gmail', 'Outlook', 'Twilio']
+        title: 'Databases and internal systems',
+        description: 'Connect AI to your databases and internal tools to automate data handling.',
       },
-      {
-        category: 'ERP & Databases',
-        items: ['Custom APIs', 'SQL databases', 'Cloud data platforms']
-      },
-      {
-        category: 'E-commerce',
-        items: ['Shopify', 'WooCommerce']
-      },
-      {
-        category: 'Support Tools',
-        items: ['Zendesk', 'Intercom', 'Freshdesk']
-      }
-    ]
+    ],
   },
 
-  // ── TESTIMONIALS ──
-  testimonials: {
-    heading: 'What Our Clients Say',
+  // Tool list kept from the current page, pending owner confirmation (S-5):
+  // remove any tool that has not been used in delivered work.
+  tools: {
+    heading: 'Platforms and tools',
+    allPlatformsLink: { text: 'See all platforms', link: '/platforms' },
+    categories: [
+      { category: 'CRMs', items: ['HubSpot', 'Salesforce', 'Zoho', 'Pipedrive'] },
+      { category: 'AI models', items: ['OpenAI', 'Claude', 'Google Gemini'] },
+      { category: 'Automation platforms', items: ['Zapier', 'Make', 'n8n'] },
+      { category: 'Communication', items: ['Slack', 'Gmail', 'Outlook', 'Twilio'] },
+      { category: 'Databases', items: ['Custom APIs', 'SQL databases', 'Cloud data platforms'] },
+      { category: 'E-commerce', items: ['Shopify', 'WooCommerce'] },
+      { category: 'Support', items: ['Zendesk', 'Intercom', 'Freshdesk'] },
+    ],
+  },
+
+  // ── 4.10 PROOF (default version: no client case studies or testimonials) ──
+  proof: {
+    label: 'Our Work',
+    heading: 'See how we build',
     items: [
       {
-        rating: 5,
-        quote: "Clickmasters automated our entire lead qualification process, and it's been a game changer. We went from spending hours manually sorting leads to having them qualified and routed automatically within minutes. Our sales team can finally focus on closing deals instead of chasing data.",
-        author: 'Sarah M.',
-        role: 'Director of Sales',
-        company: 'B2B Services Company'
+        label: 'Demo build',
+        title: 'AI receptionist for small service businesses',
+        description:
+          'A demonstration system that answers calls, texts and emails, qualifies the job and books the appointment. This is a Clickmasters demo, not a client project.',
+        link: signOff.demoCaseStudyReady
+          ? { text: 'See the build', href: DEMO_CASE_STUDY_URL }
+          : undefined,
       },
-      {
-        rating: 5,
-        quote: "We were drowning in support tickets before working with Clickmasters. Their AI chatbot now handles over half of our enquiries without any human involvement, and the ones that do need a person get routed instantly. Our response times have never been better.",
-        author: 'James T.',
-        role: 'Operations Manager',
-        company: 'E-commerce Brand'
-      },
-      {
-        rating: 5,
-        quote: "What impressed me most was how transparent the process was. Clickmasters didn't just build something and hand it off — they explained exactly how the automation worked, tested it thoroughly, and kept optimising after launch. Our invoice processing time dropped from minutes to seconds.",
-        author: 'Priya K.',
-        role: 'Finance Lead',
-        company: 'Professional Services Firm'
-      }
-    ]
+    ],
+    sectionLink: { text: 'View all work', link: '/case-studies' },
   },
 
-  // ── FAQ SECTION ──
+  // ── 4.11 INDUSTRIES ──
+  industries: {
+    label: 'Industries',
+    heading: 'Industries we build for',
+    subheading:
+      'The same building blocks apply across sectors, but the workflows differ. These pages show what we automate in each.',
+    items: [
+      {
+        title: 'Real estate',
+        description: 'Lead follow-up, viewing schedules and property enquiries.',
+        link: '/industries/ai-automation-for-real-estate',
+      },
+      {
+        title: 'E-commerce and retail',
+        description: 'Order updates, customer support and inventory sync.',
+        link: '/industries/ai-automation-for-ecommerce',
+      },
+      {
+        title: 'Healthcare and clinics',
+        description: 'Appointment scheduling, patient enquiries and administrative paperwork.',
+        link: '/industries/ai-automation-for-healthcare',
+      },
+      {
+        title: 'Finance and accounting',
+        description: 'Invoice processing, data entry and reporting.',
+        link: '/industries/ai-automation-for-finance-accounting',
+      },
+      {
+        title: 'Professional services',
+        description: 'Client onboarding, proposals and follow-ups.',
+        link: '/industries/ai-automation-for-professional-services',
+      },
+      {
+        title: 'SaaS and technology',
+        description: 'Customer onboarding, ticket routing and user data sync.',
+        link: '/industries/ai-automation-for-saas',
+      },
+      {
+        title: 'Law firms',
+        description: 'Client intake, document handling and matter updates.',
+        link: '/industries/ai-automation-for-law-firms',
+      },
+    ],
+  },
+
+  // ── 4.12 WHY CLICKMASTERS ──
+  whyChooseUs: {
+    label: 'Why Clickmasters',
+    heading: 'Why work with Clickmasters',
+    items: [
+      {
+        title: 'Built for your process',
+        description: 'We design around how your business works, not from a fixed template.',
+      },
+      {
+        title: 'AI agents, not only triggers',
+        description:
+          'We build agents that handle multi-step tasks, as well as simple if-this-then-that automations.',
+      },
+      {
+        title: 'Deep integration',
+        description:
+          'We connect to your CRM, ERP and internal tools, including systems without ready-made connectors.',
+      },
+      {
+        title: 'Human in the loop',
+        description: 'People approve or take over wherever a decision needs judgment.',
+      },
+      {
+        title: 'A process you can see',
+        description: 'You get documentation of how each automation works.',
+      },
+      ...(signOff.supportAfterLaunch
+        ? [
+            {
+              title: 'Support after launch',
+              description: 'We monitor, maintain and improve what we build.',
+            },
+          ]
+        : []),
+      {
+        title: 'Access controls from the start',
+        description: 'Permissions and data handling are defined in the design, before any build.',
+      },
+    ],
+    closingStatement: 'We build systems you understand and own.',
+  },
+
+  // ── 4.13 FAQ ──
   faq: {
-    heading: 'FAQs',
+    heading: 'Frequently asked questions',
+    sideText:
+      'Have a question about your own setup? Book a free automation audit and we will answer it for your business.',
+    sideLink: { text: 'Book a Call', link: AUDIT_URL },
     items: [
       {
         question: 'What are AI automation services?',
-        answer: 'AI automation services involve designing, building, and integrating AI-powered systems that handle repetitive or manual business tasks — from lead qualification to customer support and data processing.'
+        answer:
+          'AI automation services cover the design, build and integration of systems that handle repetitive business tasks, such as lead qualification, customer support and data processing, using AI models and workflow tools.',
+      },
+      {
+        question: 'What does an AI automation agency do?',
+        answer:
+          "An AI automation agency finds the manual work in a business that software can do, builds the automations and AI agents to do it, connects them to the company's existing systems and maintains them. Clickmasters AI Automation does this for sales, support and operations teams.",
       },
       {
         question: 'What can businesses automate with AI?',
-        answer: 'Common examples include lead qualification, CRM updates, customer support, appointment scheduling, document processing, reporting, and internal approvals.'
+        answer:
+          'Common examples are lead capture and qualification, CRM updates, email follow-ups, support tickets, appointment scheduling, document and invoice processing, and reporting. Tasks that are repetitive and follow rules are the best candidates.',
       },
       {
         question: 'How does AI automation work?',
-        answer: 'It typically follows a pattern: a trigger occurs, AI processes the information, a decision is made, and an action is executed—often syncing across multiple connected systems.'
+        answer:
+          'A trigger, such as a form submission or a new email, starts a workflow. The workflow follows set rules for routine steps and calls an AI model where language or judgment is needed. It then updates your systems and passes exceptions to a person.',
       },
       {
         question: 'How much do AI automation services cost?',
-        answer: 'Cost depends on complexity—the number of workflows, systems being integrated, and whether custom AI agents are required. We provide a clear quote after an initial discovery call.'
+        answer:
+          'Cost depends on the number of workflows, the systems involved and how much AI decision-making is needed. After the free audit you receive a written quote that lists the scope, deliverables, platform and usage costs, and support terms.',
       },
       {
         question: 'How long does implementation take?',
-        answer: 'Simple workflows can launch in days. More complex, multi-system automation typically takes a few weeks, depending on integration requirements.'
+        answer:
+          'It depends on scope. A single workflow on tools you already use is the quickest; projects that span several systems take longer. Your quote includes a timeline for each stage.',
       },
       {
         question: 'Can AI integrate with our existing software?',
-        answer: 'Yes. We connect AI automation to CRMs, ERPs, databases, and SaaS tools via APIs, so it works within your existing tech stack.'
-      }
-    ]
+        answer:
+          'Usually, yes. We connect through native connectors, APIs or platforms such as n8n, Make and Zapier. If a system has no API, we assess the alternatives during the audit.',
+      },
+      // These two FAQs were approved for the page by the site owner.
+      {
+        question: 'Who owns the automation once it is built?',
+        answer: 'You do. The workflows, accounts and documentation are handed over to you.',
+      },
+      {
+        question: 'Is Clickmasters AI Automation part of Clickmasters?',
+        answer:
+          'Yes. Clickmasters AI Automation is the AI automation practice of Clickmasters, a digital marketing and software agency founded by Amjad Khan and based in Pakistan. We work remotely with businesses in the United States and United Kingdom.',
+      },
+    ],
   },
 
-  // ── FOOTER / FINAL CTA ──
+  // ── 4.14 FINAL CALL TO ACTION ──
   finalCta: {
-    heading: 'Ready to Transform Your Business with AI Automation?',
-    subheading: 'Book a free automation audit with our team and discover how Clickmasters can help you save time, reduce costs, and scale your operations.',
-    cta: {
-      text: 'Book Your Free Automation Audit',
-      link: '/free-automation-audit',
-      primary: true
-    }
+    heading: 'Find out what you can automate',
+    subheading:
+      'Book a free automation audit. We review your processes and tools and show you where automation would save the most time.',
+    cta: { text: 'Book Your Free Automation Audit', link: AUDIT_URL, primary: true },
   },
-
-  // ── STATS (for hero or numbers section) ──
-  // No verified operating totals are published. Do not render placeholder counters.
-  stats: [] as { label: string; value: string }[],
 };
-
-// ── Helper function to get homepage data for specific sections ──
-
-export function getHeroData() {
-  return homepageData.hero;
-}
-
-export function getServicesList() {
-  return homepageData.services.items;
-}
-
-export function getFAQs() {
-  return homepageData.faq.items;
-}
-
-export function getTestimonials() {
-  return homepageData.testimonials.items;
-}
-
-export function getIndustriesList() {
-  return homepageData.industries.items;
-}
-
-export function getToolsCategories() {
-  return homepageData.tools.categories;
-}
-
-export function getProcessSteps() {
-  return homepageData.process.steps;
-}
-
-export function getStats() {
-  return homepageData.stats;
-}
 
 export default homepageData;

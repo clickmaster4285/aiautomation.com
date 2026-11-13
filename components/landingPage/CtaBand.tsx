@@ -8,7 +8,14 @@ type CtaBandData = {
   cta: { text: string; link: string; primary?: boolean };
 };
 
-export default function CtaBand({ data }: { data: CtaBandData }) {
+export default function CtaBand({
+  data,
+  ctaPosition,
+}: {
+  data: CtaBandData;
+  /** Sent to analytics as the audit button position (e.g. "mid-page"). */
+  ctaPosition?: string;
+}) {
   return (
     <section className="bg-ink text-white py-16 md:py-20">
       <div className="mx-auto max-w-[84vw] px-6 flex flex-col md:flex-row md:items-center justify-between gap-8">
@@ -24,11 +31,12 @@ export default function CtaBand({ data }: { data: CtaBandData }) {
 
         <motion.a
           href={data.cta.link}
+          data-cta-position={ctaPosition}
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.97 }}
           className="bg-brand text-white text-sm px-8 py-4 inline-flex items-center justify-center gap-2 whitespace-nowrap"
         >
-          {data.cta.text} <span>›</span>
+          {data.cta.text} <span aria-hidden="true">›</span>
         </motion.a>
       </div>
     </section>
