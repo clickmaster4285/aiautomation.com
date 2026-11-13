@@ -27,7 +27,7 @@ export default function CTA({
         
         {/* Left floating mascot */}
         <motion.div
-          className="absolute left-4 top-0 w-24 md:w-52"
+          className="absolute left-4 top-0 w-24 md:w-52 pointer-events-none"
           animate={{ y: [0, -10, 0], rotate: [-5, 5, -5] }}
           transition={{ duration: 5, repeat: Infinity }}
         >
@@ -44,7 +44,7 @@ export default function CTA({
 
         {/* Right floating mascot */}
         <motion.div
-          className="absolute right-4 top-12 w-24 md:w-52"
+          className="absolute right-4 top-12 w-24 md:w-52 pointer-events-none"
           animate={{ y: [0, 10, 0], rotate: [5, -5, 5] }}
           transition={{ duration: 5, repeat: Infinity }}
         >

@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   description:
     "Growing companies use Clickmasters AI automation to take repetitive work off the team without replacing the people who decide. Book a free audit.",
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/images/logo.png",
+    shortcut: "/images/logo.png",
+    apple: "/images/logo.png",
   },
   verification: {
     google: "XPXXRYsg2bKfReQLyHZhOsB8dU1GpKj2JGnGyNwf0xM", // ✅ Updated verification code
@@ -52,8 +52,8 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        <link rel="icon" href="/logo.png" sizes="any" />
-        <link rel="apple-touch-icon" href="/logo.png" />
+        <link rel="icon" href="/images/logo.png" sizes="any" />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
         <meta name="theme-color" content="#000000" />
 
         {/* ✅ Google Site Verification - Updated */}
