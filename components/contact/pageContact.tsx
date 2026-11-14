@@ -206,8 +206,7 @@ export default function ContactPage() {
                 className="mt-6 p-4 rounded-xl border border-brand/20 bg-brand/5 backdrop-blur-sm"
               >
                 <p className="text-xs text-gray-400">
-                  🔄 All leads are automatically synced to our central CRM at{' '}
-                  <span className="text-brand font-medium">crm.clickmasters.pk</span>
+                  🔄 Every enquiry is saved straight to our CRM, so nothing gets lost.
                 </p>
               </motion.div>
             </motion.div>
@@ -506,7 +505,7 @@ export default function ContactPage() {
               >
                 <h2 className="display text-xl sm:text-2xl font-bold mb-1 text-gray-900">Send us a message</h2>
                 <p className="text-gray-500 mb-6 sm:mb-8 text-sm text-justify">
-                  We'll get back to you within a few hours. All leads are automatically synced to our central CRM.
+                  We'll get back to you within a few hours. Every enquiry is saved straight to our CRM.
                 </p>
 
                 <form id="leadForm" onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
@@ -592,8 +591,6 @@ export default function ContactPage() {
                       <CheckCircle className="h-3 w-3 text-green-500" />
                       Synced to CRM
                     </span>
-                    <span className="w-px h-3 bg-gray-300" />
-                    <span>crm.clickmasters.pk</span>
                   </div>
                 </form>
               </motion.div>

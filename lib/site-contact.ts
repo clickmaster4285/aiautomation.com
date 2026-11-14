@@ -5,7 +5,7 @@
 export const SITE_NAME = "Clickmasters AI Automation";
 export const SITE_URL = "https://clickmastersaiautomation.com";
 
-export const SALES_EMAIL = "sales@clickmastersdigitalmarketing.com";
+export const SALES_EMAIL = "sales@clickmastersaiautomation.com";
 
 export const PHONES = [
   { region: "US", schemaArea: "US", label: "United States", tel: "+13252024074", display: "+1 325 202 4074" },

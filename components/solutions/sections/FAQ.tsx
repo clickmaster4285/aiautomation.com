@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import { ChevronDown, MessageCircle, ArrowRight, Clock, Mail } from 'lucide-react';
 import { Section, SectionHeading } from '@/components/solutions/layout/Section';
+import { SALES_EMAIL } from '@/lib/site-contact';
 
 interface FAQ {
   question: string;
@@ -150,7 +151,7 @@ export function FAQSection({ title, subtitle, eyebrow = 'FAQ', faqs }: FAQSectio
                 {/* ✅ Email with proper wrapping and no overflow */}
                 <div className="flex items-start gap-2.5 text-xs text-muted-foreground">
                   <Mail className="h-3.5 w-3.5 flex-shrink-0 mt-0.5" />
-                  <span className="break-all leading-relaxed">sales@clickmastersdigitalmarketing.com</span>
+                  <span className="break-all leading-relaxed">{SALES_EMAIL}</span>
                 </div>
               </div>
             </div>

@@ -206,8 +206,8 @@ export default function TermsConditionsPage() {
               <div className="mt-4 p-6 bg-gray-50 rounded-xl border border-gray-200">
                 <p className="text-gray-700">
                   <strong>Email:</strong>{' '}
-                  <a href="mailto:sales@clickmastersdigitalmarketing.com" className="text-brand hover:underline">
-                    sales@clickmastersdigitalmarketing.com
+                  <a href="mailto:sales@clickmastersaiautomation.com" className="text-brand hover:underline">
+                    sales@clickmastersaiautomation.com
                   </a>
                 </p>
               </div>

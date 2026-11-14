@@ -33,7 +33,7 @@ export default function CTA({
         >
           <Image
             src="/images/robot-mascot2.jpg"
-            alt=""
+            alt="Clickmasters robot mascot"
             width={479}
             height={479}
             sizes="(min-width: 768px) 208px, 96px"

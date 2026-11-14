@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Mail, Phone, ArrowRight } from 'lucide-react';
 import { Gb, Us, Pk } from 'react-flag-icons';
+import { SALES_EMAIL } from '@/lib/site-contact';
 
 export default function Footer() {
   return (
@@ -187,10 +188,10 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Mail className="h-4 w-4 text-brand mt-0.5 flex-shrink-0" />
                 <a 
-                  href="mailto:sales@clickmastersdigitalmarketing.com" 
+                  href={`mailto:${SALES_EMAIL}`} 
                   className="hover:text-brand transition-colors"
                 >
-                  <span className="break-all">sales@clickmastersdigitalmarketing.com</span>
+                  <span className="break-all">{SALES_EMAIL}</span>
                 </a>
               </li>
               <li className="flex items-start gap-3">
