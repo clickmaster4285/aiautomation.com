@@ -35,7 +35,7 @@ export default function Problem({ data, marker }: { data: ProblemData; marker?: 
 
         <Image
           src="/images/robo-side.jpg"
-          alt=""
+          alt="Robot peeking around a wall and waving"
           width={480}
           height={541}
           sizes="144px"

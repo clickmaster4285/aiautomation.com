@@ -55,7 +55,7 @@ export default function FAQ({
             </a>
             <Image
               src="/images/robot-mascot2.jpg"
-              alt=""
+              alt="Clickmasters robot mascot"
               width={479}
               height={479}
               sizes="(min-width: 1280px) 256px, (min-width: 1024px) 224px, (min-width: 768px) 192px, 160px"

@@ -47,7 +47,7 @@ export default function Process({ data, marker }: { data: ProcessData; marker?: 
             >
               <Image
                 src="/images/process.png"
-                alt=""
+                alt="Friendly assistant robot wearing a headset and waving"
                 loading="lazy"
                 width={640}
                 height={640}

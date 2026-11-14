@@ -1,7 +1,13 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
-import { getCaseStudy } from "@/content/case-studies";
+import { getAllSlugs, getCaseStudy } from "@/content/case-studies";
 import { canonicalUrl } from "@/lib/canonical";
+
+// Case studies are static content files, so prerender them at build time
+// instead of rendering on every request. Unknown slugs still render on demand.
+export function generateStaticParams() {
+  return getAllSlugs().map((slug) => ({ slug }));
+}
 
 export async function generateMetadata({
   params,

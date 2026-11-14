@@ -146,7 +146,7 @@ export default function Hero({
           >
             <Image
               src="/images/hero.jpg"
-              alt=""
+              alt="Humanoid AI robot resting its chin on its hand in thought"
               width={800}
               height={800}
               sizes="(min-width: 768px) 400px, 80vw"

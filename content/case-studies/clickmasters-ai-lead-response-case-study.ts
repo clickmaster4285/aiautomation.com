@@ -166,7 +166,7 @@ seo: {
   
   
     hero: {
-    eyebrow: "Case study · Demo build",
+    eyebrow: "Case study",
     h1: "AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds",
     intro: "Clickmasters built an AI receptionist and lead response system for trades and service businesses such as plumbers, electricians and HVAC contractors. It answers the phone when the owner cannot, texts back missed calls, replies to texts and emails within seconds, qualifies the job and books it into the calendar. Emergencies go straight to a person, and every lead lands in one record with the recording, the transcript and a summary.",
     disclaimer: "This is a Clickmasters demo build. It is modelled on a public brief from a founder building lead response automation for small businesses, and tested with two fictional service businesses, an HVAC company and a plumber, and scripted leads.",
