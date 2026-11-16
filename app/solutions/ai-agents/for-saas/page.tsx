@@ -71,7 +71,7 @@ export default function ForSaaSPage() {
                               <AutomationHeroMockup
                                 industry="SaaS Companies"
                                 triggerLabel="New Lead Inquiry"
-                                actionLabels={['Send Product Details', 'Schedule Demo', 'Provide Case Studies']}
+                                actionLabels={['Send Product Details', 'Schedule Meeting', 'Provide Case Studies']}
                                 metricValue="1,200"
                                 metricLabel="leads engaged automatically this week"
                                 submetric="85% improved conversion rate"

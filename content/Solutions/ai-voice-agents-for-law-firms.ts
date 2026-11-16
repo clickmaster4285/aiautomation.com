@@ -22,7 +22,7 @@ export const aiVoiceAgentsForLawFirms: SolutionData = {
   heroSubheading: 'Automation that answers, books, and routes, built for how law firms actually operate.',
   heroBadge: 'AI Voice Agents',
   description:
-    'Clickmasters builds AI Voice Agents for law firms. Automation that answers, books, and routes automatically, built around how a firm in your industry actually operates. Not generic software with your logo on the demo: automation designed for the workflows, tools, and constraints of law firms, delivered as a system your team owns and relies on.',
+    'Clickmasters builds AI Voice Agents for law firms. Automation that answers, books, and routes automatically, built around how a firm in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of law firms, delivered as a system your team owns and relies on.',
   sections: {
     'Why Law Firms Need AI Voice Agents': `Legal work is wrapped in administration: intake, conflict checks, engagement letters, document drafting from repeated patterns, deadline tracking with serious consequences, and clients who want updates. Attorney time is expensive, so every hour spent on administrative work costs twice: once in salary, once in unbilled opportunity. And the stakes make consistency essential: a missed date or dropped intake isn't just inefficiency, it's risk.
 
@@ -68,7 +68,7 @@ We integrate with the systems your firm already runspractice management platform
 
     'What the Return Looks Like': `For law firms, the return shows up as: attorney and staff hours redirected from administration to billable work, prospects captured before they call the next firm, deadlines tracked systematically instead of anxiously, and document production accelerated with professional review retained. On the voice agent side specifically, the headline metric is calls answered and bookings captured that would have been missed.
 
-We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is demonstrated with your own numbers, not our claims.`,
+We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is proven with your own numbers, not our claims.`,
 
     'Why Clickmasters': `**Built for your industry's workflows.** We automate law firms' real processes, not generic approximations.
 

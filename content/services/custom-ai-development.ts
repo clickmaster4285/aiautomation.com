@@ -109,7 +109,7 @@ sections: [
         },
         {
           title: 'Production Hardening',
-          description: 'Error handling, monitoring, logging, and security review — the difference between a demo and a system.',
+          description: 'Error handling, monitoring, logging, and security review — the difference between a prototype and a system.',
         },
         {
           title: 'Documented Hand-Off and Support',
@@ -150,7 +150,7 @@ sections: [
         },
         {
           title: 'Production-Ready',
-          description: 'We build systems that survive contact with reality, not just demos. Error handling, monitoring, and scaling are built in.',
+          description: 'We build systems that survive contact with reality, not just prototypes. Error handling, monitoring, and scaling are built in.',
           icon: 'Rocket',
         },
       ],

@@ -141,14 +141,16 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
           {hero.intro}
         </motion.p>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.25 }}
-          className="text-white/40 italic text-xs md:text-sm mt-4 max-w-xl"
-        >
-          {hero.disclaimer}
-        </motion.p>
+        {hero.disclaimer && (
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.25 }}
+            className="text-white/40 italic text-xs md:text-sm mt-4 max-w-xl"
+          >
+            {hero.disclaimer}
+          </motion.p>
+        )}
       </div>
 
       {/* ── Right: contact form ── */}
@@ -668,7 +670,7 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
               <div className="flex gap-10 my-10">
                 <div className="border-l-2 border-brand pl-4">
                   <div className="display text-4xl">40</div>
-                  <div className="eyebrow text-muted-foreground mt-1">Scripted Scenarios</div>
+                  <div className="eyebrow text-muted-foreground mt-1">Test Scenarios</div>
                 </div>
                 <div className="border-l-2 border-brand pl-4">
                   <div className="display text-4xl">9</div>

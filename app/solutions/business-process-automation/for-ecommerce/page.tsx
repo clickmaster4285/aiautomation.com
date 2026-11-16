@@ -71,7 +71,7 @@ export default function ForEcommercePage() {
           <AutomationHeroMockup
             industry="E-commerce"
             triggerLabel="New Lead Inquiry"
-            actionLabels={['Send Welcome Email', 'Provide Product Demo', 'Close Deal']}
+            actionLabels={['Send Welcome Email', 'Provide Product Walkthrough', 'Close Deal']}
             metricValue="2,000"
             metricLabel="leads converted automatically this month"
             submetric="90% improved conversion rate"

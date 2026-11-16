@@ -22,7 +22,7 @@ export const businessProcessAutomationForEcommerce: SolutionData = {
   heroSubheading: 'Automation that runs, coordinates, and completes, built for how e-commerce stores actually operate.',
   heroBadge: 'Business Process Automation',
   description:
-    'Clickmasters builds Business Process Automation for e-commerce. Automation that runs, coordinates, and completes automatically, built around how a store in your industry actually operates. Not generic software with your logo on the demo: automation designed for the workflows, tools, and constraints of e-commerce, delivered as a system your team owns and relies on.',
+    'Clickmasters builds Business Process Automation for e-commerce. Automation that runs, coordinates, and completes automatically, built around how a store in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of e-commerce, delivered as a system your team owns and relies on.',
   sections: {
     'Why E-commerce Needs Business Process Automation': `E-commerce generates relentless operational volume that scales directly with sales: support tickets about orders and shipping, cart abandonment eating revenue, order exceptions needing attention, review management, and marketing that needs constant feeding. For a lean team, every increase in traffic means more of everything, unless the operational layer runs on automation, which is exactly how small stores punch far above their weight.
 
@@ -68,7 +68,7 @@ We integrate with the systems your store already runsstore platforms like Shopif
 
     'What the Return Looks Like': `For e-commerce, the return shows up as: tickets deflected around the clock, cart revenue recovered automatically, faster responses lifting conversion and reviews, and a store that grows sales without growing operational headcount in lockstep. On the process automation side specifically, the headline metric is end-to-end process time cut and hand-off delays eliminated.
 
-We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is demonstrated with your own numbers, not our claims.`,
+We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is proven with your own numbers, not our claims.`,
 
     'Why Clickmasters': `**Built for your industry's workflows.** We automate e-commerce's real processes, not generic approximations.
 

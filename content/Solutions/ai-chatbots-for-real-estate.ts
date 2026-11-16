@@ -22,7 +22,7 @@ export const aiChatbotsForRealEstate: SolutionData = {
   heroSubheading: 'Automation that answers, qualifies, and books, built for how real estate teams actually operate.',
   heroBadge: 'AI Chatbots',
   description:
-    'Clickmasters builds AI Chatbots for real estate. Automation that answers, qualifies, and books automatically, built around how a team in your industry actually operates. Not generic software with your logo on the demo: automation designed for the workflows, tools, and constraints of real estate, delivered as a system your team owns and relies on.',
+    'Clickmasters builds AI Chatbots for real estate. Automation that answers, qualifies, and books automatically, built around how a team in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of real estate, delivered as a system your team owns and relies on.',
   sections: {
     'Why Real Estate Needs AI Chatbots': `Real estate is decided by speed to lead and consistency of follow-up, and both break down precisely when agents are busiest. The enquiry that arrives during a showing waits hours; the lead that needed six months of nurture goes cold after two weeks of silence; the transaction with a dozen moving deadlines depends on someone remembering everything. The agents who win aren't necessarily better closers; they're the ones whose systems never let a lead or a deadline slip.
 
@@ -68,7 +68,7 @@ We integrate with the systems your team already runsreal estate CRMs, lead sourc
 
     'What the Return Looks Like': `For real estate, the return shows up as: more leads converted from instant response, revenue recovered from long-tail nurture that actually happens, hours reclaimed from scheduling ping-pong, and transactions that close without deadline scares. On the chatbot side specifically, the headline metric is conversations handled and leads captured around the clock.
 
-We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is demonstrated with your own numbers, not our claims.`,
+We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is proven with your own numbers, not our claims.`,
 
     'Why Clickmasters': `**Built for your industry's workflows.** We automate real estate's real processes, not generic approximations.
 

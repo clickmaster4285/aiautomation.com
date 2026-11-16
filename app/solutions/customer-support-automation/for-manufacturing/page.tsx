@@ -71,7 +71,7 @@ export default function ForManufacturingPage() {
           <AutomationHeroMockup
             industry="Manufacturing"
             triggerLabel="New Product Inquiry"
-            actionLabels={['Provide Product Information', 'Schedule Demo', 'Resolve Technical Issues']}
+            actionLabels={['Provide Product Information', 'Schedule Meeting', 'Resolve Technical Issues']}
             metricValue="1000"
             metricLabel="new product inquiries handled automatically each month"
             submetric="90% reduction in response time"

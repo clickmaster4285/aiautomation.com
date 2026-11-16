@@ -22,7 +22,7 @@ export const appointmentBookingAutomationForLogistics: SolutionData = {
   heroSubheading: 'Automation that books, confirms, and reminds, built for how logistics operations actually run.',
   heroBadge: 'Appointment & Booking Automation',
   description:
-    'Clickmasters builds Appointment & Booking Automation for logistics & transportation. Automation that books, confirms, and reminds automatically, built around how a operation in your industry actually operates. Not generic software with your logo on the demo: automation designed for the workflows, tools, and constraints of logistics & transportation, delivered as a system your team owns and relies on.',
+    'Clickmasters builds Appointment & Booking Automation for logistics & transportation. Automation that books, confirms, and reminds automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of logistics & transportation, delivered as a system your team owns and relies on.',
   sections: {
     'Why Logistics & Transportation Need Appointment & Booking Automation': `Logistics runs on coordination: orders, dispatch, tracking, exceptions, proof of delivery, invoicing, a constant flow of time-sensitive information across shippers, carriers, drivers, and customers. Much of it still moves by phone, email, and manual entry, which means status calls interrupt dispatchers, paperwork lags behind freight, and billing waits on documents. Every manual touch adds delay and error to an industry priced on speed and reliability.
 
@@ -68,7 +68,7 @@ We integrate with the systems your operation already runsTMS platforms, tracking
 
     'What the Return Looks Like': `For logistics & transportation, the return shows up as: dispatcher hours reclaimed from status calls, billing accelerated by documents that process themselves, fewer entry errors in orders, and customer communication that builds retention instead of frustration. On the booking automation side specifically, the headline metric is bookings captured after hours and no-show rate reduction.
 
-We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is demonstrated with your own numbers, not our claims.`,
+We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is proven with your own numbers, not our claims.`,
 
     'Why Clickmasters': `**Built for your industry's workflows.** We automate logistics & transportation's real processes, not generic approximations.
 

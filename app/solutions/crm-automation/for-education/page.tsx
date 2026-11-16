@@ -71,7 +71,7 @@ export default function ForEducationPage() {
           <AutomationHeroMockup
             industry="Education"
             triggerLabel="New Student Inquiry"
-            actionLabels={['Qualify Lead', 'Send Informational Email', 'Schedule Demo']}
+            actionLabels={['Qualify Lead', 'Send Informational Email', 'Schedule Meeting']}
             metricValue="300"
             metricLabel="new student inquiries captured automatically each month"
             submetric="90% increase in lead conversion rates"

@@ -169,7 +169,7 @@ export const aiIntegrationServices: ServiceContent = {
       items: [
         {
           title: 'We integrate into your real workflow',
-          description: 'Not a demo the actual systems where your work happens, on the triggers that already run your business.',
+          description: 'Not a prototype: the actual systems where your work happens, on the triggers that already run your business.',
           icon: 'Zap'
         },
         {

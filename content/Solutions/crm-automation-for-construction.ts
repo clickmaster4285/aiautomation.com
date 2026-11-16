@@ -22,7 +22,7 @@ export const crmAutomationForConstruction: SolutionData = {
   heroSubheading: 'Automation that updates, cleans, and routes, built for how construction companies actually operate.',
   heroBadge: 'CRM Automation',
   description:
-    'Clickmasters builds CRM Automation for construction. Automation that updates, cleans, and routes automatically, built around how a company in your industry actually operates. Not generic software with your logo on the demo: automation designed for the workflows, tools, and constraints of construction, delivered as a system your team owns and relies on.',
+    'Clickmasters builds CRM Automation for construction. Automation that updates, cleans, and routes automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of construction, delivered as a system your team owns and relies on.',
   sections: {
     'Why Construction Needs CRM Automation': `Construction companies coordinate crews, subs, suppliers, clients, and paperwork across simultaneous projects, with the office side often running on phone calls, paper, and re-typed data. Bids need fast turnaround, project documents pile up, change orders and invoices need tracking, and clients want updates. The administrative load grows with every project, and it competes directly with the estimating and project management that actually wins and delivers work.
 
@@ -68,7 +68,7 @@ We integrate with the systems your company already runsconstruction management p
 
     'What the Return Looks Like': `For construction, the return shows up as: more bids won from faster response, office hours reclaimed from chasing documents and sending updates, invoicing that keeps pace with the work, and clients who feel informed instead of ignored. On the CRM automation side specifically, the headline metric is CRM accuracy restored and rep admin time eliminated.
 
-We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is demonstrated with your own numbers, not our claims.`,
+We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is proven with your own numbers, not our claims.`,
 
     'Why Clickmasters': `**Built for your industry's workflows.** We automate construction's real processes, not generic approximations.
 

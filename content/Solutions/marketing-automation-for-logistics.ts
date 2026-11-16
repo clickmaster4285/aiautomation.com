@@ -22,7 +22,7 @@ export const marketingAutomationForLogistics: SolutionData = {
   heroSubheading: 'Automation that produces, nurtures, and reports, built for how logistics operations actually run.',
   heroBadge: 'AI Marketing Automation',
   description:
-    'Clickmasters builds AI Marketing Automation for logistics & transportation. Automation that produces, nurtures, and reports automatically, built around how a operation in your industry actually operates. Not generic software with your logo on the demo: automation designed for the workflows, tools, and constraints of logistics & transportation, delivered as a system your team owns and relies on.',
+    'Clickmasters builds AI Marketing Automation for logistics & transportation. Automation that produces, nurtures, and reports automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of logistics & transportation, delivered as a system your team owns and relies on.',
   sections: {
     'Why Logistics & Transportation Need AI Marketing Automation': `Logistics runs on coordination: orders, dispatch, tracking, exceptions, proof of delivery, invoicing, a constant flow of time-sensitive information across shippers, carriers, drivers, and customers. Much of it still moves by phone, email, and manual entry, which means status calls interrupt dispatchers, paperwork lags behind freight, and billing waits on documents. Every manual touch adds delay and error to an industry priced on speed and reliability.
 
@@ -68,7 +68,7 @@ We integrate with the systems your operation already runsTMS platforms, tracking
 
     'What the Return Looks Like': `For logistics & transportation, the return shows up as: dispatcher hours reclaimed from status calls, billing accelerated by documents that process themselves, fewer entry errors in orders, and customer communication that builds retention instead of frustration. On the marketing automation side specifically, the headline metric is content and campaign output multiplied without added headcount.
 
-We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is demonstrated with your own numbers, not our claims.`,
+We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is proven with your own numbers, not our claims.`,
 
     'Why Clickmasters': `**Built for your industry's workflows.** We automate logistics & transportation's real processes, not generic approximations.
 

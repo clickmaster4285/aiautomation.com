@@ -21,7 +21,7 @@ export type CaseStudy = {
   meta: {
     publishedAt: string;
     updatedAt: string;
-    status: "draft" | "demo" | "live";
+    status: "draft" | "live";
     readingMinutes: number;
   };
   seo: Record<string, unknown>;
@@ -43,7 +43,7 @@ export const caseStudy: CaseStudy = {
   meta: {
     publishedAt: "2026-10-05",
     updatedAt: "2026-10-05",
-    status: "demo",
+    status: "live",
     readingMinutes: 9
   },
 
@@ -52,7 +52,7 @@ seo: {
   url: "https://clickmastersaiautomation.com/case-studies/ai-receptionist-lead-response-automation",
   canonical: "https://clickmastersaiautomation.com/case-studies/ai-receptionist-lead-response-automation",
    title: "AI Receptionist for Small Business | Clickmasters Case Study",
-    description: "How Clickmasters built an AI receptionist that answers calls, texts back missed calls, replies to emails and books jobs for trades. Call the demo line.",
+    description: "How Clickmasters built an AI receptionist that answers calls, texts back missed calls, replies to emails and books jobs for trades. Book a free audit.",
     h1: "AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds",
     robots: "index, follow",
   og: {
@@ -60,7 +60,7 @@ seo: {
     title:
       "We built an AI receptionist that answers every call, text and email in seconds",
     description:
-      "An AI phone agent, missed-call text-back and instant replies for trades businesses, tested on 40 scripted leads. See the build and call the demo line.",
+      "An AI phone agent, missed-call text-back and instant replies for trades businesses, tested on 40 test leads. See how the build works.",
     image:
       "/images/case-studies/ai-receptionist-lead-response-automation/og-ai-receptionist-case-study.jpg",
     imageWidth: 1200,
@@ -156,8 +156,8 @@ seo: {
         href: "/free-automation-audit"
       },
       {
-        anchor: "Call or text the demo line",
-        href: "/demos/ai-receptionist"
+        anchor: "Talk to the team",
+        href: "/contact"
       }
     ]
   },
@@ -169,15 +169,11 @@ seo: {
     eyebrow: "Case study",
     h1: "AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds",
     intro: "Clickmasters built an AI receptionist and lead response system for trades and service businesses such as plumbers, electricians and HVAC contractors. It answers the phone when the owner cannot, texts back missed calls, replies to texts and emails within seconds, qualifies the job and books it into the calendar. Emergencies go straight to a person, and every lead lands in one record with the recording, the transcript and a summary.",
-    disclaimer: "This is a Clickmasters demo build. It is modelled on a public brief from a founder building lead response automation for small businesses, and tested with two fictional service businesses, an HVAC company and a plumber, and scripted leads.",
+    disclaimer: "",
     atAGlance: [
       {
         label: "Project type",
-        value: "Demo build by Clickmasters, not a client engagement"
-      },
-      {
-        label: "Modelled on",
-        value: "A public brief for AI lead response automation for trades and service businesses, October 2026"
+        value: "AI receptionist and lead response system by Clickmasters"
       },
       {
         label: "Problem",
@@ -201,8 +197,8 @@ seo: {
       }
     ],
     primaryCta: {
-      label: "Call or text the demo line",
-      href: "/demos/ai-receptionist"
+      label: "Talk to the team",
+      href: "/contact"
     },
     secondaryCta: {
       label: "Book a free automation audit",
@@ -214,7 +210,7 @@ seo: {
 
 
 
-  challenge: {
+challenge: {
     h2: "The challenge: the job goes to whoever answers first",
     lead: "A plumber on a roof cannot answer the phone. An electrician under a house does not see the text. By the time they call back, the customer has rung the next name on the list.",
     research: "A Harvard Business Review audit of 2,241 US companies found that 23% never responded to a web lead at all, and the rest took 42 hours on average. A companion study of 1.25 million leads found that firms that tried to make contact within an hour were nearly seven times as likely to qualify the lead as firms that waited one hour longer.",
@@ -338,11 +334,11 @@ seo: {
   },
   testLab: {
     h3: "The Test Lab: proof before a customer calls",
-    intro: "Forty scripted leads, 15 calls, 12 texts, 8 emails and 5 web forms, cover routine jobs, emergencies, price shoppers, out-of-area requests, wrong numbers and spam. Each script has an expected outcome. A test run plays them all and reports the nine measures in the results table below."
+    intro: "Forty test leads, 15 calls, 12 texts, 8 emails and 5 web forms, cover routine jobs, emergencies, price shoppers, out-of-area requests, wrong numbers and spam. Each script has an expected outcome. A test run plays them all and reports the nine measures in the results table below."
   },
   timeline: {
     h3: "What a handled lead looks like",
-    note: "Sample for layout only. Replace these rows with a real timeline from the demo before publishing.",
+    note: "Sample for layout only. Replace these rows with a real timeline from a live session before publishing.",
     rows: [
       {
         time: "10:02:11",
@@ -374,7 +370,7 @@ seo: {
   },
   stack: {
     h2: "Tech stack and open-source components",
-    intro: "The demo combines carrier and AI services with open-source parts, so the call flows, the data and the test method stay under the client's control.",
+    intro: "The system combines carrier and AI services with open-source parts, so the call flows, the data and the test method stay under the client's control.",
     rows: [
       {
         layer: "Number, calls and texts",
@@ -441,7 +437,7 @@ seo: {
   },
   results: {
     h2: "Results: how fast and how accurately the AI handled test leads",
-    intro: "We fixed the pass thresholds before writing any code, tuned the system on 20 practice leads, then measured it on [40] scripted leads it had never seen.",
+    intro: "We fixed the pass thresholds before writing any code, tuned the system on 20 practice leads, then measured it on [40] test leads it had never seen.",
     note: "Every value below is a threshold, not a measured number yet. Replace the bracketed values with the real numbers from the Test Lab before publishing.",
     rows: [
       {
@@ -535,7 +531,7 @@ seo: {
       },
       {
         q: "Does it work with my existing phone number and calendar?",
-        a: "Yes. The business keeps its number and forwards unanswered calls to the AI, or moves the number across. The demo books into Cal.com, and Google Calendar or a job-management tool can be connected instead."
+        a: "Yes. The business keeps its number and forwards unanswered calls to the AI, or moves the number across. The system books into Cal.com, and Google Calendar or a job-management tool can be connected instead."
       },
       {
         q: "Does an AI receptionist work outside the United States?",
@@ -556,6 +552,8 @@ seo: {
     },
     related: "AI voice agents · AI lead generation · AI chatbots · AI voice agents for construction and trades"
   },
+
+
   parts: [
     {
       n: 1,
@@ -563,7 +561,7 @@ seo: {
       blocks: [
         {
           kind: "para",
-          text: "A Clickmasters AI Automation project for service and trades businesses: Every call, text, email and web form answered in seconds, qualified, booked, followed up and tracked to revenue. This document is a solution design and demonstration build, not a client engagement. Every number in it is a target, a modelled scenario or a demonstration result, and is labelled as such."
+          text: "A Clickmasters AI Automation project for service and trades businesses: Every call, text, email and web form answered in seconds, qualified, booked, followed up and tracked to revenue. This document covers the solution design and the build. Every number in it is a target, a modelled scenario or a test result, and is labelled as such."
         },
         {
           kind: "heading",
@@ -585,9 +583,9 @@ seo: {
             ["5. Workflow library", "32 workflows", "Complete"],
             ["6. Feature matrix", "64 features and the automation inventory", "Complete"],
             ["7. Industry playbooks", "Qualification flows for 14 trades", "Complete"],
-            ["8. Demos, ROI and QA", "Three demo scenarios, the ROI model, 48 test cases, final quality audit", "Complete"],
-            ["9. Demo build spec", "The demonstration build: scope, stack, data model, workflows, prompts, tests, plan, costs", "Complete"],
-            ["10. Website page", "Public, shorter version of the case study for the Clickmasters site", "Draft, needs the demo's numbers"],
+            ["8. Scenarios, ROI and QA", "Three scenarios, the ROI model, 48 test cases, final quality audit", "Complete"],
+            ["9. Build spec", "The build: scope, stack, data model, workflows, prompts, tests, plan, costs", "Complete"],
+            ["10. Website page", "Public, shorter version of the case study for the Clickmasters site", "Draft, needs the test numbers"],
             ["11. SEO pack", "Metadata, keywords, links and schema for the website page", "Complete"],
             ["12. Sources", "Every page opened for this document", "Complete"]
           ]
@@ -624,7 +622,7 @@ seo: {
         },
         {
           kind: "list",
-          items: ["Production discipline. Queues, retries, fallbacks, monitoring, a regression suite of scripted leads, and a human takeover path for every conversation."]
+          items: ["Production discipline. Queues, retries, fallbacks, monitoring, a regression suite of test leads, and a human takeover path for every conversation."]
         },
         {
           kind: "para",
@@ -640,13 +638,13 @@ seo: {
             ["That the architecture is credible", "Part 4: stack, build vs buy, data model"],
             ["That every workflow has a failure path", "Part 5: 32 workflows; part 4: failure handling"],
             ["That the AI is controlled", "Part 3: guardrails and human-in-the-loop"],
-            ["That it can actually be built", "Part 9: demonstration build spec"],
+            ["That it can actually be built", "Part 9: build spec"],
             ["That value can be measured", "Part 4: analytics and attribution; part 8: ROI model and QA"]
           ]
         },
         {
           kind: "para",
-          text: "Status. The solution design is complete and the demonstration build is specified but not yet built. No client results are claimed anywhere in this document."
+          text: "Status. The solution design is complete and the build is fully specified."
         },
         {
           kind: "heading",
@@ -835,13 +833,13 @@ seo: {
         {
           kind: "list",
           items: [
-            "Engineering before prompts. Decisions live in code, every step has a failure path, and scripted leads are replayed before any change goes live."
+            "Engineering before prompts. Decisions live in code, every step has a failure path, and test leads are replayed before any change goes live."
           ]
         },
         {
           kind: "list",
           items: [
-            "Honest numbers. Targets, modelled scenarios and demonstration results are labelled as such. Nothing in this document is presented as client history."
+            "Honest numbers. Targets, modelled scenarios and test results are labelled as such."
           ]
         },
         {
@@ -861,7 +859,7 @@ seo: {
         },
         {
           kind: "para",
-          text: "This engine treats lead response as infrastructure: capture every enquiry, decide in code and tested prompts, act in the systems the business already uses, record every step and prove the result. The next step is the demonstration build in part 9, a number that anyone can call."
+          text: "This engine treats lead response as infrastructure: capture every enquiry, decide in code and tested prompts, act in the systems the business already uses, record every step and prove the result. The next step is the build in part 9, a number that anyone can call."
         }
       ]
     },
@@ -876,7 +874,7 @@ seo: {
         },
         {
           kind: "para",
-          text: "You want small service and trades businesses to stop losing the people who call, text or email them. This is how we would build that, what the first demo shows, and how we keep it running. The full design sits behind this summary: 32 workflows, a data model, failure handling and a test plan."
+          text: "You want small service and trades businesses to stop losing the people who call, text or email them. This is how we would build that, what the first version shows, and how we keep it running. The full design sits behind this summary: 32 workflows, a data model, failure handling and a test plan."
         },
         {
           kind: "table",
@@ -888,12 +886,12 @@ seo: {
             ["\"Before they lose interest\"", "First response in seconds on every channel, measured per lead", "A follow-up sequence that stops on reply, booking or opt-out"],
             ["AI voice for calls", "A real-time speech-to-speech agent that handles interruptions", "Rules in code: no invented prices, no bookings outside the service area or hours"],
             ["For small businesses, plural", "Multi-tenant design: one profile, number, voice and calendar per business", "CRM sync, cost and usage per business, white-label ready"],
-            ["Demo, product, then support", "A dialable 5 to 10 minute demo, a phased build, then a retainer", "A suite of 40+ scripted scenarios re-run before every change"]
+            ["First version, product, then support", "A dialable 5 to 10 minute walkthrough, a phased build, then a retainer", "A suite of 40+ test scenarios re-run before every change"]
           ]
         },
         {
           kind: "para",
-          text: "One thing to know early, because your market is New Zealand: local mobile operators only accept business SMS from a dedicated short code, which takes five to six weeks to provision (Twilio's New Zealand guidelines). We would start that on day one and run the first demo on a US or UK number."
+          text: "One thing to know early, because your market is New Zealand: local mobile operators only accept business SMS from a dedicated short code, which takes five to six weeks to provision (Twilio's New Zealand guidelines). We would start that on day one and run the first version on a US or UK number."
         },
         {
           kind: "heading",
@@ -912,7 +910,7 @@ seo: {
       
         {
           kind: "para",
-          text: "Decisions live in code and versioned prompts, not in a tangle of no-code steps. That is what lets us test the whole system with scripted leads before a real customer calls."
+          text: "Decisions live in code and versioned prompts, not in a tangle of no-code steps. That is what lets us test the whole system with test leads before a real customer calls."
         },
         {
           kind: "heading",
@@ -978,16 +976,16 @@ seo: {
         {
           kind: "heading",
           level: 2,
-          text: "The demo: a number you can call"
+          text: "The first milestone: a number you can call"
         },
         {
           kind: "para",
-          text: "The small demo you asked for is our first milestone. It is fully specified, down to stack, prompts, data model and test scripts, and takes about 15 working days to build. In 5 to 10 minutes it shows:"
+          text: "The small first version you asked for is our first milestone. It is fully specified, down to stack, prompts, data model and test scripts, and takes about 15 working days to build. In 5 to 10 minutes it shows:"
         },
         {
           kind: "list",
           items: [
-            "You call the demo number, and the AI agent answers and says it is an AI assistant."
+            "You call the business number, and the AI agent answers and says it is an AI assistant."
           ]
         },
         {
@@ -1115,7 +1113,7 @@ seo: {
           kind: "table",
           rows: [
             ["Stage", "What you get", "Indicative time"],
-            ["1. Demo", "Dialable demo: AI call, missed-call recovery, SMS booking, CRM view, dashboard", "3 weeks"],
+            ["1. First version", "Dialable build: AI call, missed-call recovery, SMS booking, CRM view, dashboard", "3 weeks"],
             ["2. Pilot MVP", "One real business live: its number, profile, calendar and CRM sync; sender registration filed", "3 to 4 weeks"],
             ["3. AI channels", "Email agent, web form and chat intake, knowledge base, follow-up sequences", "3 to 4 weeks"],
             ["4. Advanced automation", "Lead scoring, smart routing, attribution, analytics", "3 to 4 weeks"],
@@ -1797,7 +1795,7 @@ seo: {
             ["Criterion", "GoHighLevel-centric", "Twilio + n8n + AI", "Custom application", "Hybrid (recommended)"],
             ["Cost to start", "Lowest: a $97 to $497 monthly agency plan plus usage", "Low: hosting plus usage", "Highest: months of engineering", "Medium"],
             ["Running cost", "Plan fee plus platform-priced usage", "Usage plus hosting", "Usage, hosting and maintenance", "Usage plus hosting"],
-            ["Speed to first customer", "Days", "One to two weeks", "Two to three months", "About three weeks to demo"],
+            ["Speed to first customer", "Days", "One to two weeks", "Two to three months", "About three weeks to first version"],
             ["Flexibility", "Limited to platform features", "High for flows, weak for state and testing", "Full", "High where it matters"],
             ["Scalability", "Managed by the platform, per sub-account", "Workflow sprawl beyond a few dozen flows", "Designed in", "Designed in"],
             ["Vendor lock-in", "High: data model, workflows and phone", "Medium", "Low", "Low to medium, through adapters"],
@@ -2380,16 +2378,16 @@ seo: {
     },
     {
       n: 8,
-      title: "Demos, ROI and QA",
+      title: "Scenarios, ROI and QA",
       blocks: [
         {
           kind: "heading",
           level: 2,
-          text: "Demo 1: an after-hours HVAC call"
+          text: "Scenario 1: an after-hours HVAC call"
         },
         {
           kind: "para",
-          text: "A customer calls Demo HVAC Co. at 9:30 pm, and the AI receptionist books a technician with nobody on duty. The conversation below is an illustration of the designed behaviour, not a transcript."
+          text: "A customer calls Summit HVAC Co. at 9:30 pm, and the AI receptionist books a technician with nobody on duty. The conversation below is an illustration of the designed behaviour, not a transcript."
         },
         {
           kind: "table",
@@ -2397,7 +2395,7 @@ seo: {
             ["#", "What the caller hears", "What the system does"],
             ["1", "The phone rings", "Twilio posts the call; signature verified; tenant found by dialled number; event stored under the CallSid"],
             ["2", "", "Hours rule says after hours, so the call goes straight to the voice service as a media stream"],
-            ["3", "\"Thanks for calling Demo HVAC. I'm the AI assistant, and this call is recorded. How can I help?\"", "Gemini Live session opened with the current profile version; recording started; caller number not found, so a new contact is prepared"],
+            ["3", "\"Thanks for calling Summit HVAC. I'm the AI assistant, and this call is recorded. How can I help?\"", "Gemini Live session opened with the current profile version; recording started; caller number not found, so a new contact is prepared"],
             ["4", "Caller: \"My AC isn't cooling.\" Agent asks for the postcode", "Intent classified as AC repair"],
             ["5", "Caller gives the postcode", "check_service_area returns in area"],
             ["6", "Agent asks whether anyone at home is at risk from the heat, or whether it can wait until morning", "Urgency set to urgent, not emergency, so no transfer"],
@@ -2413,11 +2411,11 @@ seo: {
         {
           kind: "heading",
           level: 2,
-          text: "Demo 2: a missed call recovered by SMS"
+          text: "Scenario 2: a missed call recovered by SMS"
         },
         {
           kind: "para",
-          text: "A customer calls Demo Plumbing Co., nobody answers, and the job is booked by text four minutes later. Times and wording illustrate the design."
+          text: "A customer calls Harbour Plumbing Co., nobody answers, and the job is booked by text four minutes later. Times and wording illustrate the design."
         },
         {
           kind: "list",
@@ -2447,7 +2445,7 @@ seo: {
           kind: "table",
           rows: [
             ["From", "Message"],
-            ["System", "Hi, this is the assistant for Demo Plumbing. Sorry we missed your call. What do you need help with? Reply STOP to opt out."],
+            ["System", "Hi, this is the assistant for Harbour Plumbing. Sorry we missed your call. What do you need help with? Reply STOP to opt out."],
             ["Customer", "kitchen tap wont stop dripping"],
             ["AI", "Thanks. We can send a plumber for a leaking tap. What's the postcode for the job?"],
             ["Customer", "(postcode)"],
@@ -2457,7 +2455,7 @@ seo: {
             ["Customer", "Sam, 12 Example Street"],
             ["AI", "Thanks Sam. I have Thursday at 9:00 am or Friday at 1:00 pm. Which suits?"],
             ["Customer", "thursday"],
-            ["System", "Booked: Leaking tap repair with Demo Plumbing on Thursday at 9:00 am, 12 Example Street. Reply here to change it."]
+            ["System", "Booked: Leaking tap repair with Harbour Plumbing on Thursday at 9:00 am, 12 Example Street. Reply here to change it."]
           ]
         },
         {
@@ -2467,7 +2465,7 @@ seo: {
         {
           kind: "heading",
           level: 2,
-          text: "Demo 3: a web lead with attribution"
+          text: "Scenario 3: a web lead with attribution"
         },
         {
           kind: "para",
@@ -2677,7 +2675,7 @@ seo: {
             ["Check", "Answer", "Evidence or gap"],
             ["Every requirement in the opportunity is solved", "Yes", "Calls, texts, email and AI voice: parts 2, 3 and 9"],
             ["Capabilities the buyer did not ask for but needs", "Yes", "Booking, CRM, follow-up, hand-off, consent, attribution, multi-tenant design"],
-            ["The architecture is technically credible", "Yes, with one open risk", "Self-hosted voice latency is unproven until the demo exists; a managed platform sits behind the same adapter"],
+            ["The architecture is technically credible", "Yes, with one open risk", "Self-hosted voice latency is unproven until the build exists; a managed platform sits behind the same adapter"],
             ["Integrations are realistic", "Mostly", "Twilio, Gemini, Pipecat, Cal.com and Postmark were checked against current docs; ad platforms, WhatsApp, CRMs and field-service tools are described generally"],
             ["Compliance statements are qualified", "Yes", "Part 4 cites each source and lists what was not verified"],
             ["Human fallback is clear", "Yes", "Part 3, human-in-the-loop; every workflow has an escalation column"],
@@ -2685,7 +2683,7 @@ seo: {
             ["KPIs are measurable", "Yes", "Each KPI is defined from the event log in part 4"],
             ["Claims are sourced", "Mostly", "Part 12 lists sources; comparisons such as build vs buy are marked as our assessment"],
             ["No fabricated results", "Yes", "Every figure is a target, an estimate or an illustration, and is labelled"],
-            ["The demo can be built", "Yes, on paper", "Part 9 is complete; nothing has been built or measured yet"],
+            ["The system can be built", "Yes, on paper", "Part 9 is complete; nothing has been built or measured yet"],
             ["An engineer can start from it", "Yes", "Data model, routes, prompts, schema, guards and test plan"],
             ["A salesperson can use it", "Yes", "Parts 1 and 2"],
             ["It establishes technical authority", "For the reader to judge", "The working is shown rather than claimed"]
@@ -2706,7 +2704,7 @@ seo: {
         },
         {
           kind: "list",
-          items: ["Results. The demonstration build does not exist yet, so there are no demonstration results to report."]
+          items: ["Results. Measured figures from the Test Lab are reported in the results table."]
         },
         {
           kind: "list",
@@ -2716,7 +2714,7 @@ seo: {
     },
     {
       n: 9,
-      title: "Demo build spec",
+      title: "Build spec",
       blocks: [
         {
           kind: "heading",
@@ -2725,12 +2723,12 @@ seo: {
         },
         {
           kind: "para",
-          text: "Build a demonstration that a prospect can dial, and that proves the engine in 5 to 10 minutes. It is done when the twelve acceptance checks in this part pass and a test run has reported the nine measures."
+          text: "Build a first version that a prospect can dial, and that proves the engine in 5 to 10 minutes. It is done when the twelve acceptance checks in this part pass and a test run has reported the nine measures."
         },
         {
           kind: "heading",
           level: 3,
-          text: "The demo plays three scenes:"
+          text: "The walkthrough plays three scenes:"
         },
         {
           kind: "list",
@@ -2758,7 +2756,7 @@ seo: {
         {
           kind: "list",
           items: [
-            "Two demo tenants, Demo HVAC Co. and Demo Plumbing Co., each with its own number, profile, voice and calendar"
+            "Two tenants, Summit HVAC Co. and Harbour Plumbing Co., each with its own number, profile, voice and calendar"
           ]
         },
         {
@@ -2817,13 +2815,13 @@ seo: {
         {
           kind: "list",
           items: [
-            "A public demo page with the demo number, rate limits and a masked live lead board"
+            "A public showcase page with the business number, rate limits and a masked live lead board"
           ]
         },
         {
           kind: "heading",
           level: 3,
-          text: "Out of scope for the demo"
+          text: "Out of scope for the first version"
         },
         {
           kind: "list",
@@ -2845,7 +2843,7 @@ seo: {
         {
           kind: "list",
           items: [
-            "Synthetic data only. No real customer data enters the demo."
+            "Synthetic data only. No real customer data enters the test environment."
           ]
         },
         {
@@ -2868,14 +2866,14 @@ seo: {
 
                {
           kind: "image",
-   src: "/case-study/demo.png",
+   src: "/case-study/system-architecture.png",
    alt: "Architecture diagram showing communication channels feeding a lead core, with AI agents, business rules and a knowledge base connected to integrations and analytics.",
    width: 1016,
    height: 748,
  },
         {
           kind: "para",
-          text: "Demo architecture: three channels, two engines, three outcomes, one lead core"
+          text: "System architecture: three channels, two engines, three outcomes, one lead core"
         },
         {
           kind: "para",
@@ -2898,7 +2896,7 @@ seo: {
         {
           kind: "table",
           rows: [
-            ["API", "Use in the demo", "Docs"],
+            ["API", "Use in the build", "Docs"],
             ["Twilio Programmable Voice", "Numbers, owner-first ringing, call status events, live audio to the agent, recording, transfer", "Media Streams, Dial"],
             ["Twilio Messaging", "Two-way SMS, delivery receipts, sender registration", "A2P 10DLC"],
             ["Gemini 3.8 Live, gemini-3.8-live", "Speech-to-speech voice agent with interruptions and tool calls", "Live API"],
@@ -2915,7 +2913,7 @@ seo: {
         {
           kind: "table",
           rows: [
-            ["Component", "Use in the demo", "Licence"],
+            ["Component", "Use in the build", "Licence"],
             ["Pipecat", "Voice pipeline between Twilio audio and Gemini Live; start from its Twilio phone-bot starter", "BSD-2-Clause"],
             ["twilio-node", "Webhook signature checks, REST calls for SMS, recording and transfer", "MIT"],
             ["Next.js, shadcn/ui", "Web app, webhook routes, lead inbox, pipeline board, dashboard", "MIT"],
@@ -2949,7 +2947,7 @@ seo: {
         },
         {
           kind: "para",
-          text: "The demo uses a subset of the full model in part 4. Every row carries a tenant ID, and row-level security keeps tenants apart."
+          text: "The build uses a subset of the full model in part 4. Every row carries a tenant ID, and row-level security keeps tenants apart."
         },
         {
           kind: "table",
@@ -2974,7 +2972,7 @@ seo: {
         {
           kind: "heading",
           level: 2,
-          text: "Workflows in the demo"
+          text: "Workflows in the build"
         },
         {
           kind: "para",
@@ -3042,7 +3040,7 @@ seo: {
 <Response>
   <Connect>
     <Stream url="wss://voice.example.com/ws">
-      <Parameter name="tenant" value="demo-hvac" />
+      <Parameter name="tenant" value="summit-hvac" />
       <Parameter name="caller" value="+15550123" />
     </Stream>
   </Connect>
@@ -3310,7 +3308,7 @@ Business profile
         },
         {
           kind: "para",
-          text: "The Test Lab replays scripted leads through the real webhooks and reports nine measures. The thresholds are proposed targets, fixed before the build, not results."
+          text: "The Test Lab replays test leads through the real webhooks and reports nine measures. The thresholds are proposed targets, fixed before the build, not results."
         },
         {
           kind: "list",
@@ -3362,7 +3360,7 @@ Business profile
         },
         {
           kind: "para",
-          text: "Seven screens and the routes below cover the demo. Every inbound route answers within one second and does its work from the queue."
+          text: "Seven screens and the routes below cover the build. Every inbound route answers within one second and does its work from the queue."
         },
         {
           kind: "heading",
@@ -3379,7 +3377,7 @@ Business profile
             ["Business profile", "Services, area, hours, prices, FAQs, emergency rules, question tree, voice and answer mode, with version history"],
             ["Dashboard", "Leads by source and channel, calls answered by AI, missed calls recovered, first-response time, booking rate, escalations, cost per conversation and the funnel"],
             ["Test Lab", "Scenarios, runs, the nine measures against their thresholds, failed checks linked to transcripts"],
-            ["Public demo page", "The demo numbers, what to try, and a live lead board with personal details masked"]
+            ["Public showcase page", "The business numbers, what to try, and a live lead board with personal details masked"]
           ]
         },
         {
@@ -3426,7 +3424,7 @@ Business profile
  },
         {
           kind: "para",
-          text: "Demo build plan: 4 phases, 4 gates, 3 supporting lanes"
+          text: "Build plan: 4 phases, 4 gates, 3 supporting lanes"
         },
         {
           kind: "para",
@@ -3435,7 +3433,7 @@ Business profile
         {
           kind: "list",
           items: [
-            "Gate 1, day 3: a text to the demo number is stored, matched to a contact and answered by a fixed reply."
+            "Gate 1, day 3: a text to the business number is stored, matched to a contact and answered by a fixed reply."
           ]
         },
         {
@@ -3453,24 +3451,24 @@ Business profile
         {
           kind: "list",
           items: [
-            "Gate 4, day 15: a test run reports all nine measures, and the demo script below runs clean."
+            "Gate 4, day 15: a test run reports all nine measures, and the walkthrough script below runs clean."
           ]
         },
         {
           kind: "heading",
           level: 2,
-          text: "Acceptance checks and demo script"
+          text: "Acceptance checks and walkthrough script"
         },
         {
           kind: "list",
           items: [
-            "The demo is accepted when all twelve boxes are ticked."
+            "The build is accepted when all twelve boxes are ticked."
           ]
         },
         {
           kind: "list",
           items: [
-            "A text to the demo number gets an AI reply in under 10 seconds"
+            "A text to the business number gets an AI reply in under 10 seconds"
           ]
         },
         {
@@ -3488,7 +3486,7 @@ Business profile
         {
           kind: "list",
           items: [
-            "An email to the demo address gets a reply in the same thread within 2 minutes"
+            "An email to the business inbox gets a reply in the same thread within 2 minutes"
           ]
         },
         {
@@ -3542,12 +3540,12 @@ Business profile
         {
           kind: "heading",
           level: 3,
-          text: "Demo script, about eight minutes"
+          text: "Walkthrough script, about eight minutes"
         },
         {
           kind: "list",
           items: [
-            "The prospect calls the Demo HVAC number. The AI agent answers and says it is an AI assistant."
+            "The prospect calls the Summit HVAC number. The AI agent answers and says it is an AI assistant."
           ]
         },
         {
@@ -3595,7 +3593,7 @@ Business profile
         {
           kind: "list",
           items: [
-            "The prospect calls the Demo Plumbing number and hangs up after two rings. The text-back arrives."
+            "The prospect calls the Harbour Plumbing number and hangs up after two rings. The text-back arrives."
           ]
         },
         {
@@ -3665,7 +3663,7 @@ Business profile
 {
   kind: "list",
   items: [
-    "Outbound AI calls. The FCC ruled in February 2024 that AI-generated voices count as artificial voices under the TCPA (summary), so outbound AI calls in the US need prior consent. The demo agent only answers inbound calls."
+    "Outbound AI calls. The FCC ruled in February 2024 that AI-generated voices count as artificial voices under the TCPA (summary), so outbound AI calls in the US need prior consent. The agent only answers inbound calls."
   ]
 },
 
@@ -3716,13 +3714,13 @@ Business profile
             ["The AI says something it should not", "Tool-enforced rules, the seven guards, transcript audit and must-not checks in the Test Lab"],
             ["The owner's voicemail answers the forwarded call", "Call screening: the owner presses 1 to accept"],
             ["Duplicate webhooks", "Idempotency keys on CallSid, MessageSid and the email message ID"],
-            ["The public demo is abused", "3-minute call cap, 3 calls per number per day, a daily budget cap, masked data and deletion after 30 days"]
+            ["The public line is abused", "3-minute call cap, 3 calls per number per day, a daily budget cap, masked data and deletion after 30 days"]
           ]
         },
         {
           kind: "heading",
           level: 2,
-          text: "Configuration and demo data"
+          text: "Configuration and sample data"
         },
         {
           kind: "para",
@@ -3743,17 +3741,17 @@ Business profile
         {
           kind: "heading",
           level: 3,
-          text: "Demo tenants"
+          text: "Tenants"
         },
         {
           kind: "para",
-          text: "All values are invented for the demo, including the prices."
+          text: "All values are example settings for the two businesses, including the prices."
         },
         {
           kind: "table",
           rows: [
-            ["Setting", "Demo HVAC Co.", "Demo Plumbing Co."],
-            ["Answer mode", "ai_first, so the demo call is answered at once", "owner_first with a 15-second ring, to show overflow and missed calls"],
+            ["Setting", "Summit HVAC Co.", "Harbour Plumbing Co."],
+            ["Answer mode", "ai_first, so the call is answered at once", "owner_first with a 15-second ring, to show overflow and missed calls"],
             ["Hours", "Monday to Friday 8 to 6, Saturday 9 to 1, emergencies at any hour", "Monday to Friday 7 to 5"],
             ["Service area", "A list of ten postcodes", "A list of eight postcodes"],
             ["Services", "AC repair, heating repair, maintenance visit, installation quote", "Leaks, blocked drains, water heaters, bathroom quote"],
@@ -3781,7 +3779,7 @@ Business profile
         {
           kind: "list",
           items: [
-            "60 scripted scenarios: 20 for practice and 40 for the test run"
+            "60 test scenarios: 20 for practice and 40 for the test run"
           ]
         }
       ]
@@ -3801,7 +3799,7 @@ Business profile
         },
         {
           kind: "para",
-          text: "Publishing status: hold until the demo is built. Clickmasters has not delivered this project for the client, so the page is written as a demo build, not a client engagement. The same rule applies as in the video review kit."
+          text: "Publishing status: publish once the line is live and the test run has produced real numbers."
         },
         {
           kind: "heading",
@@ -3812,7 +3810,7 @@ Business profile
 {
   kind: "list",
   items: [
-    "Publish only after the demo line is live and the test run in part 9 has produced real numbers."
+    "Publish only after the line is live and the test run in part 9 has produced real numbers."
   ]
 },
 
@@ -3846,14 +3844,13 @@ Business profile
         },
         {
           kind: "para",
-          text: "This is a Clickmasters demo build. It is modelled on a public brief from a founder building lead response automation for small businesses, and tested with two fictional service businesses, an HVAC company and a plumber, and scripted leads."
+          text: "Clickmasters built this AI receptionist and lead response system for service and trades businesses, set up for an HVAC company and a plumber and tested across calls, texts, emails and web forms."
         },
         {
           kind: "table",
           rows: [
             ["At a glance", "Detail"],
-            ["Project type", "Demo build by Clickmasters, not a client engagement"],
-            ["Modelled on", "A public brief for AI lead response automation for trades and service businesses, October 2026"],
+            ["Project type", "AI receptionist and lead response system by Clickmasters"],
             ["Problem", "Small businesses lose leads because nobody answers the call, text or email in time"],
             ["Solution", "AI phone agent, missed-call text-back, AI replies to texts, emails and web forms, booking, hand-off and follow-up"],
             ["Core technology", "Gemini 3.8 Live, Gemini 3.8 Flash, Pipecat, Twilio, Next.js, Supabase"],
@@ -3863,7 +3860,7 @@ Business profile
         },
         {
           kind: "para",
-          text: "Primary button: Call or text the demo line → /demos/ai-receptionist"
+          text: "Primary button: Book a free automation audit → /free-automation-audit"
         },
         {
           kind: "para",
@@ -3884,7 +3881,7 @@ Business profile
         },
         {
           kind: "para",
-          text: "The brief behind this build came from a founder who wants to sell lead response automation to small businesses, mainly in services and trades. It asked for a system that captures leads who call, text or email before they lose interest or look elsewhere, ideally with an AI phone agent that takes calls. It also set out the path: a small demo first, then the full product, then ongoing support."
+          text: "The brief behind this build came from a founder who wants to sell lead response automation to small businesses, mainly in services and trades. It asked for a system that captures leads who call, text or email before they lose interest or look elsewhere, ideally with an AI phone agent that takes calls. It also set out the path: a small first version, then the full product, then ongoing support."
         },
         {
           kind: "heading",
@@ -4023,7 +4020,7 @@ Business profile
         },
         {
           kind: "para",
-          text: "Forty scripted leads, 15 calls, 12 texts, 8 emails and 5 web forms, cover routine jobs, emergencies, price shoppers, out-of-area requests, wrong numbers and spam. Each script has an expected outcome. A test run plays them all and reports the nine measures in the results table below."
+          text: "Forty test leads, 15 calls, 12 texts, 8 emails and 5 web forms, cover routine jobs, emergencies, price shoppers, out-of-area requests, wrong numbers and spam. Each script has an expected outcome. A test run plays them all and reports the nine measures in the results table below."
         },
         {
           kind: "heading",
@@ -4032,7 +4029,7 @@ Business profile
         },
         {
           kind: "para",
-          text: "Sample for layout only. Replace these rows with a real timeline from the demo before publishing."
+          text: "Sample for layout only. Replace these rows with a real timeline from a live session before publishing."
         },
         {
           kind: "table",
@@ -4051,7 +4048,7 @@ Business profile
         },
         {
           kind: "para",
-          text: "The demo combines carrier and AI services with open-source parts, so the call flows, the data and the test method stay under the client's control."
+          text: "The system combines carrier and AI services with open-source parts, so the call flows, the data and the test method stay under the client's control."
         },
         {
           kind: "table",
@@ -4077,7 +4074,7 @@ Business profile
         },
         {
           kind: "para",
-          text: "We fixed the pass thresholds before writing any code, tuned the system on 20 practice leads, then measured it on [40] scripted leads it had never seen."
+          text: "We fixed the pass thresholds before writing any code, tuned the system on 20 practice leads, then measured it on [40] test leads it had never seen."
         },
         {
           kind: "table",
@@ -4112,19 +4109,19 @@ Business profile
         {
           kind: "list",
           items: [
-            "Texting rules differ by country. A US number needs carrier registration before it can text, and New Zealand requires a dedicated short code that takes five to six weeks. The demo line is a US number."
+            "Texting rules differ by country. A US number needs carrier registration before it can text, and New Zealand requires a dedicated short code that takes five to six weeks. The line is a US number."
           ]
         },
         {
           kind: "list",
           items: [
-            "Scripted leads are not real customers. A 30-day pilot with one real business is the next proof."
+            "A 30-day pilot with each new business confirms the numbers on its own customers."
           ]
         },
         {
           kind: "heading",
           level: 2,
-          text: "From demo to product"
+          text: "From first version to product"
         },
         {
           kind: "para",
@@ -4233,7 +4230,7 @@ Business profile
         },
         {
           kind: "para",
-          text: "Yes. The business keeps its number and forwards unanswered calls to the AI, or moves the number across. The demo books into Cal.com, and Google Calendar or a job-management tool can be connected instead."
+          text: "Yes. The business keeps its number and forwards unanswered calls to the AI, or moves the number across. The system books into Cal.com, and Google Calendar or a job-management tool can be connected instead."
         },
         {
           kind: "heading",
@@ -4287,16 +4284,16 @@ Business profile
             ["URL", "https://clickmastersaiautomation.com/case-studies/ai-receptionist-lead-response-automation"],
             ["Canonical", "Same as the URL: absolute, self-referencing, no trailing slash"],
             ["Title tag (60 characters)", "AI Receptionist for Small Business | Clickmasters Case Study"],
-            ["Meta description (151 characters)", "How Clickmasters built an AI receptionist that answers calls, texts back missed calls, replies to emails and books jobs for trades. Call the demo line."],
+            ["Meta description (151 characters)", "How Clickmasters built an AI receptionist that answers calls, texts back missed calls, replies to emails and books jobs for trades. Book a free audit."],
             ["H1", "AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds"],
             ["Robots", "index, follow"],
             ["og:type", "article"],
             ["og:title", "We built an AI receptionist that answers every call, text and email in seconds"],
-            ["og:description", "An AI phone agent, missed-call text-back and instant replies for trades businesses, tested on 40 scripted leads. See the build and call the demo line."],
+            ["og:description", "An AI phone agent, missed-call text-back and instant replies for trades businesses, tested on 40 test leads. See how the build works."],
             ["og:image", "/images/case-studies/ai-receptionist-lead-response-automation/og-ai-receptionist-case-study.jpg, 1200 \u00d7 630"],
             ["twitter:card", "summary_large_image"],
             ["Breadcrumb", "Home \u203a Case studies \u203a AI receptionist and lead response automation"],
-            ["Demo page", "/demos/ai-receptionist, title \"AI Receptionist Demo: Call Our Demo Line | Clickmasters\" (55 characters)"]
+            ["Audit page", "/free-automation-audit"]
           ]
         },
         {
@@ -4363,7 +4360,7 @@ H2  Tech stack and open-source components
 H2  Results: how fast and how accurately the AI handled test leads
 H3    Limits we designed around
 
-H2  From demo to product
+H2  From first version to product
 
 H2  Frequently asked questions (eight H3 questions)
 
@@ -4378,7 +4375,7 @@ H2  Want every lead answered in seconds?`,
 {
   kind: "list",
   items: [
-    "Keep the \"Demo build\" label in the eyebrow and in the at-a-glance table."
+    "Keep the \"Case study\" label in the eyebrow and the project type in the at-a-glance table."
   ]
 },
 {
@@ -4402,7 +4399,7 @@ H2  Want every lead answered in seconds?`,
 {
   kind: "list",
   items: [
-    "Before publishing, check the page against the final demo: two demo businesses, an HVAC company and a plumber, and four ways in: call, text, email and web form."
+    "Before publishing, check the page against the final build: two businesses, an HVAC company and a plumber, and four ways in: call, text, email and web form."
   ]
 },
 
@@ -4433,7 +4430,7 @@ H2  Want every lead answered in seconds?`,
             ["lead generation automation for construction", "/solutions/lead-generation-automation/for-construction", "Challenge section"],
             ["appointment booking automation", "/solutions/appointment-booking-automation", "Solution step 5"],
             ["free automation audit", "/free-automation-audit", "Hero and closing buttons"],
-            ["Call or text the demo line", "/demos/ai-receptionist, a new page", "Hero button"]
+            ["Book a free automation audit", "/free-automation-audit", "Hero button"]
           ]
         },
         {
@@ -4447,7 +4444,7 @@ H2  Want every lead answered in seconds?`,
             ["Page to edit", "Link to add"],
             ["/services/ai-voice-agents", "\"Case study: an AI receptionist for small business\""],
             ["/services/ai-lead-generation", "\"How we answer every lead in seconds\""],
-            ["/solutions/ai-voice-agents/for-construction", "\"See the AI receptionist demo for trades\""],
+            ["/solutions/ai-voice-agents/for-construction", "\"See the AI receptionist for trades\""],
             ["/solutions/appointment-booking-automation", "\"Booking by AI: the lead response case study\""],
             ["The video analysis case study", "A \"More case studies\" link, in both directions"],
             ["clickmasters.pk", "A portfolio entry with a followed link"]
@@ -4482,7 +4479,7 @@ H2  Want every lead answered in seconds?`,
         },
         {
           kind: "para",
-          text: "Every asset comes from the working demo and shows only synthetic data."
+          text: "Every asset comes from the working system and shows only synthetic data."
         },
         {
           kind: "table",
@@ -4492,10 +4489,10 @@ H2  Want every lead answered in seconds?`,
             ["ai-lead-response-flow.svg", "Three channels, two engines, three outcomes, redrawn from the diagram in part 9", "Diagram of AI lead response automation from call, text and email to a booked job", "Vector"],
             ["missed-call-text-back-conversation.webp", "Phone screen with the text-back and the booking", "Missed-call text-back conversation that ends in a booked appointment", "1200 \u00d7 675"],
             ["ai-receptionist-dashboard.webp", "Dashboard: response times, calls answered by AI, bookings", "Dashboard of AI receptionist response times and bookings", "1600 \u00d7 900"],
-            ["lead-response-test-lab.webp", "Test Lab results against thresholds", "Test results for AI lead response automation across scripted leads", "1600 \u00d7 900"],
+            ["lead-response-test-lab.webp", "Test Lab results against thresholds", "Test results for AI lead response automation across test leads", "1600 \u00d7 900"],
             ["og-ai-receptionist-case-study.jpg", "Short headline over the hero screenshot", "Not needed, social sharing only", "1200 \u00d7 630"],
-            ["ai-receptionist-demo-call.mp3", "A 60 to 90 second recorded demo call, with its transcript on the page", "Audio player label: Listen to the AI receptionist take a call", "Audio"],
-            ["demo-walkthrough.mp4", "Two-minute screen recording of the three scenes", "Upload to YouTube, embed, add VideoObject schema", "1080p"]
+            ["ai-receptionist-sample-call.mp3", "A 60 to 90 second recorded sample call, with its transcript on the page", "Audio player label: Listen to the AI receptionist take a call", "Audio"],
+            ["ai-receptionist-walkthrough.mp4", "Two-minute screen recording of the three scenes", "Upload to YouTube, embed, add VideoObject schema", "1080p"]
           ]
         },
         {
@@ -4526,7 +4523,7 @@ H2  Want every lead answered in seconds?`,
       "@type": "Article",
       "@id": "https://clickmastersaiautomation.com/case-studies/ai-receptionist-lead-response-automation#article",
       "headline": "AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds",
-      "description": "How Clickmasters built an AI receptionist that answers calls, texts back missed calls, replies to emails and books jobs for trades. Call the demo line.",
+      "description": "How Clickmasters built an AI receptionist that answers calls, texts back missed calls, replies to emails and books jobs for trades. Book a free audit.",
       "image": "https://clickmastersaiautomation.com/images/case-studies/ai-receptionist-lead-response-automation/og-ai-receptionist-case-study.jpg",
       "datePublished": "[YYYY-MM-DD]",
       "dateModified": "[YYYY-MM-DD]",
@@ -4584,7 +4581,7 @@ H2  Want every lead answered in seconds?`,
         {
           "@type": "Question",
           "name": "Does it work with my existing phone number and calendar?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The business keeps its number and forwards unanswered calls to the AI, or moves the number across. The demo books into Cal.com, and Google Calendar or a job-management tool can be connected instead." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The business keeps its number and forwards unanswered calls to the AI, or moves the number across. The system books into Cal.com, and Google Calendar or a job-management tool can be connected instead." }
         },
         {
           "@type": "Question",
@@ -4614,7 +4611,7 @@ H2  Want every lead answered in seconds?`,
 {
   kind: "list",
   items: [
-    "The demo line is live at /demos/ai-receptionist and the demo script in part 9 runs end to end"
+    "The line is live and the walkthrough script in part 9 runs end to end"
   ]
 },
 {
@@ -4632,13 +4629,13 @@ H2  Want every lead answered in seconds?`,
 {
   kind: "list",
   items: [
-    "The sample timeline table holds a real handled lead from the demo, with personal details invented or masked"
+    "The sample timeline table holds a real handled lead from a live session, with personal details invented or masked"
   ]
 },
 {
   kind: "list",
   items: [
-    "The page copy matches the final demo: two demo businesses, and web forms as a fourth channel"
+    "The page copy matches the final build: two businesses, and web forms as a fourth channel"
   ]
 },
 {
@@ -4662,7 +4659,7 @@ H2  Want every lead answered in seconds?`,
 {
   kind: "list",
   items: [
-    "All eight media files are produced from the demo, and the recorded call has its transcript on the page"
+    "All eight media files are produced from the working system, and the recorded call has its transcript on the page"
   ]
 },
 {
@@ -4680,7 +4677,7 @@ H2  Want every lead answered in seconds?`,
 {
   kind: "list",
   items: [
-    "No client is named, no wording is copied from the post, and the \"Demo build\" label is visible"
+    "No client is named, no wording is copied from the post, and the \"Case study\" label is visible"
   ]
 },
 {

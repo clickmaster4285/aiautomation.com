@@ -22,7 +22,7 @@ export const invoiceAutomationForAccountingFirms: SolutionData = {
   heroSubheading: 'Automation that captures, validates, and posts, built for how accounting firms actually operate.',
   heroBadge: 'Invoice & Finance Automation',
   description:
-    'Clickmasters builds Invoice & Finance Automation for accounting firms. Automation that captures, validates, and posts automatically, built around how a firm in your industry actually operates. Not generic software with your logo on the demo: automation designed for the workflows, tools, and constraints of accounting firms, delivered as a system your team owns and relies on.',
+    'Clickmasters builds Invoice & Finance Automation for accounting firms. Automation that captures, validates, and posts automatically, built around how a firm in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of accounting firms, delivered as a system your team owns and relies on.',
   sections: {
     'Why Accounting Firms Need Invoice & Finance Automation': `Accounting firms sell expertise but spend a startling share of their hours on document chasing, data entry, and administrative coordination. Clients send documents late and piecemeal; staff key data from statements and receipts into software; deadlines are tracked in spreadsheets; and every busy season the same bottlenecks return. The work that actually requires an accountant's judgment is a fraction of the hours billed to get there.
 
@@ -68,7 +68,7 @@ We integrate with the systems your firm already runsaccounting platforms like Qu
 
     'What the Return Looks Like': `For accounting firms, the return shows up as: junior-staff hours redirected from data entry to review work, faster turnaround on engagements, fewer errors reaching senior review, deadlines tracked automatically instead of anxiously, and busy-season capacity without busy-season burnout. On the finance automation side specifically, the headline metric is invoices processed hands-free and days cut from the close.
 
-We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is demonstrated with your own numbers, not our claims.`,
+We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is proven with your own numbers, not our claims.`,
 
     'Why Clickmasters': `**Built for your industry's workflows.** We automate accounting firms's real processes, not generic approximations.
 

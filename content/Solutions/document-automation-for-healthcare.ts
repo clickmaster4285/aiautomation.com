@@ -22,7 +22,7 @@ export const documentAutomationForHealthcare: SolutionData = {
   heroSubheading: 'Automation that reads, validates, and files, built for how healthcare practices actually operate.',
   heroBadge: 'Document & Data Automation',
   description:
-    'Clickmasters builds Document & Data Automation for healthcare. Automation that reads, validates, and files automatically, built around how a practice in your industry actually operates. Not generic software with your logo on the demo: automation designed for the workflows, tools, and constraints of healthcare, delivered as a system your team owns and relies on.',
+    'Clickmasters builds Document & Data Automation for healthcare. Automation that reads, validates, and files automatically, built around how a practice in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of healthcare, delivered as a system your team owns and relies on.',
   sections: {
     'Why Healthcare Needs Document & Data Automation': `Healthcare practices carry one of the heaviest administrative loads of any industry. For every hour of patient care, front-office and back-office staff spend hours on scheduling, intake paperwork, insurance verification, reminders, billing follow-up, and records movement between systems that rarely talk to each other. Meanwhile phones go unanswered during patient visits, no-shows leave costly gaps in the schedule, and skilled clinical staff get pulled into clerical work.
 
@@ -68,7 +68,7 @@ We integrate with the systems your practice already runspractice management syst
 
     'What the Return Looks Like': `For healthcare, the return shows up as: fewer missed calls and no-shows (each a direct revenue recovery), front-desk hours reclaimed from phones and paperwork for in-person patient care, faster intake with complete information, and a smoother patient experience from first contact. On the document automation side specifically, the headline metric is documents processed hands-free and entry errors eliminated.
 
-We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is demonstrated with your own numbers, not our claims.`,
+We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is proven with your own numbers, not our claims.`,
 
     'Why Clickmasters': `**Built for your industry's workflows.** We automate healthcare's real processes, not generic approximations.
 

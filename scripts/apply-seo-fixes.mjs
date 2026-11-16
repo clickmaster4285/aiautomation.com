@@ -352,7 +352,7 @@ for (const [file, oldTitle, newTitle, oldDesc, newDesc] of staticMeta) {
 }
 
 const caseTitle = "AI Receptionist for Small Business | Clickmasters Case Study";
-const caseDesc = "How Clickmasters built an AI receptionist that answers calls, texts back missed calls, replies to emails and books jobs for trades. Call the demo line.";
+const caseDesc = "How Clickmasters built an AI receptionist that answers calls, texts back missed calls, replies to emails and books jobs for trades. Call the line.";
 const newCaseTitle = clampTitle("AI Receptionist Case Study for Small Business");
 const newCaseDesc = clampDescription("How Clickmasters built an AI receptionist that answers calls, texts missed calls, replies to email, and books jobs for trades.");
 setLiteral("content/case-studies/clickmasters-ai-lead-response-case-study.ts", caseTitle, newCaseTitle);

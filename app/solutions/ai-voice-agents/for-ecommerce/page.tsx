@@ -71,7 +71,7 @@ export default function ForEcommercePage() {
                               <AutomationHeroMockup
                                 industry="E-commerce"
                                 triggerLabel="New Customer Inquiry"
-                                actionLabels={['Provide Product Information', 'Schedule Demo', 'Send Special Offers']}
+                                actionLabels={['Provide Product Information', 'Schedule Meeting', 'Send Special Offers']}
                                 metricValue="2,000"
                                 metricLabel="customer inquiries handled automatically this week"
                                 submetric="80% improved response time"

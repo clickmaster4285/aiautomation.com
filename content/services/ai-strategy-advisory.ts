@@ -114,7 +114,7 @@ sections: [
       type: 'text',
       heading: 'Who This Is For',
       content: [
-        'Our advisory fits businesses that suspect AI could remove real cost or unlock real capacity but need clarity before committing: SMBs and mid-market companies without in-house AI expertise, operations leaders who\'ve seen automation demos but not roadmaps grounded in their process, and teams that tried a tool or two and got noise instead of results.',
+        'Our advisory fits businesses that suspect AI could remove real cost or unlock real capacity but need clarity before committing: SMBs and mid-market companies without in-house AI expertise, operations leaders who\'ve seen automation pitches but not roadmaps grounded in their process, and teams that tried a tool or two and got noise instead of results.',
         'If you already know exactly what to build, you may not need advisory at all — go straight to our audit and we\'ll scope the build.',
       ],
     },
