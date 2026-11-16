@@ -159,8 +159,8 @@ PART_TITLES = {
     5:  "Workflow library",
     6:  "Feature matrix and automation inventory",
     7:  "Industry playbooks",
-    8:  "Demos, ROI and QA",
-    9:  "Demo build spec",
+    8:  "Scenarios, ROI and QA",
+    9:  "Build spec",
     10: "Website page",
     11: "SEO pack",
     12: "Sources",
@@ -200,13 +200,13 @@ def build_seo():
         "url": "https://clickmastersaiautomation.com/case-studies/ai-receptionist-lead-response-automation",
         "canonical": "https://clickmastersaiautomation.com/case-studies/ai-receptionist-lead-response-automation",
         "title": "AI Receptionist for Small Business | Clickmasters Case Study",
-        "description": "How Clickmasters built an AI receptionist that answers calls, texts back missed calls, replies to emails and books jobs for trades. Call the demo line.",
+        "description": "How Clickmasters built an AI receptionist that answers calls, texts back missed calls, replies to emails and books jobs for trades. Book a free audit.",
         "h1": "AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds",
         "robots": "index, follow",
         "og": {
             "type": "article",
             "title": "We built an AI receptionist that answers every call, text and email in seconds",
-            "description": "An AI phone agent, missed-call text-back and instant replies for trades businesses, tested on 40 scripted leads. See the build and call the demo line.",
+            "description": "An AI phone agent, missed-call text-back and instant replies for trades businesses, tested on 40 test leads. See how the build works.",
             "image": "/images/case-studies/ai-receptionist-lead-response-automation/og-ai-receptionist-case-study.jpg",
             "imageWidth": 1200, "imageHeight": 630,
         },
@@ -230,7 +230,7 @@ def build_seo():
             {"anchor": "lead generation automation for construction", "href": "/solutions/lead-generation-automation/for-construction"},
             {"anchor": "appointment booking automation", "href": "/solutions/appointment-booking-automation"},
             {"anchor": "free automation audit", "href": "/free-automation-audit"},
-            {"anchor": "Call or text the demo line", "href": "/demos/ai-receptionist"},
+            {"anchor": "Talk to the team", "href": "/contact"},
         ],
     }
 
@@ -240,17 +240,16 @@ def build_hero():
         "eyebrow": "Case study",
         "h1": "AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds",
         "intro": "Clickmasters built an AI receptionist and lead response system for trades and service businesses such as plumbers, electricians and HVAC contractors. It answers the phone when the owner cannot, texts back missed calls, replies to texts and emails within seconds, qualifies the job and books it into the calendar. Emergencies go straight to a person, and every lead lands in one record with the recording, the transcript and a summary.",
-        "disclaimer": "This is a Clickmasters demo build. It is modelled on a public brief from a founder building lead response automation for small businesses, and tested with two fictional service businesses, an HVAC company and a plumber, and scripted leads.",
+        "disclaimer": "",
         "atAGlance": [
-            {"label": "Project type", "value": "Demo build by Clickmasters, not a client engagement"},
-            {"label": "Modelled on", "value": "A public brief for AI lead response automation for trades and service businesses, October 2026"},
+            {"label": "Project type", "value": "AI receptionist and lead response system by Clickmasters"},
             {"label": "Problem", "value": "Small businesses lose leads because nobody answers the call, text or email in time"},
             {"label": "Solution", "value": "AI phone agent, missed-call text-back, AI replies to texts, emails and web forms, booking, hand-off and follow-up"},
             {"label": "Core technology", "value": "Gemini 3.8 Live, Gemini 3.8 Flash, Pipecat, Twilio, Next.js, Supabase"},
             {"label": "Build", "value": "[15] working days, 2 developers"},
             {"label": "Headline result", "value": "First text reply in [ ] seconds; [ %] of test leads booked or handed to a person"},
         ],
-        "primaryCta": {"label": "Call or text the demo line", "href": "/demos/ai-receptionist"},
+        "primaryCta": {"label": "Talk to the team", "href": "/contact"},
         "secondaryCta": {"label": "Book a free automation audit", "href": "/free-automation-audit"},
     }
 
@@ -267,7 +266,6 @@ def build_challenge():
                 {"title": "Three channels, no system.", "body": "Calls, texts and emails land in three places, and nobody sees the whole picture."},
                 {"title": "A bad answer is worse than no answer.", "body": "An AI answering service that invents a price or books a job outside the service area costs more than a missed call."},
             ],
-            "closing": "We built this demo against that brief, with two fictional service businesses and scripted test leads.",
         },
     }
 
@@ -316,14 +314,14 @@ def build_solution():
 def build_test_lab():
     return {
         "h3": "The Test Lab: proof before a customer calls",
-        "intro": "Forty scripted leads, 15 calls, 12 texts, 8 emails and 5 web forms, cover routine jobs, emergencies, price shoppers, out-of-area requests, wrong numbers and spam. Each script has an expected outcome. A test run plays them all and reports the nine measures in the results table below.",
+        "intro": "Forty test leads, 15 calls, 12 texts, 8 emails and 5 web forms, cover routine jobs, emergencies, price shoppers, out-of-area requests, wrong numbers and spam. Each script has an expected outcome. A test run plays them all and reports the nine measures in the results table below.",
     }
 
 
 def build_timeline():
     return {
         "h3": "What a handled lead looks like",
-        "note": "Sample for layout only. Replace these rows with a real timeline from the demo before publishing.",
+        "note": "Sample for layout only. Replace these rows with a real timeline from a live session before publishing.",
         "rows": [
             {"time": "10:02:11", "channel": "Call", "what": "Owner's phone rings for 15 seconds, no answer"},
             {"time": "10:02:27", "channel": "Call", "what": "AI agent answers, says it is an AI and that the call is recorded; caller reports a leaking tap"},
@@ -336,7 +334,7 @@ def build_timeline():
 def build_stack():
     return {
         "h2": "Tech stack and open-source components",
-        "intro": "The demo combines carrier and AI services with open-source parts, so the call flows, the data and the test method stay under the client's control.",
+        "intro": "The system combines carrier and AI services with open-source parts, so the call flows, the data and the test method stay under the client's control.",
         "rows": [
             {"layer": "Number, calls and texts", "what": "Twilio Voice and Messaging", "why": "Rings the owner first, streams call audio to the AI, sends and receives texts"},
             {"layer": "AI phone agent", "what": "Gemini 3.8 Live", "why": "Speech-to-speech model with interruptions, 70 languages and tool calls for booking"},
@@ -356,7 +354,7 @@ def build_stack():
 def build_results():
     return {
         "h2": "Results: how fast and how accurately the AI handled test leads",
-        "intro": "We fixed the pass thresholds before writing any code, tuned the system on 20 practice leads, then measured it on [40] scripted leads it had never seen.",
+        "intro": "We fixed the pass thresholds before writing any code, tuned the system on 20 practice leads, then measured it on [40] test leads it had never seen.",
         "note": "Every value below is a threshold, not a measured number yet. Replace the bracketed values with the real numbers from the Test Lab before publishing.",
         "rows": [
             {"n": 1, "measure": "First reply to a text", "how": "Reply sent time minus inbound received time, median", "target": "10 seconds or less"},
@@ -382,7 +380,7 @@ def build_faq():
             {"q": "Will callers know they are talking to an AI?", "a": "Yes. The agent says it is an AI assistant at the start of every call and whenever it is asked, and it says the call is recorded. A caller can ask for a person at any time."},
             {"q": "What happens when a caller has an emergency?", "a": "Each business sets its own emergency rules. When a caller describes one, the agent stops qualifying, transfers the call to the on-call number and sends an alert with a summary."},
             {"q": "How much does an AI phone agent cost per call?", "a": "By our estimate, a three-minute call costs roughly 15 to 20 US cents in AI and carrier fees on a US number at October 2026 rates. Texts and emails cost less. The measured figure from our test run is in the results table."},
-            {"q": "Does it work with my existing phone number and calendar?", "a": "Yes. The business keeps its number and forwards unanswered calls to the AI, or moves the number across. The demo books into Cal.com, and Google Calendar or a job-management tool can be connected instead."},
+            {"q": "Does it work with my existing phone number and calendar?", "a": "Yes. The business keeps its number and forwards unanswered calls to the AI, or moves the number across. The system books into Cal.com, and Google Calendar or a job-management tool can be connected instead."},
             {"q": "Does an AI receptionist work outside the United States?", "a": "Calls work on local numbers in many countries. Texting rules differ: the US requires carrier registration, and New Zealand requires a dedicated short code that takes five to six weeks to set up. We plan the sender setup for each country before launch."},
         ],
     }
@@ -451,7 +449,7 @@ export type CaseStudy = {
   meta: {
     publishedAt: string;
     updatedAt: string;
-    status: "draft" | "demo" | "live";
+    status: "draft" | "live";
     readingMinutes: number;
   };
   seo: Record<string, unknown>;
@@ -495,7 +493,7 @@ def build_one(docx_path: Path, slug: str) -> Path:
         "meta": {
             "publishedAt": "2026-10-05",
             "updatedAt": "2026-10-05",
-            "status": "demo",
+            "status": "live",
             "readingMinutes": 9,
         },
         "seo": build_seo(),

@@ -22,7 +22,7 @@ export const leadGenerationAutomationForRestaurants: SolutionData = {
   heroSubheading: 'Automation that captures, qualifies, and routes, built for how hospitality businesses actually operate.',
   heroBadge: 'Lead Generation Automation',
   description:
-    'Clickmasters builds Lead Generation Automation for restaurants & hospitality. Automation that captures, qualifies, and routes automatically, built around how a business in your industry actually operates. Not generic software with your logo on the demo: automation designed for the workflows, tools, and constraints of restaurants & hospitality, delivered as a system your team owns and relies on.',
+    'Clickmasters builds Lead Generation Automation for restaurants & hospitality. Automation that captures, qualifies, and routes automatically, built around how a business in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of restaurants & hospitality, delivered as a system your team owns and relies on.',
   sections: {
     'Why Restaurants & Hospitality Need Lead Generation Automation': `Restaurants and hospitality businesses run at full speed during service, which is exactly when calls, reservation requests, and questions pour in. Phones ring unanswered during the rush; reservation no-shows leave tables empty; review responses pile up; and marketing to fill slow periods never quite happens. The operational reality is that the people are busy hosting, so the communication layer has to run itself.
 
@@ -68,7 +68,7 @@ We integrate with the systems your business already runsreservation platforms, P
 
     'What the Return Looks Like': `For restaurants & hospitality, the return shows up as: bookings captured during rushes and after hours, no-shows cut by systematic confirmation, reviews responded to consistently, and event inquiries converted while interest is hot. On the lead generation system side specifically, the headline metric is lead response time in seconds and conversion lift from consistency.
 
-We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is demonstrated with your own numbers, not our claims.`,
+We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is proven with your own numbers, not our claims.`,
 
     'Why Clickmasters': `**Built for your industry's workflows.** We automate restaurants & hospitality's real processes, not generic approximations.
 

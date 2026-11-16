@@ -21,7 +21,7 @@ export const aiAgentsForInsurance: SolutionData = {
   heroHeading: 'AI Agent Development for Insurance Agencies',
   heroSubheading: 'Automation that reasons, acts, and completes, built for how insurance agencies actually work.',
   heroBadge: 'AI Agent Development',
-  description: 'Clickmasters builds AI Agent Development for insurance agencies. Automation that reasons, acts, and completes automatically, built around how an agency in your industry actually operates. Not generic software with your logo on the demo: automation designed for the workflows, tools, and constraints of insurance agencies, delivered as a system your team owns and relies on.',
+  description: 'Clickmasters builds AI Agent Development for insurance agencies. Automation that reasons, acts, and completes automatically, built around how an agency in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of insurance agencies, delivered as a system your team owns and relies on.',
   sections: {
     'Why Insurance Agencies Need AI Agent Development': `Insurance agencies run on high-volume, detail-heavy service work: quoting, policy changes, renewals, certificates, claims follow-up, and constant client communication. Much of an agency's day is consumed by repetitive requests. A certificate of insurance, a policy question, a payment issue. Each small, but together they bury CSRs and keep agents from selling. Renewals slip through cracks, follow-up is inconsistent, and growth means hiring more service staff just to keep up.
 
@@ -67,7 +67,7 @@ We integrate with the systems your agency already runs. Agency management system
 
     'What the Return Looks Like': `For insurance agencies, the return shows up as: CSR hours reclaimed from certificates and routine requests, renewals worked consistently instead of leaking, faster quote turnaround winning more business, and service capacity that scales without proportional hiring. On the AI agent side specifically, the headline metric is complete tasks handled end to end without human touches.
 
-We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is demonstrated with your own numbers, not our claims.`,
+We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is proven with your own numbers, not our claims.`,
 
     'Why Clickmasters': `**Built for your industry's workflows.** We automate insurance agencies' real processes, not generic approximations.
 

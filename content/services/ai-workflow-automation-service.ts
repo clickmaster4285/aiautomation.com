@@ -83,7 +83,7 @@ export const aiWorkflowAutomationService: ServiceContent = {
         },
         {
           title: 'Error handling and monitoring',
-          description: 'We build workflows that anticipate failure with retries, alerts, and fallback paths so a hiccup in one connected app does not silently break the entire chain. This is the single biggest difference between an impressive demo and a system you can actually rely on in production, and it is where inexperienced builders cut corners.',
+          description: 'We build workflows that anticipate failure with retries, alerts, and fallback paths so a hiccup in one connected app does not silently break the entire chain. This is the single biggest difference between an impressive prototype and a system you can actually rely on in production, and it is where inexperienced builders cut corners.',
           icon: 'Shield'
         }
       ]
@@ -157,7 +157,7 @@ export const aiWorkflowAutomationService: ServiceContent = {
     {
       type: 'steps',
       heading: 'How We Work',
-      subheading: 'Our process is built to avoid the three ways automation projects usually fail: trying to automate everything at once, building black boxes the client cannot maintain, and producing demos that never survive real use.',
+      subheading: 'Our process is built to avoid the three ways automation projects usually fail: trying to automate everything at once, building black boxes the client cannot maintain, and producing prototypes that never survive real use.',
       items: [
         {
           title: 'Free audit',
@@ -184,7 +184,7 @@ export const aiWorkflowAutomationService: ServiceContent = {
       heading: 'Common Objections, Answered Honestly',
       content: [
         '"Our processes are too unique to automate." Almost every business believes this, and almost every business is wrong about it. The specifics are unique; the underlying shapes capture, enrich, route, follow up, report are nearly universal. Uniqueness usually lives in a few genuine decision points, which is exactly where we keep humans in the loop. The rest automates fine.',
-        '"We tried automation before and it broke." Usually that means it was built without error handling the demo worked, then an app changed or an edge case appeared and the whole thing failed silently. Production-grade workflows are built to expect failure and surface it, which is precisely the part amateur builds skip.',
+        '"We tried automation before and it broke." Usually that means it was built without error handling it worked in testing, then an app changed or an edge case appeared and the whole thing failed silently. Production-grade workflows are built to expect failure and surface it, which is precisely the part amateur builds skip.',
         '"We don\'t have the technical team to maintain it." You do not need one. We hand off documented, transparent workflows, and we offer ongoing management if you would rather not touch them at all. The point is that the choice is yours, not that you are dependent on us.'
       ]
     },

@@ -71,7 +71,7 @@ export default function ForSaaSPage() {
           <AutomationHeroMockup
             industry="SaaS"
             triggerLabel="New Support Request"
-            actionLabels={['Provide Product Information', 'Schedule Demo', 'Resolve Issues']}
+            actionLabels={['Provide Product Information', 'Schedule Meeting', 'Resolve Issues']}
             metricValue="2000"
             metricLabel="new support requests handled automatically each month"
             submetric="75% reduction in response time"

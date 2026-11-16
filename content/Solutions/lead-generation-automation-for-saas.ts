@@ -22,7 +22,7 @@ export const leadGenerationAutomationForSaaS: SolutionData = {
   heroSubheading: 'Automation that captures, qualifies, and routes, built for how SaaS companies actually operate.',
   heroBadge: 'Lead Generation Automation',
   description:
-    'Clickmasters builds Lead Generation Automation for SaaS companies. Automation that captures, qualifies, and routes automatically, built around how a company in your industry actually operates. Not generic software with your logo on the demo: automation designed for the workflows, tools, and constraints of saas companies, delivered as a system your team owns and relies on.',
+    'Clickmasters builds Lead Generation Automation for SaaS companies. Automation that captures, qualifies, and routes automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of saas companies, delivered as a system your team owns and relies on.',
   sections: {
     'Why SaaS Companies Need Lead Generation Automation': `SaaS growth strains everything around the product: support tickets scale with users, onboarding quality drives retention but is impossible to do manually at scale, churn signals hide in usage data nobody has time to watch, and revenue operations grow more complex every quarter. The whole business model depends on scaling revenue faster than headcount, which means the operational layer has to run on automation, not hiring.
 
@@ -68,7 +68,7 @@ We integrate with the systems your company already runssupport platforms like In
 
     'What the Return Looks Like': `For saas companies, the return shows up as: ticket deflection that preserves efficient scaling, activation and retention lift from consistent onboarding, churn caught early enough to act on, and revenue operations that run without manual drag. On the lead generation system side specifically, the headline metric is lead response time in seconds and conversion lift from consistency.
 
-We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is demonstrated with your own numbers, not our claims.`,
+We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is proven with your own numbers, not our claims.`,
 
     'Why Clickmasters': `**Built for your industry's workflows.** We automate saas companies's real processes, not generic approximations.
 

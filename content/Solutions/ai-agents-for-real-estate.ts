@@ -21,7 +21,7 @@ export const aiAgentsForRealEstate: SolutionData = {
   heroHeading: 'AI Agent Development for Real Estate',
   heroSubheading: 'Automation that reasons, acts, and completes, built for how real estate teams actually work.',
   heroBadge: 'AI Agent Development',
-  description: 'Clickmasters builds AI Agent Development for real estate. Automation that reasons, acts, and completes automatically, built around how a team in your industry actually operates. Not generic software with your logo on the demo: automation designed for the workflows, tools, and constraints of real estate, delivered as a system your team owns and relies on.',
+  description: 'Clickmasters builds AI Agent Development for real estate. Automation that reasons, acts, and completes automatically, built around how a team in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of real estate, delivered as a system your team owns and relies on.',
   sections: {
     'Why Real Estate Needs AI Agent Development': `Real estate is decided by speed to lead and consistency of follow-up, and both break down precisely when agents are busiest. The enquiry that arrives during a showing waits hours; the lead that needed six months of nurture goes cold after two weeks of silence; the transaction with a dozen moving deadlines depends on someone remembering everything. The agents who win aren't necessarily better closers; they're the ones whose systems never let a lead or a deadline slip.
 
@@ -67,7 +67,7 @@ We integrate with the systems your team already runsreal estate CRMs, lead sourc
 
     'What the Return Looks Like': `For real estate, the return shows up as: more leads converted from instant response, revenue recovered from long-tail nurture that actually happens, hours reclaimed from scheduling ping-pong, and transactions that close without deadline scares. On the AI agent side specifically, the headline metric is complete tasks handled end to end without human touches.
 
-We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is demonstrated with your own numbers, not our claims.`,
+We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is proven with your own numbers, not our claims.`,
 
     'Why Clickmasters': `**Built for your industry's workflows.** We automate real estate's real processes, not generic approximations.
 

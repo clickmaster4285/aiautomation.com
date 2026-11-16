@@ -22,7 +22,7 @@ export const marketingAutomationForRetail: SolutionData = {
   heroSubheading: 'Automation that produces, nurtures, and reports, built for how retail businesses actually operate.',
   heroBadge: 'AI Marketing Automation',
   description:
-    'Clickmasters builds AI Marketing Automation for retail. Automation that produces, nurtures, and reports automatically, built around how a business in your industry actually operates. Not generic software with your logo on the demo: automation designed for the workflows, tools, and constraints of retail, delivered as a system your team owns and relies on.',
+    'Clickmasters builds AI Marketing Automation for retail. Automation that produces, nurtures, and reports automatically, built around how a business in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of retail, delivered as a system your team owns and relies on.',
   sections: {
     'Why Retail Needs AI Marketing Automation': `Retail operations juggle inventory, suppliers, staff scheduling, customer inquiries, and reporting across locations and channels, usually with thin margins that can't absorb administrative bloat. Stock data lives in one system, sales in another, and the connecting work happens in spreadsheets and re-keying. Meanwhile customer questions arrive across phone, email, and social, and the reporting that should guide buying decisions gets assembled by hand, late.
 
@@ -68,7 +68,7 @@ We integrate with the systems your business already runsPOS and inventory system
 
     'What the Return Looks Like': `For retail, the return shows up as: fewer stockouts and less dead stock, customer questions answered fast across channels, reports that arrive in time to matter, and office hours reclaimed from re-keying. On the marketing automation side specifically, the headline metric is content and campaign output multiplied without added headcount.
 
-We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is demonstrated with your own numbers, not our claims.`,
+We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is proven with your own numbers, not our claims.`,
 
     'Why Clickmasters': `**Built for your industry's workflows.** We automate retail's real processes, not generic approximations.
 

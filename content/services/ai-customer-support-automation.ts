@@ -202,7 +202,7 @@ export const aiCustomerSupportAutomation: ServiceContent = {
         },
         {
           title: 'Expand scope as it proves itself',
-          description: 'As the agent demonstrates accuracy, we extend it to more question types and more action, always keeping clean escalation to humans for anything outside its remit.'
+          description: 'As the agent proves its accuracy, we extend it to more question types and more action, always keeping clean escalation to humans for anything outside its remit.'
         }
       ]
     },

@@ -22,7 +22,7 @@ export const salesAutomationForEducation: SolutionData = {
   heroSubheading: 'Automation that enriches, follows up, and logs, built for how educational institutions actually operate.',
   heroBadge: 'AI Sales Automation',
   description:
-    'Clickmasters builds AI Sales Automation for education. Automation that enriches, follows up, and logs automatically, built around how a institution in your industry actually operates. Not generic software with your logo on the demo: automation designed for the workflows, tools, and constraints of education, delivered as a system your team owns and relies on.',
+    'Clickmasters builds AI Sales Automation for education. Automation that enriches, follows up, and logs automatically, built around how a institution in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of education, delivered as a system your team owns and relies on.',
   sections: {
     'Why Education Needs AI Sales Automation': `Schools, training providers, and education businesses run on enrollment funnels, student communication, scheduling, and reporting, much of it seasonal, repetitive, and manual. Inquiries arrive year-round and need fast, consistent follow-up to convert; enrollment involves document collection and data entry; students and parents ask the same questions constantly; and staff spend evenings on reports and reminders that software should handle.
 
@@ -68,7 +68,7 @@ We integrate with the systems your institution already runsstudent information s
 
     'What the Return Looks Like': `For education, the return shows up as: higher inquiry-to-enrollment conversion from fast consistent follow-up, seasonal crunches absorbed without temp staffing, staff hours reclaimed from repetitive questions, and reporting that assembles itself. On the sales automation side specifically, the headline metric is selling hours recovered per rep per week.
 
-We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is demonstrated with your own numbers, not our claims.`,
+We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is proven with your own numbers, not our claims.`,
 
     'Why Clickmasters': `**Built for your industry's workflows.** We automate education's real processes, not generic approximations.
 

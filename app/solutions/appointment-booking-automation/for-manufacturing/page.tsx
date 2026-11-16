@@ -71,7 +71,7 @@ export default function ForManufacturingPage() {
                                            <AutomationHeroMockup
                                              industry="Manufacturing"
                                              triggerLabel="New Lead"
-                                             actionLabels={['Schedule Demo', 'Provide Quote', 'Submit Request']}
+                                             actionLabels={['Schedule Meeting', 'Provide Quote', 'Submit Request']}
                                              metricValue="2,000"
                                              metricLabel="leads generated automatically this month"
                                              submetric="90% improved conversion rate"

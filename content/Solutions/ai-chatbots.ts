@@ -34,10 +34,10 @@ export const aiChatbots = {
     ],
     'Where to Start: Your First Automation': [
       'Start with the conversation type that produces the most friction today. For most businesses that is either inbound lead qualification (sales) or FAQ handling (support).',
-      'A single well-scoped chatbot — for example, "qualify website visitors and book demos" — produces visible ROI in weeks and becomes the foundation for expanding to support, onboarding, and after-hours coverage.',
+      'A single well-scoped chatbot — for example, "qualify website visitors and book meetings" — produces visible ROI in weeks and becomes the foundation for expanding to support, onboarding, and after-hours coverage.',
     ],
     'A Worked Example': [
-      'A B2B SaaS site gets ~120 demo requests per week but only converts 30% because inquiries sit unanswered for hours. An AI chatbot greets visitors, answers pricing and feature questions, qualifies by company size and use case, books a demo directly into the sales calendar, and syncs the lead to the CRM. Demo-request conversion doubles in the first month, and the sales team only sees leads that meet qualification criteria.',
+      'A B2B SaaS site gets ~120 meeting requests per week but only converts 30% because inquiries sit unanswered for hours. An AI chatbot greets visitors, answers pricing and feature questions, qualifies by company size and use case, books a meeting directly into the sales calendar, and syncs the lead to the CRM. Meeting-request conversion doubles in the first month, and the sales team only sees leads that meet qualification criteria.',
     ],
     "What This Is and Isn't": [
       'This is a conversational automation layer that handles common conversation types, qualifies leads, and routes to humans when needed. It reduces response time, captures more leads, and offloads repetitive support conversations.',

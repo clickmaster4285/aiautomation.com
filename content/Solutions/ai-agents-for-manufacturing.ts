@@ -21,7 +21,7 @@ export const aiAgentsForManufacturing: SolutionData = {
   heroHeading: 'AI Agent Development for Manufacturing',
   heroSubheading: 'Automation that reasons, acts, and completes, built for how manufacturing operations actually work.',
   heroBadge: 'AI Agent Development',
-  description: 'Clickmasters builds AI Agent Development for manufacturing. Automation that reasons, acts, and completes automatically, built around how a operation in your industry actually operates. Not generic software with your logo on the demo: automation designed for the workflows, tools, and constraints of manufacturing, delivered as a system your team owns and relies on.',
+  description: 'Clickmasters builds AI Agent Development for manufacturing. Automation that reasons, acts, and completes automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of manufacturing, delivered as a system your team owns and relies on.',
   sections: {
     'Why Manufacturing Needs AI Agent Development': `Manufacturers live and die by operational efficiency on the floor, yet the office side: order processing, purchasing, inventory updates, shipping coordination, reporting. Often runs on manual re-keying between systems that don't connect. Orders arrive by email and get typed into the ERP; inventory counts live in spreadsheets; production reports are assembled by hand. The result is lag, errors, and office overhead that grows with every increase in volume.
 
@@ -67,7 +67,7 @@ We integrate with the systems your operation already runsERP systems, inventory 
 
     'What the Return Looks Like': `For manufacturing, the return shows up as: order-processing time cut from hours to minutes, fewer entry errors reaching the floor or the invoice, reorder points watched automatically, reports that assemble themselves, and office headcount that doesn't scale linearly with order volume. On the AI agent side specifically, the headline metric is complete tasks handled end to end without human touches.
 
-We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is demonstrated with your own numbers, not our claims.`,
+We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is proven with your own numbers, not our claims.`,
 
     'Why Clickmasters': `**Built for your industry's workflows.** We automate manufacturing's real processes, not generic approximations.
 

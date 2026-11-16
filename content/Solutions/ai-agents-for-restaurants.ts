@@ -21,7 +21,7 @@ export const aiAgentsForRestaurants: SolutionData = {
   heroHeading: 'AI Agent Development for Restaurants & Hospitality',
   heroSubheading: 'Automation that reasons, acts, and completes, built for how restaurants & hospitality businesses actually work.',
   heroBadge: 'AI Agent Development',
-  description: 'Clickmasters builds AI Agent Development for restaurants & hospitality. Automation that reasons, acts, and completes automatically, built around how a business in your industry actually operates. Not generic software with your logo on the demo: automation designed for the workflows, tools, and constraints of restaurants & hospitality, delivered as a system your team owns and relies on.',
+  description: 'Clickmasters builds AI Agent Development for restaurants & hospitality. Automation that reasons, acts, and completes automatically, built around how a business in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of restaurants & hospitality, delivered as a system your team owns and relies on.',
   sections: {
     'Why Restaurants & Hospitality Need AI Agent Development': `Restaurants and hospitality businesses run at full speed during service, which is exactly when calls, reservation requests, and questions pour in. Phones ring unanswered during the rush; reservation no-shows leave tables empty; review responses pile up; and marketing to fill slow periods never quite happens. The operational reality is that the people are busy hosting, so the communication layer has to run itself.
 
@@ -67,7 +67,7 @@ We integrate with the systems your business already runsreservation platforms, P
 
     'What the Return Looks Like': `For restaurants & hospitality, the return shows up as: bookings captured during rushes and after hours, no-shows cut by systematic confirmation, reviews responded to consistently, and event inquiries converted while interest is hot. On the AI agent side specifically, the headline metric is complete tasks handled end to end without human touches.
 
-We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is demonstrated with your own numbers, not our claims.`,
+We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is proven with your own numbers, not our claims.`,
 
     'Why Clickmasters': `**Built for your industry's workflows.** We automate restaurants & hospitality's real processes, not generic approximations.
 

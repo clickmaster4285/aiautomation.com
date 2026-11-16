@@ -70,10 +70,10 @@ export default function ForSaaSPage() {
         visual={
                                            <AutomationHeroMockup
                                              industry="SaaS"
-                                             triggerLabel="New Demo Request"
-                                             actionLabels={['Schedule Demo', 'Send Follow-up', 'Nurture Lead']}
+                                             triggerLabel="New Meeting Request"
+                                             actionLabels={['Schedule Meeting', 'Send Follow-up', 'Nurture Lead']}
                                              metricValue="200"
-                                             metricLabel="demo requests managed automatically this month"
+                                             metricLabel="meeting requests managed automatically this month"
                                              submetric="90% improved conversion rate"
                                              platform="CRM + SaaS Platform"
                                              accent="#3B82F6"

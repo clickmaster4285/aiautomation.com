@@ -71,7 +71,7 @@ export default function ForRetailPage() {
                               <AutomationHeroMockup
                                 industry="Retail"
                                 triggerLabel="New Product Inquiry"
-                                actionLabels={['Provide Product Details', 'Schedule Demo', 'Submit Request']}
+                                actionLabels={['Provide Product Details', 'Schedule Meeting', 'Submit Request']}
                                 metricValue="15,000"
                                 metricLabel="product inquiries handled automatically this week"
                                 submetric="75% improved response time"

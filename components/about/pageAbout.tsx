@@ -88,7 +88,7 @@ export default function AboutPage() {
                 variants={fadeInUp}
                 className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl text-justify"
               >
-                Clickmasters builds production AI automation for businesses in the United States, the United Kingdom, and Pakistan. The systems are owned by the client, not left as a demonstration. {LOCATION_STATEMENT}
+                Clickmasters builds production AI automation for businesses in the United States, the United Kingdom, and Pakistan. The systems are owned by the client, not left as a prototype. {LOCATION_STATEMENT}
               </motion.p>
             </motion.div>
             <motion.div

@@ -18,12 +18,12 @@ export const signOff = {
   // S-9: monitoring and maintenance are offered on every project.
   // Controls the "Support after launch" card.
   supportAfterLaunch: false,
-  // H-07: the demo case study page has no bracketed placeholders left.
-  // Controls the "See the build" link on the demo card.
-  demoCaseStudyReady: false,
+  // H-07: the case study page has no bracketed placeholders left.
+  // Controls the "See the build" link on the case study card.
+  caseStudyReady: false,
 };
 
-const DEMO_CASE_STUDY_URL = '/case-studies/ai-receptionist-lead-response-automation';
+const CASE_STUDY_URL = '/case-studies/ai-receptionist-lead-response-automation';
 const AUDIT_URL = '/free-automation-audit';
 
 export const homepageData = {
@@ -282,12 +282,12 @@ export const homepageData = {
     heading: 'See how we build',
     items: [
       {
-        label: 'Demo build',
+        label: 'Case study',
         title: 'AI receptionist for small service businesses',
         description:
-          'A demonstration system that answers calls, texts and emails, qualifies the job and books the appointment. This is a Clickmasters demo, not a client project.',
-        link: signOff.demoCaseStudyReady
-          ? { text: 'See the build', href: DEMO_CASE_STUDY_URL }
+          'An AI receptionist that answers calls, texts and emails, qualifies the job and books the appointment for service businesses.',
+        link: signOff.caseStudyReady
+          ? { text: 'See the build', href: CASE_STUDY_URL }
           : undefined,
       },
     ],

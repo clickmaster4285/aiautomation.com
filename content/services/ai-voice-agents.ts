@@ -24,7 +24,7 @@ sections: [
       { label: 'AVAILABILITY', value: 'Handle calls 24/7' },
     ],
     ctas: [
-      { text: 'Book a Free AI Voice Agent Demo', link: '/free-automation-audit', primary: true },
+      { text: 'Book a Free AI Voice Agent Consultation', link: '/free-automation-audit', primary: true },
     ],
     image: {
       src: '/images/ai-voice-agent.png',
@@ -311,10 +311,10 @@ sections: [
     // ========== CTA ==========
     {
       type: 'cta',
-      heading: 'Book a Free Demo',
+      heading: 'Book a Free Consultation',
       subheading: 'See how an AI voice agent can handle your calls — 30 minutes, no obligation.',
       cta: {
-        text: 'Book Your Free Demo',
+        text: 'Book Your Free Consultation',
         link: '/free-automation-audit',
         primary: true,
       },
