@@ -32,6 +32,8 @@ interface HeroSectionProps {
     href: string;
   };
   image?: string;
+  /** Descriptive alt text for the hero image. Falls back to the heading. */
+  imageAlt?: string;
   visual?: ReactNode;
   breadcrumb?: Array<{ label: string; href: string }>;
   stats?: Array<{ label: string; value: string }>;
@@ -50,6 +52,7 @@ export function HeroSection({
   primaryCta,
   secondaryCta,
   image,
+  imageAlt,
   visual,
   breadcrumb,
   stats,
@@ -372,7 +375,7 @@ export function HeroSection({
                   <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border bg-white/50 backdrop-blur-sm p-3">
                     <Image
                       src={image}
-                      alt={heading}
+                      alt={imageAlt || heading}
                       width={imageWidth}
                       height={imageHeight}
                       sizes="(min-width: 1024px) 540px, (min-width: 768px) 480px, 92vw"

@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { LIVE_PRODUCT_PATH_LIST } from '@/content/products/routes';
 
 // Get all routes from the app directory
 export function getAllRoutes(): string[] {
@@ -121,8 +122,10 @@ export function getStaticPages(): string[] {
   const existingMainPages = mainPages.filter(route =>
     allRoutes.includes(route) || route === '' || route.startsWith('/case-studies/')
   );
-  
-  return existingMainPages;
+
+  // Product pages come from dynamic routes (app/products/[service]/[slug]),
+  // so they are listed from the single route registry instead of the folder scan.
+  return [...existingMainPages, ...LIVE_PRODUCT_PATH_LIST];
 }
 
 // Get services
