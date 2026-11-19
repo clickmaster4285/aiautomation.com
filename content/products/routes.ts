@@ -28,6 +28,34 @@ export const PRODUCT_ROUTES = {
     'ai-seo-automation-tools',
     'ai-campaign-management-software',
   ],
+  'ai-hr-recruitment': [
+    'ai-recruitment-software',
+    'ai-resume-screening-software',
+    'ai-hr-automation',
+    'ai-interview-scheduling-software',
+    'ai-employee-management-software',
+  ],
+  'ai-workflow-business-process-automation': [
+    'ai-workflow-automation-software',
+    'business-process-automation-software',
+    'ai-task-automation',
+    'intelligent-process-automation',
+    'enterprise-workflow-automation',
+  ],
+  'ai-finance-accounting': [
+    'ai-accounting-automation',
+    'ai-invoice-processing-software',
+    'ai-expense-management-software',
+    'ai-bookkeeping-software',
+    'ai-financial-automation',
+  ],
+  'ai-ecommerce-automation': [
+    'ai-ecommerce-automation-software',
+    'ai-inventory-management-software',
+    'ai-order-processing-automation',
+    'ai-product-recommendation-software',
+    'ai-shopping-assistant',
+  ],
 } as const satisfies Record<string, readonly string[]>;
 
 export type ProductService = keyof typeof PRODUCT_ROUTES;

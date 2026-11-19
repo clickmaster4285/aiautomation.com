@@ -12,6 +12,10 @@ import { PRODUCT_ROUTES, type ProductService, type ProductSlug } from './routes'
 import { aiSalesCrm, aiSalesCrmSeo, aiSalesCrmKeywords } from './ai-sales-crm';
 import { aiCustomerSupport, aiCustomerSupportSeo, aiCustomerSupportKeywords } from './ai-customer-support';
 import { aiMarketingAutomation, aiMarketingAutomationSeo, aiMarketingAutomationKeywords } from './ai-marketing-automation';
+import { aiHrRecruitment, aiHrRecruitmentSeo, aiHrRecruitmentKeywords } from './ai-hr-recruitment';
+import { aiWorkflowBpa, aiWorkflowBpaSeo, aiWorkflowBpaKeywords } from './ai-workflow-business-process-automation';
+import { aiFinanceAccounting, aiFinanceAccountingSeo, aiFinanceAccountingKeywords } from './ai-finance-accounting';
+import { aiEcommerceAutomation, aiEcommerceAutomationSeo, aiEcommerceAutomationKeywords } from './ai-ecommerce-automation';
 
 // ── AI Sales CRM children ──
 import { aiSalesAutomationSoftware, aiSalesAutomationSoftwareSeo, aiSalesAutomationSoftwareKeywords } from './ai-sales-crm/ai-sales-automation-software';
@@ -34,6 +38,34 @@ import { aiSocialMediaAutomation, aiSocialMediaAutomationSeo, aiSocialMediaAutom
 import { aiSeoAutomationTools, aiSeoAutomationToolsSeo, aiSeoAutomationToolsKeywords } from './ai-marketing-automation/ai-seo-automation-tools';
 import { aiCampaignManagementSoftware, aiCampaignManagementSoftwareSeo, aiCampaignManagementSoftwareKeywords } from './ai-marketing-automation/ai-campaign-management-software';
 
+// ── AI HR & Recruitment children ──
+import { aiRecruitmentSoftware, aiRecruitmentSoftwareSeo, aiRecruitmentSoftwareKeywords } from './ai-hr-recruitment/ai-recruitment-software';
+import { aiResumeScreeningSoftware, aiResumeScreeningSoftwareSeo, aiResumeScreeningSoftwareKeywords } from './ai-hr-recruitment/ai-resume-screening-software';
+import { aiHrAutomation, aiHrAutomationSeo, aiHrAutomationKeywords } from './ai-hr-recruitment/ai-hr-automation';
+import { aiInterviewSchedulingSoftware, aiInterviewSchedulingSoftwareSeo, aiInterviewSchedulingSoftwareKeywords } from './ai-hr-recruitment/ai-interview-scheduling-software';
+import { aiEmployeeManagementSoftware, aiEmployeeManagementSoftwareSeo, aiEmployeeManagementSoftwareKeywords } from './ai-hr-recruitment/ai-employee-management-software';
+
+// ── AI Workflow & Business Process Automation children ──
+import { aiWorkflowAutomationSoftware, aiWorkflowAutomationSoftwareSeo, aiWorkflowAutomationSoftwareKeywords } from './ai-workflow-business-process-automation/ai-workflow-automation-software';
+import { businessProcessAutomationSoftware, businessProcessAutomationSoftwareSeo, businessProcessAutomationSoftwareKeywords } from './ai-workflow-business-process-automation/business-process-automation-software';
+import { aiTaskAutomation, aiTaskAutomationSeo, aiTaskAutomationKeywords } from './ai-workflow-business-process-automation/ai-task-automation';
+import { intelligentProcessAutomation, intelligentProcessAutomationSeo, intelligentProcessAutomationKeywords } from './ai-workflow-business-process-automation/intelligent-process-automation';
+import { enterpriseWorkflowAutomation, enterpriseWorkflowAutomationSeo, enterpriseWorkflowAutomationKeywords } from './ai-workflow-business-process-automation/enterprise-workflow-automation';
+
+// ── AI Finance & Accounting children ──
+import { aiAccountingAutomation, aiAccountingAutomationSeo, aiAccountingAutomationKeywords } from './ai-finance-accounting/ai-accounting-automation';
+import { aiInvoiceProcessingSoftware, aiInvoiceProcessingSoftwareSeo, aiInvoiceProcessingSoftwareKeywords } from './ai-finance-accounting/ai-invoice-processing-software';
+import { aiExpenseManagementSoftware, aiExpenseManagementSoftwareSeo, aiExpenseManagementSoftwareKeywords } from './ai-finance-accounting/ai-expense-management-software';
+import { aiBookkeepingSoftware, aiBookkeepingSoftwareSeo, aiBookkeepingSoftwareKeywords } from './ai-finance-accounting/ai-bookkeeping-software';
+import { aiFinancialAutomation, aiFinancialAutomationSeo, aiFinancialAutomationKeywords } from './ai-finance-accounting/ai-financial-automation';
+
+// ── AI E-commerce Automation children ──
+import { aiEcommerceAutomationSoftware, aiEcommerceAutomationSoftwareSeo, aiEcommerceAutomationSoftwareKeywords } from './ai-ecommerce-automation/ai-ecommerce-automation-software';
+import { aiInventoryManagementSoftware, aiInventoryManagementSoftwareSeo, aiInventoryManagementSoftwareKeywords } from './ai-ecommerce-automation/ai-inventory-management-software';
+import { aiOrderProcessingAutomation, aiOrderProcessingAutomationSeo, aiOrderProcessingAutomationKeywords } from './ai-ecommerce-automation/ai-order-processing-automation';
+import { aiProductRecommendationSoftware, aiProductRecommendationSoftwareSeo, aiProductRecommendationSoftwareKeywords } from './ai-ecommerce-automation/ai-product-recommendation-software';
+import { aiShoppingAssistant, aiShoppingAssistantSeo, aiShoppingAssistantKeywords } from './ai-ecommerce-automation/ai-shopping-assistant';
+
 export interface ProductEntry {
   content: ProductPageContent;
   seo: HubSeo;
@@ -51,6 +83,10 @@ export const servicePages: Record<ProductService, ProductEntry> = {
   'ai-sales-crm': entry(aiSalesCrm, aiSalesCrmSeo, aiSalesCrmKeywords),
   'ai-customer-support': entry(aiCustomerSupport, aiCustomerSupportSeo, aiCustomerSupportKeywords),
   'ai-marketing-automation': entry(aiMarketingAutomation, aiMarketingAutomationSeo, aiMarketingAutomationKeywords),
+  'ai-hr-recruitment': entry(aiHrRecruitment, aiHrRecruitmentSeo, aiHrRecruitmentKeywords),
+  'ai-workflow-business-process-automation': entry(aiWorkflowBpa, aiWorkflowBpaSeo, aiWorkflowBpaKeywords),
+  'ai-finance-accounting': entry(aiFinanceAccounting, aiFinanceAccountingSeo, aiFinanceAccountingKeywords),
+  'ai-ecommerce-automation': entry(aiEcommerceAutomation, aiEcommerceAutomationSeo, aiEcommerceAutomationKeywords),
 };
 
 /** /products/[service]/[slug] */
@@ -75,6 +111,34 @@ export const childPages: { [S in ProductService]: Record<ProductSlug<S>, Product
     'ai-social-media-automation': entry(aiSocialMediaAutomation, aiSocialMediaAutomationSeo, aiSocialMediaAutomationKeywords),
     'ai-seo-automation-tools': entry(aiSeoAutomationTools, aiSeoAutomationToolsSeo, aiSeoAutomationToolsKeywords),
     'ai-campaign-management-software': entry(aiCampaignManagementSoftware, aiCampaignManagementSoftwareSeo, aiCampaignManagementSoftwareKeywords),
+  },
+  'ai-hr-recruitment': {
+    'ai-recruitment-software': entry(aiRecruitmentSoftware, aiRecruitmentSoftwareSeo, aiRecruitmentSoftwareKeywords),
+    'ai-resume-screening-software': entry(aiResumeScreeningSoftware, aiResumeScreeningSoftwareSeo, aiResumeScreeningSoftwareKeywords),
+    'ai-hr-automation': entry(aiHrAutomation, aiHrAutomationSeo, aiHrAutomationKeywords),
+    'ai-interview-scheduling-software': entry(aiInterviewSchedulingSoftware, aiInterviewSchedulingSoftwareSeo, aiInterviewSchedulingSoftwareKeywords),
+    'ai-employee-management-software': entry(aiEmployeeManagementSoftware, aiEmployeeManagementSoftwareSeo, aiEmployeeManagementSoftwareKeywords),
+  },
+  'ai-workflow-business-process-automation': {
+    'ai-workflow-automation-software': entry(aiWorkflowAutomationSoftware, aiWorkflowAutomationSoftwareSeo, aiWorkflowAutomationSoftwareKeywords),
+    'business-process-automation-software': entry(businessProcessAutomationSoftware, businessProcessAutomationSoftwareSeo, businessProcessAutomationSoftwareKeywords),
+    'ai-task-automation': entry(aiTaskAutomation, aiTaskAutomationSeo, aiTaskAutomationKeywords),
+    'intelligent-process-automation': entry(intelligentProcessAutomation, intelligentProcessAutomationSeo, intelligentProcessAutomationKeywords),
+    'enterprise-workflow-automation': entry(enterpriseWorkflowAutomation, enterpriseWorkflowAutomationSeo, enterpriseWorkflowAutomationKeywords),
+  },
+  'ai-finance-accounting': {
+    'ai-accounting-automation': entry(aiAccountingAutomation, aiAccountingAutomationSeo, aiAccountingAutomationKeywords),
+    'ai-invoice-processing-software': entry(aiInvoiceProcessingSoftware, aiInvoiceProcessingSoftwareSeo, aiInvoiceProcessingSoftwareKeywords),
+    'ai-expense-management-software': entry(aiExpenseManagementSoftware, aiExpenseManagementSoftwareSeo, aiExpenseManagementSoftwareKeywords),
+    'ai-bookkeeping-software': entry(aiBookkeepingSoftware, aiBookkeepingSoftwareSeo, aiBookkeepingSoftwareKeywords),
+    'ai-financial-automation': entry(aiFinancialAutomation, aiFinancialAutomationSeo, aiFinancialAutomationKeywords),
+  },
+  'ai-ecommerce-automation': {
+    'ai-ecommerce-automation-software': entry(aiEcommerceAutomationSoftware, aiEcommerceAutomationSoftwareSeo, aiEcommerceAutomationSoftwareKeywords),
+    'ai-inventory-management-software': entry(aiInventoryManagementSoftware, aiInventoryManagementSoftwareSeo, aiInventoryManagementSoftwareKeywords),
+    'ai-order-processing-automation': entry(aiOrderProcessingAutomation, aiOrderProcessingAutomationSeo, aiOrderProcessingAutomationKeywords),
+    'ai-product-recommendation-software': entry(aiProductRecommendationSoftware, aiProductRecommendationSoftwareSeo, aiProductRecommendationSoftwareKeywords),
+    'ai-shopping-assistant': entry(aiShoppingAssistant, aiShoppingAssistantSeo, aiShoppingAssistantKeywords),
   },
 };
 

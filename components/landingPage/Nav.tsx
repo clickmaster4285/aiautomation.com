@@ -905,6 +905,18 @@ export default function Nav() {
                         </button>
                         {isOpen && (
                           <div className="ml-13 mb-2 space-y-1 pl-3 border-l border-gray-200">
+                            {category.live && (
+                              <Link
+                                href={category.path}
+                                className="flex items-center gap-1 py-1.5 text-sm font-semibold text-brand hover:underline"
+                                onClick={() => {
+                                  setIsMobileMenuOpen(false);
+                                  setIsMobileProductsOpen(false);
+                                }}
+                              >
+                                {category.title} overview <ArrowRight className="h-3 w-3" />
+                              </Link>
+                            )}
                             {category.products.map((product) =>
                               product.live ? (
                                 <Link
