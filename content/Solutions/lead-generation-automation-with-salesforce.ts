@@ -55,7 +55,7 @@ export const leadGenerationAutomationWithSalesforce: SolutionData = {
       description: 'Sales-ready leads delivered to the right person, briefed, built on Salesforce.',
     },
     {
-      icon: 'Sparkles',
+      icon: 'BrainCircuit',
       title: 'Production-Ready',
       description: 'Staged rollout, documentation, and reliability engineering, built for scale on Salesforce.',
     },

@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import { ArrowRight, Calendar, Clock, User, Tag, Sparkles, BookOpen } from 'lucide-react';
+import { ArrowRight, Calendar, Clock, User, Tag, BrainCircuit, BookOpen } from 'lucide-react';
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { Section } from '@/components/solutions/layout/Section';
 import { BLOG_RESOURCE_LINKS } from '@/lib/internal-links';

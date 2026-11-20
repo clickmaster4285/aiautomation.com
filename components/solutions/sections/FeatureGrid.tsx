@@ -4,7 +4,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import {
-  Brain, Users, Calendar, GitBranch, Shield, Sparkles, Database, Cloud, Zap,
+  Brain, Users, Calendar, GitBranch, Shield, BrainCircuit, Database, Cloud, Zap,
   MessageSquare, Workflow, RefreshCw, Bot, PhoneCall, TrendingUp, Headphones,
   FileText, GitMerge, Layers, Settings, Target, BarChart3, Lightbulb,
   Briefcase, Link2, Award, Layout, CheckCircle, ArrowRight, Phone, PhoneOutgoing,
@@ -13,7 +13,7 @@ import { Section } from '@/components/solutions/layout/Section';
 
 // Legacy icon map for string-based icons (backward compatibility)
 const iconMap: Record<string, any> = {
-  Brain, Users, Calendar, GitBranch, Shield, Sparkles, Database, Cloud, Zap,
+  Brain, Users, Calendar, GitBranch, Shield, BrainCircuit, Database, Cloud, Zap,
   MessageSquare, Workflow, RefreshCw, Bot, PhoneCall, TrendingUp, Headphones,
   FileText, GitMerge, Layers, Settings, Target, BarChart3, Lightbulb,
   Briefcase, Link2, Award, Layout, CheckCircle, ArrowRight, Phone, PhoneOutgoing,
@@ -67,7 +67,7 @@ export function FeatureGrid({
   // Helper to render icon - handles both string and component types
   const renderIcon = (icon: IconType, className: string) => {
     if (typeof icon === 'string') {
-      const IconComponent = iconMap[icon] || Sparkles;
+      const IconComponent = iconMap[icon] || BrainCircuit;
       return <IconComponent className={className} />;
     } else {
       const IconComponent = icon;

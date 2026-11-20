@@ -55,7 +55,7 @@ export const aiWorkflowAutomationWithN8n: SolutionData = {
       description: 'Built to catch failures and alert, not break silently, built on n8n.',
     },
     {
-      icon: 'Sparkles',
+      icon: 'BrainCircuit',
       title: 'Production-Ready',
       description: 'Staged rollout, documentation, and reliability engineering, built for scale on n8n.',
     },

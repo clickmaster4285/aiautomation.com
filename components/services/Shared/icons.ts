@@ -1,6 +1,6 @@
 // components/services/shared/icons.ts
 import {
-  Sparkles,
+  BrainCircuit,
   Zap,
   Shield,
   TrendingUp,
@@ -49,7 +49,7 @@ const iconMap: Record<string, LucideIcon> = {
   Layers,
   Shield,
   TrendingUp,
-  Sparkles,
+  BrainCircuit,
   Brain,
   MessageSquare,
   Phone,
@@ -79,6 +79,6 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 export function getIcon(iconName?: string): LucideIcon {
-  if (!iconName || !iconMap[iconName]) return Sparkles;
+  if (!iconName || !iconMap[iconName]) return BrainCircuit;
   return iconMap[iconName];
 }

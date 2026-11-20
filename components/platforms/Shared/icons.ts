@@ -17,7 +17,7 @@ export const iconMap: Record<string, React.ComponentType<any>> = {
   // Industries
   Home: LucideIcons.Home,
   Heart: LucideIcons.Heart,
-  Sparkles: LucideIcons.Sparkles,
+  BrainCircuit: LucideIcons.BrainCircuit,
   Building: LucideIcons.Building,
   Briefcase: LucideIcons.Briefcase,
   GraduationCap: LucideIcons.GraduationCap,
@@ -40,7 +40,7 @@ export const iconMap: Record<string, React.ComponentType<any>> = {
   ChevronDown: LucideIcons.ChevronDown,
   Menu: LucideIcons.Menu,
   X: LucideIcons.X,
-  Sparkle: LucideIcons.Sparkles, // if used
+  Sparkle: LucideIcons.BrainCircuit, // if used
   Settings: LucideIcons.Settings,
   // ... etc
 };

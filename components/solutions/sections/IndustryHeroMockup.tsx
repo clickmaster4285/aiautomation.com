@@ -1,7 +1,7 @@
 // components/solutions/sections/IndustryHeroMockup.tsx
 'use client';
 
-import { Inbox, Sparkles, Mail, CalendarClock, Database } from 'lucide-react';
+import { Inbox, BrainCircuit, Mail, CalendarClock, Database } from 'lucide-react';
 import type { ComponentType } from 'react';
 
 interface AutomationHeroMockupProps {
@@ -231,7 +231,7 @@ export function AutomationHeroMockup({
                 }}
               >
                 <div style={{ color: '#FFFFFF' }}>
-                  <Sparkles className="w-5 h-5" strokeWidth={1.75} />
+                  <BrainCircuit className="w-5 h-5" strokeWidth={1.75} />
                 </div>
               </div>
             </div>

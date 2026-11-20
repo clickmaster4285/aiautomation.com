@@ -55,7 +55,7 @@ export const aiChatbotsWithZapier: SolutionData = {
       description: 'Complex cases escalated with full context attached built on Zapier.',
     },
     {
-      icon: 'Sparkles',
+      icon: 'BrainCircuit',
       title: 'Production-Ready',
       description: 'Error handling, monitoring, and staged rollout built for reliability on Zapier.',
     },

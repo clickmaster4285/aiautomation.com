@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Bot, Workflow, Database, Shield, BarChart3, Sparkles, Target, Users, Clock } from 'lucide-react';
+import { Bot, Workflow, Database, Shield, BarChart3, BrainCircuit, Target, Users, Clock } from 'lucide-react';
 import { splitBoldItem } from './parseCopy';
 
 interface AutomationSectionProps {
@@ -31,7 +31,7 @@ export function AutomationSection({ title, content }: AutomationSectionProps) {
     'Abandoned cart recovery': Target,
     'Order processing': Workflow,
     'Returns handling': Shield,
-    'Review requests': Sparkles,
+    'Review requests': BrainCircuit,
     'Inquiry response': Target,
     'Application collection': Database,
     'FAQ handling': Users,
@@ -127,7 +127,7 @@ export function AutomationSection({ title, content }: AutomationSectionProps) {
                 const IconKey = Object.keys(iconMap).find(key => 
                   title.toLowerCase().includes(key.toLowerCase())
                 ) as keyof typeof iconMap;
-                const Icon = IconKey ? iconMap[IconKey] : Sparkles;
+                const Icon = IconKey ? iconMap[IconKey] : BrainCircuit;
 
                 return (
                   <motion.div

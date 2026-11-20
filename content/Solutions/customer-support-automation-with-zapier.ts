@@ -55,7 +55,7 @@ export const customerSupportAutomationWithZapier: SolutionData = {
       description: 'Complex cases handed to humans with full history  built on Zapier.',
     },
     {
-      icon: 'Sparkles',
+      icon: 'BrainCircuit',
       title: 'Production-Ready',
       description: 'Staged rollout, documentation, and reliability engineering  built for scale on Zapier.',
     },

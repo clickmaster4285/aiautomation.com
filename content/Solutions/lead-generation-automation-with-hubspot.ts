@@ -55,7 +55,7 @@ export const leadGenerationAutomationWithHubspot: SolutionData = {
       description: 'Sales-ready leads delivered to the right person, briefed, built on HubSpot.',
     },
     {
-      icon: 'Sparkles',
+      icon: 'BrainCircuit',
       title: 'Production-Ready',
       description: 'Staged rollout, documentation, and reliability engineering, built for scale on HubSpot.',
     },

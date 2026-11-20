@@ -38,7 +38,7 @@ import {
   BarChart3,
   Lightbulb,
   Target,
-  Sparkles,
+  BrainCircuit,
   BookOpen,
   Rocket as RocketIcon,
   CheckCircle,
@@ -214,7 +214,7 @@ export default function Nav() {
                   <div className="p-4 max-h-[80vh] overflow-y-auto">
                     {/* Header */}
                     <div className="flex items-center gap-2 px-3 pb-3 border-b border-gray-100">
-                      <Sparkles className="h-4 w-4 text-brand" />
+                      <BrainCircuit className="h-4 w-4 text-brand" />
                       <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.12em]">
                         Our Services
                       </p>
@@ -312,7 +312,7 @@ export default function Nav() {
                   <div className="p-4">
                     {/* Header — same as Services / Solutions */}
                     <div className="flex items-center gap-2 px-3 pb-3 border-b border-gray-100">
-                      <Sparkles className="h-4 w-4 text-brand" />
+                      <BrainCircuit className="h-4 w-4 text-brand" />
                       <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.12em]">
                         AI Products
                       </p>
@@ -474,7 +474,7 @@ export default function Nav() {
                 >
                   <div className="p-4 max-h-[80vh] overflow-y-auto">
                     <div className="flex items-center gap-2 px-3 pb-3 border-b border-gray-100">
-                      <Sparkles className="h-4 w-4 text-brand" />
+                      <BrainCircuit className="h-4 w-4 text-brand" />
                       <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.12em]">
                         AI Automation Solutions
                       </p>
@@ -485,7 +485,7 @@ export default function Nav() {
 
                     <div className="grid grid-cols-3 gap-2 pt-3">
                       {solutionsData.map((solution, idx) => {
-                        const Icon = solution.icon || Sparkles;
+                        const Icon = solution.icon || BrainCircuit;
                         return (
                           <Link
                             key={idx}
@@ -728,7 +728,7 @@ export default function Nav() {
                 >
                   <div className="p-4 max-h-[80vh] overflow-y-auto">
                     <div className="flex items-center gap-2 px-3 pb-3 border-b border-gray-100">
-                      <Sparkles className="h-4 w-4 text-brand" />
+                      <BrainCircuit className="h-4 w-4 text-brand" />
                       <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.12em]">
                         Case Studies
                       </p>
@@ -739,7 +739,7 @@ export default function Nav() {
 
                     <div className="grid grid-cols-2 gap-2 pt-3">
                       {caseStudiesData.map((study, idx) => {
-                        const Icon = study.icon || Sparkles;
+                        const Icon = study.icon || BrainCircuit;
                         return (
                           <motion.div
                             key={study.slug}
@@ -958,13 +958,13 @@ export default function Nav() {
               {isMobileSolutionsOpen && (
                 <div className="mt-2 pl-4 space-y-2 border-l border-gray-200">
                   <div className="flex items-center gap-2 mb-1">
-                    <Sparkles className="h-4 w-4 text-brand" />
+                    <BrainCircuit className="h-4 w-4 text-brand" />
                     <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
                       AI Automation Solutions
                     </p>
                   </div>
                   {solutionsData.map((solution, idx) => {
-                    const Icon = solution.icon || Sparkles;
+                    const Icon = solution.icon || BrainCircuit;
                     return (
                       <Link
                         key={idx}
@@ -1114,13 +1114,13 @@ export default function Nav() {
               {isMobileCaseStudiesOpen && (
                 <div className="mt-2 pl-4 space-y-2 border-l border-gray-200">
                   <div className="flex items-center gap-2 mb-1">
-                    <Sparkles className="h-4 w-4 text-brand" />
+                    <BrainCircuit className="h-4 w-4 text-brand" />
                     <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
                       Case Studies
                     </p>
                   </div>
                   {caseStudiesData.map((study, idx) => {
-                    const Icon = study.icon || Sparkles;
+                    const Icon = study.icon || BrainCircuit;
                     return (
                       <Link
                         key={idx}

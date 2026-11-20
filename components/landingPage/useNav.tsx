@@ -41,7 +41,7 @@ import {
   BarChart3,
   Lightbulb,
   Target,
-  Sparkles,
+  BrainCircuit,
   BookOpen,
   Rocket as RocketIcon,
   CheckCircle,
@@ -262,7 +262,7 @@ const productCategoryIconMap: Record<string, React.ElementType> = {
   'ai-document-data-intelligence': FileText,
   'ai-agents-platforms': Bot,
   'industry-specific-ai-automation': Building2,
-  'general-ai-automation': Sparkles,
+  'general-ai-automation': BrainCircuit,
 };
 
 // ── All services, flat list (subpages shown directly in the navbar — no category grouping) ──
@@ -424,7 +424,7 @@ export function useNav() {
   const activeProductCategoryData = productCategories[activeProductCategory] ?? productCategories[0];
 
   const getProductCategoryIcon = (slug: string, className = 'h-4 w-4') => {
-    const Icon = productCategoryIconMap[slug] || Sparkles;
+    const Icon = productCategoryIconMap[slug] || BrainCircuit;
     return <Icon className={className} />;
   };
 
@@ -470,7 +470,7 @@ export function useNav() {
 
   const getSolutionIcon = (title: string) => {
     const solution = solutionsData.find(s => s.title === title);
-    const Icon = solution?.icon || Sparkles;
+    const Icon = solution?.icon || BrainCircuit;
     return <Icon className="h-4 w-4 text-brand flex-shrink-0" />;
   };
 

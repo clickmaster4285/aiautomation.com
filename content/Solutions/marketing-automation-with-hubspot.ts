@@ -55,7 +55,7 @@ export const marketingAutomationWithHubspot: SolutionData = {
       description: 'Performance dashboards that build themselves, built on HubSpot.',
     },
     {
-      icon: 'Sparkles',
+      icon: 'BrainCircuit',
       title: 'Production-Ready',
       description: 'Staged rollout, documentation, and reliability engineering, built for scale on HubSpot.',
     },

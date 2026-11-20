@@ -104,7 +104,7 @@ We start with a free audit that identifies your highest-return workflow, automat
       description: 'Full visibility into what the agent did and why.',
     },
     {
-      icon: 'Sparkles',
+      icon: 'BrainCircuit',
       title: 'Production-Ready',
       description: 'Staged rollout, documentation, and reliability engineering.',
     },

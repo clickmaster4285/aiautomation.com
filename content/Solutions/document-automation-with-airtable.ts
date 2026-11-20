@@ -55,7 +55,7 @@ export const documentAutomationWithAirtable: SolutionData = {
       description: 'Data cleaned and transformed at scale, built on Airtable.',
     },
     {
-      icon: 'Sparkles',
+      icon: 'BrainCircuit',
       title: 'Production-Ready',
       description: 'Staged rollout, documentation, and reliability engineering, built for scale on Airtable.',
     },

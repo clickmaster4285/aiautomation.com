@@ -105,7 +105,7 @@ We start with a free audit that identifies your highest-return workflow, automat
       description: 'Errors caught and flagged instead of propagating.',
     },
     {
-      icon: 'Sparkles',
+      icon: 'BrainCircuit',
       title: 'Production-Ready',
       description: 'Staged rollout, documentation, and reliability engineering.',
     },

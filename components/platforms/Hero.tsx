@@ -3,7 +3,7 @@
 import { motion, Variants } from 'framer-motion';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Sparkles, CheckCircle } from 'lucide-react';
+import { ArrowRight, BrainCircuit, CheckCircle } from 'lucide-react';
 import type { Section } from '@/content/type';
 
 interface HeroProps {
@@ -98,7 +98,7 @@ export default function Hero({ section, form }: HeroProps) {
               variants={wordVariants}
               className="inline-flex items-center gap-2 rounded-full border border-brand/30 bg-brand/10 px-4 py-2 text-sm text-brand backdrop-blur-sm mb-6"
             >
-              <Sparkles className="h-4 w-4" />
+              <BrainCircuit className="h-4 w-4" />
               <span>AI Automation</span>
               <span className="h-1 w-1 rounded-full bg-brand" />
               <span className="text-brand/70 animate-pulse">INDUSTRIES</span>
