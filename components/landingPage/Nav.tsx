@@ -1,10 +1,9 @@
-// components/Nav.tsx
+// components/landingPage/Nav.tsx
+// UI ONLY — markup and styling. All logic/data comes from useNav.tsx.
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import {
   ChevronDown,
@@ -39,7 +38,7 @@ import {
   BarChart3,
   Lightbulb,
   Target,
-  Sparkles,
+  BrainCircuit,
   BookOpen,
   Rocket as RocketIcon,
   CheckCircle,
@@ -56,384 +55,111 @@ import {
   IndustryCategory,
   IndustryItem,
 } from '@/content/services/index';
+import { useNav, solutionsData, caseStudiesData, servicesList, productCategories, PRODUCTS_PATH } from './useNav';
 
-// ── Service icons by title (for right panel) ──
-const serviceIconMap: Record<string, React.ElementType> = {
-  // Core Automation
-  'AI Workflow Automation': Workflow,
-  'Business Process Automation': RefreshCw,
-  'Robotic Process Automation (RPA)': Bot,
-  'AI Reporting Automation': BarChart3,
+/** Renders a Link only when the target page exists; otherwise the same element without navigation. */
+function MaybeLink({
+  live,
+  href,
+  className,
+  children,
+  onClick,
+  onMouseEnter,
+  onFocus,
+}: {
+  live: boolean;
+  href: string;
+  className: string;
+  children: React.ReactNode;
+  onClick?: () => void;
+  onMouseEnter?: () => void;
+  onFocus?: () => void;
+}) {
+  if (live) {
+    return (
+      <Link href={href} className={className} onClick={onClick} onMouseEnter={onMouseEnter} onFocus={onFocus}>
+        {children}
+      </Link>
+    );
+  }
+  return (
+    <div className={className} onMouseEnter={onMouseEnter} onFocus={onFocus} tabIndex={0} aria-disabled="true">
+      {children}
+    </div>
+  );
+}
 
-  // AI Agents & Assistants
-  'AI Agent Development': Brain,
-  'AI Chatbots': MessageSquare,
-  'AI Voice Agents': PhoneCall,
-  'AI Knowledge Assistants': Brain,
-  'AI Lead Generation': Target,
-
-  // AI Strategy & Development
-  'AI Strategy & Advisory': Lightbulb,
-  'Custom AI Development': Briefcase,
-};
-
-// ── Platform icons ──
-const platformIconMap: Record<string, React.ElementType> = {
-  'Zapier': Zap,
-  'Make (Integromat)': Workflow,
-  'n8n': GitBranch,
-  'HubSpot': Mail,
-  'GoHighLevel': Rocket,
-  'Airtable': Database,
-  'Salesforce': Cloud,
-};
-
-// ── Industry icons ──
-const industryIconMap: Record<string, React.ElementType> = {
-  'Finance & Accounting': DollarSign,
-  'Healthcare': Heart,
-  'Law Firms': Scale,
-  'E-commerce': ShoppingBag,
-  'SaaS': Cloud,
-   'Real Estate': Briefcase,
-};
-
-
-const CaseStudiesIconMap: Record<string, React.ElementType> = {
-  'AI Lead Response & Revenue Recovery': DollarSign,
-  'Healthcare': Heart,
-  'Law Firms': Scale,
-  'E-commerce': ShoppingBag,
-  'SaaS': Cloud,
-};
-
-// ── Solutions data ──
-// Solution hubs live at /solutions/<slug>. Service pages stay at /services/<slug>.
-const solutionsData = [
-  {
-    title: 'AI Workflow Automation',
-    slug: 'ai-workflow-automation',
-    description: 'Connect your apps and run multi-step work without manual hand-offs.',
-    icon: Workflow,
-  },
-  {
-    title: 'AI Chatbots',
-    slug: 'ai-chatbots',
-    description: 'Answer, qualify, and book from the channels your customers already use.',
-    icon: MessageSquare,
-  },
-  {
-    title: 'AI Voice Agents',
-    slug: 'ai-voice-agents',
-    description: 'Answer and place calls when the team cannot pick up.',
-    icon: PhoneCall,
-  },
-  {
-    title: 'AI Agents',
-    slug: 'ai-agents',
-    description: 'Agents that look up, draft, send, and log inside your systems.',
-    icon: Brain,
-  },
-  {
-    title: 'Business Process Automation',
-    slug: 'business-process-automation',
-    description: 'Run a whole repeatable process, including the hand-offs.',
-    icon: RefreshCw,
-  },
-  {
-    title: 'Lead Generation Automation',
-    slug: 'lead-generation-automation',
-    description: 'Capture, qualify, and route new leads without a manual queue.',
-    icon: Target,
-  },
-  {
-    title: 'Reporting Automation',
-    slug: 'reporting-automation',
-    description: 'Assemble the recurring reports from live data on a schedule.',
-    icon: BarChart3,
-  },
-  {
-    title: 'Appointment & Booking Automation',
-    slug: 'appointment-booking-automation',
-    description: 'Automation that books, confirms, and remindsnever miss a booking again.',
-    icon: Calendar,
-  },
-  
-  {
-    title: 'CRM Automation',
-    slug: 'crm-automation',
-    description: 'Keep your CRM accurate and active without manual data entry.',
-    icon: Database,
-  },
-  {
-    title: 'Document & Data Automation',
-    slug: 'document-automation',
-    description: 'Extract, validate, and route data from documents automatically.',
-    icon: FileText,
-  },
-  {
-    title: 'Invoice & Finance Automation',
-    slug: 'invoice-automation',
-    description: 'Capture, validate, and post invoices automaticallycut days from the close.',
-    icon: Receipt,
-  },
- 
-  {
-    title: 'Customer Support Automation',
-    slug: 'customer-support-automation',
-    description: 'AI agents that resolve tickets and escalate complex cases.',
-    icon: Headphones,
-  },
-  {
-    title: 'Marketing Automation',
-    slug: 'marketing-automation',
-    description: 'AI-driven content, nurture sequences, and campaign management.',
-    icon: TrendingUp,
-  },
-  
-  {
-    title: 'Sales Automation',
-    slug: 'sales-automation',
-    description: 'Enrich, follow up, and log automatically so reps can sell.',
-    icon: Briefcase,
-  },
- 
-];
-
-// ── Case Studies data ──
-const caseStudiesData = [
-  {
-    title: 'AI Lead Response & Revenue Recovery',
-    slug: 'ai-receptionist-lead-response-automation',
-    description: 'How automated lead response recovered lost revenue for a B2B services firm.',
-    icon: DollarSign,
-  },
-  // {
-  //   title: 'Invoice Processing Automation',
-  //   slug: 'invoice-processing-automation',
-  //   description: 'Cut AP processing time from days to hours with AI invoice extraction.',
-  //   icon: Receipt,
-  // },
-  // {
-  //   title: 'Customer Support AI Agent',
-  //   slug: 'customer-support-ai-agent',
-  //   description: 'Resolved 70% of routine tickets automatically with RAG-based AI.',
-  //   icon: Headphones,
-  // },
-  // {
-  //   title: 'CRM Data Hygiene at Scale',
-  //   slug: 'crm-data-hygiene-at-scale',
-  //   description: 'Continuous deduplication and enrichment for a 50k+ contact database.',
-  //   icon: Database,
-  // },
-  // {
-  //   title: 'Document Workflow Automation',
-  //   slug: 'document-workflow-automation',
-  //   description: 'Automated intake, validation, and filing for a document-heavy firm.',
-  //   icon: FileText,
-  // },
-  // {
-  //   title: 'Marketing Campaign Automation',
-  //   slug: 'marketing-campaign-automation',
-  //   description: 'Personalized nurture sequences at scale with AI-assisted content.',
-  //   icon: TrendingUp,
-  // },
-];
-
-
-
-
-const FallbackIcon = Plug;
-
-// ── All services, flat list (subpages shown directly in the navbar — no category grouping) ──
-const servicesList = serviceCategories.flatMap((cat) =>
-  cat.services.map((s) => ({
-    title: s.title,
-    slug: s.slug,
-    description: s.description,
-  }))
+const SoonBadge = () => (
+  <span className="ml-1.5 inline-block align-middle text-[9px] font-semibold uppercase tracking-wider text-gray-400 bg-gray-100 px-1.5 py-0.5 rounded-full">
+    Soon
+  </span>
 );
 
 export default function Nav() {
-  const pathname = usePathname();
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
-  const [isPlatformsOpen, setIsPlatformsOpen] = useState(false);
-  const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
-  const [isCaseStudiesOpen, setIsCaseStudiesOpen] = useState(false); 
-
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
-  const [isMobileSolutionsOpen, setIsMobileSolutionsOpen] = useState(false);
-  const [isMobilePlatformsOpen, setIsMobilePlatformsOpen] = useState(false);
-  const [isMobileIndustriesOpen, setIsMobileIndustriesOpen] = useState(false);
-  const [isMobileCaseStudiesOpen, setIsMobileCaseStudiesOpen] = useState(false);
-
-
-  const [scrolled, setScrolled] = useState(false);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const solutionsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const platformTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const industryTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const caseStudiesTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // Handle hash navigation after page load
-  useEffect(() => {
-    if (pathname === '/') {
-      const hash = window.location.hash;
-      if (hash) {
-        const element = document.getElementById(hash.replace('#', ''));
-        if (element) {
-          setTimeout(() => {
-            const offset = 80;
-            const elementPosition = element.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - offset;
-            window.scrollTo({
-              top: offsetPosition,
-              behavior: 'smooth'
-            });
-          }, 100);
-        }
-      }
-    }
-  }, [pathname]);
-
-  const handleServicesMouseEnter = () => {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    setIsServicesOpen(true);
-  };
-  const handleServicesMouseLeave = () => {
-    timeoutRef.current = setTimeout(() => setIsServicesOpen(false), 200);
-  };
-  const handleServicesDropdownMouseEnter = () => {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    setIsServicesOpen(true);
-  };
-  const handleServicesDropdownMouseLeave = () => {
-    timeoutRef.current = setTimeout(() => setIsServicesOpen(false), 200);
-  };
-
-  const handleSolutionsMouseEnter = () => {
-    if (solutionsTimeoutRef.current) clearTimeout(solutionsTimeoutRef.current);
-    setIsSolutionsOpen(true);
-  };
-  const handleSolutionsMouseLeave = () => {
-    solutionsTimeoutRef.current = setTimeout(() => setIsSolutionsOpen(false), 200);
-  };
-  const handleSolutionsDropdownMouseEnter = () => {
-    if (solutionsTimeoutRef.current) clearTimeout(solutionsTimeoutRef.current);
-    setIsSolutionsOpen(true);
-  };
-  const handleSolutionsDropdownMouseLeave = () => {
-    solutionsTimeoutRef.current = setTimeout(() => setIsSolutionsOpen(false), 200);
-  };
-
-  const handlePlatformsMouseEnter = () => {
-    if (platformTimeoutRef.current) clearTimeout(platformTimeoutRef.current);
-    setIsPlatformsOpen(true);
-  };
-  const handlePlatformsMouseLeave = () => {
-    platformTimeoutRef.current = setTimeout(() => setIsPlatformsOpen(false), 200);
-  };
-  const handlePlatformsDropdownMouseEnter = () => {
-    if (platformTimeoutRef.current) clearTimeout(platformTimeoutRef.current);
-    setIsPlatformsOpen(true);
-  };
-  const handlePlatformsDropdownMouseLeave = () => {
-    platformTimeoutRef.current = setTimeout(() => setIsPlatformsOpen(false), 200);
-  };
-
-  const handleIndustriesMouseEnter = () => {
-    if (industryTimeoutRef.current) clearTimeout(industryTimeoutRef.current);
-    setIsIndustriesOpen(true);
-  };
-  const handleIndustriesMouseLeave = () => {
-    industryTimeoutRef.current = setTimeout(() => setIsIndustriesOpen(false), 200);
-  };
-  const handleIndustriesDropdownMouseEnter = () => {
-    if (industryTimeoutRef.current) clearTimeout(industryTimeoutRef.current);
-    setIsIndustriesOpen(true);
-  };
-  const handleIndustriesDropdownMouseLeave = () => {
-    industryTimeoutRef.current = setTimeout(() => setIsIndustriesOpen(false), 200);
-  };
-
-    const handleCaseStudiesMouseEnter = () => {
-    if (caseStudiesTimeoutRef.current) clearTimeout(caseStudiesTimeoutRef.current);
-    setIsCaseStudiesOpen(true);
-  };
-  const handleCaseStudiesMouseLeave = () => {
-    caseStudiesTimeoutRef.current = setTimeout(() => setIsCaseStudiesOpen(false), 200);
-  };
-  const handleCaseStudiesDropdownMouseEnter = () => {
-    if (caseStudiesTimeoutRef.current) clearTimeout(caseStudiesTimeoutRef.current);
-    setIsCaseStudiesOpen(true);
-  };
-  const handleCaseStudiesDropdownMouseLeave = () => {
-    caseStudiesTimeoutRef.current = setTimeout(() => setIsCaseStudiesOpen(false), 200);
-  };
-
-  const dropdownVariants: Variants = {
-    hidden: { opacity: 0, y: -12, scale: 0.97 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: { duration: 0.25, ease: [0.22, 1, 0.36, 1] },
-    },
-    exit: {
-      opacity: 0,
-      y: -8,
-      scale: 0.97,
-      transition: { duration: 0.2, ease: [0.22, 1, 0.36, 1] },
-    },
-  };
-
-  const serviceItemVariants: Variants = {
-    hidden: { opacity: 0, x: -8 },
-    visible: (i: number) => ({
-      opacity: 1,
-      x: 0,
-      transition: { delay: i * 0.04, duration: 0.2, ease: [0.22, 1, 0.36, 1] },
-    }),
-  };
-
-  const getServiceIcon = (title: string) => {
-    const Icon = serviceIconMap[title] || FallbackIcon;
-    return <Icon className="h-4 w-4 text-brand flex-shrink-0" />;
-  };
-
-  const getPlatformIcon = (title: string) => {
-    const Icon = platformIconMap[title] || FallbackIcon;
-    return <Icon className="h-4 w-4 text-brand flex-shrink-0" />;
-  };
-
-  const getIndustryIcon = (title: string) => {
-    const Icon = industryIconMap[title] || FallbackIcon;
-    return <Icon className="h-4 w-4 text-brand flex-shrink-0" />;
-  };
-
-  const getSolutionIcon = (title: string) => {
-    const solution = solutionsData.find(s => s.title === title);
-    const Icon = solution?.icon || Sparkles;
-    return <Icon className="h-4 w-4 text-brand flex-shrink-0" />;
-  };
-
-  // Close all dropdowns
-  const closeAllDropdowns = () => {
-    setIsServicesOpen(false);
-    setIsSolutionsOpen(false);
-    setIsPlatformsOpen(false);
-    setIsIndustriesOpen(false);
-     setIsCaseStudiesOpen(false); 
-  };
+  const {
+    isServicesOpen,
+    setIsServicesOpen,
+    isSolutionsOpen,
+    setIsSolutionsOpen,
+    isPlatformsOpen,
+    setIsPlatformsOpen,
+    isIndustriesOpen,
+    setIsIndustriesOpen,
+    isCaseStudiesOpen,
+    setIsCaseStudiesOpen,
+    isMobileMenuOpen,
+    setIsMobileMenuOpen,
+    isMobileServicesOpen,
+    setIsMobileServicesOpen,
+    isMobileSolutionsOpen,
+    setIsMobileSolutionsOpen,
+    isMobilePlatformsOpen,
+    setIsMobilePlatformsOpen,
+    isMobileIndustriesOpen,
+    setIsMobileIndustriesOpen,
+    isMobileCaseStudiesOpen,
+    setIsMobileCaseStudiesOpen,
+    scrolled,
+    handleServicesMouseEnter,
+    handleServicesMouseLeave,
+    handleServicesDropdownMouseEnter,
+    handleServicesDropdownMouseLeave,
+    handleSolutionsMouseEnter,
+    handleSolutionsMouseLeave,
+    handleSolutionsDropdownMouseEnter,
+    handleSolutionsDropdownMouseLeave,
+    handlePlatformsMouseEnter,
+    handlePlatformsMouseLeave,
+    handlePlatformsDropdownMouseEnter,
+    handlePlatformsDropdownMouseLeave,
+    handleIndustriesMouseEnter,
+    handleIndustriesMouseLeave,
+    handleIndustriesDropdownMouseEnter,
+    handleIndustriesDropdownMouseLeave,
+    handleCaseStudiesMouseEnter,
+    handleCaseStudiesMouseLeave,
+    handleCaseStudiesDropdownMouseEnter,
+    handleCaseStudiesDropdownMouseLeave,
+    dropdownVariants,
+    serviceItemVariants,
+    getServiceIcon,
+    getPlatformIcon,
+    getIndustryIcon,
+    isProductsOpen,
+    setIsProductsOpen,
+    activeProductCategory,
+    setActiveProductCategory,
+    activeProductCategoryData,
+    isMobileProductsOpen,
+    setIsMobileProductsOpen,
+    mobileProductCategory,
+    setMobileProductCategory,
+    handleProductsMouseEnter,
+    handleProductsMouseLeave,
+    handleProductsDropdownMouseEnter,
+    handleProductsDropdownMouseLeave,
+    getProductCategoryIcon,
+  } = useNav();
 
   return (
     <header
@@ -443,7 +169,7 @@ export default function Nav() {
           : 'bg-white/80 backdrop-blur-md border-b border-gray-200/30'
       }`}
     >
-      <div className="mx-auto max-w-[84vw] px-6 h-20 flex items-center justify-between">
+      <div className="relative mx-auto max-w-[84vw] px-6 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center py-2 md:py-3">
           <Image
             src="/images/clickmasters-logo.png"
@@ -488,7 +214,7 @@ export default function Nav() {
                   <div className="p-4 max-h-[80vh] overflow-y-auto">
                     {/* Header */}
                     <div className="flex items-center gap-2 px-3 pb-3 border-b border-gray-100">
-                      <Sparkles className="h-4 w-4 text-brand" />
+                      <BrainCircuit className="h-4 w-4 text-brand" />
                       <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.12em]">
                         Our Services
                       </p>
@@ -553,6 +279,170 @@ export default function Nav() {
             </AnimatePresence>
           </div>
 
+          {/* ── PRODUCTS DROPDOWN (sidebar mega menu, same look as the other dropdowns) ── */}
+          {/* Wrapper is NOT relative: the panel is positioned against the header container so it can be wide + centered. */}
+          <div
+            onMouseEnter={handleProductsMouseEnter}
+            onMouseLeave={handleProductsMouseLeave}
+          >
+            <button
+              className="flex items-center gap-1 text-gray-700 hover:text-black transition-colors"
+              onClick={() => setIsProductsOpen(!isProductsOpen)}
+            >
+              Products
+              <ChevronDown
+                className={`h-4 w-4 transition-transform duration-300 ${
+                  isProductsOpen ? 'rotate-180 text-brand' : ''
+                }`}
+              />
+            </button>
+
+            <AnimatePresence>
+              {isProductsOpen && (
+                <motion.div
+                  variants={dropdownVariants}
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                  style={{ x: '-50%', width: 'min(960px, 94vw)', top: 'calc(50% + 22px)' }}
+                  className="absolute left-1/2 rounded-2xl border border-gray-200 bg-white shadow-2xl shadow-black/10 overflow-hidden"
+                  onMouseEnter={handleProductsDropdownMouseEnter}
+                  onMouseLeave={handleProductsDropdownMouseLeave}
+                >
+                  <div className="p-4">
+                    {/* Header — same as Services / Solutions */}
+                    <div className="flex items-center gap-2 px-3 pb-3 border-b border-gray-100">
+                      <BrainCircuit className="h-4 w-4 text-brand" />
+                      <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.12em]">
+                        AI Products
+                      </p>
+                      <span className="text-[10px] font-medium text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full ml-auto">
+                        {productCategories.reduce((n, c) => n + c.products.length, 0)}
+                      </span>
+                    </div>
+
+                    <div className="flex gap-4 pt-3" style={{ height: 'min(420px, calc(100vh - 230px))' }}>
+                      {/* Sidebar: categories (rows styled like Platforms / Industries) */}
+                      <div className="w-72 flex-shrink-0 rounded-xl bg-gray-50 p-2 space-y-1 overflow-y-auto overscroll-contain [scrollbar-width:thin] [scrollbar-color:#d1d5db_transparent]">
+                        {productCategories.map((category, idx) => {
+                          const isActive = idx === activeProductCategory;
+                          return (
+                            <MaybeLink
+                              key={category.slug}
+                              live={category.live}
+                              href={category.path}
+                              onMouseEnter={() => setActiveProductCategory(idx)}
+                              onFocus={() => setActiveProductCategory(idx)}
+                              onClick={() => setIsProductsOpen(false)}
+                              className={`flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 group ${
+                                isActive ? 'bg-white shadow-sm ring-1 ring-gray-200' : 'hover:bg-brand/10'
+                              }`}
+                            >
+                              <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 bg-brand/20 text-brand">
+                                {getProductCategoryIcon(category.slug)}
+                              </div>
+                              <span
+                                className={`flex-1 text-sm font-medium leading-tight transition-colors ${
+                                  isActive ? 'text-brand' : 'text-gray-800 group-hover:text-brand'
+                                }`}
+                              >
+                                {category.title}
+                              </span>
+                              <ArrowRight
+                                className={`h-4 w-4 flex-shrink-0 transition-colors ${
+                                  isActive ? 'text-brand' : 'text-gray-300 group-hover:text-brand'
+                                }`}
+                              />
+                            </MaybeLink>
+                          );
+                        })}
+                      </div>
+
+                      {/* Content: products of the active category (items styled like Services) */}
+                      <div className="flex-1 min-w-0 overflow-y-auto overscroll-contain [scrollbar-width:thin] [scrollbar-color:#d1d5db_transparent]">
+                        <div className="flex items-start justify-between gap-4 px-3 pt-1 pb-3">
+                          <div className="min-w-0">
+                            <p className="text-sm font-semibold text-gray-800">{activeProductCategoryData.title}</p>
+                            <p className="text-xs text-gray-400 mt-0.5 leading-snug">
+                              {activeProductCategoryData.description}
+                            </p>
+                          </div>
+                          {activeProductCategoryData.live ? (
+                            <Link
+                              href={activeProductCategoryData.path}
+                              onClick={() => setIsProductsOpen(false)}
+                              className="text-xs font-semibold text-brand hover:underline flex items-center gap-1 whitespace-nowrap mt-0.5"
+                            >
+                              View all <ArrowRight className="h-3 w-3" />
+                            </Link>
+                          ) : (
+                            <span className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full whitespace-nowrap mt-0.5">
+                              Coming soon
+                            </span>
+                          )}
+                        </div>
+
+                        <div className="grid grid-cols-2 gap-2">
+                          {activeProductCategoryData.products.map((product, idx) => (
+                            <motion.div
+                              key={activeProductCategoryData.slug + product.slug}
+                              custom={idx}
+                              variants={serviceItemVariants}
+                              initial="hidden"
+                              animate="visible"
+                            >
+                              <MaybeLink
+                                live={product.live}
+                                href={product.path}
+                                className={`group flex items-start gap-3 p-3 rounded-xl border border-transparent transition-all duration-200 ${
+                                  product.live ? 'hover:border-gray-200 hover:bg-gray-50' : 'cursor-default opacity-70'
+                                }`}
+                                onClick={() => setIsProductsOpen(false)}
+                              >
+                                <div className="min-w-0">
+                                  <span
+                                    className={`text-sm font-medium text-gray-700 transition-colors block leading-tight ${
+                                      product.live ? 'group-hover:text-brand' : ''
+                                    }`}
+                                  >
+                                    {product.title}
+                                    {!product.live && <SoonBadge />}
+                                  </span>
+                                  <p className="text-xs text-gray-400 mt-0.5 leading-snug line-clamp-2">
+                                    {product.description}
+                                  </p>
+                                </div>
+                                <ArrowRight className="ml-auto h-3.5 w-3.5 text-gray-300 opacity-0 group-hover:opacity-100 group-hover:text-brand flex-shrink-0 mt-0.5 transition-all" />
+                              </MaybeLink>
+                            </motion.div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Footer — same as Services */}
+                    <div className="px-3 pt-3 mt-3 border-t border-gray-100 flex items-center justify-between">
+                      <Link
+                        href={PRODUCTS_PATH}
+                        className="text-xs font-semibold text-gray-700 hover:text-brand flex items-center gap-1"
+                        onClick={() => setIsProductsOpen(false)}
+                      >
+                        View all products <ArrowRight className="h-3 w-3" />
+                      </Link>
+                      <Link
+                        href="/contact"
+                        className="text-xs font-semibold text-brand hover:underline flex items-center gap-1"
+                        onClick={() => setIsProductsOpen(false)}
+                      >
+                        Talk to us <ArrowRight className="h-3 w-3" />
+                      </Link>
+                    </div>
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
           {/* ── SOLUTIONS DROPDOWN ── */}
           <div
             className="relative"
@@ -584,7 +474,7 @@ export default function Nav() {
                 >
                   <div className="p-4 max-h-[80vh] overflow-y-auto">
                     <div className="flex items-center gap-2 px-3 pb-3 border-b border-gray-100">
-                      <Sparkles className="h-4 w-4 text-brand" />
+                      <BrainCircuit className="h-4 w-4 text-brand" />
                       <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.12em]">
                         AI Automation Solutions
                       </p>
@@ -595,7 +485,7 @@ export default function Nav() {
 
                     <div className="grid grid-cols-3 gap-2 pt-3">
                       {solutionsData.map((solution, idx) => {
-                        const Icon = solution.icon || Sparkles;
+                        const Icon = solution.icon || BrainCircuit;
                         return (
                           <Link
                             key={idx}
@@ -838,7 +728,7 @@ export default function Nav() {
                 >
                   <div className="p-4 max-h-[80vh] overflow-y-auto">
                     <div className="flex items-center gap-2 px-3 pb-3 border-b border-gray-100">
-                      <Sparkles className="h-4 w-4 text-brand" />
+                      <BrainCircuit className="h-4 w-4 text-brand" />
                       <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.12em]">
                         Case Studies
                       </p>
@@ -849,7 +739,7 @@ export default function Nav() {
 
                     <div className="grid grid-cols-2 gap-2 pt-3">
                       {caseStudiesData.map((study, idx) => {
-                        const Icon = study.icon || Sparkles;
+                        const Icon = study.icon || BrainCircuit;
                         return (
                           <motion.div
                             key={study.slug}
@@ -977,6 +867,85 @@ export default function Nav() {
               )}
             </div>
 
+            {/* Mobile Products */}
+            <div>
+              <button
+                className="flex items-center justify-between w-full text-gray-700 hover:text-black transition-colors"
+                onClick={() => setIsMobileProductsOpen(!isMobileProductsOpen)}
+              >
+                <span className="font-medium">Products</span>
+                <ChevronDown className={`h-4 w-4 transition-transform ${isMobileProductsOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {isMobileProductsOpen && (
+                <div className="mt-2 pl-4 space-y-1 border-l border-gray-200">
+                  <Link
+                    href={PRODUCTS_PATH}
+                    className="flex items-center gap-3 py-2 text-sm font-medium text-gray-800 hover:text-brand transition-colors"
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setIsMobileProductsOpen(false);
+                    }}
+                  >
+                    <Layers className="h-4 w-4 text-brand flex-shrink-0" />
+                    <span>View all products</span>
+                  </Link>
+                  {productCategories.map((category, idx) => {
+                    const isOpen = mobileProductCategory === idx;
+                    return (
+                      <div key={category.slug}>
+                        <button
+                          className="flex items-center gap-3 w-full py-2 px-3 rounded-lg text-left hover:bg-brand/10 transition-colors"
+                          onClick={() => setMobileProductCategory(isOpen ? null : idx)}
+                        >
+                          <div className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 bg-brand/20 text-brand">
+                            {getProductCategoryIcon(category.slug, 'h-3.5 w-3.5')}
+                          </div>
+                          <span className="flex-1 text-sm font-medium text-gray-700">{category.title}</span>
+                          <ChevronDown className={`h-4 w-4 text-gray-400 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+                        </button>
+                        {isOpen && (
+                          <div className="ml-13 mb-2 space-y-1 pl-3 border-l border-gray-200">
+                            {category.live && (
+                              <Link
+                                href={category.path}
+                                className="flex items-center gap-1 py-1.5 text-sm font-semibold text-brand hover:underline"
+                                onClick={() => {
+                                  setIsMobileMenuOpen(false);
+                                  setIsMobileProductsOpen(false);
+                                }}
+                              >
+                                {category.title} overview <ArrowRight className="h-3 w-3" />
+                              </Link>
+                            )}
+                            {category.products.map((product) =>
+                              product.live ? (
+                                <Link
+                                  key={product.slug}
+                                  href={product.path}
+                                  className="block py-1.5 text-sm text-gray-600 hover:text-brand transition-colors"
+                                  onClick={() => {
+                                    setIsMobileMenuOpen(false);
+                                    setIsMobileProductsOpen(false);
+                                  }}
+                                >
+                                  {product.title}
+                                </Link>
+                              ) : (
+                                <span key={product.slug} className="block py-1.5 text-sm text-gray-400" aria-disabled="true">
+                                  {product.title}
+                                  <SoonBadge />
+                                </span>
+                              )
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+
             {/* Mobile Solutions */}
             <div>
               <button
@@ -989,13 +958,13 @@ export default function Nav() {
               {isMobileSolutionsOpen && (
                 <div className="mt-2 pl-4 space-y-2 border-l border-gray-200">
                   <div className="flex items-center gap-2 mb-1">
-                    <Sparkles className="h-4 w-4 text-brand" />
+                    <BrainCircuit className="h-4 w-4 text-brand" />
                     <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
                       AI Automation Solutions
                     </p>
                   </div>
                   {solutionsData.map((solution, idx) => {
-                    const Icon = solution.icon || Sparkles;
+                    const Icon = solution.icon || BrainCircuit;
                     return (
                       <Link
                         key={idx}
@@ -1145,13 +1114,13 @@ export default function Nav() {
               {isMobileCaseStudiesOpen && (
                 <div className="mt-2 pl-4 space-y-2 border-l border-gray-200">
                   <div className="flex items-center gap-2 mb-1">
-                    <Sparkles className="h-4 w-4 text-brand" />
+                    <BrainCircuit className="h-4 w-4 text-brand" />
                     <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
                       Case Studies
                     </p>
                   </div>
                   {caseStudiesData.map((study, idx) => {
-                    const Icon = study.icon || Sparkles;
+                    const Icon = study.icon || BrainCircuit;
                     return (
                       <Link
                         key={idx}

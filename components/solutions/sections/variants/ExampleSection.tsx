@@ -2,7 +2,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Play, Clock, CheckCircle2, Sparkles, Zap } from 'lucide-react';
+import { Play, Clock, CheckCircle2, BrainCircuit, Zap } from 'lucide-react';
 
 interface ExampleSectionProps {
   title: string;
@@ -78,7 +78,7 @@ export function ExampleSection({ title, content }: ExampleSectionProps) {
                 </div>
                 <span className="text-xs font-medium text-gray-400 ml-2">workflow-example.ts</span>
                 <div className="ml-auto flex items-center gap-1">
-                  <Sparkles className="h-3 w-3 text-brand" />
+                  <BrainCircuit className="h-3 w-3 text-brand" />
                   <span className="text-xs font-medium text-brand">AI Powered</span>
                 </div>
               </div>

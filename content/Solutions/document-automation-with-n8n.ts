@@ -55,7 +55,7 @@ export const documentAutomationWithN8n: SolutionData = {
       description: 'Data cleaned and transformed at scale built on n8n.',
     },
     {
-      icon: 'Sparkles',
+      icon: 'BrainCircuit',
       title: 'Production-Ready',
       description: 'Staged rollout, documentation, and reliability engineering built for scale on n8n.',
     },

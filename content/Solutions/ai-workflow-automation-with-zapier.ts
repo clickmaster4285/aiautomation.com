@@ -55,7 +55,7 @@ export const aiWorkflowAutomationWithZapier: SolutionData = {
       description: 'Built to catch failures and alert, not break silently, built on Zapier.',
     },
     {
-      icon: 'Sparkles',
+      icon: 'BrainCircuit',
       title: 'Production-Ready',
       description: 'Staged rollout, documentation, and reliability engineering, built for scale on Zapier.',
     },

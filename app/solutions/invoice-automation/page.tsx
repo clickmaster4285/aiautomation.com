@@ -10,7 +10,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowRight,
   CheckCircle,
-  Sparkles,
+  BrainCircuit,
   Receipt,
   GitBranch,
   Database,
@@ -67,7 +67,7 @@ function Eyebrow({ children, variant = 'dark' }: { children: React.ReactNode; va
             : 'bg-brand/10 text-brand border border-brand/30'
         }`}
       >
-        <Sparkles className="h-3 w-3" />
+        <BrainCircuit className="h-3 w-3" />
         {children}
       </span>
       <span className="w-8 h-px bg-brand/60" />
@@ -590,7 +590,7 @@ export default function InvoiceAutomationPage() {
                   whileHover={{ x: 8 }}
                   className="group flex items-start gap-4 p-6 rounded-2xl bg-gradient-to-r from-white/5 to-white/[0.02] border border-white/10 hover:border-brand/40 transition-all duration-300 backdrop-blur-sm"
                 >
-                  <Sparkles className="h-5 w-5 text-brand flex-shrink-0 mt-0.5" />
+                  <BrainCircuit className="h-5 w-5 text-brand flex-shrink-0 mt-0.5" />
                   <span className="text-gray-200 leading-relaxed text-base">{benefit}</span>
                 </motion.li>
               ))}

@@ -18,7 +18,7 @@ import {
   Lightbulb,
   Briefcase,
   ArrowRight,
-  Sparkles,
+  BrainCircuit,
 } from 'lucide-react';
 import { canonicalUrl } from '@/lib/canonical';
 import { HubJsonLd } from '@/components/seo/HubJsonLd';
@@ -87,7 +87,7 @@ export default function ServicesPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {serviceCategories.flatMap((category) =>
               category.services.map((service) => {
-                const Icon = serviceIconMap[service.slug] || Sparkles;
+                const Icon = serviceIconMap[service.slug] || BrainCircuit;
 
                 return (
                   <Link

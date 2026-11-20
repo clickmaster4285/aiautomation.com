@@ -95,7 +95,7 @@ We start with a free audit that identifies your highest-return workflow, automat
       description: 'Data pulled and combined across your systems.',
     },
     {
-      icon: 'Sparkles',
+      icon: 'BrainCircuit',
       title: 'AI Summaries',
       description: 'Plain-language highlights of what changed and why it matters.',
     },

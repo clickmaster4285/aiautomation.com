@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Target, TrendingUp, Clock, CheckCircle2, ArrowRight, Sparkles } from 'lucide-react';
+import { Target, TrendingUp, Clock, CheckCircle2, ArrowRight, BrainCircuit } from 'lucide-react';
 
 interface StartSectionProps {
   title: string;
@@ -86,7 +86,7 @@ export function StartSection({ title, content }: StartSectionProps) {
               {[
                 { icon: Target, label: 'Identify', desc: 'Find your highest-return workflow', color: 'from-brand/20 to-orange-400/20' },
                 { icon: TrendingUp, label: 'Automate', desc: 'Build and deploy the automation', color: 'from-brand/20 to-orange-400/20' },
-                { icon: Sparkles, label: 'Optimize', desc: 'Monitor, refine, and expand', color: 'from-brand/20 to-orange-400/20' },
+                { icon: BrainCircuit, label: 'Optimize', desc: 'Monitor, refine, and expand', color: 'from-brand/20 to-orange-400/20' },
               ].map((step, idx) => (
                 <motion.div
                   key={idx}

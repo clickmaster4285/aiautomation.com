@@ -2,7 +2,7 @@
 
 import { motion, Variants } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, BrainCircuit } from 'lucide-react';
 import type { Section } from '@/content/type';
 
 const fadeUp: Variants = {

@@ -55,7 +55,7 @@ export const reportingAutomationWithN8n: SolutionData = {
       description: 'The right report to the right people, on time, built on n8n.',
     },
     {
-      icon: 'Sparkles',
+      icon: 'BrainCircuit',
       title: 'Production-Ready',
       description: 'Staged rollout, documentation, and reliability engineering, built for scale on n8n.',
     },

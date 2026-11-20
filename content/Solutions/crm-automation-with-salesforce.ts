@@ -55,7 +55,7 @@ export const crmAutomationWithSalesforce: SolutionData = {
       description: 'Trustworthy numbers because the underlying data is maintained, built on Salesforce.',
     },
     {
-      icon: 'Sparkles',
+      icon: 'BrainCircuit',
       title: 'Production-Ready',
       description: 'Staged rollout, documentation, and reliability engineering, built for scale on Salesforce.',
     },

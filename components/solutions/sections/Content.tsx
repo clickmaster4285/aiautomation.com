@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import {
   ArrowRight,
   CheckCircle2,
-  Sparkles,
+  BrainCircuit,
   Zap,
   Shield,
   ShieldCheck,
@@ -153,7 +153,7 @@ function AutomationCoreVisual() {
         animate={{ opacity: [0.3, 1, 0.3], scale: [0.85, 1.15, 0.85] }}
         transition={{ duration: 2.4, repeat: Infinity, ease: 'easeInOut' }}
       >
-        <Sparkles className="h-3.5 w-3.5" />
+        <BrainCircuit className="h-3.5 w-3.5" />
       </motion.div>
 
       <motion.div
@@ -235,7 +235,7 @@ function MinimalVisual() {
           transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
         >
           <div className="w-12 h-12 rounded-full bg-brand flex items-center justify-center shadow-lg shadow-brand/30">
-            <Sparkles className="h-6 w-6 text-white" />
+            <BrainCircuit className="h-6 w-6 text-white" />
           </div>
         </motion.div>
         <motion.div

@@ -32,7 +32,7 @@ import {
   Store,
   Cloud,
   ArrowRight,
-  Sparkles
+  BrainCircuit
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -145,7 +145,7 @@ export default function SolutionsPage() {
                   {solutions.map((solution) => {
                     // Get icon based on solution title or heading
                     const iconKey = solution.heroHeading || solution.title || '';
-                    const Icon = iconMap[iconKey] || iconMap[solution.category] || Sparkles;
+                    const Icon = iconMap[iconKey] || iconMap[solution.category] || BrainCircuit;
                     
                     return (
                       <Link

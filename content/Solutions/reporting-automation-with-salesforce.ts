@@ -55,7 +55,7 @@ export const reportingAutomationWithSalesforce: SolutionData = {
       description: 'The right report to the right people, on time, built on Salesforce.',
     },
     {
-      icon: 'Sparkles',
+      icon: 'BrainCircuit',
       title: 'Production-Ready',
       description: 'Staged rollout, documentation, and reliability engineering, built for scale on Salesforce.',
     },

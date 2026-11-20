@@ -10,7 +10,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowRight,
   CheckCircle,
-  Sparkles,
+  BrainCircuit,
   Target,
   GitBranch,
   RefreshCw,
@@ -64,7 +64,7 @@ function Eyebrow({ children, variant = 'dark' }: { children: React.ReactNode; va
             : 'bg-brand/10 text-brand border border-brand/30'
         }`}
       >
-        <Sparkles className="h-3 w-3" />
+        <BrainCircuit className="h-3 w-3" />
         {children}
       </span>
       <span className="w-8 h-px bg-brand/60" />
@@ -555,7 +555,7 @@ export default function CRMAutomationPage() {
                   whileHover={{ x: 8 }}
                   className="group flex items-start gap-4 p-6 rounded-2xl bg-white border border-gray-200/60 hover:border-brand/40 shadow-sm hover:shadow-xl transition-all duration-300"
                 >
-                  <Sparkles className="h-5 w-5 text-brand flex-shrink-0 mt-0.5" />
+                  <BrainCircuit className="h-5 w-5 text-brand flex-shrink-0 mt-0.5" />
                   <span className="text-gray-800 leading-relaxed text-base font-medium">{benefit}</span>
                 </motion.li>
               ))}

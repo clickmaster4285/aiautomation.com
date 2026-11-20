@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 import {
   ArrowRight,
   CheckCircle,
-  Sparkles,
+  BrainCircuit,
   Building2,
   HardHat,
   ShoppingBag,
@@ -218,7 +218,7 @@ export default function AppointmentBookingAutomationPage() {
       id: 'production-ready',
       title: 'Production-Ready',
       description: 'Staged rollout, comprehensive documentation, and reliability engineering ensure your booking automation performs at scale.',
-      icon: Sparkles,
+      icon: BrainCircuit,
       color: 'from-amber-500/20 to-yellow-500/20',
     },
   ];
@@ -400,7 +400,7 @@ export default function AppointmentBookingAutomationPage() {
                         transition={{ duration: 0.3 }}
                         className="flex items-center gap-1 text-xs font-medium text-brand bg-brand/20 px-2.5 py-1 rounded-full"
                       >
-                        <Sparkles className="h-3 w-3" />
+                        <BrainCircuit className="h-3 w-3" />
                         <span>Available</span>
                       </motion.div>
                     </motion.div>

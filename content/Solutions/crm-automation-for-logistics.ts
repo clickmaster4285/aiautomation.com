@@ -85,7 +85,7 @@ We start with a free audit that identifies your highest-return workflow, automat
       description: 'Activity and data captured without manual entry.',
     },
     {
-      icon: 'Sparkles',
+      icon: 'BrainCircuit',
       title: 'Data Hygiene',
       description: 'Deduplication, enrichment, and cleaning that runs continuously.',
     },
@@ -105,7 +105,7 @@ We start with a free audit that identifies your highest-return workflow, automat
       description: 'Trustworthy numbers because the underlying data is maintained.',
     },
     {
-      icon: 'Sparkles',
+      icon: 'BrainCircuit',
       title: 'Production-Ready',
       description: 'Staged rollout, documentation, and reliability engineering.',
     },

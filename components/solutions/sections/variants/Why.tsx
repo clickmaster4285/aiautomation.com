@@ -2,7 +2,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Sparkles, Zap, Shield, Bot, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { BrainCircuit, Zap, Shield, Bot, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 interface WhySectionProps {
   title: string;
@@ -84,7 +84,7 @@ export function WhySection({ title, content, stats }: WhySectionProps) {
                 { icon: Bot, label: 'AI Agents', color: 'from-brand/20 to-orange-400/20' },
                 { icon: Zap, label: 'Automation', color: 'from-brand/20 to-orange-400/20' },
                 { icon: Shield, label: 'Security', color: 'from-brand/20 to-orange-400/20' },
-                { icon: Sparkles, label: 'Innovation', color: 'from-brand/20 to-orange-400/20' },
+                { icon: BrainCircuit, label: 'Innovation', color: 'from-brand/20 to-orange-400/20' },
               ].map((item, idx) => (
                 <motion.div
                   key={idx}

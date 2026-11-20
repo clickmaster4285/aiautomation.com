@@ -2,7 +2,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Shield, Database, Users, Sparkles, CheckCircle2, ArrowRight, LucideIcon } from 'lucide-react';
+import { Shield, Database, Users, BrainCircuit, CheckCircle2, ArrowRight, LucideIcon } from 'lucide-react';
 import Link from 'next/link';
 
 interface WhyUsSectionProps {
@@ -23,7 +23,7 @@ export function WhyUsSection({ title, content, cta, stats }: WhyUsSectionProps) 
     'Built for your industry': Shield,
     'Human-in-the-loop': Users,
     'Integrated': Database,
-    'You own everything': Sparkles,
+    'You own everything': BrainCircuit,
     'Built for your industry\'s workflows': Shield,
     'Human-in-the-loop where it matters': Users,
     'Integrated, not rip-and-replace': Database,

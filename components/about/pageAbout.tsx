@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer } from '@/components/services/Shared/animation';
 import {
-  Sparkles,
+  BrainCircuit,
   Code,
   Shield,
   BookOpen,
@@ -70,7 +70,7 @@ export default function AboutPage() {
                 variants={fadeInUp}
                 className="inline-flex items-center gap-2 rounded-full border border-brand/30 bg-brand/10 px-3 py-1.5 md:px-4 md:py-2 text-xs md:text-sm text-brand backdrop-blur-sm mb-4 md:mb-6"
               >
-                <Sparkles className="h-3 w-3 md:h-4 md:w-4" />
+                <BrainCircuit className="h-3 w-3 md:h-4 md:w-4" />
                 <span>About Us</span>
                 <span className="h-1 w-1 rounded-full bg-brand" />
                 <span className="text-brand/70 animate-pulse">TRUSTED PARTNER</span>

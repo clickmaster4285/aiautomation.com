@@ -2,7 +2,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Shield, Database, Users, Lock, CheckCircle2, ArrowRight, Sparkles } from 'lucide-react';
+import { Shield, Database, Users, Lock, CheckCircle2, ArrowRight, BrainCircuit } from 'lucide-react';
 
 interface RealitiesSectionProps {
   title: string;

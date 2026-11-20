@@ -10,7 +10,7 @@ import {
   Mail,
   Phone,
   Calendar,
-  Sparkles,
+  BrainCircuit,
   Clock,
   CheckCircle,
   Rocket,
@@ -179,7 +179,7 @@ export default function ContactPage() {
                 variants={fadeInUp}
                 className="inline-flex items-center gap-2 rounded-full border border-brand/30 bg-brand/10 px-3 py-1.5 md:px-4 md:py-2 text-xs md:text-sm text-brand backdrop-blur-sm mb-4 md:mb-6"
               >
-                <Sparkles className="h-3 w-3 md:h-4 md:w-4" />
+                <BrainCircuit className="h-3 w-3 md:h-4 md:w-4" />
                 <span>Get In Touch</span>
                 <span className="h-1 w-1 rounded-full bg-brand" />
                 <span className="text-brand/70 animate-pulse">WE REPLY FAST</span>

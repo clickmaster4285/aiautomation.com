@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { HubJsonLd } from '@/components/seo/HubJsonLd';
 import { hubSeo } from '@/lib/hub-seo';
 import { motion, Variants } from 'framer-motion';
-import { ArrowRight, CheckCircle2, Zap, Workflow, GitBranch, Mail, Rocket, Database, Cloud, Sparkles, Cpu, Layers, GitMerge, Server, Globe, Shield, BarChart3, Users, Settings, Code, RefreshCw } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Zap, Workflow, GitBranch, Mail, Rocket, Database, Cloud, BrainCircuit, Cpu, Layers, GitMerge, Server, Globe, Shield, BarChart3, Users, Settings, Code, RefreshCw } from 'lucide-react';
 
 const platforms = [
   {
