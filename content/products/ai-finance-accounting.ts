@@ -56,7 +56,7 @@ export const aiFinanceAccountingKeywords = [
 
 // The five contextual internal links used in the copy below (all verified to resolve).
 export const internalLinks = [
-  { anchor: 'automation for finance and accounting teams', href: '/industries/finance-accounting', section: 'What Is AI Finance and Accounting Automation?' },
+  { anchor: 'automation for finance and accounting teams', href: '/industries/ai-automation-for-finance-accounting', section: 'What Is AI Finance and Accounting Automation?' },
   { anchor: 'invoice automation solutions', href: '/solutions/invoice-automation', section: 'Invoices, Expenses and the Paper Trail (spotlight)' },
   { anchor: 'document automation', href: '/solutions/document-automation', section: 'Invoices, Expenses and the Paper Trail (spotlight)' },
   { anchor: 'recurring financial reporting automation', href: '/solutions/reporting-automation', section: 'Financial Workflow Automation Beyond Data Entry (extras)' },
@@ -88,7 +88,7 @@ export const aiFinanceAccounting: ProductPageContent = {
     paragraphs: [
       'AI finance and accounting automation uses software to handle the repeatable work that sits between source documents and finished numbers. A supplier invoice arrives as a PDF in accounts@, a receipt is forwarded from a phone, a customer payment lands in Stripe. Instead of someone opening, reading and retyping each one, a workflow captures the details, checks them against your rules and puts them where they belong.',
       'Rules cover the predictable parts, such as routing any invoice over a set amount to the finance director. AI covers the parts rules cannot, such as reading a scanned invoice in an unfamiliar layout, suggesting the right expense category for a vague receipt, or spotting that a payment reference almost matches an open invoice. Your team still reviews, approves and owns the books.',
-      'This page is the overview of our finance and accounting range. It explains where automation helps a finance function, where people must stay involved, and which of the five pages below fits your problem. For a view of how we work with finance businesses specifically, see our page on [automation for finance and accounting teams](/industries/finance-accounting).',
+      'This page is the overview of our finance and accounting range. It explains where automation helps a finance function, where people must stay involved, and which of the five pages below fits your problem. For a view of how we work with finance businesses specifically, see our page on [automation for finance and accounting teams](/industries/ai-automation-for-finance-accounting).',
     ],
     problems: [
       'Invoices and receipts are keyed into the accounting system by hand, one at a time.',

@@ -208,3 +208,44 @@ export const getProduct = (categorySlug: string, productSlug: string) =>
 
 /** Routes that actually exist (for sitemaps and link checks). */
 export const getProductRoutes = () => [...LIVE_PRODUCT_PATHS];
+
+export interface RelatedProducts {
+  eyebrow: string;
+  heading: string;
+  items: { title: string; description: string; href: string }[];
+}
+
+/** Takes `count` items starting just after `index`, wrapping around, so links spread evenly. */
+const rotateFrom = <T,>(list: T[], index: number, count: number) =>
+  Array.from({ length: Math.min(count, list.length) }, (_, i) => list[(index + 1 + i) % list.length]);
+
+/**
+ * The "related products" cards shown before the final CTA of every product page.
+ * - Child page: the next 3 live products in the same category.
+ * - Category page: the next 3 live product categories.
+ * Only live pages are returned, so the cards never link to a 404.
+ */
+export function getRelatedProducts(categorySlug: string, productSlug?: string, count = 3): RelatedProducts | undefined {
+  const category = getProductCategory(categorySlug);
+  if (!category) return undefined;
+
+  if (productSlug) {
+    const products = category.products.filter((p) => p.live);
+    const index = products.findIndex((p) => p.slug === productSlug);
+    const items = rotateFrom(products, index, count)
+      .filter((p) => p.slug !== productSlug)
+      .map((p) => ({ title: p.title, description: p.description, href: p.path }));
+    return items.length
+      ? { eyebrow: 'Related Products', heading: `More from ${category.title}`, items }
+      : undefined;
+  }
+
+  const categories = productCategories.filter((c) => c.live);
+  const index = categories.findIndex((c) => c.slug === categorySlug);
+  const items = rotateFrom(categories, index, count)
+    .filter((c) => c.slug !== categorySlug)
+    .map((c) => ({ title: c.title, description: c.description, href: c.path }));
+  return items.length
+    ? { eyebrow: 'Related Products', heading: 'Explore More AI Automation Products', items }
+    : undefined;
+}

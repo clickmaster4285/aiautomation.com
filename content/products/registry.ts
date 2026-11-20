@@ -16,6 +16,8 @@ import { aiHrRecruitment, aiHrRecruitmentSeo, aiHrRecruitmentKeywords } from './
 import { aiWorkflowBpa, aiWorkflowBpaSeo, aiWorkflowBpaKeywords } from './ai-workflow-business-process-automation';
 import { aiFinanceAccounting, aiFinanceAccountingSeo, aiFinanceAccountingKeywords } from './ai-finance-accounting';
 import { aiEcommerceAutomation, aiEcommerceAutomationSeo, aiEcommerceAutomationKeywords } from './ai-ecommerce-automation';
+import { aiDocumentDataIntelligence, aiDocumentDataIntelligenceSeo, aiDocumentDataIntelligenceKeywords } from './ai-document-data-intelligence';
+import { aiAgentsPlatforms, aiAgentsPlatformsSeo, aiAgentsPlatformsKeywords } from './ai-agents-platforms';
 
 // ── AI Sales CRM children ──
 import { aiSalesAutomationSoftware, aiSalesAutomationSoftwareSeo, aiSalesAutomationSoftwareKeywords } from './ai-sales-crm/ai-sales-automation-software';
@@ -66,6 +68,40 @@ import { aiOrderProcessingAutomation, aiOrderProcessingAutomationSeo, aiOrderPro
 import { aiProductRecommendationSoftware, aiProductRecommendationSoftwareSeo, aiProductRecommendationSoftwareKeywords } from './ai-ecommerce-automation/ai-product-recommendation-software';
 import { aiShoppingAssistant, aiShoppingAssistantSeo, aiShoppingAssistantKeywords } from './ai-ecommerce-automation/ai-shopping-assistant';
 
+// ── AI Document & Data Intelligence children ──
+import { aiDocumentProcessingSoftware, aiDocumentProcessingSoftwareSeo, aiDocumentProcessingSoftwareKeywords } from './ai-document-data-intelligence/ai-document-processing-software';
+import { aiDataExtractionSoftware, aiDataExtractionSoftwareSeo, aiDataExtractionSoftwareKeywords } from './ai-document-data-intelligence/ai-data-extraction-software';
+import { aiOcrSoftware, aiOcrSoftwareSeo, aiOcrSoftwareKeywords } from './ai-document-data-intelligence/ai-ocr-software';
+import { intelligentDocumentProcessing, intelligentDocumentProcessingSeo, intelligentDocumentProcessingKeywords } from './ai-document-data-intelligence/intelligent-document-processing';
+import { aiContractAnalysis, aiContractAnalysisSeo, aiContractAnalysisKeywords } from './ai-document-data-intelligence/ai-contract-analysis';
+
+// ── AI Agents & Platforms children ──
+import { aiAgentPlatform, aiAgentPlatformSeo, aiAgentPlatformKeywords } from './ai-agents-platforms/ai-agent-platform';
+import { aiAgentDevelopment, aiAgentDevelopmentSeo, aiAgentDevelopmentKeywords } from './ai-agents-platforms/ai-agent-development';
+import { autonomousAiAgents, autonomousAiAgentsSeo, autonomousAiAgentsKeywords } from './ai-agents-platforms/autonomous-ai-agents';
+import { multiAgentSystems, multiAgentSystemsSeo, multiAgentSystemsKeywords } from './ai-agents-platforms/multi-agent-systems';
+import { enterpriseAiAgents, enterpriseAiAgentsSeo, enterpriseAiAgentsKeywords } from './ai-agents-platforms/enterprise-ai-agents';
+
+// ── Industry-Specific AI Automation (parent + children) ──
+import { industrySpecificAiAutomation, industrySpecificAiAutomationSeo, industrySpecificAiAutomationKeywords } from './industry-specific-ai-automation';
+import { aiHealthcareAutomation, aiHealthcareAutomationSeo, aiHealthcareAutomationKeywords } from './industry-specific-ai-automation/ai-healthcare-automation';
+import { aiRealEstateAutomation, aiRealEstateAutomationSeo, aiRealEstateAutomationKeywords } from './industry-specific-ai-automation/ai-real-estate-automation';
+import { aiLogisticsAutomation, aiLogisticsAutomationSeo, aiLogisticsAutomationKeywords } from './industry-specific-ai-automation/ai-logistics-automation';
+import { aiEducationAutomation, aiEducationAutomationSeo, aiEducationAutomationKeywords } from './industry-specific-ai-automation/ai-education-automation';
+import { aiLegalAutomation, aiLegalAutomationSeo, aiLegalAutomationKeywords } from './industry-specific-ai-automation/ai-legal-automation';
+
+// ── General AI Automation (parent + children) ──
+import { generalAiAutomation, generalAiAutomationSeo, generalAiAutomationKeywords } from './general-ai-automation';
+import { aiAutomationSolutions, aiAutomationSolutionsSeo, aiAutomationSolutionsKeywords } from './general-ai-automation/ai-automation-solutions';
+import { aiAutomationToolsForBusinesses, aiAutomationToolsForBusinessesSeo, aiAutomationToolsForBusinessesKeywords } from './general-ai-automation/ai-automation-tools-for-businesses';
+import { customAiAutomationSoftware, customAiAutomationSoftwareSeo, customAiAutomationSoftwareKeywords } from './general-ai-automation/custom-ai-automation-software';
+import { enterpriseAiAutomationSolutions, enterpriseAiAutomationSolutionsSeo, enterpriseAiAutomationSolutionsKeywords } from './general-ai-automation/enterprise-ai-automation-solutions';
+import { aiPoweredBusinessSoftware, aiPoweredBusinessSoftwareSeo, aiPoweredBusinessSoftwareKeywords } from './general-ai-automation/ai-powered-business-software';
+import { intelligentBusinessAutomation, intelligentBusinessAutomationSeo, intelligentBusinessAutomationKeywords } from './general-ai-automation/intelligent-business-automation';
+import { aiIntegrationServices, aiIntegrationServicesSeo, aiIntegrationServicesKeywords } from './general-ai-automation/ai-integration-services';
+import { endToEndAiAutomation, endToEndAiAutomationSeo, endToEndAiAutomationKeywords } from './general-ai-automation/end-to-end-ai-automation';
+import { aiProcessOptimization, aiProcessOptimizationSeo, aiProcessOptimizationKeywords } from './general-ai-automation/ai-process-optimization';
+
 export interface ProductEntry {
   content: ProductPageContent;
   seo: HubSeo;
@@ -87,6 +123,10 @@ export const servicePages: Record<ProductService, ProductEntry> = {
   'ai-workflow-business-process-automation': entry(aiWorkflowBpa, aiWorkflowBpaSeo, aiWorkflowBpaKeywords),
   'ai-finance-accounting': entry(aiFinanceAccounting, aiFinanceAccountingSeo, aiFinanceAccountingKeywords),
   'ai-ecommerce-automation': entry(aiEcommerceAutomation, aiEcommerceAutomationSeo, aiEcommerceAutomationKeywords),
+  'ai-document-data-intelligence': entry(aiDocumentDataIntelligence, aiDocumentDataIntelligenceSeo, aiDocumentDataIntelligenceKeywords),
+  'ai-agents-platforms': entry(aiAgentsPlatforms, aiAgentsPlatformsSeo, aiAgentsPlatformsKeywords),
+  'industry-specific-ai-automation': entry(industrySpecificAiAutomation, industrySpecificAiAutomationSeo, industrySpecificAiAutomationKeywords),
+  'general-ai-automation': entry(generalAiAutomation, generalAiAutomationSeo, generalAiAutomationKeywords),
 };
 
 /** /products/[service]/[slug] */
@@ -139,6 +179,38 @@ export const childPages: { [S in ProductService]: Record<ProductSlug<S>, Product
     'ai-order-processing-automation': entry(aiOrderProcessingAutomation, aiOrderProcessingAutomationSeo, aiOrderProcessingAutomationKeywords),
     'ai-product-recommendation-software': entry(aiProductRecommendationSoftware, aiProductRecommendationSoftwareSeo, aiProductRecommendationSoftwareKeywords),
     'ai-shopping-assistant': entry(aiShoppingAssistant, aiShoppingAssistantSeo, aiShoppingAssistantKeywords),
+  },
+  'ai-document-data-intelligence': {
+    'ai-document-processing-software': entry(aiDocumentProcessingSoftware, aiDocumentProcessingSoftwareSeo, aiDocumentProcessingSoftwareKeywords),
+    'ai-data-extraction-software': entry(aiDataExtractionSoftware, aiDataExtractionSoftwareSeo, aiDataExtractionSoftwareKeywords),
+    'ai-ocr-software': entry(aiOcrSoftware, aiOcrSoftwareSeo, aiOcrSoftwareKeywords),
+    'intelligent-document-processing': entry(intelligentDocumentProcessing, intelligentDocumentProcessingSeo, intelligentDocumentProcessingKeywords),
+    'ai-contract-analysis': entry(aiContractAnalysis, aiContractAnalysisSeo, aiContractAnalysisKeywords),
+  },
+  'ai-agents-platforms': {
+    'ai-agent-platform': entry(aiAgentPlatform, aiAgentPlatformSeo, aiAgentPlatformKeywords),
+    'ai-agent-development': entry(aiAgentDevelopment, aiAgentDevelopmentSeo, aiAgentDevelopmentKeywords),
+    'autonomous-ai-agents': entry(autonomousAiAgents, autonomousAiAgentsSeo, autonomousAiAgentsKeywords),
+    'multi-agent-systems': entry(multiAgentSystems, multiAgentSystemsSeo, multiAgentSystemsKeywords),
+    'enterprise-ai-agents': entry(enterpriseAiAgents, enterpriseAiAgentsSeo, enterpriseAiAgentsKeywords),
+  },
+  'industry-specific-ai-automation': {
+    'ai-healthcare-automation': entry(aiHealthcareAutomation, aiHealthcareAutomationSeo, aiHealthcareAutomationKeywords),
+    'ai-real-estate-automation': entry(aiRealEstateAutomation, aiRealEstateAutomationSeo, aiRealEstateAutomationKeywords),
+    'ai-logistics-automation': entry(aiLogisticsAutomation, aiLogisticsAutomationSeo, aiLogisticsAutomationKeywords),
+    'ai-education-automation': entry(aiEducationAutomation, aiEducationAutomationSeo, aiEducationAutomationKeywords),
+    'ai-legal-automation': entry(aiLegalAutomation, aiLegalAutomationSeo, aiLegalAutomationKeywords),
+  },
+  'general-ai-automation': {
+    'ai-automation-solutions': entry(aiAutomationSolutions, aiAutomationSolutionsSeo, aiAutomationSolutionsKeywords),
+    'ai-automation-tools-for-businesses': entry(aiAutomationToolsForBusinesses, aiAutomationToolsForBusinessesSeo, aiAutomationToolsForBusinessesKeywords),
+    'custom-ai-automation-software': entry(customAiAutomationSoftware, customAiAutomationSoftwareSeo, customAiAutomationSoftwareKeywords),
+    'enterprise-ai-automation-solutions': entry(enterpriseAiAutomationSolutions, enterpriseAiAutomationSolutionsSeo, enterpriseAiAutomationSolutionsKeywords),
+    'ai-powered-business-software': entry(aiPoweredBusinessSoftware, aiPoweredBusinessSoftwareSeo, aiPoweredBusinessSoftwareKeywords),
+    'intelligent-business-automation': entry(intelligentBusinessAutomation, intelligentBusinessAutomationSeo, intelligentBusinessAutomationKeywords),
+    'ai-integration-services': entry(aiIntegrationServices, aiIntegrationServicesSeo, aiIntegrationServicesKeywords),
+    'end-to-end-ai-automation': entry(endToEndAiAutomation, endToEndAiAutomationSeo, endToEndAiAutomationKeywords),
+    'ai-process-optimization': entry(aiProcessOptimization, aiProcessOptimizationSeo, aiProcessOptimizationKeywords),
   },
 };
 

@@ -38,8 +38,10 @@ const nextConfig: NextConfig = {
     qualities: [60, 75],
     deviceSizes: [640, 750, 828, 1080, 1200, 1400, 1920, 2048],
   },
-  // Allow other devices on the LAN to access the dev server
-  allowedDevOrigins: ['192.168.88.53'],
+  // Hosts (not ports) allowed to load dev-only assets, besides localhost.
+  // Any port works, e.g. :3000 or :3001 when 3000 is taken.
+  // 192.168.88.39 = this machine on the LAN; 192.168.88.53 = another LAN device.
+  allowedDevOrigins: ['127.0.0.1', '192.168.88.39', '192.168.88.53'],
   async headers() {
     return [
       {

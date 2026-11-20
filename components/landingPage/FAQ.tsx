@@ -19,10 +19,13 @@ const defaultSideLink = { text: "Book a Call", link: "/free-automation-audit" };
 export default function FAQ({
   data,
   ctaPosition,
+  showMascot = true,
 }: {
   data: FAQData;
   /** Sent to analytics as the audit button position (e.g. "faq"). */
   ctaPosition?: string;
+  /** The robot mascot under the side link. Product pages turn it off. */
+  showMascot?: boolean;
 }) {
   const { head, tail } = splitHeading(data.heading);
   const sideText = data.sideText ?? defaultSideText;
@@ -53,16 +56,18 @@ export default function FAQ({
             >
               {sideLink.text} <span aria-hidden="true">→</span>
             </a>
-            <Image
-              src="/images/robot-mascot2.jpg"
-              alt="Clickmasters robot mascot"
-              width={479}
-              height={479}
-              sizes="(min-width: 1280px) 256px, (min-width: 1024px) 224px, (min-width: 768px) 192px, 160px"
-              quality={60}
-              loading="lazy"
-              className="w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64 mt-6 md:mt-8 float-y motion-reduce:animate-none"
-            />
+            {showMascot && (
+              <Image
+                src="/images/robot-mascot2.jpg"
+                alt="Clickmasters robot mascot"
+                width={479}
+                height={479}
+                sizes="(min-width: 1280px) 256px, (min-width: 1024px) 224px, (min-width: 768px) 192px, 160px"
+                quality={60}
+                loading="lazy"
+                className="w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64 mt-6 md:mt-8 float-y motion-reduce:animate-none"
+              />
+            )}
           </div>
 
           {/* Right Column – FAQ List */}

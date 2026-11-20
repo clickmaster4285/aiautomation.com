@@ -15,16 +15,23 @@ type FinalCtaData = {
 export default function CTA({
   data,
   ctaPosition,
+  showMascots = true,
 }: {
   data: FinalCtaData;
   /** Sent to analytics as the audit button position (e.g. "footer"). */
   ctaPosition?: string;
+  /** The floating robot mascots beside the heading. Product pages turn them off. */
+  showMascots?: boolean;
 }) {
   const { head, tail } = splitHeading(data.heading);
+  // More than ~5 words before the italic tail wraps on its own, so the forced break would strand words.
+  const isLong = head.split(/\s+/).filter(Boolean).length > 5;
   return (
     <section className="bg-paper py-24 relative overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 text-center relative">
         
+        {showMascots && (
+        <>
         {/* Left floating mascot */}
         <motion.div
           className="absolute left-4 top-0 w-24 md:w-52 pointer-events-none"
@@ -58,6 +65,8 @@ export default function CTA({
             className="w-full h-auto"
           />
         </motion.div>
+        </>
+        )}
 
         {/* Logo */}
         <div className="mb-6 flex justify-center">
@@ -72,11 +81,19 @@ export default function CTA({
         </div>
 
         {/* One heading: normal head + italic tail */}
-        <h2 className="display text-4xl sm:text-5xl md:text-7xl py-4 md:py-8">
+        {/* Short headings keep the homepage look (head, line break, italic tail).
+            Long headings flow inline with balanced lines, so no word is left alone on a line. */}
+        <h2
+          className={`display py-4 md:py-8 mx-auto text-balance ${
+            isLong
+              ? "max-w-5xl text-3xl sm:text-4xl md:text-6xl leading-[1.05]"
+              : "text-4xl sm:text-5xl md:text-7xl"
+          }`}
+        >
           {head && (
             <>
               {head}{" "}
-              <br />
+              {!isLong && <br />}
             </>
           )}
           <span className="display-italic">{tail}</span>

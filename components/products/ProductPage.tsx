@@ -21,6 +21,7 @@ import { HubJsonLd } from '@/components/seo/HubJsonLd';
 import ProductLeadForm from '@/components/products/ProductLeadForm';
 import type { HubSeo } from '@/lib/hub-seo';
 import type { ProductPageContent } from '@/content/products/types';
+import type { RelatedProducts } from '@/content/products';
 
 
 // ─── Helpers ───────────────────────────────────────────
@@ -70,7 +71,59 @@ const fadeUp = (i = 0) => ({
 
 // ─── Page ──────────────────────────────────────────────
 
-export default function ProductPage({ content: c, seo }: { content: ProductPageContent; seo: HubSeo }) {
+/** Grid of linked product cards (used by the content `related` block and the auto "related products" block). */
+function RelatedCards({
+  eyebrow,
+  heading,
+  intro,
+  items,
+  tone = 'paper',
+}: {
+  eyebrow: string;
+  heading: string;
+  intro?: string;
+  items: { title: string; description: string; href: string }[];
+  tone?: 'paper' | 'secondary';
+}) {
+  return (
+    <section className={`${tone === 'secondary' ? 'bg-secondary' : 'bg-paper'} py-16 md:py-24`}>
+      <div className="mx-auto max-w-[84vw] px-6">
+        <SectionLabel label={eyebrow} />
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
+          <Heading text={heading} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl" />
+          {intro && <p className="text-sm md:text-base text-muted-foreground md:text-right md:self-end">{intro}</p>}
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
+          {items.map((r, i) => (
+            <motion.div key={r.href} {...fadeUp(i)}>
+              <Link
+                href={r.href}
+                className="related-link block h-full bg-paper p-6 md:p-8 group hover:bg-ink hover:text-white transition-colors duration-500"
+              >
+                <h3 className="display text-xl md:text-2xl mb-2">{r.title}</h3>
+                <p className="text-sm text-muted-foreground group-hover:text-white/70 leading-relaxed">{r.description}</p>
+                <span className="mt-4 inline-block eyebrow text-xs text-muted-foreground group-hover:text-brand">
+                  Explore <span aria-hidden="true">→</span>
+                </span>
+              </Link>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default function ProductPage({
+  content: c,
+  seo,
+  relatedProducts,
+}: {
+  content: ProductPageContent;
+  seo: HubSeo;
+  /** Three related product pages, shown as cards just before the final CTA. */
+  relatedProducts?: RelatedProducts;
+}) {
   const AUDIT = c.hero.primaryCta.href;
   // H1 = homepage pattern: display text + italic brand tail.
   const heroTitle = splitHeading(c.hero.heading, c.hero.accentWords ?? 4);
@@ -525,37 +578,17 @@ export default function ProductPage({ content: c, seo }: { content: ProductPageC
 
       {/* ── RELATED PRODUCTS (optional, topic-cluster links) ─ */}
       {c.related && (
-        <section className="bg-paper py-16 md:py-24">
-          <div className="mx-auto max-w-[84vw] px-6">
-            <SectionLabel label={c.related.eyebrow} />
-            <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
-              <Heading text={c.related.heading} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl" />
-              {c.related.intro && (
-                <p className="text-sm md:text-base text-muted-foreground md:text-right md:self-end">{c.related.intro}</p>
-              )}
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
-              {c.related.items.map((r, i) => (
-                <motion.div key={r.href} {...fadeUp(i)}>
-                  <Link
-                    href={r.href}
-                    className="related-link block h-full bg-paper p-6 md:p-8 group hover:bg-ink hover:text-white transition-colors duration-500"
-                  >
-                    <h3 className="display text-xl md:text-2xl mb-2">{r.title}</h3>
-                    <p className="text-sm text-muted-foreground group-hover:text-white/70 leading-relaxed">{r.description}</p>
-                    <span className="mt-4 inline-block eyebrow text-xs text-muted-foreground group-hover:text-brand">
-                      Explore <span aria-hidden="true">→</span>
-                    </span>
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <RelatedCards
+          eyebrow={c.related.eyebrow}
+          heading={c.related.heading}
+          intro={c.related.intro}
+          items={c.related.items}
+        />
       )}
 
       {/* ── FAQ (homepage FAQ: <details>, answers always in HTML) ─ */}
       <FAQ
+        showMascot={false}
         ctaPosition="faq"
         data={{
           heading: c.faqHeading,
@@ -565,8 +598,19 @@ export default function ProductPage({ content: c, seo }: { content: ProductPageC
         }}
       />
 
-      {/* ── FINAL CTA (homepage CTA) ─────────────────── */}
+      {/* ── RELATED PRODUCTS (3 cards, internal links, right before the final CTA) ─ */}
+      {relatedProducts && relatedProducts.items.length > 0 && (
+        <RelatedCards
+          eyebrow={relatedProducts.eyebrow}
+          heading={relatedProducts.heading}
+          items={relatedProducts.items}
+          tone="secondary"
+        />
+      )}
+
+      {/* ── FINAL CTA (homepage CTA, without the mascots) ─ */}
       <CTA
+        showMascots={false}
         ctaPosition="footer"
         data={{
           heading: c.cta.heading,

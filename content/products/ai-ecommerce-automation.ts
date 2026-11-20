@@ -55,7 +55,7 @@ export const aiEcommerceAutomationKeywords = [
 
 // The five contextual internal links used in the copy below (all verified to resolve).
 export const internalLinks = [
-  { anchor: 'automation for e-commerce businesses', href: '/industries/ecommerce', section: 'What Is AI E-commerce Automation?' },
+  { anchor: 'automation for e-commerce businesses', href: '/industries/ai-automation-for-ecommerce', section: 'What Is AI E-commerce Automation?' },
   { anchor: 'AI workflow automation for e-commerce', href: '/solutions/ai-workflow-automation/for-ecommerce', section: 'Where Ecommerce Automation Fits in a Store (features)' },
   { anchor: 'customer support automation for online stores', href: '/solutions/customer-support-automation/for-ecommerce', section: 'AI-Assisted Shopping and Store Operations' },
   { anchor: 'marketing automation for e-commerce', href: '/solutions/marketing-automation/for-ecommerce', section: 'The Shopping Experience (spotlight)' },
@@ -86,7 +86,7 @@ export const aiEcommerceAutomation: ProductPageContent = {
     paragraphs: [
       'AI e-commerce automation is the use of workflows and AI models to run the repeatable work behind an online store. When an order is placed, a product is added, a return is requested or a customer asks a question, a workflow picks it up, checks it against your rules and moves it to the right place, whether that is the store, the helpdesk, the email platform or a shared spreadsheet.',
       'Rules handle the predictable parts, such as tagging an order or sending a review request a set number of days after delivery. AI handles the parts that need reading or writing: understanding what a customer email is about, drafting a product description from a supplier’s spec sheet, or answering “does this jacket run small?” from your size guide. People stay in charge of refunds, exceptions and anything published under your brand.',
-      'This page is the overview of our e-commerce range. It explains the main areas a store can automate and points you to the solution page for each one. For the wider picture of how we work with online retailers, see our [automation for e-commerce businesses](/industries/ecommerce) page.',
+      'This page is the overview of our e-commerce range. It explains the main areas a store can automate and points you to the solution page for each one. For the wider picture of how we work with online retailers, see our [automation for e-commerce businesses](/industries/ai-automation-for-ecommerce) page.',
     ],
     problems: [
       'New products take days to go live because descriptions, tags and attributes are written by hand.',

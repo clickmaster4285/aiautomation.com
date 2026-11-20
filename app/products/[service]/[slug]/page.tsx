@@ -7,6 +7,7 @@ import { notFound } from 'next/navigation';
 import ProductPage from '@/components/products/ProductPage';
 import { productMetadata } from '@/lib/product-metadata';
 import { getChildPage, childParams } from '@/content/products/registry';
+import { getRelatedProducts } from '@/content/products';
 
 type Props = { params: Promise<{ service: string; slug: string }> };
 
@@ -27,5 +28,7 @@ export default async function ChildProductPage({ params }: Props) {
   const { service, slug } = await params;
   const page = getChildPage(service, slug);
   if (!page) notFound();
-  return <ProductPage content={page.content} seo={page.seo} />;
+  return (
+    <ProductPage content={page.content} seo={page.seo} relatedProducts={getRelatedProducts(service, slug)} />
+  );
 }
