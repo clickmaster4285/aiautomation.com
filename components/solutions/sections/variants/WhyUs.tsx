@@ -2,6 +2,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { toLines, splitTitled } from './parseCopy';
+import { RichText } from './RichText';
+
 import { Shield, Database, Users, BrainCircuit, CheckCircle2, ArrowRight, LucideIcon } from 'lucide-react';
 import Link from 'next/link';
 
@@ -13,7 +16,7 @@ interface WhyUsSectionProps {
 }
 
 export function WhyUsSection({ title, content, cta, stats }: WhyUsSectionProps) {
-  const normalizedContent = (content || []).filter(
+  const normalizedContent = toLines(content).filter(
     (line): line is string => typeof line === 'string' && line.trim().length > 0
   );
   const items = normalizedContent.filter((line) => line.includes('**'));
@@ -64,7 +67,7 @@ export function WhyUsSection({ title, content, cta, stats }: WhyUsSectionProps) 
               {/* Updated intro text to match ExampleSection paragraph style */}
               {introText && (
                 <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-xl">
-                  {introText}
+                  <RichText text={introText} />
                 </p>
               )}
             </motion.div>
@@ -72,10 +75,7 @@ export function WhyUsSection({ title, content, cta, stats }: WhyUsSectionProps) 
             {/* Cards - Left side - Updated text sizes */}
             <div className="space-y-4">
               {displayItems.map((item, idx) => {
-                const cleanItem = item.replace(/\*\*/g, '').trim();
-                const parts = cleanItem.split('.');
-                const title = parts[0]?.trim() || '';
-                const description = parts.slice(1).join('.').trim() || '';
+                const { title, description } = splitTitled(item);
 
                 const IconKey = Object.keys(iconMap).find(key =>
                   title.toLowerCase().includes(key.toLowerCase())
@@ -96,7 +96,7 @@ export function WhyUsSection({ title, content, cta, stats }: WhyUsSectionProps) 
                     </div>
                     <div>
                       <h4 className="text-base md:text-lg font-semibold text-gray-900">{title}</h4>
-                      <p className="text-base md:text-lg text-gray-600 leading-relaxed">{description}</p>
+                      <p className="text-base md:text-lg text-gray-600 leading-relaxed"><RichText text={description} /></p>
                     </div>
                   </motion.div>
                 );

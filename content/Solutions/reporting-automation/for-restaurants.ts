@@ -1,4 +1,4 @@
-// content/Solutions/reporting-automation-for-restaurants.ts
+// content/Solutions/reporting-automation/for-restaurants.ts
 import { SolutionData } from '@/content/type';
 
 export const reportingAutomationForRestaurants: SolutionData = {
@@ -194,6 +194,96 @@ We start with a free audit that identifies your highest-return workflow, automat
   ],
   cta: 'See what your business could stop doing by hand.',
   bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'Reporting Automation for Restaurants & Hospitality', serviceType: 'Reporting Automation Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-restaurants-hospitality-need-reporting-automation' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Restaurants & Hospitality',
+              triggerLabel: 'New Document Request',
+              actionLabels: ['Generate Reports', 'Create Invoices', 'Manage Client Data'],
+              metricValue: '800',
+              metricLabel: 'reports generated automatically each month',
+              submetric: '30% increase in customer satisfaction',
+              platform: 'Reporting Automation + Restaurants & Hospitality Platform',
+              accent: '#10B981',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'Reporting Automation', href: '/solutions/reporting-automation' },
+            { label: 'Restaurants & Hospitality', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Restaurants & Hospitality Need Reporting Automation',
+        props: { title: 'Why Restaurants & Hospitality Need Reporting Automation' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves for Restaurants & Hospitality',
+        props: { title: 'The Problems This Solves for Restaurants & Hospitality' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate for Restaurants & Hospitality',
+        props: { title: 'What We Automate for Restaurants & Hospitality' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Restaurants & Hospitality\'s Realities',
+        props: { title: 'Built for Restaurants & Hospitality\'s Realities' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about reporting automation for restaurants & hospitality' } },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. 30 minutes, no obligation, and an honest read on where reporting automation pays off for restaurants & hospitality.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };
 
 export default reportingAutomationForRestaurants;

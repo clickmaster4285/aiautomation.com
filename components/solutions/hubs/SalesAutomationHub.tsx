@@ -1,4 +1,4 @@
-// app/solutions/sales-automation/page.tsx
+// components/solutions/hubs/SalesAutomationHub.tsx (rendered by app/solutions/[service]/page.tsx)
 'use client';
 
 import { HubJsonLd } from '@/components/seo/HubJsonLd';

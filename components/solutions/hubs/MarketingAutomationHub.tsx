@@ -1,4 +1,4 @@
-// app/solutions/marketing-automation/page.tsx
+// components/solutions/hubs/MarketingAutomationHub.tsx (rendered by app/solutions/[service]/page.tsx)
 'use client';
 
 import { HubJsonLd } from '@/components/seo/HubJsonLd';

@@ -194,6 +194,96 @@ We start with a free audit that identifies your highest-return workflow, automat
   ],
   cta: 'See what your team could stop doing by hand.',
   bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'AI Workflow Automation for Real Estate', serviceType: 'AI Workflow Automation Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-real-estate-need-ai-workflow-automation' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Real Estate',
+              triggerLabel: 'New Client Inquiry',
+              actionLabels: ['Gather Requirements', 'Schedule Meeting', 'Submit Proposal'],
+              metricValue: '2,500',
+              metricLabel: 'client inquiries handled automatically this week',
+              submetric: '80% improved response time',
+              platform: 'CRM + Real Estate Platform',
+              accent: '#10B981',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'AI Workflow Automation', href: '/solutions/ai-workflow-automation' },
+            { label: 'Real Estate', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Real Estate Needs AI Workflow Automation',
+        props: { title: 'Why Real Estate Needs AI Workflow Automation' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves for Real Estate',
+        props: { title: 'The Problems This Solves for Real Estate' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate for Real Estate',
+        props: { title: 'What We Automate for Real Estate' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Real Estate\'s Realities',
+        props: { title: 'Built for Real Estate\'s Realities' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI workflow automation for real estate' } },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. 30 minutes, no obligation, and an honest read on where workflow automation pays off for real estate.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };
 
 export default aiWorkflowAutomationForRealEstate;

@@ -194,6 +194,96 @@ We start with a free audit that identifies your highest-return workflow, automat
   ],
   cta: 'See what your business could stop doing by hand.',
   bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'AI Workflow Automation for Retail', serviceType: 'AI Workflow Automation Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-retail-need-ai-workflow-automation' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Retail',
+              triggerLabel: 'New Customer Inquiry',
+              actionLabels: ['Gather Requirements', 'Schedule Meeting', 'Submit Proposal'],
+              metricValue: '2,500',
+              metricLabel: 'client inquiries handled automatically this week',
+              submetric: '80% improved response time',
+              platform: 'CRM + Retail Platform',
+              accent: '#3B82F6',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'AI Workflow Automation', href: '/solutions/ai-workflow-automation' },
+            { label: 'Retail', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Retail Needs AI Workflow Automation',
+        props: { title: 'Why Retail Needs AI Workflow Automation' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves for Retail',
+        props: { title: 'The Problems This Solves for Retail' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate for Retail',
+        props: { title: 'What We Automate for Retail' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Retail\'s Realities',
+        props: { title: 'Built for Retail\'s Realities' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI workflow automation for retail' } },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. 30 minutes, no obligation, and an honest read on where workflow automation pays off for retail.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };
 
 export default aiWorkflowAutomationForRetail;

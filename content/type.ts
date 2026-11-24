@@ -129,4 +129,38 @@ export interface SolutionData {
   faqQuestions: FAQ[];
   cta: string;
   bookingLink: string;
+  /** Layout for app/solutions/[service]/[slug] (see components/solutions/SolutionPage.tsx). */
+  page: SolutionPageConfig;
+}
+
+/**
+ * One section of a solution page, rendered by components/solutions/SolutionPage.tsx.
+ * - type:    section component name (HeroSection, WhySection, ContentSection, FAQSection, …)
+ * - section: key in `sections` whose copy the block renders
+ * - props:   page-specific props (titles, subtitles, ids, hero visual…). Values may reference the
+ *            content object: { $ref: 'field', slice?: [a, b] }, { $related: 'title' | 'subtitle' },
+ *            { $element: 'AutomationHeroMockup' | 'ChatbotHeroMockup', props }.
+ */
+export interface SolutionBlock {
+  type: string;
+  section?: string;
+  props?: Record<string, unknown>;
+}
+
+export interface SolutionPageConfig {
+  /** Service JSON-LD fields. */
+  schema: { name: string; serviceType: string };
+  /** Sections in render order. */
+  blocks: SolutionBlock[];
+}
+
+/** What the solution page template needs. SolutionData satisfies it; a few hub files use array sections. */
+export interface SolutionPageContent {
+  url: string;
+  titleTag: string;
+  metaDescription: string;
+  primaryKeyword: string;
+  sections: Record<string, string | string[]>;
+  relatedSolutions?: RelatedSolution[];
+  page: SolutionPageConfig;
 }

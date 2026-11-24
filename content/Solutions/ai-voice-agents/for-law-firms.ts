@@ -194,6 +194,96 @@ We start with a free audit that identifies your highest-return workflow, automat
   ],
   cta: 'See what your firm could stop doing by hand.',
   bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'AI Voice Agents for Law Firms', serviceType: 'AI Voice Agent Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-law-firms-need-ai-voice-agents' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Law Firms',
+              triggerLabel: 'New Client Inquiry',
+              actionLabels: ['Provide Legal Information', 'Schedule Consultation', 'Submit Case Details'],
+              metricValue: '1,500',
+              metricLabel: 'client inquiries handled automatically this week',
+              submetric: '90% improved response time',
+              platform: 'CRM + Legal Platform',
+              accent: '#F97316',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'AI Voice Agents', href: '/solutions/ai-voice-agents' },
+            { label: 'Law Firms', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Law Firms Need AI Voice Agents',
+        props: { title: 'Why Law Firms Need AI Voice Agents' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves for Law Firms',
+        props: { title: 'The Problems This Solves for Law Firms' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate for Law Firms',
+        props: { title: 'What We Automate for Law Firms' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Law Firms\' Realities',
+        props: { title: 'Built for Law Firms\' Realities' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI voice agents for law firms' } },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. 30 minutes, no obligation, and an honest read on where voice agent pays off for law firms.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };
 
 export default aiVoiceAgentsForLawFirms;

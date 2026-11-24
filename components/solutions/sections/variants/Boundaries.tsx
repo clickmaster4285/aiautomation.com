@@ -3,7 +3,9 @@
 
 import { motion } from 'framer-motion';
 import { CheckCircle2, XCircle } from 'lucide-react';
-import { splitBoundaries } from './parseCopy';
+import { splitBoundaries, toLines } from './parseCopy';
+import { RichText } from './RichText';
+
 
 interface BoundariesSectionProps {
   title: string;
@@ -11,7 +13,7 @@ interface BoundariesSectionProps {
 }
 
 export function BoundariesSection({ title, content }: BoundariesSectionProps) {
-  const paragraphs = (content || []).filter(
+  const paragraphs = toLines(content).filter(
     (line): line is string => typeof line === 'string' && line.trim().length > 0
   );
   
@@ -125,7 +127,7 @@ export function BoundariesSection({ title, content }: BoundariesSectionProps) {
               className="space-y-4"
             >
               {whatIsItems.map((item, idx) => {
-                const cleanItem = item.replace(/\*\*/g, '').trim();
+                const cleanItem = item.trim();
                 return (
                   <motion.li
                     key={idx}
@@ -139,7 +141,7 @@ export function BoundariesSection({ title, content }: BoundariesSectionProps) {
                       </div>
                     </div>
                     <p className="text-base md:text-lg text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
-                      {cleanItem}
+                      <RichText text={cleanItem} />
                     </p>
                   </motion.li>
                 );
@@ -165,7 +167,7 @@ export function BoundariesSection({ title, content }: BoundariesSectionProps) {
               className="space-y-4"
             >
               {whatIsNotItems.map((item, idx) => {
-                const cleanItem = item.replace(/\*\*/g, '').trim();
+                const cleanItem = item.trim();
                 return (
                   <motion.li
                     key={idx}
@@ -179,7 +181,7 @@ export function BoundariesSection({ title, content }: BoundariesSectionProps) {
                       </div>
                     </div>
                     <p className="text-base md:text-lg text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
-                      {cleanItem}
+                      <RichText text={cleanItem} />
                     </p>
                   </motion.li>
                 );

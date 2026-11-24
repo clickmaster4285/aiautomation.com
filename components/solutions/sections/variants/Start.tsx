@@ -1,6 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { toLines } from './parseCopy';
+import { RichText } from './RichText';
+
 import { Target, TrendingUp, Clock, CheckCircle2, ArrowRight, BrainCircuit } from 'lucide-react';
 
 interface StartSectionProps {
@@ -9,7 +12,7 @@ interface StartSectionProps {
 }
 
 export function StartSection({ title, content }: StartSectionProps) {
-  const paragraphs = (content || []).filter(
+  const paragraphs = toLines(content).filter(
     (line): line is string => typeof line === 'string' && line.trim().length > 0
   );
 
@@ -68,7 +71,7 @@ export function StartSection({ title, content }: StartSectionProps) {
                       <CheckCircle2 className="h-3 w-3 text-brand" />
                     </div>
                   </div>
-                  <p className="text-base md:text-lg text-gray-300 leading-relaxed">{paragraph}</p>
+                  <p className="text-base md:text-lg text-gray-300 leading-relaxed"><RichText text={paragraph} /></p>
                 </motion.div>
               ))}
             </div>

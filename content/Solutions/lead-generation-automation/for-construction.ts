@@ -1,4 +1,4 @@
-// content/Solutions/lead-generation-automation-for-construction.ts
+// content/Solutions/lead-generation-automation/for-construction.ts
 import { SolutionData } from '@/content/type';
 
 export const leadGenerationAutomationForConstruction: SolutionData = {
@@ -194,6 +194,96 @@ We start with a free audit that identifies your highest-return workflow, automat
   ],
   cta: 'See what your company could stop doing by hand.',
   bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'Lead Generation Automation for Construction', serviceType: 'Lead Generation Automation Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-construction-need-lead-generation-automation' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Construction',
+              triggerLabel: 'New Document Request',
+              actionLabels: ['Generate Reports', 'Create Invoices', 'Manage Client Data'],
+              metricValue: '1200',
+              metricLabel: 'leads generated automatically each month',
+              submetric: '50% increase in conversion rates',
+              platform: 'Lead Generation Automation + Construction Management System',
+              accent: '#F59E0B',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'Lead Generation Automation', href: '/solutions/lead-generation-automation' },
+            { label: 'Construction', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Construction Needs Lead Generation Automation',
+        props: { title: 'Why Construction Needs Lead Generation Automation' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves for Construction',
+        props: { title: 'The Problems This Solves for Construction' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate for Construction',
+        props: { title: 'What We Automate for Construction' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Construction\'s Realities',
+        props: { title: 'Built for Construction\'s Realities' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about lead generation automation for construction' } },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. 30 minutes, no obligation, and an honest read on where lead generation system pays off for construction.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };
 
 export default leadGenerationAutomationForConstruction;

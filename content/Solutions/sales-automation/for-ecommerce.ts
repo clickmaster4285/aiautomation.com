@@ -1,4 +1,4 @@
-// content/Solutions/sales-automation-for-ecommerce.ts
+// content/Solutions/sales-automation/for-ecommerce.ts
 import { SolutionData } from '@/content/type';
 
 export const salesAutomationForEcommerce: SolutionData = {
@@ -194,6 +194,96 @@ We start with a free audit that identifies your highest-return workflow, automat
   ],
   cta: 'See what your store could stop doing by hand.',
   bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'Sales Automation for E-commerce', serviceType: 'Sales Automation Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-ecommerce-need-sales-automation' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'E-commerce',
+              triggerLabel: 'New Document Request',
+              actionLabels: ['Generate Reports', 'Create Invoices', 'Manage Client Data'],
+              metricValue: '1000',
+              metricLabel: 'leads generated automatically each month',
+              submetric: '30% increase in sales conversion rate',
+              platform: 'Sales Automation + E-commerce Platform',
+              accent: '#10B981',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'Sales Automation', href: '/solutions/sales-automation' },
+            { label: 'E-commerce', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why E-commerce Needs AI Sales Automation',
+        props: { title: 'Why E-commerce Needs AI Sales Automation' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves for E-commerce',
+        props: { title: 'The Problems This Solves for E-commerce' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate for E-commerce',
+        props: { title: 'What We Automate for E-commerce' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for E-commerce\'s Realities',
+        props: { title: 'Built for E-commerce\'s Realities' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about sales automation for e-commerce' } },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. 30 minutes, no obligation, and an honest read on where sales automation pays off for e-commerce.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };
 
 export default salesAutomationForEcommerce;

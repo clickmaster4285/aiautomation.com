@@ -1,4 +1,4 @@
-// content/Solutions/marketing-automation-for-manufacturing.ts
+// content/Solutions/marketing-automation/for-manufacturing.ts
 import { SolutionData } from '@/content/type';
 
 export const marketingAutomationForManufacturing: SolutionData = {
@@ -194,6 +194,96 @@ We start with a free audit that identifies your highest-return workflow, automat
   ],
   cta: 'See what your operation could stop doing by hand.',
   bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'AI Marketing Automation for Manufacturing', serviceType: 'AI Marketing Automation Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-manufacturing-need-ai-marketing-automation' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Manufacturing',
+              triggerLabel: 'New Document Request',
+              actionLabels: ['Generate Reports', 'Create Invoices', 'Manage Client Data'],
+              metricValue: '1800',
+              metricLabel: 'leads generated automatically each month',
+              submetric: '60% increase in conversion rates',
+              platform: 'AI Marketing Automation + Manufacturing Execution System',
+              accent: '#F59E0B',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'AI Marketing Automation', href: '/solutions/marketing-automation' },
+            { label: 'Manufacturing', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Manufacturing Needs AI Marketing Automation',
+        props: { title: 'Why Manufacturing Needs AI Marketing Automation' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves for Manufacturing',
+        props: { title: 'The Problems This Solves for Manufacturing' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate for Manufacturing',
+        props: { title: 'What We Automate for Manufacturing' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Manufacturing\'s Realities',
+        props: { title: 'Built for Manufacturing\'s Realities' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI marketing automation for manufacturing' } },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. 30 minutes, no obligation, and an honest read on where marketing automation pays off for manufacturing.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };
 
 export default marketingAutomationForManufacturing;

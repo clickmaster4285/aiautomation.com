@@ -2,6 +2,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { toLines } from './parseCopy';
+import { RichText } from './RichText';
+
 
 interface ReturnSectionProps {
   title: string;
@@ -11,7 +14,7 @@ interface ReturnSectionProps {
 
 export function ReturnSection({ title, content, stats }: ReturnSectionProps) {
   void stats;
-  const paragraphs = (content || []).filter(
+  const paragraphs = toLines(content).filter(
     (line): line is string => typeof line === 'string' && line.trim().length > 0
   );
 
@@ -82,7 +85,7 @@ export function ReturnSection({ title, content, stats }: ReturnSectionProps) {
                   transition={{ delay: idx * 0.1 }}
                   className="text-lg text-gray-300 leading-relaxed"
                 >
-                  {paragraph}
+                  <RichText text={paragraph} />
                 </motion.p>
               ))}
             </div>

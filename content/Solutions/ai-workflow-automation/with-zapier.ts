@@ -1,4 +1,4 @@
-// content/Solutions/ai-workflow-automation-with-zapier.ts
+// content/Solutions/ai-workflow-automation/with-zapier.ts
 import { SolutionData } from '@/content/type';
 
 export const aiWorkflowAutomationWithZapier: SolutionData = {
@@ -23,10 +23,8 @@ export const aiWorkflowAutomationWithZapier: SolutionData = {
   description: 'Clickmasters builds workflow automation on Zapier. Zapier is the most accessible automation platform, with the largest app library and the fastest path from idea to running Zapand it\'s an excellent fit for straightforward workflows and teams that want to self-serve simple changes later. Combined with workflow automation, which connects your apps and runs multi-step processes automaticallydata moves, decisions get made, and actions fire without manual hand-offs. Where basic automation follows fixed rules, the AI layer reads unstructured information, classifies it, drafts responses, and chooses between paths, handling the judgment calls a person used to make, the result is automation that runs on a platform matched to the job.',
   sections: {
     'Why Zapier for AI Workflow Automation': 'Zapier is the most accessible automation platform, with the largest app library and the fastest path from idea to running Zap. Per-task pricing that\'s friendly at low volume and worth watching as volume grows. For workflow automation specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. Zapier is the right home for this work when it matches straightforward workflows and teams that want to self-serve simple changes later, and when it does, this combination is hard to beat.',
-    'What We Build': '**Multi-step workflow design**entire processes mapped and rebuilt to run automatically across your tools, built on Zapier.\n**AI decision steps**classification, extraction, drafting, and routing inside the workflow, built on Zapier.\n**App-to-app integration**your systems connected so data flows without copy-paste, built on Zapier.\n**Trigger and schedule automation**workflows that fire on events or timetables with no one watching, built on Zapier.\n**Error handling and monitoring**built to catch failures and alert, not break silently, built on Zapier.',
     'What a Production Build Includes': 'The gap between a prototype and a system you can rely on is everything that happens when things go wrong. Every workflow automation build we ship on Zapier includes error handling on every step (failures caught and retried or escalated, never silent), monitoring and alerting (you know the system is running without checking), documentation (your team can understand and modify the build), and staged rollout (the automation proves itself on real cases with human oversight before it runs unattended).\n\nThis is the difference between automation that saves hours and automation that quietly breaks and costs trust. Most of the rescue projects we take on are builds that skipped these steps.',
     'Typical Workflows on Zapier': 'The workflow automation workflows we most often build on Zapier follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is neededclassification, extraction, drafting, and the result is executed and logged. Zapier\'s strengths make it particularly suited to straightforward workflows and teams that want to self-serve simple changes later, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
-    'How We Work': '1. **Free audit**we map the workflow and confirm Zapier is genuinely the right platform for it.\n2. **Build in sprints**constructed against your real tools and data, with error handling and monitoring built in.\n3. **Documented hand-off**you own the build; nothing is a black box.\n4. **Optimize**we monitor, refine, and expand as the system proves itself.',
   },
   features: [
     {
@@ -137,6 +135,90 @@ export const aiWorkflowAutomationWithZapier: SolutionData = {
   ],
   cta: 'Want workflow automation running on Zapier?',
   bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'AI Workflow Automation with Zapier', serviceType: 'AI Workflow Automation' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: '/free-automation-audit' },
+          secondaryCta: { text: 'Learn More', href: '#why-zapier' },
+          visual: { $element: 'ChatbotHeroMockup', props: { platform: 'zapier' } },
+          stats: {
+            $ref: 'stats',
+            slice: [0, 3],
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'AI workflow automation', href: '/solutions/ai-workflow-automation' },
+            { label: 'With zapier', href: '/solutions/ai-workflow-automation/with-zapier' },
+          ],
+        },
+      },
+      {
+        type: 'ContentSection',
+        section: 'Why Zapier for AI Workflow Automation',
+        props: {
+          id: 'why-zapier',
+          title: 'Why Zapier for AI Workflow Automation',
+          stats: [
+            { label: '6,000+ Apps', value: '✓' },
+            { label: 'Fast Deployment', value: '✓' },
+            { label: 'Self-Serve Friendly', value: '✓' },
+          ],
+          cta: { text: 'See Our Process', href: '#how-we-work' },
+          background: 'muted',
+        },
+      },
+      { type: 'FeatureGrid', props: {
+  title: 'What We Build',
+  subtitle: 'Comprehensive workflow automation solutions on Zapier',
+  eyebrow: 'Capabilities',
+  columns: 3,
+  background: 'dark',
+} },
+      {
+        type: 'ContentSection',
+        section: 'What a Production Build Includes',
+        props: {
+          id: 'production-build',
+          title: 'What a Production Build Includes',
+          cta: { text: 'See Our Process', href: '#how-we-work' },
+          background: 'muted',
+        },
+      },
+      {
+        type: 'ContentSection',
+        section: 'Typical Workflows on Zapier',
+        props: { id: 'workflows', title: 'Typical Workflows on Zapier' },
+      },
+      { type: 'ProcessSteps', props: {
+  title: 'How We Work',
+  subtitle: 'Our proven methodology for building workflows on Zapier',
+  background: 'muted',
+} },
+      { type: 'PlatformComparison', props: { title: 'Is Zapier Right for You?', subtitle: 'We\'ll tell you honestly if Zapier is the right platform for your workflow automation needs.' } },
+      { type: 'StatsSection', props: { title: 'Why Choose Clickmasters for Zapier Workflow Automation' } },
+      { type: 'FAQSection', props: {
+  title: 'Frequently Asked Questions',
+  subtitle: 'Common questions about workflow automation on Zapier',
+  eyebrow: 'FAQ',
+} },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. We\'ll scope the build and confirm the platform fit honestly.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'gradient',
+        },
+      },
+    ],
+  },
 };
 
 export default aiWorkflowAutomationWithZapier;

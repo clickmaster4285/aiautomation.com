@@ -1,4 +1,4 @@
-// content/Solutions/sales-automation-with-salesforce.ts
+// content/Solutions/sales-automation/with-salesforce.ts
 export const salesAutomationWithSalesforce = {
   url: '/solutions/sales-automation/with-salesforce',
   titleTag: 'Sales Automation with Salesforce: Clean Data, | Clickmasters',
@@ -121,4 +121,94 @@ export const salesAutomationWithSalesforce = {
   ],
 
   cta: 'Automate Sales with Salesforce',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'Sales Automation with Salesforce', serviceType: 'Sales Automation Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-sales-automation-with-salesforce' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Sales + Salesforce',
+              triggerLabel: 'New Sales Lead',
+              actionLabels: ['Enrich & Qualify', 'Create Opportunity', 'Assign to Rep'],
+              metricValue: '1,200',
+              metricLabel: 'sales events synced to Salesforce this month',
+              submetric: '60% less manual data entry',
+              platform: 'Sales Automation + Salesforce',
+              accent: '#00A1E0',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'Sales Automation', href: '/solutions/sales-automation' },
+            { label: 'With Salesforce', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Sales Automation Works Better with Salesforce',
+        props: { title: 'Why Sales Automation Works Better with Salesforce' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves for Salesforce Users',
+        props: { title: 'The Problems This Solves for Salesforce Users' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate for Salesforce Teams',
+        props: { title: 'What We Automate for Salesforce Teams' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Salesforce\'s Realities',
+        props: { title: 'Built for Salesforce\'s Realities' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about sales automation with Salesforce' } },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit — 30 minutes, no obligation, and an honest read on where sales automation pays off for your Salesforce team.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };

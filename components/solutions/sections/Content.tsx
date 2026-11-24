@@ -2,6 +2,8 @@
 'use client';
 
 import Link from 'next/link';
+import { toLines, splitTitled } from './variants/parseCopy';
+import { RichText } from './variants/RichText';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import {
@@ -387,6 +389,18 @@ export function ContentSection({
   const paragraphs = (Array.isArray(content) ? content : [content]).filter(
     (paragraph): paragraph is string => typeof paragraph === 'string' && paragraph.trim().length > 0
   );
+  // Lines that start with **Title** become feature cards (consecutive ones share a grid);
+  // everything else is a paragraph.
+  const blocks: ({ kind: 'text'; text: string } | { kind: 'features'; items: string[] })[] = [];
+  for (const line of toLines(paragraphs)) {
+    if (line.startsWith('**')) {
+      const last = blocks[blocks.length - 1];
+      if (last?.kind === 'features') last.items.push(line);
+      else blocks.push({ kind: 'features', items: [line] });
+    } else {
+      blocks.push({ kind: 'text', text: line });
+    }
+  }
 
   const iconMap = {
     Zap: Zap,
@@ -615,11 +629,8 @@ export function ContentSection({
             <div className="space-y-10">
               {/* Paragraphs */}
               <div className="space-y-5">
-                {paragraphs.map((paragraph, index) => {
-                  const hasFeatures = paragraph.includes('**') && paragraph.includes('');
-
-                  if (hasFeatures) {
-                    const featureItems = paragraph.split('\n').filter((line) => line.trim());
+                {blocks.map((block, index) => {
+                  if (block.kind === 'features') {
                     return (
                       <motion.div
                         key={index}
@@ -629,11 +640,8 @@ export function ContentSection({
                         transition={{ duration: 0.5, delay: 0.2 }}
                         className="grid grid-cols-1 md:grid-cols-2 gap-4"
                       >
-                        {featureItems.map((item, idx) => {
-                          const cleanItem = item.replace(/\*\*/g, '').trim();
-                          const parts = cleanItem.split('');
-                          const featureTitle = parts[0]?.trim() || '';
-                          const desc = parts[1]?.trim() || '';
+                        {block.items.map((item, idx) => {
+                          const { title: featureTitle, description: desc } = splitTitled(item);
                           const iconKey = Object.keys(iconMap).find((key) => featureTitle.includes(key));
                           const Icon = iconKey ? iconMap[iconKey as keyof typeof iconMap] : CheckCircle2;
 
@@ -649,14 +657,18 @@ export function ContentSection({
                             >
                               {/* Hover gradient */}
                               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                              
+
                               <div className="relative flex items-start gap-4">
                                 <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-brand/10 flex items-center justify-center group-hover:bg-brand/20 transition-colors duration-300">
                                   <Icon className="h-5 w-5 text-brand" />
                                 </div>
                                 <div>
                                   <h4 className="text-sm font-semibold text-gray-900 mb-1">{featureTitle}</h4>
-                                  <p className="text-sm text-gray-500 leading-relaxed">{desc}</p>
+                                  {desc && (
+                                    <p className="text-sm text-gray-500 leading-relaxed">
+                                      <RichText text={desc} />
+                                    </p>
+                                  )}
                                 </div>
                               </div>
                             </motion.div>
@@ -675,7 +687,7 @@ export function ContentSection({
                       transition={{ duration: 0.5, delay: index * 0.05 + 0.1 }}
                       className="text-base md:text-lg text-gray-600 leading-relaxed"
                     >
-                      {paragraph}
+                      <RichText text={block.text} />
                     </motion.p>
                   );
                 })}

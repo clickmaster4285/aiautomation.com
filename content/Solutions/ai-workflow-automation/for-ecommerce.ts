@@ -194,6 +194,96 @@ We start with a free audit that identifies your highest-return workflow, automat
   ],
   cta: 'See what your store could stop doing by hand.',
   bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'AI Workflow Automation for E-commerce', serviceType: 'AI Workflow Automation Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-ecommerce-need-ai-workflow-automation' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Logistics & Transportation',
+              triggerLabel: 'New Shipment Inquiry',
+              actionLabels: ['Provide Tracking Information', 'Schedule Delivery', 'Submit Claim Details'],
+              metricValue: '3,000',
+              metricLabel: 'shipment inquiries handled automatically this week',
+              submetric: '85% improved response time',
+              platform: 'CRM + Logistics Platform',
+              accent: '#F97316',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'AI Workflow Automation', href: '/solutions/ai-workflow-automation' },
+            { label: 'E-commerce', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why E-commerce Needs AI Workflow Automation',
+        props: { title: 'Why E-commerce Needs AI Workflow Automation' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves for E-commerce',
+        props: { title: 'The Problems This Solves for E-commerce' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate for E-commerce',
+        props: { title: 'What We Automate for E-commerce' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for E-commerce\'s Realities',
+        props: { title: 'Built for E-commerce\'s Realities' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI workflow automation for e-commerce' } },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. 30 minutes, no obligation, and an honest read on where workflow automation pays off for e-commerce.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };
 
 export default aiWorkflowAutomationForEcommerce;

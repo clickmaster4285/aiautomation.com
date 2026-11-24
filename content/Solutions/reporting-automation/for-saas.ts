@@ -63,7 +63,7 @@ What it is: the routine work. The automation that aggregates, builds, and delive
 
 That's the pattern across everything we build for SaaS companies: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
-    'Built for SaaS Companies\'s Realities': `Customer data and usage information require careful handling. Automation is built with scoped access and, where needed, infrastructure that keeps sensitive data in your environment, and customer-facing AI is grounded in your real documentation so it answers accurately rather than guessing.
+    'Built for SaaS Companies\' Realities': `Customer data and usage information require careful handling. Automation is built with scoped access and, where needed, infrastructure that keeps sensitive data in your environment, and customer-facing AI is grounded in your real documentation so it answers accurately rather than guessing.
 
 We integrate with the systems your company already runssupport platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slackconnecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
@@ -195,6 +195,87 @@ We start with a free audit that identifies your highest-return workflow, automat
   ],
   cta: 'See what your company could stop doing by hand.',
   bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'Reporting Automation for SaaS Companies', serviceType: 'Reporting Automation Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-saas-companies-need-reporting-automation' },
+          image: '/images/reporting.png',
+          imageWidth: 700,
+          imageHeight: 580,
+          textSize: 'xlarge',
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'Reporting Automation', href: '/solutions/reporting-automation' },
+            { label: 'SaaS Companies', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why SaaS Companies Need Reporting Automation',
+        props: { title: 'Why SaaS Companies Need Reporting Automation' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves for SaaS Companies',
+        props: { title: 'The Problems This Solves for SaaS Companies' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate for SaaS Companies',
+        props: { title: 'What We Automate for SaaS Companies' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for SaaS Companies\' Realities',
+        props: { title: 'Built for SaaS Companies\' Realities' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about reporting automation for SaaS companies' } },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. 30 minutes, no obligation, and an honest read on where reporting automation pays off for SaaS companies.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };
 
 export default reportingAutomationForSaaS;

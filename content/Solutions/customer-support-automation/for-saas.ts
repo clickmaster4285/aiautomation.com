@@ -62,7 +62,7 @@ What it is: the routine work. The automation that resolves, routes, and escalate
 
 That's the pattern across everything we build for SaaS companies: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
-    'Built for SaaS Companies\'s Realities': `Customer data and usage information require careful handling. Automation is built with scoped access and, where needed, infrastructure that keeps sensitive data in your environment, and customer-facing AI is grounded in your real documentation so it answers accurately rather than guessing.
+    'Built for SaaS Companies\' Realities': `Customer data and usage information require careful handling. Automation is built with scoped access and, where needed, infrastructure that keeps sensitive data in your environment, and customer-facing AI is grounded in your real documentation so it answers accurately rather than guessing.
 
 We integrate with the systems your company already runssupport platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slackconnecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
@@ -194,6 +194,96 @@ We start with a free audit that identifies your highest-return workflow, automat
   ],
   cta: 'See what your company could stop doing by hand.',
   bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'Customer Support Automation for SaaS Companies', serviceType: 'Customer Support Automation Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-saas-companies-need-customer-support-automation' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'SaaS',
+              triggerLabel: 'New Support Request',
+              actionLabels: ['Provide Product Information', 'Schedule Meeting', 'Resolve Issues'],
+              metricValue: '2000',
+              metricLabel: 'new support requests handled automatically each month',
+              submetric: '75% reduction in response time',
+              platform: 'Customer Support + SaaS Platform',
+              accent: '#10B981',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'Customer Support Automation', href: '/solutions/customer-support-automation' },
+            { label: 'SaaS', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why SaaS Companies Need Customer Support Automation',
+        props: { title: 'Why SaaS Companies Need Customer Support Automation' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves for SaaS Companies',
+        props: { title: 'The Problems This Solves for SaaS Companies' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate for SaaS Companies',
+        props: { title: 'What We Automate for SaaS Companies' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for SaaS Companies\' Realities',
+        props: { title: 'Built for SaaS Companies\' Realities' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about customer support automation for SaaS companies' } },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. 30 minutes, no obligation, and an honest read on where support automation pays off for SaaS companies.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };
 
 export default customerSupportAutomationForSaaS;

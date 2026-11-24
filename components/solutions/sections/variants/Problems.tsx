@@ -2,6 +2,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { toLines, splitTitled } from './parseCopy';
+import { RichText } from './RichText';
+
 import {
   XCircle,
   AlertCircle,
@@ -161,17 +164,14 @@ function ProblemRadarGraphic({
 }
 
 export function ProblemsSection({ title, content }: ProblemsSectionProps) {
-  const normalizedContent = (content || []).filter(
+  const normalizedContent = toLines(content).filter(
     (line): line is string => typeof line === 'string' && line.trim().length > 0
   );
   const problemItems = normalizedContent.filter((line) => line.includes('**'));
   const introText = normalizedContent.find((line) => !line.includes('**') && line.trim());
 
   const parsedProblems = problemItems.map((item) => {
-    const cleanItem = item.replace(/\*\*/g, '').trim();
-    const parts = cleanItem.split('.');
-    const itemTitle = parts[0]?.trim() || '';
-    const description = parts.slice(1).join('.').trim() || '';
+    const { title: itemTitle, description } = splitTitled(item);
     return { title: itemTitle, description, Icon: getIconForTitle(itemTitle) };
   });
 
@@ -203,7 +203,7 @@ export function ProblemsSection({ title, content }: ProblemsSectionProps) {
 
             {introText && (
               <p className="text-lg text-gray-300 leading-relaxed">
-                {introText}
+                <RichText text={introText} />
               </p>
             )}
 
@@ -237,7 +237,7 @@ export function ProblemsSection({ title, content }: ProblemsSectionProps) {
                     </div>
                     <div>
                       <h4 className="text-lg md:text-xl font-semibold text-white mb-2">{problem.title}</h4>
-                      <p className="text-base md:text-lg text-gray-300 leading-relaxed">{problem.description}</p>
+                      <p className="text-base md:text-lg text-gray-300 leading-relaxed"><RichText text={problem.description} /></p>
                     </div>
                   </div>
                 </motion.div>

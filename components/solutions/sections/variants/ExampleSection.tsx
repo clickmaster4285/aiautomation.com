@@ -2,6 +2,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { toLines } from './parseCopy';
+import { RichText } from './RichText';
+
 import { Play, Clock, CheckCircle2, BrainCircuit, Zap } from 'lucide-react';
 
 interface ExampleSectionProps {
@@ -10,7 +13,7 @@ interface ExampleSectionProps {
 }
 
 export function ExampleSection({ title, content }: ExampleSectionProps) {
-  const paragraphs = (content || []).filter(
+  const paragraphs = toLines(content).filter(
     (line): line is string => typeof line === 'string' && line.trim().length > 0
   );
 
@@ -55,7 +58,7 @@ export function ExampleSection({ title, content }: ExampleSectionProps) {
                   transition={{ delay: idx * 0.1 }}
                   className="text-base md:text-lg text-gray-600 leading-relaxed"
                 >
-                  {paragraph}
+                  <RichText text={paragraph} />
                 </motion.p>
               ))}
             </div>

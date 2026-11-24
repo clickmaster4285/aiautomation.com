@@ -7,10 +7,10 @@ import { caseStudy as clickmasters } from "./clickmasters-ai-lead-response-case-
 
 export type RegistryEntry = { slug: string; data: CaseStudy };
 
+// One indexable URL per case study. Older slugs for this one ("clickmasters-ai-lead-response-case-study",
+// "ai-lead-response-revenue-recovery") 308-redirect here via next.config.ts, so they aren't built as pages.
 export const caseStudies: RegistryEntry[] = [
-  { slug: clickmasters.slug, data: clickmasters },
   { slug: "ai-receptionist-lead-response-automation", data: clickmasters },
-  { slug: "ai-lead-response-revenue-recovery", data: clickmasters },
 ];
 
 export function getCaseStudy(slug: string): CaseStudy | undefined {

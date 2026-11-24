@@ -194,6 +194,96 @@ We start with a free audit that identifies your highest-return workflow, automat
   ],
   cta: 'See what your operation could stop doing by hand.',
   bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'Document & Data Automation for Logistics & Transportation', serviceType: 'Document & Data Automation Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-logistics-transportation-need-document-data-automation' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Logistics & Transportation',
+              triggerLabel: 'New Document Request',
+              actionLabels: ['Generate Reports', 'Create Shipment Documents', 'Manage Supply Chain Data'],
+              metricValue: '2000',
+              metricLabel: 'documents processed automatically each month',
+              submetric: '75% reduction in processing time',
+              platform: 'Document & Data Automation + Logistics Management System',
+              accent: '#10B981',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'Document & Data Automation', href: '/solutions/document-automation' },
+            { label: 'Logistics & Transportation', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Logistics & Transportation Need Document & Data Automation',
+        props: { title: 'Why Logistics & Transportation Need Document & Data Automation' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves for Logistics & Transportation',
+        props: { title: 'The Problems This Solves for Logistics & Transportation' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate for Logistics & Transportation',
+        props: { title: 'What We Automate for Logistics & Transportation' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Logistics & Transportation\'s Realities',
+        props: { title: 'Built for Logistics & Transportation\'s Realities' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about document automation for logistics & transportation' } },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. 30 minutes, no obligation, and an honest read on where document automation pays off for logistics & transportation.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };
 
 export default documentAutomationForLogistics;

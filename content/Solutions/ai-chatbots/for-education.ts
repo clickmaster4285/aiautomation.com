@@ -188,6 +188,96 @@ We start with a free audit that identifies your highest-return workflow, automat
   ],
   cta: 'See what your institution could stop doing by hand.',
   bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'AI Chatbots for Education', serviceType: 'AI Chatbot Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-education-need-ai-chatbots' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Education',
+              triggerLabel: 'New Client Inquiry',
+              actionLabels: ['Send Intake Form', 'Schedule Call', 'Add to CRM'],
+              metricValue: '1,247',
+              metricLabel: 'inquiries handled automatically this week',
+              submetric: '94% resolved without staff involvement',
+              platform: 'QuickBooks + HubSpot',
+              accent: '#F97316',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'AI Chatbots', href: '/solutions/ai-chatbots' },
+            { label: 'Education', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Education Needs AI Chatbots',
+        props: { title: 'Why Education Needs AI Chatbots' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves for Education',
+        props: { title: 'The Problems This Solves for Education' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate for Education',
+        props: { title: 'What We Automate for Education' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Education\'s Realities',
+        props: { title: 'Built for Education\'s Realities' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI chatbots for education' } },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. 30 minutes, no obligation, and an honest read on where chatbot pays off for education.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };
 
 export default aiChatbotsForEducation;

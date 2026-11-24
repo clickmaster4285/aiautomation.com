@@ -194,6 +194,96 @@ We start with a free audit that identifies your highest-return workflow, automat
   ],
   cta: 'See what your team could stop doing by hand.',
   bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'AI Voice Agents for Real Estate', serviceType: 'AI Voice Agent Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-real-estate-need-ai-voice-agents' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Real Estate',
+              triggerLabel: 'New Property Inquiry',
+              actionLabels: ['Provide Property Details', 'Schedule Tour', 'Submit Offer'],
+              metricValue: '5,000',
+              metricLabel: 'property inquiries handled automatically this week',
+              submetric: '90% improved lead conversion',
+              platform: 'CRM + Real Estate Platform',
+              accent: '#F97316',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'AI Voice Agents', href: '/solutions/ai-voice-agents' },
+            { label: 'Real Estate', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Real Estate Needs AI Voice Agents',
+        props: { title: 'Why Real Estate Needs AI Voice Agents' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves for Real Estate',
+        props: { title: 'The Problems This Solves for Real Estate' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate for Real Estate',
+        props: { title: 'What We Automate for Real Estate' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Real Estate\'s Realities',
+        props: { title: 'Built for Real Estate\'s Realities' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI voice agents for real estate' } },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. 30 minutes, no obligation, and an honest read on where voice agent pays off for real estate.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };
 
 export default aiVoiceAgentsForRealEstate;

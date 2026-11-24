@@ -1,4 +1,4 @@
-// content/Solutions/crm-automation-with-hubspot.ts
+// content/Solutions/crm-automation/with-hubspot.ts
 import { SolutionData } from '@/content/type';
 
 export const crmAutomationWithHubspot: SolutionData = {
@@ -23,10 +23,8 @@ export const crmAutomationWithHubspot: SolutionData = {
   description: 'Clickmasters builds CRM automation on HubSpot. HubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack, and it\'s an excellent fit for teams already running sales and marketing on HubSpot. Combined with CRM automation, which makes your CRM maintain itself and work for you. Records enriched and updated automatically, activity logged without reps typing, leads routed and sequenced by rules and AI judgment, data kept clean so your pipeline reflects reality, and your CRM connected to the rest of your stack so information flows instead of being re-entered, the result is automation that runs on a platform matched to the job.',
   sections: {
     'Why HubSpot for CRM Automation': 'HubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack. We build inside your existing instance, transparent, documented, yours. For CRM automation specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. HubSpot is the right home for this work when it matches teams already running sales and marketing on HubSpot, and when it does, this combination is hard to beat.',
-    'What We Build': '**Automatic record updates**activity and data captured without manual entry, built on HubSpot.\n**Data hygiene**deduplication, enrichment, and cleaning that runs continuously, built on HubSpot.\n**Lead routing and sequencing**the right lead to the right person with the right follow-up, built on HubSpot.\n**Cross-system sync**your CRM connected to billing, support, and marketing tools, built on HubSpot.\n**Pipeline reporting**trustworthy numbers because the underlying data is maintained, built on HubSpot.',
     'What a Production Build Includes': 'The gap between a prototype and a system you can rely on is everything that happens when things go wrong. Every CRM automation build we ship on HubSpot includes error handling on every step (failures caught and retried or escalated, never silent), monitoring and alerting (you know the system is running without checking), documentation (your team can understand and modify the build), and staged rollout (the automation proves itself on real cases with human oversight before it runs unattended).\n\nThis is the difference between automation that saves hours and automation that quietly breaks and costs trust. Most of the rescue projects we take on are builds that skipped these steps.',
     'Typical Workflows on HubSpot': 'The CRM automation workflows we most often build on HubSpot follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is neededclassification, extraction, drafting, and the result is executed and logged. HubSpot\'s strengths make it particularly suited to teams already running sales and marketing on HubSpot, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
-    'How We Work': '1. **Free audit**we map the workflow and confirm HubSpot is genuinely the right platform for it.\n2. **Build in sprints**constructed against your real tools and data, with error handling and monitoring built in.\n3. **Documented hand-off**you own the build; nothing is a black box.\n4. **Optimize**we monitor, refine, and expand as the system proves itself.',
   },
   features: [
     {
@@ -137,6 +135,90 @@ export const crmAutomationWithHubspot: SolutionData = {
   ],
   cta: 'Want CRM automation running on HubSpot?',
   bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'CRM Automation with HubSpot', serviceType: 'CRM Automation' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: '/free-automation-audit' },
+          secondaryCta: { text: 'Learn More', href: '#why-hubspot' },
+          visual: { $element: 'ChatbotHeroMockup', props: { platform: 'hubspot' } },
+          stats: {
+            $ref: 'stats',
+            slice: [0, 3],
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'Crm automation', href: '/solutions/crm-automation' },
+            { label: 'With hubspot', href: '/solutions/crm-automation/with-hubspot' },
+          ],
+        },
+      },
+      {
+        type: 'ContentSection',
+        section: 'Why HubSpot for CRM Automation',
+        props: {
+          id: 'why-hubspot',
+          title: 'Why HubSpot for CRM Automation',
+          stats: [
+            { label: 'Native CRM', value: '✓' },
+            { label: 'AI Integration', value: '✓' },
+            { label: 'Scalable', value: '✓' },
+          ],
+          cta: { text: 'See Our Process', href: '#how-we-work' },
+          background: 'muted',
+        },
+      },
+      { type: 'FeatureGrid', props: {
+  title: 'What We Build',
+  subtitle: 'Comprehensive CRM automation solutions on HubSpot',
+  eyebrow: 'Capabilities',
+  columns: 3,
+  background: 'dark',
+} },
+      {
+        type: 'ContentSection',
+        section: 'What a Production Build Includes',
+        props: {
+          id: 'production-build',
+          title: 'What a Production Build Includes',
+          cta: { text: 'See Our Process', href: '#how-we-work' },
+          background: 'muted',
+        },
+      },
+      {
+        type: 'ContentSection',
+        section: 'Typical Workflows on HubSpot',
+        props: { id: 'workflows', title: 'Typical Workflows on HubSpot' },
+      },
+      { type: 'ProcessSteps', props: {
+  title: 'How We Work',
+  subtitle: 'Our proven methodology for building CRM automation on HubSpot',
+  background: 'muted',
+} },
+      { type: 'PlatformComparison', props: { title: 'Is HubSpot Right for You?', subtitle: 'We\'ll tell you honestly if HubSpot is the right platform for your CRM automation needs.' } },
+      { type: 'StatsSection', props: { title: 'Why Choose Clickmasters for HubSpot CRM Automation' } },
+      { type: 'FAQSection', props: {
+  title: 'Frequently Asked Questions',
+  subtitle: 'Common questions about CRM automation on HubSpot',
+  eyebrow: 'FAQ',
+} },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. We\'ll scope the build and confirm the platform fit honestly.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'gradient',
+        },
+      },
+    ],
+  },
 };
 
 export default crmAutomationWithHubspot;

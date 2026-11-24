@@ -2,6 +2,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { toLines } from './parseCopy';
+import { RichText } from './RichText';
+
 import { BrainCircuit, Zap, Shield, Bot, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 interface WhySectionProps {
@@ -11,7 +14,7 @@ interface WhySectionProps {
 }
 
 export function WhySection({ title, content, stats }: WhySectionProps) {
-  const paragraphs = (content || []).filter(
+  const paragraphs = toLines(content).filter(
     (line): line is string => typeof line === 'string' && line.trim().length > 0
   );
 
@@ -54,7 +57,7 @@ export function WhySection({ title, content, stats }: WhySectionProps) {
                   transition={{ delay: idx * 0.1 }}
                   className="text-lg text-gray-600 leading-relaxed"
                 >
-                  {paragraph}
+                  <RichText text={paragraph} />
                 </motion.p>
               ))}
             </div>

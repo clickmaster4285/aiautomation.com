@@ -188,6 +188,96 @@ We start with a free audit that identifies your highest-return workflow, automat
   ],
   cta: 'See what your operation could stop doing by hand.',
   bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'AI Agent Development for Manufacturing', serviceType: 'AI Agent Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-manufacturing-need-ai-agent-development' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Manufacturing',
+              triggerLabel: 'New Production Request',
+              actionLabels: ['Generate Work Order', 'Allocate Resources', 'Update Schedule'],
+              metricValue: '2,500',
+              metricLabel: 'production requests processed automatically this week',
+              submetric: '75% faster order fulfillment',
+              platform: 'ERP + Manufacturing Execution System',
+              accent: '#F97316',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'AI Agents', href: '/solutions/ai-agents' },
+            { label: 'Manufacturing', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Manufacturing Needs AI Agent Development',
+        props: { title: 'Why Manufacturing Needs AI Agent Development' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves for Manufacturing',
+        props: { title: 'The Problems This Solves for Manufacturing' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate for Manufacturing',
+        props: { title: 'What We Automate for Manufacturing' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Manufacturing\'s Realities',
+        props: { title: 'Built for Manufacturing\'s Realities' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI agents for manufacturing' } },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. 30 minutes, no obligation, and an honest read on where AI agent pays off for manufacturing.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };
 
 export default aiAgentsForManufacturing;

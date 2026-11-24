@@ -1,265 +1,265 @@
 // content/Solutions/index.ts
 import { SolutionData } from '@/content/type';
-import { aiChatbotsWithZapier } from './ai-chatbots-with-zapier';
-import { aiChatbotsWithSalesforce } from './ai-chatbots-with-salesforce';
-import { aiWorkflowAutomationWithHubspot } from './ai-workflow-automation-with-hubspot';
-import { aiWorkflowAutomationWithN8n } from './ai-workflow-automation-with-n8n';
-import { aiWorkflowAutomationWithSalesforce } from './ai-workflow-automation-with-salesforce';
-import { aiWorkflowAutomationWithZapier } from './ai-workflow-automation-with-zapier';
-import { crmAutomationWithAirtable } from './crm-automation-with-airtable';
-import { crmAutomationWithHubspot } from './crm-automation-with-hubspot';
-import { crmAutomationWithSalesforce } from './crm-automation-with-salesforce';
-import { documentAutomationWithAirtable } from './document-automation-with-airtable';
-import { documentAutomationWithN8n } from './document-automation-with-n8n';
-import { documentAutomationWithSalesforce } from './document-automation-with-salesforce';
-import { leadGenerationAutomationWithHubspot } from './lead-generation-automation-with-hubspot';
-import { leadGenerationAutomationWithSalesforce } from './lead-generation-automation-with-salesforce';
-import { customerSupportAutomationWithZapier } from './customer-support-automation-with-zapier';
-import { marketingAutomationWithHubspot } from './marketing-automation-with-hubspot';
-import { marketingAutomationWithSalesforce } from './marketing-automation-with-salesforce';
-import { reportingAutomationWithN8n } from './reporting-automation-with-n8n';
-import { reportingAutomationWithSalesforce } from './reporting-automation-with-salesforce';
-import { salesAutomationWithHubspot } from './sales-automation-with-hubspot';
+import { aiChatbotsWithZapier } from './ai-chatbots/with-zapier';
+import { aiChatbotsWithSalesforce } from './ai-chatbots/with-salesforce';
+import { aiWorkflowAutomationWithHubspot } from './ai-workflow-automation/with-hubspot';
+import { aiWorkflowAutomationWithN8n } from './ai-workflow-automation/with-n8n';
+import { aiWorkflowAutomationWithSalesforce } from './ai-workflow-automation/with-salesforce';
+import { aiWorkflowAutomationWithZapier } from './ai-workflow-automation/with-zapier';
+import { crmAutomationWithAirtable } from './crm-automation/with-airtable';
+import { crmAutomationWithHubspot } from './crm-automation/with-hubspot';
+import { crmAutomationWithSalesforce } from './crm-automation/with-salesforce';
+import { documentAutomationWithAirtable } from './document-automation/with-airtable';
+import { documentAutomationWithN8n } from './document-automation/with-n8n';
+import { documentAutomationWithSalesforce } from './document-automation/with-salesforce';
+import { leadGenerationAutomationWithHubspot } from './lead-generation-automation/with-hubspot';
+import { leadGenerationAutomationWithSalesforce } from './lead-generation-automation/with-salesforce';
+import { customerSupportAutomationWithZapier } from './customer-support-automation/with-zapier';
+import { marketingAutomationWithHubspot } from './marketing-automation/with-hubspot';
+import { marketingAutomationWithSalesforce } from './marketing-automation/with-salesforce';
+import { reportingAutomationWithN8n } from './reporting-automation/with-n8n';
+import { reportingAutomationWithSalesforce } from './reporting-automation/with-salesforce';
+import { salesAutomationWithHubspot } from './sales-automation/with-hubspot';
 
 // AI Agents imports - Existing
-import { aiAgentsForAccountingFirms } from './ai-agents-for-accounting-firms';
-import { aiAgentsForConstruction } from './ai-agents-for-construction';
-import { aiAgentsForEcommerce } from './ai-agents-for-ecommerce';
-import { aiAgentsForEducation } from './ai-agents-for-education';
+import { aiAgentsForAccountingFirms } from './ai-agents/for-accounting-firms';
+import { aiAgentsForConstruction } from './ai-agents/for-construction';
+import { aiAgentsForEcommerce } from './ai-agents/for-ecommerce';
+import { aiAgentsForEducation } from './ai-agents/for-education';
 
 // AI Agents imports - Healthcare, Insurance, Law, Logistics, Manufacturing
-import { aiAgentsForHealthcare } from './ai-agents-for-healthcare';
-import { aiAgentsForInsurance } from './ai-agents-for-insurance';
-import { aiAgentsForLawFirms } from './ai-agents-for-law-firms';
-import { aiAgentsForLogistics } from './ai-agents-for-logistics';
-import { aiAgentsForManufacturing } from './ai-agents-for-manufacturing';
+import { aiAgentsForHealthcare } from './ai-agents/for-healthcare';
+import { aiAgentsForInsurance } from './ai-agents/for-insurance';
+import { aiAgentsForLawFirms } from './ai-agents/for-law-firms';
+import { aiAgentsForLogistics } from './ai-agents/for-logistics';
+import { aiAgentsForManufacturing } from './ai-agents/for-manufacturing';
 
 // AI Agents imports - New (Real Estate, Restaurants, Retail, SaaS)
-import { aiAgentsForRealEstate } from './ai-agents-for-real-estate';
-import { aiAgentsForRestaurants } from './ai-agents-for-restaurants';
-import { aiAgentsForRetail } from './ai-agents-for-retail';
-import { aiAgentsForSaaS } from './ai-agents-for-saas';
+import { aiAgentsForRealEstate } from './ai-agents/for-real-estate';
+import { aiAgentsForRestaurants } from './ai-agents/for-restaurants';
+import { aiAgentsForRetail } from './ai-agents/for-retail';
+import { aiAgentsForSaaS } from './ai-agents/for-saas';
 
 // AI Chatbots imports - Industry pages (Existing)
-import { aiChatbotsForAccountingFirms } from './ai-chatbots-for-accounting-firms';
-import { aiChatbotsForConstruction } from './ai-chatbots-for-construction';
-import { aiChatbotsForEcommerce } from './ai-chatbots-for-ecommerce';
-import { aiChatbotsForEducation } from './ai-chatbots-for-education';
-import { aiChatbotsForHealthcare } from './ai-chatbots-for-healthcare';
-import { aiChatbotsForInsurance } from './ai-chatbots-for-insurance';
+import { aiChatbotsForAccountingFirms } from './ai-chatbots/for-accounting-firms';
+import { aiChatbotsForConstruction } from './ai-chatbots/for-construction';
+import { aiChatbotsForEcommerce } from './ai-chatbots/for-ecommerce';
+import { aiChatbotsForEducation } from './ai-chatbots/for-education';
+import { aiChatbotsForHealthcare } from './ai-chatbots/for-healthcare';
+import { aiChatbotsForInsurance } from './ai-chatbots/for-insurance';
 
 // AI Chatbots imports - New Industry pages (Law Firms, Logistics, Manufacturing, Real Estate, Restaurants, Retail, SaaS)
-import { aiChatbotsForLawFirms } from './ai-chatbots-for-law-firms';
-import { aiChatbotsForLogistics } from './ai-chatbots-for-logistics';
-import { aiChatbotsForManufacturing } from './ai-chatbots-for-manufacturing';
-import { aiChatbotsForRealEstate } from './ai-chatbots-for-real-estate';
-import { aiChatbotsForRestaurants } from './ai-chatbots-for-restaurants';
-import { aiChatbotsForRetail } from './ai-chatbots-for-retail';
-import { aiChatbotsForSaaS } from './ai-chatbots-for-saas';
+import { aiChatbotsForLawFirms } from './ai-chatbots/for-law-firms';
+import { aiChatbotsForLogistics } from './ai-chatbots/for-logistics';
+import { aiChatbotsForManufacturing } from './ai-chatbots/for-manufacturing';
+import { aiChatbotsForRealEstate } from './ai-chatbots/for-real-estate';
+import { aiChatbotsForRestaurants } from './ai-chatbots/for-restaurants';
+import { aiChatbotsForRetail } from './ai-chatbots/for-retail';
+import { aiChatbotsForSaaS } from './ai-chatbots/for-saas';
 
 // AI Voice Agents imports - Industry pages (Existing)
-import { aiVoiceAgentsForAccountingFirms } from './ai-voice-agents-for-accounting-firms';
-import { aiVoiceAgentsForConstruction } from './ai-voice-agents-for-construction';
-import { aiVoiceAgentsForEcommerce } from './ai-voice-agents-for-ecommerce';
-import { aiVoiceAgentsForEducation } from './ai-voice-agents-for-education';
-import { aiVoiceAgentsForHealthcare } from './ai-voice-agents-for-healthcare';
-import { aiVoiceAgentsForInsurance } from './ai-voice-agents-for-insurance';
-import { aiVoiceAgentsForLawFirms } from './ai-voice-agents-for-law-firms';
+import { aiVoiceAgentsForAccountingFirms } from './ai-voice-agents/for-accounting-firms';
+import { aiVoiceAgentsForConstruction } from './ai-voice-agents/for-construction';
+import { aiVoiceAgentsForEcommerce } from './ai-voice-agents/for-ecommerce';
+import { aiVoiceAgentsForEducation } from './ai-voice-agents/for-education';
+import { aiVoiceAgentsForHealthcare } from './ai-voice-agents/for-healthcare';
+import { aiVoiceAgentsForInsurance } from './ai-voice-agents/for-insurance';
+import { aiVoiceAgentsForLawFirms } from './ai-voice-agents/for-law-firms';
 
 // AI Voice Agents imports - New Industry pages (Logistics, Manufacturing, Real Estate, Restaurants, Retail, SaaS)
-import { aiVoiceAgentsForLogistics } from './ai-voice-agents-for-logistics';
-import { aiVoiceAgentsForManufacturing } from './ai-voice-agents-for-manufacturing';
-import { aiVoiceAgentsForRealEstate } from './ai-voice-agents-for-real-estate';
-import { aiVoiceAgentsForRestaurants } from './ai-voice-agents-for-restaurants';
-import { aiVoiceAgentsForRetail } from './ai-voice-agents-for-retail';
-import { aiVoiceAgentsForSaaS } from './ai-voice-agents-for-saas';
+import { aiVoiceAgentsForLogistics } from './ai-voice-agents/for-logistics';
+import { aiVoiceAgentsForManufacturing } from './ai-voice-agents/for-manufacturing';
+import { aiVoiceAgentsForRealEstate } from './ai-voice-agents/for-real-estate';
+import { aiVoiceAgentsForRestaurants } from './ai-voice-agents/for-restaurants';
+import { aiVoiceAgentsForRetail } from './ai-voice-agents/for-retail';
+import { aiVoiceAgentsForSaaS } from './ai-voice-agents/for-saas';
 
 // AI Workflow Automation imports - Existing Industry pages
-import { aiWorkflowAutomationForAccountingFirms } from './ai-workflow-automation-for-accounting-firms';
-import { aiWorkflowAutomationForConstruction } from './ai-workflow-automation-for-construction';
-import { aiWorkflowAutomationForEcommerce } from './ai-workflow-automation-for-ecommerce';
-import { aiWorkflowAutomationForEducation } from './ai-workflow-automation-for-education';
-import { aiWorkflowAutomationForHealthcare } from './ai-workflow-automation-for-healthcare';
-import { aiWorkflowAutomationForInsurance } from './ai-workflow-automation-for-insurance';
-import { aiWorkflowAutomationForLawFirms } from './ai-workflow-automation-for-law-firms';
+import { aiWorkflowAutomationForAccountingFirms } from './ai-workflow-automation/for-accounting-firms';
+import { aiWorkflowAutomationForConstruction } from './ai-workflow-automation/for-construction';
+import { aiWorkflowAutomationForEcommerce } from './ai-workflow-automation/for-ecommerce';
+import { aiWorkflowAutomationForEducation } from './ai-workflow-automation/for-education';
+import { aiWorkflowAutomationForHealthcare } from './ai-workflow-automation/for-healthcare';
+import { aiWorkflowAutomationForInsurance } from './ai-workflow-automation/for-insurance';
+import { aiWorkflowAutomationForLawFirms } from './ai-workflow-automation/for-law-firms';
 
 // AI Workflow Automation imports - New Industry pages (Logistics, Manufacturing, Real Estate, Restaurants, Retail, SaaS)
-import { aiWorkflowAutomationForLogistics } from './ai-workflow-automation-for-logistics';
-import { aiWorkflowAutomationForManufacturing } from './ai-workflow-automation-for-manufacturing';
-import { aiWorkflowAutomationForRealEstate } from './ai-workflow-automation-for-real-estate';
-import { aiWorkflowAutomationForRestaurants } from './ai-workflow-automation-for-restaurants';
-import { aiWorkflowAutomationForRetail } from './ai-workflow-automation-for-retail';
-import { aiWorkflowAutomationForSaaS } from './ai-workflow-automation-for-saas';
+import { aiWorkflowAutomationForLogistics } from './ai-workflow-automation/for-logistics';
+import { aiWorkflowAutomationForManufacturing } from './ai-workflow-automation/for-manufacturing';
+import { aiWorkflowAutomationForRealEstate } from './ai-workflow-automation/for-real-estate';
+import { aiWorkflowAutomationForRestaurants } from './ai-workflow-automation/for-restaurants';
+import { aiWorkflowAutomationForRetail } from './ai-workflow-automation/for-retail';
+import { aiWorkflowAutomationForSaaS } from './ai-workflow-automation/for-saas';
 
 // Appointment & Booking Automation imports - Industry pages (Existing 7)
-import { appointmentBookingAutomationForAccountingFirms } from './appointment-booking-automation-for-accounting-firms';
-import { appointmentBookingAutomationForConstruction } from './appointment-booking-automation-for-construction';
-import { appointmentBookingAutomationForEcommerce } from './appointment-booking-automation-for-ecommerce';
-import { appointmentBookingAutomationForEducation } from './appointment-booking-automation-for-education';
-import { appointmentBookingAutomationForHealthcare } from './appointment-booking-automation-for-healthcare';
-import { appointmentBookingAutomationForInsurance } from './appointment-booking-automation-for-insurance';
-import { appointmentBookingAutomationForLawFirms } from './appointment-booking-automation-for-law-firms';
+import { appointmentBookingAutomationForAccountingFirms } from './appointment-booking-automation/for-accounting-firms';
+import { appointmentBookingAutomationForConstruction } from './appointment-booking-automation/for-construction';
+import { appointmentBookingAutomationForEcommerce } from './appointment-booking-automation/for-ecommerce';
+import { appointmentBookingAutomationForEducation } from './appointment-booking-automation/for-education';
+import { appointmentBookingAutomationForHealthcare } from './appointment-booking-automation/for-healthcare';
+import { appointmentBookingAutomationForInsurance } from './appointment-booking-automation/for-insurance';
+import { appointmentBookingAutomationForLawFirms } from './appointment-booking-automation/for-law-firms';
 
 // Appointment & Booking Automation imports - New Industry pages (Logistics, Manufacturing, Real Estate, Restaurants, Retail, SaaS)
-import { appointmentBookingAutomationForLogistics } from './appointment-booking-automation-for-logistics';
-import { appointmentBookingAutomationForManufacturing } from './appointment-booking-automation-for-manufacturing';
-import { appointmentBookingAutomationForRealEstate } from './appointment-booking-automation-for-real-estate';
-import { appointmentBookingAutomationForRestaurants } from './appointment-booking-automation-for-restaurants';
-import { appointmentBookingAutomationForRetail } from './appointment-booking-automation-for-retail';
-import { appointmentBookingAutomationForSaaS } from './appointment-booking-automation-for-saas';
+import { appointmentBookingAutomationForLogistics } from './appointment-booking-automation/for-logistics';
+import { appointmentBookingAutomationForManufacturing } from './appointment-booking-automation/for-manufacturing';
+import { appointmentBookingAutomationForRealEstate } from './appointment-booking-automation/for-real-estate';
+import { appointmentBookingAutomationForRestaurants } from './appointment-booking-automation/for-restaurants';
+import { appointmentBookingAutomationForRetail } from './appointment-booking-automation/for-retail';
+import { appointmentBookingAutomationForSaaS } from './appointment-booking-automation/for-saas';
 
 // Business Process Automation imports - Industry pages (Existing 7)
-import { businessProcessAutomationForAccountingFirms } from './business-process-automation-for-accounting-firms';
-import { businessProcessAutomationForConstruction } from './business-process-automation-for-construction';
-import { businessProcessAutomationForEcommerce } from './business-process-automation-for-ecommerce';
-import { businessProcessAutomationForEducation } from './business-process-automation-for-education';
-import { businessProcessAutomationForHealthcare } from './business-process-automation-for-healthcare';
-import { businessProcessAutomationForInsurance } from './business-process-automation-for-insurance';
-import { businessProcessAutomationForLawFirms } from './business-process-automation-for-law-firms';
+import { businessProcessAutomationForAccountingFirms } from './business-process-automation/for-accounting-firms';
+import { businessProcessAutomationForConstruction } from './business-process-automation/for-construction';
+import { businessProcessAutomationForEcommerce } from './business-process-automation/for-ecommerce';
+import { businessProcessAutomationForEducation } from './business-process-automation/for-education';
+import { businessProcessAutomationForHealthcare } from './business-process-automation/for-healthcare';
+import { businessProcessAutomationForInsurance } from './business-process-automation/for-insurance';
+import { businessProcessAutomationForLawFirms } from './business-process-automation/for-law-firms';
 
 // Business Process Automation imports - New Industry pages (Logistics, Manufacturing, Real Estate, Restaurants, Retail, SaaS)
-import { businessProcessAutomationForLogistics } from './business-process-automation-for-logistics';
-import { businessProcessAutomationForManufacturing } from './business-process-automation-for-manufacturing';
-import { businessProcessAutomationForRealEstate } from './business-process-automation-for-real-estate';
-import { businessProcessAutomationForRestaurants } from './business-process-automation-for-restaurants';
-import { businessProcessAutomationForRetail } from './business-process-automation-for-retail';
-import { businessProcessAutomationForSaaS } from './business-process-automation-for-saas';
+import { businessProcessAutomationForLogistics } from './business-process-automation/for-logistics';
+import { businessProcessAutomationForManufacturing } from './business-process-automation/for-manufacturing';
+import { businessProcessAutomationForRealEstate } from './business-process-automation/for-real-estate';
+import { businessProcessAutomationForRestaurants } from './business-process-automation/for-restaurants';
+import { businessProcessAutomationForRetail } from './business-process-automation/for-retail';
+import { businessProcessAutomationForSaaS } from './business-process-automation/for-saas';
 
 // CRM Automation imports - Industry pages (Existing 7)
-import { crmAutomationForAccountingFirms } from './crm-automation-for-accounting-firms';
-import { crmAutomationForConstruction } from './crm-automation-for-construction';
-import { crmAutomationForEcommerce } from './crm-automation-for-ecommerce';
-import { crmAutomationForEducation } from './crm-automation-for-education';
-import { crmAutomationForHealthcare } from './crm-automation-for-healthcare';
-import { crmAutomationForInsurance } from './crm-automation-for-insurance';
-import { crmAutomationForLawFirms } from './crm-automation-for-law-firms';
+import { crmAutomationForAccountingFirms } from './crm-automation/for-accounting-firms';
+import { crmAutomationForConstruction } from './crm-automation/for-construction';
+import { crmAutomationForEcommerce } from './crm-automation/for-ecommerce';
+import { crmAutomationForEducation } from './crm-automation/for-education';
+import { crmAutomationForHealthcare } from './crm-automation/for-healthcare';
+import { crmAutomationForInsurance } from './crm-automation/for-insurance';
+import { crmAutomationForLawFirms } from './crm-automation/for-law-firms';
 
 // CRM Automation imports - New Industry pages (Logistics, Manufacturing, Real Estate, Restaurants, Retail, SaaS)
-import { crmAutomationForLogistics } from './crm-automation-for-logistics';
-import { crmAutomationForManufacturing } from './crm-automation-for-manufacturing';
-import { crmAutomationForRealEstate } from './crm-automation-for-real-estate';
-import { crmAutomationForRestaurants } from './crm-automation-for-restaurants';
-import { crmAutomationForRetail } from './crm-automation-for-retail';
-import { crmAutomationForSaaS } from './crm-automation-for-saas';
+import { crmAutomationForLogistics } from './crm-automation/for-logistics';
+import { crmAutomationForManufacturing } from './crm-automation/for-manufacturing';
+import { crmAutomationForRealEstate } from './crm-automation/for-real-estate';
+import { crmAutomationForRestaurants } from './crm-automation/for-restaurants';
+import { crmAutomationForRetail } from './crm-automation/for-retail';
+import { crmAutomationForSaaS } from './crm-automation/for-saas';
 
 // Customer Support Automation imports - Industry pages (Existing 7)
-import { customerSupportAutomationForAccountingFirms } from './customer-support-automation-for-accounting-firms';
-import { customerSupportAutomationForConstruction } from './customer-support-automation-for-construction';
-import { customerSupportAutomationForEcommerce } from './customer-support-automation-for-ecommerce';
-import { customerSupportAutomationForEducation } from './customer-support-automation-for-education';
-import { customerSupportAutomationForHealthcare } from './customer-support-automation-for-healthcare';
-import { customerSupportAutomationForInsurance } from './customer-support-automation-for-insurance';
-import { customerSupportAutomationForLawFirms } from './customer-support-automation-for-law-firms';
+import { customerSupportAutomationForAccountingFirms } from './customer-support-automation/for-accounting-firms';
+import { customerSupportAutomationForConstruction } from './customer-support-automation/for-construction';
+import { customerSupportAutomationForEcommerce } from './customer-support-automation/for-ecommerce';
+import { customerSupportAutomationForEducation } from './customer-support-automation/for-education';
+import { customerSupportAutomationForHealthcare } from './customer-support-automation/for-healthcare';
+import { customerSupportAutomationForInsurance } from './customer-support-automation/for-insurance';
+import { customerSupportAutomationForLawFirms } from './customer-support-automation/for-law-firms';
 
 // Customer Support Automation imports - New Industry pages (Logistics, Manufacturing, Real Estate, Restaurants, Retail, SaaS)
-import { customerSupportAutomationForLogistics } from './customer-support-automation-for-logistics';
-import { customerSupportAutomationForManufacturing } from './customer-support-automation-for-manufacturing';
-import { customerSupportAutomationForRealEstate } from './customer-support-automation-for-real-estate';
-import { customerSupportAutomationForRestaurants } from './customer-support-automation-for-restaurants';
-import { customerSupportAutomationForRetail } from './customer-support-automation-for-retail';
-import { customerSupportAutomationForSaaS } from './customer-support-automation-for-saas';
+import { customerSupportAutomationForLogistics } from './customer-support-automation/for-logistics';
+import { customerSupportAutomationForManufacturing } from './customer-support-automation/for-manufacturing';
+import { customerSupportAutomationForRealEstate } from './customer-support-automation/for-real-estate';
+import { customerSupportAutomationForRestaurants } from './customer-support-automation/for-restaurants';
+import { customerSupportAutomationForRetail } from './customer-support-automation/for-retail';
+import { customerSupportAutomationForSaaS } from './customer-support-automation/for-saas';
 
 // ====================================================================
 // Invoice & Finance Automation - Industry Page Imports
 // ====================================================================
-import { invoiceAutomationForAccountingFirms } from './invoice-automation-for-accounting-firms';
-import { invoiceAutomationForConstruction } from './invoice-automation-for-construction';
-import { invoiceAutomationForEcommerce } from './invoice-automation-for-ecommerce';
-import { invoiceAutomationForEducation } from './invoice-automation-for-education';
-import { invoiceAutomationForHealthcare } from './invoice-automation-for-healthcare';
-import { invoiceAutomationForInsurance } from './invoice-automation-for-insurance';
-import { invoiceAutomationForLawFirms } from './invoice-automation-for-law-firms';
-import { invoiceAutomationForLogistics } from './invoice-automation-for-logistics';
-import { invoiceAutomationForManufacturing } from './invoice-automation-for-manufacturing';
-import { invoiceAutomationForRealEstate } from './invoice-automation-for-real-estate';
-import { invoiceAutomationForRestaurants } from './invoice-automation-for-restaurants';
-import { invoiceAutomationForRetail } from './invoice-automation-for-retail';
-import { invoiceAutomationForSaaS } from './invoice-automation-for-saas';
+import { invoiceAutomationForAccountingFirms } from './invoice-automation/for-accounting-firms';
+import { invoiceAutomationForConstruction } from './invoice-automation/for-construction';
+import { invoiceAutomationForEcommerce } from './invoice-automation/for-ecommerce';
+import { invoiceAutomationForEducation } from './invoice-automation/for-education';
+import { invoiceAutomationForHealthcare } from './invoice-automation/for-healthcare';
+import { invoiceAutomationForInsurance } from './invoice-automation/for-insurance';
+import { invoiceAutomationForLawFirms } from './invoice-automation/for-law-firms';
+import { invoiceAutomationForLogistics } from './invoice-automation/for-logistics';
+import { invoiceAutomationForManufacturing } from './invoice-automation/for-manufacturing';
+import { invoiceAutomationForRealEstate } from './invoice-automation/for-real-estate';
+import { invoiceAutomationForRestaurants } from './invoice-automation/for-restaurants';
+import { invoiceAutomationForRetail } from './invoice-automation/for-retail';
+import { invoiceAutomationForSaaS } from './invoice-automation/for-saas';
 
 // ====================================================================
 // Lead Generation Automation - Industry Page Imports
 // ====================================================================
-import { leadGenerationAutomationForAccountingFirms } from './lead-generation-automation-for-accounting-firms';
-import { leadGenerationAutomationForConstruction } from './lead-generation-automation-for-construction';
-import { leadGenerationAutomationForEcommerce } from './lead-generation-automation-for-ecommerce';
-import { leadGenerationAutomationForEducation } from './lead-generation-automation-for-education';
-import { leadGenerationAutomationForHealthcare } from './lead-generation-automation-for-healthcare';
-import { leadGenerationAutomationForInsurance } from './lead-generation-automation-for-insurance';
-import { leadGenerationAutomationForLawFirms } from './lead-generation-automation-for-law-firms';
-import { leadGenerationAutomationForLogistics } from './lead-generation-automation-for-logistics';
-import { leadGenerationAutomationForManufacturing } from './lead-generation-automation-for-manufacturing';
-import { leadGenerationAutomationForRealEstate } from './lead-generation-automation-for-real-estate';
-import { leadGenerationAutomationForRestaurants } from './lead-generation-automation-for-restaurants';
-import { leadGenerationAutomationForRetail } from './lead-generation-automation-for-retail';
-import { leadGenerationAutomationForSaaS } from './lead-generation-automation-for-saas';
+import { leadGenerationAutomationForAccountingFirms } from './lead-generation-automation/for-accounting-firms';
+import { leadGenerationAutomationForConstruction } from './lead-generation-automation/for-construction';
+import { leadGenerationAutomationForEcommerce } from './lead-generation-automation/for-ecommerce';
+import { leadGenerationAutomationForEducation } from './lead-generation-automation/for-education';
+import { leadGenerationAutomationForHealthcare } from './lead-generation-automation/for-healthcare';
+import { leadGenerationAutomationForInsurance } from './lead-generation-automation/for-insurance';
+import { leadGenerationAutomationForLawFirms } from './lead-generation-automation/for-law-firms';
+import { leadGenerationAutomationForLogistics } from './lead-generation-automation/for-logistics';
+import { leadGenerationAutomationForManufacturing } from './lead-generation-automation/for-manufacturing';
+import { leadGenerationAutomationForRealEstate } from './lead-generation-automation/for-real-estate';
+import { leadGenerationAutomationForRestaurants } from './lead-generation-automation/for-restaurants';
+import { leadGenerationAutomationForRetail } from './lead-generation-automation/for-retail';
+import { leadGenerationAutomationForSaaS } from './lead-generation-automation/for-saas';
 
 // ====================================================================
 // Marketing Automation - Industry Page Imports
 // ====================================================================
-import { marketingAutomationForAccountingFirms } from './marketing-automation-for-accounting-firms';
-import { marketingAutomationForConstruction } from './marketing-automation-for-construction';
-import { marketingAutomationForEcommerce } from './marketing-automation-for-ecommerce';
-import { marketingAutomationForEducation } from './marketing-automation-for-education';
-import { marketingAutomationForHealthcare } from './marketing-automation-for-healthcare';
-import { marketingAutomationForInsurance } from './marketing-automation-for-insurance';
-import { marketingAutomationForLawFirms } from './marketing-automation-for-law-firms';
-import { marketingAutomationForLogistics } from './marketing-automation-for-logistics';
-import { marketingAutomationForManufacturing } from './marketing-automation-for-manufacturing';
-import { marketingAutomationForRealEstate } from './marketing-automation-for-real-estate';
-import { marketingAutomationForRestaurants } from './marketing-automation-for-restaurants';
-import { marketingAutomationForRetail } from './marketing-automation-for-retail';
-import { marketingAutomationForSaaS } from './marketing-automation-for-saas';
+import { marketingAutomationForAccountingFirms } from './marketing-automation/for-accounting-firms';
+import { marketingAutomationForConstruction } from './marketing-automation/for-construction';
+import { marketingAutomationForEcommerce } from './marketing-automation/for-ecommerce';
+import { marketingAutomationForEducation } from './marketing-automation/for-education';
+import { marketingAutomationForHealthcare } from './marketing-automation/for-healthcare';
+import { marketingAutomationForInsurance } from './marketing-automation/for-insurance';
+import { marketingAutomationForLawFirms } from './marketing-automation/for-law-firms';
+import { marketingAutomationForLogistics } from './marketing-automation/for-logistics';
+import { marketingAutomationForManufacturing } from './marketing-automation/for-manufacturing';
+import { marketingAutomationForRealEstate } from './marketing-automation/for-real-estate';
+import { marketingAutomationForRestaurants } from './marketing-automation/for-restaurants';
+import { marketingAutomationForRetail } from './marketing-automation/for-retail';
+import { marketingAutomationForSaaS } from './marketing-automation/for-saas';
 
 // ====================================================================
 // Reporting Automation - Industry Page Imports
 // ====================================================================
-import { reportingAutomationForAccountingFirms } from './reporting-automation-for-accounting-firms';
-import { reportingAutomationForConstruction } from './reporting-automation-for-construction';
-import { reportingAutomationForEcommerce } from './reporting-automation-for-ecommerce';
-import { reportingAutomationForEducation } from './reporting-automation-for-education';
-import { reportingAutomationForHealthcare } from './reporting-automation-for-healthcare';
-import { reportingAutomationForInsurance } from './reporting-automation-for-insurance';
-import { reportingAutomationForLawFirms } from './reporting-automation-for-law-firms';
-import { reportingAutomationForLogistics } from './reporting-automation-for-logistics';
-import { reportingAutomationForManufacturing } from './reporting-automation-for-manufacturing';
-import { reportingAutomationForRealEstate } from './reporting-automation-for-real-estate';
-import { reportingAutomationForRestaurants } from './reporting-automation-for-restaurants';
-import { reportingAutomationForRetail } from './reporting-automation-for-retail';
-import { reportingAutomationForSaaS } from './reporting-automation-for-saas';
+import { reportingAutomationForAccountingFirms } from './reporting-automation/for-accounting-firms';
+import { reportingAutomationForConstruction } from './reporting-automation/for-construction';
+import { reportingAutomationForEcommerce } from './reporting-automation/for-ecommerce';
+import { reportingAutomationForEducation } from './reporting-automation/for-education';
+import { reportingAutomationForHealthcare } from './reporting-automation/for-healthcare';
+import { reportingAutomationForInsurance } from './reporting-automation/for-insurance';
+import { reportingAutomationForLawFirms } from './reporting-automation/for-law-firms';
+import { reportingAutomationForLogistics } from './reporting-automation/for-logistics';
+import { reportingAutomationForManufacturing } from './reporting-automation/for-manufacturing';
+import { reportingAutomationForRealEstate } from './reporting-automation/for-real-estate';
+import { reportingAutomationForRestaurants } from './reporting-automation/for-restaurants';
+import { reportingAutomationForRetail } from './reporting-automation/for-retail';
+import { reportingAutomationForSaaS } from './reporting-automation/for-saas';
 
 // ====================================================================
 // Document & Data Automation - Industry Page Imports
 // ====================================================================
-import { documentAutomationForAccountingFirms } from './document-automation-for-accounting-firms';
-import { documentAutomationForConstruction } from './document-automation-for-construction';
-import { documentAutomationForEcommerce } from './document-automation-for-ecommerce';
-import { documentAutomationForEducation } from './document-automation-for-education';
-import { documentAutomationForHealthcare } from './document-automation-for-healthcare';
-import { documentAutomationForInsurance } from './document-automation-for-insurance';
-import { documentAutomationForLawFirms } from './document-automation-for-law-firms';
-import { documentAutomationForLogistics } from './document-automation-for-logistics';
-import { documentAutomationForManufacturing } from './document-automation-for-manufacturing';
-import { documentAutomationForRealEstate } from './document-automation-for-real-estate';
-import { documentAutomationForRestaurants } from './document-automation-for-restaurants';
-import { documentAutomationForRetail } from './document-automation-for-retail';
-import { documentAutomationForSaaS } from './document-automation-for-saas';
+import { documentAutomationForAccountingFirms } from './document-automation/for-accounting-firms';
+import { documentAutomationForConstruction } from './document-automation/for-construction';
+import { documentAutomationForEcommerce } from './document-automation/for-ecommerce';
+import { documentAutomationForEducation } from './document-automation/for-education';
+import { documentAutomationForHealthcare } from './document-automation/for-healthcare';
+import { documentAutomationForInsurance } from './document-automation/for-insurance';
+import { documentAutomationForLawFirms } from './document-automation/for-law-firms';
+import { documentAutomationForLogistics } from './document-automation/for-logistics';
+import { documentAutomationForManufacturing } from './document-automation/for-manufacturing';
+import { documentAutomationForRealEstate } from './document-automation/for-real-estate';
+import { documentAutomationForRestaurants } from './document-automation/for-restaurants';
+import { documentAutomationForRetail } from './document-automation/for-retail';
+import { documentAutomationForSaaS } from './document-automation/for-saas';
 
 // ====================================================================
 // Sales Automation - Industry Page Imports
 // ====================================================================
-import { salesAutomationForAccountingFirms } from './sales-automation-for-accounting-firms';
-import { salesAutomationForConstruction } from './sales-automation-for-construction';
-import { salesAutomationForEcommerce } from './sales-automation-for-ecommerce';
-import { salesAutomationForEducation } from './sales-automation-for-education';
-import { salesAutomationForHealthcare } from './sales-automation-for-healthcare';
-import { salesAutomationForInsurance } from './sales-automation-for-insurance';
-import { salesAutomationForLawFirms } from './sales-automation-for-law-firms';
-import { salesAutomationForLogistics } from './sales-automation-for-logistics';
-import { salesAutomationForManufacturing } from './sales-automation-for-manufacturing';
-import { salesAutomationForRealEstate } from './sales-automation-for-real-estate';
-import { salesAutomationForRestaurants } from './sales-automation-for-restaurants';
-import { salesAutomationForRetail } from './sales-automation-for-retail';
-import { salesAutomationForSaaS } from './sales-automation-for-saas';
+import { salesAutomationForAccountingFirms } from './sales-automation/for-accounting-firms';
+import { salesAutomationForConstruction } from './sales-automation/for-construction';
+import { salesAutomationForEcommerce } from './sales-automation/for-ecommerce';
+import { salesAutomationForEducation } from './sales-automation/for-education';
+import { salesAutomationForHealthcare } from './sales-automation/for-healthcare';
+import { salesAutomationForInsurance } from './sales-automation/for-insurance';
+import { salesAutomationForLawFirms } from './sales-automation/for-law-firms';
+import { salesAutomationForLogistics } from './sales-automation/for-logistics';
+import { salesAutomationForManufacturing } from './sales-automation/for-manufacturing';
+import { salesAutomationForRealEstate } from './sales-automation/for-real-estate';
+import { salesAutomationForRestaurants } from './sales-automation/for-restaurants';
+import { salesAutomationForRetail } from './sales-automation/for-retail';
+import { salesAutomationForSaaS } from './sales-automation/for-saas';
 
 // Export types
 export type {
@@ -276,236 +276,236 @@ export type {
 // ====================================================================
 
 // Export individual solutions - Existing Platform pages
-export { aiChatbotsWithZapier } from './ai-chatbots-with-zapier';
-export { aiChatbotsWithSalesforce } from './ai-chatbots-with-salesforce';
-export { aiWorkflowAutomationWithHubspot } from './ai-workflow-automation-with-hubspot';
-export { aiWorkflowAutomationWithN8n } from './ai-workflow-automation-with-n8n';
-export { aiWorkflowAutomationWithSalesforce } from './ai-workflow-automation-with-salesforce';
-export { aiWorkflowAutomationWithZapier } from './ai-workflow-automation-with-zapier';
-export { crmAutomationWithAirtable } from './crm-automation-with-airtable';
-export { crmAutomationWithHubspot } from './crm-automation-with-hubspot';
-export { crmAutomationWithSalesforce } from './crm-automation-with-salesforce';
-export { documentAutomationWithAirtable } from './document-automation-with-airtable';
-export { documentAutomationWithN8n } from './document-automation-with-n8n';
-export { documentAutomationWithSalesforce } from './document-automation-with-salesforce';
-export { leadGenerationAutomationWithHubspot } from './lead-generation-automation-with-hubspot';
-export { leadGenerationAutomationWithSalesforce } from './lead-generation-automation-with-salesforce';
-export { customerSupportAutomationWithZapier } from './customer-support-automation-with-zapier';
-export { marketingAutomationWithHubspot } from './marketing-automation-with-hubspot';
-export { marketingAutomationWithSalesforce } from './marketing-automation-with-salesforce';
-export { reportingAutomationWithN8n } from './reporting-automation-with-n8n';
-export { reportingAutomationWithSalesforce } from './reporting-automation-with-salesforce';
-export { salesAutomationWithHubspot } from './sales-automation-with-hubspot';
+export { aiChatbotsWithZapier } from './ai-chatbots/with-zapier';
+export { aiChatbotsWithSalesforce } from './ai-chatbots/with-salesforce';
+export { aiWorkflowAutomationWithHubspot } from './ai-workflow-automation/with-hubspot';
+export { aiWorkflowAutomationWithN8n } from './ai-workflow-automation/with-n8n';
+export { aiWorkflowAutomationWithSalesforce } from './ai-workflow-automation/with-salesforce';
+export { aiWorkflowAutomationWithZapier } from './ai-workflow-automation/with-zapier';
+export { crmAutomationWithAirtable } from './crm-automation/with-airtable';
+export { crmAutomationWithHubspot } from './crm-automation/with-hubspot';
+export { crmAutomationWithSalesforce } from './crm-automation/with-salesforce';
+export { documentAutomationWithAirtable } from './document-automation/with-airtable';
+export { documentAutomationWithN8n } from './document-automation/with-n8n';
+export { documentAutomationWithSalesforce } from './document-automation/with-salesforce';
+export { leadGenerationAutomationWithHubspot } from './lead-generation-automation/with-hubspot';
+export { leadGenerationAutomationWithSalesforce } from './lead-generation-automation/with-salesforce';
+export { customerSupportAutomationWithZapier } from './customer-support-automation/with-zapier';
+export { marketingAutomationWithHubspot } from './marketing-automation/with-hubspot';
+export { marketingAutomationWithSalesforce } from './marketing-automation/with-salesforce';
+export { reportingAutomationWithN8n } from './reporting-automation/with-n8n';
+export { reportingAutomationWithSalesforce } from './reporting-automation/with-salesforce';
+export { salesAutomationWithHubspot } from './sales-automation/with-hubspot';
 
 // AI Agents exports - Existing
-export { aiAgentsForAccountingFirms } from './ai-agents-for-accounting-firms';
-export { aiAgentsForConstruction } from './ai-agents-for-construction';
-export { aiAgentsForEcommerce } from './ai-agents-for-ecommerce';
-export { aiAgentsForEducation } from './ai-agents-for-education';
-export { aiAgentsForHealthcare } from './ai-agents-for-healthcare';
-export { aiAgentsForInsurance } from './ai-agents-for-insurance';
-export { aiAgentsForLawFirms } from './ai-agents-for-law-firms';
-export { aiAgentsForLogistics } from './ai-agents-for-logistics';
-export { aiAgentsForManufacturing } from './ai-agents-for-manufacturing';
-export { aiAgentsForRealEstate } from './ai-agents-for-real-estate';
-export { aiAgentsForRestaurants } from './ai-agents-for-restaurants';
-export { aiAgentsForRetail } from './ai-agents-for-retail';
-export { aiAgentsForSaaS } from './ai-agents-for-saas';
+export { aiAgentsForAccountingFirms } from './ai-agents/for-accounting-firms';
+export { aiAgentsForConstruction } from './ai-agents/for-construction';
+export { aiAgentsForEcommerce } from './ai-agents/for-ecommerce';
+export { aiAgentsForEducation } from './ai-agents/for-education';
+export { aiAgentsForHealthcare } from './ai-agents/for-healthcare';
+export { aiAgentsForInsurance } from './ai-agents/for-insurance';
+export { aiAgentsForLawFirms } from './ai-agents/for-law-firms';
+export { aiAgentsForLogistics } from './ai-agents/for-logistics';
+export { aiAgentsForManufacturing } from './ai-agents/for-manufacturing';
+export { aiAgentsForRealEstate } from './ai-agents/for-real-estate';
+export { aiAgentsForRestaurants } from './ai-agents/for-restaurants';
+export { aiAgentsForRetail } from './ai-agents/for-retail';
+export { aiAgentsForSaaS } from './ai-agents/for-saas';
 
 // AI Chatbots exports - Industry pages
-export { aiChatbotsForAccountingFirms } from './ai-chatbots-for-accounting-firms';
-export { aiChatbotsForConstruction } from './ai-chatbots-for-construction';
-export { aiChatbotsForEcommerce } from './ai-chatbots-for-ecommerce';
-export { aiChatbotsForEducation } from './ai-chatbots-for-education';
-export { aiChatbotsForHealthcare } from './ai-chatbots-for-healthcare';
-export { aiChatbotsForInsurance } from './ai-chatbots-for-insurance';
-export { aiChatbotsForLawFirms } from './ai-chatbots-for-law-firms';
-export { aiChatbotsForLogistics } from './ai-chatbots-for-logistics';
-export { aiChatbotsForManufacturing } from './ai-chatbots-for-manufacturing';
-export { aiChatbotsForRealEstate } from './ai-chatbots-for-real-estate';
-export { aiChatbotsForRestaurants } from './ai-chatbots-for-restaurants';
-export { aiChatbotsForRetail } from './ai-chatbots-for-retail';
-export { aiChatbotsForSaaS } from './ai-chatbots-for-saas';
+export { aiChatbotsForAccountingFirms } from './ai-chatbots/for-accounting-firms';
+export { aiChatbotsForConstruction } from './ai-chatbots/for-construction';
+export { aiChatbotsForEcommerce } from './ai-chatbots/for-ecommerce';
+export { aiChatbotsForEducation } from './ai-chatbots/for-education';
+export { aiChatbotsForHealthcare } from './ai-chatbots/for-healthcare';
+export { aiChatbotsForInsurance } from './ai-chatbots/for-insurance';
+export { aiChatbotsForLawFirms } from './ai-chatbots/for-law-firms';
+export { aiChatbotsForLogistics } from './ai-chatbots/for-logistics';
+export { aiChatbotsForManufacturing } from './ai-chatbots/for-manufacturing';
+export { aiChatbotsForRealEstate } from './ai-chatbots/for-real-estate';
+export { aiChatbotsForRestaurants } from './ai-chatbots/for-restaurants';
+export { aiChatbotsForRetail } from './ai-chatbots/for-retail';
+export { aiChatbotsForSaaS } from './ai-chatbots/for-saas';
 
 // AI Voice Agents exports
-export { aiVoiceAgentsForAccountingFirms } from './ai-voice-agents-for-accounting-firms';
-export { aiVoiceAgentsForConstruction } from './ai-voice-agents-for-construction';
-export { aiVoiceAgentsForEcommerce } from './ai-voice-agents-for-ecommerce';
-export { aiVoiceAgentsForEducation } from './ai-voice-agents-for-education';
-export { aiVoiceAgentsForHealthcare } from './ai-voice-agents-for-healthcare';
-export { aiVoiceAgentsForInsurance } from './ai-voice-agents-for-insurance';
-export { aiVoiceAgentsForLawFirms } from './ai-voice-agents-for-law-firms';
-export { aiVoiceAgentsForLogistics } from './ai-voice-agents-for-logistics';
-export { aiVoiceAgentsForManufacturing } from './ai-voice-agents-for-manufacturing';
-export { aiVoiceAgentsForRealEstate } from './ai-voice-agents-for-real-estate';
-export { aiVoiceAgentsForRestaurants } from './ai-voice-agents-for-restaurants';
-export { aiVoiceAgentsForRetail } from './ai-voice-agents-for-retail';
-export { aiVoiceAgentsForSaaS } from './ai-voice-agents-for-saas';
+export { aiVoiceAgentsForAccountingFirms } from './ai-voice-agents/for-accounting-firms';
+export { aiVoiceAgentsForConstruction } from './ai-voice-agents/for-construction';
+export { aiVoiceAgentsForEcommerce } from './ai-voice-agents/for-ecommerce';
+export { aiVoiceAgentsForEducation } from './ai-voice-agents/for-education';
+export { aiVoiceAgentsForHealthcare } from './ai-voice-agents/for-healthcare';
+export { aiVoiceAgentsForInsurance } from './ai-voice-agents/for-insurance';
+export { aiVoiceAgentsForLawFirms } from './ai-voice-agents/for-law-firms';
+export { aiVoiceAgentsForLogistics } from './ai-voice-agents/for-logistics';
+export { aiVoiceAgentsForManufacturing } from './ai-voice-agents/for-manufacturing';
+export { aiVoiceAgentsForRealEstate } from './ai-voice-agents/for-real-estate';
+export { aiVoiceAgentsForRestaurants } from './ai-voice-agents/for-restaurants';
+export { aiVoiceAgentsForRetail } from './ai-voice-agents/for-retail';
+export { aiVoiceAgentsForSaaS } from './ai-voice-agents/for-saas';
 
 // AI Workflow Automation exports
-export { aiWorkflowAutomationForAccountingFirms } from './ai-workflow-automation-for-accounting-firms';
-export { aiWorkflowAutomationForConstruction } from './ai-workflow-automation-for-construction';
-export { aiWorkflowAutomationForEcommerce } from './ai-workflow-automation-for-ecommerce';
-export { aiWorkflowAutomationForEducation } from './ai-workflow-automation-for-education';
-export { aiWorkflowAutomationForHealthcare } from './ai-workflow-automation-for-healthcare';
-export { aiWorkflowAutomationForInsurance } from './ai-workflow-automation-for-insurance';
-export { aiWorkflowAutomationForLawFirms } from './ai-workflow-automation-for-law-firms';
-export { aiWorkflowAutomationForLogistics } from './ai-workflow-automation-for-logistics';
-export { aiWorkflowAutomationForManufacturing } from './ai-workflow-automation-for-manufacturing';
-export { aiWorkflowAutomationForRealEstate } from './ai-workflow-automation-for-real-estate';
-export { aiWorkflowAutomationForRestaurants } from './ai-workflow-automation-for-restaurants';
-export { aiWorkflowAutomationForRetail } from './ai-workflow-automation-for-retail';
-export { aiWorkflowAutomationForSaaS } from './ai-workflow-automation-for-saas';
+export { aiWorkflowAutomationForAccountingFirms } from './ai-workflow-automation/for-accounting-firms';
+export { aiWorkflowAutomationForConstruction } from './ai-workflow-automation/for-construction';
+export { aiWorkflowAutomationForEcommerce } from './ai-workflow-automation/for-ecommerce';
+export { aiWorkflowAutomationForEducation } from './ai-workflow-automation/for-education';
+export { aiWorkflowAutomationForHealthcare } from './ai-workflow-automation/for-healthcare';
+export { aiWorkflowAutomationForInsurance } from './ai-workflow-automation/for-insurance';
+export { aiWorkflowAutomationForLawFirms } from './ai-workflow-automation/for-law-firms';
+export { aiWorkflowAutomationForLogistics } from './ai-workflow-automation/for-logistics';
+export { aiWorkflowAutomationForManufacturing } from './ai-workflow-automation/for-manufacturing';
+export { aiWorkflowAutomationForRealEstate } from './ai-workflow-automation/for-real-estate';
+export { aiWorkflowAutomationForRestaurants } from './ai-workflow-automation/for-restaurants';
+export { aiWorkflowAutomationForRetail } from './ai-workflow-automation/for-retail';
+export { aiWorkflowAutomationForSaaS } from './ai-workflow-automation/for-saas';
 
 // Appointment & Booking Automation exports
-export { appointmentBookingAutomationForAccountingFirms } from './appointment-booking-automation-for-accounting-firms';
-export { appointmentBookingAutomationForConstruction } from './appointment-booking-automation-for-construction';
-export { appointmentBookingAutomationForEcommerce } from './appointment-booking-automation-for-ecommerce';
-export { appointmentBookingAutomationForEducation } from './appointment-booking-automation-for-education';
-export { appointmentBookingAutomationForHealthcare } from './appointment-booking-automation-for-healthcare';
-export { appointmentBookingAutomationForInsurance } from './appointment-booking-automation-for-insurance';
-export { appointmentBookingAutomationForLawFirms } from './appointment-booking-automation-for-law-firms';
-export { appointmentBookingAutomationForLogistics } from './appointment-booking-automation-for-logistics';
-export { appointmentBookingAutomationForManufacturing } from './appointment-booking-automation-for-manufacturing';
-export { appointmentBookingAutomationForRealEstate } from './appointment-booking-automation-for-real-estate';
-export { appointmentBookingAutomationForRestaurants } from './appointment-booking-automation-for-restaurants';
-export { appointmentBookingAutomationForRetail } from './appointment-booking-automation-for-retail';
-export { appointmentBookingAutomationForSaaS } from './appointment-booking-automation-for-saas';
+export { appointmentBookingAutomationForAccountingFirms } from './appointment-booking-automation/for-accounting-firms';
+export { appointmentBookingAutomationForConstruction } from './appointment-booking-automation/for-construction';
+export { appointmentBookingAutomationForEcommerce } from './appointment-booking-automation/for-ecommerce';
+export { appointmentBookingAutomationForEducation } from './appointment-booking-automation/for-education';
+export { appointmentBookingAutomationForHealthcare } from './appointment-booking-automation/for-healthcare';
+export { appointmentBookingAutomationForInsurance } from './appointment-booking-automation/for-insurance';
+export { appointmentBookingAutomationForLawFirms } from './appointment-booking-automation/for-law-firms';
+export { appointmentBookingAutomationForLogistics } from './appointment-booking-automation/for-logistics';
+export { appointmentBookingAutomationForManufacturing } from './appointment-booking-automation/for-manufacturing';
+export { appointmentBookingAutomationForRealEstate } from './appointment-booking-automation/for-real-estate';
+export { appointmentBookingAutomationForRestaurants } from './appointment-booking-automation/for-restaurants';
+export { appointmentBookingAutomationForRetail } from './appointment-booking-automation/for-retail';
+export { appointmentBookingAutomationForSaaS } from './appointment-booking-automation/for-saas';
 
 // Business Process Automation exports
-export { businessProcessAutomationForAccountingFirms } from './business-process-automation-for-accounting-firms';
-export { businessProcessAutomationForConstruction } from './business-process-automation-for-construction';
-export { businessProcessAutomationForEcommerce } from './business-process-automation-for-ecommerce';
-export { businessProcessAutomationForEducation } from './business-process-automation-for-education';
-export { businessProcessAutomationForHealthcare } from './business-process-automation-for-healthcare';
-export { businessProcessAutomationForInsurance } from './business-process-automation-for-insurance';
-export { businessProcessAutomationForLawFirms } from './business-process-automation-for-law-firms';
-export { businessProcessAutomationForLogistics } from './business-process-automation-for-logistics';
-export { businessProcessAutomationForManufacturing } from './business-process-automation-for-manufacturing';
-export { businessProcessAutomationForRealEstate } from './business-process-automation-for-real-estate';
-export { businessProcessAutomationForRestaurants } from './business-process-automation-for-restaurants';
-export { businessProcessAutomationForRetail } from './business-process-automation-for-retail';
-export { businessProcessAutomationForSaaS } from './business-process-automation-for-saas';
+export { businessProcessAutomationForAccountingFirms } from './business-process-automation/for-accounting-firms';
+export { businessProcessAutomationForConstruction } from './business-process-automation/for-construction';
+export { businessProcessAutomationForEcommerce } from './business-process-automation/for-ecommerce';
+export { businessProcessAutomationForEducation } from './business-process-automation/for-education';
+export { businessProcessAutomationForHealthcare } from './business-process-automation/for-healthcare';
+export { businessProcessAutomationForInsurance } from './business-process-automation/for-insurance';
+export { businessProcessAutomationForLawFirms } from './business-process-automation/for-law-firms';
+export { businessProcessAutomationForLogistics } from './business-process-automation/for-logistics';
+export { businessProcessAutomationForManufacturing } from './business-process-automation/for-manufacturing';
+export { businessProcessAutomationForRealEstate } from './business-process-automation/for-real-estate';
+export { businessProcessAutomationForRestaurants } from './business-process-automation/for-restaurants';
+export { businessProcessAutomationForRetail } from './business-process-automation/for-retail';
+export { businessProcessAutomationForSaaS } from './business-process-automation/for-saas';
 
 // CRM Automation exports
-export { crmAutomationForAccountingFirms } from './crm-automation-for-accounting-firms';
-export { crmAutomationForConstruction } from './crm-automation-for-construction';
-export { crmAutomationForEcommerce } from './crm-automation-for-ecommerce';
-export { crmAutomationForEducation } from './crm-automation-for-education';
-export { crmAutomationForHealthcare } from './crm-automation-for-healthcare';
-export { crmAutomationForInsurance } from './crm-automation-for-insurance';
-export { crmAutomationForLawFirms } from './crm-automation-for-law-firms';
-export { crmAutomationForLogistics } from './crm-automation-for-logistics';
-export { crmAutomationForManufacturing } from './crm-automation-for-manufacturing';
-export { crmAutomationForRealEstate } from './crm-automation-for-real-estate';
-export { crmAutomationForRestaurants } from './crm-automation-for-restaurants';
-export { crmAutomationForRetail } from './crm-automation-for-retail';
-export { crmAutomationForSaaS } from './crm-automation-for-saas';
+export { crmAutomationForAccountingFirms } from './crm-automation/for-accounting-firms';
+export { crmAutomationForConstruction } from './crm-automation/for-construction';
+export { crmAutomationForEcommerce } from './crm-automation/for-ecommerce';
+export { crmAutomationForEducation } from './crm-automation/for-education';
+export { crmAutomationForHealthcare } from './crm-automation/for-healthcare';
+export { crmAutomationForInsurance } from './crm-automation/for-insurance';
+export { crmAutomationForLawFirms } from './crm-automation/for-law-firms';
+export { crmAutomationForLogistics } from './crm-automation/for-logistics';
+export { crmAutomationForManufacturing } from './crm-automation/for-manufacturing';
+export { crmAutomationForRealEstate } from './crm-automation/for-real-estate';
+export { crmAutomationForRestaurants } from './crm-automation/for-restaurants';
+export { crmAutomationForRetail } from './crm-automation/for-retail';
+export { crmAutomationForSaaS } from './crm-automation/for-saas';
 
 // Customer Support Automation exports
-export { customerSupportAutomationForAccountingFirms } from './customer-support-automation-for-accounting-firms';
-export { customerSupportAutomationForConstruction } from './customer-support-automation-for-construction';
-export { customerSupportAutomationForEcommerce } from './customer-support-automation-for-ecommerce';
-export { customerSupportAutomationForEducation } from './customer-support-automation-for-education';
-export { customerSupportAutomationForHealthcare } from './customer-support-automation-for-healthcare';
-export { customerSupportAutomationForInsurance } from './customer-support-automation-for-insurance';
-export { customerSupportAutomationForLawFirms } from './customer-support-automation-for-law-firms';
-export { customerSupportAutomationForLogistics } from './customer-support-automation-for-logistics';
-export { customerSupportAutomationForManufacturing } from './customer-support-automation-for-manufacturing';
-export { customerSupportAutomationForRealEstate } from './customer-support-automation-for-real-estate';
-export { customerSupportAutomationForRestaurants } from './customer-support-automation-for-restaurants';
-export { customerSupportAutomationForRetail } from './customer-support-automation-for-retail';
-export { customerSupportAutomationForSaaS } from './customer-support-automation-for-saas';
+export { customerSupportAutomationForAccountingFirms } from './customer-support-automation/for-accounting-firms';
+export { customerSupportAutomationForConstruction } from './customer-support-automation/for-construction';
+export { customerSupportAutomationForEcommerce } from './customer-support-automation/for-ecommerce';
+export { customerSupportAutomationForEducation } from './customer-support-automation/for-education';
+export { customerSupportAutomationForHealthcare } from './customer-support-automation/for-healthcare';
+export { customerSupportAutomationForInsurance } from './customer-support-automation/for-insurance';
+export { customerSupportAutomationForLawFirms } from './customer-support-automation/for-law-firms';
+export { customerSupportAutomationForLogistics } from './customer-support-automation/for-logistics';
+export { customerSupportAutomationForManufacturing } from './customer-support-automation/for-manufacturing';
+export { customerSupportAutomationForRealEstate } from './customer-support-automation/for-real-estate';
+export { customerSupportAutomationForRestaurants } from './customer-support-automation/for-restaurants';
+export { customerSupportAutomationForRetail } from './customer-support-automation/for-retail';
+export { customerSupportAutomationForSaaS } from './customer-support-automation/for-saas';
 
 // Invoice & Finance Automation exports
-export { invoiceAutomationForAccountingFirms } from './invoice-automation-for-accounting-firms';
-export { invoiceAutomationForConstruction } from './invoice-automation-for-construction';
-export { invoiceAutomationForEcommerce } from './invoice-automation-for-ecommerce';
-export { invoiceAutomationForEducation } from './invoice-automation-for-education';
-export { invoiceAutomationForHealthcare } from './invoice-automation-for-healthcare';
-export { invoiceAutomationForInsurance } from './invoice-automation-for-insurance';
-export { invoiceAutomationForLawFirms } from './invoice-automation-for-law-firms';
-export { invoiceAutomationForLogistics } from './invoice-automation-for-logistics';
-export { invoiceAutomationForManufacturing } from './invoice-automation-for-manufacturing';
-export { invoiceAutomationForRealEstate } from './invoice-automation-for-real-estate';
-export { invoiceAutomationForRestaurants } from './invoice-automation-for-restaurants';
-export { invoiceAutomationForRetail } from './invoice-automation-for-retail';
-export { invoiceAutomationForSaaS } from './invoice-automation-for-saas';
+export { invoiceAutomationForAccountingFirms } from './invoice-automation/for-accounting-firms';
+export { invoiceAutomationForConstruction } from './invoice-automation/for-construction';
+export { invoiceAutomationForEcommerce } from './invoice-automation/for-ecommerce';
+export { invoiceAutomationForEducation } from './invoice-automation/for-education';
+export { invoiceAutomationForHealthcare } from './invoice-automation/for-healthcare';
+export { invoiceAutomationForInsurance } from './invoice-automation/for-insurance';
+export { invoiceAutomationForLawFirms } from './invoice-automation/for-law-firms';
+export { invoiceAutomationForLogistics } from './invoice-automation/for-logistics';
+export { invoiceAutomationForManufacturing } from './invoice-automation/for-manufacturing';
+export { invoiceAutomationForRealEstate } from './invoice-automation/for-real-estate';
+export { invoiceAutomationForRestaurants } from './invoice-automation/for-restaurants';
+export { invoiceAutomationForRetail } from './invoice-automation/for-retail';
+export { invoiceAutomationForSaaS } from './invoice-automation/for-saas';
 
 // Lead Generation Automation exports
-export { leadGenerationAutomationForAccountingFirms } from './lead-generation-automation-for-accounting-firms';
-export { leadGenerationAutomationForConstruction } from './lead-generation-automation-for-construction';
-export { leadGenerationAutomationForEcommerce } from './lead-generation-automation-for-ecommerce';
-export { leadGenerationAutomationForEducation } from './lead-generation-automation-for-education';
-export { leadGenerationAutomationForHealthcare } from './lead-generation-automation-for-healthcare';
-export { leadGenerationAutomationForInsurance } from './lead-generation-automation-for-insurance';
-export { leadGenerationAutomationForLawFirms } from './lead-generation-automation-for-law-firms';
-export { leadGenerationAutomationForLogistics } from './lead-generation-automation-for-logistics';
-export { leadGenerationAutomationForManufacturing } from './lead-generation-automation-for-manufacturing';
-export { leadGenerationAutomationForRealEstate } from './lead-generation-automation-for-real-estate';
-export { leadGenerationAutomationForRestaurants } from './lead-generation-automation-for-restaurants';
-export { leadGenerationAutomationForRetail } from './lead-generation-automation-for-retail';
-export { leadGenerationAutomationForSaaS } from './lead-generation-automation-for-saas';
+export { leadGenerationAutomationForAccountingFirms } from './lead-generation-automation/for-accounting-firms';
+export { leadGenerationAutomationForConstruction } from './lead-generation-automation/for-construction';
+export { leadGenerationAutomationForEcommerce } from './lead-generation-automation/for-ecommerce';
+export { leadGenerationAutomationForEducation } from './lead-generation-automation/for-education';
+export { leadGenerationAutomationForHealthcare } from './lead-generation-automation/for-healthcare';
+export { leadGenerationAutomationForInsurance } from './lead-generation-automation/for-insurance';
+export { leadGenerationAutomationForLawFirms } from './lead-generation-automation/for-law-firms';
+export { leadGenerationAutomationForLogistics } from './lead-generation-automation/for-logistics';
+export { leadGenerationAutomationForManufacturing } from './lead-generation-automation/for-manufacturing';
+export { leadGenerationAutomationForRealEstate } from './lead-generation-automation/for-real-estate';
+export { leadGenerationAutomationForRestaurants } from './lead-generation-automation/for-restaurants';
+export { leadGenerationAutomationForRetail } from './lead-generation-automation/for-retail';
+export { leadGenerationAutomationForSaaS } from './lead-generation-automation/for-saas';
 
 // Marketing Automation exports
-export { marketingAutomationForAccountingFirms } from './marketing-automation-for-accounting-firms';
-export { marketingAutomationForConstruction } from './marketing-automation-for-construction';
-export { marketingAutomationForEcommerce } from './marketing-automation-for-ecommerce';
-export { marketingAutomationForEducation } from './marketing-automation-for-education';
-export { marketingAutomationForHealthcare } from './marketing-automation-for-healthcare';
-export { marketingAutomationForInsurance } from './marketing-automation-for-insurance';
-export { marketingAutomationForLawFirms } from './marketing-automation-for-law-firms';
-export { marketingAutomationForLogistics } from './marketing-automation-for-logistics';
-export { marketingAutomationForManufacturing } from './marketing-automation-for-manufacturing';
-export { marketingAutomationForRealEstate } from './marketing-automation-for-real-estate';
-export { marketingAutomationForRestaurants } from './marketing-automation-for-restaurants';
-export { marketingAutomationForRetail } from './marketing-automation-for-retail';
-export { marketingAutomationForSaaS } from './marketing-automation-for-saas';
+export { marketingAutomationForAccountingFirms } from './marketing-automation/for-accounting-firms';
+export { marketingAutomationForConstruction } from './marketing-automation/for-construction';
+export { marketingAutomationForEcommerce } from './marketing-automation/for-ecommerce';
+export { marketingAutomationForEducation } from './marketing-automation/for-education';
+export { marketingAutomationForHealthcare } from './marketing-automation/for-healthcare';
+export { marketingAutomationForInsurance } from './marketing-automation/for-insurance';
+export { marketingAutomationForLawFirms } from './marketing-automation/for-law-firms';
+export { marketingAutomationForLogistics } from './marketing-automation/for-logistics';
+export { marketingAutomationForManufacturing } from './marketing-automation/for-manufacturing';
+export { marketingAutomationForRealEstate } from './marketing-automation/for-real-estate';
+export { marketingAutomationForRestaurants } from './marketing-automation/for-restaurants';
+export { marketingAutomationForRetail } from './marketing-automation/for-retail';
+export { marketingAutomationForSaaS } from './marketing-automation/for-saas';
 
 // Reporting Automation exports
-export { reportingAutomationForAccountingFirms } from './reporting-automation-for-accounting-firms';
-export { reportingAutomationForConstruction } from './reporting-automation-for-construction';
-export { reportingAutomationForEcommerce } from './reporting-automation-for-ecommerce';
-export { reportingAutomationForEducation } from './reporting-automation-for-education';
-export { reportingAutomationForHealthcare } from './reporting-automation-for-healthcare';
-export { reportingAutomationForInsurance } from './reporting-automation-for-insurance';
-export { reportingAutomationForLawFirms } from './reporting-automation-for-law-firms';
-export { reportingAutomationForLogistics } from './reporting-automation-for-logistics';
-export { reportingAutomationForManufacturing } from './reporting-automation-for-manufacturing';
-export { reportingAutomationForRealEstate } from './reporting-automation-for-real-estate';
-export { reportingAutomationForRestaurants } from './reporting-automation-for-restaurants';
-export { reportingAutomationForRetail } from './reporting-automation-for-retail';
-export { reportingAutomationForSaaS } from './reporting-automation-for-saas';
+export { reportingAutomationForAccountingFirms } from './reporting-automation/for-accounting-firms';
+export { reportingAutomationForConstruction } from './reporting-automation/for-construction';
+export { reportingAutomationForEcommerce } from './reporting-automation/for-ecommerce';
+export { reportingAutomationForEducation } from './reporting-automation/for-education';
+export { reportingAutomationForHealthcare } from './reporting-automation/for-healthcare';
+export { reportingAutomationForInsurance } from './reporting-automation/for-insurance';
+export { reportingAutomationForLawFirms } from './reporting-automation/for-law-firms';
+export { reportingAutomationForLogistics } from './reporting-automation/for-logistics';
+export { reportingAutomationForManufacturing } from './reporting-automation/for-manufacturing';
+export { reportingAutomationForRealEstate } from './reporting-automation/for-real-estate';
+export { reportingAutomationForRestaurants } from './reporting-automation/for-restaurants';
+export { reportingAutomationForRetail } from './reporting-automation/for-retail';
+export { reportingAutomationForSaaS } from './reporting-automation/for-saas';
 
 // Document Automation exports
-export { documentAutomationForAccountingFirms } from './document-automation-for-accounting-firms';
-export { documentAutomationForConstruction } from './document-automation-for-construction';
-export { documentAutomationForEcommerce } from './document-automation-for-ecommerce';
-export { documentAutomationForEducation } from './document-automation-for-education';
-export { documentAutomationForHealthcare } from './document-automation-for-healthcare';
-export { documentAutomationForInsurance } from './document-automation-for-insurance';
-export { documentAutomationForLawFirms } from './document-automation-for-law-firms';
-export { documentAutomationForLogistics } from './document-automation-for-logistics';
-export { documentAutomationForManufacturing } from './document-automation-for-manufacturing';
-export { documentAutomationForRealEstate } from './document-automation-for-real-estate';
-export { documentAutomationForRestaurants } from './document-automation-for-restaurants';
-export { documentAutomationForRetail } from './document-automation-for-retail';
-export { documentAutomationForSaaS } from './document-automation-for-saas';
+export { documentAutomationForAccountingFirms } from './document-automation/for-accounting-firms';
+export { documentAutomationForConstruction } from './document-automation/for-construction';
+export { documentAutomationForEcommerce } from './document-automation/for-ecommerce';
+export { documentAutomationForEducation } from './document-automation/for-education';
+export { documentAutomationForHealthcare } from './document-automation/for-healthcare';
+export { documentAutomationForInsurance } from './document-automation/for-insurance';
+export { documentAutomationForLawFirms } from './document-automation/for-law-firms';
+export { documentAutomationForLogistics } from './document-automation/for-logistics';
+export { documentAutomationForManufacturing } from './document-automation/for-manufacturing';
+export { documentAutomationForRealEstate } from './document-automation/for-real-estate';
+export { documentAutomationForRestaurants } from './document-automation/for-restaurants';
+export { documentAutomationForRetail } from './document-automation/for-retail';
+export { documentAutomationForSaaS } from './document-automation/for-saas';
 
 // Sales Automation exports
-export { salesAutomationForAccountingFirms } from './sales-automation-for-accounting-firms';
-export { salesAutomationForConstruction } from './sales-automation-for-construction';
-export { salesAutomationForEcommerce } from './sales-automation-for-ecommerce';
-export { salesAutomationForEducation } from './sales-automation-for-education';
-export { salesAutomationForHealthcare } from './sales-automation-for-healthcare';
-export { salesAutomationForInsurance } from './sales-automation-for-insurance';
-export { salesAutomationForLawFirms } from './sales-automation-for-law-firms';
-export { salesAutomationForLogistics } from './sales-automation-for-logistics';
-export { salesAutomationForManufacturing } from './sales-automation-for-manufacturing';
-export { salesAutomationForRealEstate } from './sales-automation-for-real-estate';
-export { salesAutomationForRestaurants } from './sales-automation-for-restaurants';
-export { salesAutomationForRetail } from './sales-automation-for-retail';
-export { salesAutomationForSaaS } from './sales-automation-for-saas';
+export { salesAutomationForAccountingFirms } from './sales-automation/for-accounting-firms';
+export { salesAutomationForConstruction } from './sales-automation/for-construction';
+export { salesAutomationForEcommerce } from './sales-automation/for-ecommerce';
+export { salesAutomationForEducation } from './sales-automation/for-education';
+export { salesAutomationForHealthcare } from './sales-automation/for-healthcare';
+export { salesAutomationForInsurance } from './sales-automation/for-insurance';
+export { salesAutomationForLawFirms } from './sales-automation/for-law-firms';
+export { salesAutomationForLogistics } from './sales-automation/for-logistics';
+export { salesAutomationForManufacturing } from './sales-automation/for-manufacturing';
+export { salesAutomationForRealEstate } from './sales-automation/for-real-estate';
+export { salesAutomationForRestaurants } from './sales-automation/for-restaurants';
+export { salesAutomationForRetail } from './sales-automation/for-retail';
+export { salesAutomationForSaaS } from './sales-automation/for-saas';
 
 // Export all solutions as a record
 export const solutionsContent: Record<string, SolutionData> = {

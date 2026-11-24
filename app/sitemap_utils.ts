@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { LIVE_PRODUCT_PATH_LIST } from '@/content/products/routes';
+import { allSolutionPaths } from '@/content/Solutions/pages';
 
 // Get all routes from the app directory
 export function getAllRoutes(): string[] {
@@ -147,37 +148,10 @@ export function getServices(): { path: string; subPages: string[] }[] {
   ];
 }
 
-// Get solutions
+// Get solutions: every page below /solutions comes from the route registry
+// (app/solutions/[service] and [service]/[slug] are dynamic, so there are no folders to scan).
 export function getSolutions(): string[] {
-  const allRoutes = getAllRoutes();
-  
-  const solutionRoutes = allRoutes.filter(route => 
-    route.startsWith('/solutions') && 
-    route !== '/solutions' &&
-    !route.includes('[')
-  );
-  
-  // If no solutions found, return hardcoded list
-  if (solutionRoutes.length === 0) {
-    return [
-      'ai-chatbots',
-      'ai-voice-agents',
-      'ai-workflow-automation',
-      'appointment-booking-automation',
-      'business-process-automation',
-      'crm-automation',
-      'document-automation',
-      'invoice-automation',
-      'lead-generation-automation',
-      'customer-support-automation',
-      'marketing-automation',
-      'reporting-automation',
-      'sales-automation',
-      'ai-agents',
-    ];
-  }
-  
-  return solutionRoutes.map(route => route.replace('/solutions/', ''));
+  return allSolutionPaths();
 }
 
 // Industries that are linked in the UI but do not have a published page yet.

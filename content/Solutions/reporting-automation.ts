@@ -22,14 +22,6 @@ export const reportingAutomation = {
       'Reduce time spent preparing recurring reports each week or month',
       'Keep dashboards and stakeholder reports aligned with live business data',
     ],
-    'What We Automate': [
-      'Automated data collection from databases, APIs, spreadsheets, and business apps',
-      'Scheduled report generation from templates and live data sources',
-      'Automated distribution to email, shared drives, dashboards, or team channels',
-      'Dashboard refreshes and KPI updates synced to connected systems',
-      'Report formatting, validation, and pre-send quality checks',
-      'Exception alerts when data is missing, stale, or outside expected ranges',
-    ],
     'Where to Start: Your First Automation': [
       'Start with the report your team builds most often — usually a weekly or monthly recurring report that involves multiple data sources. Automating this single report usually delivers the fastest visible return and builds confidence for wider adoption.',
       'Once the pattern is proven, extend the same approach to dashboards, client-facing reports, and management packs.',
@@ -116,4 +108,88 @@ relatedSolutions: [
 ],
 
   cta: 'Automate Your Reporting Workflow',
+
+  // Page layout for app/solutions/[service]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'Reporting Automation', serviceType: 'Reporting Automation Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-reporting-automation' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Reporting',
+              triggerLabel: 'New Data Available',
+              actionLabels: ['Generate Reports', 'Distribute Dashboards', 'Sync Business Systems'],
+              metricValue: '1000',
+              metricLabel: 'reports generated automatically each month',
+              submetric: '40% increase in reporting productivity',
+              platform: 'Reporting Automation + Business Intelligence',
+              accent: '#F59E0B',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'Reporting Automation', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Businesses Need Reporting Automation',
+        props: { title: 'Why Businesses Need Reporting Automation' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves',
+        props: { title: 'The Problems This Solves' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Real Business Operations',
+        props: { title: 'Built for Real Business Operations' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about reporting automation' } },
+      { type: 'RelatedSolutions', props: { title: 'Explore Other Solutions', subtitle: 'More ways we can help you automate' } },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit — 30 minutes, no obligation, and an honest read on where reporting automation pays off for your business.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };

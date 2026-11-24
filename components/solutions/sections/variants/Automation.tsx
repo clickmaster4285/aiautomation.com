@@ -2,7 +2,9 @@
 
 import { motion } from 'framer-motion';
 import { Bot, Workflow, Database, Shield, BarChart3, BrainCircuit, Target, Users, Clock } from 'lucide-react';
-import { splitBoldItem } from './parseCopy';
+import { splitBoldItem, toLines } from './parseCopy';
+import { RichText } from './RichText';
+
 
 interface AutomationSectionProps {
   title: string;
@@ -10,11 +12,15 @@ interface AutomationSectionProps {
 }
 
 export function AutomationSection({ title, content }: AutomationSectionProps) {
-  const normalizedContent = (content || []).filter(
+  const normalizedContent = toLines(content).filter(
     (line): line is string => typeof line === 'string' && line.trim().length > 0
   );
   const automationItems = normalizedContent.filter((line) => line.includes('**'));
-  const introText = normalizedContent.find((line) => !line.includes('**') && line.trim());
+  // Plain lines before the first item are the intro; plain lines after it close the section.
+  const firstItem = normalizedContent.findIndex((line) => line.includes('**'));
+  const introLines = normalizedContent.filter((l, i) => !l.includes('**') && (firstItem < 0 || i < firstItem));
+  const outroLines = normalizedContent.filter((l, i) => !l.includes('**') && firstItem >= 0 && i > firstItem);
+  const introText = introLines.join(' ');
 
   const iconMap = {
     'Custom goal-driven agents': Bot,
@@ -113,7 +119,7 @@ export function AutomationSection({ title, content }: AutomationSectionProps) {
               
               {introText && (
                 <p className="text-lg text-gray-500 max-w-xl leading-relaxed">
-                  {introText}
+                  <RichText text={introText} />
                 </p>
               )}
             </motion.div>
@@ -143,7 +149,7 @@ export function AutomationSection({ title, content }: AutomationSectionProps) {
                     </div>
                     <div>
                       <h4 className="text-base md:text-lg text-gray-900">{title}</h4>
-                      <p className="text-sm md:text-base text-gray-500 leading-relaxed">{description}</p>
+                      <p className="text-sm md:text-base text-gray-500 leading-relaxed"><RichText text={description} /></p>
                     </div>
                   </motion.div>
                 );
@@ -159,7 +165,7 @@ export function AutomationSection({ title, content }: AutomationSectionProps) {
                 <div key={idx} className="p-4 rounded-xl bg-white border border-gray-100">
                   <h4 className="text-base md:text-lg text-gray-900">{item.title}</h4>
                   {item.description && (
-                    <p className="text-sm md:text-base text-gray-500 leading-relaxed">{item.description}</p>
+                    <p className="text-sm md:text-base text-gray-500 leading-relaxed"><RichText text={item.description} /></p>
                   )}
                 </div>
               ))}
@@ -167,6 +173,16 @@ export function AutomationSection({ title, content }: AutomationSectionProps) {
           </div>
           )}
         </div>
+
+        {outroLines.length > 0 && (
+          <div className="mt-10 max-w-3xl space-y-3">
+            {outroLines.map((line, idx) => (
+              <p key={idx} className="text-base md:text-lg text-gray-600 leading-relaxed">
+                <RichText text={line} />
+              </p>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

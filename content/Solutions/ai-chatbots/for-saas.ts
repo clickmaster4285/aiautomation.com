@@ -194,6 +194,96 @@ We start with a free audit that identifies your highest-return workflow, automat
   ],
   cta: 'See what your company could stop doing by hand.',
   bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'AI Chatbots for SaaS Companies', serviceType: 'AI Chatbot Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-saas-companies-need-ai-chatbots' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'SaaS',
+              triggerLabel: 'New Client Inquiry',
+              actionLabels: ['Send Intake Form', 'Schedule Call', 'Add to CRM'],
+              metricValue: '1,247',
+              metricLabel: 'inquiries handled automatically this week',
+              submetric: '94% resolved without staff involvement',
+              platform: 'QuickBooks + HubSpot',
+              accent: '#F97316',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'AI Chatbots', href: '/solutions/ai-chatbots' },
+            { label: 'SaaS', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why SaaS Companies Need AI Chatbots',
+        props: { title: 'Why SaaS Companies Need AI Chatbots' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves for SaaS Companies',
+        props: { title: 'The Problems This Solves for SaaS Companies' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate for SaaS Companies',
+        props: { title: 'What We Automate for SaaS Companies' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for SaaS Companies\' Realities',
+        props: { title: 'Built for SaaS Companies\' Realities' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI chatbots for SaaS' } },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. 30 minutes, no obligation, and an honest read on where chatbot pays off for SaaS companies.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };
 
 export default aiChatbotsForSaaS;

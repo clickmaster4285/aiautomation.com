@@ -24,15 +24,6 @@ export const aiAgents = {
       'Reduce manual coordination overhead between teams and tools',
       'Keep humans in the loop for high-stakes or ambiguous cases',
     ],
-    'What We Automate': [
-      'Lead research and qualification across web, CRM, and enrichment sources',
-      'Customer onboarding with multi-system account setup',
-      'Document-driven processes: read, classify, extract, and act',
-      'Support triage with investigation, response drafting, and routing',
-      'Sales research: account analysis, contact discovery, and outreach preparation',
-      'Back-office tasks: invoice processing, reconciliation, and record updates',
-      'Exception handling and escalation when normal paths fail',
-    ],
     'Where to Start: Your First Automation': [
       'Start with the task where your team spends the most coordination time — the one where someone reads something, decides what to do, takes three or four steps across systems, and follows up if it does not work.',
       'Typical starting points: lead research and qualification, customer onboarding, or support triage. A single well-scoped agent usually produces visible time savings in weeks and becomes the template for expanding AI to adjacent tasks.',
@@ -120,4 +111,88 @@ export const aiAgents = {
   ],
 
   cta: 'Put AI Agents to Work in Your Business',
+
+  // Page layout for app/solutions/[service]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'AI Agent Development', serviceType: 'AI Agent Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-ai-agents' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'AI Agents',
+              triggerLabel: 'New Business Task',
+              actionLabels: ['Interpret Context', 'Execute Steps', 'Report Outcomes'],
+              metricValue: '1,200',
+              metricLabel: 'business tasks executed end-to-end this week',
+              submetric: '80% less manual coordination',
+              platform: 'AI Agents + Connected Business Systems',
+              accent: '#F97316',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'AI Agents', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Businesses Need AI Agents',
+        props: { title: 'Why Businesses Need AI Agents' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves',
+        props: { title: 'The Problems This Solves' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Real Business Operations',
+        props: { title: 'Built for Real Business Operations' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI agents' } },
+      { type: 'RelatedSolutions', props: { title: 'Explore Other Solutions', subtitle: 'More ways we can help you automate' } },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit — 30 minutes, no obligation, and an honest read on where AI agents pay off for your business.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };

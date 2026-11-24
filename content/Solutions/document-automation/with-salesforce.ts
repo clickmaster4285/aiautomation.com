@@ -1,4 +1,4 @@
-// content/Solutions/document-automation-with-salesforce.ts
+// content/Solutions/document-automation/with-salesforce.ts
 import { SolutionData } from '@/content/type';
 
 export const documentAutomationWithSalesforce: SolutionData = {
@@ -23,10 +23,8 @@ export const documentAutomationWithSalesforce: SolutionData = {
   description: 'Clickmasters builds document automation on Salesforce. Salesforce is the enterprise CRM standard, with enormous capability that most orgs use a fraction of, and it\'s an excellent fit for organizations with Salesforce at the core of revenue operations. Combined with document automation, which reads documents and moves data so nobody keys it by handAI extraction that understands invoices, forms, and PDFs across varied layouts, validation that catches what doesn\'t look right, and routing that puts clean data into your systems automatically. The manual entry disappears; the exceptions get exactly the human attention they need, the result is automation that runs on a platform matched to the job.',
   sections: {
     'Why Salesforce for Document & Data Automation': 'Salesforce is the enterprise CRM standard, with enormous capability that most orgs use a fraction of. Automation and ai extend what admins can build natively. For document automation specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. Salesforce is the right home for this work when it matches organizations with Salesforce at the core of revenue operations, and when it does, this combination is hard to beat.',
-    'What We Build': '**AI document extraction**structured data pulled from PDFs, forms, and images, built on Salesforce.\n**Validation and exception flagging**errors caught before they enter your systems, built on Salesforce.\n**Data entry elimination**information moved between systems without re-keying, built on Salesforce.\n**Document workflows**routing, approval, and filing automated, built on Salesforce.\n**Processing pipelines**data cleaned and transformed at scale, built on Salesforce.',
     'What a Production Build Includes': 'The gap between a prototype and a system you can rely on is everything that happens when things go wrong. Every document automation build we ship on Salesforce includes error handling on every step (failures caught and retried or escalated, never silent), monitoring and alerting (you know the system is running without checking), documentation (your team can understand and modify the build), and staged rollout (the automation proves itself on real cases with human oversight before it runs unattended).\n\nThis is the difference between automation that saves hours and automation that quietly breaks and costs trust. Most of the rescue projects we take on are builds that skipped these steps.',
     'Typical Workflows on Salesforce': 'The document automation workflows we most often build on Salesforce follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is neededclassification, extraction, drafting, and the result is executed and logged. Salesforce\'s strengths make it particularly suited to organizations with Salesforce at the core of revenue operations, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
-    'How We Work': '1. **Free audit**we map the workflow and confirm Salesforce is genuinely the right platform for it.\n2. **Build in sprints**constructed against your real tools and data, with error handling and monitoring built in.\n3. **Documented hand-off**you own the build; nothing is a black box.\n4. **Optimize**we monitor, refine, and expand as the system proves itself.',
   },
   features: [
     {
@@ -137,6 +135,90 @@ export const documentAutomationWithSalesforce: SolutionData = {
   ],
   cta: 'Want document automation running on Salesforce?',
   bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'Document & Data Automation with Salesforce', serviceType: 'Document Automation' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: '/free-automation-audit' },
+          secondaryCta: { text: 'Learn More', href: '#why-salesforce' },
+          visual: { $element: 'ChatbotHeroMockup', props: { platform: 'salesforce' } },
+          stats: {
+            $ref: 'stats',
+            slice: [0, 3],
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'Document Automation', href: '/solutions/document-automation' },
+            { label: 'With Salesforce', href: '/solutions/document-automation/with-salesforce' },
+          ],
+        },
+      },
+      {
+        type: 'ContentSection',
+        section: 'Why Salesforce for Document & Data Automation',
+        props: {
+          id: 'why-salesforce',
+          title: 'Why Salesforce for Document & Data Automation',
+          stats: [
+            { label: 'Enterprise Grade', value: '✓' },
+            { label: 'Native CRM Integration', value: '✓' },
+            { label: 'Scalable', value: '✓' },
+          ],
+          cta: { text: 'See Our Process', href: '#how-we-work' },
+          background: 'muted',
+        },
+      },
+      { type: 'FeatureGrid', props: {
+  title: 'What We Build',
+  subtitle: 'Comprehensive document automation solutions on Salesforce',
+  eyebrow: 'Capabilities',
+  columns: 3,
+  background: 'dark',
+} },
+      {
+        type: 'ContentSection',
+        section: 'What a Production Build Includes',
+        props: {
+          id: 'production-build',
+          title: 'What a Production Build Includes',
+          cta: { text: 'See Our Process', href: '#how-we-work' },
+          background: 'muted',
+        },
+      },
+      {
+        type: 'ContentSection',
+        section: 'Typical Workflows on Salesforce',
+        props: { id: 'workflows', title: 'Typical Workflows on Salesforce' },
+      },
+      { type: 'ProcessSteps', props: {
+  title: 'How We Work',
+  subtitle: 'Our proven methodology for building document automation on Salesforce',
+  background: 'muted',
+} },
+      { type: 'PlatformComparison', props: { title: 'Is Salesforce Right for You?', subtitle: 'We\'ll tell you honestly if Salesforce is the right platform for your document automation needs.' } },
+      { type: 'StatsSection', props: { title: 'Why Choose Clickmasters for Salesforce Document Automation' } },
+      { type: 'FAQSection', props: {
+  title: 'Frequently Asked Questions',
+  subtitle: 'Common questions about document automation on Salesforce',
+  eyebrow: 'FAQ',
+} },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. We\'ll scope the build and confirm the platform fit honestly.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'gradient',
+        },
+      },
+    ],
+  },
 };
 
 export default documentAutomationWithSalesforce;

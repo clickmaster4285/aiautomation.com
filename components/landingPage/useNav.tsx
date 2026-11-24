@@ -49,6 +49,8 @@ import {
   Receipt,
   Briefcase as BriefcaseIcon,
   Building2,
+  Truck,
+  GraduationCap,
 } from 'lucide-react';
 import {
   serviceCategories,
@@ -100,7 +102,10 @@ const industryIconMap: Record<string, React.ElementType> = {
   'Law Firms': Scale,
   'E-commerce': ShoppingBag,
   'SaaS': Cloud,
-   'Real Estate': Briefcase,
+  'Real Estate': Building2,
+  'Professional Services': Briefcase,
+  'AI Logistics Automation': Truck,
+  'AI Education Automation': GraduationCap,
 };
 
 
@@ -118,80 +123,93 @@ export const solutionsData = [
   {
     title: 'AI Workflow Automation',
     slug: 'ai-workflow-automation',
+    group: 'operations',
     description: 'Connect your apps and run multi-step work without manual hand-offs.',
     icon: Workflow,
   },
   {
     title: 'AI Chatbots',
     slug: 'ai-chatbots',
+    group: 'customer',
     description: 'Answer, qualify, and book from the channels your customers already use.',
     icon: MessageSquare,
   },
   {
     title: 'AI Voice Agents',
     slug: 'ai-voice-agents',
+    group: 'customer',
     description: 'Answer and place calls when the team cannot pick up.',
     icon: PhoneCall,
   },
   {
     title: 'AI Agents',
     slug: 'ai-agents',
+    group: 'customer',
     description: 'Agents that look up, draft, send, and log inside your systems.',
     icon: Brain,
   },
   {
     title: 'Business Process Automation',
     slug: 'business-process-automation',
+    group: 'operations',
     description: 'Run a whole repeatable process, including the hand-offs.',
     icon: RefreshCw,
   },
   {
     title: 'Lead Generation Automation',
     slug: 'lead-generation-automation',
+    group: 'sales',
     description: 'Capture, qualify, and route new leads without a manual queue.',
     icon: Target,
   },
   {
     title: 'Reporting Automation',
     slug: 'reporting-automation',
+    group: 'operations',
     description: 'Assemble the recurring reports from live data on a schedule.',
     icon: BarChart3,
   },
   {
     title: 'Appointment & Booking Automation',
     slug: 'appointment-booking-automation',
-    description: 'Automation that books, confirms, and remindsnever miss a booking again.',
+    group: 'customer',
+    description: 'Automation that books, confirms, and reminds so no booking is missed.',
     icon: Calendar,
   },
   
   {
     title: 'CRM Automation',
     slug: 'crm-automation',
+    group: 'sales',
     description: 'Keep your CRM accurate and active without manual data entry.',
     icon: Database,
   },
   {
     title: 'Document & Data Automation',
     slug: 'document-automation',
+    group: 'operations',
     description: 'Extract, validate, and route data from documents automatically.',
     icon: FileText,
   },
   {
     title: 'Invoice & Finance Automation',
     slug: 'invoice-automation',
-    description: 'Capture, validate, and post invoices automaticallycut days from the close.',
+    group: 'operations',
+    description: 'Capture, validate, and post invoices automatically and shorten the close.',
     icon: Receipt,
   },
  
   {
     title: 'Customer Support Automation',
     slug: 'customer-support-automation',
+    group: 'customer',
     description: 'AI agents that resolve tickets and escalate complex cases.',
     icon: Headphones,
   },
   {
     title: 'Marketing Automation',
     slug: 'marketing-automation',
+    group: 'sales',
     description: 'AI-driven content, nurture sequences, and campaign management.',
     icon: TrendingUp,
   },
@@ -199,11 +217,19 @@ export const solutionsData = [
   {
     title: 'Sales Automation',
     slug: 'sales-automation',
+    group: 'sales',
     description: 'Enrich, follow up, and log automatically so reps can sell.',
     icon: Briefcase,
   },
  
 ];
+
+// Solution hubs grouped by business function (column headings in the Solutions menu).
+export const solutionGroups = [
+  { key: 'sales', title: 'Sales & Marketing' },
+  { key: 'customer', title: 'Customer Experience & AI Agents' },
+  { key: 'operations', title: 'Operations & Finance' },
+].map((g) => ({ ...g, items: solutionsData.filter((s) => s.group === g.key) }));
 
 // ── Case Studies data ──
 export const caseStudiesData = [
@@ -274,6 +300,20 @@ export const servicesList = serviceCategories.flatMap((cat) =>
   }))
 );
 
+// ── Services grouped by their category (column headings in the Services menu) ──
+export const serviceGroups = serviceCategories.map((cat) => ({
+  title: cat.title,
+  slug: cat.slug,
+  services: cat.services.map((s) => ({ title: s.title, slug: s.slug, description: s.description })),
+}));
+
+// Sectors without an /industries page yet, covered by an industry-specific product page.
+// Listed under Industries so every sector we serve is one click from the header.
+const EXTRA_SECTOR_SLUGS = ['ai-logistics-automation', 'ai-education-automation'];
+export const extraSectorLinks = (
+  productCategories.find((c) => c.slug === 'industry-specific-ai-automation')?.products ?? []
+).filter((p) => p.live && EXTRA_SECTOR_SLUGS.includes(p.slug));
+
 export function useNav() {
   const pathname = usePathname();
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -307,6 +347,21 @@ export function useNav() {
     const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Escape closes any open menu (keyboard users)
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape') return;
+      setIsServicesOpen(false);
+      setIsSolutionsOpen(false);
+      setIsPlatformsOpen(false);
+      setIsIndustriesOpen(false);
+      setIsCaseStudiesOpen(false);
+      setIsProductsOpen(false);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
   }, []);
 
   // Handle hash navigation after page load
@@ -485,6 +540,7 @@ export function useNav() {
   };
 
   return {
+    closeAllDropdowns,
     isProductsOpen,
     setIsProductsOpen,
     activeProductCategory,

@@ -2,6 +2,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { toLines } from './parseCopy';
+import { RichText } from './RichText';
+
 import { Shield, Database, Users, Lock, CheckCircle2, ArrowRight, BrainCircuit } from 'lucide-react';
 
 interface RealitiesSectionProps {
@@ -10,7 +13,7 @@ interface RealitiesSectionProps {
 }
 
 export function RealitiesSection({ title, content }: RealitiesSectionProps) {
-  const paragraphs = (content || []).filter(
+  const paragraphs = toLines(content).filter(
     (line): line is string => typeof line === 'string' && line.trim().length > 0
   );
 
@@ -87,7 +90,7 @@ export function RealitiesSection({ title, content }: RealitiesSectionProps) {
                   transition={{ delay: idx * 0.1 }}
                   className="text-base md:text-lg text-gray-700 leading-relaxed"
                 >
-                  {paragraph}
+                  <RichText text={paragraph} />
                 </motion.p>
               ))}
             </div>

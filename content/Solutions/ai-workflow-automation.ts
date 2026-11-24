@@ -24,14 +24,6 @@ export const aiWorkflowAutomation = {
       'Add intelligence to workflows without replacing your existing systems',
       'Keep humans in the loop where decisions carry real risk or cost',
     ],
-    'What We Automate': [
-      'Inbound email and message triage with intent classification',
-      'Document-driven workflows: classification, extraction, and routing',
-      'Multi-step business processes that require context to decide the next step',
-      'Approval workflows with AI-assisted routing and priority',
-      'CRM, ERP, and helpdesk workflows with AI-driven update logic',
-      'Exception handling and escalation based on content, not just rules',
-    ],
     'Where to Start: Your First Automation': [
       'Start with the process where your team spends the most time on manual triage or hand-offs. Typical starting points: inbound email routing, document intake for a specific business process, or lead qualification that requires understanding the inquiry, not just matching a keyword.',
       'A single well-scoped AI workflow usually produces visible time savings in weeks, and becomes the template for expanding AI into adjacent processes.',
@@ -119,4 +111,88 @@ relatedSolutions: [
 ],
 
   cta: 'Automate Your Workflows with AI',
+
+  // Page layout for app/solutions/[service]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'AI Workflow Automation', serviceType: 'AI Workflow Automation Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-ai-workflow-automation' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Workflow',
+              triggerLabel: 'New Business Event',
+              actionLabels: ['Interpret Context', 'Route Tasks', 'Update Systems'],
+              metricValue: '3,200',
+              metricLabel: 'workflow actions executed automatically this week',
+              submetric: '75% less manual handoffs',
+              platform: 'AI Workflow Automation + Business Systems',
+              accent: '#3B82F6',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'AI Workflow Automation', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Businesses Need AI Workflow Automation',
+        props: { title: 'Why Businesses Need AI Workflow Automation' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves',
+        props: { title: 'The Problems This Solves' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Real Business Operations',
+        props: { title: 'Built for Real Business Operations' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI workflow automation' } },
+      { type: 'RelatedSolutions', props: { title: 'Explore Other Solutions', subtitle: 'More ways we can help you automate' } },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit — 30 minutes, no obligation, and an honest read on where AI workflow automation pays off for your business.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };

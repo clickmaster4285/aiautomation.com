@@ -119,4 +119,93 @@ export const aiChatbots = {
   ],
 
   cta: 'Automate Customer Conversations with AI Chatbots',
+
+  // Page layout for app/solutions/[service]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'AI Chatbots', serviceType: 'AI Chatbot Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-ai-chatbots' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Chatbots',
+              triggerLabel: 'New Customer Message',
+              actionLabels: ['Understand Intent', 'Answer Instantly', 'Route & Update CRM'],
+              metricValue: '1,800',
+              metricLabel: 'customer conversations handled automatically this week',
+              submetric: '94% resolved without staff involvement',
+              platform: 'AI Chatbot + CRM',
+              accent: '#F97316',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'AI Chatbots', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Businesses Need AI Chatbots',
+        props: { title: 'Why Businesses Need AI Chatbots' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves',
+        props: { title: 'The Problems This Solves' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate',
+        props: { title: 'What We Automate' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Real Business Operations',
+        props: { title: 'Built for Real Business Operations' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI chatbots' } },
+      { type: 'RelatedSolutions', props: { title: 'Explore Other Solutions', subtitle: 'More ways we can help you automate' } },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit — 30 minutes, no obligation, and an honest read on where AI chatbots pay off for your business.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };

@@ -1,4 +1,4 @@
-// app/solutions/document-automation/page.tsx
+// components/solutions/hubs/DocumentAutomationHub.tsx (rendered by app/solutions/[service]/page.tsx)
 'use client';
 
 import { HubJsonLd } from '@/components/seo/HubJsonLd';

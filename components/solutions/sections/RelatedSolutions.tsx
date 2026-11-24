@@ -41,22 +41,22 @@ export function RelatedSolutions({
             key={index}
             variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}
           >
-            <Link
-              href={`/solutions/${solution.slug}`}
-              className="group relative block p-6 h-full bg-paper rounded-2xl border border-border overflow-hidden transition-all duration-300 hover:border-brand/40 hover:shadow-lg hover:-translate-y-1"
-            >
+            {/* The title is the link (descriptive anchor text); an ::after overlay keeps the whole card clickable. */}
+            <div className="group relative block p-6 h-full bg-paper rounded-2xl border border-border overflow-hidden transition-all duration-300 hover:border-brand/40 hover:shadow-lg hover:-translate-y-1">
               <div className="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-brand/0 group-hover:bg-brand/10 transition-colors duration-500" />
-              <h3 className="relative font-serif text-lg font-bold text-ink group-hover:text-brand transition-colors mb-2">
-                {solution.title}
+              <h3 className="font-serif text-lg font-bold text-ink group-hover:text-brand transition-colors mb-2">
+                <Link href={`/solutions/${solution.slug}`} className="after:absolute after:inset-0 after:z-10 after:content-['']">
+                  {solution.title}
+                </Link>
               </h3>
               <p className="relative text-muted-foreground text-sm leading-relaxed">
                 {solution.description}
               </p>
-              <span className="relative inline-flex items-center gap-2 mt-4 text-brand font-medium text-sm">
-                Learn More
+              <span aria-hidden="true" className="relative inline-flex items-center gap-2 mt-4 text-brand font-medium text-sm">
+                Learn more
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </span>
-            </Link>
+            </div>
           </motion.div>
         ))}
       </motion.div>
