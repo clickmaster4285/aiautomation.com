@@ -86,7 +86,7 @@ export const hubSeo = {
   industries: {
     title: "AI Automation for Every Industry | Clickmasters",
     description:
-      "Explore AI automation for healthcare, finance, law, e-commerce, SaaS, real estate and professional services—built around your industry's tools and workflows.",
+      "AI automation for healthcare, finance, law, e-commerce, SaaS, real estate and professional services, built around your industry's tools and workflows.",
     name: "AI Automation for Every Industry",
     path: "/industries",
     crumbs: [
