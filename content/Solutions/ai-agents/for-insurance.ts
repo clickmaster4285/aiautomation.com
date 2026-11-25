@@ -25,7 +25,7 @@ export const aiAgentsForInsurance: SolutionData = {
   sections: {
     'Why Insurance Agencies Need AI Agent Development': `Insurance agencies run on high-volume, detail-heavy service work: quoting, policy changes, renewals, certificates, claims follow-up, and constant client communication. Much of an agency's day is consumed by repetitive requests. A certificate of insurance, a policy question, a payment issue. Each small, but together they bury CSRs and keep agents from selling. Renewals slip through cracks, follow-up is inconsistent, and growth means hiring more service staff just to keep up.
 
-AI Agent Development addresses this directly. It builds software that pursues goals, not just answers questionsreasoning about a task, using your tools, taking multiple steps, and acting inside your systems. An agent doesn't just tell someone the status; it looks it up, drafts the response, sends it, and logs the activity. It closes the loop, which is the part that actually removes work. For an agency, that capability lands exactly where the hours are currently going.`,
+AI Agent Development addresses this directly. It builds software that pursues goals, not just answers questions: reasoning about a task, using your tools, taking multiple steps, and acting inside your systems. An agent doesn't just tell someone the status; it looks it up, drafts the response, sends it, and logs the activity. It closes the loop, which is the part that actually removes work. For an agency, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Insurance Agencies': `**Certificate and document requests.** COI requests and routine document needs interrupt CSRs constantly; each takes minutes, and they arrive all day long.
 **Renewal leakage.** Renewals that aren't proactively worked get shopped or lapse; manual tracking means some inevitably slip.
@@ -57,7 +57,7 @@ For most, that points to quote intake and data gathering or certificate of insur
 
 What it is: the routine work. The automation that reasons, acts, and completes, handled automatically, consistently, at any hour, so your agency runs on systems instead of memory and heroics.`,
 
-    'A Worked Example': `Consider what happens when a client emails asking for a certificate of insurance. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the request is recognized and the relevant policy details are pulled from the agency management system, the certificate is generated and sent to the client within minutes, the activity is logged automatically, and the CSR only sees it if something doesn't matchturning a constant interruption into a background process.
+    'A Worked Example': `Consider what happens when a client emails asking for a certificate of insurance. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the request is recognized and the relevant policy details are pulled from the agency management system, the certificate is generated and sent to the client within minutes, the activity is logged automatically, and the CSR only sees it if something doesn't match, turning a constant interruption into a background process.
 
 That's the pattern across everything we build for insurance agencies: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
@@ -132,9 +132,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '30+', label: 'Hours Saved per Week' },
-    { value: '80%', label: 'Process Automation' },
-    { value: '96%', label: 'Client Satisfaction' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -171,11 +171,11 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
     {
       question: 'Will this work with the tools our agency already uses?',
-      answer: 'Yes. We build into the systems insurance agencies actually run on agency management systems (AMS), carrier portals, rating tools, CRM platforms, and client communication tools, connecting rather than replacing them, so the automation fits your existing operation.',
+      answer: 'Yes. We build into the systems insurance agencies actually run on: agency management systems (AMS), carrier portals, rating tools, CRM platforms, and client communication tools, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
-      answer: 'Generic automation ignores what makes insurance agencies different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+      answer: 'Generic automation ignores what makes insurance agencies different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

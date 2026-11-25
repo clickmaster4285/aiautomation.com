@@ -7,16 +7,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
 import { ArrowRight, ChevronRight, Home } from 'lucide-react';
-import { Bodoni_Moda } from 'next/font/google';
-import { Eyebrow } from '@/components/solutions/layout/Section';
-
-// High-contrast Didone serif - matches the reference "AUTOMATE THE FUTURE" style.
-const bodoni = Bodoni_Moda({
-  subsets: ['latin'],
-  weight: ['700', '900'],
-  style: ['normal', 'italic'],
-  display: 'swap',
-});
+import { splitHeading } from '@/components/landingPage/Shared';
 
 interface HeroSectionProps {
   badge?: string;
@@ -88,16 +79,7 @@ export function HeroSection({
     xxlarge: 'text-2xl md:text-3xl',
   }[textSize];
 
-  // Animated floating particles
-  const particles = Array.from({ length: 6 }, (_, i) => ({
-    id: i,
-    x: Math.random() * 200 + 20,
-    y: Math.random() * 400 + 50,
-    size: Math.random() * 8 + 3,
-    duration: Math.random() * 12 + 8,
-    delay: Math.random() * 6,
-    opacity: Math.random() * 0.2 + 0.1,
-  }));
+  const { head, tail } = splitHeading(heading, 2);
 
   // Duplicate items for seamless scrolling
   const doubledTickerItems = [
@@ -125,80 +107,9 @@ export function HeroSection({
   return (
     <>
       <section
-        className={`relative overflow-hidden pt-4 pb-0 md:pt-6 md:pb-0 bg-paper ${className}`}
+        className={`relative isolate overflow-hidden bg-paper pt-6 pb-12 md:py-10 ${className}`}
       >
-        {/* Background Patterns */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute inset-0 z-20 bg-gradient-to-r from-transparent via-transparent to-white/80" />
-
-          <motion.div
-            className="absolute -left-32 top-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-gradient-to-br from-brand/20 via-brand/10 to-transparent blur-3xl"
-            animate={{
-              x: [-20, 30, -20],
-              y: [-10, 20, -10],
-              scale: [1, 1.15, 1],
-            }}
-            transition={{
-              duration: 15,
-              repeat: Infinity,
-              ease: 'easeInOut',
-            }}
-          />
-
-          <motion.div
-            className="absolute -left-16 top-1/3 w-[250px] h-[250px] rounded-full bg-gradient-to-tr from-orange-400/15 via-brand/10 to-transparent blur-3xl"
-            animate={{
-              x: [0, 40, 0],
-              y: [0, -30, 0],
-              scale: [1, 1.2, 1],
-            }}
-            transition={{
-              duration: 12,
-              repeat: Infinity,
-              ease: 'easeInOut',
-              delay: 2,
-            }}
-          />
-
-          {/* Floating particles */}
-          {particles.map((particle) => (
-            <motion.div
-              key={particle.id}
-              className="absolute rounded-full bg-gradient-to-r from-brand/20 to-orange-400/20 backdrop-blur-sm"
-              style={{
-                width: particle.size,
-                height: particle.size,
-                left: particle.x,
-                top: particle.y,
-              }}
-              animate={{
-                y: [particle.y, particle.y - 100, particle.y],
-                x: [particle.x, particle.x + 50, particle.x],
-                opacity: [
-                  particle.opacity,
-                  particle.opacity * 2,
-                  particle.opacity,
-                ],
-                scale: [1, 1.5, 1],
-              }}
-              transition={{
-                duration: particle.duration,
-                repeat: Infinity,
-                delay: particle.delay,
-                ease: 'easeInOut',
-              }}
-            />
-          ))}
-
-          <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-r from-transparent to-white/90 z-10" />
-        </div>
-
-        <motion.div
-          className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-brand/0 via-brand to-brand/0 z-20"
-          initial={{ scaleY: 0 }}
-          animate={{ scaleY: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
-        />
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-dot-pattern opacity-30" />
 
         <div className="mx-auto max-w-[84vw] px-6 relative z-20">
           {/* Breadcrumb Navigation */}
@@ -209,7 +120,7 @@ export function HeroSection({
             className="mb-4 md:mb-6"
           >
             <nav
-              className="flex items-center flex-wrap gap-1 text-sm"
+              className="eyebrow flex flex-wrap items-center gap-2 text-xs text-muted-foreground"
               aria-label="Breadcrumb"
             >
               {breadcrumbItems.map((item, index) => {
@@ -219,14 +130,14 @@ export function HeroSection({
                 return (
                   <div key={index} className="flex items-center">
                     {isLast ? (
-                      <span className="text-gray-500 font-medium text-sm md:text-base">
+                      <span className="text-ink">
                         {item.label}
                       </span>
                     ) : (
                       <>
                         <Link
                           href={item.href}
-                          className={`flex items-center gap-1 text-gray-400 hover:text-brand transition-colors duration-200 text-sm md:text-base ${
+                          className={`flex items-center gap-1 transition-colors hover:text-brand ${
                             isHome ? 'hover:no-underline' : ''
                           }`}
                         >
@@ -236,7 +147,7 @@ export function HeroSection({
                           <span>{item.label}</span>
                         </Link>
 
-                        <span className="text-gray-300 mx-1 md:mx-1.5">
+                        <span className="text-border">
                           /
                         </span>
                       </>
@@ -265,17 +176,18 @@ export function HeroSection({
                   transition={{ delay: 0.2, duration: 0.4 }}
                   className="flex justify-start"
                 >
-                  <Eyebrow>{badge}</Eyebrow>
+                  <span className="eyebrow mb-5 inline-block border border-brand px-3 py-1 text-xs text-brand md:mb-7 md:text-sm">{badge}</span>
                 </motion.div>
               )}
 
               <motion.h1
-                className={`${bodoni.className} ${headingSize} text-ink leading-[1.1] mb-4 font-black text-left`}
+                className={`display ${headingSize} mb-5 text-left leading-[1.05] md:mb-7`}
                 initial={{ y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
               >
-                {heading}
+                {head}{head && ' '}
+                <span className="display-italic font-normal text-brand">{tail}</span>
               </motion.h1>
 
               <motion.p
@@ -319,7 +231,7 @@ export function HeroSection({
                 <Link
                   href={primaryCta.href}
                   onClick={handlePrimaryCtaClick}
-                  className="inline-flex items-center gap-2 bg-ink hover:bg-ink/90 text-paper text-sm md:text-base px-6 md:px-8 py-3 md:py-3.5 transition-all duration-300 rounded-lg font-medium group"
+                  className="group inline-flex items-center gap-2 bg-ink px-5 py-3 text-sm text-white transition-colors hover:bg-brand md:px-7 md:py-4 md:text-base"
                 >
                   {primaryCta.text}
 
@@ -329,7 +241,7 @@ export function HeroSection({
                 {secondaryCta && (
                   <Link
                     href={secondaryCta.href}
-                    className="inline-flex items-center gap-2 border border-border hover:border-brand text-muted-foreground hover:text-brand text-sm md:text-base px-6 md:px-8 py-3 md:py-3.5 transition-all duration-300 rounded-lg font-medium"
+                    className="inline-flex items-center gap-2 border border-ink px-5 py-3 text-sm text-ink transition-colors hover:bg-ink hover:text-white md:px-7 md:py-4 md:text-base"
                   >
                     {secondaryCta.text}
                   </Link>
@@ -372,7 +284,7 @@ export function HeroSection({
                 visual
               ) : image ? (
                 <div className="relative w-full max-w-lg md:max-w-xl lg:max-w-2xl">
-                  <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border bg-white/50 backdrop-blur-sm p-3">
+                  <div className="relative overflow-hidden border border-border bg-paper p-2">
                     <Image
                       src={image}
                       alt={imageAlt || heading}
@@ -381,12 +293,11 @@ export function HeroSection({
                       sizes="(min-width: 1024px) 540px, (min-width: 768px) 480px, 92vw"
                       quality={60}
                       className="w-full h-auto object-contain"
-                      priority
+                      preload
                     />
                   </div>
 
-                  <div className="absolute -inset-8 bg-brand/10 rounded-full blur-3xl -z-10" />
-                  <div className="absolute -inset-12 bg-orange-400/5 rounded-full blur-2xl -z-20" />
+                  <div aria-hidden="true" className="absolute -inset-8 -z-10 bg-brand/10 blur-3xl" />
                 </div>
               ) : null}
             </motion.div>
@@ -398,15 +309,15 @@ export function HeroSection({
       <div className="h-4 md:h-6" />
 
       {/* Ticker / Marquee Section */}
-      <div className="relative overflow-hidden bg-black border-y border-white/10 py-3 md:py-4">
+      <div className="relative overflow-hidden border-y border-white/10 bg-ink py-3 md:py-4">
         {/* Subtle glow effect */}
         <div className="absolute inset-0 bg-gradient-to-r from-brand/5 via-transparent to-brand/5 opacity-20" />
 
         {/* Left fade gradient */}
-        <div className="absolute left-0 top-0 bottom-0 w-12 md:w-20 bg-gradient-to-r from-black to-transparent z-10" />
+        <div className="absolute left-0 top-0 bottom-0 w-12 md:w-20 bg-gradient-to-r from-ink to-transparent z-10" />
 
         {/* Right fade gradient */}
-        <div className="absolute right-0 top-0 bottom-0 w-12 md:w-20 bg-gradient-to-l from-black to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-12 md:w-20 bg-gradient-to-l from-ink to-transparent z-10" />
 
         <div className="overflow-hidden">
           <motion.div

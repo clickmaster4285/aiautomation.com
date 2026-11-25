@@ -81,9 +81,9 @@ export const customerSupportAutomationWithZapier: SolutionData = {
     },
   ],
   stats: [
-    { value: '60+', label: 'Support Systems Built' },
-    { value: '< 2s', label: 'Avg. Response Time' },
-    { value: '80%+', label: 'First-Line Resolution' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -165,9 +165,10 @@ export const customerSupportAutomationWithZapier: SolutionData = {
           id: 'why-zapier',
           title: 'Why Zapier for Customer Support Automation',
           stats: [
-            { label: '6,000+ Apps', value: '✓' },
-            { label: 'Fast Deployment', value: '✓' },
-            { label: 'Self-Serve Friendly', value: '✓' },
+            { value: 'Free', label: 'Automation Audit' },
+            { value: '30 min', label: 'Audit Call, No Obligation' },
+            { value: '1st', label: 'Highest-Return Workflow First' },
+            { value: '100%', label: 'Ownership Guaranteed' },
           ],
           cta: { text: 'See Our Process', href: '#how-we-work' },
           background: 'muted',

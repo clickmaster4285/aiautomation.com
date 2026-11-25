@@ -25,7 +25,7 @@ export const aiAgentsForRealEstate: SolutionData = {
   sections: {
     'Why Real Estate Needs AI Agent Development': `Real estate is decided by speed to lead and consistency of follow-up, and both break down precisely when agents are busiest. The enquiry that arrives during a showing waits hours; the lead that needed six months of nurture goes cold after two weeks of silence; the transaction with a dozen moving deadlines depends on someone remembering everything. The agents who win aren't necessarily better closers; they're the ones whose systems never let a lead or a deadline slip.
 
-AI Agent Development addresses this directly. It builds software that pursues goals, not just answers questionsreasoning about a task, using your tools, taking multiple steps, and acting inside your systems. An agent doesn't just tell someone the status; it looks it up, drafts the response, sends it, and logs the activity. It closes the loop, which is the part that actually removes work. For a team, that capability lands exactly where the hours are currently going.`,
+AI Agent Development addresses this directly. It builds software that pursues goals, not just answers questions: reasoning about a task, using your tools, taking multiple steps, and acting inside your systems. An agent doesn't just tell someone the status; it looks it up, drafts the response, sends it, and logs the activity. It closes the loop, which is the part that actually removes work. For a team, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Real Estate': `**Slow lead response.** Leads expect a response in minutes; agents mid-showing or asleep respond in hours, by which time the lead has heard from someone else.
 **Nurture that doesn't happen.** Most leads transact months later, but consistent long-term follow-up by hand is exactly what busy agents fail to sustain.
@@ -132,9 +132,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '25+', label: 'Hours Saved per Week' },
-    { value: '85%', label: 'Process Automation' },
-    { value: '97%', label: 'Client Satisfaction' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -171,11 +171,11 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
     {
       question: 'Will this work with the tools our team already uses?',
-      answer: 'Yes. We build into the systems real estate teams actually run onreal estate CRMs, lead sources and portals, showing management tools, transaction management platforms, and calendar systems, connecting rather than replacing them, so the automation fits your existing operation.',
+      answer: 'Yes. We build into the systems real estate teams actually run on: real estate CRMs, lead sources and portals, showing management tools, transaction management platforms, and calendar systems, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
-      answer: 'Generic automation ignores what makes real estate different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+      answer: 'Generic automation ignores what makes real estate different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

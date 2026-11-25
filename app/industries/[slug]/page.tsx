@@ -55,16 +55,16 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   if (!content) return <CmsRoute path={`/industries/${slug}`} />;
 
   // ── Background alternation ──
-  // Hero (index 0) will be 'bg-black' – all sections follow the array order.
+  // Keep the industry pages on the landing page's paper / ink / secondary rhythm.
   const bgColors = [
-    'bg-black',        // hero – black
-    'bg-gray-50',      // text section
-    'bg-black',        // features
-    'bg-white',        // grid
-    'bg-orange-50',    // painpoint
-    'bg-gray-100',     // next section
-    'bg-black',        // ...
-    'bg-white',
+    'bg-paper',
+    'bg-ink',
+    'bg-secondary',
+    'bg-paper',
+    'bg-ink',
+    'bg-secondary',
+    'bg-paper',
+    'bg-ink',
   ];
 
   const path = `/industries/${slug}`;
@@ -72,7 +72,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const name = hero?.heading ?? content.title.split('|')[0].trim();
 
   return (
-    <div className="text-gray-900">
+    <div className="bg-paper text-ink">
       <HubJsonLd
         hub={{
           name,

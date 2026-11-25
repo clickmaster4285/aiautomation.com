@@ -81,9 +81,9 @@ export const leadGenerationAutomationWithHubspot: SolutionData = {
     },
   ],
   stats: [
-    { value: '50+', label: 'Lead Systems Built' },
-    { value: '< 2s', label: 'Avg. Response Time' },
-    { value: '85%+', label: 'Lead Qualification Rate' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -165,9 +165,10 @@ export const leadGenerationAutomationWithHubspot: SolutionData = {
           id: 'why-hubspot',
           title: 'Why HubSpot for Lead Generation Automation',
           stats: [
-            { label: 'Native CRM', value: '✓' },
-            { label: 'AI Integration', value: '✓' },
-            { label: 'Scalable', value: '✓' },
+            { value: 'Free', label: 'Automation Audit' },
+            { value: '30 min', label: 'Audit Call, No Obligation' },
+            { value: '1st', label: 'Highest-Return Workflow First' },
+            { value: '100%', label: 'Ownership Guaranteed' },
           ],
           cta: { text: 'See Our Process', href: '#how-we-work' },
           background: 'muted',

@@ -18,8 +18,8 @@ export const lawFirms: ServiceContent = {
         'This page explains where law firms lose time to administration, what we automate, and how we keep the boundary between automation and legal judgment clear.',
       ],
       stats: [
-        { label: 'INTAKE TIME SAVED', value: '60%+' },
-        { label: 'DOCUMENT DRAFT TIME', value: '70%+' },
+        { label: 'AUTOMATION AUDIT', value: 'Free' },
+        { label: 'OWNERSHIP OF THE BUILD', value: '100%' },
       ],
       ctas: [
         { text: 'Book a Free Audit', link: '/free-automation-audit', primary: true },

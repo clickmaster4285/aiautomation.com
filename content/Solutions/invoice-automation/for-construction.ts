@@ -26,7 +26,7 @@ export const invoiceAutomationForConstruction: SolutionData = {
   sections: {
     'Why Construction Needs Invoice & Finance Automation': `Construction companies coordinate crews, subs, suppliers, clients, and paperwork across simultaneous projects, with the office side often running on phone calls, paper, and re-typed data. Bids need fast turnaround, project documents pile up, change orders and invoices need tracking, and clients want updates. The administrative load grows with every project, and it competes directly with the estimating and project management that actually wins and delivers work.
 
-Invoice & Finance Automation addresses this directly. It automates the invoice-to-books pipeline and the finance workflows around itinvoices captured and read on arrival, data validated against expected values, approvals routed and chased, entries pushed into your accounting system, and exceptions flagged with the specific issue. Finance can't tolerate silent errors, so validation and human checkpoints are built in wherever mistakes would be costly. For a company, that capability lands exactly where the hours are currently going.`,
+Invoice & Finance Automation addresses this directly. It automates the invoice-to-books pipeline and the finance workflows around it: invoices captured and read on arrival, data validated against expected values, approvals routed and chased, entries pushed into your accounting system, and exceptions flagged with the specific issue. Finance can't tolerate silent errors, so validation and human checkpoints are built in wherever mistakes would be costly. For a company, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Construction': `**Lead and bid response lag.** Project inquiries and bid opportunities that aren't answered fast go to competitors who responded first.
 **Document and photo chaos.** Plans, permits, photos, and change orders scatter across email, phones, and folders.
@@ -133,9 +133,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '20+', label: 'Hours Saved per Week' },
-    { value: '80%', label: 'Invoices Processed Hands-Free' },
-    { value: '5+', label: 'Days Cut from Close' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -174,12 +174,12 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'Will this work with the tools our company already uses?',
       answer:
-        'Yes. We build into the systems construction actually run onconstruction management platforms, estimating tools, accounting software, and field communication apps, connecting rather than replacing them, so the automation fits your existing operation.',
+        'Yes. We build into the systems construction companies actually run on: construction management platforms, estimating tools, accounting software, and field communication apps, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
       answer:
-        'Generic automation ignores what makes construction different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+        'Generic automation ignores what makes construction different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

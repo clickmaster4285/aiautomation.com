@@ -81,9 +81,9 @@ export const aiChatbotsWithSalesforce: SolutionData = {
     },
   ],
   stats: [
-    { value: '25+', label: 'Chatbots Built' },
-    { value: '< 2s', label: 'Avg. Response Time' },
-    { value: '80%+', label: 'Lead Qualification' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -166,9 +166,10 @@ export const aiChatbotsWithSalesforce: SolutionData = {
           title: 'Why Salesforce for AI Chatbots',
           imageRight: true,
           stats: [
-            { label: 'Enterprise Grade', value: '✓' },
-            { label: 'Native CRM Integration', value: '✓' },
-            { label: 'Scalable', value: '✓' },
+            { value: 'Free', label: 'Automation Audit' },
+            { value: '30 min', label: 'Audit Call, No Obligation' },
+            { value: '1st', label: 'Highest-Return Workflow First' },
+            { value: '100%', label: 'Ownership Guaranteed' },
           ],
         },
       },

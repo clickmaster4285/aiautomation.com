@@ -26,7 +26,7 @@ export const invoiceAutomationForAccountingFirms: SolutionData = {
   sections: {
     'Why Accounting Firms Need Invoice & Finance Automation': `Accounting firms sell expertise but spend a startling share of their hours on document chasing, data entry, and administrative coordination. Clients send documents late and piecemeal; staff key data from statements and receipts into software; deadlines are tracked in spreadsheets; and every busy season the same bottlenecks return. The work that actually requires an accountant's judgment is a fraction of the hours billed to get there.
 
-Invoice & Finance Automation addresses this directly. It automates the invoice-to-books pipeline and the finance workflows around itinvoices captured and read on arrival, data validated against expected values, approvals routed and chased, entries pushed into your accounting system, and exceptions flagged with the specific issue. Finance can't tolerate silent errors, so validation and human checkpoints are built in wherever mistakes would be costly. For a firm, that capability lands exactly where the hours are currently going.`,
+Invoice & Finance Automation addresses this directly. It automates the invoice-to-books pipeline and the finance workflows around it: invoices captured and read on arrival, data validated against expected values, approvals routed and chased, entries pushed into your accounting system, and exceptions flagged with the specific issue. Finance can't tolerate silent errors, so validation and human checkpoints are built in wherever mistakes would be costly. For a firm, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Accounting Firms': `**Document collection chase.** Getting complete records from clients means endless follow-up emails; missing documents stall engagements and compress deadlines.
 **Manual data entry.** Keying transactions, statements, and receipts into accounting software consumes junior staff hours and introduces errors that seniors then find.
@@ -58,7 +58,7 @@ For most, that points to client document collection or transaction and statement
 
 What it is: the routine work. The automation that captures, validates, and posts, handled automatically, consistently, at any hour, so your firm runs on systems instead of memory and heroics.`,
 
-    'A Worked Example': `Consider what happens when a client uploads a batch of bank statements and receipts. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the documents are read automatically, transactions are extracted and categorized, entries are pushed into the accounting platform, anything ambiguous is flagged with the specific question for a staff member, and the client's file status updatesturning hours of keying into minutes of exception review.
+    'A Worked Example': `Consider what happens when a client uploads a batch of bank statements and receipts. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the documents are read automatically, transactions are extracted and categorized, entries are pushed into the accounting platform, anything ambiguous is flagged with the specific question for a staff member, and the client's file status updates, turning hours of keying into minutes of exception review.
 
 That's the pattern across everything we build for accounting firms: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
@@ -133,9 +133,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '25+', label: 'Hours Saved per Week' },
-    { value: '85%', label: 'Invoices Processed Hands-Free' },
-    { value: '5+', label: 'Days Cut from Close' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -169,17 +169,17 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is finance automation for accounting firms?',
       answer:
-        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting system — with exceptions flagged for human review. For a firm in accounting firms, that means applying it to the workflows that consume your team — client document collection, transaction and statement data entry, and bank and account reconciliation — with the specifics of your industry built in.',
+        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting system — with exceptions flagged for human review. For an accounting firm, that means applying it to the workflows that consume your team — client document collection, transaction and statement data entry, and bank and account reconciliation — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our firm already uses?',
       answer:
-        'Yes. We build into the systems accounting firms actually run onaccounting platforms like QuickBooks and Xero, practice management tools, document portals, and tax software, connecting rather than replacing them, so the automation fits your existing operation.',
+        'Yes. We build into the systems accounting firms actually run on: accounting platforms like QuickBooks and Xero, practice management tools, document portals, and tax software, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
       answer:
-        'Generic automation ignores what makes accounting firms different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+        'Generic automation ignores what makes accounting firms different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

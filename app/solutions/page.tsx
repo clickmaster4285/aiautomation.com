@@ -118,7 +118,7 @@ export default function SolutionsPage() {
       <HubJsonLd hub={hubSeo.solutions} />
       <HeroSection {...heroData} />
       
-      <Section bg="muted" pattern="dots" className="py-20">
+      <Section bg="paper" pattern="dots" className="py-20">
         <div className="container mx-auto px-6">
           <SectionHeading
             title="Explore Our Solutions"
@@ -138,12 +138,12 @@ export default function SolutionsPage() {
             
             return (
               <div key={category} className={`${categoryIndex > 0 ? 'mt-16' : 'mt-12'}`}>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 capitalize">
+                <h2 className="display mb-6 text-2xl capitalize md:text-3xl">
                   <Link href={`/solutions/${category}`} className="hover:text-brand">
                     {displayName}
                   </Link>
                 </h2>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid gap-px border border-border bg-border md:grid-cols-2 lg:grid-cols-3">
                   {solutions.map((solution) => {
                     // Get icon based on solution title or heading
                     const iconKey = solution.heroHeading || solution.title || '';
@@ -153,20 +153,20 @@ export default function SolutionsPage() {
                       <Link
                         key={solution.slug}
                         href={canonicalPath(solution.url)}
-                        className="group p-6 bg-white rounded-2xl border border-gray-200 hover:border-brand/30 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                        className="group flex h-full flex-col bg-paper p-6 transition-colors duration-500 hover:bg-ink hover:text-white md:p-8"
                       >
-                        <div className="flex items-center gap-3 mb-3">
-                          <div className="w-10 h-10 rounded-xl bg-brand/10 text-brand flex items-center justify-center group-hover:bg-brand/20 transition-colors duration-300">
-                            <Icon className="h-5 w-5" />
+                        <div className="mb-5 flex items-center gap-3">
+                          <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-brand/30 bg-brand/10 text-brand transition-colors group-hover:bg-brand group-hover:text-white">
+                            <Icon className="h-5 w-5" aria-hidden="true" />
                           </div>
-                          <h3 className="text-lg font-semibold text-gray-900 group-hover:text-brand transition-colors line-clamp-1">
+                          <h3 className="display line-clamp-2 text-lg transition-colors group-hover:text-brand md:text-xl">
                             {solution.heroHeading || solution.title}
                           </h3>
                         </div>
-                        <p className="text-gray-600 text-sm leading-relaxed line-clamp-2">
+                        <p className="mb-5 line-clamp-3 text-sm leading-relaxed text-muted-foreground group-hover:text-white/70">
                           {solution.metaDescription || solution.description || solution.heroSubheading || ''}
                         </p>
-                        <div className="mt-4 flex items-center gap-2 text-brand font-medium text-sm opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <div className="mt-auto flex items-center gap-2 eyebrow text-xs text-brand">
                           <span>Learn More</span>
                           <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                         </div>

@@ -51,9 +51,10 @@ export const aiWorkflowAutomation = {
   },
 
   stats: [
-    { value: '75%', label: 'less manual triage and hand-off time' },
-    { value: '3x', label: 'faster routing of inbound work' },
-    { value: '24/7', label: 'processing of incoming requests' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
+    { value: '100%', label: 'Ownership Guaranteed' },
   ],
 
   faqQuestions: [

@@ -60,9 +60,10 @@ export const leadGenerationAutomation = {
   },
 
   stats: [
-    { value: '70%', label: 'increase in qualified lead conversion rates' },
-    { value: '<5 min', label: 'average response time to inbound leads' },
-    { value: '100%', label: 'of leads routed to the correct rep' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
+    { value: '100%', label: 'Ownership Guaranteed' },
   ],
 
   faqQuestions: [

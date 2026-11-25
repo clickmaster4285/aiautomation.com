@@ -62,9 +62,10 @@ export const salesAutomationWithSalesforce = {
   },
 
   stats: [
-    { value: '80%', label: 'less manual Salesforce data entry' },
-    { value: '3x', label: 'faster time to first contact' },
-    { value: '100%', label: 'of leads captured and logged automatically' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
+    { value: '100%', label: 'Ownership Guaranteed' },
   ],
 
   faqQuestions: [

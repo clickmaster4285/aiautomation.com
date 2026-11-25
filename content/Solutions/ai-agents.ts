@@ -51,9 +51,10 @@ export const aiAgents = {
   },
 
   stats: [
-    { value: '80%', label: 'less manual coordination time' },
-    { value: '3x', label: 'faster research and prep work' },
-    { value: '24/7', label: 'execution of routine business tasks' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
+    { value: '100%', label: 'Ownership Guaranteed' },
   ],
 
   faqQuestions: [

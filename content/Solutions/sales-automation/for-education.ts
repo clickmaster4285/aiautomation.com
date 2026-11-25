@@ -22,11 +22,11 @@ export const salesAutomationForEducation: SolutionData = {
   heroSubheading: 'Sales automation for education that enriches inquiries, follows up with prospective students, and logs every touchpoint.',
   heroBadge: 'AI Sales Automation',
   description:
-    'Clickmasters builds AI Sales Automation for education. Automation that enriches, follows up, and logs automatically, built around how a institution in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of education, delivered as a system your team owns and relies on.',
+    'Clickmasters builds AI Sales Automation for education. Automation that enriches, follows up, and logs automatically, built around how an institution in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of education, delivered as a system your team owns and relies on.',
   sections: {
     'Why Education Needs AI Sales Automation': `Schools, training providers, and education businesses run on enrollment funnels, student communication, scheduling, and reporting, much of it seasonal, repetitive, and manual. Inquiries arrive year-round and need fast, consistent follow-up to convert; enrollment involves document collection and data entry; students and parents ask the same questions constantly; and staff spend evenings on reports and reminders that software should handle.
 
-AI Sales Automation addresses this directly. It removes the administrative grind around selling — leads enriched and scored the moment they arrive, follow-up sequences that never slip, CRM records that update themselves, and reports that assemble automatically. Your reps spend their time on conversations that close, not on data entry. For a institution, that capability lands exactly where the hours are currently going.`,
+AI Sales Automation addresses this directly. It removes the administrative grind around selling — leads enriched and scored the moment they arrive, follow-up sequences that never slip, CRM records that update themselves, and reports that assemble automatically. Your reps spend their time on conversations that close, not on data entry. For an institution, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Education': `**Inquiry follow-up gaps.** Prospective students who don't hear back quickly enroll elsewhere; follow-up consistency decides conversion.
 **Enrollment paperwork.** Applications, documents, and data entry create seasonal crunches that bury administrative staff.
@@ -52,7 +52,7 @@ Each of these is mapped in the audit and automated in priority order, highest re
 
     'Where to Start: Your First Automation': `The mistake most teams in education make with automation is starting with the most ambitious workflow instead of the most valuable one. The right first project has three properties: it happens frequently (daily, not quarterly), it follows a recognizable pattern (so the automation has something to learn from your team's handling of it), and its current manual cost is visible (so the return is measurable against a real baseline).
 
-For most, that points to inquiry response and enrollment nurture or application and document collection. High-frequency, pattern-heavy, and expensive in staff hours right now. We automate that first, measure the result against your own baseline, and only then expand. A institution that proves the return on one workflow makes every subsequent decision with evidence instead of hope.`,
+For most, that points to inquiry response and enrollment nurture or application and document collection. High-frequency, pattern-heavy, and expensive in staff hours right now. We automate that first, measure the result against your own baseline, and only then expand. An institution that proves the return on one workflow makes every subsequent decision with evidence instead of hope.`,
 
     'What This Is and Isn\'t': `Worth being clear about the boundaries, because automation earns trust by respecting them. This is not about replacing your administrators and staff. It's about removing the repetitive layer that keeps them from the work that actually needs them. It's not a rip-and-replace of your systems. We connect student information systems, CRMs, scheduling tools, communication platforms, and payment systems rather than asking you to migrate. And it's not a black box. Every workflow is documented, visible, and owned by you, with humans in the loop wherever judgment or sensitivity requires it.
 
@@ -133,9 +133,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '10+', label: 'Selling Hours Recovered per Rep/Week' },
-    { value: '85%', label: 'Follow-up Consistency' },
-    { value: '100%', label: 'CRM Hygiene' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -169,17 +169,17 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is sales automation for education?',
       answer:
-        'AI sales automation handles repetitive sales tasks — lead enrichment, scoring, follow-up, CRM updates, proposals, and reporting, so reps spend their time selling rather than on administration. For a institution in education, that means applying it to the workflows that consume your team — inquiry response and enrollment nurture, application and document collection, and student and parent FAQ handling — with the specifics of your industry built in.',
+        'AI sales automation handles repetitive sales tasks — lead enrichment, scoring, follow-up, CRM updates, proposals, and reporting, so reps spend their time selling rather than on administration. For an institution in education, that means applying it to the workflows that consume your team — inquiry response and enrollment nurture, application and document collection, and student and parent FAQ handling — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our institution already uses?',
       answer:
-        'Yes. We build into the systems education actually run onstudent information systems, CRMs, scheduling tools, communication platforms, and payment systems, connecting rather than replacing them, so the automation fits your existing operation.',
+        'Yes. We build into the systems education institutions actually run on: student information systems, CRMs, scheduling tools, communication platforms, and payment systems, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
       answer:
-        'Generic automation ignores what makes education different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+        'Generic automation ignores what makes education different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

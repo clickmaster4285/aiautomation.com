@@ -81,9 +81,9 @@ export const documentAutomationWithN8n: SolutionData = {
     },
   ],
   stats: [
-    { value: '50+', label: 'Document Systems Built' },
-    { value: '95%+', label: 'Extraction Accuracy' },
-    { value: '15x', label: 'Faster Processing' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -165,9 +165,10 @@ export const documentAutomationWithN8n: SolutionData = {
           id: 'why-n8n',
           title: 'Why n8n for Document & Data Automation',
           stats: [
-            { label: 'Self-Hosted', value: '✓' },
-            { label: 'No Per-Task Fees', value: '✓' },
-            { label: 'Deep AI/LLM Support', value: '✓' },
+            { value: 'Free', label: 'Automation Audit' },
+            { value: '30 min', label: 'Audit Call, No Obligation' },
+            { value: '1st', label: 'Highest-Return Workflow First' },
+            { value: '100%', label: 'Ownership Guaranteed' },
           ],
           cta: { text: 'See Our Process', href: '#how-we-work' },
           background: 'muted',

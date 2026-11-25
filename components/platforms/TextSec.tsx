@@ -1,5 +1,6 @@
 'use client';
 
+import { useId } from 'react';
 import { motion, Variants } from 'framer-motion';
 import Image from 'next/image';
 import { Zap, AlertCircle, CheckCircle, GitBranch, Shield, TrendingUp, Clock } from 'lucide-react';
@@ -37,6 +38,8 @@ const CROSS_HATCH = `url("data:image/svg+xml,%3Csvg width='60' height='60' viewB
 
 /* ─── Right-side animated patterns ──────────────────────────────────────── */
 function RightPattern() {
+  // Unique per instance: the section can render more than once on a page.
+  const uid = useId().replace(/[^a-zA-Z0-9]/g, '');
   return (
     <div
       aria-hidden
@@ -59,11 +62,11 @@ function RightPattern() {
 
       <svg className="absolute inset-0 h-full w-full" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <pattern id="ts-dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+          <pattern id={`ts-dots-${uid}`} x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
             <circle cx="1.5" cy="1.5" r="1.5" fill="var(--brand)" opacity="0.15" />
           </pattern>
         </defs>
-        <rect width="100%" height="100%" fill="url(#ts-dots)" />
+        <rect width="100%" height="100%" fill={`url(#ts-dots-${uid})`} />
       </svg>
 
       {[0, 1, 2, 3].map((i) => (

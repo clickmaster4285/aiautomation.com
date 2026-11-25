@@ -21,11 +21,11 @@ export const aiAgentsForLogistics: SolutionData = {
   heroHeading: 'AI Agents for Logistics & Transportation',
   heroSubheading: 'AI agents for logistics operations that reason, act, and finish multi-step work inside the tools your team already uses.',
   heroBadge: 'AI Agent Development',
-  description: 'Clickmasters builds AI Agent Development for logistics & transportation. Automation that reasons, acts, and completes automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of logistics & transportation, delivered as a system your team owns and relies on.',
+  description: 'Clickmasters builds AI Agent Development for logistics & transportation. Automation that reasons, acts, and completes automatically, built around how an operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of logistics & transportation, delivered as a system your team owns and relies on.',
   sections: {
     'Why Logistics & Transportation Need AI Agent Development': `Logistics runs on coordination: orders, dispatch, tracking, exceptions, proof of delivery, invoicing, a constant flow of time-sensitive information across shippers, carriers, drivers, and customers. Much of it still moves by phone, email, and manual entry, which means status calls interrupt dispatchers, paperwork lags behind freight, and billing waits on documents. Every manual touch adds delay and error to an industry priced on speed and reliability.
 
-AI Agent Development addresses this directly. It builds software that pursues goals, not just answers questionsreasoning about a task, using your tools, taking multiple steps, and acting inside your systems. An agent doesn't just tell someone the status; it looks it up, drafts the response, sends it, and logs the activity. It closes the loop, which is the part that actually removes work. For a operation, that capability lands exactly where the hours are currently going.`,
+AI Agent Development addresses this directly. It builds software that pursues goals, not just answers questions: reasoning about a task, using your tools, taking multiple steps, and acting inside your systems. An agent doesn't just tell someone the status; it looks it up, drafts the response, sends it, and logs the activity. It closes the loop, which is the part that actually removes work. For an operation, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Logistics & Transportation': `**Status inquiry interruptions.** Where's my shipment? calls and emails consume dispatcher time that should go to actual coordination.
 **Document lag.** PODs, BOLs, and paperwork trail the freight, delaying billing and disputes.
@@ -51,7 +51,7 @@ Each of these is mapped in the audit and automated in priority order, highest re
 
     'Where to Start: Your First Automation': `The mistake most teams in logistics & transportation make with automation is starting with the most ambitious workflow instead of the most valuable one. The right first project has three properties: it happens frequently (daily, not quarterly), it follows a recognizable pattern (so the automation has something to learn from your team's handling of it), and its current manual cost is visible (so the return is measurable against a real baseline).
 
-For most, that points to order and tender intake or shipment status updates to customers. High-frequency, pattern-heavy, and expensive in staff hours right now. We automate that first, measure the result against your own baseline, and only then expand. A operation that proves the return on one workflow makes every subsequent decision with evidence instead of hope.`,
+For most, that points to order and tender intake or shipment status updates to customers. High-frequency, pattern-heavy, and expensive in staff hours right now. We automate that first, measure the result against your own baseline, and only then expand. An operation that proves the return on one workflow makes every subsequent decision with evidence instead of hope.`,
 
     'What This Is and Isn\'t': `Worth being clear about the boundaries, because automation earns trust by respecting them. This is not about replacing your dispatchers and ops staff. It's about removing the repetitive layer that keeps them from the work that actually needs them. It's not a rip-and-replace of your systems. We connect TMS platforms, tracking systems, document management, accounting software, and communication channels rather than asking you to migrate. And it's not a black box. Every workflow is documented, visible, and owned by you, with humans in the loop wherever judgment or sensitivity requires it.
 
@@ -132,9 +132,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '35+', label: 'Hours Saved per Week' },
-    { value: '85%', label: 'Process Automation' },
-    { value: '97%', label: 'Customer Satisfaction' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -167,15 +167,15 @@ We start with a free audit that identifies your highest-return workflow, automat
   faqQuestions: [
     {
       question: 'What is AI agent for logistics & transportation?',
-      answer: 'An AI agent is software that uses an AI model to reason about a goal, use tools, and take multi-step action inside real systemsunlike a chatbot, which mainly answers questions. For a operation in logistics, that means applying it to the workflows that consume your team — order and tender intake, shipment status updates to customers, and document collection and processing (POD, BOL)with the specifics of your industry built in.',
+      answer: 'An AI agent is software that uses an AI model to reason about a goal, use tools, and take multi-step action inside real systemsunlike a chatbot, which mainly answers questions. For an operation in logistics, that means applying it to the workflows that consume your team — order and tender intake, shipment status updates to customers, and document collection and processing (POD, BOL)with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our operation already uses?',
-      answer: 'Yes. We build into the systems logistics operations actually run onTMS platforms, tracking systems, document management, accounting software, and communication channels, connecting rather than replacing them, so the automation fits your existing operation.',
+      answer: 'Yes. We build into the systems logistics operations actually run on: TMS platforms, tracking systems, document management, accounting software, and communication channels, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
-      answer: 'Generic automation ignores what makes logistics different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+      answer: 'Generic automation ignores what makes logistics different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

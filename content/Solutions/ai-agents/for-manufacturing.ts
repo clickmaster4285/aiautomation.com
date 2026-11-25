@@ -21,11 +21,11 @@ export const aiAgentsForManufacturing: SolutionData = {
   heroHeading: 'AI Agents for Manufacturing',
   heroSubheading: 'AI agents for manufacturing operations that reason, act, and finish multi-step work inside the tools your team already uses.',
   heroBadge: 'AI Agent Development',
-  description: 'Clickmasters builds AI Agent Development for manufacturing. Automation that reasons, acts, and completes automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of manufacturing, delivered as a system your team owns and relies on.',
+  description: 'Clickmasters builds AI Agent Development for manufacturing. Automation that reasons, acts, and completes automatically, built around how an operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of manufacturing, delivered as a system your team owns and relies on.',
   sections: {
     'Why Manufacturing Needs AI Agent Development': `Manufacturers live and die by operational efficiency on the floor, yet the office side: order processing, purchasing, inventory updates, shipping coordination, reporting. Often runs on manual re-keying between systems that don't connect. Orders arrive by email and get typed into the ERP; inventory counts live in spreadsheets; production reports are assembled by hand. The result is lag, errors, and office overhead that grows with every increase in volume.
 
-AI Agent Development addresses this directly. It builds software that pursues goals, not just answers questionsreasoning about a task, using your tools, taking multiple steps, and acting inside your systems. An agent doesn't just tell someone the status; it looks it up, drafts the response, sends it, and logs the activity. It closes the loop, which is the part that actually removes work. For a operation, that capability lands exactly where the hours are currently going.`,
+AI Agent Development addresses this directly. It builds software that pursues goals, not just answers questions: reasoning about a task, using your tools, taking multiple steps, and acting inside your systems. An agent doesn't just tell someone the status; it looks it up, drafts the response, sends it, and logs the activity. It closes the loop, which is the part that actually removes work. For an operation, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Manufacturing': `**Order entry lag and errors.** Orders arriving by email or portal get manually keyed into the ERP, adding delay and transcription errors to every order.
 **Disconnected systems.** ERP, inventory, shipping, and accounting systems that don't talk mean the same data is entered multiple times.
@@ -51,7 +51,7 @@ Each of these is mapped in the audit and automated in priority order, highest re
 
     'Where to Start: Your First Automation': `The mistake most teams in manufacturing make with automation is starting with the most ambitious workflow instead of the most valuable one. The right first project has three properties: it happens frequently (daily, not quarterly), it follows a recognizable pattern (so the automation has something to learn from your team's handling of it), and its current manual cost is visible (so the return is measurable against a real baseline).
 
-For most, that points to sales order entry and confirmation or purchase order creation and tracking. High-frequency, pattern-heavy, and expensive in staff hours right now. We automate that first, measure the result against your own baseline, and only then expand. A operation that proves the return on one workflow makes every subsequent decision with evidence instead of hope.`,
+For most, that points to sales order entry and confirmation or purchase order creation and tracking. High-frequency, pattern-heavy, and expensive in staff hours right now. We automate that first, measure the result against your own baseline, and only then expand. An operation that proves the return on one workflow makes every subsequent decision with evidence instead of hope.`,
 
     'What This Is and Isn\'t': `Worth being clear about the boundaries, because automation earns trust by respecting them. This is not about replacing your operations and admin staff. It's about removing the repetitive layer that keeps them from the work that actually needs them. It's not a rip-and-replace of your systems. We connect ERP systems, inventory management, shipping platforms, accounting software, and supplier portals rather than asking you to migrate. And it's not a black box. Every workflow is documented, visible, and owned by you, with humans in the loop wherever judgment or sensitivity requires it.
 
@@ -132,9 +132,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '30+', label: 'Hours Saved per Week' },
-    { value: '85%', label: 'Process Automation' },
-    { value: '96%', label: 'Customer Satisfaction' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -167,15 +167,15 @@ We start with a free audit that identifies your highest-return workflow, automat
   faqQuestions: [
     {
       question: 'What is AI agent for manufacturing?',
-      answer: 'An AI agent is software that uses an AI model to reason about a goal, use tools, and take multi-step action inside real systemsunlike a chatbot, which mainly answers questions. For a operation in manufacturing, that means applying it to the workflows that consume your team — sales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alerts — with the specifics of your industry built in.',
+      answer: 'An AI agent is software that uses an AI model to reason about a goal, use tools, and take multi-step action inside real systemsunlike a chatbot, which mainly answers questions. For an operation in manufacturing, that means applying it to the workflows that consume your team — sales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alerts — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our operation already uses?',
-      answer: 'Yes. We build into the systems manufacturing operations actually run onERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting rather than replacing them, so the automation fits your existing operation.',
+      answer: 'Yes. We build into the systems manufacturing operations actually run on: ERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
-      answer: 'Generic automation ignores what makes manufacturing different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+      answer: 'Generic automation ignores what makes manufacturing different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

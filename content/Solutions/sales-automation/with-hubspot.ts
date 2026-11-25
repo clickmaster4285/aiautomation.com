@@ -81,9 +81,9 @@ export const salesAutomationWithHubspot: SolutionData = {
     },
   ],
   stats: [
-    { value: '50+', label: 'Sales Systems Built' },
-    { value: '20+', label: 'Hours Saved/Rep/Week' },
-    { value: '85%+', label: 'Automation Rate' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -165,9 +165,10 @@ export const salesAutomationWithHubspot: SolutionData = {
           id: 'why-hubspot',
           title: 'Why HubSpot for AI Sales Automation',
           stats: [
-            { label: 'Native CRM', value: '✓' },
-            { label: 'AI Integration', value: '✓' },
-            { label: 'Scalable', value: '✓' },
+            { value: 'Free', label: 'Automation Audit' },
+            { value: '30 min', label: 'Audit Call, No Obligation' },
+            { value: '1st', label: 'Highest-Return Workflow First' },
+            { value: '100%', label: 'Ownership Guaranteed' },
           ],
           cta: { text: 'See Our Process', href: '#how-we-work' },
           background: 'muted',

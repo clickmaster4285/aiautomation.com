@@ -4,9 +4,11 @@ import { motion, Variants } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Send, BrainCircuit } from 'lucide-react';
 import type { Section } from '@/content/type';
+import { splitHeading } from '@/components/landingPage/Shared';
 
 interface HeroProps {
   section: Section;
+  bg?: string;
   form?: {
     fields: Array<{ name: string; type: string; placeholder: string; required?: boolean }>;
     submitText?: string;
@@ -29,14 +31,14 @@ const wordVariants: Variants = {
   }),
 };
 
-export default function Hero({ section, form }: HeroProps) {
+export default function Hero({ section, form, bg = 'bg-paper' }: HeroProps) {
   const heading = section.heading || '';
   const subheading = section.subheading || '';
   const ctas = section.ctas || [];
   const primaryCta = ctas.find((c) => c.primary) || ctas[0];
   const secondaryCtas = ctas.filter((c) => !c.primary);
-  const words = heading.split(' ');
-  const forIndex = words.findIndex((w) => w.toLowerCase() === 'for');
+  const { head, tail } = splitHeading(heading, 2);
+  const isBlack = bg === 'bg-ink';
 
   const defaultForm = {
     fields: [
@@ -60,24 +62,10 @@ export default function Hero({ section, form }: HeroProps) {
   };
 
   return (
-    <section className="relative min-h-[50vh] flex items-center py-4 md:py-8 bg-black">
-      {/* Background decorations (same as Contact) */}
-      <div className="absolute inset-0 overflow-hidden">
-        <motion.div
-          className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-brand/20 rounded-full blur-3xl"
-          animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}
-          transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
-        />
-        <motion.div
-          className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-brand/10 rounded-full blur-3xl"
-          animate={{ scale: [1, 1.1, 1], opacity: [0.1, 0.3, 0.1] }}
-          transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
-        />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(249,115,22,0.05),transparent_60%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
-      </div>
+    <section className={`relative flex min-h-[calc(100svh-4rem)] items-center overflow-hidden py-12 md:py-16 ${bg}`}>
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-dot-pattern opacity-30" />
 
-      <div className="relative mx-auto max-w-[84vw] px-6 pt-12 pb-8 w-full">
+      <div className="relative mx-auto w-full max-w-[84vw] px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start lg:items-center">
           
           {/* LEFT: Text */}
@@ -92,61 +80,24 @@ export default function Hero({ section, form }: HeroProps) {
           >
             <motion.div
               variants={wordVariants}
-              className="inline-flex items-center gap-2 rounded-full border border-brand/30 bg-brand/10 px-4 py-2 text-sm text-brand backdrop-blur-sm mb-6"
+              className="eyebrow mb-5 inline-flex items-center gap-2 border border-brand px-3 py-1 text-xs text-brand md:mb-7 md:text-sm"
             >
-              <BrainCircuit className="h-4 w-4" />
-              <span>AI Automation</span>
-              <span className="h-1 w-1 rounded-full bg-brand" />
-              <span className="text-brand/70 animate-pulse">INDUSTRIES</span>
+              <BrainCircuit className="h-4 w-4" aria-hidden="true" />
+              <span>Industry solutions</span>
             </motion.div>
 
             <motion.h1
               variants={wordVariants}
-              className="display text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 text-white"
+              className="display mb-5 text-4xl leading-[1.05] sm:text-5xl md:mb-7 md:text-6xl lg:text-7xl"
             >
-              {words.map((word, i) => {
-                const isLower = word[0] === word[0].toLowerCase() && /[a-z]/.test(word[0]);
-                const isAccent =
-                  word.toLowerCase().includes('automation') ||
-                  word.toLowerCase().includes('ai') ||
-                  word.toLowerCase().includes('future');
-
-                if (i === forIndex) {
-                  return (
-                    <span key={`group-${i}`}>
-                      <span
-                        className={
-                          isLower
-                            ? 'display-italic font-normal'
-                            : `font-black ${isAccent ? 'text-brand' : 'text-white'}`
-                        }
-                      >
-                        {word}
-                      </span>
-                      <br />
-                    </span>
-                  );
-                }
-
-                return (
-                  <span
-                    key={i}
-                    className={
-                      isLower
-                        ? 'display-italic font-normal'
-                        : `font-black ${isAccent ? 'text-brand' : 'text-white'}`
-                    }
-                  >
-                    {word}{' '}
-                  </span>
-                );
-              })}
+              {head}{head && ' '}
+              <span className="display-italic font-normal text-brand">{tail}</span>
             </motion.h1>
 
             {subheading && (
               <motion.p
                 variants={wordVariants}
-                className="text-xl text-gray-300 leading-relaxed max-w-2xl text-justify"
+                className={`max-w-2xl text-base leading-relaxed sm:text-lg md:text-xl ${isBlack ? 'text-white/70' : 'text-muted-foreground'}`}
               >
                 {subheading}
               </motion.p>

@@ -442,6 +442,7 @@ export default function ProductPage({
 
       {/* ── 07 WHO IT'S FOR (homepage WhyChooseUs grid) ─ */}
       <WhyChooseUs
+        id="who-its-for"
         marker="07"
         data={{
           label: c.audience.eyebrow,

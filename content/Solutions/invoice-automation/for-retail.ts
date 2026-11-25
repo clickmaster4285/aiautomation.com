@@ -26,7 +26,7 @@ export const invoiceAutomationForRetail: SolutionData = {
   sections: {
     'Why Retail Needs Invoice & Finance Automation': `Retail operations juggle inventory, suppliers, staff scheduling, customer inquiries, and reporting across locations and channels, usually with thin margins that can't absorb administrative bloat. Stock data lives in one system, sales in another, and the connecting work happens in spreadsheets and re-keying. Meanwhile customer questions arrive across phone, email, and social, and the reporting that should guide buying decisions gets assembled by hand, late.
 
-Invoice & Finance Automation addresses this directly. It automates the invoice-to-books pipeline and the finance workflows around itinvoices captured and read on arrival, data validated against expected values, approvals routed and chased, entries pushed into your accounting system, and exceptions flagged with the specific issue. Finance can't tolerate silent errors, so validation and human checkpoints are built in wherever mistakes would be costly. For a business, that capability lands exactly where the hours are currently going.`,
+Invoice & Finance Automation addresses this directly. It automates the invoice-to-books pipeline and the finance workflows around it: invoices captured and read on arrival, data validated against expected values, approvals routed and chased, entries pushed into your accounting system, and exceptions flagged with the specific issue. Finance can't tolerate silent errors, so validation and human checkpoints are built in wherever mistakes would be costly. For a business, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Retail': `**Inventory blind spots.** Stock levels tracked manually or in disconnected systems lead to stockouts of winners and overstock of losers.
 **Multi-channel inquiry load.** Customer questions arrive by phone, email, and social; consistent, fast responses across all of them are hard to staff.
@@ -133,9 +133,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '20+', label: 'Hours Saved per Week' },
-    { value: '85%', label: 'Invoices Processed Hands-Free' },
-    { value: '95%', label: 'Customer Satisfaction' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -174,12 +174,12 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'Will this work with the tools our business already uses?',
       answer:
-        'Yes. We build into the systems retail actually run onPOS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting rather than replacing them, so the automation fits your existing operation.',
+        'Yes. We build into the systems retail businesses actually run on: POS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
       answer:
-        'Generic automation ignores what makes retail different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+        'Generic automation ignores what makes retail different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

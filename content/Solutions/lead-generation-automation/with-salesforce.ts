@@ -81,9 +81,9 @@ export const leadGenerationAutomationWithSalesforce: SolutionData = {
     },
   ],
   stats: [
-    { value: '45+', label: 'Lead Systems Built' },
-    { value: '< 2s', label: 'Avg. Response Time' },
-    { value: '85%+', label: 'Lead Qualification Rate' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -165,9 +165,10 @@ export const leadGenerationAutomationWithSalesforce: SolutionData = {
           id: 'why-salesforce',
           title: 'Why Salesforce for Lead Generation Automation',
           stats: [
-            { label: 'Enterprise Grade', value: '✓' },
-            { label: 'Native CRM Integration', value: '✓' },
-            { label: 'Scalable', value: '✓' },
+            { value: 'Free', label: 'Automation Audit' },
+            { value: '30 min', label: 'Audit Call, No Obligation' },
+            { value: '1st', label: 'Highest-Return Workflow First' },
+            { value: '100%', label: 'Ownership Guaranteed' },
           ],
           cta: { text: 'See Our Process', href: '#how-we-work' },
           background: 'muted',

@@ -17,8 +17,8 @@ export const realEstate: ServiceContent = {
         'This page covers where real estate work stalls, what we automate, and how it connects to the CRM and tools you already use.',
       ],
       stats: [
-        { label: 'FIRST RESPONSE', value: 'Under 2 min' },
-        { label: 'FOLLOW-UPS HANDLED', value: '24/7' },
+        { label: 'AUTOMATION AUDIT', value: 'Free' },
+        { label: 'OWNERSHIP OF THE BUILD', value: '100%' },
       ],
       ctas: [
         { text: 'Book a Free Audit', link: '/free-automation-audit', primary: true },

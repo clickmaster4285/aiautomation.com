@@ -81,9 +81,9 @@ export const aiChatbotsWithZapier: SolutionData = {
     },
   ],
   stats: [
-    { value: '40+', label: 'Chatbots Built' },
-    { value: '< 3s', label: 'Avg. Response Time' },
-    { value: '70%+', label: 'Lead Qualification' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -166,9 +166,10 @@ export const aiChatbotsWithZapier: SolutionData = {
           title: 'Why Zapier for AI Chatbots',
           imageRight: true,
           stats: [
-            { label: 'Apps Integrated', value: '6,000+' },
-            { label: 'Fastest Time to Build', value: 'Hours' },
-            { label: 'Self-Service Friendly', value: '✓' },
+            { value: 'Free', label: 'Automation Audit' },
+            { value: '30 min', label: 'Audit Call, No Obligation' },
+            { value: '1st', label: 'Highest-Return Workflow First' },
+            { value: '100%', label: 'Ownership Guaranteed' },
           ],
         },
       },

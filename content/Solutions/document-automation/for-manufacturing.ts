@@ -22,11 +22,11 @@ export const documentAutomationForManufacturing: SolutionData = {
   heroSubheading: 'Document automation for manufacturing that reads, validates, and files production paperwork, built for how manufacturing operations actually run.',
   heroBadge: 'Document & Data Automation',
   description:
-    'Clickmasters builds Document & Data Automation for manufacturing. Automation that reads, validates, and files automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of manufacturing, delivered as a system your team owns and relies on.',
+    'Clickmasters builds Document & Data Automation for manufacturing. Automation that reads, validates, and files automatically, built around how an operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of manufacturing, delivered as a system your team owns and relies on.',
   sections: {
     'Why Manufacturing Needs Document & Data Automation': `Manufacturers live and die by operational efficiency on the floor, yet the office side: order processing, purchasing, inventory updates, shipping coordination, reporting. Often runs on manual re-keying between systems that don't connect. Orders arrive by email and get typed into the ERP; inventory counts live in spreadsheets; production reports are assembled by hand. The result is lag, errors, and office overhead that grows with every increase in volume.
 
-Document & Data Automation addresses this directly. It reads documents and moves data so nobody keys it by handAI extraction that understands invoices, forms, and PDFs across varied layouts, validation that catches what doesn't look right, and routing that puts clean data into your systems automatically. The manual entry disappears; the exceptions get exactly the human attention they need. For a operation, that capability lands exactly where the hours are currently going.`,
+Document & Data Automation addresses this directly. It reads documents and moves data so nobody keys it by handAI extraction that understands invoices, forms, and PDFs across varied layouts, validation that catches what doesn't look right, and routing that puts clean data into your systems automatically. The manual entry disappears; the exceptions get exactly the human attention they need. For an operation, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Manufacturing': `**Order entry lag and errors.** Orders arriving by email or portal get manually keyed into the ERP, adding delay and transcription errors to every order.
 **Disconnected systems.** ERP, inventory, shipping, and accounting systems that don't talk mean the same data is entered multiple times.
@@ -52,7 +52,7 @@ Each of these is mapped in the audit and automated in priority order, highest re
 
     'Where to Start: Your First Automation': `The mistake most teams in manufacturing make with automation is starting with the most ambitious workflow instead of the most valuable one. The right first project has three properties: it happens frequently (daily, not quarterly), it follows a recognizable pattern (so the automation has something to learn from your team's handling of it), and its current manual cost is visible (so the return is measurable against a real baseline).
 
-For most, that points to sales order entry and confirmation or purchase order creation and tracking. High-frequency, pattern-heavy, and expensive in staff hours right now. We automate that first, measure the result against your own baseline, and only then expand. A operation that proves the return on one workflow makes every subsequent decision with evidence instead of hope.`,
+For most, that points to sales order entry and confirmation or purchase order creation and tracking. High-frequency, pattern-heavy, and expensive in staff hours right now. We automate that first, measure the result against your own baseline, and only then expand. An operation that proves the return on one workflow makes every subsequent decision with evidence instead of hope.`,
 
     'What This Is and Isn\'t': `Worth being clear about the boundaries, because automation earns trust by respecting them. This is not about replacing your operations and admin staff. It's about removing the repetitive layer that keeps them from the work that actually needs them. It's not a rip-and-replace of your systems. We connect ERP systems, inventory management, shipping platforms, accounting software, and supplier portals rather than asking you to migrate. And it's not a black box. Every workflow is documented, visible, and owned by you, with humans in the loop wherever judgment or sensitivity requires it.
 
@@ -133,9 +133,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '30+', label: 'Hours Saved per Week' },
-    { value: '90%', label: 'Document Processing' },
-    { value: '99%', label: 'Order Accuracy' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -169,17 +169,17 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is document automation for manufacturing?',
       answer:
-        'Document and data automation uses OCR and AI to read documents, extract and validate structured data, and route it into business systems automatically — replacing manual reading and data entry. For a operation in manufacturing, that means applying it to the workflows that consume your team — sales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alerts — with the specifics of your industry built in.',
+        'Document and data automation uses OCR and AI to read documents, extract and validate structured data, and route it into business systems automatically — replacing manual reading and data entry. For an operation in manufacturing, that means applying it to the workflows that consume your team — sales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alerts — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our operation already uses?',
       answer:
-        'Yes. We build into the systems manufacturing actually run onERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting rather than replacing them, so the automation fits your existing operation.',
+        'Yes. We build into the systems manufacturing operations actually run on: ERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
       answer:
-        'Generic automation ignores what makes manufacturing different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+        'Generic automation ignores what makes manufacturing different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

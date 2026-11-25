@@ -22,11 +22,11 @@ export const aiChatbotsForLogistics: SolutionData = {
   heroSubheading: 'An AI chatbot for logistics companies that answers, qualifies, and books, built for how your team actually works.',
   heroBadge: 'AI Chatbots',
   description:
-    'Clickmasters builds AI Chatbots for logistics & transportation. Automation that answers, qualifies, and books automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of logistics & transportation, delivered as a system your team owns and relies on.',
+    'Clickmasters builds AI Chatbots for logistics & transportation. Automation that answers, qualifies, and books automatically, built around how an operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of logistics & transportation, delivered as a system your team owns and relies on.',
   sections: {
     'Why Logistics & Transportation Need AI Chatbots': `Logistics runs on coordination: orders, dispatch, tracking, exceptions, proof of delivery, invoicing, a constant flow of time-sensitive information across shippers, carriers, drivers, and customers. Much of it still moves by phone, email, and manual entry, which means status calls interrupt dispatchers, paperwork lags behind freight, and billing waits on documents. Every manual touch adds delay and error to an industry priced on speed and reliability.
 
-AI Chatbots addresses this directly. It holds real conversations and takes real action, answering from your own content, booking appointments, qualifying leads, and handing off to humans cleanly. Modern AI chatbots understand natural language and ground their answers in your actual documentation, which makes them nothing like the scripted bots everyone learned to dread. For a operation, that capability lands exactly where the hours are currently going.`,
+AI Chatbots addresses this directly. It holds real conversations and takes real action, answering from your own content, booking appointments, qualifying leads, and handing off to humans cleanly. Modern AI chatbots understand natural language and ground their answers in your actual documentation, which makes them nothing like the scripted bots everyone learned to dread. For an operation, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Logistics & Transportation': `**Status inquiry interruptions.** Where's my shipment? calls and emails consume dispatcher time that should go to actual coordination.
 **Document lag.** PODs, BOLs, and paperwork trail the freight, delaying billing and disputes.
@@ -52,7 +52,7 @@ Each of these is mapped in the audit and automated in priority order, highest re
 
     'Where to Start: Your First Automation': `The mistake most teams in logistics & transportation make with automation is starting with the most ambitious workflow instead of the most valuable one. The right first project has three properties: it happens frequently (daily, not quarterly), it follows a recognizable pattern (so the automation has something to learn from your team's handling of it), and its current manual cost is visible (so the return is measurable against a real baseline).
 
-For most, that points to order and tender intake or shipment status updates to customers. High-frequency, pattern-heavy, and expensive in staff hours right now. We automate that first, measure the result against your own baseline, and only then expand. A operation that proves the return on one workflow makes every subsequent decision with evidence instead of hope.`,
+For most, that points to order and tender intake or shipment status updates to customers. High-frequency, pattern-heavy, and expensive in staff hours right now. We automate that first, measure the result against your own baseline, and only then expand. An operation that proves the return on one workflow makes every subsequent decision with evidence instead of hope.`,
 
     'What This Is and Isn\'t': `Worth being clear about the boundaries, because automation earns trust by respecting them. This is not about replacing your dispatchers and ops staff. It's about removing the repetitive layer that keeps them from the work that actually needs them. It's not a rip-and-replace of your systems. We connect TMS platforms, tracking systems, document management, accounting software, and communication channels rather than asking you to migrate. And it's not a black box. Every workflow is documented, visible, and owned by you, with humans in the loop wherever judgment or sensitivity requires it.
 
@@ -133,9 +133,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '25+', label: 'Hours Saved per Week' },
-    { value: '85%', label: 'Process Automation' },
-    { value: '98%', label: 'Operational Accuracy' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -169,17 +169,17 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is chatbot for logistics & transportation?',
       answer:
-        'An AI chatbot uses a language model to understand and respond in natural language, answering from a business\'s own content and taking actions like booking or routing, far beyond old script-based bots. For a operation in logistics & transportation, that means applying it to the workflows that consume your team — order and tender intake, shipment status updates to customers, and document collection and processing (POD, BOL)with the specifics of your industry built in.',
+        'An AI chatbot uses a language model to understand and respond in natural language, answering from a business\'s own content and taking actions like booking or routing, far beyond old script-based bots. For an operation in logistics & transportation, that means applying it to the workflows that consume your team — order and tender intake, shipment status updates to customers, and document collection and processing (POD, BOL)with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our operation already uses?',
       answer:
-        'Yes. We build into the systems logistics & transportation actually run onTMS platforms, tracking systems, document management, accounting software, and communication channels, connecting rather than replacing them, so the automation fits your existing operation.',
+        'Yes. We build into the systems logistics & transportation actually run on: TMS platforms, tracking systems, document management, accounting software, and communication channels, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
       answer:
-        'Generic automation ignores what makes logistics & transportation different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+        'Generic automation ignores what makes logistics & transportation different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

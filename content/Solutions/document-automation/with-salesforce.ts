@@ -81,9 +81,9 @@ export const documentAutomationWithSalesforce: SolutionData = {
     },
   ],
   stats: [
-    { value: '45+', label: 'Document Systems Built' },
-    { value: '95%+', label: 'Extraction Accuracy' },
-    { value: '12x', label: 'Faster Processing' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -165,9 +165,10 @@ export const documentAutomationWithSalesforce: SolutionData = {
           id: 'why-salesforce',
           title: 'Why Salesforce for Document & Data Automation',
           stats: [
-            { label: 'Enterprise Grade', value: '✓' },
-            { label: 'Native CRM Integration', value: '✓' },
-            { label: 'Scalable', value: '✓' },
+            { value: 'Free', label: 'Automation Audit' },
+            { value: '30 min', label: 'Audit Call, No Obligation' },
+            { value: '1st', label: 'Highest-Return Workflow First' },
+            { value: '100%', label: 'Ownership Guaranteed' },
           ],
           cta: { text: 'See Our Process', href: '#how-we-work' },
           background: 'muted',

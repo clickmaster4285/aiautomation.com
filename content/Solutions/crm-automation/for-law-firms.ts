@@ -133,9 +133,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '20+', label: 'Hours Saved per Week' },
-    { value: '80%', label: 'CRM Accuracy' },
-    { value: '95%', label: 'Client Satisfaction' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -169,17 +169,17 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is CRM automation for law firms?',
       answer:
-        'CRM automation keeps your CRM accurate and active automaticallyupdating records, logging activity, cleaning data, routing leads, and syncing with your other systems, so the pipeline reflects reality without reps doing data entry. For a firm in law firms, that means applying it to the workflows that consume your team — client intake and qualification, engagement letter generation, and document assembly from templates and matter data — with the specifics of your industry built in.',
+        'CRM automation keeps your CRM accurate and active automatically: updating records, logging activity, cleaning data, routing leads, and syncing with your other systems, so the pipeline reflects reality without reps doing data entry. For a law firm, that means applying it to the workflows that consume your team — client intake and qualification, engagement letter generation, and document assembly from templates and matter data — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our firm already uses?',
       answer:
-        'Yes. We build into the systems law firms actually run onpractice management platforms, document management systems, e-signature tools, and billing systems, connecting rather than replacing them, so the automation fits your existing operation.',
+        'Yes. We build into the systems law firms actually run on: practice management platforms, document management systems, e-signature tools, and billing systems, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
       answer:
-        'Generic automation ignores what makes law firms different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+        'Generic automation ignores what makes law firms different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

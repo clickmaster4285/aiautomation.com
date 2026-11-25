@@ -26,7 +26,7 @@ export const invoiceAutomationForEcommerce: SolutionData = {
   sections: {
     'Why E-commerce Needs Invoice & Finance Automation': `E-commerce generates relentless operational volume that scales directly with sales: support tickets about orders and shipping, cart abandonment eating revenue, order exceptions needing attention, review management, and marketing that needs constant feeding. For a lean team, every increase in traffic means more of everything, unless the operational layer runs on automation, which is exactly how small stores punch far above their weight.
 
-Invoice & Finance Automation addresses this directly. It automates the invoice-to-books pipeline and the finance workflows around itinvoices captured and read on arrival, data validated against expected values, approvals routed and chased, entries pushed into your accounting system, and exceptions flagged with the specific issue. Finance can't tolerate silent errors, so validation and human checkpoints are built in wherever mistakes would be costly. For a store, that capability lands exactly where the hours are currently going.`,
+Invoice & Finance Automation addresses this directly. It automates the invoice-to-books pipeline and the finance workflows around it: invoices captured and read on arrival, data validated against expected values, approvals routed and chased, entries pushed into your accounting system, and exceptions flagged with the specific issue. Finance can't tolerate silent errors, so validation and human checkpoints are built in wherever mistakes would be costly. For a store, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for E-commerce': `**Support volume tied to sales.** Where's my order, returns, sizingmostly repetitive questions, arriving around the clock, drowning small teams.
 **Abandoned cart revenue loss.** A large share of carts are abandoned; without automated recovery, that revenue simply evaporates.
@@ -133,9 +133,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '30+', label: 'Hours Saved per Week' },
-    { value: '85%', label: 'Invoices Processed Hands-Free' },
-    { value: '25%', label: 'Cart Recovery Rate' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -174,12 +174,12 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'Will this work with the tools our store already uses?',
       answer:
-        'Yes. We build into the systems e-commerce actually run onstore platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting rather than replacing them, so the automation fits your existing operation.',
+        'Yes. We build into the systems e-commerce stores actually run on: store platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
       answer:
-        'Generic automation ignores what makes e-commerce different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+        'Generic automation ignores what makes e-commerce different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

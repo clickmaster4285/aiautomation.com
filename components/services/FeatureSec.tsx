@@ -16,7 +16,7 @@ export default function FeaturesSec({ section }: { section: Section }) {
     : 'Features';
 
   return (
-    <section id="features" className="bg-white text-black py-12 md:py-24">
+    <section className="bg-white text-black py-12 md:py-24">
       <div className="mx-auto max-w-[84vw] px-6">
       
 

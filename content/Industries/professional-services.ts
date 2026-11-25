@@ -17,8 +17,8 @@ export const professionalServices: ServiceContent = {
         'This page explains where professional-services admin piles up, what we automate, and how it fits the tools you already run.',
       ],
       stats: [
-        { label: 'ADMIN TIME RECLAIMED', value: '10+ hrs/wk' },
-        { label: 'ONBOARDING STEPS', value: 'Tracked' },
+        { label: 'AUTOMATION AUDIT', value: 'Free' },
+        { label: 'OWNERSHIP OF THE BUILD', value: '100%' },
       ],
       ctas: [
         { text: 'Book a Free Audit', link: '/free-automation-audit', primary: true },

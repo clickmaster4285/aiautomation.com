@@ -81,9 +81,9 @@ export const marketingAutomationWithSalesforce: SolutionData = {
     },
   ],
   stats: [
-    { value: '40+', label: 'Marketing Systems Built' },
-    { value: '10x', label: 'Content Production' },
-    { value: '85%+', label: 'Campaign Automation' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -165,9 +165,10 @@ export const marketingAutomationWithSalesforce: SolutionData = {
           id: 'why-salesforce',
           title: 'Why Salesforce for AI Marketing Automation',
           stats: [
-            { label: 'Enterprise Grade', value: '✓' },
-            { label: 'Native CRM Integration', value: '✓' },
-            { label: 'Scalable', value: '✓' },
+            { value: 'Free', label: 'Automation Audit' },
+            { value: '30 min', label: 'Audit Call, No Obligation' },
+            { value: '1st', label: 'Highest-Return Workflow First' },
+            { value: '100%', label: 'Ownership Guaranteed' },
           ],
           cta: { text: 'See Our Process', href: '#how-we-work' },
           background: 'muted',

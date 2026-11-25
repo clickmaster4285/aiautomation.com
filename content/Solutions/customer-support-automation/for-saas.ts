@@ -22,7 +22,7 @@ export const customerSupportAutomationForSaaS: SolutionData = {
   heroSubheading: 'Support automation for SaaS companies that resolves routine product questions, routes bugs and billing issues, and escalates the rest.',
   heroBadge: 'Customer Support Automation',
   description:
-    'Clickmasters builds Customer Support Automation for SaaS companies. Automation that resolves, routes, and escalates automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of saas companies, delivered as a system your team owns and relies on.',
+    'Clickmasters builds Customer Support Automation for SaaS companies. Automation that resolves, routes, and escalates automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of SaaS companies, delivered as a system your team owns and relies on.',
   sections: {
     'Why SaaS Companies Need Customer Support Automation': `SaaS growth strains everything around the product: support tickets scale with users, onboarding quality drives retention but is impossible to do manually at scale, churn signals hide in usage data nobody has time to watch, and revenue operations grow more complex every quarter. The whole business model depends on scaling revenue faster than headcount, which means the operational layer has to run on automation, not hiring.
 
@@ -50,7 +50,7 @@ And the same automation pattern extends across the rest of your company's recurr
 
 Each of these is mapped in the audit and automated in priority order, highest return first.`,
 
-    'Where to Start: Your First Automation': `The mistake most teams in saas companies make with automation is starting with the most ambitious workflow instead of the most valuable one. The right first project has three properties: it happens frequently (daily, not quarterly), it follows a recognizable pattern (so the automation has something to learn from your team's handling of it), and its current manual cost is visible (so the return is measurable against a real baseline).
+    'Where to Start: Your First Automation': `The mistake most teams in SaaS companies make with automation is starting with the most ambitious workflow instead of the most valuable one. The right first project has three properties: it happens frequently (daily, not quarterly), it follows a recognizable pattern (so the automation has something to learn from your team's handling of it), and its current manual cost is visible (so the return is measurable against a real baseline).
 
 For most, that points to support ticket triage and resolution or user onboarding and activation sequences. High-frequency, pattern-heavy, and expensive in staff hours right now. We automate that first, measure the result against your own baseline, and only then expand. A company that proves the return on one workflow makes every subsequent decision with evidence instead of hope.`,
 
@@ -66,11 +66,11 @@ That's the pattern across everything we build for SaaS companies: the routine ha
 
 We integrate with the systems your company already runs — support platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slack — connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
-    'What the Return Looks Like': `For saas companies, the return shows up as: ticket deflection that preserves efficient scaling, activation and retention lift from consistent onboarding, churn caught early enough to act on, and revenue operations that run without manual drag. On the support automation side specifically, the headline metric is tickets deflected and response time cut.
+    'What the Return Looks Like': `For SaaS companies, the return shows up as: ticket deflection that preserves efficient scaling, activation and retention lift from consistent onboarding, churn caught early enough to act on, and revenue operations that run without manual drag. On the support automation side specifically, the headline metric is tickets deflected and response time cut.
 
 We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is proven with your own numbers, not our claims.`,
 
-    'Why Clickmasters': `**Built for your industry's workflows.** We automate saas companies' real processes, not generic approximations.
+    'Why Clickmasters': `**Built for your industry's workflows.** We automate SaaS companies' real processes, not generic approximations.
 
 **Human-in-the-loop where it matters.** Judgment, sensitivity, and decisions stay with your people; the automation handles the routine around them.
 
@@ -133,9 +133,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '35+', label: 'Hours Saved per Week' },
-    { value: '85%', label: 'Ticket Deflection' },
-    { value: '90%', label: 'User Activation' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -169,17 +169,17 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is support automation for SaaS companies?',
       answer:
-        'Customer support automation uses AI agents and workflows to answer common questions from your documentation, triage and route tickets, and draft replies — while escalating complex cases to human agents with context. For a company in saas companies, that means applying it to the workflows that consume your team — support ticket triage and resolution, user onboarding and activation sequences, and churn-risk monitoring and alerts — with the specifics of your industry built in.',
+        'Customer support automation uses AI agents and workflows to answer common questions from your documentation, triage and route tickets, and draft replies — while escalating complex cases to human agents with context. For a SaaS company, that means applying it to the workflows that consume your team — support ticket triage and resolution, user onboarding and activation sequences, and churn-risk monitoring and alerts — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our company already uses?',
       answer:
-        'Yes. We build into the systems saas companies actually run onsupport platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slack — connecting rather than replacing them, so the automation fits your existing operation.',
+        'Yes. We build into the systems SaaS companies actually run on: support platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slack — connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
       answer:
-        'Generic automation ignores what makes saas companies different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+        'Generic automation ignores what makes SaaS companies different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

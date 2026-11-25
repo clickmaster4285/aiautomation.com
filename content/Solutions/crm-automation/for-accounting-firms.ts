@@ -58,7 +58,7 @@ For most, that points to client document collection or transaction and statement
 
 What it is: the routine work. The automation that updates, cleans, and routes, handled automatically, consistently, at any hour, so your firm runs on systems instead of memory and heroics.`,
 
-    'A Worked Example': `Consider what happens when a client uploads a batch of bank statements and receipts. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the documents are read automatically, transactions are extracted and categorized, entries are pushed into the accounting platform, anything ambiguous is flagged with the specific question for a staff member, and the client's file status updatesturning hours of keying into minutes of exception review.
+    'A Worked Example': `Consider what happens when a client uploads a batch of bank statements and receipts. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the documents are read automatically, transactions are extracted and categorized, entries are pushed into the accounting platform, anything ambiguous is flagged with the specific question for a staff member, and the client's file status updates, turning hours of keying into minutes of exception review.
 
 That's the pattern across everything we build for accounting firms: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
@@ -133,9 +133,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '25+', label: 'Hours Saved per Week' },
-    { value: '85%', label: 'CRM Accuracy' },
-    { value: '95%', label: 'Client Satisfaction' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -169,17 +169,17 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is CRM automation for accounting firms?',
       answer:
-        'CRM automation keeps your CRM accurate and active automaticallyupdating records, logging activity, cleaning data, routing leads, and syncing with your other systems, so the pipeline reflects reality without reps doing data entry. For a firm in accounting firms, that means applying it to the workflows that consume your team — client document collection, transaction and statement data entry, and bank and account reconciliation — with the specifics of your industry built in.',
+        'CRM automation keeps your CRM accurate and active automatically: updating records, logging activity, cleaning data, routing leads, and syncing with your other systems, so the pipeline reflects reality without reps doing data entry. For an accounting firm, that means applying it to the workflows that consume your team — client document collection, transaction and statement data entry, and bank and account reconciliation — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our firm already uses?',
       answer:
-        'Yes. We build into the systems accounting firms actually run onaccounting platforms like QuickBooks and Xero, practice management tools, document portals, and tax software, connecting rather than replacing them, so the automation fits your existing operation.',
+        'Yes. We build into the systems accounting firms actually run on: accounting platforms like QuickBooks and Xero, practice management tools, document portals, and tax software, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
       answer:
-        'Generic automation ignores what makes accounting firms different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+        'Generic automation ignores what makes accounting firms different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

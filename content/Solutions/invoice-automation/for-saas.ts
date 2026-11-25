@@ -22,11 +22,11 @@ export const invoiceAutomationForSaaS: SolutionData = {
   heroSubheading: 'Finance automation for SaaS that captures, validates, and posts, built for how SaaS finance teams actually operate.',
   heroBadge: 'Invoice & Finance Automation',
   description:
-    'Clickmasters builds Invoice & Finance Automation for SaaS companies. Automation that captures, validates, and posts automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of saas companies, delivered as a system your team owns and relies on.',
+    'Clickmasters builds Invoice & Finance Automation for SaaS companies. Automation that captures, validates, and posts automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of SaaS companies, delivered as a system your team owns and relies on.',
   sections: {
     'Why SaaS Companies Need Invoice & Finance Automation': `SaaS growth strains everything around the product: support tickets scale with users, onboarding quality drives retention but is impossible to do manually at scale, churn signals hide in usage data nobody has time to watch, and revenue operations grow more complex every quarter. The whole business model depends on scaling revenue faster than headcount, which means the operational layer has to run on automation, not hiring.
 
-Invoice & Finance Automation addresses this directly. It automates the invoice-to-books pipeline and the finance workflows around itinvoices captured and read on arrival, data validated against expected values, approvals routed and chased, entries pushed into your accounting system, and exceptions flagged with the specific issue. Finance can't tolerate silent errors, so validation and human checkpoints are built in wherever mistakes would be costly. For a company, that capability lands exactly where the hours are currently going.`,
+Invoice & Finance Automation addresses this directly. It automates the invoice-to-books pipeline and the finance workflows around it: invoices captured and read on arrival, data validated against expected values, approvals routed and chased, entries pushed into your accounting system, and exceptions flagged with the specific issue. Finance can't tolerate silent errors, so validation and human checkpoints are built in wherever mistakes would be costly. For a company, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for SaaS Companies': `**Support volume scaling with users.** A large share of tickets are variations on the same how-do-I questions, consuming a team that can't hire fast enough.
 **Onboarding that doesn't scale.** Activation drives retention, but manual onboarding attention is impossible past a certain signup volume.
@@ -50,7 +50,7 @@ And the same automation pattern extends across the rest of your company's recurr
 
 Each of these is mapped in the audit and automated in priority order, highest return first.`,
 
-    'Where to Start: Your First Automation': `The mistake most teams in saas companies make with automation is starting with the most ambitious workflow instead of the most valuable one. The right first project has three properties: it happens frequently (daily, not quarterly), it follows a recognizable pattern (so the automation has something to learn from your team's handling of it), and its current manual cost is visible (so the return is measurable against a real baseline).
+    'Where to Start: Your First Automation': `The mistake most teams in SaaS companies make with automation is starting with the most ambitious workflow instead of the most valuable one. The right first project has three properties: it happens frequently (daily, not quarterly), it follows a recognizable pattern (so the automation has something to learn from your team's handling of it), and its current manual cost is visible (so the return is measurable against a real baseline).
 
 For most, that points to support ticket triage and resolution or user onboarding and activation sequences. High-frequency, pattern-heavy, and expensive in staff hours right now. We automate that first, measure the result against your own baseline, and only then expand. A company that proves the return on one workflow makes every subsequent decision with evidence instead of hope.`,
 
@@ -66,11 +66,11 @@ That's the pattern across everything we build for SaaS companies: the routine ha
 
 We integrate with the systems your company already runs — support platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slack — connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
-    'What the Return Looks Like': `For saas companies, the return shows up as: ticket deflection that preserves efficient scaling, activation and retention lift from consistent onboarding, churn caught early enough to act on, and revenue operations that run without manual drag. On the finance automation side specifically, the headline metric is invoices processed hands-free and days cut from the close.
+    'What the Return Looks Like': `For SaaS companies, the return shows up as: ticket deflection that preserves efficient scaling, activation and retention lift from consistent onboarding, churn caught early enough to act on, and revenue operations that run without manual drag. On the finance automation side specifically, the headline metric is invoices processed hands-free and days cut from the close.
 
 We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is proven with your own numbers, not our claims.`,
 
-    'Why Clickmasters': `**Built for your industry's workflows.** We automate saas companies's real processes, not generic approximations.
+    'Why Clickmasters': `**Built for your industry's workflows.** We automate SaaS companies' real processes, not generic approximations.
 
 **Human-in-the-loop where it matters.** Judgment, sensitivity, and decisions stay with your people; the automation handles the routine around them.
 
@@ -133,9 +133,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '20+', label: 'Hours Saved per Week' },
-    { value: '85%', label: 'Invoices Processed Hands-Free' },
-    { value: '95%', label: 'Customer Satisfaction' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -169,17 +169,17 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is finance automation for SaaS companies?',
       answer:
-        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting system — with exceptions flagged for human review. For a company in saas companies, that means applying it to the workflows that consume your team — support ticket triage and resolution, user onboarding and activation sequences, and churn-risk monitoring and alerts — with the specifics of your industry built in.',
+        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting system — with exceptions flagged for human review. For a SaaS company, that means applying it to the workflows that consume your team — support ticket triage and resolution, user onboarding and activation sequences, and churn-risk monitoring and alerts — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our company already uses?',
       answer:
-        'Yes. We build into the systems saas companies actually run onsupport platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slack — connecting rather than replacing them, so the automation fits your existing operation.',
+        'Yes. We build into the systems SaaS companies actually run on: support platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slack — connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
       answer:
-        'Generic automation ignores what makes saas companies different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+        'Generic automation ignores what makes SaaS companies different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

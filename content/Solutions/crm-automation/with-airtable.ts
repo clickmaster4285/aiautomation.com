@@ -81,9 +81,9 @@ export const crmAutomationWithAirtable: SolutionData = {
     },
   ],
   stats: [
-    { value: '50+', label: 'CRM Systems Built' },
-    { value: '< 2s', label: 'Record Sync Time' },
-    { value: '90%+', label: 'Data Accuracy' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -130,7 +130,7 @@ export const crmAutomationWithAirtable: SolutionData = {
     },
     {
       question: 'CRM automation keeps your CRM accurate and active automatically — is that what this does?',
-      answer: 'CRM automation keeps your CRM accurate and active automaticallyupdating records, logging activity, cleaning data, routing leads, and syncing with your other systems, so the pipeline reflects reality without reps doing data entry. Built on Airtable, it runs with the platform\'s strengths: custom operational tools and data workflows without full custom development.',
+      answer: 'CRM automation keeps your CRM accurate and active automatically: updating records, logging activity, cleaning data, routing leads, and syncing with your other systems, so the pipeline reflects reality without reps doing data entry. Built on Airtable, it runs with the platform\'s strengths: custom operational tools and data workflows without full custom development.',
     },
   ],
   cta: 'Want CRM automation running on Airtable?',
@@ -165,9 +165,10 @@ export const crmAutomationWithAirtable: SolutionData = {
           id: 'why-airtable',
           title: 'Why Airtable for CRM Automation',
           stats: [
-            { label: 'Flexible', value: '✓' },
-            { label: 'No Custom Development', value: '✓' },
-            { label: 'Ops Teams', value: '✓' },
+            { value: 'Free', label: 'Automation Audit' },
+            { value: '30 min', label: 'Audit Call, No Obligation' },
+            { value: '1st', label: 'Highest-Return Workflow First' },
+            { value: '100%', label: 'Ownership Guaranteed' },
           ],
           cta: { text: 'See Our Process', href: '#how-we-work' },
           background: 'muted',

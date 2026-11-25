@@ -133,9 +133,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '<5', label: 'Seconds Response Time' },
-    { value: '3x', label: 'Conversion Lift' },
-    { value: '20+', label: 'Hours Saved per Week' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -174,12 +174,12 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'Will this work with the tools our business already uses?',
       answer:
-        'Yes. We build into the systems restaurants & hospitality actually run onreservation platforms, POS systems, review platforms, and communication channels, connecting rather than replacing them, so the automation fits your existing operation.',
+        'Yes. We build into the systems restaurants & hospitality actually run on: reservation platforms, POS systems, review platforms, and communication channels, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
       answer:
-        'Generic automation ignores what makes restaurants & hospitality different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+        'Generic automation ignores what makes restaurants & hospitality different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

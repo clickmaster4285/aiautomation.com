@@ -81,9 +81,9 @@ export const documentAutomationWithAirtable: SolutionData = {
     },
   ],
   stats: [
-    { value: '40+', label: 'Document Systems Built' },
-    { value: '95%+', label: 'Extraction Accuracy' },
-    { value: '10x', label: 'Faster Processing' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -165,9 +165,10 @@ export const documentAutomationWithAirtable: SolutionData = {
           id: 'why-airtable',
           title: 'Why Airtable for Document & Data Automation',
           stats: [
-            { label: 'Flexible', value: '✓' },
-            { label: 'No Custom Development', value: '✓' },
-            { label: 'Ops Teams', value: '✓' },
+            { value: 'Free', label: 'Automation Audit' },
+            { value: '30 min', label: 'Audit Call, No Obligation' },
+            { value: '1st', label: 'Highest-Return Workflow First' },
+            { value: '100%', label: 'Ownership Guaranteed' },
           ],
           cta: { text: 'See Our Process', href: '#how-we-work' },
           background: 'muted',

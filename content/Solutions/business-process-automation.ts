@@ -60,9 +60,10 @@ export const businessProcessAutomation = {
   },
 
   stats: [
-    { value: '70%', label: 'reduction in manual handoffs' },
-    { value: '3x', label: 'faster process cycle times' },
-    { value: '100%', label: 'record consistency across connected systems' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
+    { value: '100%', label: 'Ownership Guaranteed' },
   ],
 
   faqQuestions: [

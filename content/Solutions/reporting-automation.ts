@@ -48,9 +48,10 @@ export const reportingAutomation = {
   },
 
   stats: [
-    { value: '80%', label: 'reduction in manual reporting time' },
-    { value: '3x', label: 'faster report delivery cycles' },
-    { value: '100%', label: 'report consistency across teams' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
+    { value: '100%', label: 'Ownership Guaranteed' },
   ],
 
   faqQuestions: [

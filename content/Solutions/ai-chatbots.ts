@@ -59,9 +59,10 @@ export const aiChatbots = {
   },
 
   stats: [
-    { value: '94%', label: 'conversations resolved without staff involvement' },
-    { value: '3x', label: 'more qualified leads captured' },
-    { value: '24/7', label: 'coverage without added headcount' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
+    { value: '100%', label: 'Ownership Guaranteed' },
   ],
 
   faqQuestions: [

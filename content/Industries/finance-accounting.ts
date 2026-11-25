@@ -16,8 +16,8 @@ export const financeAccounting: ServiceContent = {
         'Finance runs on repetitive, high-stakes, deadline-driven work that is a poor use of skilled people\'s time, and it is one of the highest-return areas to automate in almost any business.'
       ],
       stats: [
-        { label: 'PROJECTS', value: '160+' },
-        { label: 'CLIENTS', value: '75+' }
+        { label: 'AUTOMATION AUDIT', value: 'Free' },
+        { label: 'OWNERSHIP OF THE BUILD', value: '100%' },
       ],
       ctas: [
         { text: 'Book a Free Audit', link: '/free-automation-audit', primary: true },

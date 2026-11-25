@@ -21,11 +21,11 @@ export const aiChatbotsForEducation: SolutionData = {
   heroHeading: 'AI Chatbots for Education',
   heroSubheading: 'An AI chatbot for education institutions that answers, qualifies, and books, built for how your team actually works.',
   heroBadge: 'AI Chatbots',
-  description: 'Clickmasters builds AI Chatbots for education. Automation that answers, qualifies, and books automatically, built around how a institution in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of education, delivered as a system your team owns and relies on.',
+  description: 'Clickmasters builds AI Chatbots for education. Automation that answers, qualifies, and books automatically, built around how an institution in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of education, delivered as a system your team owns and relies on.',
   sections: {
     'Why Education Needs AI Chatbots': `Schools, training providers, and education businesses run on enrollment funnels, student communication, scheduling, and reporting, much of it seasonal, repetitive, and manual. Inquiries arrive year-round and need fast, consistent follow-up to convert; enrollment involves document collection and data entry; students and parents ask the same questions constantly; and staff spend evenings on reports and reminders that software should handle.
 
-AI Chatbots addresses this directly. It holds real conversations and takes real action, answering from your own content, booking appointments, qualifying leads, and handing off to humans cleanly. Modern AI chatbots understand natural language and ground their answers in your actual documentation, which makes them nothing like the scripted bots everyone learned to dread. For a institution, that capability lands exactly where the hours are currently going.`,
+AI Chatbots addresses this directly. It holds real conversations and takes real action, answering from your own content, booking appointments, qualifying leads, and handing off to humans cleanly. Modern AI chatbots understand natural language and ground their answers in your actual documentation, which makes them nothing like the scripted bots everyone learned to dread. For an institution, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Education': `**Inquiry follow-up gaps.** Prospective students who don't hear back quickly enroll elsewhere; follow-up consistency decides conversion.
 **Enrollment paperwork.** Applications, documents, and data entry create seasonal crunches that bury administrative staff.
@@ -51,7 +51,7 @@ Each of these is mapped in the audit and automated in priority order, highest re
 
     'Where to Start: Your First Automation': `The mistake most teams in education make with automation is starting with the most ambitious workflow instead of the most valuable one. The right first project has three properties: it happens frequently (daily, not quarterly), it follows a recognizable pattern (so the automation has something to learn from your team's handling of it), and its current manual cost is visible (so the return is measurable against a real baseline).
 
-For most, that points to inquiry response and enrollment nurture or application and document collection. High-frequency, pattern-heavy, and expensive in staff hours right now. We automate that first, measure the result against your own baseline, and only then expand. A institution that proves the return on one workflow makes every subsequent decision with evidence instead of hope.`,
+For most, that points to inquiry response and enrollment nurture or application and document collection. High-frequency, pattern-heavy, and expensive in staff hours right now. We automate that first, measure the result against your own baseline, and only then expand. An institution that proves the return on one workflow makes every subsequent decision with evidence instead of hope.`,
 
     'What This Is and Isn\'t': `Worth being clear about the boundaries, because automation earns trust by respecting them. This is not about replacing your administrators and staff. It's about removing the repetitive layer that keeps them from the work that actually needs them. It's not a rip-and-replace of your systems. We connect student information systems, CRMs, scheduling tools, communication platforms, and payment systems rather than asking you to migrate. And it's not a black box. Every workflow is documented, visible, and owned by you, with humans in the loop wherever judgment or sensitivity requires it.
 
@@ -132,9 +132,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '20+', label: 'Hours Saved per Week' },
-    { value: '85%', label: 'Process Automation' },
-    { value: '96%', label: 'Student Satisfaction' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -167,15 +167,15 @@ We start with a free audit that identifies your highest-return workflow, automat
   faqQuestions: [
     {
       question: 'What is chatbot for education?',
-      answer: 'An AI chatbot uses a language model to understand and respond in natural language, answering from a business\'s own content and taking actions like booking or routing, far beyond old script-based bots. For a institution in education, that means applying it to the workflows that consume your team — inquiry response and enrollment nurture, application and document collection, and student and parent FAQ handling — with the specifics of your industry built in.',
+      answer: 'An AI chatbot uses a language model to understand and respond in natural language, answering from a business\'s own content and taking actions like booking or routing, far beyond old script-based bots. For an institution in education, that means applying it to the workflows that consume your team — inquiry response and enrollment nurture, application and document collection, and student and parent FAQ handling — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our institution already uses?',
-      answer: 'Yes. We build into the systems education institutions actually run onstudent information systems, CRMs, scheduling tools, communication platforms, and payment systems, connecting rather than replacing them, so the automation fits your existing operation.',
+      answer: 'Yes. We build into the systems education institutions actually run on: student information systems, CRMs, scheduling tools, communication platforms, and payment systems, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
-      answer: 'Generic automation ignores what makes education different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+      answer: 'Generic automation ignores what makes education different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

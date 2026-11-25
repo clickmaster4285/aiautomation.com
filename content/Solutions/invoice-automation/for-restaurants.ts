@@ -26,7 +26,7 @@ export const invoiceAutomationForRestaurants: SolutionData = {
   sections: {
     'Why Restaurants & Hospitality Need Invoice & Finance Automation': `Restaurants and hospitality businesses run at full speed during service, which is exactly when calls, reservation requests, and questions pour in. Phones ring unanswered during the rush; reservation no-shows leave tables empty; review responses pile up; and marketing to fill slow periods never quite happens. The operational reality is that the people are busy hosting, so the communication layer has to run itself.
 
-Invoice & Finance Automation addresses this directly. It automates the invoice-to-books pipeline and the finance workflows around itinvoices captured and read on arrival, data validated against expected values, approvals routed and chased, entries pushed into your accounting system, and exceptions flagged with the specific issue. Finance can't tolerate silent errors, so validation and human checkpoints are built in wherever mistakes would be costly. For a business, that capability lands exactly where the hours are currently going.`,
+Invoice & Finance Automation addresses this directly. It automates the invoice-to-books pipeline and the finance workflows around it: invoices captured and read on arrival, data validated against expected values, approvals routed and chased, entries pushed into your accounting system, and exceptions flagged with the specific issue. Finance can't tolerate silent errors, so validation and human checkpoints are built in wherever mistakes would be costly. For a business, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Restaurants & Hospitality': `**Calls missed during service.** Reservation and inquiry calls during the rush go unanswered — each one potentially a lost table or event booking.
 **No-shows.** Unconfirmed reservations that don't arrive cost revenue that automated confirmations would have protected.
@@ -133,9 +133,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '20+', label: 'Hours Saved per Week' },
-    { value: '85%', label: 'Invoices Processed Hands-Free' },
-    { value: '95%', label: 'Customer Satisfaction' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -174,12 +174,12 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'Will this work with the tools our business already uses?',
       answer:
-        'Yes. We build into the systems restaurants & hospitality actually run onreservation platforms, POS systems, review platforms, and communication channels, connecting rather than replacing them, so the automation fits your existing operation.',
+        'Yes. We build into the systems restaurants & hospitality actually run on: reservation platforms, POS systems, review platforms, and communication channels, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
       answer:
-        'Generic automation ignores what makes restaurants & hospitality different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+        'Generic automation ignores what makes restaurants & hospitality different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

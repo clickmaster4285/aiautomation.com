@@ -25,7 +25,7 @@ export const aiAgentsForRestaurants: SolutionData = {
   sections: {
     'Why Restaurants & Hospitality Need AI Agent Development': `Restaurants and hospitality businesses run at full speed during service, which is exactly when calls, reservation requests, and questions pour in. Phones ring unanswered during the rush; reservation no-shows leave tables empty; review responses pile up; and marketing to fill slow periods never quite happens. The operational reality is that the people are busy hosting, so the communication layer has to run itself.
 
-AI Agent Development addresses this directly. It builds software that pursues goals, not just answers questionsreasoning about a task, using your tools, taking multiple steps, and acting inside your systems. An agent doesn't just tell someone the status; it looks it up, drafts the response, sends it, and logs the activity. It closes the loop, which is the part that actually removes work. For a business, that capability lands exactly where the hours are currently going.`,
+AI Agent Development addresses this directly. It builds software that pursues goals, not just answers questions: reasoning about a task, using your tools, taking multiple steps, and acting inside your systems. An agent doesn't just tell someone the status; it looks it up, drafts the response, sends it, and logs the activity. It closes the loop, which is the part that actually removes work. For a business, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Restaurants & Hospitality': `**Calls missed during service.** Reservation and inquiry calls during the rush go unanswered — each one potentially a lost table or event booking.
 **No-shows.** Unconfirmed reservations that don't arrive cost revenue that automated confirmations would have protected.
@@ -132,9 +132,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '20+', label: 'Hours Saved per Week' },
-    { value: '85%', label: 'Process Automation' },
-    { value: '96%', label: 'Guest Satisfaction' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -171,11 +171,11 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
     {
       question: 'Will this work with the tools our business already uses?',
-      answer: 'Yes. We build into the systems restaurants & hospitality businesses actually run onreservation platforms, POS systems, review platforms, and communication channels, connecting rather than replacing them, so the automation fits your existing operation.',
+      answer: 'Yes. We build into the systems restaurants & hospitality businesses actually run on: reservation platforms, POS systems, review platforms, and communication channels, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
-      answer: 'Generic automation ignores what makes restaurants & hospitality different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+      answer: 'Generic automation ignores what makes restaurants & hospitality different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

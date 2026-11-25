@@ -58,7 +58,7 @@ For most, that points to quote intake and data gathering or certificate of insur
 
 What it is: the routine work. The automation that produces, nurtures, and reports, handled automatically, consistently, at any hour, so your agency runs on systems instead of memory and heroics.`,
 
-    'A Worked Example': `Consider what happens when a client emails asking for a certificate of insurance. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the request is recognized and the relevant policy details are pulled from the agency management system, the certificate is generated and sent to the client within minutes, the activity is logged automatically, and the CSR only sees it if something doesn't matchturning a constant interruption into a background process.
+    'A Worked Example': `Consider what happens when a client emails asking for a certificate of insurance. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the request is recognized and the relevant policy details are pulled from the agency management system, the certificate is generated and sent to the client within minutes, the activity is logged automatically, and the CSR only sees it if something doesn't match, turning a constant interruption into a background process.
 
 That's the pattern across everything we build for insurance agencies: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
@@ -133,9 +133,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '5x', label: 'Content Output' },
-    { value: '20+', label: 'Hours Saved per Week' },
-    { value: '3x', label: 'Campaign Volume' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -169,17 +169,17 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is marketing automation for insurance agencies?',
       answer:
-        'AI marketing automation uses AI and workflows to run marketing tasks automatically — generating content, personalizing nurture sequences, managing campaigns, and reporting, so teams produce more without proportionally more staff. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
+        'AI marketing automation uses AI and workflows to run marketing tasks automatically — generating content, personalizing nurture sequences, managing campaigns, and reporting, so teams produce more without proportionally more staff. For an insurance agency, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our agency already uses?',
       answer:
-        'Yes. We build into the systems insurance agencies actually run on agency management systems (AMS), carrier portals, rating tools, CRM platforms, and client communication tools, connecting rather than replacing them, so the automation fits your existing operation.',
+        'Yes. We build into the systems insurance agencies actually run on: agency management systems (AMS), carrier portals, rating tools, CRM platforms, and client communication tools, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
       answer:
-        'Generic automation ignores what makes insurance agencies different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+        'Generic automation ignores what makes insurance agencies different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

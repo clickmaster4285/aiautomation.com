@@ -142,10 +142,38 @@ function renderBlock(block: SolutionBlock, index: number, ctx: Ctx, tone: Tone |
     // Breadcrumb from the site hierarchy (matches the BreadcrumbList JSON-LD); lead name for the hero form.
     props.breadcrumb = solutionBreadcrumbs(ctx.content.url).map((c) => ({ label: c.name, href: c.path }));
     props.leadName = ctx.content.page.schema.name;
+    // "Learn More" anchors were hand-written and some don't match a section title
+    // ("#why-retail-need-…" vs "Why Retail Businesses Need…"): fall back to the first section.
+    const cta = props.secondaryCta as { text?: string; href?: unknown } | undefined;
+    if (cta && typeof cta.href === 'string' && cta.href.startsWith('#')) {
+      const anchors = ctx.content.page.blocks
+        .filter((b) => b.type !== 'HeroSection' && typeof b.props?.title === 'string')
+        .map((b) => anchorId(b.props!.title as string));
+      if (anchors.length && !anchors.includes(cta.href.slice(1))) {
+        props.secondaryCta = { ...cta, href: `#${anchors[0]}` };
+      }
+    }
   }
   if (tone) props.tone = tone;
   if (marker) props.marker = marker;
-  return <Block key={index} {...props} />;
+  // In-page anchors: content links such as "#why-insurance-agencies-need-crm-automation" (hero
+  // "Learn More") point at the slug of a section's title, so each titled section gets that id.
+  const anchor = block.type !== 'HeroSection' && typeof props.title === 'string' ? anchorId(props.title) : '';
+  if (!anchor) return <Block key={index} {...props} />;
+  return (
+    <div key={index} id={anchor} className="scroll-mt-24">
+      <Block {...props} />
+    </div>
+  );
+}
+
+function anchorId(title: string): string {
+  return title
+    .toLowerCase()
+    .replace(/['’]/g, '')
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
 }
 
 /**

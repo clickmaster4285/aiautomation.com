@@ -1,5 +1,6 @@
 'use client';
 
+import { useId } from 'react';
 import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer } from './Shared/animation';
 import { Zap } from 'lucide-react';
@@ -8,26 +9,28 @@ import { CONTENT_ICONS } from '@/components/shared/content-icons';
 import type { Section } from '@/content/type';
 
 function RightSideDecor({ isBlack }: { isBlack: boolean }) {
+  // Unique per instance: the section can render more than once on a page.
+  const uid = useId().replace(/[^a-zA-Z0-9]/g, '');
   return (
     <div className="absolute top-0 right-0 pointer-events-none overflow-hidden" style={{ width: 600, height: '100%', minHeight: 600 }}>
       <svg width="600" height="100%" viewBox="0 0 600 800" preserveAspectRatio="xMaxYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
 
         {/* ── Large radial glow blobs ── */}
-        <radialGradient id="blob1" cx="80%" cy="20%" r="55%">
+        <radialGradient id={`blob1-${uid}`} cx="80%" cy="20%" r="55%">
           <stop offset="0%" stopColor="var(--brand)" stopOpacity="0.18" />
           <stop offset="100%" stopColor="var(--brand)" stopOpacity="0" />
         </radialGradient>
-        <radialGradient id="blob2" cx="90%" cy="65%" r="45%">
+        <radialGradient id={`blob2-${uid}`} cx="90%" cy="65%" r="45%">
           <stop offset="0%" stopColor="var(--brand)" stopOpacity="0.13" />
           <stop offset="100%" stopColor="var(--brand)" stopOpacity="0" />
         </radialGradient>
-        <radialGradient id="blob3" cx="70%" cy="90%" r="40%">
+        <radialGradient id={`blob3-${uid}`} cx="70%" cy="90%" r="40%">
           <stop offset="0%" stopColor="var(--brand)" stopOpacity="0.10" />
           <stop offset="100%" stopColor="var(--brand)" stopOpacity="0" />
         </radialGradient>
-        <rect x="0" y="0" width="600" height="800" fill="url(#blob1)" />
-        <rect x="0" y="0" width="600" height="800" fill="url(#blob2)" />
-        <rect x="0" y="0" width="600" height="800" fill="url(#blob3)" />
+        <rect x="0" y="0" width="600" height="800" fill={`url(#blob1-${uid})`} />
+        <rect x="0" y="0" width="600" height="800" fill={`url(#blob2-${uid})`} />
+        <rect x="0" y="0" width="600" height="800" fill={`url(#blob3-${uid})`} />
 
         {/* ── Full-height vertical stripe lines ── */}
         {[520, 548, 570, 588, 600].map((x, i) => (

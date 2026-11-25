@@ -133,9 +133,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '25+', label: 'Hours Saved per Week' },
-    { value: '85%', label: 'Call Answer Rate' },
-    { value: '95%', label: 'Patient Satisfaction' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -169,17 +169,17 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is voice agent for healthcare?',
       answer:
-        'An AI voice agent holds natural spoken phone conversationsunderstanding callers, answering questions, booking appointments, and routing calls — using AI speech and language models. For a practice in healthcare, that means applying it to the workflows that consume your team — appointment scheduling and rescheduling, patient intake and forms, and appointment reminders and confirmations — with the specifics of your industry built in.',
+        'An AI voice agent holds natural spoken phone conversations: understanding callers, answering questions, booking appointments, and routing calls — using AI speech and language models. For a practice in healthcare, that means applying it to the workflows that consume your team — appointment scheduling and rescheduling, patient intake and forms, and appointment reminders and confirmations — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our practice already uses?',
       answer:
-        'Yes. We build into the systems healthcare actually run onpractice management systems, EHR/EMR platforms, scheduling tools, billing systems, and patient communication platforms, connecting rather than replacing them, so the automation fits your existing operation.',
+        'Yes. We build into the systems healthcare practices actually run on: practice management systems, EHR/EMR platforms, scheduling tools, billing systems, and patient communication platforms, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
       answer:
-        'Generic automation ignores what makes healthcare different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+        'Generic automation ignores what makes healthcare different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

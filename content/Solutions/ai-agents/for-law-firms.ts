@@ -25,7 +25,7 @@ export const aiAgentsForLawFirms: SolutionData = {
   sections: {
     'Why Law Firms Need AI Agent Development': `Legal work is wrapped in administration: intake, conflict checks, engagement letters, document drafting from repeated patterns, deadline tracking with serious consequences, and clients who want updates. Attorney time is expensive, so every hour spent on administrative work costs twice: once in salary, once in unbilled opportunity. And the stakes make consistency essential: a missed date or dropped intake isn't just inefficiency, it's risk.
 
-AI Agent Development addresses this directly. It builds software that pursues goals, not just answers questionsreasoning about a task, using your tools, taking multiple steps, and acting inside your systems. An agent doesn't just tell someone the status; it looks it up, drafts the response, sends it, and logs the activity. It closes the loop, which is the part that actually removes work. For a firm, that capability lands exactly where the hours are currently going.`,
+AI Agent Development addresses this directly. It builds software that pursues goals, not just answers questions: reasoning about a task, using your tools, taking multiple steps, and acting inside your systems. An agent doesn't just tell someone the status; it looks it up, drafts the response, sends it, and logs the activity. It closes the loop, which is the part that actually removes work. For a firm, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Law Firms': `**Intake that leaks prospects.** Prospective clients who don't get fast, organized intake often retain the firm that responded first.
 **Repetitive document production.** Routine documents get drafted from scratch or hand-edited templates, consuming hours per matter.
@@ -132,9 +132,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '20+', label: 'Hours Saved per Week' },
-    { value: '85%', label: 'Process Automation' },
-    { value: '98%', label: 'Client Satisfaction' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -171,11 +171,11 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
     {
       question: 'Will this work with the tools our firm already uses?',
-      answer: 'Yes. We build into the systems law firms actually run onpractice management platforms, document management systems, e-signature tools, and billing systems, connecting rather than replacing them, so the automation fits your existing operation.',
+      answer: 'Yes. We build into the systems law firms actually run on: practice management platforms, document management systems, e-signature tools, and billing systems, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
-      answer: 'Generic automation ignores what makes law firms different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+      answer: 'Generic automation ignores what makes law firms different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

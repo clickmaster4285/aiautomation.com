@@ -26,7 +26,7 @@ export const invoiceAutomationForHealthcare: SolutionData = {
   sections: {
     'Why Healthcare Needs Invoice & Finance Automation': `Healthcare practices carry one of the heaviest administrative loads of any industry. For every hour of patient care, front-office and back-office staff spend hours on scheduling, intake paperwork, insurance verification, reminders, billing follow-up, and records movement between systems that rarely talk to each other. Meanwhile phones go unanswered during patient visits, no-shows leave costly gaps in the schedule, and skilled clinical staff get pulled into clerical work.
 
-Invoice & Finance Automation addresses this directly. It automates the invoice-to-books pipeline and the finance workflows around itinvoices captured and read on arrival, data validated against expected values, approvals routed and chased, entries pushed into your accounting system, and exceptions flagged with the specific issue. Finance can't tolerate silent errors, so validation and human checkpoints are built in wherever mistakes would be costly. For a practice, that capability lands exactly where the hours are currently going.`,
+Invoice & Finance Automation addresses this directly. It automates the invoice-to-books pipeline and the finance workflows around it: invoices captured and read on arrival, data validated against expected values, approvals routed and chased, entries pushed into your accounting system, and exceptions flagged with the specific issue. Finance can't tolerate silent errors, so validation and human checkpoints are built in wherever mistakes would be costly. For a practice, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Healthcare': `**Missed and unanswered calls.** Front-desk staff are with patients when calls come in; callers needing appointments often reach voicemail and book with another practice instead.
 **No-shows and schedule gaps.** Missed appointments cost revenue directly and waste slots other patients needed; manual reminder calls are inconsistent because staff rarely have time.
@@ -133,9 +133,9 @@ We start with a free audit that identifies your highest-return workflow, automat
     },
   ],
   stats: [
-    { value: '25+', label: 'Hours Saved per Week' },
-    { value: '85%', label: 'Invoices Processed Hands-Free' },
-    { value: '5+', label: 'Days Cut from Close' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -174,12 +174,12 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'Will this work with the tools our practice already uses?',
       answer:
-        'Yes. We build into the systems healthcare actually run onpractice management systems, EHR/EMR platforms, scheduling tools, billing systems, and patient communication platforms, connecting rather than replacing them, so the automation fits your existing operation.',
+        'Yes. We build into the systems healthcare practices actually run on: practice management systems, EHR/EMR platforms, scheduling tools, billing systems, and patient communication platforms, connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
       answer:
-        'Generic automation ignores what makes healthcare different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your fields, so the automation handles your actual work, not a generic approximation of it.',
+        'Generic automation ignores what makes healthcare different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
     },
     {
       question: 'What results should we expect?',

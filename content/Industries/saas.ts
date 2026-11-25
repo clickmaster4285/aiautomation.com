@@ -18,8 +18,8 @@ export const saas: ServiceContent = {
         'This page explains where SaaS companies feel the strain as they grow, what we automate, and how it fits a modern SaaS stack.',
       ],
       stats: [
-        { label: 'SUPPORT TICKETS DEFLECTED', value: '80%+' },
-        { label: 'ONBOARDING TIME REDUCED', value: '60%+' },
+        { label: 'AUTOMATION AUDIT', value: 'Free' },
+        { label: 'OWNERSHIP OF THE BUILD', value: '100%' },
       ],
       ctas: [
         { text: 'Book a Free Audit', link: '/free-automation-audit', primary: true },

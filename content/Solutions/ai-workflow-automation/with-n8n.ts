@@ -81,9 +81,9 @@ export const aiWorkflowAutomationWithN8n: SolutionData = {
     },
   ],
   stats: [
-    { value: '100+', label: 'Workflows Built' },
-    { value: '< 1s', label: 'Avg. Response Time' },
-    { value: '90%+', label: 'Process Automation' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -165,9 +165,10 @@ export const aiWorkflowAutomationWithN8n: SolutionData = {
           id: 'why-n8n',
           title: 'Why n8n for AI Workflow Automation',
           stats: [
-            { label: 'Self-Hosted', value: '✓' },
-            { label: 'No Per-Task Fees', value: '✓' },
-            { label: 'Deep AI/LLM Support', value: '✓' },
+            { value: 'Free', label: 'Automation Audit' },
+            { value: '30 min', label: 'Audit Call, No Obligation' },
+            { value: '1st', label: 'Highest-Return Workflow First' },
+            { value: '100%', label: 'Ownership Guaranteed' },
           ],
           cta: { text: 'See Our Process', href: '#how-we-work' },
           background: 'muted',

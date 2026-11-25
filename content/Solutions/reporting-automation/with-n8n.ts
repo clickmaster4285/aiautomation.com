@@ -81,9 +81,9 @@ export const reportingAutomationWithN8n: SolutionData = {
     },
   ],
   stats: [
-    { value: '40+', label: 'Reporting Systems Built' },
-    { value: '90%+', label: 'Time Saved' },
-    { value: '99%', label: 'Data Accuracy' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
     { value: '100%', label: 'Ownership Guaranteed' },
   ],
   bestFor: [
@@ -165,9 +165,10 @@ export const reportingAutomationWithN8n: SolutionData = {
           id: 'why-n8n',
           title: 'Why n8n for Reporting Automation',
           stats: [
-            { label: 'Self-Hosted', value: '✓' },
-            { label: 'No Per-Task Fees', value: '✓' },
-            { label: 'Deep AI/LLM Support', value: '✓' },
+            { value: 'Free', label: 'Automation Audit' },
+            { value: '30 min', label: 'Audit Call, No Obligation' },
+            { value: '1st', label: 'Highest-Return Workflow First' },
+            { value: '100%', label: 'Ownership Guaranteed' },
           ],
           cta: { text: 'See Our Process', href: '#how-we-work' },
           background: 'muted',

@@ -51,9 +51,10 @@ export const aiVoiceAgents = {
   },
 
   stats: [
-    { value: '85%', label: 'faster first-response time to inbound calls' },
-    { value: '3x', label: 'more qualified appointments booked' },
-    { value: '24/7', label: 'call coverage without added headcount' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
+    { value: '100%', label: 'Ownership Guaranteed' },
   ],
 
   faqQuestions: [
