@@ -9,7 +9,7 @@ export const invoiceAutomationForHealthcare: SolutionData = {
   title: 'Invoice & Finance Automation for Healthcare',
   primaryKeyword: 'finance automation for healthcare',
   titleTag: 'Invoice & Finance Automation for Healthcare | Clickmasters',
-  metaDescription: 'Healthcare teams use Clickmasters invoice automation to capture, check, and post bills so the close has fewer errors. Book a free audit. Ask the team.',
+  metaDescription: 'Finance automation for healthcare that captures supplier invoices, validates the data, and routes approvals so the books stay accurate. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const invoiceAutomationForHealthcare: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Invoice & Finance Automation for Healthcare',
-  heroSubheading: 'Automation that captures, validates, and posts, built for how healthcare practices actually operate.',
+  heroSubheading: 'Finance automation for healthcare that captures, validates, and posts, built for how medical practices actually operate.',
   heroBadge: 'Invoice & Finance Automation',
   description:
     'Clickmasters builds Invoice & Finance Automation for healthcare. Automation that captures, validates, and posts automatically, built around how a practice in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of healthcare, delivered as a system your team owns and relies on.',
@@ -58,13 +58,13 @@ For most, that points to appointment scheduling and rescheduling or patient inta
 
 What it is: the routine work. The automation that captures, validates, and posts, handled automatically, consistently, at any hour, so your practice runs on systems instead of memory and heroics.`,
 
-    'A Worked Example': `Consider what happens when a patient calls after hours to book an appointment. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the call is answered immediately, the patient's need is understood, available slots are checked in the practice's scheduling system, the appointment is booked and confirmed by text, intake forms are sent automatically, and a reminder sequence is scheduledall before the office opens the next morning.
+    'A Worked Example': `Consider what happens when a patient calls after hours to book an appointment. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the call is answered immediately, the patient's need is understood, available slots are checked in the practice's scheduling system, the appointment is booked and confirmed by text, intake forms are sent automatically, and a reminder sequence is scheduled — all before the office opens the next morning.
 
 That's the pattern across everything we build for healthcare: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
     'Built for Healthcare\'s Realities': `Patient data is among the most sensitive information there is. Automation in healthcare must be built with strict access controls, secure data handling, and, where appropriate, infrastructure that keeps patient information inside your environment. Clinical decisions always stay with clinicians; automation handles the administrative wrapper around care, never the care itself. Formal compliance obligations such as HIPAA are a shared responsibility that depends on your specific setup, and should be confirmed for your situation.
 
-We integrate with the systems your practice already runspractice management systems, EHR/EMR platforms, scheduling tools, billing systems, and patient communication platforms, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your practice already runs — practice management systems, EHR/EMR platforms, scheduling tools, billing systems, and patient communication platforms, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For healthcare, the return shows up as: fewer missed calls and no-shows (each a direct revenue recovery), front-desk hours reclaimed from phones and paperwork for in-person patient care, faster intake with complete information, and a smoother patient experience from first contact. On the finance automation side specifically, the headline metric is invoices processed hands-free and days cut from the close.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is finance automation for healthcare?',
       answer:
-        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting systemwith exceptions flagged for human review. For a practice in healthcare, that means applying it to the workflows that consume your teamappointment scheduling and rescheduling, patient intake and forms, and appointment reminders and confirmationswith the specifics of your industry built in.',
+        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting system — with exceptions flagged for human review. For a practice in healthcare, that means applying it to the workflows that consume your team — appointment scheduling and rescheduling, patient intake and forms, and appointment reminders and confirmations — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our practice already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about invoice & finance automation for healthcare' } },
+      { type: 'FAQSection', props: { title: 'Finance Automation for Healthcare FAQs', subtitle: 'Common questions about invoice & finance automation for healthcare' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

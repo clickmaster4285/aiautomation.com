@@ -9,7 +9,7 @@ export const salesAutomationForAccountingFirms: SolutionData = {
   title: 'AI Sales Automation for Accounting Firms',
   primaryKeyword: 'sales automation for accounting firms',
   titleTag: 'AI Sales Automation for Accounting Firms | Clickmasters',
-  metaDescription: 'Accounting firms use Clickmasters sales automation to enrich leads, follow up, and log activity so reps can sell. Start with one high-volume workflow.',
+  metaDescription: 'Sales automation for accounting firms that enriches prospect data, follows up on proposals, and logs every touchpoint in your CRM. Book a free automation audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,20 +19,20 @@ export const salesAutomationForAccountingFirms: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Sales Automation for Accounting Firms',
-  heroSubheading: 'Automation that enriches, follows up, and logs, built for how accounting firms actually operate.',
+  heroSubheading: 'Sales automation for accounting firms that enriches prospects, follows up on time, and logs every touchpoint without manual entry.',
   heroBadge: 'AI Sales Automation',
   description:
     'Clickmasters builds AI Sales Automation for accounting firms. Automation that enriches, follows up, and logs automatically, built around how a firm in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of accounting firms, delivered as a system your team owns and relies on.',
   sections: {
     'Why Accounting Firms Need AI Sales Automation': `Accounting firms sell expertise but spend a startling share of their hours on document chasing, data entry, and administrative coordination. Clients send documents late and piecemeal; staff key data from statements and receipts into software; deadlines are tracked in spreadsheets; and every busy season the same bottlenecks return. The work that actually requires an accountant's judgment is a fraction of the hours billed to get there.
 
-AI Sales Automation addresses this directly. It removes the administrative grind around sellingleads enriched and scored the moment they arrive, follow-up sequences that never slip, CRM records that update themselves, and reports that assemble automatically. Your reps spend their time on conversations that close, not on data entry. For a firm, that capability lands exactly where the hours are currently going.`,
+AI Sales Automation addresses this directly. It removes the administrative grind around selling — leads enriched and scored the moment they arrive, follow-up sequences that never slip, CRM records that update themselves, and reports that assemble automatically. Your reps spend their time on conversations that close, not on data entry. For a firm, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Accounting Firms': `**Document collection chase.** Getting complete records from clients means endless follow-up emails; missing documents stall engagements and compress deadlines.
 **Manual data entry.** Keying transactions, statements, and receipts into accounting software consumes junior staff hours and introduces errors that seniors then find.
 **Deadline and status tracking.** Tracking dozens or hundreds of client deadlines manually creates risk; a missed filing has real consequences.
 **Repetitive client questions.** Status inquiries and routine questions interrupt production work throughout the day.
-**Onboarding friction.** New client setupengagement letters, document requests, system setupis repetitive and slow.
+**Onboarding friction.** New client setup — engagement letters, document requests, system setup — is repetitive and slow.
 
 Every one of these is a workflow problem, not a people problem, and workflow problems are what automation eliminates.`,
 
@@ -64,7 +64,7 @@ That's the pattern across everything we build for accounting firms: the routine 
 
     'Built for Accounting Firms\' Realities': `Financial data demands accuracy and confidentiality. Automation here is built with validation at every step where an error would be costly, human review on exceptions, and secure handling throughout the automation does the keying and matching; the accountant's judgment stays in charge of anything that matters.
 
-We integrate with the systems your firm already runsaccounting platforms like QuickBooks and Xero, practice management tools, document portals, and tax software, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your firm already runs — accounting platforms like QuickBooks and Xero, practice management tools, document portals, and tax software, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For accounting firms, the return shows up as: junior-staff hours redirected from data entry to review work, faster turnaround on engagements, fewer errors reaching senior review, deadlines tracked automatically instead of anxiously, and busy-season capacity without busy-season burnout. On the sales automation side specifically, the headline metric is selling hours recovered per rep per week.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is sales automation for accounting firms?',
       answer:
-        'AI sales automation handles repetitive sales taskslead enrichment, scoring, follow-up, CRM updates, proposals, and reporting, so reps spend their time selling rather than on administration. For a firm in accounting firms, that means applying it to the workflows that consume your teamclient document collection, transaction and statement data entry, and bank and account reconciliationwith the specifics of your industry built in.',
+        'AI sales automation handles repetitive sales tasks — lead enrichment, scoring, follow-up, CRM updates, proposals, and reporting, so reps spend their time selling rather than on administration. For a firm in accounting firms, that means applying it to the workflows that consume your team — client document collection, transaction and statement data entry, and bank and account reconciliation — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our firm already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about sales automation for accounting firms' } },
+      { type: 'FAQSection', props: { title: 'Sales Automation for Accounting Firms FAQs', subtitle: 'Common questions about sales automation for accounting firms' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

@@ -8,8 +8,8 @@ export const aiAgentsForManufacturing: SolutionData = {
   category: 'ai-agents',
   title: 'AI Agent Development for Manufacturing',
   primaryKeyword: 'AI agent for manufacturing',
-  titleTag: 'AI Agent Development for Manufacturing | Clickmasters AI',
-  metaDescription: 'Manufacturers use Clickmasters AI agents to carry multi-step work inside the tools the team already uses. It runs on the tools the team already has.',
+  titleTag: 'AI Agents for Manufacturing Teams | Clickmasters',
+  metaDescription: 'AI agents for manufacturing teams that process purchase orders, chase supplier updates, and flag production exceptions for review. Book a free automation audit.',
   keywordEvidence: 'pattern-based',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,8 +18,8 @@ export const aiAgentsForManufacturing: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'AI Agent Development for Manufacturing',
-  heroSubheading: 'Automation that reasons, acts, and completes, built for how manufacturing operations actually work.',
+  heroHeading: 'AI Agents for Manufacturing',
+  heroSubheading: 'AI agents for manufacturing operations that reason, act, and finish multi-step work inside the tools your team already uses.',
   heroBadge: 'AI Agent Development',
   description: 'Clickmasters builds AI Agent Development for manufacturing. Automation that reasons, acts, and completes automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of manufacturing, delivered as a system your team owns and relies on.',
   sections: {
@@ -63,7 +63,7 @@ That's the pattern across everything we build for manufacturing: the routine han
 
     'Built for Manufacturing\'s Realities': `Manufacturing data spans pricing, supplier terms, and operational details that competitors would value. Automation is scoped with appropriate access controls, and anything touching production decisions keeps human oversight. The automation moves the data; your team runs the operation.
 
-We integrate with the systems your operation already runsERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your operation already runs — ERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For manufacturing, the return shows up as: order-processing time cut from hours to minutes, fewer entry errors reaching the floor or the invoice, reorder points watched automatically, reports that assemble themselves, and office headcount that doesn't scale linearly with order volume. On the AI agent side specifically, the headline metric is complete tasks handled end to end without human touches.
 
@@ -167,7 +167,7 @@ We start with a free audit that identifies your highest-return workflow, automat
   faqQuestions: [
     {
       question: 'What is AI agent for manufacturing?',
-      answer: 'An AI agent is software that uses an AI model to reason about a goal, use tools, and take multi-step action inside real systemsunlike a chatbot, which mainly answers questions. For a operation in manufacturing, that means applying it to the workflows that consume your teamsales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alertswith the specifics of your industry built in.',
+      answer: 'An AI agent is software that uses an AI model to reason about a goal, use tools, and take multi-step action inside real systemsunlike a chatbot, which mainly answers questions. For a operation in manufacturing, that means applying it to the workflows that consume your team — sales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alerts — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our operation already uses?',
@@ -264,7 +264,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI agents for manufacturing' } },
+      { type: 'FAQSection', props: { title: 'AI Agents for Manufacturing FAQs', subtitle: 'Common questions about AI agents for manufacturing' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

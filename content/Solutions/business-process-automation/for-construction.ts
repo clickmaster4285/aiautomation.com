@@ -9,7 +9,7 @@ export const businessProcessAutomationForConstruction: SolutionData = {
   title: 'Business Process Automation for Construction',
   primaryKeyword: 'process automation for construction',
   titleTag: 'Business Process Automation for Construction | Clickmasters',
-  metaDescription: 'Construction companies use Clickmasters business process automation to take repetitive operations off the people who currently chase them. Ask the team.',
+  metaDescription: 'Process automation for construction companies that keeps RFIs, change orders, and subcontractor paperwork moving between office and site. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const businessProcessAutomationForConstruction: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Business Process Automation for Construction',
-  heroSubheading: 'Automation that runs, coordinates, and completes, built for how construction companies actually operate.',
+  heroSubheading: 'Business process automation for construction companies that runs, coordinates, and completes the handoffs between the office and the job site.',
   heroBadge: 'Business Process Automation',
   description:
     'Clickmasters builds Business Process Automation for construction. Automation that runs, coordinates, and completes automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of construction, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for construction: the routine hand
 
     'Built for Construction\'s Realities': `Bid pricing and project data are competitively sensitive; automation is scoped accordingly, and anything contractual keeps human review. The automation handles the paperwork flow, your team runs the projects.
 
-We integrate with the systems your company already runsconstruction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your company already runs — construction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For construction, the return shows up as: more bids won from faster response, office hours reclaimed from chasing documents and sending updates, invoicing that keeps pace with the work, and clients who feel informed instead of ignored. On the process automation side specifically, the headline metric is end-to-end process time cut and hand-off delays eliminated.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is process automation for construction?',
       answer:
-        'Business process automation (BPA) uses software and AI to run an entire business processall its steps, systems, and hand-offs. Automatically, rather than automating just one task. For a company in construction, that means applying it to the workflows that consume your teamlead intake and estimate follow-up, bid request handling, and project document collection and organizationwith the specifics of your industry built in.',
+        'Business process automation (BPA) uses software and AI to run an entire business process — all its steps, systems, and hand-offs. Automatically, rather than automating just one task. For a company in construction, that means applying it to the workflows that consume your team — lead intake and estimate follow-up, bid request handling, and project document collection and organization — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our company already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about business process automation for construction' } },
+      { type: 'FAQSection', props: { title: 'Process Automation for Construction FAQs', subtitle: 'Common questions about business process automation for construction' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

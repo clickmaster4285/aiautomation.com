@@ -8,8 +8,8 @@ export const aiChatbotsForRealEstate: SolutionData = {
   category: 'ai-chatbots',
   title: 'AI Chatbots for Real Estate',
   primaryKeyword: 'chatbot for real estate',
-  titleTag: 'AI Chatbots for Real Estate Services | Clickmasters',
-  metaDescription: 'Real estate brokerages use Clickmasters AI chatbots to answer questions, qualify leads, and book appointments. Start with one high-volume workflow.',
+  titleTag: 'AI Chatbots for Real Estate Teams | Clickmasters',
+  metaDescription: 'An AI chatbot for real estate teams that answers listing questions, qualifies buyers and renters, and books showings day or night. Book a free automation audit.',
   keywordEvidence: '4 matching keywords, ~1,100 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const aiChatbotsForRealEstate: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Chatbots for Real Estate',
-  heroSubheading: 'Automation that answers, qualifies, and books, built for how real estate teams actually operate.',
+  heroSubheading: 'An AI chatbot for real estate teams that answers, qualifies, and books, built for how your team actually works.',
   heroBadge: 'AI Chatbots',
   description:
     'Clickmasters builds AI Chatbots for real estate. Automation that answers, qualifies, and books automatically, built around how a team in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of real estate, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for real estate: the routine handl
 
     'Built for Real Estate\'s Realities': `Client financial details and transaction information warrant careful handling, and automation keeps agents in control of relationships and negotiationsit handles the response speed and the follow-up consistency, while the human handles the human part.
 
-We integrate with the systems your team already runsreal estate CRMs, lead sources and portals, showing management tools, transaction management platforms, and calendar systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your team already runs — real estate CRMs, lead sources and portals, showing management tools, transaction management platforms, and calendar systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For real estate, the return shows up as: more leads converted from instant response, revenue recovered from long-tail nurture that actually happens, hours reclaimed from scheduling ping-pong, and transactions that close without deadline scares. On the chatbot side specifically, the headline metric is conversations handled and leads captured around the clock.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is chatbot for real estate?',
       answer:
-        'An AI chatbot uses a language model to understand and respond in natural language, answering from a business\'s own content and taking actions like booking or routing, far beyond old script-based bots. For a team in real estate, that means applying it to the workflows that consume your teaminstant lead response and qualification, long-term nurture and reactivation sequences, and showing scheduling and reminderswith the specifics of your industry built in.',
+        'An AI chatbot uses a language model to understand and respond in natural language, answering from a business\'s own content and taking actions like booking or routing, far beyond old script-based bots. For a team in real estate, that means applying it to the workflows that consume your team — instant lead response and qualification, long-term nurture and reactivation sequences, and showing scheduling and reminders — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our team already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI chatbots for real estate' } },
+      { type: 'FAQSection', props: { title: 'Chatbots for Real Estate FAQs', subtitle: 'Common questions about AI chatbots for real estate' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

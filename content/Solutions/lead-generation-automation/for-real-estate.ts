@@ -8,8 +8,8 @@ export const leadGenerationAutomationForRealEstate: SolutionData = {
   category: 'lead-generation-automation',
   title: 'Lead Generation Automation for Real Estate',
   primaryKeyword: 'lead generation system for real estate',
-  titleTag: 'Lead Generation Automation for Real Estate | Clickmasters',
-  metaDescription: 'Real estate brokerages use Clickmasters lead generation automation to capture, qualify, and route new demand while it is still warm. Ask the team.',
+  titleTag: 'Lead Generation Systems for Real Estate | Clickmasters',
+  metaDescription: 'Lead generation systems for real estate teams that capture buyer and seller inquiries, qualify timelines, and route them to the right agent. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,15 +18,15 @@ export const leadGenerationAutomationForRealEstate: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'Lead Generation Automation for Real Estate',
-  heroSubheading: 'Automation that captures, qualifies, and routes, built for how real estate teams actually operate.',
+  heroHeading: 'Lead Generation Systems for Real Estate',
+  heroSubheading: 'A lead generation system for real estate that helps you capture, qualify, and route buyer and seller leads, built for how real estate teams actually operate.',
   heroBadge: 'Lead Generation Automation',
   description:
     'Clickmasters builds Lead Generation Automation for real estate. Automation that captures, qualifies, and routes automatically, built around how a team in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of real estate, delivered as a system your team owns and relies on.',
   sections: {
     'Why Real Estate Needs Lead Generation Automation': `Real estate is decided by speed to lead and consistency of follow-up, and both break down precisely when agents are busiest. The enquiry that arrives during a showing waits hours; the lead that needed six months of nurture goes cold after two weeks of silence; the transaction with a dozen moving deadlines depends on someone remembering everything. The agents who win aren't necessarily better closers; they're the ones whose systems never let a lead or a deadline slip.
 
-Lead Generation Automation addresses this directly. It captures, qualifies, and works leads automaticallyinstant response the moment interest shows, conversational qualification, enrichment and scoring, and routing that puts sales-ready leads in front of the right person with context. Speed and consistency are what convert leads, and both are exactly what automation delivers. For a team, that capability lands exactly where the hours are currently going.`,
+Lead Generation Automation addresses this directly. It captures, qualifies, and works leads automatically — instant response the moment interest shows, conversational qualification, enrichment and scoring, and routing that puts sales-ready leads in front of the right person with context. Speed and consistency are what convert leads, and both are exactly what automation delivers. For a team, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Real Estate': `**Slow lead response.** Leads expect a response in minutes; agents mid-showing or asleep respond in hours, by which time the lead has heard from someone else.
 **Nurture that doesn't happen.** Most leads transact months later, but consistent long-term follow-up by hand is exactly what busy agents fail to sustain.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for real estate: the routine handl
 
     'Built for Real Estate\'s Realities': `Client financial details and transaction information warrant careful handling, and automation keeps agents in control of relationships and negotiationsit handles the response speed and the follow-up consistency, while the human handles the human part.
 
-We integrate with the systems your team already runsreal estate CRMs, lead sources and portals, showing management tools, transaction management platforms, and calendar systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your team already runs — real estate CRMs, lead sources and portals, showing management tools, transaction management platforms, and calendar systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For real estate, the return shows up as: more leads converted from instant response, revenue recovered from long-tail nurture that actually happens, hours reclaimed from scheduling ping-pong, and transactions that close without deadline scares. On the lead generation system side specifically, the headline metric is lead response time in seconds and conversion lift from consistency.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is lead generation system for real estate?',
       answer:
-        'Lead generation automation captures and responds to leads instantly, qualifies them conversationally, enriches and scores them, and routes sales-ready prospects to the right personwhile nurturing the rest until they\'re ready. For a team in real estate, that means applying it to the workflows that consume your teaminstant lead response and qualification, long-term nurture and reactivation sequences, and showing scheduling and reminderswith the specifics of your industry built in.',
+        'Lead generation automation captures and responds to leads instantly, qualifies them conversationally, enriches and scores them, and routes sales-ready prospects to the right person — while nurturing the rest until they\'re ready. For a team in real estate, that means applying it to the workflows that consume your team — instant lead response and qualification, long-term nurture and reactivation sequences, and showing scheduling and reminders — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our team already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about lead generation automation for real estate' } },
+      { type: 'FAQSection', props: { title: 'Lead Generation Systems for Real Estate FAQs', subtitle: 'Common questions about lead generation automation for real estate' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

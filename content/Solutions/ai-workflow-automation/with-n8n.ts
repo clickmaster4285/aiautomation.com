@@ -8,8 +8,8 @@ export const aiWorkflowAutomationWithN8n: SolutionData = {
   category: 'ai-workflow-automation',
   title: 'AI Workflow Automation with n8n',
   primaryKeyword: 'n8n workflow automation',
-  titleTag: 'AI Workflow Automation Built on n8n | Clickmasters AI',
-  metaDescription: 'Teams running n8n use Clickmasters AI workflow automation to move multi-step work across systems without manual handoffs. Book a free audit. Ask the team.',
+  titleTag: 'n8n Workflow Automation with AI | Clickmasters',
+  metaDescription: 'n8n workflow automation built for production: self-hosted, no per-task fees, and AI steps that classify, extract, and route your data. Book a free audit.',
   keywordEvidence: '2 matching keywords, ~50,500 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -17,14 +17,14 @@ export const aiWorkflowAutomationWithN8n: SolutionData = {
     'n8n platform page',
     'AI Automation Agency pillar',
   ],
-  heroHeading: 'AI Workflow Automation Built on n8n',
-  heroSubheading: 'Open-source, self-hostable automation with no per-task fees and deep AI/LLM support, built for production workflows.',
+  heroHeading: 'n8n Workflow Automation with AI',
+  heroSubheading: 'Production n8n workflow automation: open-source, self-hostable, no per-task fees, and deep AI/LLM support.',
   heroBadge: 'AI Workflow × n8n',
-  description: 'Clickmasters builds workflow automation on n8n. n8n is an open-source, self-hostable automation platform with no per-task fees and the deepest AI/LLM support of the mainstream tools, and it\'s an excellent fit for high-volume, data-sensitive, or AI-heavy production workflows. Combined with workflow automation, which connects your apps and runs multi-step processes automaticallydata moves, decisions get made, and actions fire without manual hand-offs. Where basic automation follows fixed rules, the AI layer reads unstructured information, classifies it, drafts responses, and chooses between paths, handling the judgment calls a person used to make, the result is automation that runs on a platform matched to the job.',
+  description: 'Clickmasters builds workflow automation on n8n. n8n is an open-source, self-hostable automation platform with no per-task fees and the deepest AI/LLM support of the mainstream tools, and it\'s an excellent fit for high-volume, data-sensitive, or AI-heavy production workflows. Combined with workflow automation, which connects your apps and runs multi-step processes automatically — data moves, decisions get made, and actions fire without manual hand-offs. Where basic automation follows fixed rules, the AI layer reads unstructured information, classifies it, drafts responses, and chooses between paths, handling the judgment calls a person used to make, the result is automation that runs on a platform matched to the job.',
   sections: {
-    'Why n8n for AI Workflow Automation': 'n8n is an open-source, self-hostable automation platform with no per-task fees and the deepest AI/LLM support of the mainstream tools. Self-hosting gives full data controlyour information never leaves your environment. For workflow automation specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. n8n is the right home for this work when it matches high-volume, data-sensitive, or AI-heavy production workflows, and when it does, this combination is hard to beat.',
+    'Why n8n for AI Workflow Automation': 'n8n is an open-source, self-hostable automation platform with no per-task fees and the deepest AI/LLM support of the mainstream tools. Self-hosting gives full data control — your information never leaves your environment. For workflow automation specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. n8n is the right home for this work when it matches high-volume, data-sensitive, or AI-heavy production workflows, and when it does, this combination is hard to beat.\n\nBecause n8n runs high volumes without per-task costs, it suits the back-office work that sits next to a single workflow. We often extend an n8n build into document processing for incoming files, data entry between systems that lack a native integration, and customer support routing that reads and tags each ticket.',
     'What a Production Build Includes': 'The gap between a prototype and a system you can rely on is everything that happens when things go wrong. Every workflow automation build we ship on n8n includes error handling on every step (failures caught and retried or escalated, never silent), monitoring and alerting (you know the system is running without checking), documentation (your team can understand and modify the build), and staged rollout (the automation proves itself on real cases with human oversight before it runs unattended).\n\nThis is the difference between automation that saves hours and automation that quietly breaks and costs trust. Most of the rescue projects we take on are builds that skipped these steps.',
-    'Typical Workflows on n8n': 'The workflow automation workflows we most often build on n8n follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is neededclassification, extraction, drafting, and the result is executed and logged. n8n\'s strengths make it particularly suited to high-volume, data-sensitive, or AI-heavy production workflows, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
+    'Typical Workflows on n8n': 'The workflow automation workflows we most often build on n8n follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is needed — classification, extraction, drafting, and the result is executed and logged. n8n\'s strengths make it particularly suited to high-volume, data-sensitive, or AI-heavy production workflows, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
   },
   features: [
     {
@@ -122,15 +122,15 @@ export const aiWorkflowAutomationWithN8n: SolutionData = {
     },
     {
       question: 'What does this cost to run?',
-      answer: 'Self-hosting gives full data controlyour information never leaves your environment. We design builds to be efficient on the platform\'s pricing model, and we\'ll tell you honestly if your volume points to a cheaper platform.',
+      answer: 'Self-hosting gives full data control — your information never leaves your environment. We design builds to be efficient on the platform\'s pricing model, and we\'ll tell you honestly if your volume points to a cheaper platform.',
     },
     {
       question: 'Do we own the build?',
       answer: 'Completely. Everything is documented and transparent, in your own accounts, with no dependency on us for changes.',
     },
     {
-      question: 'AI workflow automation uses software and AI to run multi-step processes automaticallyis that what this does?',
-      answer: 'AI workflow automation uses software and AI to run multi-step processes automaticallymoving data between apps, making routine decisions, and triggering actions, so sequences of tasks happen without manual effort. Built on n8n, it runs with the platform\'s strengths: high-volume, data-sensitive, or AI-heavy production workflows.',
+      question: 'AI workflow automation uses software and AI to run multi-step processes automatically — is that what this does?',
+      answer: 'AI workflow automation uses software and AI to run multi-step processes automatically — moving data between apps, making routine decisions, and triggering actions, so sequences of tasks happen without manual effort. Built on n8n, it runs with the platform\'s strengths: high-volume, data-sensitive, or AI-heavy production workflows.',
     },
   ],
   cta: 'Want workflow automation running on n8n?',
@@ -203,7 +203,7 @@ export const aiWorkflowAutomationWithN8n: SolutionData = {
       { type: 'PlatformComparison', props: { title: 'Is n8n Right for You?', subtitle: 'We\'ll tell you honestly if n8n is the right platform for your workflow automation needs.' } },
       { type: 'StatsSection', props: { title: 'Why Choose Clickmasters for n8n Workflow Automation' } },
       { type: 'FAQSection', props: {
-  title: 'Frequently Asked Questions',
+  title: 'n8n Workflow Automation FAQs',
   subtitle: 'Common questions about workflow automation on n8n',
   eyebrow: 'FAQ',
 } },

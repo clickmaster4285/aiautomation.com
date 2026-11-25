@@ -9,7 +9,7 @@ export const invoiceAutomationForEducation: SolutionData = {
   title: 'Invoice & Finance Automation for Education',
   primaryKeyword: 'finance automation for education',
   titleTag: 'Invoice & Finance Automation for Education | Clickmasters',
-  metaDescription: 'Education teams use Clickmasters invoice automation to capture, check, and post bills so the close has fewer errors. Book a free audit. Ask the team.',
+  metaDescription: 'Finance automation for education that captures vendor invoices, routes approvals across departments, and posts entries with fewer errors. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const invoiceAutomationForEducation: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Invoice & Finance Automation for Education',
-  heroSubheading: 'Automation that captures, validates, and posts, built for how educational institutions actually operate.',
+  heroSubheading: 'Finance automation for education that captures, validates, and posts, built for how schools and colleges actually operate.',
   heroBadge: 'Invoice & Finance Automation',
   description:
     'Clickmasters builds Invoice & Finance Automation for education. Automation that captures, validates, and posts automatically, built around how a institution in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of education, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for education: the routine handled
 
     'Built for Education\'s Realities': `Student dataespecially involving minorsdemands careful, restricted handling. Automation is built with strict access controls and appropriate data practices, handling administrative communication while anything sensitive or judgment-based stays with staff.
 
-We integrate with the systems your institution already runsstudent information systems, CRMs, scheduling tools, communication platforms, and payment systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your institution already runs — student information systems, CRMs, scheduling tools, communication platforms, and payment systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For education, the return shows up as: higher inquiry-to-enrollment conversion from fast consistent follow-up, seasonal crunches absorbed without temp staffing, staff hours reclaimed from repetitive questions, and reporting that assembles itself. On the finance automation side specifically, the headline metric is invoices processed hands-free and days cut from the close.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is finance automation for education?',
       answer:
-        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting systemwith exceptions flagged for human review. For a institution in education, that means applying it to the workflows that consume your teaminquiry response and enrollment nurture, application and document collection, and student and parent FAQ handlingwith the specifics of your industry built in.',
+        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting system — with exceptions flagged for human review. For a institution in education, that means applying it to the workflows that consume your team — inquiry response and enrollment nurture, application and document collection, and student and parent FAQ handling — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our institution already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about invoice & finance automation for education' } },
+      { type: 'FAQSection', props: { title: 'Finance Automation for Education FAQs', subtitle: 'Common questions about invoice & finance automation for education' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

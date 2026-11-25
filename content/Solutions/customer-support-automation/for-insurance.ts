@@ -8,8 +8,8 @@ export const customerSupportAutomationForInsurance: SolutionData = {
   category: 'customer-support-automation',
   title: 'Customer Support Automation for Insurance Agencies',
   primaryKeyword: 'support automation for insurance',
-  titleTag: 'Customer Support for Insurance Agencies | Clickmasters',
-  metaDescription: 'Insurance agencies use Clickmasters customer support automation to resolve routine requests and escalate the cases that need a person. Ask the team.',
+  titleTag: 'Customer Support Automation for Insurance | Clickmasters',
+  metaDescription: 'Support automation for insurance agencies that answers policy, billing, and claim status questions and routes complex cases to agents. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const customerSupportAutomationForInsurance: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Customer Support Automation for Insurance Agencies',
-  heroSubheading: 'Automation that resolves, routes, and escalates, built for how insurance agencies actually operate.',
+  heroSubheading: 'Support automation for insurance agencies that resolves routine policyholder requests, routes the rest, and escalates what needs an agent.',
   heroBadge: 'Customer Support Automation',
   description:
     'Clickmasters builds Customer Support Automation for insurance agencies. Automation that resolves, routes, and escalates automatically, built around how an agency in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of insurance agencies, delivered as a system your team owns and relies on.',
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is support automation for insurance agencies?',
       answer:
-        'Customer support automation uses AI agents and workflows to answer common questions from your documentation, triage and route tickets, and draft replieswhile escalating complex cases to human agents with context. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
+        'Customer support automation uses AI agents and workflows to answer common questions from your documentation, triage and route tickets, and draft replies — while escalating complex cases to human agents with context. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our agency already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about customer support automation for insurance agencies' } },
+      { type: 'FAQSection', props: { title: 'Support Automation for Insurance FAQs', subtitle: 'Common questions about customer support automation for insurance agencies' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

@@ -8,8 +8,8 @@ export const businessProcessAutomationForLogistics: SolutionData = {
   category: 'business-process-automation',
   title: 'Business Process Automation for Logistics & Transportation',
   primaryKeyword: 'process automation for logistics',
-  titleTag: 'Business for Logistics & Transportation | Clickmasters',
-  metaDescription: 'Logistics teams use Clickmasters business process automation to take repetitive operations off the people who currently chase them. Book a free audit.',
+  titleTag: 'Process Automation for Logistics Teams | Clickmasters',
+  metaDescription: 'Process automation for logistics and transportation teams that syncs shipment updates, carrier paperwork, and billing across systems. Book a free audit.',
   keywordEvidence: '3 matching keywords, ~150 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const businessProcessAutomationForLogistics: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Business Process Automation for Logistics & Transportation',
-  heroSubheading: 'Automation that runs, coordinates, and completes, built for how logistics operations actually run.',
+  heroSubheading: 'Business process automation for logistics that runs, coordinates, and completes the shipment, carrier, and billing handoffs your team tracks today.',
   heroBadge: 'Business Process Automation',
   description:
     'Clickmasters builds Business Process Automation for logistics & transportation. Automation that runs, coordinates, and completes automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of logistics & transportation, delivered as a system your team owns and relies on.',
@@ -58,13 +58,13 @@ For most, that points to order and tender intake or shipment status updates to c
 
 What it is: the routine work. The automation that runs, coordinates, and completes, handled automatically, consistently, at any hour, so your operation runs on systems instead of memory and heroics.`,
 
-    'A Worked Example': `Consider what happens when a customer emails asking where their shipment is. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the shipment is identified, current status and location are pulled from tracking, an accurate update is sent within seconds, and the interaction is loggeddispatchers stop fielding status calls and customers stop waiting for answers.
+    'A Worked Example': `Consider what happens when a customer emails asking where their shipment is. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the shipment is identified, current status and location are pulled from tracking, an accurate update is sent within seconds, and the interaction is logged — dispatchers stop fielding status calls and customers stop waiting for answers.
 
 That's the pattern across everything we build for logistics & transportation: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
     'Built for Logistics & Transportation\'s Realities': `Shipment and pricing data is commercially sensitive; automation is scoped with appropriate access, and operational decisions stay with dispatch. The automation moves the information so your people move the freight.
 
-We integrate with the systems your operation already runsTMS platforms, tracking systems, document management, accounting software, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your operation already runs — TMS platforms, tracking systems, document management, accounting software, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For logistics & transportation, the return shows up as: dispatcher hours reclaimed from status calls, billing accelerated by documents that process themselves, fewer entry errors in orders, and customer communication that builds retention instead of frustration. On the process automation side specifically, the headline metric is end-to-end process time cut and hand-off delays eliminated.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is process automation for logistics & transportation?',
       answer:
-        'Business process automation (BPA) uses software and AI to run an entire business processall its steps, systems, and hand-offs. Automatically, rather than automating just one task. For a operation in logistics & transportation, that means applying it to the workflows that consume your teamorder and tender intake, shipment status updates to customers, and document collection and processing (POD, BOL)with the specifics of your industry built in.',
+        'Business process automation (BPA) uses software and AI to run an entire business process — all its steps, systems, and hand-offs. Automatically, rather than automating just one task. For a operation in logistics & transportation, that means applying it to the workflows that consume your team — order and tender intake, shipment status updates to customers, and document collection and processing (POD, BOL)with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our operation already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about business process automation for logistics & transportation' } },
+      { type: 'FAQSection', props: { title: 'Process Automation for Logistics FAQs', subtitle: 'Common questions about business process automation for logistics & transportation' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

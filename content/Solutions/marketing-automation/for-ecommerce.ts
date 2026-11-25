@@ -8,8 +8,8 @@ export const marketingAutomationForEcommerce: SolutionData = {
   category: 'marketing-automation',
   title: 'AI Marketing Automation for E-commerce',
   primaryKeyword: 'marketing automation for ecommerce',
-  titleTag: 'AI Marketing Automation for E-commerce | Clickmasters AI',
-  metaDescription: 'E-commerce teams use Clickmasters marketing automation to run nurture and campaign follow-up without a manual queue. Book a free audit. Ask the team.',
+  titleTag: 'AI Marketing Automation for Ecommerce | Clickmasters',
+  metaDescription: 'Marketing automation for ecommerce brands that personalizes email flows, recovers abandoned carts, and segments shoppers by behavior. Book a free audit.',
   keywordEvidence: '4 matching keywords, ~200 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,15 +18,15 @@ export const marketingAutomationForEcommerce: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'AI Marketing Automation for E-commerce',
-  heroSubheading: 'Automation that produces, nurtures, and reports, built for how e-commerce stores actually operate.',
+  heroHeading: 'AI Marketing Automation for Ecommerce',
+  heroSubheading: 'Marketing automation for ecommerce stores that drafts content, nurtures shoppers, and reports on campaigns, built for how your store actually operates.',
   heroBadge: 'AI Marketing Automation',
   description:
     'Clickmasters builds AI Marketing Automation for e-commerce. Automation that produces, nurtures, and reports automatically, built around how a store in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of e-commerce, delivered as a system your team owns and relies on.',
   sections: {
     'Why E-commerce Needs AI Marketing Automation': `E-commerce generates relentless operational volume that scales directly with sales: support tickets about orders and shipping, cart abandonment eating revenue, order exceptions needing attention, review management, and marketing that needs constant feeding. For a lean team, every increase in traffic means more of everything, unless the operational layer runs on automation, which is exactly how small stores punch far above their weight.
 
-AI Marketing Automation addresses this directly. It runs the production and follow-through that consumes marketing teamscontent drafted at scale with human review, nurture sequences that adapt to behavior, campaigns that trigger and segment themselves, and reporting that assembles automatically. The strategy stays human; the relentless execution becomes automatic. For a store, that capability lands exactly where the hours are currently going.`,
+AI Marketing Automation addresses this directly. It runs the production and follow-through that consumes marketing teams — content drafted at scale with human review, nurture sequences that adapt to behavior, campaigns that trigger and segment themselves, and reporting that assembles automatically. The strategy stays human; the relentless execution becomes automatic. For a store, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for E-commerce': `**Support volume tied to sales.** Where's my order, returns, sizingmostly repetitive questions, arriving around the clock, drowning small teams.
 **Abandoned cart revenue loss.** A large share of carts are abandoned; without automated recovery, that revenue simply evaporates.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for e-commerce: the routine handle
 
     'Built for E-commerce\'s Realities': `Customer and payment-adjacent data is handled with scoped access, and customer-facing AI answers from your actual store policies and order data so responses are accurate rather than generic.
 
-We integrate with the systems your store already runsstore platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your store already runs — store platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For e-commerce, the return shows up as: tickets deflected around the clock, cart revenue recovered automatically, faster responses lifting conversion and reviews, and a store that grows sales without growing operational headcount in lockstep. On the marketing automation side specifically, the headline metric is content and campaign output multiplied without added headcount.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is marketing automation for e-commerce?',
       answer:
-        'AI marketing automation uses AI and workflows to run marketing tasks automaticallygenerating content, personalizing nurture sequences, managing campaigns, and reporting, so teams produce more without proportionally more staff. For a store in e-commerce, that means applying it to the workflows that consume your teamcustomer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updateswith the specifics of your industry built in.',
+        'AI marketing automation uses AI and workflows to run marketing tasks automatically — generating content, personalizing nurture sequences, managing campaigns, and reporting, so teams produce more without proportionally more staff. For a store in e-commerce, that means applying it to the workflows that consume your team — customer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updates — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our store already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI marketing automation for e-commerce' } },
+      { type: 'FAQSection', props: { title: 'Marketing Automation for Ecommerce FAQs', subtitle: 'Common questions about AI marketing automation for e-commerce' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

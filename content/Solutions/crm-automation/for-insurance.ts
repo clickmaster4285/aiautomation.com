@@ -9,7 +9,7 @@ export const crmAutomationForInsurance: SolutionData = {
   title: 'CRM Automation for Insurance Agencies',
   primaryKeyword: 'CRM automation for insurance',
   titleTag: 'CRM Automation for Insurance Agencies | Clickmasters AI',
-  metaDescription: 'Insurance agencies use Clickmasters CRM automation to keep contacts, deals, and follow-ups current without re-keying. Book a free audit. Ask the team.',
+  metaDescription: 'CRM automation for insurance agencies that keeps leads, policies, and renewal follow-ups current so producers spend time selling. Book a free automation audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const crmAutomationForInsurance: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'CRM Automation for Insurance Agencies',
-  heroSubheading: 'Automation that updates, cleans, and routes, built for how insurance agencies actually operate.',
+  heroSubheading: 'CRM automation for insurance agencies that updates records, cleans data, and routes leads, designed around how agencies actually operate.',
   heroBadge: 'CRM Automation',
   description:
     'Clickmasters builds CRM Automation for insurance agencies. Automation that updates, cleans, and routes automatically, built around how an agency in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of insurance agencies, delivered as a system your team owns and relies on.',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about CRM automation for insurance agencies' } },
+      { type: 'FAQSection', props: { title: 'CRM Automation for Insurance FAQs', subtitle: 'Common questions about CRM automation for insurance agencies' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

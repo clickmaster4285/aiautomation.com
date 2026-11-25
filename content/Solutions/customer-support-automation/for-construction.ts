@@ -9,7 +9,7 @@ export const customerSupportAutomationForConstruction: SolutionData = {
   title: 'Customer Support Automation for Construction',
   primaryKeyword: 'support automation for construction',
   titleTag: 'Customer Support Automation for Construction | Clickmasters',
-  metaDescription: 'Construction companies use Clickmasters customer support automation to resolve routine requests and escalate the cases that need a person. Ask the team.',
+  metaDescription: 'Support automation for construction companies that handles project status and scheduling requests and routes urgent site issues to your team. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const customerSupportAutomationForConstruction: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Customer Support Automation for Construction',
-  heroSubheading: 'Automation that resolves, routes, and escalates, built for how construction companies actually operate.',
+  heroSubheading: 'Support automation for construction companies that resolves routine requests, routes site issues, and escalates what needs your team.',
   heroBadge: 'Customer Support Automation',
   description:
     'Clickmasters builds Customer Support Automation for construction. Automation that resolves, routes, and escalates automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of construction, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for construction: the routine hand
 
     'Built for Construction\'s Realities': `Bid pricing and project data are competitively sensitive; automation is scoped accordingly, and anything contractual keeps human review. The automation handles the paperwork flow, your team runs the projects.
 
-We integrate with the systems your company already runsconstruction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your company already runs — construction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For construction, the return shows up as: more bids won from faster response, office hours reclaimed from chasing documents and sending updates, invoicing that keeps pace with the work, and clients who feel informed instead of ignored. On the support automation side specifically, the headline metric is tickets deflected and response time cut.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is support automation for construction?',
       answer:
-        'Customer support automation uses AI agents and workflows to answer common questions from your documentation, triage and route tickets, and draft replieswhile escalating complex cases to human agents with context. For a company in construction, that means applying it to the workflows that consume your teamlead intake and estimate follow-up, bid request handling, and project document collection and organizationwith the specifics of your industry built in.',
+        'Customer support automation uses AI agents and workflows to answer common questions from your documentation, triage and route tickets, and draft replies — while escalating complex cases to human agents with context. For a company in construction, that means applying it to the workflows that consume your team — lead intake and estimate follow-up, bid request handling, and project document collection and organization — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our company already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about customer support automation for construction' } },
+      { type: 'FAQSection', props: { title: 'Support Automation for Construction FAQs', subtitle: 'Common questions about customer support automation for construction' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

@@ -9,7 +9,7 @@ export const aiChatbotsForRestaurants: SolutionData = {
   title: 'AI Chatbots for Restaurants & Hospitality',
   primaryKeyword: 'chatbot for restaurants',
   titleTag: 'AI Chatbots for Restaurants & Hospitality | Clickmasters',
-  metaDescription: 'Restaurants use Clickmasters AI chatbots to answer questions, qualify leads, and book appointments. The first workflow is scoped before it goes live.',
+  metaDescription: 'An AI chatbot for restaurants that takes reservations, answers menu and hours questions, and handles catering and event inquiries. Book a free automation audit.',
   keywordEvidence: '4 matching keywords, ~200 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const aiChatbotsForRestaurants: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Chatbots for Restaurants & Hospitality',
-  heroSubheading: 'Automation that answers, qualifies, and books, built for how hospitality businesses actually operate.',
+  heroSubheading: 'An AI chatbot for restaurants and hospitality businesses that answers, qualifies, and books, built for how your team actually works.',
   heroBadge: 'AI Chatbots',
   description:
     'Clickmasters builds AI Chatbots for restaurants & hospitality. Automation that answers, qualifies, and books automatically, built around how a business in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of restaurants & hospitality, delivered as a system your team owns and relies on.',
@@ -28,7 +28,7 @@ export const aiChatbotsForRestaurants: SolutionData = {
 
 AI Chatbots addresses this directly. It holds real conversations and takes real action, answering from your own content, booking appointments, qualifying leads, and handing off to humans cleanly. Modern AI chatbots understand natural language and ground their answers in your actual documentation, which makes them nothing like the scripted bots everyone learned to dread. For a business, that capability lands exactly where the hours are currently going.`,
 
-    'The Problems This Solves for Restaurants & Hospitality': `**Calls missed during service.** Reservation and inquiry calls during the rush go unansweredeach one potentially a lost table or event booking.
+    'The Problems This Solves for Restaurants & Hospitality': `**Calls missed during service.** Reservation and inquiry calls during the rush go unanswered — each one potentially a lost table or event booking.
 **No-shows.** Unconfirmed reservations that don't arrive cost revenue that automated confirmations would have protected.
 **Review response neglect.** Reviews decide local search visibility, but responding consistently rarely survives contact with a busy week.
 **Event and catering inquiry lag.** High-value private event inquiries need prompt, detailed responses that busy managers deliver late.
@@ -62,9 +62,9 @@ What it is: the routine work. The automation that answers, qualifies, and books,
 
 That's the pattern across everything we build for restaurants & hospitality: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
-    'Built for Restaurants & Hospitality\'s Realities': `Guest data is handled with appropriate care, and the automation covers communication logisticshospitality itself stays human, which is the whole point of freeing your people to deliver it.
+    'Built for Restaurants & Hospitality\'s Realities': `Guest data is handled with appropriate care, and the automation covers communication logistics — hospitality itself stays human, which is the whole point of freeing your people to deliver it.
 
-We integrate with the systems your business already runsreservation platforms, POS systems, review platforms, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your business already runs — reservation platforms, POS systems, review platforms, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For restaurants & hospitality, the return shows up as: bookings captured during rushes and after hours, no-shows cut by systematic confirmation, reviews responded to consistently, and event inquiries converted while interest is hot. On the chatbot side specifically, the headline metric is conversations handled and leads captured around the clock.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is chatbot for restaurants & hospitality?',
       answer:
-        'An AI chatbot uses a language model to understand and respond in natural language, answering from a business\'s own content and taking actions like booking or routing, far beyond old script-based bots. For a business in restaurants & hospitality, that means applying it to the workflows that consume your teamreservation booking and confirmation, call answering for hours/menu/booking questions, and no-show reduction reminderswith the specifics of your industry built in.',
+        'An AI chatbot uses a language model to understand and respond in natural language, answering from a business\'s own content and taking actions like booking or routing, far beyond old script-based bots. For a business in restaurants & hospitality, that means applying it to the workflows that consume your team — reservation booking and confirmation, call answering for hours/menu/booking questions, and no-show reduction reminders — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our business already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI chatbots for restaurants' } },
+      { type: 'FAQSection', props: { title: 'Chatbots for Restaurants FAQs', subtitle: 'Common questions about AI chatbots for restaurants' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

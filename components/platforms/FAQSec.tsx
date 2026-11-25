@@ -4,6 +4,7 @@ import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useState } from 'react';
 import { Plus, Minus } from 'lucide-react';
 import type { Section } from '@/content/type';
+import { RichText } from '@/components/solutions/sections/variants/RichText';
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -108,7 +109,7 @@ export default function FaqSec({ section, variant = 'light' }: Props) {
                           className="pb-5 text-justify font-sans"
                           style={{ fontSize: '0.9375rem', color: answerColor, lineHeight: 1.75 }}
                         >
-                          {item.description}
+                          <RichText text={item.description} />
                         </p>
                       </motion.div>
                     )}

@@ -8,8 +8,8 @@ export const invoiceAutomationForInsurance: SolutionData = {
   category: 'invoice-automation',
   title: 'Invoice & Finance Automation for Insurance Agencies',
   primaryKeyword: 'finance automation for insurance',
-  titleTag: 'Invoice & Finance for Insurance Agencies | Clickmasters',
-  metaDescription: 'Insurance agencies use Clickmasters invoice automation to capture, check, and post bills so the close has fewer errors. Book a free audit. Ask the team.',
+  titleTag: 'Invoice & Finance Automation for Insurance | Clickmasters',
+  metaDescription: 'Finance automation for insurance agencies that captures invoices, checks them against expected values, and posts clean entries to your books. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const invoiceAutomationForInsurance: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Invoice & Finance Automation for Insurance Agencies',
-  heroSubheading: 'Automation that captures, validates, and posts, built for how insurance agencies actually operate.',
+  heroSubheading: 'Finance automation for insurance agencies that captures, validates, and posts, built for how your agency actually operates.',
   heroBadge: 'Invoice & Finance Automation',
   description:
     'Clickmasters builds Invoice & Finance Automation for insurance agencies. Automation that captures, validates, and posts automatically, built around how an agency in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of insurance agencies, delivered as a system your team owns and relies on.',
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is finance automation for insurance agencies?',
       answer:
-        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting systemwith exceptions flagged for human review. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
+        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting system — with exceptions flagged for human review. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our agency already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about invoice & finance automation for insurance agencies' } },
+      { type: 'FAQSection', props: { title: 'Finance Automation for Insurance FAQs', subtitle: 'Common questions about invoice & finance automation for insurance agencies' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

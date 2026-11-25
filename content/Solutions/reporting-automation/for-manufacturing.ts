@@ -9,7 +9,7 @@ export const reportingAutomationForManufacturing: SolutionData = {
   title: 'Reporting Automation for Manufacturing',
   primaryKeyword: 'reporting automation for manufacturing',
   titleTag: 'Reporting Automation for Manufacturing | Clickmasters AI',
-  metaDescription: 'Manufacturers use Clickmasters reporting automation to assemble the numbers teams already ask for, on a schedule. Start with one high-volume workflow.',
+  metaDescription: 'Reporting automation for manufacturing that pulls production, quality, and inventory data into shift and weekly reports automatically. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const reportingAutomationForManufacturing: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Reporting Automation for Manufacturing',
-  heroSubheading: 'Automation that aggregates, builds, and delivers, built for how manufacturing operations actually run.',
+  heroSubheading: 'Reporting automation for manufacturing that aggregates your data, builds the reports, and delivers them on schedule, designed around how manufacturing operations actually operate.',
   heroBadge: 'Reporting Automation',
   description:
     'Clickmasters builds Reporting Automation for manufacturing. Automation that aggregates, builds, and delivers automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of manufacturing, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for manufacturing: the routine han
 
     'Built for Manufacturing\'s Realities': `Manufacturing data spans pricing, supplier terms, and operational details that competitors would value. Automation is scoped with appropriate access controls, and anything touching production decisions keeps human oversight. The automation moves the data; your team runs the operation.
 
-We integrate with the systems your operation already runsERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your operation already runs — ERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For manufacturing, the return shows up as: order-processing time cut from hours to minutes, fewer entry errors reaching the floor or the invoice, reorder points watched automatically, reports that assemble themselves, and office headcount that doesn't scale linearly with order volume. On the reporting automation side specifically, the headline metric is reporting hours eliminated and decision lag removed.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is reporting automation for manufacturing?',
       answer:
-        'Reporting automation assembles recurring reports and dashboards from live data automaticallypulling from multiple systems, generating the report, and delivering it on schedulereplacing the manual export-copy-format cycle. For a operation in manufacturing, that means applying it to the workflows that consume your teamsales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alertswith the specifics of your industry built in.',
+        'Reporting automation assembles recurring reports and dashboards from live data automatically — pulling from multiple systems, generating the report, and delivering it on schedule — replacing the manual export-copy-format cycle. For a operation in manufacturing, that means applying it to the workflows that consume your team — sales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alerts — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our operation already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about reporting automation for manufacturing' } },
+      { type: 'FAQSection', props: { title: 'Reporting Automation for Manufacturing FAQs', subtitle: 'Common questions about reporting automation for manufacturing' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

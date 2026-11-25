@@ -8,8 +8,8 @@ export const salesAutomationForEducation: SolutionData = {
   category: 'sales-automation',
   title: 'AI Sales Automation for Education',
   primaryKeyword: 'sales automation for education',
-  titleTag: 'AI Sales Automation for Education Systems | Clickmasters',
-  metaDescription: 'Education teams use Clickmasters sales automation to enrich leads, follow up, and log activity so reps can sell. Start with one high-volume workflow.',
+  titleTag: 'AI Sales Automation for Education | Clickmasters',
+  metaDescription: 'Sales automation for education that follows up with prospective students, nurtures inquiries, and keeps enrollment pipelines current. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const salesAutomationForEducation: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Sales Automation for Education',
-  heroSubheading: 'Automation that enriches, follows up, and logs, built for how educational institutions actually operate.',
+  heroSubheading: 'Sales automation for education that enriches inquiries, follows up with prospective students, and logs every touchpoint.',
   heroBadge: 'AI Sales Automation',
   description:
     'Clickmasters builds AI Sales Automation for education. Automation that enriches, follows up, and logs automatically, built around how a institution in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of education, delivered as a system your team owns and relies on.',
   sections: {
     'Why Education Needs AI Sales Automation': `Schools, training providers, and education businesses run on enrollment funnels, student communication, scheduling, and reporting, much of it seasonal, repetitive, and manual. Inquiries arrive year-round and need fast, consistent follow-up to convert; enrollment involves document collection and data entry; students and parents ask the same questions constantly; and staff spend evenings on reports and reminders that software should handle.
 
-AI Sales Automation addresses this directly. It removes the administrative grind around sellingleads enriched and scored the moment they arrive, follow-up sequences that never slip, CRM records that update themselves, and reports that assemble automatically. Your reps spend their time on conversations that close, not on data entry. For a institution, that capability lands exactly where the hours are currently going.`,
+AI Sales Automation addresses this directly. It removes the administrative grind around selling — leads enriched and scored the moment they arrive, follow-up sequences that never slip, CRM records that update themselves, and reports that assemble automatically. Your reps spend their time on conversations that close, not on data entry. For a institution, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Education': `**Inquiry follow-up gaps.** Prospective students who don't hear back quickly enroll elsewhere; follow-up consistency decides conversion.
 **Enrollment paperwork.** Applications, documents, and data entry create seasonal crunches that bury administrative staff.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for education: the routine handled
 
     'Built for Education\'s Realities': `Student dataespecially involving minorsdemands careful, restricted handling. Automation is built with strict access controls and appropriate data practices, handling administrative communication while anything sensitive or judgment-based stays with staff.
 
-We integrate with the systems your institution already runsstudent information systems, CRMs, scheduling tools, communication platforms, and payment systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your institution already runs — student information systems, CRMs, scheduling tools, communication platforms, and payment systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For education, the return shows up as: higher inquiry-to-enrollment conversion from fast consistent follow-up, seasonal crunches absorbed without temp staffing, staff hours reclaimed from repetitive questions, and reporting that assembles itself. On the sales automation side specifically, the headline metric is selling hours recovered per rep per week.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is sales automation for education?',
       answer:
-        'AI sales automation handles repetitive sales taskslead enrichment, scoring, follow-up, CRM updates, proposals, and reporting, so reps spend their time selling rather than on administration. For a institution in education, that means applying it to the workflows that consume your teaminquiry response and enrollment nurture, application and document collection, and student and parent FAQ handlingwith the specifics of your industry built in.',
+        'AI sales automation handles repetitive sales tasks — lead enrichment, scoring, follow-up, CRM updates, proposals, and reporting, so reps spend their time selling rather than on administration. For a institution in education, that means applying it to the workflows that consume your team — inquiry response and enrollment nurture, application and document collection, and student and parent FAQ handling — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our institution already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about sales automation for education' } },
+      { type: 'FAQSection', props: { title: 'Sales Automation for Education FAQs', subtitle: 'Common questions about sales automation for education' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

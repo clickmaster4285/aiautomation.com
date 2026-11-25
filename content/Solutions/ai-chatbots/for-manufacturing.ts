@@ -8,8 +8,8 @@ export const aiChatbotsForManufacturing: SolutionData = {
   category: 'ai-chatbots',
   title: 'AI Chatbots for Manufacturing',
   primaryKeyword: 'chatbot for manufacturing',
-  titleTag: 'AI Chatbots for Manufacturing Services | Clickmasters',
-  metaDescription: 'Manufacturers use Clickmasters AI chatbots to answer questions, qualify leads, and book appointments. People keep the exceptions that need judgment.',
+  titleTag: 'AI Chatbots for Manufacturing Teams | Clickmasters',
+  metaDescription: 'An AI chatbot for manufacturing companies that answers product and spec questions, qualifies RFQs, and routes orders to sales. Book a free automation audit.',
   keywordEvidence: '1 matching keywords, ~50 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const aiChatbotsForManufacturing: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Chatbots for Manufacturing',
-  heroSubheading: 'Automation that answers, qualifies, and books, built for how manufacturing operations actually run.',
+  heroSubheading: 'An AI chatbot for manufacturing companies that answers, qualifies, and books, built for how your team actually works.',
   heroBadge: 'AI Chatbots',
   description:
     'Clickmasters builds AI Chatbots for manufacturing. Automation that answers, qualifies, and books automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of manufacturing, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for manufacturing: the routine han
 
     'Built for Manufacturing\'s Realities': `Manufacturing data spans pricing, supplier terms, and operational details that competitors would value. Automation is scoped with appropriate access controls, and anything touching production decisions keeps human oversight. The automation moves the data; your team runs the operation.
 
-We integrate with the systems your operation already runsERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your operation already runs — ERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For manufacturing, the return shows up as: order-processing time cut from hours to minutes, fewer entry errors reaching the floor or the invoice, reorder points watched automatically, reports that assemble themselves, and office headcount that doesn't scale linearly with order volume. On the chatbot side specifically, the headline metric is conversations handled and leads captured around the clock.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is chatbot for manufacturing?',
       answer:
-        'An AI chatbot uses a language model to understand and respond in natural language, answering from a business\'s own content and taking actions like booking or routing, far beyond old script-based bots. For a operation in manufacturing, that means applying it to the workflows that consume your teamsales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alertswith the specifics of your industry built in.',
+        'An AI chatbot uses a language model to understand and respond in natural language, answering from a business\'s own content and taking actions like booking or routing, far beyond old script-based bots. For a operation in manufacturing, that means applying it to the workflows that consume your team — sales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alerts — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our operation already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI chatbots for manufacturing' } },
+      { type: 'FAQSection', props: { title: 'Chatbots for Manufacturing FAQs', subtitle: 'Common questions about AI chatbots for manufacturing' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

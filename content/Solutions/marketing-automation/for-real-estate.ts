@@ -9,7 +9,7 @@ export const marketingAutomationForRealEstate: SolutionData = {
   title: 'AI Marketing Automation for Real Estate',
   primaryKeyword: 'marketing automation for real estate',
   titleTag: 'AI Marketing Automation for Real Estate | Clickmasters',
-  metaDescription: 'Real estate brokerages use Clickmasters marketing automation to run nurture and campaign follow-up without a manual queue. Book a free audit.',
+  metaDescription: 'Marketing automation for real estate teams that nurtures buyers and sellers, follows up on listings, and keeps your sphere engaged. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const marketingAutomationForRealEstate: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Marketing Automation for Real Estate',
-  heroSubheading: 'Automation that produces, nurtures, and reports, built for how real estate teams actually operate.',
+  heroSubheading: 'Marketing automation for real estate teams that drafts content, nurtures buyers and sellers, and reports on campaigns, built for how you actually work.',
   heroBadge: 'AI Marketing Automation',
   description:
     'Clickmasters builds AI Marketing Automation for real estate. Automation that produces, nurtures, and reports automatically, built around how a team in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of real estate, delivered as a system your team owns and relies on.',
   sections: {
     'Why Real Estate Needs AI Marketing Automation': `Real estate is decided by speed to lead and consistency of follow-up, and both break down precisely when agents are busiest. The enquiry that arrives during a showing waits hours; the lead that needed six months of nurture goes cold after two weeks of silence; the transaction with a dozen moving deadlines depends on someone remembering everything. The agents who win aren't necessarily better closers; they're the ones whose systems never let a lead or a deadline slip.
 
-AI Marketing Automation addresses this directly. It runs the production and follow-through that consumes marketing teamscontent drafted at scale with human review, nurture sequences that adapt to behavior, campaigns that trigger and segment themselves, and reporting that assembles automatically. The strategy stays human; the relentless execution becomes automatic. For a team, that capability lands exactly where the hours are currently going.`,
+AI Marketing Automation addresses this directly. It runs the production and follow-through that consumes marketing teams — content drafted at scale with human review, nurture sequences that adapt to behavior, campaigns that trigger and segment themselves, and reporting that assembles automatically. The strategy stays human; the relentless execution becomes automatic. For a team, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Real Estate': `**Slow lead response.** Leads expect a response in minutes; agents mid-showing or asleep respond in hours, by which time the lead has heard from someone else.
 **Nurture that doesn't happen.** Most leads transact months later, but consistent long-term follow-up by hand is exactly what busy agents fail to sustain.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for real estate: the routine handl
 
     'Built for Real Estate\'s Realities': `Client financial details and transaction information warrant careful handling, and automation keeps agents in control of relationships and negotiationsit handles the response speed and the follow-up consistency, while the human handles the human part.
 
-We integrate with the systems your team already runsreal estate CRMs, lead sources and portals, showing management tools, transaction management platforms, and calendar systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your team already runs — real estate CRMs, lead sources and portals, showing management tools, transaction management platforms, and calendar systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For real estate, the return shows up as: more leads converted from instant response, revenue recovered from long-tail nurture that actually happens, hours reclaimed from scheduling ping-pong, and transactions that close without deadline scares. On the marketing automation side specifically, the headline metric is content and campaign output multiplied without added headcount.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is marketing automation for real estate?',
       answer:
-        'AI marketing automation uses AI and workflows to run marketing tasks automaticallygenerating content, personalizing nurture sequences, managing campaigns, and reporting, so teams produce more without proportionally more staff. For a team in real estate, that means applying it to the workflows that consume your teaminstant lead response and qualification, long-term nurture and reactivation sequences, and showing scheduling and reminderswith the specifics of your industry built in.',
+        'AI marketing automation uses AI and workflows to run marketing tasks automatically — generating content, personalizing nurture sequences, managing campaigns, and reporting, so teams produce more without proportionally more staff. For a team in real estate, that means applying it to the workflows that consume your team — instant lead response and qualification, long-term nurture and reactivation sequences, and showing scheduling and reminders — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our team already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI marketing automation for real estate' } },
+      { type: 'FAQSection', props: { title: 'Marketing Automation for Real Estate FAQs', subtitle: 'Common questions about AI marketing automation for real estate' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

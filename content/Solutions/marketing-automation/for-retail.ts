@@ -8,8 +8,8 @@ export const marketingAutomationForRetail: SolutionData = {
   category: 'marketing-automation',
   title: 'AI Marketing Automation for Retail',
   primaryKeyword: 'marketing automation for retail',
-  titleTag: 'AI Marketing Automation for Retail Systems | Clickmasters',
-  metaDescription: 'Retailers use Clickmasters marketing automation to run nurture and campaign follow-up without a manual queue. Start with one high-volume workflow.',
+  titleTag: 'AI Marketing Automation for Retail | Clickmasters',
+  metaDescription: 'Marketing automation for retail businesses that segments shoppers, personalizes promotions, and brings lapsed customers back. Book a free automation audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const marketingAutomationForRetail: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Marketing Automation for Retail',
-  heroSubheading: 'Automation that produces, nurtures, and reports, built for how retail businesses actually operate.',
+  heroSubheading: 'Marketing automation for retail that drafts content, nurtures shoppers, and reports on campaigns, built for how your stores actually operate.',
   heroBadge: 'AI Marketing Automation',
   description:
     'Clickmasters builds AI Marketing Automation for retail. Automation that produces, nurtures, and reports automatically, built around how a business in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of retail, delivered as a system your team owns and relies on.',
   sections: {
     'Why Retail Needs AI Marketing Automation': `Retail operations juggle inventory, suppliers, staff scheduling, customer inquiries, and reporting across locations and channels, usually with thin margins that can't absorb administrative bloat. Stock data lives in one system, sales in another, and the connecting work happens in spreadsheets and re-keying. Meanwhile customer questions arrive across phone, email, and social, and the reporting that should guide buying decisions gets assembled by hand, late.
 
-AI Marketing Automation addresses this directly. It runs the production and follow-through that consumes marketing teamscontent drafted at scale with human review, nurture sequences that adapt to behavior, campaigns that trigger and segment themselves, and reporting that assembles automatically. The strategy stays human; the relentless execution becomes automatic. For a business, that capability lands exactly where the hours are currently going.`,
+AI Marketing Automation addresses this directly. It runs the production and follow-through that consumes marketing teams — content drafted at scale with human review, nurture sequences that adapt to behavior, campaigns that trigger and segment themselves, and reporting that assembles automatically. The strategy stays human; the relentless execution becomes automatic. For a business, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Retail': `**Inventory blind spots.** Stock levels tracked manually or in disconnected systems lead to stockouts of winners and overstock of losers.
 **Multi-channel inquiry load.** Customer questions arrive by phone, email, and social; consistent, fast responses across all of them are hard to staff.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for retail: the routine handled in
 
     'Built for Retail\'s Realities': `Sales data and supplier terms are commercially sensitive; automation is scoped appropriately, and buying decisions stay with your team. The automation supplies timely, accurate data instead of stale spreadsheets.
 
-We integrate with the systems your business already runsPOS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your business already runs — POS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For retail, the return shows up as: fewer stockouts and less dead stock, customer questions answered fast across channels, reports that arrive in time to matter, and office hours reclaimed from re-keying. On the marketing automation side specifically, the headline metric is content and campaign output multiplied without added headcount.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is marketing automation for retail?',
       answer:
-        'AI marketing automation uses AI and workflows to run marketing tasks automaticallygenerating content, personalizing nurture sequences, managing campaigns, and reporting, so teams produce more without proportionally more staff. For a business in retail, that means applying it to the workflows that consume your teaminventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reportingwith the specifics of your industry built in.',
+        'AI marketing automation uses AI and workflows to run marketing tasks automatically — generating content, personalizing nurture sequences, managing campaigns, and reporting, so teams produce more without proportionally more staff. For a business in retail, that means applying it to the workflows that consume your team — inventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reporting — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our business already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI marketing automation for retail' } },
+      { type: 'FAQSection', props: { title: 'Marketing Automation for Retail FAQs', subtitle: 'Common questions about AI marketing automation for retail' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

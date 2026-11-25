@@ -9,7 +9,7 @@ export const invoiceAutomationForConstruction: SolutionData = {
   title: 'Invoice & Finance Automation for Construction',
   primaryKeyword: 'finance automation for construction',
   titleTag: 'Invoice & Finance Automation for Construction | Clickmasters',
-  metaDescription: 'Construction companies use Clickmasters invoice automation to capture, check, and post bills so the close has fewer errors. Book a free audit.',
+  metaDescription: 'Finance automation for construction that captures subcontractor invoices, validates the data, and routes approvals before payment. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const invoiceAutomationForConstruction: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Invoice & Finance Automation for Construction',
-  heroSubheading: 'Automation that captures, validates, and posts, built for how construction companies actually operate.',
+  heroSubheading: 'Finance automation for construction that captures, validates, and posts, built for how construction companies actually operate.',
   heroBadge: 'Invoice & Finance Automation',
   description:
     'Clickmasters builds Invoice & Finance Automation for construction. Automation that captures, validates, and posts automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of construction, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for construction: the routine hand
 
     'Built for Construction\'s Realities': `Bid pricing and project data are competitively sensitive; automation is scoped accordingly, and anything contractual keeps human review. The automation handles the paperwork flow, your team runs the projects.
 
-We integrate with the systems your company already runsconstruction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your company already runs — construction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For construction, the return shows up as: more bids won from faster response, office hours reclaimed from chasing documents and sending updates, invoicing that keeps pace with the work, and clients who feel informed instead of ignored. On the finance automation side specifically, the headline metric is invoices processed hands-free and days cut from the close.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is finance automation for construction?',
       answer:
-        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting systemwith exceptions flagged for human review. For a company in construction, that means applying it to the workflows that consume your teamlead intake and estimate follow-up, bid request handling, and project document collection and organizationwith the specifics of your industry built in.',
+        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting system — with exceptions flagged for human review. For a company in construction, that means applying it to the workflows that consume your team — lead intake and estimate follow-up, bid request handling, and project document collection and organization — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our company already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about invoice & finance automation for construction' } },
+      { type: 'FAQSection', props: { title: 'Finance Automation for Construction FAQs', subtitle: 'Common questions about invoice & finance automation for construction' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

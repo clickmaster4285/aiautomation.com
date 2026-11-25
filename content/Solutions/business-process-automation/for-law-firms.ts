@@ -9,7 +9,7 @@ export const businessProcessAutomationForLawFirms: SolutionData = {
   title: 'Business Process Automation for Law Firms',
   primaryKeyword: 'process automation for law firms',
   titleTag: 'Business Process Automation for Law Firms | Clickmasters',
-  metaDescription: 'Law firms use Clickmasters business process automation to take repetitive operations off the people who currently chase them. Book a free audit.',
+  metaDescription: 'Process automation for law firms that handles client intake, conflict checks, document collection, and matter updates. Book a free automation audit.',
   keywordEvidence: '1 matching keywords, ~50 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const businessProcessAutomationForLawFirms: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Business Process Automation for Law Firms',
-  heroSubheading: 'Automation that runs, coordinates, and completes, built for how law firms actually operate.',
+  heroSubheading: 'Business process automation for law firms that runs, coordinates, and completes the administrative work around every matter.',
   heroBadge: 'Business Process Automation',
   description:
     'Clickmasters builds Business Process Automation for law firms. Automation that runs, coordinates, and completes automatically, built around how a firm in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of law firms, delivered as a system your team owns and relies on.',
@@ -58,13 +58,13 @@ For most, that points to client intake and qualification or engagement letter ge
 
 What it is: the routine work. The automation that runs, coordinates, and completes, handled automatically, consistently, at any hour, so your firm runs on systems instead of memory and heroics.`,
 
-    'A Worked Example': `Consider what happens when a prospective client submits an inquiry about a matter. In a manual operation, this waits for someone to be free, and often that's too late. Automated: intake information is gathered through a structured conversation, the matter type is classified, conflicts data is collected, a summary lands with the right attorney, and if the firm accepts, the engagement letter is generated from the intake data for attorney reviewhours of intake admin becomes minutes of review.
+    'A Worked Example': `Consider what happens when a prospective client submits an inquiry about a matter. In a manual operation, this waits for someone to be free, and often that's too late. Automated: intake information is gathered through a structured conversation, the matter type is classified, conflicts data is collected, a summary lands with the right attorney, and if the firm accepts, the engagement letter is generated from the intake data for attorney review — hours of intake admin becomes minutes of review.
 
 That's the pattern across everything we build for law firms: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
     "Built for Law Firms' Realities": `Confidentiality and privilege are paramount, and the line between administration and legal judgment must stay bright: automation drafts, tracks, and communicates logistics. Every legal decision and every outgoing document remains with an attorney's review. We build workflows specifically to keep that boundary clear.
 
-We integrate with the systems your firm already runspractice management platforms, document management systems, e-signature tools, and billing systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your firm already runs — practice management platforms, document management systems, e-signature tools, and billing systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For law firms, the return shows up as: attorney and staff hours redirected from administration to billable work, prospects captured before they call the next firm, deadlines tracked systematically instead of anxiously, and document production accelerated with professional review retained. On the process automation side specifically, the headline metric is end-to-end process time cut and hand-off delays eliminated.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is process automation for law firms?',
       answer:
-        'Business process automation (BPA) uses software and AI to run an entire business processall its steps, systems, and hand-offs. Automatically, rather than automating just one task. For a firm in law firms, that means applying it to the workflows that consume your teamclient intake and qualification, engagement letter generation, and document assembly from templates and matter datawith the specifics of your industry built in.',
+        'Business process automation (BPA) uses software and AI to run an entire business process — all its steps, systems, and hand-offs. Automatically, rather than automating just one task. For a firm in law firms, that means applying it to the workflows that consume your team — client intake and qualification, engagement letter generation, and document assembly from templates and matter data — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our firm already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about business process automation for law firms' } },
+      { type: 'FAQSection', props: { title: 'Process Automation for Law Firms FAQs', subtitle: 'Common questions about business process automation for law firms' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

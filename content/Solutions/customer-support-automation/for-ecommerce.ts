@@ -8,8 +8,8 @@ export const customerSupportAutomationForEcommerce: SolutionData = {
   category: 'customer-support-automation',
   title: 'Customer Support Automation for E-commerce',
   primaryKeyword: 'support automation for ecommerce',
-  titleTag: 'Customer Support Automation for E-commerce | Clickmasters',
-  metaDescription: 'E-commerce teams use Clickmasters customer support automation to resolve routine requests and escalate the cases that need a person. Ask the team.',
+  titleTag: 'Customer Support Automation for Ecommerce | Clickmasters',
+  metaDescription: 'Support automation for ecommerce that resolves order status, returns, and shipping questions instantly and hands complex cases to agents. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,8 +18,8 @@ export const customerSupportAutomationForEcommerce: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'Customer Support Automation for E-commerce',
-  heroSubheading: 'Automation that resolves, routes, and escalates, built for how e-commerce stores actually operate.',
+  heroHeading: 'Customer Support Automation for Ecommerce',
+  heroSubheading: 'Support automation for ecommerce stores that resolves order questions, routes exceptions, and escalates the cases that need an agent.',
   heroBadge: 'Customer Support Automation',
   description:
     'Clickmasters builds Customer Support Automation for e-commerce. Automation that resolves, routes, and escalates automatically, built around how a store in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of e-commerce, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for e-commerce: the routine handle
 
     'Built for E-commerce\'s Realities': `Customer and payment-adjacent data is handled with scoped access, and customer-facing AI answers from your actual store policies and order data so responses are accurate rather than generic.
 
-We integrate with the systems your store already runsstore platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your store already runs — store platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For e-commerce, the return shows up as: tickets deflected around the clock, cart revenue recovered automatically, faster responses lifting conversion and reviews, and a store that grows sales without growing operational headcount in lockstep. On the support automation side specifically, the headline metric is tickets deflected and response time cut.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is support automation for e-commerce?',
       answer:
-        'Customer support automation uses AI agents and workflows to answer common questions from your documentation, triage and route tickets, and draft replieswhile escalating complex cases to human agents with context. For a store in e-commerce, that means applying it to the workflows that consume your teamcustomer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updateswith the specifics of your industry built in.',
+        'Customer support automation uses AI agents and workflows to answer common questions from your documentation, triage and route tickets, and draft replies — while escalating complex cases to human agents with context. For a store in e-commerce, that means applying it to the workflows that consume your team — customer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updates — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our store already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about customer support automation for e-commerce' } },
+      { type: 'FAQSection', props: { title: 'Support Automation for Ecommerce FAQs', subtitle: 'Common questions about customer support automation for e-commerce' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

@@ -8,8 +8,8 @@ export const leadGenerationAutomationForManufacturing: SolutionData = {
   category: 'lead-generation-automation',
   title: 'Lead Generation Automation for Manufacturing',
   primaryKeyword: 'lead generation system for manufacturing',
-  titleTag: 'Lead Generation Automation for Manufacturing | Clickmasters',
-  metaDescription: 'Manufacturers use Clickmasters lead generation automation to capture, qualify, and route new demand while it is still warm. Book a free audit.',
+  titleTag: 'Lead Generation Systems for Manufacturing | Clickmasters',
+  metaDescription: 'Lead generation systems for manufacturing companies that capture RFQs and distributor inquiries, qualify fit, and route them to sales. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,15 +18,15 @@ export const leadGenerationAutomationForManufacturing: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'Lead Generation Automation for Manufacturing',
-  heroSubheading: 'Automation that captures, qualifies, and routes, built for how manufacturing operations actually run.',
+  heroHeading: 'Lead Generation Systems for Manufacturing',
+  heroSubheading: 'A lead generation system for manufacturing that helps you capture, qualify, and route RFQs and distributor inquiries, built for how manufacturers actually operate.',
   heroBadge: 'Lead Generation Automation',
   description:
     'Clickmasters builds Lead Generation Automation for manufacturing. Automation that captures, qualifies, and routes automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of manufacturing, delivered as a system your team owns and relies on.',
   sections: {
     'Why Manufacturing Needs Lead Generation Automation': `Manufacturers live and die by operational efficiency on the floor, yet the office side: order processing, purchasing, inventory updates, shipping coordination, reporting. Often runs on manual re-keying between systems that don't connect. Orders arrive by email and get typed into the ERP; inventory counts live in spreadsheets; production reports are assembled by hand. The result is lag, errors, and office overhead that grows with every increase in volume.
 
-Lead Generation Automation addresses this directly. It captures, qualifies, and works leads automaticallyinstant response the moment interest shows, conversational qualification, enrichment and scoring, and routing that puts sales-ready leads in front of the right person with context. Speed and consistency are what convert leads, and both are exactly what automation delivers. For a operation, that capability lands exactly where the hours are currently going.`,
+Lead Generation Automation addresses this directly. It captures, qualifies, and works leads automatically — instant response the moment interest shows, conversational qualification, enrichment and scoring, and routing that puts sales-ready leads in front of the right person with context. Speed and consistency are what convert leads, and both are exactly what automation delivers. For a operation, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Manufacturing': `**Order entry lag and errors.** Orders arriving by email or portal get manually keyed into the ERP, adding delay and transcription errors to every order.
 **Disconnected systems.** ERP, inventory, shipping, and accounting systems that don't talk mean the same data is entered multiple times.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for manufacturing: the routine han
 
     'Built for Manufacturing\'s Realities': `Manufacturing data spans pricing, supplier terms, and operational details that competitors would value. Automation is scoped with appropriate access controls, and anything touching production decisions keeps human oversight. The automation moves the data; your team runs the operation.
 
-We integrate with the systems your operation already runsERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your operation already runs — ERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For manufacturing, the return shows up as: order-processing time cut from hours to minutes, fewer entry errors reaching the floor or the invoice, reorder points watched automatically, reports that assemble themselves, and office headcount that doesn't scale linearly with order volume. On the lead generation system side specifically, the headline metric is lead response time in seconds and conversion lift from consistency.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is lead generation system for manufacturing?',
       answer:
-        'Lead generation automation captures and responds to leads instantly, qualifies them conversationally, enriches and scores them, and routes sales-ready prospects to the right personwhile nurturing the rest until they\'re ready. For a operation in manufacturing, that means applying it to the workflows that consume your teamsales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alertswith the specifics of your industry built in.',
+        'Lead generation automation captures and responds to leads instantly, qualifies them conversationally, enriches and scores them, and routes sales-ready prospects to the right person — while nurturing the rest until they\'re ready. For a operation in manufacturing, that means applying it to the workflows that consume your team — sales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alerts — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our operation already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about lead generation automation for manufacturing' } },
+      { type: 'FAQSection', props: { title: 'Lead Generation Systems for Manufacturing FAQs', subtitle: 'Common questions about lead generation automation for manufacturing' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

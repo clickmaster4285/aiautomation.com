@@ -8,8 +8,8 @@ export const aiWorkflowAutomationForRetail: SolutionData = {
   category: 'ai-workflow-automation',
   title: 'AI Workflow Automation for Retail',
   primaryKeyword: 'workflow automation for retail',
-  titleTag: 'AI Workflow Automation for Retail Systems | Clickmasters',
-  metaDescription: 'Retailers use Clickmasters AI workflow automation to move multi-step work across systems without manual handoffs. Start with one high-volume workflow.',
+  titleTag: 'AI Workflow Automation for Retail | Clickmasters',
+  metaDescription: 'Workflow automation for retail that keeps inventory, purchase orders, and store operations in sync across POS and back-office tools. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const aiWorkflowAutomationForRetail: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Workflow Automation for Retail',
-  heroSubheading: 'Automation that moves, routes, and processes, built for how retail businesses actually operate.',
+  heroSubheading: 'AI workflow automation for retail that moves, routes, and processes store operations, built for how retailers actually operate.',
   heroBadge: 'AI Workflow Automation',
   description:
     'Clickmasters builds AI Workflow Automation for retail. Automation that moves, routes, and processes automatically, built around how a business in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of retail, delivered as a system your team owns and relies on.',
   sections: {
     'Why Retail Needs AI Workflow Automation': `Retail operations juggle inventory, suppliers, staff scheduling, customer inquiries, and reporting across locations and channels, usually with thin margins that can't absorb administrative bloat. Stock data lives in one system, sales in another, and the connecting work happens in spreadsheets and re-keying. Meanwhile customer questions arrive across phone, email, and social, and the reporting that should guide buying decisions gets assembled by hand, late.
 
-AI Workflow Automation addresses this directly. It connects your apps and runs multi-step processes automaticallydata moves, decisions get made, and actions fire without manual hand-offs. Where basic automation follows fixed rules, the AI layer reads unstructured information, classifies it, drafts responses, and chooses between paths, handling the judgment calls a person used to make. For a business, that capability lands exactly where the hours are currently going.`,
+AI Workflow Automation addresses this directly. It connects your apps and runs multi-step processes automatically — data moves, decisions get made, and actions fire without manual hand-offs. Where basic automation follows fixed rules, the AI layer reads unstructured information, classifies it, drafts responses, and chooses between paths, handling the judgment calls a person used to make. For a business, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Retail': `**Inventory blind spots.** Stock levels tracked manually or in disconnected systems lead to stockouts of winners and overstock of losers.
 **Multi-channel inquiry load.** Customer questions arrive by phone, email, and social; consistent, fast responses across all of them are hard to staff.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for retail: the routine handled in
 
     'Built for Retail\'s Realities': `Sales data and supplier terms are commercially sensitive; automation is scoped appropriately, and buying decisions stay with your team. The automation supplies timely, accurate data instead of stale spreadsheets.
 
-We integrate with the systems your business already runsPOS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your business already runs — POS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For retail, the return shows up as: fewer stockouts and less dead stock, customer questions answered fast across channels, reports that arrive in time to matter, and office hours reclaimed from re-keying. On the workflow automation side specifically, the headline metric is hours of manual hand-offs eliminated per week.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is workflow automation for retail?',
       answer:
-        'AI workflow automation uses software and AI to run multi-step processes automaticallymoving data between apps, making routine decisions, and triggering actions, so sequences of tasks happen without manual effort. For a business in retail, that means applying it to the workflows that consume your teaminventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reportingwith the specifics of your industry built in.',
+        'AI workflow automation uses software and AI to run multi-step processes automatically — moving data between apps, making routine decisions, and triggering actions, so sequences of tasks happen without manual effort. For a business in retail, that means applying it to the workflows that consume your team — inventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reporting — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our business already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI workflow automation for retail' } },
+      { type: 'FAQSection', props: { title: 'Workflow Automation for Retail FAQs', subtitle: 'Common questions about AI workflow automation for retail' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

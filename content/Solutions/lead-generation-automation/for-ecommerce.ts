@@ -8,8 +8,8 @@ export const leadGenerationAutomationForEcommerce: SolutionData = {
   category: 'lead-generation-automation',
   title: 'Lead Generation Automation for E-commerce',
   primaryKeyword: 'lead generation system for ecommerce',
-  titleTag: 'Lead Generation Automation for E-commerce | Clickmasters',
-  metaDescription: 'E-commerce teams use Clickmasters lead generation automation to capture, qualify, and route new demand while it is still warm. Book a free audit.',
+  titleTag: 'Lead Generation Systems for Ecommerce | Clickmasters',
+  metaDescription: 'Lead generation systems for ecommerce brands that capture shoppers, qualify wholesale and B2B inquiries, and route each one to follow-up. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,15 +18,15 @@ export const leadGenerationAutomationForEcommerce: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'Lead Generation Automation for E-commerce',
-  heroSubheading: 'Automation that captures, qualifies, and routes, built for how e-commerce stores actually operate.',
+  heroHeading: 'Lead Generation Systems for Ecommerce Brands',
+  heroSubheading: 'A lead generation system for ecommerce that helps you capture, qualify, and route shopper and wholesale demand, built for how online stores actually operate.',
   heroBadge: 'Lead Generation Automation',
   description:
     'Clickmasters builds Lead Generation Automation for e-commerce. Automation that captures, qualifies, and routes automatically, built around how a store in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of e-commerce, delivered as a system your team owns and relies on.',
   sections: {
     'Why E-commerce Needs Lead Generation Automation': `E-commerce generates relentless operational volume that scales directly with sales: support tickets about orders and shipping, cart abandonment eating revenue, order exceptions needing attention, review management, and marketing that needs constant feeding. For a lean team, every increase in traffic means more of everything, unless the operational layer runs on automation, which is exactly how small stores punch far above their weight.
 
-Lead Generation Automation addresses this directly. It captures, qualifies, and works leads automaticallyinstant response the moment interest shows, conversational qualification, enrichment and scoring, and routing that puts sales-ready leads in front of the right person with context. Speed and consistency are what convert leads, and both are exactly what automation delivers. For a store, that capability lands exactly where the hours are currently going.`,
+Lead Generation Automation addresses this directly. It captures, qualifies, and works leads automatically — instant response the moment interest shows, conversational qualification, enrichment and scoring, and routing that puts sales-ready leads in front of the right person with context. Speed and consistency are what convert leads, and both are exactly what automation delivers. For a store, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for E-commerce': `**Support volume tied to sales.** Where's my order, returns, sizingmostly repetitive questions, arriving around the clock, drowning small teams.
 **Abandoned cart revenue loss.** A large share of carts are abandoned; without automated recovery, that revenue simply evaporates.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for e-commerce: the routine handle
 
     'Built for E-commerce\'s Realities': `Customer and payment-adjacent data is handled with scoped access, and customer-facing AI answers from your actual store policies and order data so responses are accurate rather than generic.
 
-We integrate with the systems your store already runsstore platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your store already runs — store platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For e-commerce, the return shows up as: tickets deflected around the clock, cart revenue recovered automatically, faster responses lifting conversion and reviews, and a store that grows sales without growing operational headcount in lockstep. On the lead generation system side specifically, the headline metric is lead response time in seconds and conversion lift from consistency.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is lead generation system for e-commerce?',
       answer:
-        'Lead generation automation captures and responds to leads instantly, qualifies them conversationally, enriches and scores them, and routes sales-ready prospects to the right personwhile nurturing the rest until they\'re ready. For a store in e-commerce, that means applying it to the workflows that consume your teamcustomer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updateswith the specifics of your industry built in.',
+        'Lead generation automation captures and responds to leads instantly, qualifies them conversationally, enriches and scores them, and routes sales-ready prospects to the right person — while nurturing the rest until they\'re ready. For a store in e-commerce, that means applying it to the workflows that consume your team — customer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updates — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our store already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about lead generation automation for e-commerce' } },
+      { type: 'FAQSection', props: { title: 'Lead Generation Systems for Ecommerce FAQs', subtitle: 'Common questions about lead generation automation for e-commerce' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

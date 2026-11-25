@@ -8,8 +8,8 @@ export const leadGenerationAutomationWithHubspot: SolutionData = {
   category: 'lead-generation-automation',
   title: 'Lead Generation Automation with HubSpot',
   primaryKeyword: 'hubspot lead generation system',
-  titleTag: 'Lead Generation Automation Built on HubSpot | Clickmasters',
-  metaDescription: 'Teams running HubSpot use Clickmasters lead generation automation to capture, qualify, and route new demand while it is still warm. Book a free audit.',
+  titleTag: 'HubSpot Lead Generation System Builds | Clickmasters',
+  metaDescription: 'A HubSpot lead generation system that captures, qualifies, and routes new demand inside your existing portal, with AI on the judgment steps. Book a free audit.',
   keywordEvidence: '5 matching keywords, ~700 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -17,14 +17,14 @@ export const leadGenerationAutomationWithHubspot: SolutionData = {
     'HubSpot platform page',
     'AI Automation Agency pillar',
   ],
-  heroHeading: 'Lead Generation Automation Built on HubSpot',
-  heroSubheading: 'Capture, qualify, and route leads instantly with AIextending HubSpot\'s power with automation and connected to your wider stack.',
+  heroHeading: 'Automated HubSpot Lead Generation Systems',
+  heroSubheading: 'A HubSpot lead generation system that captures, qualifies, and routes leads with AI, extending HubSpot workflows and connecting them to your wider stack.',
   heroBadge: 'Lead Generation × HubSpot',
-  description: 'Clickmasters builds lead generation system on HubSpot. HubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack, and it\'s an excellent fit for teams already running sales and marketing on HubSpot. Combined with lead generation system, which captures, qualifies, and works leads automaticallyinstant response the moment interest shows, conversational qualification, enrichment and scoring, and routing that puts sales-ready leads in front of the right person with context. Speed and consistency are what convert leads, and both are exactly what automation delivers, the result is automation that runs on a platform matched to the job.',
+  description: 'Clickmasters builds lead generation system on HubSpot. HubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack, and it\'s an excellent fit for teams already running sales and marketing on HubSpot. Combined with lead generation system, which captures, qualifies, and works leads automatically — instant response the moment interest shows, conversational qualification, enrichment and scoring, and routing that puts sales-ready leads in front of the right person with context. Speed and consistency are what convert leads, and both are exactly what automation delivers, the result is automation that runs on a platform matched to the job.',
   sections: {
-    'Why HubSpot for Lead Generation Automation': 'HubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack. We build inside your existing instance, transparent, documented, yours. For lead generation system specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. HubSpot is the right home for this work when it matches teams already running sales and marketing on HubSpot, and when it does, this combination is hard to beat.',
+    'Why HubSpot for Lead Generation Automation': 'HubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack. We build inside your existing instance, transparent, documented, yours. For lead generation system specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. HubSpot is the right home for this work when it matches teams already running sales and marketing on HubSpot, and when it does, this combination is hard to beat.\n\nOnce a lead lands in HubSpot, the same build can hand off to the rest of your operation: lead scoring that updates deal priority, CRM automation that keeps owners and lifecycle stages accurate, and email sequences that pick up where qualification leaves off. That keeps marketing, sales, and service working from one record instead of patching gaps by hand.',
     'What a Production Build Includes': 'The gap between a prototype and a system you can rely on is everything that happens when things go wrong. Every lead generation system build we ship on HubSpot includes error handling on every step (failures caught and retried or escalated, never silent), monitoring and alerting (you know the system is running without checking), documentation (your team can understand and modify the build), and staged rollout (the automation proves itself on real cases with human oversight before it runs unattended).\n\nThis is the difference between automation that saves hours and automation that quietly breaks and costs trust. Most of the rescue projects we take on are builds that skipped these steps.',
-    'Typical Workflows on HubSpot': 'The lead generation system workflows we most often build on HubSpot follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is neededclassification, extraction, drafting, and the result is executed and logged. HubSpot\'s strengths make it particularly suited to teams already running sales and marketing on HubSpot, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
+    'Typical Workflows on HubSpot': 'The lead generation system workflows we most often build on HubSpot follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is needed — classification, extraction, drafting, and the result is executed and logged. HubSpot\'s strengths make it particularly suited to teams already running sales and marketing on HubSpot, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
   },
   features: [
     {
@@ -118,7 +118,7 @@ export const leadGenerationAutomationWithHubspot: SolutionData = {
   faqQuestions: [
     {
       question: 'Can HubSpot handle lead generation system?',
-      answer: 'YesHubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack, and it\'s well suited to teams already running sales and marketing on HubSpot. The build quality determines reliability, which is where an experienced partner matters.',
+      answer: 'Yes — HubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack, and it\'s well suited to teams already running sales and marketing on HubSpot. The build quality determines reliability, which is where an experienced partner matters.',
     },
     {
       question: 'What does this cost to run?',
@@ -129,8 +129,8 @@ export const leadGenerationAutomationWithHubspot: SolutionData = {
       answer: 'Completely. Everything is documented and transparent, in your own accounts, with no dependency on us for changes.',
     },
     {
-      question: 'Lead generation automation captures and responds to leads instantly and routes sales-ready prospects to the right personis that what this does?',
-      answer: 'Lead generation automation captures and responds to leads instantly, qualifies them conversationally, enriches and scores them, and routes sales-ready prospects to the right personwhile nurturing the rest until they\'re ready. Built on HubSpot, it runs with the platform\'s strengths: teams already running sales and marketing on HubSpot.',
+      question: 'Lead generation automation captures and responds to leads instantly and routes sales-ready prospects to the right person — is that what this does?',
+      answer: 'Lead generation automation captures and responds to leads instantly, qualifies them conversationally, enriches and scores them, and routes sales-ready prospects to the right person — while nurturing the rest until they\'re ready. Built on HubSpot, it runs with the platform\'s strengths: teams already running sales and marketing on HubSpot.',
     },
   ],
   cta: 'Want lead generation system running on HubSpot?',
@@ -203,7 +203,7 @@ export const leadGenerationAutomationWithHubspot: SolutionData = {
       { type: 'PlatformComparison', props: { title: 'Is HubSpot Right for You?', subtitle: 'We\'ll tell you honestly if HubSpot is the right platform for your lead generation needs.' } },
       { type: 'StatsSection', props: { title: 'Why Choose Clickmasters for HubSpot Lead Generation' } },
       { type: 'FAQSection', props: {
-  title: 'Frequently Asked Questions',
+  title: 'HubSpot Lead Generation System FAQs',
   subtitle: 'Common questions about lead generation on HubSpot',
   eyebrow: 'FAQ',
 } },

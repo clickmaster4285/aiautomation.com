@@ -8,8 +8,8 @@ export const documentAutomationForRealEstate: SolutionData = {
   category: 'document-automation',
   title: 'Document & Data Automation for Real Estate',
   primaryKeyword: 'document automation for real estate',
-  titleTag: 'Document & Data Automation for Real Estate | Clickmasters',
-  metaDescription: 'Real estate brokerages use Clickmasters document automation to extract, check, and route data from invoices, forms, and files. Book a free audit.',
+  titleTag: 'Document Automation for Real Estate | Clickmasters',
+  metaDescription: 'Document automation for real estate that extracts data from contracts, disclosures, and leases and keeps every transaction file complete. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,8 +18,8 @@ export const documentAutomationForRealEstate: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'Document & Data Automation for Real Estate',
-  heroSubheading: 'Automation that reads, validates, and files, built for how real estate teams actually operate.',
+  heroHeading: 'Document Automation for Real Estate',
+  heroSubheading: 'Document automation for real estate that reads, validates, and files transaction paperwork, built for how real estate teams actually operate.',
   heroBadge: 'Document & Data Automation',
   description:
     'Clickmasters builds Document & Data Automation for real estate. Automation that reads, validates, and files automatically, built around how a team in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of real estate, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for real estate: the routine handl
 
     'Built for Real Estate\'s Realities': `Client financial details and transaction information warrant careful handling, and automation keeps agents in control of relationships and negotiationsit handles the response speed and the follow-up consistency, while the human handles the human part.
 
-We integrate with the systems your team already runsreal estate CRMs, lead sources and portals, showing management tools, transaction management platforms, and calendar systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your team already runs — real estate CRMs, lead sources and portals, showing management tools, transaction management platforms, and calendar systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For real estate, the return shows up as: more leads converted from instant response, revenue recovered from long-tail nurture that actually happens, hours reclaimed from scheduling ping-pong, and transactions that close without deadline scares. On the document automation side specifically, the headline metric is documents processed hands-free and entry errors eliminated.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is document automation for real estate?',
       answer:
-        'Document and data automation uses OCR and AI to read documents, extract and validate structured data, and route it into business systems automaticallyreplacing manual reading and data entry. For a team in real estate, that means applying it to the workflows that consume your teaminstant lead response and qualification, long-term nurture and reactivation sequences, and showing scheduling and reminderswith the specifics of your industry built in.',
+        'Document and data automation uses OCR and AI to read documents, extract and validate structured data, and route it into business systems automatically — replacing manual reading and data entry. For a team in real estate, that means applying it to the workflows that consume your team — instant lead response and qualification, long-term nurture and reactivation sequences, and showing scheduling and reminders — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our team already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about document automation for real estate' } },
+      { type: 'FAQSection', props: { title: 'Document Automation for Real Estate FAQs', subtitle: 'Common questions about document automation for real estate' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

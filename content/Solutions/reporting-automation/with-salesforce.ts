@@ -8,8 +8,8 @@ export const reportingAutomationWithSalesforce: SolutionData = {
   category: 'reporting-automation',
   title: 'Reporting Automation with Salesforce',
   primaryKeyword: 'salesforce reporting automation',
-  titleTag: 'Reporting Automation Built on Salesforce | Clickmasters',
-  metaDescription: 'Teams running Salesforce use Clickmasters reporting automation to assemble the numbers teams already ask for, on a schedule. Book a free audit.',
+  titleTag: 'Salesforce Reporting Automation | Clickmasters',
+  metaDescription: 'Salesforce reporting automation that keeps dashboards current, schedules reports, and adds plain-language summaries for leadership. Book a free audit.',
   keywordEvidence: '8 matching keywords, ~6,250 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -17,14 +17,14 @@ export const reportingAutomationWithSalesforce: SolutionData = {
     'Salesforce platform page',
     'AI Automation Agency pillar',
   ],
-  heroHeading: 'Reporting Automation Built on Salesforce',
-  heroSubheading: 'Enterprise-grade reporting automation on the world\'s leading CRM platformwith scheduled reports, live dashboards, and AI summaries.',
+  heroHeading: 'Salesforce Reporting Automation',
+  heroSubheading: 'Salesforce reporting automation with scheduled reports, live dashboards, and AI summaries on the CRM your team already runs.',
   heroBadge: 'Reporting Automation × Salesforce',
   description: 'Clickmasters builds reporting automation on Salesforce. Salesforce is the enterprise CRM standard, with enormous capability that most orgs use a fraction of, and it\'s an excellent fit for organizations with Salesforce at the core of revenue operations. Combined with reporting automation, which assembles your recurring reports and dashboards from live data automatically. The Monday pipeline report, the monthly close pack, the operations dashboard, built and delivered on schedule without anyone exporting, copying, or formatting. Decisions get made on current numbers instead of last week\'s, and the hours spent rebuilding the same report disappear, the result is automation that runs on a platform matched to the job.',
   sections: {
-    'Why Salesforce for Reporting Automation': 'Salesforce is the enterprise CRM standard, with enormous capability that most orgs use a fraction of. Automation and ai extend what admins can build natively. For reporting automation specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. Salesforce is the right home for this work when it matches organizations with Salesforce at the core of revenue operations, and when it does, this combination is hard to beat.',
+    'Why Salesforce for Reporting Automation': 'Salesforce is the enterprise CRM standard, with enormous capability that most orgs use a fraction of. Automation and ai extend what admins can build natively. For reporting automation specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. Salesforce is the right home for this work when it matches organizations with Salesforce at the core of revenue operations, and when it does, this combination is hard to beat.\n\nReporting is only as reliable as the records behind it, so we often pair this build with CRM automation that keeps Salesforce data clean at the source. Closed deals can also flow straight into invoices, which lets finance and sales work from the same records.',
     'What a Production Build Includes': 'The gap between a prototype and a system you can rely on is everything that happens when things go wrong. Every reporting automation build we ship on Salesforce includes error handling on every step (failures caught and retried or escalated, never silent), monitoring and alerting (you know the system is running without checking), documentation (your team can understand and modify the build), and staged rollout (the automation proves itself on real cases with human oversight before it runs unattended).\n\nThis is the difference between automation that saves hours and automation that quietly breaks and costs trust. Most of the rescue projects we take on are builds that skipped these steps.',
-    'Typical Workflows on Salesforce': 'The reporting automation workflows we most often build on Salesforce follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is neededclassification, extraction, drafting, and the result is executed and logged. Salesforce\'s strengths make it particularly suited to organizations with Salesforce at the core of revenue operations, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
+    'Typical Workflows on Salesforce': 'The reporting automation workflows we most often build on Salesforce follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is needed — classification, extraction, drafting, and the result is executed and logged. Salesforce\'s strengths make it particularly suited to organizations with Salesforce at the core of revenue operations, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
   },
   features: [
     {
@@ -118,7 +118,7 @@ export const reportingAutomationWithSalesforce: SolutionData = {
   faqQuestions: [
     {
       question: 'Can Salesforce handle reporting automation?',
-      answer: 'YesSalesforce is the enterprise CRM standard, with enormous capability that most orgs use a fraction of, and it\'s well suited to organizations with Salesforce at the core of revenue operations. The build quality determines reliability, which is where an experienced partner matters.',
+      answer: 'Yes — Salesforce is the enterprise CRM standard, with enormous capability that most orgs use a fraction of, and it\'s well suited to organizations with Salesforce at the core of revenue operations. The build quality determines reliability, which is where an experienced partner matters.',
     },
     {
       question: 'What does this cost to run?',
@@ -129,8 +129,8 @@ export const reportingAutomationWithSalesforce: SolutionData = {
       answer: 'Completely. Everything is documented and transparent, in your own accounts, with no dependency on us for changes.',
     },
     {
-      question: 'Reporting automation assembles recurring reports and dashboards from live data automaticallyis that what this does?',
-      answer: 'Reporting automation assembles recurring reports and dashboards from live data automaticallypulling from multiple systems, generating the report, and delivering it on schedulereplacing the manual export-copy-format cycle. Built on Salesforce, it runs with the platform\'s strengths: organizations with Salesforce at the core of revenue operations.',
+      question: 'Reporting automation assembles recurring reports and dashboards from live data automatically — is that what this does?',
+      answer: 'Reporting automation assembles recurring reports and dashboards from live data automatically — pulling from multiple systems, generating the report, and delivering it on schedule — replacing the manual export-copy-format cycle. Built on Salesforce, it runs with the platform\'s strengths: organizations with Salesforce at the core of revenue operations.',
     },
   ],
   cta: 'Want reporting automation running on Salesforce?',
@@ -203,7 +203,7 @@ export const reportingAutomationWithSalesforce: SolutionData = {
       { type: 'PlatformComparison', props: { title: 'Is Salesforce Right for You?', subtitle: 'We\'ll tell you honestly if Salesforce is the right platform for your reporting automation needs.' } },
       { type: 'StatsSection', props: { title: 'Why Choose Clickmasters for Salesforce Reporting Automation' } },
       { type: 'FAQSection', props: {
-  title: 'Frequently Asked Questions',
+  title: 'Salesforce Reporting Automation FAQs',
   subtitle: 'Common questions about reporting automation on Salesforce',
   eyebrow: 'FAQ',
 } },

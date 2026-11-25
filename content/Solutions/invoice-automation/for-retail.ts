@@ -9,7 +9,7 @@ export const invoiceAutomationForRetail: SolutionData = {
   title: 'Invoice & Finance Automation for Retail',
   primaryKeyword: 'finance automation for retail',
   titleTag: 'Invoice & Finance Automation for Retail | Clickmasters',
-  metaDescription: 'Retailers use Clickmasters invoice automation to capture, check, and post bills so the close has fewer errors. Start with one high-volume workflow.',
+  metaDescription: 'Finance automation for retail that captures supplier invoices, validates quantities and totals, and posts entries to your accounting system. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const invoiceAutomationForRetail: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Invoice & Finance Automation for Retail',
-  heroSubheading: 'Automation that captures, validates, and posts, built for how retail businesses actually operate.',
+  heroSubheading: 'Finance automation for retail that captures, validates, and posts, built for how stores actually operate.',
   heroBadge: 'Invoice & Finance Automation',
   description:
     'Clickmasters builds Invoice & Finance Automation for retail. Automation that captures, validates, and posts automatically, built around how a business in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of retail, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for retail: the routine handled in
 
     'Built for Retail\'s Realities': `Sales data and supplier terms are commercially sensitive; automation is scoped appropriately, and buying decisions stay with your team. The automation supplies timely, accurate data instead of stale spreadsheets.
 
-We integrate with the systems your business already runsPOS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your business already runs — POS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For retail, the return shows up as: fewer stockouts and less dead stock, customer questions answered fast across channels, reports that arrive in time to matter, and office hours reclaimed from re-keying. On the finance automation side specifically, the headline metric is invoices processed hands-free and days cut from the close.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is finance automation for retail?',
       answer:
-        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting systemwith exceptions flagged for human review. For a business in retail, that means applying it to the workflows that consume your teaminventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reportingwith the specifics of your industry built in.',
+        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting system — with exceptions flagged for human review. For a business in retail, that means applying it to the workflows that consume your team — inventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reporting — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our business already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about invoice & finance automation for retail' } },
+      { type: 'FAQSection', props: { title: 'Finance Automation for Retail FAQs', subtitle: 'Common questions about invoice & finance automation for retail' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

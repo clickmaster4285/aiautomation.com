@@ -179,7 +179,7 @@ export const SEGMENTS: Record<string, Segment> = {
     industries: ['ai-automation-for-finance-accounting', 'ai-automation-for-professional-services'],
     products: [`${P}/ai-finance-accounting`],
   },
-  construction: { name: 'Construction', industries: [], products: [] },
+  construction: { name: 'Construction', industries: [], products: [`${P}/industry-specific-ai-automation`] },
   ecommerce: {
     name: 'E-commerce',
     industries: ['ai-automation-for-ecommerce'],
@@ -199,7 +199,7 @@ export const SEGMENTS: Record<string, Segment> = {
     industries: ['ai-automation-for-healthcare'],
     products: [`${P}/industry-specific-ai-automation/ai-healthcare-automation`],
   },
-  insurance: { name: 'Insurance', industries: [], products: [] },
+  insurance: { name: 'Insurance', industries: [], products: [`${P}/industry-specific-ai-automation`] },
   'law-firms': {
     name: 'Law Firms',
     industries: ['ai-automation-for-law-firms', 'ai-automation-for-professional-services'],
@@ -213,13 +213,13 @@ export const SEGMENTS: Record<string, Segment> = {
     industries: [],
     products: [`${P}/industry-specific-ai-automation/ai-logistics-automation`],
   },
-  manufacturing: { name: 'Manufacturing', industries: [], products: [] },
+  manufacturing: { name: 'Manufacturing', industries: [], products: [`${P}/industry-specific-ai-automation`] },
   'real-estate': {
     name: 'Real Estate',
     industries: ['ai-automation-for-real-estate'],
     products: [`${P}/industry-specific-ai-automation/ai-real-estate-automation`],
   },
-  restaurants: { name: 'Restaurants', industries: [], products: [] },
+  restaurants: { name: 'Restaurants', industries: [], products: [`${P}/industry-specific-ai-automation`] },
   retail: {
     name: 'Retail',
     industries: ['ai-automation-for-ecommerce'],

@@ -10,6 +10,7 @@ import {
   Users,
 } from 'lucide-react';
 import type { Section } from '@/content/type';
+import { RichText } from '@/components/solutions/sections/variants/RichText';
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
@@ -294,7 +295,7 @@ export default function IndustriesSec({ section }: { section: Section }) {
                         className="text-xs leading-relaxed mt-0.5 text-justify font-sans"
                         style={{ color: 'rgba(0,0,0,0.5)' }}
                       >
-                        {item.description}
+                        <RichText text={item.description} />
                       </p>
                     </div>
                   </div>

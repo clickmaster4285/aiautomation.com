@@ -4,6 +4,7 @@ import type { ComponentType } from 'react';
 import { platformContent, platformSlugs } from '@/content/Platforms';
 import CmsRoute, { cmsRouteMetadata } from '@/components/cms/CmsRoute';
 import { canonicalUrl } from '@/lib/canonical';
+import { withPlatformLinks } from '@/lib/inline-links';
 
 const Hero = dynamic(() => import('@/components/platforms/Hero').then((mod) => mod.default));
 const TextSec = dynamic(() => import('@/components/platforms/TextSec').then((mod) => mod.default));
@@ -62,7 +63,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 
   return (
     <main className="bg-black text-white">
-      {content.sections.map((section, idx) => {
+      {withPlatformLinks(slug, content.sections).map((section, idx) => {
         const Component = sectionMap[section.type];
         if (!Component) return null;
         return <Component key={idx} section={section} />;

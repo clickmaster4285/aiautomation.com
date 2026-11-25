@@ -8,8 +8,8 @@ export const aiWorkflowAutomationForHealthcare: SolutionData = {
   category: 'ai-workflow-automation',
   title: 'AI Workflow Automation for Healthcare',
   primaryKeyword: 'workflow automation for healthcare',
-  titleTag: 'AI Workflow Automation for Healthcare | Clickmasters AI',
-  metaDescription: 'Healthcare teams use Clickmasters AI workflow automation to move multi-step work across systems without manual handoffs. Book a free audit. Ask the team.',
+  titleTag: 'AI Workflow Automation for Healthcare | Clickmasters',
+  metaDescription: 'Workflow automation for healthcare that moves intake forms, referrals, and prior authorizations between systems without manual handoffs. Book a free audit.',
   keywordEvidence: '2 matching keywords, ~550 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const aiWorkflowAutomationForHealthcare: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Workflow Automation for Healthcare',
-  heroSubheading: 'Automation that moves, routes, and processes, built for how healthcare practices actually operate.',
+  heroSubheading: 'AI workflow automation for healthcare that moves, routes, and processes patient paperwork, built for how practices actually operate.',
   heroBadge: 'AI Workflow Automation',
   description:
     'Clickmasters builds AI Workflow Automation for healthcare. Automation that moves, routes, and processes automatically, built around how a practice in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of healthcare, delivered as a system your team owns and relies on.',
   sections: {
     'Why Healthcare Needs AI Workflow Automation': `Healthcare practices carry one of the heaviest administrative loads of any industry. For every hour of patient care, front-office and back-office staff spend hours on scheduling, intake paperwork, insurance verification, reminders, billing follow-up, and records movement between systems that rarely talk to each other. Meanwhile phones go unanswered during patient visits, no-shows leave costly gaps in the schedule, and skilled clinical staff get pulled into clerical work.
 
-AI Workflow Automation addresses this directly. It connects your apps and runs multi-step processes automaticallydata moves, decisions get made, and actions fire without manual hand-offs. Where basic automation follows fixed rules, the AI layer reads unstructured information, classifies it, drafts responses, and chooses between paths, handling the judgment calls a person used to make. For a practice, that capability lands exactly where the hours are currently going.`,
+AI Workflow Automation addresses this directly. It connects your apps and runs multi-step processes automatically — data moves, decisions get made, and actions fire without manual hand-offs. Where basic automation follows fixed rules, the AI layer reads unstructured information, classifies it, drafts responses, and chooses between paths, handling the judgment calls a person used to make. For a practice, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Healthcare': `**Missed and unanswered calls.** Front-desk staff are with patients when calls come in; callers needing appointments often reach voicemail and book with another practice instead.
 **No-shows and schedule gaps.** Missed appointments cost revenue directly and waste slots other patients needed; manual reminder calls are inconsistent because staff rarely have time.
@@ -58,13 +58,13 @@ For most, that points to appointment scheduling and rescheduling or patient inta
 
 What it is: the routine work. The automation that moves, routes, and processes, handled automatically, consistently, at any hour, so your practice runs on systems instead of memory and heroics.`,
 
-    'A Worked Example': `Consider what happens when a patient calls after hours to book an appointment. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the call is answered immediately, the patient's need is understood, available slots are checked in the practice's scheduling system, the appointment is booked and confirmed by text, intake forms are sent automatically, and a reminder sequence is scheduledall before the office opens the next morning.
+    'A Worked Example': `Consider what happens when a patient calls after hours to book an appointment. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the call is answered immediately, the patient's need is understood, available slots are checked in the practice's scheduling system, the appointment is booked and confirmed by text, intake forms are sent automatically, and a reminder sequence is scheduled — all before the office opens the next morning.
 
 That's the pattern across everything we build for healthcare: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
     'Built for Healthcare\'s Realities': `Patient data is among the most sensitive information there is. Automation in healthcare must be built with strict access controls, secure data handling, and, where appropriate, infrastructure that keeps patient information inside your environment. Clinical decisions always stay with clinicians; automation handles the administrative wrapper around care, never the care itself. Formal compliance obligations such as HIPAA are a shared responsibility that depends on your specific setup, and should be confirmed for your situation.
 
-We integrate with the systems your practice already runspractice management systems, EHR/EMR platforms, scheduling tools, billing systems, and patient communication platforms, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your practice already runs — practice management systems, EHR/EMR platforms, scheduling tools, billing systems, and patient communication platforms, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For healthcare, the return shows up as: fewer missed calls and no-shows (each a direct revenue recovery), front-desk hours reclaimed from phones and paperwork for in-person patient care, faster intake with complete information, and a smoother patient experience from first contact. On the workflow automation side specifically, the headline metric is hours of manual hand-offs eliminated per week.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is workflow automation for healthcare?',
       answer:
-        'AI workflow automation uses software and AI to run multi-step processes automaticallymoving data between apps, making routine decisions, and triggering actions, so sequences of tasks happen without manual effort. For a practice in healthcare, that means applying it to the workflows that consume your teamappointment scheduling and rescheduling, patient intake and forms, and appointment reminders and confirmationswith the specifics of your industry built in.',
+        'AI workflow automation uses software and AI to run multi-step processes automatically — moving data between apps, making routine decisions, and triggering actions, so sequences of tasks happen without manual effort. For a practice in healthcare, that means applying it to the workflows that consume your team — appointment scheduling and rescheduling, patient intake and forms, and appointment reminders and confirmations — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our practice already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI workflow automation for healthcare' } },
+      { type: 'FAQSection', props: { title: 'Workflow Automation for Healthcare FAQs', subtitle: 'Common questions about AI workflow automation for healthcare' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

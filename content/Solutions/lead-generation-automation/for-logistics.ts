@@ -8,8 +8,8 @@ export const leadGenerationAutomationForLogistics: SolutionData = {
   category: 'lead-generation-automation',
   title: 'Lead Generation Automation for Logistics & Transportation',
   primaryKeyword: 'lead generation system for logistics',
-  titleTag: 'Lead for Logistics & Transportation | Clickmasters AI',
-  metaDescription: 'Logistics teams use Clickmasters lead generation automation to capture, qualify, and route new demand while it is still warm. Book a free audit.',
+  titleTag: 'Lead Generation Systems for Logistics | Clickmasters',
+  metaDescription: 'Lead generation systems for logistics companies that capture shipper inquiries, qualify lanes and volume, and route opportunities to sales. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,15 +18,15 @@ export const leadGenerationAutomationForLogistics: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'Lead Generation Automation for Logistics & Transportation',
-  heroSubheading: 'Automation that captures, qualifies, and routes, built for how logistics operations actually run.',
+  heroHeading: 'Lead Generation Systems for Logistics & Transportation',
+  heroSubheading: 'A lead generation system for logistics that helps you capture, qualify, and route shipper inquiries, built for how logistics operations actually run.',
   heroBadge: 'Lead Generation Automation',
   description:
     'Clickmasters builds Lead Generation Automation for logistics & transportation. Automation that captures, qualifies, and routes automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of logistics & transportation, delivered as a system your team owns and relies on.',
   sections: {
     'Why Logistics & Transportation Need Lead Generation Automation': `Logistics runs on coordination: orders, dispatch, tracking, exceptions, proof of delivery, invoicing, a constant flow of time-sensitive information across shippers, carriers, drivers, and customers. Much of it still moves by phone, email, and manual entry, which means status calls interrupt dispatchers, paperwork lags behind freight, and billing waits on documents. Every manual touch adds delay and error to an industry priced on speed and reliability.
 
-Lead Generation Automation addresses this directly. It captures, qualifies, and works leads automaticallyinstant response the moment interest shows, conversational qualification, enrichment and scoring, and routing that puts sales-ready leads in front of the right person with context. Speed and consistency are what convert leads, and both are exactly what automation delivers. For a operation, that capability lands exactly where the hours are currently going.`,
+Lead Generation Automation addresses this directly. It captures, qualifies, and works leads automatically — instant response the moment interest shows, conversational qualification, enrichment and scoring, and routing that puts sales-ready leads in front of the right person with context. Speed and consistency are what convert leads, and both are exactly what automation delivers. For a operation, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Logistics & Transportation': `**Status inquiry interruptions.** Where's my shipment? calls and emails consume dispatcher time that should go to actual coordination.
 **Document lag.** PODs, BOLs, and paperwork trail the freight, delaying billing and disputes.
@@ -58,13 +58,13 @@ For most, that points to order and tender intake or shipment status updates to c
 
 What it is: the routine work. The automation that captures, qualifies, and routes, handled automatically, consistently, at any hour, so your operation runs on systems instead of memory and heroics.`,
 
-    'A Worked Example': `Consider what happens when a customer emails asking where their shipment is. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the shipment is identified, current status and location are pulled from tracking, an accurate update is sent within seconds, and the interaction is loggeddispatchers stop fielding status calls and customers stop waiting for answers.
+    'A Worked Example': `Consider what happens when a customer emails asking where their shipment is. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the shipment is identified, current status and location are pulled from tracking, an accurate update is sent within seconds, and the interaction is logged — dispatchers stop fielding status calls and customers stop waiting for answers.
 
 That's the pattern across everything we build for logistics & transportation: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
     'Built for Logistics & Transportation\'s Realities': `Shipment and pricing data is commercially sensitive; automation is scoped with appropriate access, and operational decisions stay with dispatch. The automation moves the information so your people move the freight.
 
-We integrate with the systems your operation already runsTMS platforms, tracking systems, document management, accounting software, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your operation already runs — TMS platforms, tracking systems, document management, accounting software, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For logistics & transportation, the return shows up as: dispatcher hours reclaimed from status calls, billing accelerated by documents that process themselves, fewer entry errors in orders, and customer communication that builds retention instead of frustration. On the lead generation system side specifically, the headline metric is lead response time in seconds and conversion lift from consistency.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is lead generation system for logistics & transportation?',
       answer:
-        'Lead generation automation captures and responds to leads instantly, qualifies them conversationally, enriches and scores them, and routes sales-ready prospects to the right personwhile nurturing the rest until they\'re ready. For a operation in logistics & transportation, that means applying it to the workflows that consume your teamorder and tender intake, shipment status updates to customers, and document collection and processing (POD, BOL)with the specifics of your industry built in.',
+        'Lead generation automation captures and responds to leads instantly, qualifies them conversationally, enriches and scores them, and routes sales-ready prospects to the right person — while nurturing the rest until they\'re ready. For a operation in logistics & transportation, that means applying it to the workflows that consume your team — order and tender intake, shipment status updates to customers, and document collection and processing (POD, BOL)with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our operation already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about lead generation automation for logistics & transportation' } },
+      { type: 'FAQSection', props: { title: 'Lead Generation Systems for Logistics FAQs', subtitle: 'Common questions about lead generation automation for logistics & transportation' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

@@ -8,8 +8,8 @@ export const invoiceAutomationForLogistics: SolutionData = {
   category: 'invoice-automation',
   title: 'Invoice & Finance Automation for Logistics & Transportation',
   primaryKeyword: 'finance automation for logistics',
-  titleTag: 'Invoice Automation for Logistics Teams | Clickmasters',
-  metaDescription: 'Logistics teams use Clickmasters invoice automation to capture, check, and post bills so the close has fewer errors. Book a free audit. Ask the team.',
+  titleTag: 'Invoice & Finance Automation for Logistics | Clickmasters',
+  metaDescription: 'Finance automation for logistics that captures carrier invoices, checks charges against purchase orders, and flags exceptions before payment. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const invoiceAutomationForLogistics: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Invoice & Finance Automation for Logistics & Transportation',
-  heroSubheading: 'Automation that captures, validates, and posts, built for how logistics operations actually run.',
+  heroSubheading: 'Finance automation for logistics and transportation that captures, validates, and posts, built for how your operation actually runs.',
   heroBadge: 'Invoice & Finance Automation',
   description:
     'Clickmasters builds Invoice & Finance Automation for logistics & transportation. Automation that captures, validates, and posts automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of logistics & transportation, delivered as a system your team owns and relies on.',
@@ -58,13 +58,13 @@ For most, that points to order and tender intake or shipment status updates to c
 
 What it is: the routine work. The automation that captures, validates, and posts, handled automatically, consistently, at any hour, so your operation runs on systems instead of memory and heroics.`,
 
-    'A Worked Example': `Consider what happens when a customer emails asking where their shipment is. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the shipment is identified, current status and location are pulled from tracking, an accurate update is sent within seconds, and the interaction is loggeddispatchers stop fielding status calls and customers stop waiting for answers.
+    'A Worked Example': `Consider what happens when a customer emails asking where their shipment is. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the shipment is identified, current status and location are pulled from tracking, an accurate update is sent within seconds, and the interaction is logged — dispatchers stop fielding status calls and customers stop waiting for answers.
 
 That's the pattern across everything we build for logistics & transportation: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
     'Built for Logistics & Transportation\'s Realities': `Shipment and pricing data is commercially sensitive; automation is scoped with appropriate access, and operational decisions stay with dispatch. The automation moves the information so your people move the freight.
 
-We integrate with the systems your operation already runsTMS platforms, tracking systems, document management, accounting software, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your operation already runs — TMS platforms, tracking systems, document management, accounting software, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For logistics & transportation, the return shows up as: dispatcher hours reclaimed from status calls, billing accelerated by documents that process themselves, fewer entry errors in orders, and customer communication that builds retention instead of frustration. On the finance automation side specifically, the headline metric is invoices processed hands-free and days cut from the close.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is finance automation for logistics & transportation?',
       answer:
-        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting systemwith exceptions flagged for human review. For a operation in logistics & transportation, that means applying it to the workflows that consume your teamorder and tender intake, shipment status updates to customers, and document collection and processing (POD, BOL)with the specifics of your industry built in.',
+        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting system — with exceptions flagged for human review. For a operation in logistics & transportation, that means applying it to the workflows that consume your team — order and tender intake, shipment status updates to customers, and document collection and processing (POD, BOL)with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our operation already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about invoice & finance automation for logistics & transportation' } },
+      { type: 'FAQSection', props: { title: 'Finance Automation for Logistics FAQs', subtitle: 'Common questions about invoice & finance automation for logistics & transportation' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

@@ -9,7 +9,7 @@ export const aiWorkflowAutomationForInsurance: SolutionData = {
   title: 'AI Workflow Automation for Insurance Agencies',
   primaryKeyword: 'workflow automation for insurance',
   titleTag: 'AI Workflow Automation for Insurance Agencies | Clickmasters',
-  metaDescription: 'Insurance agencies use Clickmasters AI workflow automation to move multi-step work across systems without manual handoffs. Book a free audit.',
+  metaDescription: 'Workflow automation for insurance agencies that moves quotes, renewals, and claims paperwork between your systems and carriers. Book a free automation audit.',
   keywordEvidence: '5 matching keywords, ~250 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const aiWorkflowAutomationForInsurance: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Workflow Automation for Insurance Agencies',
-  heroSubheading: 'Automation that moves, routes, and processes, built for how insurance agencies actually operate.',
+  heroSubheading: 'AI workflow automation for insurance agencies that moves, routes, and processes policy work, built for how your agency actually operates.',
   heroBadge: 'AI Workflow Automation',
   description:
     'Clickmasters builds AI Workflow Automation for insurance agencies. Automation that moves, routes, and processes automatically, built around how an agency in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of insurance agencies, delivered as a system your team owns and relies on.',
   sections: {
     'Why Insurance Agencies Need AI Workflow Automation': `Insurance agencies run on high-volume, detail-heavy service work: quoting, policy changes, renewals, certificates, claims follow-up, and constant client communication. Much of an agency's day is consumed by repetitive requests. A certificate of insurance, a policy question, a payment issue. Each small, but together they bury CSRs and keep agents from selling. Renewals slip through cracks, follow-up is inconsistent, and growth means hiring more service staff just to keep up.
 
-AI Workflow Automation addresses this directly. It connects your apps and runs multi-step processes automaticallydata moves, decisions get made, and actions fire without manual hand-offs. Where basic automation follows fixed rules, the AI layer reads unstructured information, classifies it, drafts responses, and chooses between paths, handling the judgment calls a person used to make. For an agency, that capability lands exactly where the hours are currently going.`,
+AI Workflow Automation addresses this directly. It connects your apps and runs multi-step processes automatically — data moves, decisions get made, and actions fire without manual hand-offs. Where basic automation follows fixed rules, the AI layer reads unstructured information, classifies it, drafts responses, and chooses between paths, handling the judgment calls a person used to make. For an agency, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Insurance Agencies': `**Certificate and document requests.** COI requests and routine document needs interrupt CSRs constantly; each takes minutes, and they arrive all day long.
 **Renewal leakage.** Renewals that aren't proactively worked get shopped or lapse; manual tracking means some inevitably slip.
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is workflow automation for insurance agencies?',
       answer:
-        'AI workflow automation uses software and AI to run multi-step processes automaticallymoving data between apps, making routine decisions, and triggering actions, so sequences of tasks happen without manual effort. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
+        'AI workflow automation uses software and AI to run multi-step processes automatically — moving data between apps, making routine decisions, and triggering actions, so sequences of tasks happen without manual effort. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our agency already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI workflow automation for insurance agencies' } },
+      { type: 'FAQSection', props: { title: 'Workflow Automation for Insurance FAQs', subtitle: 'Common questions about AI workflow automation for insurance agencies' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

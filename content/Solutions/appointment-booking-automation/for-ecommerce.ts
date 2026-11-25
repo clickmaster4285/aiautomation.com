@@ -8,8 +8,8 @@ export const appointmentBookingAutomationForEcommerce: SolutionData = {
   category: 'appointment-booking-automation',
   title: 'Appointment & Booking Automation for E-commerce',
   primaryKeyword: 'booking automation for ecommerce',
-  titleTag: 'Booking Automation for E-commerce Systems | Clickmasters',
-  metaDescription: 'E-commerce teams use Clickmasters appointment booking automation to schedule, confirm, and remind so booked time is not missed. Book a free audit.',
+  titleTag: 'Booking Automation for Ecommerce Brands | Clickmasters',
+  metaDescription: 'Booking automation for ecommerce that schedules consultations and appointments, with confirmations and reminders sent automatically. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,15 +18,15 @@ export const appointmentBookingAutomationForEcommerce: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'Appointment & Booking Automation for E-commerce',
-  heroSubheading: 'Automation that books, confirms, and reminds, built for how e-commerce stores actually operate.',
+  heroHeading: 'Appointment & Booking Automation for Ecommerce',
+  heroSubheading: 'Booking automation for ecommerce that books, confirms, and reminds, built for how online stores actually operate.',
   heroBadge: 'Appointment & Booking Automation',
   description:
     'Clickmasters builds Appointment & Booking Automation for e-commerce. Automation that books, confirms, and reminds automatically, built around how a store in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of e-commerce, delivered as a system your team owns and relies on.',
   sections: {
     'Why E-commerce Needs Appointment & Booking Automation': `E-commerce generates relentless operational volume that scales directly with sales: support tickets about orders and shipping, cart abandonment eating revenue, order exceptions needing attention, review management, and marketing that needs constant feeding. For a lean team, every increase in traffic means more of everything, unless the operational layer runs on automation, which is exactly how small stores punch far above their weight.
 
-Appointment & Booking Automation addresses this directly. It books, confirms, and protects your calendar automaticallyavailability checked in real time, appointments scheduled through chat, voice, or web without back-and-forth, confirmations and reminders that cut no-shows, and rescheduling handled without a phone call. Every booking that used to require a conversation happens on its own. For a store, that capability lands exactly where the hours are currently going.`,
+Appointment & Booking Automation addresses this directly. It books, confirms, and protects your calendar automatically — availability checked in real time, appointments scheduled through chat, voice, or web without back-and-forth, confirmations and reminders that cut no-shows, and rescheduling handled without a phone call. Every booking that used to require a conversation happens on its own. For a store, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for E-commerce': `**Support volume tied to sales.** Where's my order, returns, sizingmostly repetitive questions, arriving around the clock, drowning small teams.
 **Abandoned cart revenue loss.** A large share of carts are abandoned; without automated recovery, that revenue simply evaporates.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for e-commerce: the routine handle
 
     'Built for E-commerce\'s Realities': `Customer and payment-adjacent data is handled with scoped access, and customer-facing AI answers from your actual store policies and order data so responses are accurate rather than generic.
 
-We integrate with the systems your store already runsstore platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your store already runs — store platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For e-commerce, the return shows up as: tickets deflected around the clock, cart revenue recovered automatically, faster responses lifting conversion and reviews, and a store that grows sales without growing operational headcount in lockstep. On the booking automation side specifically, the headline metric is bookings captured after hours and no-show rate reduction.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is booking automation for e-commerce?',
       answer:
-        'Appointment and booking automation schedules appointments automatically across chat, voice, and webchecking real availability, sending confirmations and reminders that reduce no-shows, and handling rescheduling without staff involvement. For a store in e-commerce, that means applying it to the workflows that consume your teamcustomer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updateswith the specifics of your industry built in.',
+        'Appointment and booking automation schedules appointments automatically across chat, voice, and web — checking real availability, sending confirmations and reminders that reduce no-shows, and handling rescheduling without staff involvement. For a store in e-commerce, that means applying it to the workflows that consume your team — customer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updates — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our store already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about appointment & booking automation for e-commerce' } },
+      { type: 'FAQSection', props: { title: 'Booking Automation for Ecommerce FAQs', subtitle: 'Common questions about appointment & booking automation for e-commerce' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

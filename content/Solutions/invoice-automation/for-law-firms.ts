@@ -9,7 +9,7 @@ export const invoiceAutomationForLawFirms: SolutionData = {
   title: 'Invoice & Finance Automation for Law Firms',
   primaryKeyword: 'finance automation for law firms',
   titleTag: 'Invoice & Finance Automation for Law Firms | Clickmasters',
-  metaDescription: 'Law firms use Clickmasters invoice automation to capture, check, and post bills so the close has fewer errors. Start with one high-volume workflow.',
+  metaDescription: 'Finance automation for law firms that captures vendor bills, routes approvals to partners, and posts entries to your accounting system. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const invoiceAutomationForLawFirms: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Invoice & Finance Automation for Law Firms',
-  heroSubheading: 'Automation that captures, validates, and posts, built for how law firms actually operate.',
+  heroSubheading: 'Finance automation for law firms that captures, validates, and posts, built for how legal practices actually operate.',
   heroBadge: 'Invoice & Finance Automation',
   description:
     'Clickmasters builds Invoice & Finance Automation for law firms. Automation that captures, validates, and posts automatically, built around how a firm in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of law firms, delivered as a system your team owns and relies on.',
@@ -58,13 +58,13 @@ For most, that points to client intake and qualification or engagement letter ge
 
 What it is: the routine work. The automation that captures, validates, and posts, handled automatically, consistently, at any hour, so your firm runs on systems instead of memory and heroics.`,
 
-    'A Worked Example': `Consider what happens when a prospective client submits an inquiry about a matter. In a manual operation, this waits for someone to be free, and often that's too late. Automated: intake information is gathered through a structured conversation, the matter type is classified, conflicts data is collected, a summary lands with the right attorney, and if the firm accepts, the engagement letter is generated from the intake data for attorney reviewhours of intake admin becomes minutes of review.
+    'A Worked Example': `Consider what happens when a prospective client submits an inquiry about a matter. In a manual operation, this waits for someone to be free, and often that's too late. Automated: intake information is gathered through a structured conversation, the matter type is classified, conflicts data is collected, a summary lands with the right attorney, and if the firm accepts, the engagement letter is generated from the intake data for attorney review — hours of intake admin becomes minutes of review.
 
 That's the pattern across everything we build for law firms: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
     "Built for Law Firms' Realities": `Confidentiality and privilege are paramount, and the line between administration and legal judgment must stay bright: automation drafts, tracks, and communicates logistics. Every legal decision and every outgoing document remains with an attorney's review. We build workflows specifically to keep that boundary clear.
 
-We integrate with the systems your firm already runspractice management platforms, document management systems, e-signature tools, and billing systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your firm already runs — practice management platforms, document management systems, e-signature tools, and billing systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For law firms, the return shows up as: attorney and staff hours redirected from administration to billable work, prospects captured before they call the next firm, deadlines tracked systematically instead of anxiously, and document production accelerated with professional review retained. On the finance automation side specifically, the headline metric is invoices processed hands-free and days cut from the close.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is finance automation for law firms?',
       answer:
-        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting systemwith exceptions flagged for human review. For a firm in law firms, that means applying it to the workflows that consume your teamclient intake and qualification, engagement letter generation, and document assembly from templates and matter datawith the specifics of your industry built in.',
+        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting system — with exceptions flagged for human review. For a firm in law firms, that means applying it to the workflows that consume your team — client intake and qualification, engagement letter generation, and document assembly from templates and matter data — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our firm already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about invoice & finance automation for law firms' } },
+      { type: 'FAQSection', props: { title: 'Finance Automation for Law Firms FAQs', subtitle: 'Common questions about invoice & finance automation for law firms' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

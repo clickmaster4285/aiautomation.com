@@ -8,8 +8,8 @@ export const aiAgentsForEducation: SolutionData = {
   category: 'ai-agents',
   title: 'AI Agent Development for Education',
   primaryKeyword: 'AI agent for education',
-  titleTag: 'AI Agent Development for Education Systems | Clickmasters',
-  metaDescription: 'Education teams use Clickmasters AI agents to carry multi-step work inside the tools the team already uses. It runs on the tools the team already has.',
+  titleTag: 'AI Agents for Education Institutions | Clickmasters',
+  metaDescription: 'AI agents for education teams that handle enrollment questions, records requests, and staff admin across your existing systems. Book a free automation audit.',
   keywordEvidence: 'pattern-based',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,8 +18,8 @@ export const aiAgentsForEducation: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'AI Agent Development for Education',
-  heroSubheading: 'Automation that reasons, acts, and completes, built for how education institutions actually work.',
+  heroHeading: 'AI Agents for Education',
+  heroSubheading: 'AI agents for education institutions that reason, act, and finish multi-step work inside the tools your staff already uses.',
   heroBadge: 'AI Agent Development',
   description: 'Clickmasters builds AI Agent Development for education. Automation that reasons, acts, and completes automatically, built around how a institution in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of education, delivered as a system your team owns and relies on.',
   sections: {
@@ -63,7 +63,7 @@ That's the pattern across everything we build for education: the routine handled
 
     'Built for Education\'s Realities': `Student dataespecially involving minorsdemands careful, restricted handling. Automation is built with strict access controls and appropriate data practices, handling administrative communication while anything sensitive or judgment-based stays with staff.
 
-We integrate with the systems your institution already runsstudent information systems, CRMs, scheduling tools, communication platforms, and payment systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your institution already runs — student information systems, CRMs, scheduling tools, communication platforms, and payment systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For education, the return shows up as: higher inquiry-to-enrollment conversion from fast consistent follow-up, seasonal crunches absorbed without temp staffing, staff hours reclaimed from repetitive questions, and reporting that assembles itself. On the AI agent side specifically, the headline metric is complete tasks handled end to end without human touches.
 
@@ -167,7 +167,7 @@ We start with a free audit that identifies your highest-return workflow, automat
   faqQuestions: [
     {
       question: 'What is AI agent for education?',
-      answer: 'An AI agent is software that uses an AI model to reason about a goal, use tools, and take multi-step action inside real systemsunlike a chatbot, which mainly answers questions. For a institution in education, that means applying it to the workflows that consume your teaminquiry response and enrollment nurture, application and document collection, and student and parent FAQ handlingwith the specifics of your industry built in.',
+      answer: 'An AI agent is software that uses an AI model to reason about a goal, use tools, and take multi-step action inside real systemsunlike a chatbot, which mainly answers questions. For a institution in education, that means applying it to the workflows that consume your team — inquiry response and enrollment nurture, application and document collection, and student and parent FAQ handling — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our institution already uses?',
@@ -264,7 +264,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI agents for education' } },
+      { type: 'FAQSection', props: { title: 'AI Agents for Education FAQs', subtitle: 'Common questions about AI agents for education' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

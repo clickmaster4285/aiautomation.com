@@ -9,8 +9,8 @@ export const aiVoiceAgentsForInsurance: SolutionData = {
   category: 'ai-voice-agents',
   title: 'AI Voice Agents for Insurance Agencies',
   primaryKeyword: 'voice agent for insurance',
-  titleTag: 'AI Voice Agents for Insurance Agencies | Clickmasters AI',
-  metaDescription: 'Insurance agencies use Clickmasters AI voice agents to answer and place calls, then hand off with the context captured. Book a free audit. Ask the team.',
+  titleTag: 'AI Voice Agents for Insurance Agencies | Clickmasters',
+  metaDescription: 'AI voice agents for insurance agencies that answer quote requests, take first notice of loss, and route policyholders with context. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -20,14 +20,14 @@ export const aiVoiceAgentsForInsurance: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Voice Agents for Insurance Agencies',
-  heroSubheading: 'Automation that answers, books, and routes, built for how insurance agencies actually operate.',
+  heroSubheading: 'Voice agents for insurance agencies that answer, book, and route policyholder calls, built for how your agency actually operates.',
   heroBadge: 'AI Voice Agents',
   description:
     'Clickmasters builds AI Voice Agents for insurance agencies. Automation that answers, books, and routes automatically, built around how an agency in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of insurance agencies, delivered as a system your team owns and relies on.',
   sections: {
     'Why Insurance Agencies Need AI Voice Agents': `Insurance agencies run on high-volume, detail-heavy service work: quoting, policy changes, renewals, certificates, claims follow-up, and constant client communication. Much of an agency's day is consumed by repetitive requests. A certificate of insurance, a policy question, a payment issue. Each small, but together they bury CSRs and keep agents from selling. Renewals slip through cracks, follow-up is inconsistent, and growth means hiring more service staff just to keep up.
 
-AI Voice Agents addresses this directly. It answers and makes phone calls in natural speechgreeting callers, answering questions, booking appointments, qualifying leads, and routing to your team, at every hour your staff can't pick up. For any business that loses opportunities to missed calls, this recovers revenue that currently vanishes silently. For an agency, that capability lands exactly where the hours are currently going.`,
+AI Voice Agents addresses this directly. It answers and makes phone calls in natural speech — greeting callers, answering questions, booking appointments, qualifying leads, and routing to your team, at every hour your staff can't pick up. For any business that loses opportunities to missed calls, this recovers revenue that currently vanishes silently. For an agency, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Insurance Agencies': `**Certificate and document requests.** COI requests and routine document needs interrupt CSRs constantly; each takes minutes, and they arrive all day long.
 **Renewal leakage.** Renewals that aren't proactively worked get shopped or lapse; manual tracking means some inevitably slip.
@@ -96,7 +96,7 @@ We start with a free audit that identifies your highest-return workflow, automat
       description: 'Real availability checked and booked during the call.',
     },
     {
-      icon: 'PhoneOutgoing',
+      icon: 'Phone — Outgoing',
       title: 'Outbound & Follow-up Calls',
       description: 'Reminders, confirmations, and qualification at scale.',
     },
@@ -170,7 +170,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is voice agent for insurance agencies?',
       answer:
-        'An AI voice agent holds natural spoken phone conversationsunderstanding callers, answering questions, booking appointments, and routing callsusing AI speech and language models. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
+        'An AI voice agent holds natural spoken phone conversationsunderstanding callers, answering questions, booking appointments, and routing calls — using AI speech and language models. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our agency already uses?',
@@ -271,7 +271,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI voice agents for insurance agencies' } },
+      { type: 'FAQSection', props: { title: 'Voice Agents for Insurance FAQs', subtitle: 'Common questions about AI voice agents for insurance agencies' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

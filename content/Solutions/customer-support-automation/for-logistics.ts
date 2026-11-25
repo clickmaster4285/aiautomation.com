@@ -8,8 +8,8 @@ export const customerSupportAutomationForLogistics: SolutionData = {
   category: 'customer-support-automation',
   title: 'Customer Support Automation for Logistics & Transportation',
   primaryKeyword: 'support automation for logistics',
-  titleTag: 'Customer for Logistics & Transportation | Clickmasters',
-  metaDescription: 'Logistics teams use Clickmasters customer support automation to resolve routine requests and escalate the cases that need a person. Book a free audit.',
+  titleTag: 'Customer Support Automation for Logistics | Clickmasters',
+  metaDescription: 'Support automation for logistics teams that answers tracking, delivery, and exception questions and escalates urgent shipments to dispatch. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const customerSupportAutomationForLogistics: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Customer Support Automation for Logistics & Transportation',
-  heroSubheading: 'Automation that resolves, routes, and escalates, built for how logistics operations actually run.',
+  heroSubheading: 'Support automation for logistics and transportation teams that resolves routine shipment requests, routes exceptions, and escalates the rest.',
   heroBadge: 'Customer Support Automation',
   description:
     'Clickmasters builds Customer Support Automation for logistics & transportation. Automation that resolves, routes, and escalates automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of logistics & transportation, delivered as a system your team owns and relies on.',
@@ -58,13 +58,13 @@ For most, that points to order and tender intake or shipment status updates to c
 
 What it is: the routine work. The automation that resolves, routes, and escalates, handled automatically, consistently, at any hour, so your operation runs on systems instead of memory and heroics.`,
 
-    'A Worked Example': `Consider what happens when a customer emails asking where their shipment is. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the shipment is identified, current status and location are pulled from tracking, an accurate update is sent within seconds, and the interaction is loggeddispatchers stop fielding status calls and customers stop waiting for answers.
+    'A Worked Example': `Consider what happens when a customer emails asking where their shipment is. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the shipment is identified, current status and location are pulled from tracking, an accurate update is sent within seconds, and the interaction is logged — dispatchers stop fielding status calls and customers stop waiting for answers.
 
 That's the pattern across everything we build for logistics & transportation: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
     'Built for Logistics & Transportation\'s Realities': `Shipment and pricing data is commercially sensitive; automation is scoped with appropriate access, and operational decisions stay with dispatch. The automation moves the information so your people move the freight.
 
-We integrate with the systems your operation already runsTMS platforms, tracking systems, document management, accounting software, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your operation already runs — TMS platforms, tracking systems, document management, accounting software, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For logistics & transportation, the return shows up as: dispatcher hours reclaimed from status calls, billing accelerated by documents that process themselves, fewer entry errors in orders, and customer communication that builds retention instead of frustration. On the support automation side specifically, the headline metric is tickets deflected and response time cut.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is support automation for logistics & transportation?',
       answer:
-        'Customer support automation uses AI agents and workflows to answer common questions from your documentation, triage and route tickets, and draft replieswhile escalating complex cases to human agents with context. For a operation in logistics & transportation, that means applying it to the workflows that consume your teamorder and tender intake, shipment status updates to customers, and document collection and processing (POD, BOL)with the specifics of your industry built in.',
+        'Customer support automation uses AI agents and workflows to answer common questions from your documentation, triage and route tickets, and draft replies — while escalating complex cases to human agents with context. For a operation in logistics & transportation, that means applying it to the workflows that consume your team — order and tender intake, shipment status updates to customers, and document collection and processing (POD, BOL)with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our operation already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about customer support automation for logistics & transportation' } },
+      { type: 'FAQSection', props: { title: 'Support Automation for Logistics FAQs', subtitle: 'Common questions about customer support automation for logistics & transportation' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

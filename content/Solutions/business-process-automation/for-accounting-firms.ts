@@ -8,8 +8,8 @@ export const businessProcessAutomationForAccountingFirms: SolutionData = {
   category: 'business-process-automation',
   title: 'Business Process Automation for Accounting Firms',
   primaryKeyword: 'process automation for accounting firms',
-  titleTag: 'Business Process for Accounting Firms | Clickmasters AI',
-  metaDescription: 'Accounting firms use Clickmasters business process automation to take repetitive operations off the people who currently chase them. Ask the team.',
+  titleTag: 'Process Automation for Accounting Firms | Clickmasters',
+  metaDescription: 'Process automation for accounting firms that handles client document chasing, engagement tracking, and close-cycle handoffs. Book a free automation audit.',
   keywordEvidence: '10 matching keywords, ~1,400 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const businessProcessAutomationForAccountingFirms: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Business Process Automation for Accounting Firms',
-  heroSubheading: 'Automation that runs, coordinates, and completes, built for how accounting firms actually operate.',
+  heroSubheading: 'Business process automation for accounting firms that runs, coordinates, and completes the work your staff currently chases by hand.',
   heroBadge: 'Business Process Automation',
   description:
     'Clickmasters builds Business Process Automation for accounting firms. Automation that runs, coordinates, and completes automatically, built around how a firm in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of accounting firms, delivered as a system your team owns and relies on.',
@@ -32,7 +32,7 @@ Business Process Automation addresses this directly. It takes an entire repeatab
 **Manual data entry.** Keying transactions, statements, and receipts into accounting software consumes junior staff hours and introduces errors that seniors then find.
 **Deadline and status tracking.** Tracking dozens or hundreds of client deadlines manually creates risk; a missed filing has real consequences.
 **Repetitive client questions.** Status inquiries and routine questions interrupt production work throughout the day.
-**Onboarding friction.** New client setupengagement letters, document requests, system setupis repetitive and slow.
+**Onboarding friction.** New client setup — engagement letters, document requests, system setup — is repetitive and slow.
 
 Every one of these is a workflow problem, not a people problem, and workflow problems are what automation eliminates.`,
 
@@ -64,7 +64,7 @@ That's the pattern across everything we build for accounting firms: the routine 
 
     'Built for Accounting Firms\' Realities': `Financial data demands accuracy and confidentiality. Automation here is built with validation at every step where an error would be costly, human review on exceptions, and secure handling throughout the automation does the keying and matching; the accountant's judgment stays in charge of anything that matters.
 
-We integrate with the systems your firm already runsaccounting platforms like QuickBooks and Xero, practice management tools, document portals, and tax software, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your firm already runs — accounting platforms like QuickBooks and Xero, practice management tools, document portals, and tax software, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For accounting firms, the return shows up as: junior-staff hours redirected from data entry to review work, faster turnaround on engagements, fewer errors reaching senior review, deadlines tracked automatically instead of anxiously, and busy-season capacity without busy-season burnout. On the process automation side specifically, the headline metric is end-to-end process time cut and hand-off delays eliminated.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is process automation for accounting firms?',
       answer:
-        'Business process automation (BPA) uses software and AI to run an entire business processall its steps, systems, and hand-offs. Automatically, rather than automating just one task. For a firm in accounting firms, that means applying it to the workflows that consume your teamclient document collection, transaction and statement data entry, and bank and account reconciliationwith the specifics of your industry built in.',
+        'Business process automation (BPA) uses software and AI to run an entire business process — all its steps, systems, and hand-offs. Automatically, rather than automating just one task. For a firm in accounting firms, that means applying it to the workflows that consume your team — client document collection, transaction and statement data entry, and bank and account reconciliation — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our firm already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about business process automation for accounting firms' } },
+      { type: 'FAQSection', props: { title: 'Process Automation for Accounting Firms FAQs', subtitle: 'Common questions about business process automation for accounting firms' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

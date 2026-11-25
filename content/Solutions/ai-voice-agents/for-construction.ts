@@ -8,8 +8,8 @@ export const aiVoiceAgentsForConstruction: SolutionData = {
   category: 'ai-voice-agents',
   title: 'AI Voice Agents for Construction',
   primaryKeyword: 'voice agent for construction',
-  titleTag: 'AI Voice Agents for Construction Systems | Clickmasters',
-  metaDescription: 'Construction companies use Clickmasters AI voice agents to answer and place calls, then hand off with the context captured. Book a free audit.',
+  titleTag: 'AI Voice Agents for Construction | Clickmasters',
+  metaDescription: 'AI voice agents for construction that answer bid inquiries, schedule site visits, and log subcontractor calls with full context. Book a free automation audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const aiVoiceAgentsForConstruction: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Voice Agents for Construction',
-  heroSubheading: 'Automation that answers, books, and routes, built for how construction companies actually operate.',
+  heroSubheading: 'Voice agents for construction teams that answer, book, and route calls, built for how job sites and offices actually operate.',
   heroBadge: 'AI Voice Agents',
   description:
     'Clickmasters builds AI Voice Agents for construction. Automation that answers, books, and routes automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of construction, delivered as a system your team owns and relies on.',
   sections: {
     'Why Construction Needs AI Voice Agents': `Construction companies coordinate crews, subs, suppliers, clients, and paperwork across simultaneous projects, with the office side often running on phone calls, paper, and re-typed data. Bids need fast turnaround, project documents pile up, change orders and invoices need tracking, and clients want updates. The administrative load grows with every project, and it competes directly with the estimating and project management that actually wins and delivers work.
 
-AI Voice Agents addresses this directly. It answers and makes phone calls in natural speechgreeting callers, answering questions, booking appointments, qualifying leads, and routing to your team, at every hour your staff can't pick up. For any business that loses opportunities to missed calls, this recovers revenue that currently vanishes silently. For a company, that capability lands exactly where the hours are currently going.`,
+AI Voice Agents addresses this directly. It answers and makes phone calls in natural speech — greeting callers, answering questions, booking appointments, qualifying leads, and routing to your team, at every hour your staff can't pick up. For any business that loses opportunities to missed calls, this recovers revenue that currently vanishes silently. For a company, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Construction': `**Lead and bid response lag.** Project inquiries and bid opportunities that aren't answered fast go to competitors who responded first.
 **Document and photo chaos.** Plans, permits, photos, and change orders scatter across email, phones, and folders.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for construction: the routine hand
 
     'Built for Construction\'s Realities': `Bid pricing and project data are competitively sensitive; automation is scoped accordingly, and anything contractual keeps human review. The automation handles the paperwork flow, your team runs the projects.
 
-We integrate with the systems your company already runsconstruction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your company already runs — construction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For construction, the return shows up as: more bids won from faster response, office hours reclaimed from chasing documents and sending updates, invoicing that keeps pace with the work, and clients who feel informed instead of ignored. On the voice agent side specifically, the headline metric is calls answered and bookings captured that would have been missed.
 
@@ -95,7 +95,7 @@ We start with a free audit that identifies your highest-return workflow, automat
       description: 'Real availability checked and booked during the call.',
     },
     {
-      icon: 'PhoneOutgoing',
+      icon: 'Phone — Outgoing',
       title: 'Outbound & Follow-up Calls',
       description: 'Reminders, confirmations, and qualification at scale.',
     },
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is voice agent for construction?',
       answer:
-        'An AI voice agent holds natural spoken phone conversationsunderstanding callers, answering questions, booking appointments, and routing callsusing AI speech and language models. For a company in construction, that means applying it to the workflows that consume your teamlead intake and estimate follow-up, bid request handling, and project document collection and organizationwith the specifics of your industry built in.',
+        'An AI voice agent holds natural spoken phone conversationsunderstanding callers, answering questions, booking appointments, and routing calls — using AI speech and language models. For a company in construction, that means applying it to the workflows that consume your team — lead intake and estimate follow-up, bid request handling, and project document collection and organization — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our company already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI voice agents for construction' } },
+      { type: 'FAQSection', props: { title: 'Voice Agents for Construction FAQs', subtitle: 'Common questions about AI voice agents for construction' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

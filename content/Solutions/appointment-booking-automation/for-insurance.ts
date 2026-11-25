@@ -9,7 +9,7 @@ export const appointmentBookingAutomationForInsurance: SolutionData = {
   title: 'Appointment & Booking Automation for Insurance Agencies',
   primaryKeyword: 'booking automation for insurance',
   titleTag: 'Booking Automation for Insurance Agencies | Clickmasters',
-  metaDescription: 'Insurance agencies use Clickmasters appointment booking automation to schedule, confirm, and remind so booked time is not missed. Book a free audit.',
+  metaDescription: 'Booking automation for insurance agencies that schedules policy reviews and quote calls, with reminders so clients show up prepared. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const appointmentBookingAutomationForInsurance: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Appointment & Booking Automation for Insurance Agencies',
-  heroSubheading: 'Automation that books, confirms, and reminds, built for how insurance agencies actually operate.',
+  heroSubheading: 'Booking automation for insurance agencies that books, confirms, and reminds, built for how your agency actually operates.',
   heroBadge: 'Appointment & Booking Automation',
   description:
     'Clickmasters builds Appointment & Booking Automation for insurance agencies. Automation that books, confirms, and reminds automatically, built around how an agency in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of insurance agencies, delivered as a system your team owns and relies on.',
   sections: {
     'Why Insurance Agencies Need Appointment & Booking Automation': `Insurance agencies run on high-volume, detail-heavy service work: quoting, policy changes, renewals, certificates, claims follow-up, and constant client communication. Much of an agency's day is consumed by repetitive requests. A certificate of insurance, a policy question, a payment issue. Each small, but together they bury CSRs and keep agents from selling. Renewals slip through cracks, follow-up is inconsistent, and growth means hiring more service staff just to keep up.
 
-Appointment & Booking Automation addresses this directly. It books, confirms, and protects your calendar automaticallyavailability checked in real time, appointments scheduled through chat, voice, or web without back-and-forth, confirmations and reminders that cut no-shows, and rescheduling handled without a phone call. Every booking that used to require a conversation happens on its own. For an agency, that capability lands exactly where the hours are currently going.`,
+Appointment & Booking Automation addresses this directly. It books, confirms, and protects your calendar automatically — availability checked in real time, appointments scheduled through chat, voice, or web without back-and-forth, confirmations and reminders that cut no-shows, and rescheduling handled without a phone call. Every booking that used to require a conversation happens on its own. For an agency, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Insurance Agencies': `**Certificate and document requests.** COI requests and routine document needs interrupt CSRs constantly; each takes minutes, and they arrive all day long.
 **Renewal leakage.** Renewals that aren't proactively worked get shopped or lapse; manual tracking means some inevitably slip.
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is booking automation for insurance agencies?',
       answer:
-        'Appointment and booking automation schedules appointments automatically across chat, voice, and webchecking real availability, sending confirmations and reminders that reduce no-shows, and handling rescheduling without staff involvement. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
+        'Appointment and booking automation schedules appointments automatically across chat, voice, and web — checking real availability, sending confirmations and reminders that reduce no-shows, and handling rescheduling without staff involvement. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our agency already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about appointment & booking automation for insurance agencies' } },
+      { type: 'FAQSection', props: { title: 'Booking Automation for Insurance FAQs', subtitle: 'Common questions about appointment & booking automation for insurance agencies' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

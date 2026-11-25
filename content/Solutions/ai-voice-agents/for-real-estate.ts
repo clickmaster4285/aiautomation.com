@@ -8,8 +8,8 @@ export const aiVoiceAgentsForRealEstate: SolutionData = {
   category: 'ai-voice-agents',
   title: 'AI Voice Agents for Real Estate',
   primaryKeyword: 'voice agent for real estate',
-  titleTag: 'AI Voice Agents for Real Estate Services | Clickmasters',
-  metaDescription: 'Real estate brokerages use Clickmasters AI voice agents to answer and place calls, then hand off with the context captured. Book a free audit.',
+  titleTag: 'AI Voice Agents for Real Estate | Clickmasters',
+  metaDescription: 'AI voice agents for real estate that answer listing inquiries, qualify buyers, and book showings, then hand off with notes attached. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const aiVoiceAgentsForRealEstate: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Voice Agents for Real Estate',
-  heroSubheading: 'Automation that answers, books, and routes, built for how real estate teams actually operate.',
+  heroSubheading: 'Voice agents for real estate teams that answer, qualify, and book calls, built for how brokerages actually operate.',
   heroBadge: 'AI Voice Agents',
   description:
     'Clickmasters builds AI Voice Agents for real estate. Automation that answers, books, and routes automatically, built around how a team in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of real estate, delivered as a system your team owns and relies on.',
   sections: {
     'Why Real Estate Needs AI Voice Agents': `Real estate is decided by speed to lead and consistency of follow-up, and both break down precisely when agents are busiest. The enquiry that arrives during a showing waits hours; the lead that needed six months of nurture goes cold after two weeks of silence; the transaction with a dozen moving deadlines depends on someone remembering everything. The agents who win aren't necessarily better closers; they're the ones whose systems never let a lead or a deadline slip.
 
-AI Voice Agents addresses this directly. It answers and makes phone calls in natural speechgreeting callers, answering questions, booking appointments, qualifying leads, and routing to your team, at every hour your staff can't pick up. For any business that loses opportunities to missed calls, this recovers revenue that currently vanishes silently. For a team, that capability lands exactly where the hours are currently going.`,
+AI Voice Agents addresses this directly. It answers and makes phone calls in natural speech — greeting callers, answering questions, booking appointments, qualifying leads, and routing to your team, at every hour your staff can't pick up. For any business that loses opportunities to missed calls, this recovers revenue that currently vanishes silently. For a team, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Real Estate': `**Slow lead response.** Leads expect a response in minutes; agents mid-showing or asleep respond in hours, by which time the lead has heard from someone else.
 **Nurture that doesn't happen.** Most leads transact months later, but consistent long-term follow-up by hand is exactly what busy agents fail to sustain.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for real estate: the routine handl
 
     'Built for Real Estate\'s Realities': `Client financial details and transaction information warrant careful handling, and automation keeps agents in control of relationships and negotiationsit handles the response speed and the follow-up consistency, while the human handles the human part.
 
-We integrate with the systems your team already runsreal estate CRMs, lead sources and portals, showing management tools, transaction management platforms, and calendar systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your team already runs — real estate CRMs, lead sources and portals, showing management tools, transaction management platforms, and calendar systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For real estate, the return shows up as: more leads converted from instant response, revenue recovered from long-tail nurture that actually happens, hours reclaimed from scheduling ping-pong, and transactions that close without deadline scares. On the voice agent side specifically, the headline metric is calls answered and bookings captured that would have been missed.
 
@@ -95,7 +95,7 @@ We start with a free audit that identifies your highest-return workflow, automat
       description: 'Real availability checked and booked during the call.',
     },
     {
-      icon: 'PhoneOutgoing',
+      icon: 'Phone — Outgoing',
       title: 'Outbound & Follow-up Calls',
       description: 'Reminders, confirmations, and qualification at scale.',
     },
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is voice agent for real estate?',
       answer:
-        'An AI voice agent holds natural spoken phone conversationsunderstanding callers, answering questions, booking appointments, and routing callsusing AI speech and language models. For a team in real estate, that means applying it to the workflows that consume your teaminstant lead response and qualification, long-term nurture and reactivation sequences, and showing scheduling and reminderswith the specifics of your industry built in.',
+        'An AI voice agent holds natural spoken phone conversationsunderstanding callers, answering questions, booking appointments, and routing calls — using AI speech and language models. For a team in real estate, that means applying it to the workflows that consume your team — instant lead response and qualification, long-term nurture and reactivation sequences, and showing scheduling and reminders — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our team already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI voice agents for real estate' } },
+      { type: 'FAQSection', props: { title: 'Voice Agents for Real Estate FAQs', subtitle: 'Common questions about AI voice agents for real estate' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

@@ -8,8 +8,8 @@ export const aiAgentsForSaaS: SolutionData = {
   category: 'ai-agents',
   title: 'AI Agent Development for SaaS Companies',
   primaryKeyword: 'AI agent for SaaS',
-  titleTag: 'AI Agent Development for SaaS Companies | Clickmasters',
-  metaDescription: 'SaaS companies use Clickmasters AI agents to carry multi-step work inside the tools the team already uses. It runs on the tools the team already has.',
+  titleTag: 'AI Agents for SaaS Companies | Clickmasters',
+  metaDescription: 'AI agents for SaaS companies that handle onboarding steps, support triage, and account research across your product and CRM stack. Book a free automation audit.',
   keywordEvidence: 'pattern-based',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,8 +18,8 @@ export const aiAgentsForSaaS: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'AI Agent Development for SaaS Companies',
-  heroSubheading: 'Automation that reasons, acts, and completes, built for how SaaS companies actually work.',
+  heroHeading: 'AI Agents for SaaS Companies',
+  heroSubheading: 'AI agents for SaaS companies that reason, act, and finish multi-step work inside the tools your team already uses.',
   heroBadge: 'AI Agent Development',
   description: 'Clickmasters builds AI Agent Development for SaaS companies. Automation that reasons, acts, and completes automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of saas companies, delivered as a system your team owns and relies on.',
   sections: {
@@ -57,13 +57,13 @@ For most, that points to support ticket triage and resolution or user onboarding
 
 What it is: the routine work. The automation that reasons, acts, and completes, handled automatically, consistently, at any hour, so your company runs on systems instead of memory and heroics.`,
 
-    'A Worked Example': `Consider what happens when a support ticket arrives asking how to configure a feature. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the ticket is classified, the answer is drawn from your actual product documentation, an accurate response is sent within seconds, the ticket is logged and tagged, and only genuinely complex or sensitive cases route to your team with full contextsupport that scales with usage instead of headcount.
+    'A Worked Example': `Consider what happens when a support ticket arrives asking how to configure a feature. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the ticket is classified, the answer is drawn from your actual product documentation, an accurate response is sent within seconds, the ticket is logged and tagged, and only genuinely complex or sensitive cases route to your team with full context — support that scales with usage instead of headcount.
 
 That's the pattern across everything we build for SaaS companies: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
     'Built for SaaS Companies\' Realities': `Customer data and usage information require careful handling. Automation is built with scoped access and, where needed, infrastructure that keeps sensitive data in your environment, and customer-facing AI is grounded in your real documentation so it answers accurately rather than guessing.
 
-We integrate with the systems your company already runssupport platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slackconnecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your company already runs — support platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slack — connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For saas companies, the return shows up as: ticket deflection that preserves efficient scaling, activation and retention lift from consistent onboarding, churn caught early enough to act on, and revenue operations that run without manual drag. On the AI agent side specifically, the headline metric is complete tasks handled end to end without human touches.
 
@@ -167,11 +167,11 @@ We start with a free audit that identifies your highest-return workflow, automat
   faqQuestions: [
     {
       question: 'What is AI agent for SaaS companies?',
-      answer: 'An AI agent is software that uses an AI model to reason about a goal, use tools, and take multi-step action inside real systemsunlike a chatbot, which mainly answers questions. For a company in saas, that means applying it to the workflows that consume your teamsupport ticket triage and resolution, user onboarding and activation sequences, and churn-risk monitoring and alertswith the specifics of your industry built in.',
+      answer: 'An AI agent is software that uses an AI model to reason about a goal, use tools, and take multi-step action inside real systemsunlike a chatbot, which mainly answers questions. For a company in saas, that means applying it to the workflows that consume your team — support ticket triage and resolution, user onboarding and activation sequences, and churn-risk monitoring and alerts — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our company already uses?',
-      answer: 'Yes. We build into the systems saas companies actually run onsupport platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slackconnecting rather than replacing them, so the automation fits your existing operation.',
+      answer: 'Yes. We build into the systems saas companies actually run onsupport platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slack — connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
@@ -264,7 +264,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI agents for SaaS companies' } },
+      { type: 'FAQSection', props: { title: 'AI Agents for SaaS FAQs', subtitle: 'Common questions about AI agents for SaaS companies' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

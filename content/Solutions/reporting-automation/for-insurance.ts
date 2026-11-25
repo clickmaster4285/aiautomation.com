@@ -9,7 +9,7 @@ export const reportingAutomationForInsurance: SolutionData = {
   title: 'Reporting Automation for Insurance Agencies',
   primaryKeyword: 'reporting automation for insurance',
   titleTag: 'Reporting Automation for Insurance Agencies | Clickmasters',
-  metaDescription: 'Insurance agencies use Clickmasters reporting automation to assemble the numbers teams already ask for, on a schedule. Book a free audit. Ask the team.',
+  metaDescription: 'Reporting automation for insurance agencies that brings policy, renewal, and producer data into scheduled reports, no spreadsheet work. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const reportingAutomationForInsurance: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Reporting Automation for Insurance Agencies',
-  heroSubheading: 'Automation that aggregates, builds, and delivers, built for how insurance agencies actually operate.',
+  heroSubheading: 'Reporting automation for insurance agencies that aggregates your data, builds the reports, and delivers them on schedule, designed around how agencies actually operate.',
   heroBadge: 'Reporting Automation',
   description:
     'Clickmasters builds Reporting Automation for insurance agencies. Automation that aggregates, builds, and delivers automatically, built around how an agency in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of insurance agencies, delivered as a system your team owns and relies on.',
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is reporting automation for insurance agencies?',
       answer:
-        'Reporting automation assembles recurring reports and dashboards from live data automaticallypulling from multiple systems, generating the report, and delivering it on schedulereplacing the manual export-copy-format cycle. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
+        'Reporting automation assembles recurring reports and dashboards from live data automatically — pulling from multiple systems, generating the report, and delivering it on schedule — replacing the manual export-copy-format cycle. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our agency already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about reporting automation for insurance agencies' } },
+      { type: 'FAQSection', props: { title: 'Reporting Automation for Insurance FAQs', subtitle: 'Common questions about reporting automation for insurance agencies' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

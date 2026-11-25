@@ -9,7 +9,7 @@ export const marketingAutomationForConstruction: SolutionData = {
   title: 'AI Marketing Automation for Construction',
   primaryKeyword: 'marketing automation for construction',
   titleTag: 'AI Marketing Automation for Construction | Clickmasters',
-  metaDescription: 'Construction companies use Clickmasters marketing automation to run nurture and campaign follow-up without a manual queue. Book a free audit.',
+  metaDescription: 'Marketing automation for construction companies that follows up on bids, nurtures past clients, and keeps your pipeline full. Book a free automation audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const marketingAutomationForConstruction: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Marketing Automation for Construction',
-  heroSubheading: 'Automation that produces, nurtures, and reports, built for how construction companies actually operate.',
+  heroSubheading: 'Marketing automation for construction companies that drafts content, nurtures leads, and reports on campaigns, built for how your business actually operates.',
   heroBadge: 'AI Marketing Automation',
   description:
     'Clickmasters builds AI Marketing Automation for construction. Automation that produces, nurtures, and reports automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of construction, delivered as a system your team owns and relies on.',
   sections: {
     'Why Construction Needs AI Marketing Automation': `Construction companies coordinate crews, subs, suppliers, clients, and paperwork across simultaneous projects, with the office side often running on phone calls, paper, and re-typed data. Bids need fast turnaround, project documents pile up, change orders and invoices need tracking, and clients want updates. The administrative load grows with every project, and it competes directly with the estimating and project management that actually wins and delivers work.
 
-AI Marketing Automation addresses this directly. It runs the production and follow-through that consumes marketing teamscontent drafted at scale with human review, nurture sequences that adapt to behavior, campaigns that trigger and segment themselves, and reporting that assembles automatically. The strategy stays human; the relentless execution becomes automatic. For a company, that capability lands exactly where the hours are currently going.`,
+AI Marketing Automation addresses this directly. It runs the production and follow-through that consumes marketing teams — content drafted at scale with human review, nurture sequences that adapt to behavior, campaigns that trigger and segment themselves, and reporting that assembles automatically. The strategy stays human; the relentless execution becomes automatic. For a company, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Construction': `**Lead and bid response lag.** Project inquiries and bid opportunities that aren't answered fast go to competitors who responded first.
 **Document and photo chaos.** Plans, permits, photos, and change orders scatter across email, phones, and folders.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for construction: the routine hand
 
     'Built for Construction\'s Realities': `Bid pricing and project data are competitively sensitive; automation is scoped accordingly, and anything contractual keeps human review. The automation handles the paperwork flow, your team runs the projects.
 
-We integrate with the systems your company already runsconstruction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your company already runs — construction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For construction, the return shows up as: more bids won from faster response, office hours reclaimed from chasing documents and sending updates, invoicing that keeps pace with the work, and clients who feel informed instead of ignored. On the marketing automation side specifically, the headline metric is content and campaign output multiplied without added headcount.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is marketing automation for construction?',
       answer:
-        'AI marketing automation uses AI and workflows to run marketing tasks automaticallygenerating content, personalizing nurture sequences, managing campaigns, and reporting, so teams produce more without proportionally more staff. For a company in construction, that means applying it to the workflows that consume your teamlead intake and estimate follow-up, bid request handling, and project document collection and organizationwith the specifics of your industry built in.',
+        'AI marketing automation uses AI and workflows to run marketing tasks automatically — generating content, personalizing nurture sequences, managing campaigns, and reporting, so teams produce more without proportionally more staff. For a company in construction, that means applying it to the workflows that consume your team — lead intake and estimate follow-up, bid request handling, and project document collection and organization — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our company already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI marketing automation for construction' } },
+      { type: 'FAQSection', props: { title: 'Marketing Automation for Construction FAQs', subtitle: 'Common questions about AI marketing automation for construction' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

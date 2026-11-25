@@ -8,8 +8,8 @@ export const leadGenerationAutomationForInsurance: SolutionData = {
   category: 'lead-generation-automation',
   title: 'Lead Generation Automation for Insurance Agencies',
   primaryKeyword: 'lead generation system for insurance',
-  titleTag: 'Lead Generation for Insurance Agencies | Clickmasters AI',
-  metaDescription: 'Insurance agencies use Clickmasters lead generation automation to capture, qualify, and route new demand while it is still warm. Book a free audit.',
+  titleTag: 'Lead Generation Systems for Insurance Agents | Clickmasters',
+  metaDescription: 'Lead generation systems for insurance agencies that capture quote requests, qualify coverage needs, and route prospects to a producer. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,15 +18,15 @@ export const leadGenerationAutomationForInsurance: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'Lead Generation Automation for Insurance Agencies',
-  heroSubheading: 'Automation that captures, qualifies, and routes, built for how insurance agencies actually operate.',
+  heroHeading: 'Lead Generation Systems for Insurance Agencies',
+  heroSubheading: 'A lead generation system for insurance that helps you capture, qualify, and route quote requests, built for how insurance agencies actually operate.',
   heroBadge: 'Lead Generation Automation',
   description:
     'Clickmasters builds Lead Generation Automation for insurance agencies. Automation that captures, qualifies, and routes automatically, built around how an agency in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of insurance agencies, delivered as a system your team owns and relies on.',
   sections: {
     'Why Insurance Agencies Need Lead Generation Automation': `Insurance agencies run on high-volume, detail-heavy service work: quoting, policy changes, renewals, certificates, claims follow-up, and constant client communication. Much of an agency's day is consumed by repetitive requests. A certificate of insurance, a policy question, a payment issue. Each small, but together they bury CSRs and keep agents from selling. Renewals slip through cracks, follow-up is inconsistent, and growth means hiring more service staff just to keep up.
 
-Lead Generation Automation addresses this directly. It captures, qualifies, and works leads automaticallyinstant response the moment interest shows, conversational qualification, enrichment and scoring, and routing that puts sales-ready leads in front of the right person with context. Speed and consistency are what convert leads, and both are exactly what automation delivers. For an agency, that capability lands exactly where the hours are currently going.`,
+Lead Generation Automation addresses this directly. It captures, qualifies, and works leads automatically — instant response the moment interest shows, conversational qualification, enrichment and scoring, and routing that puts sales-ready leads in front of the right person with context. Speed and consistency are what convert leads, and both are exactly what automation delivers. For an agency, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Insurance Agencies': `**Certificate and document requests.** COI requests and routine document needs interrupt CSRs constantly; each takes minutes, and they arrive all day long.
 **Renewal leakage.** Renewals that aren't proactively worked get shopped or lapse; manual tracking means some inevitably slip.
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is lead generation system for insurance agencies?',
       answer:
-        'Lead generation automation captures and responds to leads instantly, qualifies them conversationally, enriches and scores them, and routes sales-ready prospects to the right personwhile nurturing the rest until they\'re ready. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
+        'Lead generation automation captures and responds to leads instantly, qualifies them conversationally, enriches and scores them, and routes sales-ready prospects to the right person — while nurturing the rest until they\'re ready. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our agency already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about lead generation automation for insurance agencies' } },
+      { type: 'FAQSection', props: { title: 'Lead Generation Systems for Insurance FAQs', subtitle: 'Common questions about lead generation automation for insurance agencies' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

@@ -8,8 +8,8 @@ export const marketingAutomationForInsurance: SolutionData = {
   category: 'marketing-automation',
   title: 'AI Marketing Automation for Insurance Agencies',
   primaryKeyword: 'marketing automation for insurance',
-  titleTag: 'AI Marketing for Insurance Agencies | Clickmasters AI',
-  metaDescription: 'Insurance agencies use Clickmasters marketing automation to run nurture and campaign follow-up without a manual queue. Book a free audit. Ask the team.',
+  titleTag: 'Marketing Automation for Insurance Agencies | Clickmasters',
+  metaDescription: 'Marketing automation for insurance agencies that nurtures quotes, times renewal outreach, and surfaces cross-sell opportunities. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const marketingAutomationForInsurance: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Marketing Automation for Insurance Agencies',
-  heroSubheading: 'Automation that produces, nurtures, and reports, built for how insurance agencies actually operate.',
+  heroSubheading: 'Marketing automation for insurance agencies that drafts content, nurtures prospects, and reports on campaigns, built for how your agency actually operates.',
   heroBadge: 'AI Marketing Automation',
   description:
     'Clickmasters builds AI Marketing Automation for insurance agencies. Automation that produces, nurtures, and reports automatically, built around how an agency in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of insurance agencies, delivered as a system your team owns and relies on.',
   sections: {
     'Why Insurance Agencies Need AI Marketing Automation': `Insurance agencies run on high-volume, detail-heavy service work: quoting, policy changes, renewals, certificates, claims follow-up, and constant client communication. Much of an agency's day is consumed by repetitive requests. A certificate of insurance, a policy question, a payment issue. Each small, but together they bury CSRs and keep agents from selling. Renewals slip through cracks, follow-up is inconsistent, and growth means hiring more service staff just to keep up.
 
-AI Marketing Automation addresses this directly. It runs the production and follow-through that consumes marketing teamscontent drafted at scale with human review, nurture sequences that adapt to behavior, campaigns that trigger and segment themselves, and reporting that assembles automatically. The strategy stays human; the relentless execution becomes automatic. For an agency, that capability lands exactly where the hours are currently going.`,
+AI Marketing Automation addresses this directly. It runs the production and follow-through that consumes marketing teams — content drafted at scale with human review, nurture sequences that adapt to behavior, campaigns that trigger and segment themselves, and reporting that assembles automatically. The strategy stays human; the relentless execution becomes automatic. For an agency, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Insurance Agencies': `**Certificate and document requests.** COI requests and routine document needs interrupt CSRs constantly; each takes minutes, and they arrive all day long.
 **Renewal leakage.** Renewals that aren't proactively worked get shopped or lapse; manual tracking means some inevitably slip.
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is marketing automation for insurance agencies?',
       answer:
-        'AI marketing automation uses AI and workflows to run marketing tasks automaticallygenerating content, personalizing nurture sequences, managing campaigns, and reporting, so teams produce more without proportionally more staff. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
+        'AI marketing automation uses AI and workflows to run marketing tasks automatically — generating content, personalizing nurture sequences, managing campaigns, and reporting, so teams produce more without proportionally more staff. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our agency already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI marketing automation for insurance agencies' } },
+      { type: 'FAQSection', props: { title: 'Marketing Automation for Insurance FAQs', subtitle: 'Common questions about AI marketing automation for insurance agencies' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

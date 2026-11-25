@@ -8,8 +8,8 @@ export const aiAgentsForConstruction: SolutionData = {
   category: 'ai-agents',
   title: 'AI Agent Development for Construction',
   primaryKeyword: 'AI agent for construction',
-  titleTag: 'AI Agent Development for Construction | Clickmasters AI',
-  metaDescription: 'Construction companies use Clickmasters AI agents to carry multi-step work inside the tools the team already uses. Book a free audit. Ask the team.',
+  titleTag: 'AI Agents for Construction Companies | Clickmasters',
+  metaDescription: 'AI agents for construction teams that track RFIs, chase subcontractor paperwork, and keep project updates moving. Book a free automation audit.',
   keywordEvidence: 'pattern-based',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,8 +18,8 @@ export const aiAgentsForConstruction: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'AI Agent Development for Construction',
-  heroSubheading: 'Automation that reasons, acts, and completes, built for how construction companies actually work.',
+  heroHeading: 'AI Agents for Construction',
+  heroSubheading: 'AI agents for construction companies that reason, act, and finish multi-step work inside the tools your team already uses.',
   heroBadge: 'AI Agent Development',
   description: 'Clickmasters builds AI Agent Development for construction. Automation that reasons, acts, and completes automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of construction, delivered as a system your team owns and relies on.',
   sections: {
@@ -63,7 +63,7 @@ That's the pattern across everything we build for construction: the routine hand
 
     'Built for Construction\'s Realities': `Bid pricing and project data are competitively sensitive; automation is scoped accordingly, and anything contractual keeps human review. The automation handles the paperwork flow, your team runs the projects.
 
-We integrate with the systems your company already runsconstruction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your company already runs — construction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For construction, the return shows up as: more bids won from faster response, office hours reclaimed from chasing documents and sending updates, invoicing that keeps pace with the work, and clients who feel informed instead of ignored. On the AI agent side specifically, the headline metric is complete tasks handled end to end without human touches.
 
@@ -167,7 +167,7 @@ We start with a free audit that identifies your highest-return workflow, automat
   faqQuestions: [
     {
       question: 'What is AI agent for construction?',
-      answer: 'An AI agent is software that uses an AI model to reason about a goal, use tools, and take multi-step action inside real systemsunlike a chatbot, which mainly answers questions. For a company in construction, that means applying it to the workflows that consume your teamlead intake and estimate follow-up, bid request handling, and project document collection and organizationwith the specifics of your industry built in.',
+      answer: 'An AI agent is software that uses an AI model to reason about a goal, use tools, and take multi-step action inside real systemsunlike a chatbot, which mainly answers questions. For a company in construction, that means applying it to the workflows that consume your team — lead intake and estimate follow-up, bid request handling, and project document collection and organization — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our company already uses?',
@@ -264,7 +264,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI agents for construction' } },
+      { type: 'FAQSection', props: { title: 'AI Agents for Construction FAQs', subtitle: 'Common questions about AI agents for construction' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

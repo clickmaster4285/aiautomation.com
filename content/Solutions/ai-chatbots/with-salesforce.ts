@@ -8,8 +8,8 @@ export const aiChatbotsWithSalesforce: SolutionData = {
   category: 'ai-chatbots',
   title: 'AI Chatbots with Salesforce', // ✅ Added missing title
   primaryKeyword: 'salesforce chatbot',
-  titleTag: 'AI Chatbots Built on Salesforce Services | Clickmasters',
-  metaDescription: 'Teams running Salesforce use Clickmasters AI chatbots to answer questions, qualify leads, and book appointments. Start with one high-volume workflow.',
+  titleTag: 'Salesforce Chatbot Development | Clickmasters',
+  metaDescription: 'A Salesforce chatbot that answers questions, qualifies leads, and books meetings, logging every chat to the right record. Book a free automation audit.',
   keywordEvidence: '12 matching keywords, ~1,450 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -17,12 +17,12 @@ export const aiChatbotsWithSalesforce: SolutionData = {
     'Salesforce platform page',
     'AI Automation Agency pillar',
   ],
-  heroHeading: 'AI Chatbots Built on Salesforce',
-  heroSubheading: 'Enterprise-grade conversations that answer, qualify, and book automatically running on the world\'s leading CRM platform.',
+  heroHeading: 'Salesforce Chatbots Built on Your CRM',
+  heroSubheading: 'A Salesforce chatbot that answers, qualifies, and books automatically, running on the world\'s leading CRM platform.',
   heroBadge: 'AI Chatbots × Salesforce',
   description: 'Clickmasters builds chatbot on Salesforce. Salesforce is the enterprise CRM standard, with enormous capability that most orgs use a fraction of and it\'s an excellent fit for organizations with Salesforce at the core of revenue operations. Combined with chatbot, which holds real conversations and takes real action answering from your own content, booking appointments, qualifying leads, and handing off to humans cleanly. Modern AI chatbots understand natural language and ground their answers in your actual documentation, which makes them nothing like the scripted bots everyone learned to dread, the result is automation that runs on a platform matched to the job.',
   sections: {
-    'Why Salesforce for AI Chatbots': 'Salesforce is the enterprise CRM standard, with enormous capability that most orgs use a fraction of. Automation and ai extend what admins can build natively. For chatbot specifically, that means your automation gets the platform strengths while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. Salesforce is the right home for this work when it matches organizations with Salesforce at the core of revenue operations and when it does, this combination is hard to beat.',
+    'Why Salesforce for AI Chatbots': 'Salesforce is the enterprise CRM standard, with enormous capability that most orgs use a fraction of. Automation and ai extend what admins can build natively. For chatbot specifically, that means your automation gets the platform strengths while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. Salesforce is the right home for this work when it matches organizations with Salesforce at the core of revenue operations and when it does, this combination is hard to beat.\n\nBecause the chatbot writes straight into Salesforce, it slots into the rest of your revenue workflow automation. Qualified conversations can feed the lead scoring and CRM automation rules you already run, and the same records drive the pipeline reporting your managers rely on.',
     'What a Production Build Includes': 'The gap between a prototype and a system you can rely on is everything that happens when things go wrong. Every chatbot build we ship on Salesforce includes error handling on every step (failures caught and retried or escalated, never silent), monitoring and alerting (you know the system is running without checking), documentation (your team can understand and modify the build), and staged rollout (the automation proves itself on real cases with human oversight before it runs unattended).\n\nThis is the difference between automation that saves hours and automation that quietly breaks and costs trust. Most of the rescue projects we take on are builds that skipped these steps.',
     'Typical Workflows on Salesforce': 'The chatbot workflows we most often build on Salesforce follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is needed classification, extraction, drafting and the result is executed and logged. Salesforce\'s strengths make it particularly suited to organizations with Salesforce at the core of revenue operations, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
   },
@@ -210,7 +210,7 @@ export const aiChatbotsWithSalesforce: SolutionData = {
 } },
       { type: 'PlatformComparison', props: { title: 'Is Salesforce Right for You?', subtitle: 'We\'ll tell you honestly if Salesforce is the right platform for your chatbot needs.' } },
       { type: 'StatsSection', props: { title: 'Why Choose Clickmasters for Salesforce Chatbots' } },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about chatbots on Salesforce' } },
+      { type: 'FAQSection', props: { title: 'Salesforce Chatbot FAQs', subtitle: 'Common questions about chatbots on Salesforce' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

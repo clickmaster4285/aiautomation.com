@@ -8,8 +8,8 @@ export const businessProcessAutomationForInsurance: SolutionData = {
   category: 'business-process-automation',
   title: 'Business Process Automation for Insurance Agencies',
   primaryKeyword: 'process automation for insurance',
-  titleTag: 'Business Process for Insurance Agencies | Clickmasters',
-  metaDescription: 'Insurance agencies use Clickmasters business process automation to take repetitive operations off the people who currently chase them. Ask the team.',
+  titleTag: 'Process Automation for Insurance Agencies | Clickmasters',
+  metaDescription: 'Process automation for insurance agencies that keeps quotes, renewals, endorsements, and claims paperwork moving without manual chasing. Book a free audit.',
   keywordEvidence: '11 matching keywords, ~1,000 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const businessProcessAutomationForInsurance: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Business Process Automation for Insurance Agencies',
-  heroSubheading: 'Automation that runs, coordinates, and completes, built for how insurance agencies actually operate.',
+  heroSubheading: 'Business process automation for insurance agencies that runs, coordinates, and completes the policy and service work your team handles today.',
   heroBadge: 'Business Process Automation',
   description:
     'Clickmasters builds Business Process Automation for insurance agencies. Automation that runs, coordinates, and completes automatically, built around how an agency in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of insurance agencies, delivered as a system your team owns and relies on.',
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is process automation for insurance agencies?',
       answer:
-        'Business process automation (BPA) uses software and AI to run an entire business processall its steps, systems, and hand-offs. Automatically, rather than automating just one task. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
+        'Business process automation (BPA) uses software and AI to run an entire business process — all its steps, systems, and hand-offs. Automatically, rather than automating just one task. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our agency already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about business process automation for insurance agencies' } },
+      { type: 'FAQSection', props: { title: 'Process Automation for Insurance FAQs', subtitle: 'Common questions about business process automation for insurance agencies' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

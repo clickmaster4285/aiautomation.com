@@ -9,7 +9,7 @@ export const documentAutomationForInsurance: SolutionData = {
   title: 'Document & Data Automation for Insurance Agencies',
   primaryKeyword: 'document automation for insurance',
   titleTag: 'Document Automation for Insurance Teams | Clickmasters',
-  metaDescription: 'Insurance agencies use Clickmasters document automation to extract, check, and route data from invoices, forms, and files. Book a free audit.',
+  metaDescription: 'Document automation for insurance agencies that reads applications, policy documents, and claims forms and routes the data for review. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,8 +18,8 @@ export const documentAutomationForInsurance: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'Document & Data Automation for Insurance Agencies',
-  heroSubheading: 'Automation that reads, validates, and files, built for how insurance agencies actually operate.',
+  heroHeading: 'Document Automation for Insurance Agencies',
+  heroSubheading: 'Document automation for insurance agencies that reads, validates, and files policy and claims paperwork, built for how agencies actually operate.',
   heroBadge: 'Document & Data Automation',
   description:
     'Clickmasters builds Document & Data Automation for insurance agencies. Automation that reads, validates, and files automatically, built around how an agency in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of insurance agencies, delivered as a system your team owns and relies on.',
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is document automation for insurance agencies?',
       answer:
-        'Document and data automation uses OCR and AI to read documents, extract and validate structured data, and route it into business systems automaticallyreplacing manual reading and data entry. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
+        'Document and data automation uses OCR and AI to read documents, extract and validate structured data, and route it into business systems automatically — replacing manual reading and data entry. For an agency in insurance agencies, that means applying it to the workflows that consume your team. Quote intake and data gathering, certificate of insurance issuance, and renewal tracking and outreach, with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our agency already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about document automation for insurance agencies' } },
+      { type: 'FAQSection', props: { title: 'Document Automation for Insurance FAQs', subtitle: 'Common questions about document automation for insurance agencies' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

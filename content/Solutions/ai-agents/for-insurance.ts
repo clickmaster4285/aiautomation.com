@@ -8,8 +8,8 @@ export const aiAgentsForInsurance: SolutionData = {
   category: 'ai-agents',
   title: 'AI Agent Development for Insurance Agencies',
   primaryKeyword: 'AI agent for insurance',
-  titleTag: 'AI Agent Development for Insurance Agencies | Clickmasters',
-  metaDescription: 'Insurance agencies use Clickmasters AI agents to carry multi-step work inside the tools the team already uses. Start with one high-volume workflow.',
+  titleTag: 'AI Agents for Insurance Agencies | Clickmasters',
+  metaDescription: 'AI agents for insurance agencies that gather quote details, chase renewal documents, and route claims updates to the right person. Book a free automation audit.',
   keywordEvidence: 'pattern-based',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,8 +18,8 @@ export const aiAgentsForInsurance: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'AI Agent Development for Insurance Agencies',
-  heroSubheading: 'Automation that reasons, acts, and completes, built for how insurance agencies actually work.',
+  heroHeading: 'AI Agents for Insurance Agencies',
+  heroSubheading: 'AI agents for insurance agencies that reason, act, and finish multi-step work inside the tools your agency already uses.',
   heroBadge: 'AI Agent Development',
   description: 'Clickmasters builds AI Agent Development for insurance agencies. Automation that reasons, acts, and completes automatically, built around how an agency in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of insurance agencies, delivered as a system your team owns and relies on.',
   sections: {
@@ -264,7 +264,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI agents for insurance' } },
+      { type: 'FAQSection', props: { title: 'AI Agents for Insurance FAQs', subtitle: 'Common questions about AI agents for insurance' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

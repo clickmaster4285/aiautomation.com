@@ -9,7 +9,7 @@ export const reportingAutomationForConstruction: SolutionData = {
   title: 'Reporting Automation for Construction',
   primaryKeyword: 'reporting automation for construction',
   titleTag: 'Reporting Automation for Construction | Clickmasters AI',
-  metaDescription: 'Construction companies use Clickmasters reporting automation to assemble the numbers teams already ask for, on a schedule. Book a free audit.',
+  metaDescription: 'Reporting automation for construction that turns job costs, field updates, and schedules into reports project managers get on time. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const reportingAutomationForConstruction: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Reporting Automation for Construction',
-  heroSubheading: 'Automation that aggregates, builds, and delivers, built for how construction companies actually operate.',
+  heroSubheading: 'Reporting automation for construction that aggregates your data, builds the reports, and delivers them on schedule, designed around how construction companies actually operate.',
   heroBadge: 'Reporting Automation',
   description:
     'Clickmasters builds Reporting Automation for construction. Automation that aggregates, builds, and delivers automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of construction, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for construction: the routine hand
 
     'Built for Construction\'s Realities': `Bid pricing and project data are competitively sensitive; automation is scoped accordingly, and anything contractual keeps human review. The automation handles the paperwork flow, your team runs the projects.
 
-We integrate with the systems your company already runsconstruction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your company already runs — construction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For construction, the return shows up as: more bids won from faster response, office hours reclaimed from chasing documents and sending updates, invoicing that keeps pace with the work, and clients who feel informed instead of ignored. On the reporting automation side specifically, the headline metric is reporting hours eliminated and decision lag removed.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is reporting automation for construction?',
       answer:
-        'Reporting automation assembles recurring reports and dashboards from live data automaticallypulling from multiple systems, generating the report, and delivering it on schedulereplacing the manual export-copy-format cycle. For a company in construction, that means applying it to the workflows that consume your teamlead intake and estimate follow-up, bid request handling, and project document collection and organizationwith the specifics of your industry built in.',
+        'Reporting automation assembles recurring reports and dashboards from live data automatically — pulling from multiple systems, generating the report, and delivering it on schedule — replacing the manual export-copy-format cycle. For a company in construction, that means applying it to the workflows that consume your team — lead intake and estimate follow-up, bid request handling, and project document collection and organization — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our company already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about reporting automation for construction' } },
+      { type: 'FAQSection', props: { title: 'Reporting Automation for Construction FAQs', subtitle: 'Common questions about reporting automation for construction' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

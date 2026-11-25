@@ -8,8 +8,8 @@ export const aiChatbotsForConstruction: SolutionData = {
   category: 'ai-chatbots',
   title: 'AI Chatbots for Construction',
   primaryKeyword: 'chatbot for construction',
-  titleTag: 'AI Chatbots for Construction Services | Clickmasters',
-  metaDescription: 'Construction companies use Clickmasters AI chatbots to answer questions, qualify leads, and book appointments. Start with one high-volume workflow.',
+  titleTag: 'AI Chatbots for Construction Companies | Clickmasters',
+  metaDescription: 'An AI chatbot for construction companies that answers project inquiries, qualifies bid requests, and books site visits. Book a free automation audit.',
   keywordEvidence: 'pattern-based',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const aiChatbotsForConstruction: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Chatbots for Construction',
-  heroSubheading: 'Automation that answers, qualifies, and books, built for how construction companies actually work.',
+  heroSubheading: 'An AI chatbot for construction companies that answers, qualifies, and books, built for how your team actually works.',
   heroBadge: 'AI Chatbots',
   description: 'Clickmasters builds AI Chatbots for construction. Automation that answers, qualifies, and books automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of construction, delivered as a system your team owns and relies on.',
   sections: {
@@ -63,7 +63,7 @@ That's the pattern across everything we build for construction: the routine hand
 
     'Built for Construction\'s Realities': `Bid pricing and project data are competitively sensitive; automation is scoped accordingly, and anything contractual keeps human review. The automation handles the paperwork flow, your team runs the projects.
 
-We integrate with the systems your company already runsconstruction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your company already runs — construction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For construction, the return shows up as: more bids won from faster response, office hours reclaimed from chasing documents and sending updates, invoicing that keeps pace with the work, and clients who feel informed instead of ignored. On the chatbot side specifically, the headline metric is conversations handled and leads captured around the clock.
 
@@ -167,7 +167,7 @@ We start with a free audit that identifies your highest-return workflow, automat
   faqQuestions: [
     {
       question: 'What is chatbot for construction?',
-      answer: 'An AI chatbot uses a language model to understand and respond in natural language, answering from a business\'s own content and taking actions like booking or routing, far beyond old script-based bots. For a company in construction, that means applying it to the workflows that consume your teamlead intake and estimate follow-up, bid request handling, and project document collection and organizationwith the specifics of your industry built in.',
+      answer: 'An AI chatbot uses a language model to understand and respond in natural language, answering from a business\'s own content and taking actions like booking or routing, far beyond old script-based bots. For a company in construction, that means applying it to the workflows that consume your team — lead intake and estimate follow-up, bid request handling, and project document collection and organization — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our company already uses?',
@@ -264,7 +264,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI chatbots for construction' } },
+      { type: 'FAQSection', props: { title: 'Chatbots for Construction FAQs', subtitle: 'Common questions about AI chatbots for construction' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

@@ -8,8 +8,8 @@ export const appointmentBookingAutomationForLawFirms: SolutionData = {
   category: 'appointment-booking-automation',
   title: 'Appointment & Booking Automation for Law Firms',
   primaryKeyword: 'booking automation for law firms',
-  titleTag: 'Booking Automation for Law Firms Systems | Clickmasters',
-  metaDescription: 'Law firms use Clickmasters appointment booking automation to schedule, confirm, and remind so booked time is not missed. Book a free audit. Ask the team.',
+  titleTag: 'Booking Automation for Law Firms | Clickmasters',
+  metaDescription: 'Booking automation for law firms that schedules client consultations, sends confirmations and reminders, and logs every booking in your CRM. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const appointmentBookingAutomationForLawFirms: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Appointment & Booking Automation for Law Firms',
-  heroSubheading: 'Automation that books, confirms, and reminds, built for how law firms actually operate.',
+  heroSubheading: 'Booking automation for law firms that books, confirms, and reminds, built for how legal practices actually operate.',
   heroBadge: 'Appointment & Booking Automation',
   description:
     'Clickmasters builds Appointment & Booking Automation for law firms. Automation that books, confirms, and reminds automatically, built around how a firm in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of law firms, delivered as a system your team owns and relies on.',
   sections: {
     'Why Law Firms Need Appointment & Booking Automation': `Legal work is wrapped in administration: intake, conflict checks, engagement letters, document drafting from repeated patterns, deadline tracking with serious consequences, and clients who want updates. Attorney time is expensive, so every hour spent on administrative work costs twice: once in salary, once in unbilled opportunity. And the stakes make consistency essential: a missed date or dropped intake isn't just inefficiency, it's risk.
 
-Appointment & Booking Automation addresses this directly. It books, confirms, and protects your calendar automaticallyavailability checked in real time, appointments scheduled through chat, voice, or web without back-and-forth, confirmations and reminders that cut no-shows, and rescheduling handled without a phone call. Every booking that used to require a conversation happens on its own. For a firm, that capability lands exactly where the hours are currently going.`,
+Appointment & Booking Automation addresses this directly. It books, confirms, and protects your calendar automatically — availability checked in real time, appointments scheduled through chat, voice, or web without back-and-forth, confirmations and reminders that cut no-shows, and rescheduling handled without a phone call. Every booking that used to require a conversation happens on its own. For a firm, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Law Firms': `**Intake that leaks prospects.** Prospective clients who don't get fast, organized intake often retain the firm that responded first.
 **Repetitive document production.** Routine documents get drafted from scratch or hand-edited templates, consuming hours per matter.
@@ -58,13 +58,13 @@ For most, that points to client intake and qualification or engagement letter ge
 
 What it is: the routine work. The automation that books, confirms, and reminds, handled automatically, consistently, at any hour, so your firm runs on systems instead of memory and heroics.`,
 
-    'A Worked Example': `Consider what happens when a prospective client submits an inquiry about a matter. In a manual operation, this waits for someone to be free, and often that's too late. Automated: intake information is gathered through a structured conversation, the matter type is classified, conflicts data is collected, a summary lands with the right attorney, and if the firm accepts, the engagement letter is generated from the intake data for attorney reviewhours of intake admin becomes minutes of review.
+    'A Worked Example': `Consider what happens when a prospective client submits an inquiry about a matter. In a manual operation, this waits for someone to be free, and often that's too late. Automated: intake information is gathered through a structured conversation, the matter type is classified, conflicts data is collected, a summary lands with the right attorney, and if the firm accepts, the engagement letter is generated from the intake data for attorney review — hours of intake admin becomes minutes of review.
 
 That's the pattern across everything we build for law firms: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
     'Built for Law Firms\' Realities': `Confidentiality and privilege are paramount, and the line between administration and legal judgment must stay bright: automation drafts, tracks, and communicates logistics. Every legal decision and every outgoing document remains with an attorney's review. We build workflows specifically to keep that boundary clear.
 
-We integrate with the systems your firm already runspractice management platforms, document management systems, e-signature tools, and billing systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your firm already runs — practice management platforms, document management systems, e-signature tools, and billing systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For law firms, the return shows up as: attorney and staff hours redirected from administration to billable work, prospects captured before they call the next firm, deadlines tracked systematically instead of anxiously, and document production accelerated with professional review retained. On the booking automation side specifically, the headline metric is bookings captured after hours and no-show rate reduction.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is booking automation for law firms?',
       answer:
-        'Appointment and booking automation schedules appointments automatically across chat, voice, and webchecking real availability, sending confirmations and reminders that reduce no-shows, and handling rescheduling without staff involvement. For a firm in law firms, that means applying it to the workflows that consume your teamclient intake and qualification, engagement letter generation, and document assembly from templates and matter datawith the specifics of your industry built in.',
+        'Appointment and booking automation schedules appointments automatically across chat, voice, and web — checking real availability, sending confirmations and reminders that reduce no-shows, and handling rescheduling without staff involvement. For a firm in law firms, that means applying it to the workflows that consume your team — client intake and qualification, engagement letter generation, and document assembly from templates and matter data — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our firm already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about appointment & booking automation for law firms' } },
+      { type: 'FAQSection', props: { title: 'Booking Automation for Law Firms FAQs', subtitle: 'Common questions about appointment & booking automation for law firms' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

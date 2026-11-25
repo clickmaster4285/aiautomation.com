@@ -8,8 +8,8 @@ export const salesAutomationForRealEstate: SolutionData = {
   category: 'sales-automation',
   title: 'AI Sales Automation for Real Estate',
   primaryKeyword: 'sales automation for real estate',
-  titleTag: 'AI Sales Automation for Real Estate | Clickmasters AI',
-  metaDescription: 'Real estate brokerages use Clickmasters sales automation to enrich leads, follow up, and log activity so reps can sell. Book a free audit. Ask the team.',
+  titleTag: 'AI Sales Automation for Real Estate | Clickmasters',
+  metaDescription: 'Sales automation for real estate that responds to buyer and seller inquiries quickly, runs nurture sequences, and keeps your CRM clean. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const salesAutomationForRealEstate: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Sales Automation for Real Estate',
-  heroSubheading: 'Automation that enriches, follows up, and logs, built for how real estate teams actually operate.',
+  heroSubheading: 'Sales automation for real estate teams that enriches buyer and seller leads, follows up fast, and logs every touchpoint.',
   heroBadge: 'AI Sales Automation',
   description:
     'Clickmasters builds AI Sales Automation for real estate. Automation that enriches, follows up, and logs automatically, built around how a team in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of real estate, delivered as a system your team owns and relies on.',
   sections: {
     'Why Real Estate Needs AI Sales Automation': `Real estate is decided by speed to lead and consistency of follow-up, and both break down precisely when agents are busiest. The enquiry that arrives during a showing waits hours; the lead that needed six months of nurture goes cold after two weeks of silence; the transaction with a dozen moving deadlines depends on someone remembering everything. The agents who win aren't necessarily better closers; they're the ones whose systems never let a lead or a deadline slip.
 
-AI Sales Automation addresses this directly. It removes the administrative grind around sellingleads enriched and scored the moment they arrive, follow-up sequences that never slip, CRM records that update themselves, and reports that assemble automatically. Your reps spend their time on conversations that close, not on data entry. For a team, that capability lands exactly where the hours are currently going.`,
+AI Sales Automation addresses this directly. It removes the administrative grind around selling — leads enriched and scored the moment they arrive, follow-up sequences that never slip, CRM records that update themselves, and reports that assemble automatically. Your reps spend their time on conversations that close, not on data entry. For a team, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Real Estate': `**Slow lead response.** Leads expect a response in minutes; agents mid-showing or asleep respond in hours, by which time the lead has heard from someone else.
 **Nurture that doesn't happen.** Most leads transact months later, but consistent long-term follow-up by hand is exactly what busy agents fail to sustain.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for real estate: the routine handl
 
     'Built for Real Estate\'s Realities': `Client financial details and transaction information warrant careful handling, and automation keeps agents in control of relationships and negotiationsit handles the response speed and the follow-up consistency, while the human handles the human part.
 
-We integrate with the systems your team already runsreal estate CRMs, lead sources and portals, showing management tools, transaction management platforms, and calendar systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your team already runs — real estate CRMs, lead sources and portals, showing management tools, transaction management platforms, and calendar systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For real estate, the return shows up as: more leads converted from instant response, revenue recovered from long-tail nurture that actually happens, hours reclaimed from scheduling ping-pong, and transactions that close without deadline scares. On the sales automation side specifically, the headline metric is selling hours recovered per rep per week.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is sales automation for real estate?',
       answer:
-        'AI sales automation handles repetitive sales taskslead enrichment, scoring, follow-up, CRM updates, proposals, and reporting, so reps spend their time selling rather than on administration. For a team in real estate, that means applying it to the workflows that consume your teaminstant lead response and qualification, long-term nurture and reactivation sequences, and showing scheduling and reminderswith the specifics of your industry built in.',
+        'AI sales automation handles repetitive sales tasks — lead enrichment, scoring, follow-up, CRM updates, proposals, and reporting, so reps spend their time selling rather than on administration. For a team in real estate, that means applying it to the workflows that consume your team — instant lead response and qualification, long-term nurture and reactivation sequences, and showing scheduling and reminders — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our team already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about sales automation for real estate' } },
+      { type: 'FAQSection', props: { title: 'Sales Automation for Real Estate FAQs', subtitle: 'Common questions about sales automation for real estate' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

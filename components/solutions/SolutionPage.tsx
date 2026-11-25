@@ -2,6 +2,7 @@
 // The single template behind every data-driven solution page:
 //   /solutions/<service>          (app/solutions/[service]/page.tsx)
 //   /solutions/<service>/<slug>   (app/solutions/[service]/[slug]/page.tsx)
+// Styled with the homepage ("/") design system (components/solutions/home, like components/products/ProductPage).
 //
 // A page's copy AND layout live in its content file (content/Solutions/...):
 //   page.schema  → Service JSON-LD name / serviceType
@@ -9,13 +10,16 @@
 // Props that bind to the content object (FAQs, stats, steps, features…) are filled in here (BLOCK_DATA),
 // so content files only hold what actually differs per page.
 // Value references inside props: { $ref: 'field', slice?: [a, b] } → content[field],
-// { $related: 'title' | 'subtitle' } → related-solutions heading, { $element: 'Name', props } → hero visual.
-import type { ComponentType, ReactNode } from 'react';
+// { $related: 'title' | 'subtitle' } → related-solutions heading. ({ $element } hero visuals are ignored:
+// the hero shows the lead form, as on product pages.)
+//
+// Backgrounds and section markers ("01", "02"…) are assigned here per page, so any block order alternates
+// light / dark like the homepage.
+import { Fragment, type ComponentType, type ReactNode } from 'react';
 import type { Metadata } from 'next';
 
-import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
-import { HeroSection } from '@/components/solutions/sections/Hero';
 import {
+  HeroSection,
   WhySection,
   ProblemsSection,
   AutomationSection,
@@ -25,18 +29,21 @@ import {
   RealitiesSection,
   ReturnSection,
   WhyUsSection,
-} from '@/components/solutions/sections/variants';
-import { ContentSection } from '@/components/solutions/sections/Content';
-import { FeatureGrid } from '@/components/solutions/sections/FeatureGrid';
-import { ProcessSteps } from '@/components/solutions/sections/ProcessSteps';
-import { PlatformComparison } from '@/components/solutions/sections/PlatformComparison';
-import { StatsSection } from '@/components/solutions/sections/Stats';
-import { FAQSection } from '@/components/solutions/sections/FAQ';
+  ContentSection,
+  FeatureGrid,
+  ProcessSteps,
+  PlatformComparison,
+  StatsSection,
+  FAQSection,
+  CTASection,
+} from '@/components/solutions/home/sections';
+import type { Tone } from '@/components/solutions/home/kit';
 import { RelatedSolutions } from '@/components/solutions/sections/RelatedSolutions';
-import { CTASection } from '@/components/solutions/sections/CTA';
-import { AutomationHeroMockup } from '@/components/solutions/sections/IndustryHeroMockup';
-import { ChatbotHeroMockup } from '@/components/solutions/sections/ChatbotHeroMockup';
+import { stripMarkup } from '@/components/solutions/sections/variants/RichText';
 import { withInlineLinks, relatedHeading } from '@/lib/inline-links';
+import { solutionBreadcrumbs, TOPICS, SEGMENTS, PLATFORMS } from '@/lib/link-graph';
+import { RelatedCards } from '@/components/seo/RelatedCards';
+import { SOLUTION_DETAILS } from '@/content/Solutions/pages';
 import { canonicalUrl } from '@/lib/canonical';
 import type { SolutionBlock, SolutionPageContent } from '@/content/type';
 
@@ -65,12 +72,6 @@ const BLOCKS: Record<string, ComponentType<AnyProps>> = {
   CTASection: asComponent(CTASection),
 };
 
-/** Hero visuals a content file may reference with { $element }. */
-const VISUALS: Record<string, ComponentType<AnyProps>> = {
-  AutomationHeroMockup: asComponent(AutomationHeroMockup),
-  ChatbotHeroMockup: asComponent(ChatbotHeroMockup),
-};
-
 /** Props every block of a type takes from the content object. */
 const BLOCK_DATA: Record<string, AnyProps> = {
   HeroSection: { badge: { $ref: 'heroBadge' }, heading: { $ref: 'heroHeading' }, subheading: { $ref: 'heroSubheading' } },
@@ -84,10 +85,36 @@ const BLOCK_DATA: Record<string, AnyProps> = {
   StatsSection: { stats: { $ref: 'stats' } },
 };
 
+/** Blocks with their own homepage styling (no tone / marker). */
+const SELF_STYLED = new Set(['HeroSection', 'FAQSection', 'RelatedSolutions', 'CTASection']);
+/** Blocks that read best on the dark (ink) background, as on the homepage. */
+const PREFERS_DARK = new Set(['ProblemsSection', 'ExampleSection', 'ProcessSteps', 'ReturnSection', 'StatsSection', 'PlatformComparison']);
+
+/** Background per block: dark where preferred, light ones alternate paper / secondary, never two alike in a row. */
+function assignTones(blocks: SolutionBlock[]): (Tone | undefined)[] {
+  let prev: Tone | undefined;
+  let light: Tone = 'secondary';
+  return blocks.map((b) => {
+    if (SELF_STYLED.has(b.type)) {
+      prev = undefined;
+      return undefined;
+    }
+    let tone: Tone;
+    if (PREFERS_DARK.has(b.type) && prev !== 'ink') tone = 'ink';
+    else {
+      light = light === 'paper' ? 'secondary' : 'paper';
+      if (light === prev) light = light === 'paper' ? 'secondary' : 'paper';
+      tone = light;
+    }
+    prev = tone;
+    return tone;
+  });
+}
+
 type Ctx = { content: SolutionPageContent; related: { title: string; subtitle: string } };
 
-function resolve(value: unknown, ctx: Ctx, key?: string): unknown {
-  if (Array.isArray(value)) return value.map((v, i) => resolve(v, ctx, String(i)));
+function resolve(value: unknown, ctx: Ctx): unknown {
+  if (Array.isArray(value)) return value.map((v) => resolve(v, ctx));
   if (!value || typeof value !== 'object') return value;
   const v = value as AnyProps;
   if (typeof v.$ref === 'string') {
@@ -96,15 +123,11 @@ function resolve(value: unknown, ctx: Ctx, key?: string): unknown {
     return slice && Array.isArray(data) ? data.slice(slice[0], slice[1]) : data;
   }
   if (typeof v.$related === 'string') return ctx.related[v.$related as 'title' | 'subtitle'];
-  if (typeof v.$element === 'string') {
-    const Visual = VISUALS[v.$element];
-    if (!Visual) throw new Error(`Unknown hero visual "${v.$element}" in ${ctx.content.url}`);
-    return <Visual key={key} {...(resolve(v.props ?? {}, ctx) as AnyProps)} />;
-  }
-  return Object.fromEntries(Object.entries(v).map(([k, x]) => [k, resolve(x, ctx, k)]));
+  if (typeof v.$element === 'string') return undefined;
+  return Object.fromEntries(Object.entries(v).map(([k, x]) => [k, resolve(x, ctx)]));
 }
 
-function renderBlock(block: SolutionBlock, index: number, ctx: Ctx): ReactNode {
+function renderBlock(block: SolutionBlock, index: number, ctx: Ctx, tone: Tone | undefined, marker: string | undefined): ReactNode {
   const Block = BLOCKS[block.type];
   if (!Block) throw new Error(`Unknown block "${block.type}" in ${ctx.content.url}`);
   const props = resolve({ ...BLOCK_DATA[block.type], ...block.props }, ctx) as AnyProps;
@@ -113,7 +136,44 @@ function renderBlock(block: SolutionBlock, index: number, ctx: Ctx): ReactNode {
     if (body === undefined) throw new Error(`Missing section "${block.section}" in ${ctx.content.url}`);
     props.content = Array.isArray(body) ? body : [body];
   }
+  if (block.type === 'HeroSection') {
+    // Breadcrumb from the site hierarchy (matches the BreadcrumbList JSON-LD); lead name for the hero form.
+    props.breadcrumb = solutionBreadcrumbs(ctx.content.url).map((c) => ({ label: c.name, href: c.path }));
+    props.leadName = ctx.content.page.schema.name;
+  }
+  if (tone) props.tone = tone;
+  if (marker) props.marker = marker;
   return <Block key={index} {...props} />;
+}
+
+/**
+ * On a hub (/solutions/<topic>): cards for every live /solutions/<topic>/for-* and with-* page,
+ * generated from the route registry so new detail pages are linked from their hub automatically.
+ */
+function ChildPages({ url }: { url: string }) {
+  const [, , topic, child] = url.split('/');
+  if (!topic || child) return null;
+  // Cards show just the industry / platform name: the section heading already says "<Topic> for Your Industry",
+  // and repeating the full keyword on every card would over-optimise the hub (keyword density).
+  const card = (key: string) => {
+    const child = key.split('/')[1];
+    const name = child.startsWith('for-') ? SEGMENTS[child.slice(4)]?.name : PLATFORMS[child.slice(5)]?.name;
+    return { title: name ?? child, href: `/solutions/${key}` };
+  };
+  const keys = Object.keys(SOLUTION_DETAILS).filter((k) => k.startsWith(`${topic}/`));
+  const industries = keys.filter((k) => k.split('/')[1].startsWith('for-')).map(card);
+  const platforms = keys.filter((k) => k.split('/')[1].startsWith('with-')).map(card);
+  const name = TOPICS[topic]?.title ?? 'Automation';
+  return (
+    <>
+      {industries.length > 0 && (
+        <RelatedCards eyebrow="By industry" heading={`${name} for Your Industry`} intro={`${name} built around how each industry actually works.`} items={industries} />
+      )}
+      {platforms.length > 0 && (
+        <RelatedCards eyebrow="By platform" heading={`${name} on Your Stack`} intro={`${name} built on the platforms your team already uses.`} items={platforms} tone="secondary" />
+      )}
+    </>
+  );
 }
 
 export function solutionMetadata(content: SolutionPageContent): Metadata {
@@ -135,9 +195,14 @@ export function SolutionPage({ content: source }: { content: SolutionPageContent
   const content = withInlineLinks(source);
   const ctx: Ctx = { content, related: relatedHeading(content) };
   const { schema, blocks } = content.page;
+  const tones = assignTones(blocks);
+  let n = 0;
+  const markers = tones.map((t) => (t ? String(++n).padStart(2, '0') : undefined));
+  const faqs = (content as unknown as { faqQuestions?: { question: string; answer: string }[] }).faqQuestions ?? [];
 
   return (
-    <PageWrapper>
+    // Root layout renders the single <main>; this page uses a <div> like the homepage.
+    <div className="bg-paper text-ink">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -152,7 +217,28 @@ export function SolutionPage({ content: source }: { content: SolutionPageContent
           }),
         }}
       />
-      {blocks.map((block, i) => renderBlock(block, i, ctx))}
-    </PageWrapper>
+      {faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((f) => ({
+                '@type': 'Question',
+                name: stripMarkup(f.question),
+                acceptedAnswer: { '@type': 'Answer', text: stripMarkup(f.answer) },
+              })),
+            }),
+          }}
+        />
+      )}
+      {blocks.map((block, i) => (
+        <Fragment key={i}>
+          {block.type === 'FAQSection' && <ChildPages url={content.url} />}
+          {renderBlock(block, i, ctx, tones[i], markers[i])}
+        </Fragment>
+      ))}
+    </div>
   );
 }

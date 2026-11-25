@@ -8,8 +8,8 @@ export const aiChatbotsForInsurance: SolutionData = {
   category: 'ai-chatbots',
   title: 'AI Chatbots for Insurance Agencies',
   primaryKeyword: 'chatbot for insurance',
-  titleTag: 'AI Chatbots for Insurance Agencies Systems | Clickmasters',
-  metaDescription: 'Insurance agencies use Clickmasters AI chatbots to answer questions, qualify leads, and book appointments. It runs on the tools the team already has.',
+  titleTag: 'AI Chatbots for Insurance Agencies | Clickmasters',
+  metaDescription: 'An AI chatbot for insurance agencies that answers policy questions, collects quote details, and routes claims to the right agent. Book a free automation audit.',
   keywordEvidence: '9 matching keywords, ~900 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const aiChatbotsForInsurance: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Chatbots for Insurance Agencies',
-  heroSubheading: 'Automation that answers, qualifies, and books, built for how insurance agencies actually work.',
+  heroSubheading: 'An AI chatbot for insurance agencies that answers, qualifies, and books, built for how your team actually works.',
   heroBadge: 'AI Chatbots',
   description: 'Clickmasters builds AI Chatbots for insurance agencies. Automation that answers, qualifies, and books automatically, built around how an agency in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of insurance agencies, delivered as a system your team owns and relies on.',
   sections: {
@@ -264,7 +264,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI chatbots for insurance agencies' } },
+      { type: 'FAQSection', props: { title: 'Chatbots for Insurance FAQs', subtitle: 'Common questions about AI chatbots for insurance agencies' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

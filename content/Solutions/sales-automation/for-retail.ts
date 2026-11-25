@@ -8,8 +8,8 @@ export const salesAutomationForRetail: SolutionData = {
   category: 'sales-automation',
   title: 'AI Sales Automation for Retail',
   primaryKeyword: 'sales automation for retail',
-  titleTag: 'AI Sales Automation for Retail Services | Clickmasters',
-  metaDescription: 'Retailers use Clickmasters sales automation to enrich leads, follow up, and log activity so reps can sell. It runs on the tools the team already has.',
+  titleTag: 'AI Sales Automation for Retail | Clickmasters',
+  metaDescription: 'Sales automation for retail that qualifies wholesale and B2B buyers, follows up on quotes, and keeps account records current. Book a free automation audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const salesAutomationForRetail: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Sales Automation for Retail',
-  heroSubheading: 'Automation that enriches, follows up, and logs, built for how retail businesses actually operate.',
+  heroSubheading: 'Sales automation for retail businesses that enriches leads, follows up consistently, and logs every touchpoint in your CRM.',
   heroBadge: 'AI Sales Automation',
   description:
     'Clickmasters builds AI Sales Automation for retail. Automation that enriches, follows up, and logs automatically, built around how a business in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of retail, delivered as a system your team owns and relies on.',
   sections: {
     'Why Retail Needs AI Sales Automation': `Retail operations juggle inventory, suppliers, staff scheduling, customer inquiries, and reporting across locations and channels, usually with thin margins that can't absorb administrative bloat. Stock data lives in one system, sales in another, and the connecting work happens in spreadsheets and re-keying. Meanwhile customer questions arrive across phone, email, and social, and the reporting that should guide buying decisions gets assembled by hand, late.
 
-AI Sales Automation addresses this directly. It removes the administrative grind around sellingleads enriched and scored the moment they arrive, follow-up sequences that never slip, CRM records that update themselves, and reports that assemble automatically. Your reps spend their time on conversations that close, not on data entry. For a business, that capability lands exactly where the hours are currently going.`,
+AI Sales Automation addresses this directly. It removes the administrative grind around selling — leads enriched and scored the moment they arrive, follow-up sequences that never slip, CRM records that update themselves, and reports that assemble automatically. Your reps spend their time on conversations that close, not on data entry. For a business, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Retail': `**Inventory blind spots.** Stock levels tracked manually or in disconnected systems lead to stockouts of winners and overstock of losers.
 **Multi-channel inquiry load.** Customer questions arrive by phone, email, and social; consistent, fast responses across all of them are hard to staff.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for retail: the routine handled in
 
     'Built for Retail\'s Realities': `Sales data and supplier terms are commercially sensitive; automation is scoped appropriately, and buying decisions stay with your team. The automation supplies timely, accurate data instead of stale spreadsheets.
 
-We integrate with the systems your business already runsPOS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your business already runs — POS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For retail, the return shows up as: fewer stockouts and less dead stock, customer questions answered fast across channels, reports that arrive in time to matter, and office hours reclaimed from re-keying. On the sales automation side specifically, the headline metric is selling hours recovered per rep per week.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is sales automation for retail?',
       answer:
-        'AI sales automation handles repetitive sales taskslead enrichment, scoring, follow-up, CRM updates, proposals, and reporting, so reps spend their time selling rather than on administration. For a business in retail, that means applying it to the workflows that consume your teaminventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reportingwith the specifics of your industry built in.',
+        'AI sales automation handles repetitive sales tasks — lead enrichment, scoring, follow-up, CRM updates, proposals, and reporting, so reps spend their time selling rather than on administration. For a business in retail, that means applying it to the workflows that consume your team — inventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reporting — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our business already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about sales automation for retail' } },
+      { type: 'FAQSection', props: { title: 'Sales Automation for Retail FAQs', subtitle: 'Common questions about sales automation for retail' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

@@ -8,8 +8,8 @@ export const reportingAutomationForEcommerce: SolutionData = {
   category: 'reporting-automation',
   title: 'Reporting Automation for E-commerce',
   primaryKeyword: 'reporting automation for ecommerce',
-  titleTag: 'Reporting Automation for E-commerce | Clickmasters AI',
-  metaDescription: 'E-commerce teams use Clickmasters reporting automation to assemble the numbers teams already ask for, on a schedule. Book a free audit. Ask the team.',
+  titleTag: 'Reporting Automation for Ecommerce | Clickmasters',
+  metaDescription: 'Reporting automation for ecommerce that combines store, ad, and inventory data into daily reports your team can act on. Book a free automation audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,8 +18,8 @@ export const reportingAutomationForEcommerce: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'Reporting Automation for E-commerce',
-  heroSubheading: 'Automation that aggregates, builds, and delivers, built for how e-commerce stores actually operate.',
+  heroHeading: 'Reporting Automation for Ecommerce',
+  heroSubheading: 'Reporting automation for ecommerce that aggregates your data, builds the reports, and delivers them on schedule, designed around how online stores actually operate.',
   heroBadge: 'Reporting Automation',
   description:
     'Clickmasters builds Reporting Automation for e-commerce. Automation that aggregates, builds, and delivers automatically, built around how a store in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of e-commerce, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for e-commerce: the routine handle
 
     'Built for E-commerce\'s Realities': `Customer and payment-adjacent data is handled with scoped access, and customer-facing AI answers from your actual store policies and order data so responses are accurate rather than generic.
 
-We integrate with the systems your store already runsstore platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your store already runs — store platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For e-commerce, the return shows up as: tickets deflected around the clock, cart revenue recovered automatically, faster responses lifting conversion and reviews, and a store that grows sales without growing operational headcount in lockstep. On the reporting automation side specifically, the headline metric is reporting hours eliminated and decision lag removed.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is reporting automation for e-commerce?',
       answer:
-        'Reporting automation assembles recurring reports and dashboards from live data automaticallypulling from multiple systems, generating the report, and delivering it on schedulereplacing the manual export-copy-format cycle. For a store in e-commerce, that means applying it to the workflows that consume your teamcustomer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updateswith the specifics of your industry built in.',
+        'Reporting automation assembles recurring reports and dashboards from live data automatically — pulling from multiple systems, generating the report, and delivering it on schedule — replacing the manual export-copy-format cycle. For a store in e-commerce, that means applying it to the workflows that consume your team — customer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updates — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our store already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about reporting automation for e-commerce' } },
+      { type: 'FAQSection', props: { title: 'Reporting Automation for Ecommerce FAQs', subtitle: 'Common questions about reporting automation for e-commerce' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

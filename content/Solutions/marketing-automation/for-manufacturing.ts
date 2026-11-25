@@ -9,7 +9,7 @@ export const marketingAutomationForManufacturing: SolutionData = {
   title: 'AI Marketing Automation for Manufacturing',
   primaryKeyword: 'marketing automation for manufacturing',
   titleTag: 'AI Marketing Automation for Manufacturing | Clickmasters',
-  metaDescription: 'Manufacturers use Clickmasters marketing automation to run nurture and campaign follow-up without a manual queue. Start with one high-volume workflow.',
+  metaDescription: 'Marketing automation for manufacturing that nurtures buyer and distributor leads through long sales cycles with relevant content. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const marketingAutomationForManufacturing: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Marketing Automation for Manufacturing',
-  heroSubheading: 'Automation that produces, nurtures, and reports, built for how manufacturing operations actually run.',
+  heroSubheading: 'Marketing automation for manufacturing that drafts content, nurtures buyers, and reports on campaigns, built for how your operation actually runs.',
   heroBadge: 'AI Marketing Automation',
   description:
     'Clickmasters builds AI Marketing Automation for manufacturing. Automation that produces, nurtures, and reports automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of manufacturing, delivered as a system your team owns and relies on.',
   sections: {
     'Why Manufacturing Needs AI Marketing Automation': `Manufacturers live and die by operational efficiency on the floor, yet the office side: order processing, purchasing, inventory updates, shipping coordination, reporting. Often runs on manual re-keying between systems that don't connect. Orders arrive by email and get typed into the ERP; inventory counts live in spreadsheets; production reports are assembled by hand. The result is lag, errors, and office overhead that grows with every increase in volume.
 
-AI Marketing Automation addresses this directly. It runs the production and follow-through that consumes marketing teamscontent drafted at scale with human review, nurture sequences that adapt to behavior, campaigns that trigger and segment themselves, and reporting that assembles automatically. The strategy stays human; the relentless execution becomes automatic. For a operation, that capability lands exactly where the hours are currently going.`,
+AI Marketing Automation addresses this directly. It runs the production and follow-through that consumes marketing teams — content drafted at scale with human review, nurture sequences that adapt to behavior, campaigns that trigger and segment themselves, and reporting that assembles automatically. The strategy stays human; the relentless execution becomes automatic. For a operation, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Manufacturing': `**Order entry lag and errors.** Orders arriving by email or portal get manually keyed into the ERP, adding delay and transcription errors to every order.
 **Disconnected systems.** ERP, inventory, shipping, and accounting systems that don't talk mean the same data is entered multiple times.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for manufacturing: the routine han
 
     'Built for Manufacturing\'s Realities': `Manufacturing data spans pricing, supplier terms, and operational details that competitors would value. Automation is scoped with appropriate access controls, and anything touching production decisions keeps human oversight. The automation moves the data; your team runs the operation.
 
-We integrate with the systems your operation already runsERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your operation already runs — ERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For manufacturing, the return shows up as: order-processing time cut from hours to minutes, fewer entry errors reaching the floor or the invoice, reorder points watched automatically, reports that assemble themselves, and office headcount that doesn't scale linearly with order volume. On the marketing automation side specifically, the headline metric is content and campaign output multiplied without added headcount.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is marketing automation for manufacturing?',
       answer:
-        'AI marketing automation uses AI and workflows to run marketing tasks automaticallygenerating content, personalizing nurture sequences, managing campaigns, and reporting, so teams produce more without proportionally more staff. For a operation in manufacturing, that means applying it to the workflows that consume your teamsales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alertswith the specifics of your industry built in.',
+        'AI marketing automation uses AI and workflows to run marketing tasks automatically — generating content, personalizing nurture sequences, managing campaigns, and reporting, so teams produce more without proportionally more staff. For a operation in manufacturing, that means applying it to the workflows that consume your team — sales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alerts — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our operation already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI marketing automation for manufacturing' } },
+      { type: 'FAQSection', props: { title: 'Marketing Automation for Manufacturing FAQs', subtitle: 'Common questions about AI marketing automation for manufacturing' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

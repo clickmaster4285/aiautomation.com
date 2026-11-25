@@ -9,7 +9,7 @@ export const aiWorkflowAutomationForManufacturing: SolutionData = {
   title: 'AI Workflow Automation for Manufacturing',
   primaryKeyword: 'workflow automation for manufacturing',
   titleTag: 'AI Workflow Automation for Manufacturing | Clickmasters',
-  metaDescription: 'Manufacturers use Clickmasters AI workflow automation to move multi-step work across systems without manual handoffs. Book a free audit. Ask the team.',
+  metaDescription: 'Workflow automation for manufacturing that connects orders, purchasing, quality records, and ERP updates without manual handoffs. Book a free automation audit.',
   keywordEvidence: '2 matching keywords, ~100 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const aiWorkflowAutomationForManufacturing: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Workflow Automation for Manufacturing',
-  heroSubheading: 'Automation that moves, routes, and processes, built for how manufacturing operations actually run.',
+  heroSubheading: 'AI workflow automation for manufacturing that moves, routes, and processes operational data, built for how plants actually run.',
   heroBadge: 'AI Workflow Automation',
   description:
     'Clickmasters builds AI Workflow Automation for manufacturing. Automation that moves, routes, and processes automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of manufacturing, delivered as a system your team owns and relies on.',
   sections: {
     'Why Manufacturing Needs AI Workflow Automation': `Manufacturers live and die by operational efficiency on the floor, yet the office side: order processing, purchasing, inventory updates, shipping coordination, reporting. Often runs on manual re-keying between systems that don't connect. Orders arrive by email and get typed into the ERP; inventory counts live in spreadsheets; production reports are assembled by hand. The result is lag, errors, and office overhead that grows with every increase in volume.
 
-AI Workflow Automation addresses this directly. It connects your apps and runs multi-step processes automaticallydata moves, decisions get made, and actions fire without manual hand-offs. Where basic automation follows fixed rules, the AI layer reads unstructured information, classifies it, drafts responses, and chooses between paths, handling the judgment calls a person used to make. For a operation, that capability lands exactly where the hours are currently going.`,
+AI Workflow Automation addresses this directly. It connects your apps and runs multi-step processes automatically — data moves, decisions get made, and actions fire without manual hand-offs. Where basic automation follows fixed rules, the AI layer reads unstructured information, classifies it, drafts responses, and chooses between paths, handling the judgment calls a person used to make. For a operation, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Manufacturing': `**Order entry lag and errors.** Orders arriving by email or portal get manually keyed into the ERP, adding delay and transcription errors to every order.
 **Disconnected systems.** ERP, inventory, shipping, and accounting systems that don't talk mean the same data is entered multiple times.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for manufacturing: the routine han
 
     'Built for Manufacturing\'s Realities': `Manufacturing data spans pricing, supplier terms, and operational details that competitors would value. Automation is scoped with appropriate access controls, and anything touching production decisions keeps human oversight. The automation moves the data; your team runs the operation.
 
-We integrate with the systems your operation already runsERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your operation already runs — ERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For manufacturing, the return shows up as: order-processing time cut from hours to minutes, fewer entry errors reaching the floor or the invoice, reorder points watched automatically, reports that assemble themselves, and office headcount that doesn't scale linearly with order volume. On the workflow automation side specifically, the headline metric is hours of manual hand-offs eliminated per week.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is workflow automation for manufacturing?',
       answer:
-        'AI workflow automation uses software and AI to run multi-step processes automaticallymoving data between apps, making routine decisions, and triggering actions, so sequences of tasks happen without manual effort. For a operation in manufacturing, that means applying it to the workflows that consume your teamsales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alertswith the specifics of your industry built in.',
+        'AI workflow automation uses software and AI to run multi-step processes automatically — moving data between apps, making routine decisions, and triggering actions, so sequences of tasks happen without manual effort. For a operation in manufacturing, that means applying it to the workflows that consume your team — sales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alerts — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our operation already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI workflow automation for manufacturing' } },
+      { type: 'FAQSection', props: { title: 'Workflow Automation for Manufacturing FAQs', subtitle: 'Common questions about AI workflow automation for manufacturing' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

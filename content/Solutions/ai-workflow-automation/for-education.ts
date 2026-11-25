@@ -8,8 +8,8 @@ export const aiWorkflowAutomationForEducation: SolutionData = {
   category: 'ai-workflow-automation',
   title: 'AI Workflow Automation for Education',
   primaryKeyword: 'workflow automation for education',
-  titleTag: 'AI Workflow Automation for Education | Clickmasters AI',
-  metaDescription: 'Education teams use Clickmasters AI workflow automation to move multi-step work across systems without manual handoffs. Book a free audit. Ask the team.',
+  titleTag: 'AI Workflow Automation for Education | Clickmasters',
+  metaDescription: 'Workflow automation for education that moves admissions, enrollment, and student records between systems without manual re-entry. Book a free automation audit.',
   keywordEvidence: '1 matching keywords, ~50 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const aiWorkflowAutomationForEducation: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Workflow Automation for Education',
-  heroSubheading: 'Automation that moves, routes, and processes, built for how educational institutions actually operate.',
+  heroSubheading: 'AI workflow automation for education that moves, routes, and processes records, built for how schools and colleges actually operate.',
   heroBadge: 'AI Workflow Automation',
   description:
     'Clickmasters builds AI Workflow Automation for education. Automation that moves, routes, and processes automatically, built around how a institution in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of education, delivered as a system your team owns and relies on.',
   sections: {
     'Why Education Needs AI Workflow Automation': `Schools, training providers, and education businesses run on enrollment funnels, student communication, scheduling, and reporting, much of it seasonal, repetitive, and manual. Inquiries arrive year-round and need fast, consistent follow-up to convert; enrollment involves document collection and data entry; students and parents ask the same questions constantly; and staff spend evenings on reports and reminders that software should handle.
 
-AI Workflow Automation addresses this directly. It connects your apps and runs multi-step processes automaticallydata moves, decisions get made, and actions fire without manual hand-offs. Where basic automation follows fixed rules, the AI layer reads unstructured information, classifies it, drafts responses, and chooses between paths, handling the judgment calls a person used to make. For a institution, that capability lands exactly where the hours are currently going.`,
+AI Workflow Automation addresses this directly. It connects your apps and runs multi-step processes automatically — data moves, decisions get made, and actions fire without manual hand-offs. Where basic automation follows fixed rules, the AI layer reads unstructured information, classifies it, drafts responses, and chooses between paths, handling the judgment calls a person used to make. For a institution, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Education': `**Inquiry follow-up gaps.** Prospective students who don't hear back quickly enroll elsewhere; follow-up consistency decides conversion.
 **Enrollment paperwork.** Applications, documents, and data entry create seasonal crunches that bury administrative staff.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for education: the routine handled
 
     'Built for Education\'s Realities': `Student dataespecially involving minorsdemands careful, restricted handling. Automation is built with strict access controls and appropriate data practices, handling administrative communication while anything sensitive or judgment-based stays with staff.
 
-We integrate with the systems your institution already runsstudent information systems, CRMs, scheduling tools, communication platforms, and payment systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your institution already runs — student information systems, CRMs, scheduling tools, communication platforms, and payment systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For education, the return shows up as: higher inquiry-to-enrollment conversion from fast consistent follow-up, seasonal crunches absorbed without temp staffing, staff hours reclaimed from repetitive questions, and reporting that assembles itself. On the workflow automation side specifically, the headline metric is hours of manual hand-offs eliminated per week.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is workflow automation for education?',
       answer:
-        'AI workflow automation uses software and AI to run multi-step processes automaticallymoving data between apps, making routine decisions, and triggering actions, so sequences of tasks happen without manual effort. For a institution in education, that means applying it to the workflows that consume your teaminquiry response and enrollment nurture, application and document collection, and student and parent FAQ handlingwith the specifics of your industry built in.',
+        'AI workflow automation uses software and AI to run multi-step processes automatically — moving data between apps, making routine decisions, and triggering actions, so sequences of tasks happen without manual effort. For a institution in education, that means applying it to the workflows that consume your team — inquiry response and enrollment nurture, application and document collection, and student and parent FAQ handling — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our institution already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI workflow automation for education' } },
+      { type: 'FAQSection', props: { title: 'Workflow Automation for Education FAQs', subtitle: 'Common questions about AI workflow automation for education' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

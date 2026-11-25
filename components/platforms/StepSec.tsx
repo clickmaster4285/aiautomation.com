@@ -3,6 +3,7 @@
 import { motion, Variants, useInView } from 'framer-motion';
 import type { Section } from '@/content/type';
 import { useRef } from 'react';
+import { RichText } from '@/components/solutions/sections/variants/RichText';
 
 const containerVariants: Variants = {
   hidden: {},
@@ -115,7 +116,7 @@ export default function StepSec({ section }: { section: Section }) {
                     {idx + 1}
                   </div>
                   <h3 className="font-bold text-white text-[0.9375rem] mb-2 font-sans">{item.title}</h3>
-                  <p className="text-white/38 text-sm leading-relaxed text-justify font-sans">{item.description}</p>
+                  <p className="text-white/38 text-sm leading-relaxed text-justify font-sans"><RichText text={item.description} /></p>
                   <div
                     className="absolute bottom-0 left-0 h-[2px] w-0 group-hover:w-full transition-all duration-500"
                     style={{ background: `linear-gradient(to right, ${'var(--brand)'}, transparent)` }}

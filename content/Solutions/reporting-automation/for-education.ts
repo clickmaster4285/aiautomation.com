@@ -8,8 +8,8 @@ export const reportingAutomationForEducation: SolutionData = {
   category: 'reporting-automation',
   title: 'Reporting Automation for Education',
   primaryKeyword: 'reporting automation for education',
-  titleTag: 'Reporting Automation for Education Systems | Clickmasters',
-  metaDescription: 'Education teams use Clickmasters reporting automation to assemble the numbers teams already ask for, on a schedule. Book a free audit. Ask the team.',
+  titleTag: 'Reporting Automation for Education Teams | Clickmasters',
+  metaDescription: 'Reporting automation for education that gathers enrollment, attendance, and program data into scheduled reports for leadership. Book a free automation audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const reportingAutomationForEducation: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Reporting Automation for Education',
-  heroSubheading: 'Automation that aggregates, builds, and delivers, built for how educational institutions actually operate.',
+  heroSubheading: 'Reporting automation for education that aggregates your data, builds the reports, and delivers them on schedule, designed around how educational institutions actually operate.',
   heroBadge: 'Reporting Automation',
   description:
     'Clickmasters builds Reporting Automation for education. Automation that aggregates, builds, and delivers automatically, built around how a institution in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of education, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for education: the routine handled
 
     'Built for Education\'s Realities': `Student dataespecially involving minorsdemands careful, restricted handling. Automation is built with strict access controls and appropriate data practices, handling administrative communication while anything sensitive or judgment-based stays with staff.
 
-We integrate with the systems your institution already runsstudent information systems, CRMs, scheduling tools, communication platforms, and payment systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your institution already runs — student information systems, CRMs, scheduling tools, communication platforms, and payment systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For education, the return shows up as: higher inquiry-to-enrollment conversion from fast consistent follow-up, seasonal crunches absorbed without temp staffing, staff hours reclaimed from repetitive questions, and reporting that assembles itself. On the reporting automation side specifically, the headline metric is reporting hours eliminated and decision lag removed.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is reporting automation for education?',
       answer:
-        'Reporting automation assembles recurring reports and dashboards from live data automaticallypulling from multiple systems, generating the report, and delivering it on schedulereplacing the manual export-copy-format cycle. For a institution in education, that means applying it to the workflows that consume your teaminquiry response and enrollment nurture, application and document collection, and student and parent FAQ handlingwith the specifics of your industry built in.',
+        'Reporting automation assembles recurring reports and dashboards from live data automatically — pulling from multiple systems, generating the report, and delivering it on schedule — replacing the manual export-copy-format cycle. For a institution in education, that means applying it to the workflows that consume your team — inquiry response and enrollment nurture, application and document collection, and student and parent FAQ handling — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our institution already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about reporting automation for education' } },
+      { type: 'FAQSection', props: { title: 'Reporting Automation for Education FAQs', subtitle: 'Common questions about reporting automation for education' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

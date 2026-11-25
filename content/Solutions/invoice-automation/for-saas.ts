@@ -8,8 +8,8 @@ export const invoiceAutomationForSaaS: SolutionData = {
   category: 'invoice-automation',
   title: 'Invoice & Finance Automation for SaaS Companies',
   primaryKeyword: 'finance automation for SaaS',
-  titleTag: 'Invoice & Finance for SaaS Companies | Clickmasters AI',
-  metaDescription: 'SaaS companies use Clickmasters invoice automation to capture, check, and post bills so the close has fewer errors. Book a free audit. Ask the team.',
+  titleTag: 'Invoice & Finance Automation for SaaS | Clickmasters',
+  metaDescription: 'Finance automation for SaaS that captures vendor invoices, routes approvals, and posts clean entries to your accounting system. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const invoiceAutomationForSaaS: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Invoice & Finance Automation for SaaS Companies',
-  heroSubheading: 'Automation that captures, validates, and posts, built for how SaaS companies actually operate.',
+  heroSubheading: 'Finance automation for SaaS that captures, validates, and posts, built for how SaaS finance teams actually operate.',
   heroBadge: 'Invoice & Finance Automation',
   description:
     'Clickmasters builds Invoice & Finance Automation for SaaS companies. Automation that captures, validates, and posts automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of saas companies, delivered as a system your team owns and relies on.',
@@ -58,13 +58,13 @@ For most, that points to support ticket triage and resolution or user onboarding
 
 What it is: the routine work. The automation that captures, validates, and posts, handled automatically, consistently, at any hour, so your company runs on systems instead of memory and heroics.`,
 
-    'A Worked Example': `Consider what happens when a support ticket arrives asking how to configure a feature. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the ticket is classified, the answer is drawn from your actual product documentation, an accurate response is sent within seconds, the ticket is logged and tagged, and only genuinely complex or sensitive cases route to your team with full contextsupport that scales with usage instead of headcount.
+    'A Worked Example': `Consider what happens when a support ticket arrives asking how to configure a feature. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the ticket is classified, the answer is drawn from your actual product documentation, an accurate response is sent within seconds, the ticket is logged and tagged, and only genuinely complex or sensitive cases route to your team with full context — support that scales with usage instead of headcount.
 
 That's the pattern across everything we build for SaaS companies: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
     'Built for SaaS Companies\' Realities': `Customer data and usage information require careful handling. Automation is built with scoped access and, where needed, infrastructure that keeps sensitive data in your environment, and customer-facing AI is grounded in your real documentation so it answers accurately rather than guessing.
 
-We integrate with the systems your company already runssupport platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slackconnecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your company already runs — support platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slack — connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For saas companies, the return shows up as: ticket deflection that preserves efficient scaling, activation and retention lift from consistent onboarding, churn caught early enough to act on, and revenue operations that run without manual drag. On the finance automation side specifically, the headline metric is invoices processed hands-free and days cut from the close.
 
@@ -169,12 +169,12 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is finance automation for SaaS companies?',
       answer:
-        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting systemwith exceptions flagged for human review. For a company in saas companies, that means applying it to the workflows that consume your teamsupport ticket triage and resolution, user onboarding and activation sequences, and churn-risk monitoring and alertswith the specifics of your industry built in.',
+        'Invoice and finance automation uses AI to capture and read invoices, validate the data against purchase orders and expected values, route approvals, and post clean entries to your accounting system — with exceptions flagged for human review. For a company in saas companies, that means applying it to the workflows that consume your team — support ticket triage and resolution, user onboarding and activation sequences, and churn-risk monitoring and alerts — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our company already uses?',
       answer:
-        'Yes. We build into the systems saas companies actually run onsupport platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slackconnecting rather than replacing them, so the automation fits your existing operation.',
+        'Yes. We build into the systems saas companies actually run onsupport platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slack — connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about invoice & finance automation for SaaS companies' } },
+      { type: 'FAQSection', props: { title: 'Finance Automation for SaaS FAQs', subtitle: 'Common questions about invoice & finance automation for SaaS companies' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

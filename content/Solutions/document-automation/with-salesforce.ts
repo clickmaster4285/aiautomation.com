@@ -8,8 +8,8 @@ export const documentAutomationWithSalesforce: SolutionData = {
   category: 'document-automation',
   title: 'Document & Data Automation with Salesforce',
   primaryKeyword: 'salesforce document automation',
-  titleTag: 'Document Automation Built on Salesforce | Clickmasters',
-  metaDescription: 'Teams running Salesforce use Clickmasters document automation to extract, check, and route data from invoices, forms, and files. Book a free audit.',
+  titleTag: 'Salesforce Document Automation with AI | Clickmasters',
+  metaDescription: 'Salesforce document automation that reads contracts, order forms, and invoices and writes the data to the right records with AI. Book a free audit.',
   keywordEvidence: '8 matching keywords, ~1,750 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -17,14 +17,14 @@ export const documentAutomationWithSalesforce: SolutionData = {
     'Salesforce platform page',
     'AI Automation Agency pillar',
   ],
-  heroHeading: 'Document & Data Automation Built on Salesforce',
-  heroSubheading: 'Enterprise-grade document automation on the world\'s leading CRM platformextending what admins can build natively.',
+  heroHeading: 'Salesforce Document Automation for Enterprise Teams',
+  heroSubheading: 'Enterprise-grade Salesforce document automation that extends what admins can build natively.',
   heroBadge: 'Document Automation × Salesforce',
   description: 'Clickmasters builds document automation on Salesforce. Salesforce is the enterprise CRM standard, with enormous capability that most orgs use a fraction of, and it\'s an excellent fit for organizations with Salesforce at the core of revenue operations. Combined with document automation, which reads documents and moves data so nobody keys it by handAI extraction that understands invoices, forms, and PDFs across varied layouts, validation that catches what doesn\'t look right, and routing that puts clean data into your systems automatically. The manual entry disappears; the exceptions get exactly the human attention they need, the result is automation that runs on a platform matched to the job.',
   sections: {
-    'Why Salesforce for Document & Data Automation': 'Salesforce is the enterprise CRM standard, with enormous capability that most orgs use a fraction of. Automation and ai extend what admins can build natively. For document automation specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. Salesforce is the right home for this work when it matches organizations with Salesforce at the core of revenue operations, and when it does, this combination is hard to beat.',
+    'Why Salesforce for Document & Data Automation': 'Salesforce is the enterprise CRM standard, with enormous capability that most orgs use a fraction of. Automation and ai extend what admins can build natively. For document automation specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. Salesforce is the right home for this work when it matches organizations with Salesforce at the core of revenue operations, and when it does, this combination is hard to beat.\n\nDocuments in Salesforce usually belong to a deal, an account, or a case, so the build follows them there. Extracted contract terms can trigger CRM automation on the opportunity, approved invoices can move to finance without manual data entry, and case attachments can route straight to customer support.',
     'What a Production Build Includes': 'The gap between a prototype and a system you can rely on is everything that happens when things go wrong. Every document automation build we ship on Salesforce includes error handling on every step (failures caught and retried or escalated, never silent), monitoring and alerting (you know the system is running without checking), documentation (your team can understand and modify the build), and staged rollout (the automation proves itself on real cases with human oversight before it runs unattended).\n\nThis is the difference between automation that saves hours and automation that quietly breaks and costs trust. Most of the rescue projects we take on are builds that skipped these steps.',
-    'Typical Workflows on Salesforce': 'The document automation workflows we most often build on Salesforce follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is neededclassification, extraction, drafting, and the result is executed and logged. Salesforce\'s strengths make it particularly suited to organizations with Salesforce at the core of revenue operations, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
+    'Typical Workflows on Salesforce': 'The document automation workflows we most often build on Salesforce follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is needed — classification, extraction, drafting, and the result is executed and logged. Salesforce\'s strengths make it particularly suited to organizations with Salesforce at the core of revenue operations, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
   },
   features: [
     {
@@ -118,7 +118,7 @@ export const documentAutomationWithSalesforce: SolutionData = {
   faqQuestions: [
     {
       question: 'Can Salesforce handle document automation?',
-      answer: 'YesSalesforce is the enterprise CRM standard, with enormous capability that most orgs use a fraction of, and it\'s well suited to organizations with Salesforce at the core of revenue operations. The build quality determines reliability, which is where an experienced partner matters.',
+      answer: 'Yes — Salesforce is the enterprise CRM standard, with enormous capability that most orgs use a fraction of, and it\'s well suited to organizations with Salesforce at the core of revenue operations. The build quality determines reliability, which is where an experienced partner matters.',
     },
     {
       question: 'What does this cost to run?',
@@ -129,8 +129,8 @@ export const documentAutomationWithSalesforce: SolutionData = {
       answer: 'Completely. Everything is documented and transparent, in your own accounts, with no dependency on us for changes.',
     },
     {
-      question: 'Document and data automation uses OCR and AI to read documents route it into business systems automaticallyis that what this does?',
-      answer: 'Document and data automation uses OCR and AI to read documents, extract and validate structured data, and route it into business systems automaticallyreplacing manual reading and data entry. Built on Salesforce, it runs with the platform\'s strengths: organizations with Salesforce at the core of revenue operations.',
+      question: 'Document and data automation uses OCR and AI to read documents route it into business systems automatically — is that what this does?',
+      answer: 'Document and data automation uses OCR and AI to read documents, extract and validate structured data, and route it into business systems automatically — replacing manual reading and data entry. Built on Salesforce, it runs with the platform\'s strengths: organizations with Salesforce at the core of revenue operations.',
     },
   ],
   cta: 'Want document automation running on Salesforce?',
@@ -203,7 +203,7 @@ export const documentAutomationWithSalesforce: SolutionData = {
       { type: 'PlatformComparison', props: { title: 'Is Salesforce Right for You?', subtitle: 'We\'ll tell you honestly if Salesforce is the right platform for your document automation needs.' } },
       { type: 'StatsSection', props: { title: 'Why Choose Clickmasters for Salesforce Document Automation' } },
       { type: 'FAQSection', props: {
-  title: 'Frequently Asked Questions',
+  title: 'Salesforce Document Automation FAQs',
   subtitle: 'Common questions about document automation on Salesforce',
   eyebrow: 'FAQ',
 } },

@@ -8,8 +8,8 @@ export const aiChatbotsWithZapier: SolutionData = {
   category: 'ai-chatbots',
   title: 'AI Chatbots with Zapier', // ✅ Added missing title
   primaryKeyword: 'zapier chatbot',
-  titleTag: 'AI Chatbots Built on Zapier Services | Clickmasters',
-  metaDescription: 'Teams running Zapier use Clickmasters AI chatbots to answer questions, qualify leads, and book appointments. It runs on the tools the team already has.',
+  titleTag: 'Zapier Chatbot Development | Clickmasters',
+  metaDescription: 'A Zapier chatbot that answers questions, qualifies leads, and books appointments, then passes each chat to your other apps. Book a free automation audit.',
   keywordEvidence: '2 matching keywords, ~1,000 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -17,12 +17,12 @@ export const aiChatbotsWithZapier: SolutionData = {
     'Zapier platform page',
     'AI Automation Agency pillar',
   ],
-  heroHeading: 'AI Chatbots Built on Zapier',
-  heroSubheading: 'Intelligent conversations that answer, qualify, and book automatically running on the most accessible automation platform.',
+  heroHeading: 'Zapier Chatbots Connected to Your Apps',
+  heroSubheading: 'A Zapier chatbot that answers, qualifies, and books automatically, running on the most accessible automation platform.',
   heroBadge: 'AI Chatbots × Zapier',
   description: 'Clickmasters builds chatbot on Zapier. Zapier is the most accessible automation platform, with the largest app library and the fastest path from idea to running Zap and it\'s an excellent fit for straightforward workflows and teams that want to self-serve simple changes later. Combined with chatbot, which holds real conversations and takes real action answering from your own content, booking appointments, qualifying leads, and handing off to humans cleanly. Modern AI chatbots understand natural language and ground their answers in your actual documentation, which makes them nothing like the scripted bots everyone learned to dread, the result is automation that runs on a platform matched to the job.',
   sections: {
-    'Why Zapier for AI Chatbots': 'Zapier is the most accessible automation platform, with the largest app library and the fastest path from idea to running Zap. Per-task pricing that\'s friendly at low volume and worth watching as volume grows. For chatbot specifically, that means your automation gets the platform strengths while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. Zapier is the right home for this work when it matches straightforward workflows and teams that want to self-serve simple changes later and when it does, this combination is hard to beat.',
+    'Why Zapier for AI Chatbots': 'Zapier is the most accessible automation platform, with the largest app library and the fastest path from idea to running Zap. Per-task pricing that\'s friendly at low volume and worth watching as volume grows. For chatbot specifically, that means your automation gets the platform strengths while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. Zapier is the right home for this work when it matches straightforward workflows and teams that want to self-serve simple changes later and when it does, this combination is hard to beat.\n\nBecause every conversation can end in a Zap, the chatbot hands off to the rest of your workflow automation without custom code. A qualified lead can start email sequences, a booking request can flow into appointment booking, and captured details no longer need manual data entry in your other apps.',
     'What a Production Build Includes': 'The gap between a prototype and a system you can rely on is everything that happens when things go wrong. Every chatbot build we ship on Zapier includes error handling on every step (failures caught and retried or escalated, never silent), monitoring and alerting (you know the system is running without checking), documentation (your team can understand and modify the build), and staged rollout (the automation proves itself on real cases with human oversight before it runs unattended).\n\nThis is the difference between automation that saves hours and automation that quietly breaks and costs trust. Most of the rescue projects we take on are builds that skipped these steps.',
     'Typical Workflows on Zapier': 'The chatbot workflows we most often build on Zapier follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is needed classification, extraction, drafting and the result is executed and logged. Zapier\'s strengths make it particularly suited to straightforward workflows and teams that want to self-serve simple changes later, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
   },
@@ -210,7 +210,7 @@ export const aiChatbotsWithZapier: SolutionData = {
 } },
       { type: 'PlatformComparison', props: { title: 'Is Zapier Right for You?', subtitle: 'We\'ll tell you honestly if Zapier is the right platform for your chatbot needs.' } },
       { type: 'StatsSection', props: { title: 'Why Choose Clickmasters for Zapier Chatbots' } },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about chatbots on Zapier' } },
+      { type: 'FAQSection', props: { title: 'Zapier Chatbot FAQs', subtitle: 'Common questions about chatbots on Zapier' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

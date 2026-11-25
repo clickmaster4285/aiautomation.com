@@ -8,8 +8,8 @@ export const leadGenerationAutomationForRetail: SolutionData = {
   category: 'lead-generation-automation',
   title: 'Lead Generation Automation for Retail',
   primaryKeyword: 'lead generation system for retail',
-  titleTag: 'Lead Generation Automation for Retail | Clickmasters AI',
-  metaDescription: 'Retailers use Clickmasters lead generation automation to capture, qualify, and route new demand while it is still warm. Book a free audit. Ask the team.',
+  titleTag: 'Lead Generation Systems for Retail | Clickmasters',
+  metaDescription: 'Lead generation systems for retail businesses that capture shopper and corporate order inquiries, qualify intent, and trigger follow-up. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,15 +18,15 @@ export const leadGenerationAutomationForRetail: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'Lead Generation Automation for Retail',
-  heroSubheading: 'Automation that captures, qualifies, and routes, built for how retail businesses actually operate.',
+  heroHeading: 'Lead Generation Systems for Retail',
+  heroSubheading: 'A lead generation system for retail that helps you capture, qualify, and route shopper and corporate inquiries, built for how retail businesses actually operate.',
   heroBadge: 'Lead Generation Automation',
   description:
     'Clickmasters builds Lead Generation Automation for retail. Automation that captures, qualifies, and routes automatically, built around how a business in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of retail, delivered as a system your team owns and relies on.',
   sections: {
     'Why Retail Needs Lead Generation Automation': `Retail operations juggle inventory, suppliers, staff scheduling, customer inquiries, and reporting across locations and channels, usually with thin margins that can't absorb administrative bloat. Stock data lives in one system, sales in another, and the connecting work happens in spreadsheets and re-keying. Meanwhile customer questions arrive across phone, email, and social, and the reporting that should guide buying decisions gets assembled by hand, late.
 
-Lead Generation Automation addresses this directly. It captures, qualifies, and works leads automaticallyinstant response the moment interest shows, conversational qualification, enrichment and scoring, and routing that puts sales-ready leads in front of the right person with context. Speed and consistency are what convert leads, and both are exactly what automation delivers. For a business, that capability lands exactly where the hours are currently going.`,
+Lead Generation Automation addresses this directly. It captures, qualifies, and works leads automatically — instant response the moment interest shows, conversational qualification, enrichment and scoring, and routing that puts sales-ready leads in front of the right person with context. Speed and consistency are what convert leads, and both are exactly what automation delivers. For a business, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Retail': `**Inventory blind spots.** Stock levels tracked manually or in disconnected systems lead to stockouts of winners and overstock of losers.
 **Multi-channel inquiry load.** Customer questions arrive by phone, email, and social; consistent, fast responses across all of them are hard to staff.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for retail: the routine handled in
 
     'Built for Retail\'s Realities': `Sales data and supplier terms are commercially sensitive; automation is scoped appropriately, and buying decisions stay with your team. The automation supplies timely, accurate data instead of stale spreadsheets.
 
-We integrate with the systems your business already runsPOS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your business already runs — POS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For retail, the return shows up as: fewer stockouts and less dead stock, customer questions answered fast across channels, reports that arrive in time to matter, and office hours reclaimed from re-keying. On the lead generation system side specifically, the headline metric is lead response time in seconds and conversion lift from consistency.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is lead generation system for retail?',
       answer:
-        'Lead generation automation captures and responds to leads instantly, qualifies them conversationally, enriches and scores them, and routes sales-ready prospects to the right personwhile nurturing the rest until they\'re ready. For a business in retail, that means applying it to the workflows that consume your teaminventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reportingwith the specifics of your industry built in.',
+        'Lead generation automation captures and responds to leads instantly, qualifies them conversationally, enriches and scores them, and routes sales-ready prospects to the right person — while nurturing the rest until they\'re ready. For a business in retail, that means applying it to the workflows that consume your team — inventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reporting — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our business already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about lead generation automation for retail' } },
+      { type: 'FAQSection', props: { title: 'Lead Generation Systems for Retail FAQs', subtitle: 'Common questions about lead generation automation for retail' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

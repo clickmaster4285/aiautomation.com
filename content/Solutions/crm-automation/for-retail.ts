@@ -8,8 +8,8 @@ export const crmAutomationForRetail: SolutionData = {
   category: 'crm-automation',
   title: 'CRM Automation for Retail',
   primaryKeyword: 'CRM automation for retail',
-  titleTag: 'CRM Automation for Retail Services Teams | Clickmasters',
-  metaDescription: 'Retailers use Clickmasters CRM automation to keep contacts, deals, and follow-ups current without re-keying. It runs on the tools the team already has.',
+  titleTag: 'CRM Automation for Retail Brands | Clickmasters',
+  metaDescription: 'CRM automation for retail that unifies in-store and online customer data so segments and outreach stay accurate. Book a free automation audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const crmAutomationForRetail: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'CRM Automation for Retail',
-  heroSubheading: 'Automation that updates, cleans, and routes, built for how retail businesses actually operate.',
+  heroSubheading: 'CRM automation for retail that updates records, cleans data, and routes leads, designed around how retail businesses actually operate.',
   heroBadge: 'CRM Automation',
   description:
     'Clickmasters builds CRM Automation for retail. Automation that updates, cleans, and routes automatically, built around how a business in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of retail, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for retail: the routine handled in
 
     'Built for Retail\'s Realities': `Sales data and supplier terms are commercially sensitive; automation is scoped appropriately, and buying decisions stay with your team. The automation supplies timely, accurate data instead of stale spreadsheets.
 
-We integrate with the systems your business already runsPOS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your business already runs — POS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For retail, the return shows up as: fewer stockouts and less dead stock, customer questions answered fast across channels, reports that arrive in time to matter, and office hours reclaimed from re-keying. On the CRM automation side specifically, the headline metric is CRM accuracy restored and rep admin time eliminated.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is CRM automation for retail?',
       answer:
-        'CRM automation keeps your CRM accurate and active automaticallyupdating records, logging activity, cleaning data, routing leads, and syncing with your other systems, so the pipeline reflects reality without reps doing data entry. For a business in retail, that means applying it to the workflows that consume your teaminventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reportingwith the specifics of your industry built in.',
+        'CRM automation keeps your CRM accurate and active automaticallyupdating records, logging activity, cleaning data, routing leads, and syncing with your other systems, so the pipeline reflects reality without reps doing data entry. For a business in retail, that means applying it to the workflows that consume your team — inventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reporting — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our business already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about CRM automation for retail' } },
+      { type: 'FAQSection', props: { title: 'CRM Automation for Retail FAQs', subtitle: 'Common questions about CRM automation for retail' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

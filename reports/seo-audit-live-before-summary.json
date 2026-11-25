@@ -1,0 +1,129 @@
+{
+  "origin": "https://clickmastersaiautomation.com",
+  "crawledAt": "2026-11-25T05:53:42.551Z",
+  "robotsTxt": "User-agent: *\nDisallow: /admin\nDisallow: /api\nDisallow: /login\n\nSitemap: https://clickmastersaiautomation.com/sitemap.xml",
+  "sitemaps": [
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_pages.xml",
+      "status": 200,
+      "urls": 83,
+      "ttfb": 1009
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_services.xml",
+      "status": 200,
+      "urls": 11,
+      "ttfb": 1750
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_solutions.xml",
+      "status": 200,
+      "urls": 217,
+      "ttfb": 584
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_industries.xml",
+      "status": 200,
+      "urls": 7,
+      "ttfb": 251
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_platforms.xml",
+      "status": 200,
+      "urls": 6,
+      "ttfb": 288
+    }
+  ],
+  "sitemapUrlCount": 324,
+  "urlsDiscovered": 324,
+  "status200": 324,
+  "non200": [],
+  "indexable": 324,
+  "sitemapProblems": [],
+  "notInSitemap": [],
+  "dupTitles": [],
+  "dupDescs": [],
+  "dupH1": [
+    {
+      "value": "Let's talk automation.",
+      "paths": [
+        "/free-automation-audit",
+        "/contact"
+      ]
+    }
+  ],
+  "brokenLinks": [],
+  "brokenLinkCount": 0,
+  "trailingSlashLinks": [],
+  "externalBlankNoRel": [],
+  "issueCounts": {
+    "missing OG image": 254,
+    "duplicate verification meta": 324,
+    "heading skips": 229,
+    "missing OG title/description": 30,
+    "missing twitter card": 30,
+    "thin main content": 3,
+    "duplicate H1": 2,
+    "no contextual inbound links": 1,
+    "long H1": 34,
+    "orphan": 1,
+    "long description": 3
+  },
+  "timing": {
+    "p50": 295,
+    "p90": 766,
+    "max": 4261,
+    "slowest": [
+      {
+        "path": "/contact",
+        "ttfbMs": 4261,
+        "bytes": 58644
+      },
+      {
+        "path": "/about",
+        "ttfbMs": 4074,
+        "bytes": 52332
+      },
+      {
+        "path": "/solutions/sales-automation/for-healthcare",
+        "ttfbMs": 1270,
+        "bytes": 187224
+      },
+      {
+        "path": "/services/ai-chatbots",
+        "ttfbMs": 1093,
+        "bytes": 106457
+      },
+      {
+        "path": "/solutions/lead-generation-automation/for-construction",
+        "ttfbMs": 1079,
+        "bytes": 186491
+      },
+      {
+        "path": "/services/custom-ai-development",
+        "ttfbMs": 1059,
+        "bytes": 89344
+      },
+      {
+        "path": "/solutions/business-process-automation/for-law-firms",
+        "ttfbMs": 1016,
+        "bytes": 186879
+      },
+      {
+        "path": "/solutions/ai-chatbots/for-retail",
+        "ttfbMs": 1012,
+        "bytes": 185661
+      },
+      {
+        "path": "/solutions/ai-chatbots",
+        "ttfbMs": 971,
+        "bytes": 172240
+      },
+      {
+        "path": "/solutions/ai-agents/for-healthcare",
+        "ttfbMs": 878,
+        "bytes": 187101
+      }
+    ]
+  }
+}

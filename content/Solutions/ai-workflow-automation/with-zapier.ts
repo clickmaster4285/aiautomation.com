@@ -8,8 +8,8 @@ export const aiWorkflowAutomationWithZapier: SolutionData = {
   category: 'ai-workflow-automation',
   title: 'AI Workflow Automation with Zapier',
   primaryKeyword: 'zapier workflow automation',
-  titleTag: 'AI Workflow Automation Built on Zapier | Clickmasters AI',
-  metaDescription: 'Teams running Zapier use Clickmasters AI workflow automation to move multi-step work across systems without manual handoffs. Book a free audit.',
+  titleTag: 'Zapier Workflow Automation with AI | Clickmasters',
+  metaDescription: 'Zapier workflow automation with AI steps and proper error handling, built across the largest app library and easy for your team to edit. Book a free audit.',
   keywordEvidence: '5 matching keywords, ~6,100 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -17,14 +17,14 @@ export const aiWorkflowAutomationWithZapier: SolutionData = {
     'Zapier platform page',
     'AI Automation Agency pillar',
   ],
-  heroHeading: 'AI Workflow Automation Built on Zapier',
-  heroSubheading: 'Accessible, multi-step automation with the largest app library and fastest path from idea to running Zap.',
+  heroHeading: 'Zapier Workflow Automation with AI',
+  heroSubheading: 'Zapier workflow automation with multi-step Zaps, AI decision steps, and the fastest path from idea to a running process.',
   heroBadge: 'AI Workflow × Zapier',
-  description: 'Clickmasters builds workflow automation on Zapier. Zapier is the most accessible automation platform, with the largest app library and the fastest path from idea to running Zapand it\'s an excellent fit for straightforward workflows and teams that want to self-serve simple changes later. Combined with workflow automation, which connects your apps and runs multi-step processes automaticallydata moves, decisions get made, and actions fire without manual hand-offs. Where basic automation follows fixed rules, the AI layer reads unstructured information, classifies it, drafts responses, and chooses between paths, handling the judgment calls a person used to make, the result is automation that runs on a platform matched to the job.',
+  description: 'Clickmasters builds workflow automation on Zapier. Zapier is the most accessible automation platform, with the largest app library and the fastest path from idea to running Zap — and it\'s an excellent fit for straightforward workflows and teams that want to self-serve simple changes later. Combined with workflow automation, which connects your apps and runs multi-step processes automatically — data moves, decisions get made, and actions fire without manual hand-offs. Where basic automation follows fixed rules, the AI layer reads unstructured information, classifies it, drafts responses, and chooses between paths, handling the judgment calls a person used to make, the result is automation that runs on a platform matched to the job.',
   sections: {
-    'Why Zapier for AI Workflow Automation': 'Zapier is the most accessible automation platform, with the largest app library and the fastest path from idea to running Zap. Per-task pricing that\'s friendly at low volume and worth watching as volume grows. For workflow automation specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. Zapier is the right home for this work when it matches straightforward workflows and teams that want to self-serve simple changes later, and when it does, this combination is hard to beat.',
+    'Why Zapier for AI Workflow Automation': 'Zapier is the most accessible automation platform, with the largest app library and the fastest path from idea to running Zap. Per-task pricing that\'s friendly at low volume and worth watching as volume grows. For workflow automation specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. Zapier is the right home for this work when it matches straightforward workflows and teams that want to self-serve simple changes later, and when it does, this combination is hard to beat.\n\nZapier works well as the connective layer between tools your team already uses. A typical build links form submissions to appointment booking, removes repetitive data entry between apps, and sends follow-up email sequences once a record changes, all in Zaps your team can read and adjust.',
     'What a Production Build Includes': 'The gap between a prototype and a system you can rely on is everything that happens when things go wrong. Every workflow automation build we ship on Zapier includes error handling on every step (failures caught and retried or escalated, never silent), monitoring and alerting (you know the system is running without checking), documentation (your team can understand and modify the build), and staged rollout (the automation proves itself on real cases with human oversight before it runs unattended).\n\nThis is the difference between automation that saves hours and automation that quietly breaks and costs trust. Most of the rescue projects we take on are builds that skipped these steps.',
-    'Typical Workflows on Zapier': 'The workflow automation workflows we most often build on Zapier follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is neededclassification, extraction, drafting, and the result is executed and logged. Zapier\'s strengths make it particularly suited to straightforward workflows and teams that want to self-serve simple changes later, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
+    'Typical Workflows on Zapier': 'The workflow automation workflows we most often build on Zapier follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is needed — classification, extraction, drafting, and the result is executed and logged. Zapier\'s strengths make it particularly suited to straightforward workflows and teams that want to self-serve simple changes later, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
   },
   features: [
     {
@@ -118,7 +118,7 @@ export const aiWorkflowAutomationWithZapier: SolutionData = {
   faqQuestions: [
     {
       question: 'Can Zapier handle workflow automation?',
-      answer: 'YesZapier is the most accessible automation platform, with the largest app library and the fastest path from idea to running Zap, and it\'s well suited to straightforward workflows and teams that want to self-serve simple changes later. The build quality determines reliability, which is where an experienced partner matters.',
+      answer: 'Yes — Zapier is the most accessible automation platform, with the largest app library and the fastest path from idea to running Zap, and it\'s well suited to straightforward workflows and teams that want to self-serve simple changes later. The build quality determines reliability, which is where an experienced partner matters.',
     },
     {
       question: 'What does this cost to run?',
@@ -129,8 +129,8 @@ export const aiWorkflowAutomationWithZapier: SolutionData = {
       answer: 'Completely. Everything is documented and transparent, in your own accounts, with no dependency on us for changes.',
     },
     {
-      question: 'AI workflow automation uses software and AI to run multi-step processes automaticallyis that what this does?',
-      answer: 'AI workflow automation uses software and AI to run multi-step processes automaticallymoving data between apps, making routine decisions, and triggering actions, so sequences of tasks happen without manual effort. Built on Zapier, it runs with the platform\'s strengths: straightforward workflows and teams that want to self-serve simple changes later.',
+      question: 'AI workflow automation uses software and AI to run multi-step processes automatically — is that what this does?',
+      answer: 'AI workflow automation uses software and AI to run multi-step processes automatically — moving data between apps, making routine decisions, and triggering actions, so sequences of tasks happen without manual effort. Built on Zapier, it runs with the platform\'s strengths: straightforward workflows and teams that want to self-serve simple changes later.',
     },
   ],
   cta: 'Want workflow automation running on Zapier?',
@@ -203,7 +203,7 @@ export const aiWorkflowAutomationWithZapier: SolutionData = {
       { type: 'PlatformComparison', props: { title: 'Is Zapier Right for You?', subtitle: 'We\'ll tell you honestly if Zapier is the right platform for your workflow automation needs.' } },
       { type: 'StatsSection', props: { title: 'Why Choose Clickmasters for Zapier Workflow Automation' } },
       { type: 'FAQSection', props: {
-  title: 'Frequently Asked Questions',
+  title: 'Zapier Workflow Automation FAQs',
   subtitle: 'Common questions about workflow automation on Zapier',
   eyebrow: 'FAQ',
 } },

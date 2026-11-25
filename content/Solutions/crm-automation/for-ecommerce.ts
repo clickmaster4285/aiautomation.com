@@ -8,8 +8,8 @@ export const crmAutomationForEcommerce: SolutionData = {
   category: 'crm-automation',
   title: 'CRM Automation for E-commerce',
   primaryKeyword: 'CRM automation for ecommerce',
-  titleTag: 'CRM Automation for E-commerce Services | Clickmasters',
-  metaDescription: 'E-commerce teams use Clickmasters CRM automation to keep contacts, deals, and follow-ups current without re-keying. Book a free audit. Ask the team.',
+  titleTag: 'CRM Automation for Ecommerce Brands | Clickmasters',
+  metaDescription: 'CRM automation for ecommerce that syncs orders, customer profiles, and segments so every message reflects what shoppers bought. Book a free automation audit.',
   keywordEvidence: '2 matching keywords, ~100 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,8 +18,8 @@ export const crmAutomationForEcommerce: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'CRM Automation for E-commerce',
-  heroSubheading: 'Automation that updates, cleans, and routes, built for how e-commerce stores actually operate.',
+  heroHeading: 'CRM Automation for Ecommerce',
+  heroSubheading: 'CRM automation for ecommerce that updates records, cleans data, and routes leads, designed around how online stores actually operate.',
   heroBadge: 'CRM Automation',
   description:
     'Clickmasters builds CRM Automation for e-commerce. Automation that updates, cleans, and routes automatically, built around how a store in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of e-commerce, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for e-commerce: the routine handle
 
     'Built for E-commerce\'s Realities': `Customer and payment-adjacent data is handled with scoped access, and customer-facing AI answers from your actual store policies and order data so responses are accurate rather than generic.
 
-We integrate with the systems your store already runsstore platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your store already runs — store platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For e-commerce, the return shows up as: tickets deflected around the clock, cart revenue recovered automatically, faster responses lifting conversion and reviews, and a store that grows sales without growing operational headcount in lockstep. On the CRM automation side specifically, the headline metric is CRM accuracy restored and rep admin time eliminated.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is CRM automation for e-commerce?',
       answer:
-        'CRM automation keeps your CRM accurate and active automaticallyupdating records, logging activity, cleaning data, routing leads, and syncing with your other systems, so the pipeline reflects reality without reps doing data entry. For a store in e-commerce, that means applying it to the workflows that consume your teamcustomer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updateswith the specifics of your industry built in.',
+        'CRM automation keeps your CRM accurate and active automaticallyupdating records, logging activity, cleaning data, routing leads, and syncing with your other systems, so the pipeline reflects reality without reps doing data entry. For a store in e-commerce, that means applying it to the workflows that consume your team — customer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updates — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our store already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about CRM automation for e-commerce' } },
+      { type: 'FAQSection', props: { title: 'CRM Automation for Ecommerce FAQs', subtitle: 'Common questions about CRM automation for e-commerce' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

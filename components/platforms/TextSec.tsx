@@ -4,6 +4,7 @@ import { motion, Variants } from 'framer-motion';
 import Image from 'next/image';
 import { Zap, AlertCircle, CheckCircle, GitBranch, Shield, TrendingUp, Clock } from 'lucide-react';
 import type { Section } from '@/content/type';
+import { RichText } from '@/components/solutions/sections/variants/RichText';
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
@@ -246,7 +247,7 @@ export default function TextSec({ section }: { section: Section }) {
                 className="text-base md:text-lg leading-relaxed text-justify font-sans mb-4"
                 style={{ color: 'rgba(0,0,0,0.7)' }}
               >
-                {para}
+                <RichText text={para} />
               </motion.p>
             ))}
 
@@ -381,7 +382,7 @@ export default function TextSec({ section }: { section: Section }) {
                 className="text-base md:text-lg leading-relaxed text-justify font-sans w-full"
                 style={{ color: 'rgba(0,0,0,0.7)' }}
               >
-                {para}
+                <RichText text={para} />
               </motion.p>
             ))}
 
@@ -425,7 +426,7 @@ export default function TextSec({ section }: { section: Section }) {
                           className="text-xs leading-relaxed mt-0.5 text-justify font-sans"
                           style={{ color: 'rgba(0,0,0,0.5)' }}
                         >
-                          {card.desc}
+                          <RichText text={card.desc} />
                         </p>
                       </div>
                     </div>

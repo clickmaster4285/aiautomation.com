@@ -18,11 +18,11 @@ export const aiWorkflowAutomation = {
       'AI workflow automation brings interpretation to the workflow. It can read an inbound email and identify the intent, classify a document by type, extract key fields, or decide which approval path applies — then hand off to standard workflow logic for the rest of the process.',
     ],
     'The Problems This Solves': [
-      'Handle variable inputs that break traditional rule-based workflows',
-      'Reduce manual triage of emails, documents, and unstructured requests',
-      'Route work to the right team without keyword-matching complexity',
-      'Add intelligence to workflows without replacing your existing systems',
-      'Keep humans in the loop where decisions carry real risk or cost',
+      '**Handle variable inputs that break traditional rule-based workflows** AI reads messy, inconsistent submissions and normalizes them, so downstream steps receive clean data even when formats change.',
+      '**Reduce manual triage of emails, documents, and unstructured requests** Instead of someone reading every item, the workflow identifies what each one is about and sorts it before your team looks.',
+      '**Route work to the right team without keyword-matching complexity** AI understands what a request actually means, so items reach sales, support, or finance correctly without fragile filter lists.',
+      '**Add intelligence to workflows without replacing your existing systems** We layer AI steps onto the tools and automations you already run, keeping your CRM, ERP, and helpdesk in place.',
+      '**Keep humans in the loop where decisions carry real risk or cost** We build approval steps and confidence thresholds, so uncertain or sensitive items pause for a person to review.',
     ],
     'Where to Start: Your First Automation': [
       'Start with the process where your team spends the most time on manual triage or hand-offs. Typical starting points: inbound email routing, document intake for a specific business process, or lead qualification that requires understanding the inquiry, not just matching a keyword.',
@@ -42,11 +42,11 @@ export const aiWorkflowAutomation = {
       'Teams typically see reduced manual triage time, faster response to inbound requests, fewer routing errors, and more consistent handling of exceptions. The return compounds as more workflows move into the AI-assisted layer — each additional workflow benefits from the same foundation of integrations, review processes, and monitoring.',
     ],
     'Why Clickmasters': [
-      'Custom AI workflows designed around your actual processes and tools',
-      'Practical use of AI where it adds value — not AI for the sake of AI',
-      'Integrations with CRM, ERP, email, helpdesk, and cloud storage',
-      'Human-in-the-loop review and exception handling built in',
-      'Monitoring and iteration so workflows improve after launch',
+      '**Custom AI workflows designed around your actual processes and tools** We map each handoff and decision point your team handles today, then design the automation to fit that reality.',
+      '**Practical use of AI where it adds value — not AI for the sake of AI** We keep fixed rules for predictable steps and apply AI only to classification, extraction, and judgment calls that need it.',
+      '**Integrations with CRM, ERP, email, helpdesk, and cloud storage** We connect workflows to the platforms your business relies on, so data moves between them and records stay in sync.',
+      '**Human-in-the-loop review and exception handling built in** Unusual cases land in a clear review queue with the AI reasoning attached, so your team can approve or correct quickly.',
+      '**Monitoring and iteration so workflows improve after launch** We track misroutes, escalations, and corrections, then refine prompts and rules so handling gets more consistent over time.',
     ],
   },
 

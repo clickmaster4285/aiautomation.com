@@ -9,7 +9,7 @@ export const documentAutomationForRestaurants: SolutionData = {
   title: 'Document & Data Automation for Restaurants & Hospitality',
   primaryKeyword: 'document automation for restaurants',
   titleTag: 'Document Automation for Restaurants | Clickmasters',
-  metaDescription: 'Restaurants use Clickmasters document automation to extract, check, and route data from invoices, forms, and files. Book a free audit. Ask the team.',
+  metaDescription: 'Document automation for restaurants that reads vendor invoices, delivery receipts, and inventory sheets so the numbers reach your books. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,8 +18,8 @@ export const documentAutomationForRestaurants: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'Document & Data Automation for Restaurants & Hospitality',
-  heroSubheading: 'Automation that reads, validates, and files, built for how hospitality businesses actually operate.',
+  heroHeading: 'Document Automation for Restaurants & Hospitality',
+  heroSubheading: 'Document automation for restaurants that reads, validates, and files vendor paperwork, built for how hospitality businesses actually operate.',
   heroBadge: 'Document & Data Automation',
   description:
     'Clickmasters builds Document & Data Automation for restaurants & hospitality. Automation that reads, validates, and files automatically, built around how a business in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of restaurants & hospitality, delivered as a system your team owns and relies on.',
@@ -28,7 +28,7 @@ export const documentAutomationForRestaurants: SolutionData = {
 
 Document & Data Automation addresses this directly. It reads documents and moves data so nobody keys it by handAI extraction that understands invoices, forms, and PDFs across varied layouts, validation that catches what doesn't look right, and routing that puts clean data into your systems automatically. The manual entry disappears; the exceptions get exactly the human attention they need. For a business, that capability lands exactly where the hours are currently going.`,
 
-    'The Problems This Solves for Restaurants & Hospitality': `**Calls missed during service.** Reservation and inquiry calls during the rush go unansweredeach one potentially a lost table or event booking.
+    'The Problems This Solves for Restaurants & Hospitality': `**Calls missed during service.** Reservation and inquiry calls during the rush go unanswered — each one potentially a lost table or event booking.
 **No-shows.** Unconfirmed reservations that don't arrive cost revenue that automated confirmations would have protected.
 **Review response neglect.** Reviews decide local search visibility, but responding consistently rarely survives contact with a busy week.
 **Event and catering inquiry lag.** High-value private event inquiries need prompt, detailed responses that busy managers deliver late.
@@ -62,9 +62,9 @@ What it is: the routine work. The automation that reads, validates, and files, h
 
 That's the pattern across everything we build for restaurants & hospitality: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
-    'Built for Restaurants & Hospitality\'s Realities': `Guest data is handled with appropriate care, and the automation covers communication logisticshospitality itself stays human, which is the whole point of freeing your people to deliver it.
+    'Built for Restaurants & Hospitality\'s Realities': `Guest data is handled with appropriate care, and the automation covers communication logistics — hospitality itself stays human, which is the whole point of freeing your people to deliver it.
 
-We integrate with the systems your business already runsreservation platforms, POS systems, review platforms, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your business already runs — reservation platforms, POS systems, review platforms, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For restaurants & hospitality, the return shows up as: bookings captured during rushes and after hours, no-shows cut by systematic confirmation, reviews responded to consistently, and event inquiries converted while interest is hot. On the document automation side specifically, the headline metric is documents processed hands-free and entry errors eliminated.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is document automation for restaurants & hospitality?',
       answer:
-        'Document and data automation uses OCR and AI to read documents, extract and validate structured data, and route it into business systems automaticallyreplacing manual reading and data entry. For a business in restaurants & hospitality, that means applying it to the workflows that consume your teamreservation booking and confirmation, call answering for hours/menu/booking questions, and no-show reduction reminderswith the specifics of your industry built in.',
+        'Document and data automation uses OCR and AI to read documents, extract and validate structured data, and route it into business systems automatically — replacing manual reading and data entry. For a business in restaurants & hospitality, that means applying it to the workflows that consume your team — reservation booking and confirmation, call answering for hours/menu/booking questions, and no-show reduction reminders — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our business already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about document automation for restaurants & hospitality' } },
+      { type: 'FAQSection', props: { title: 'Document Automation for Restaurants FAQs', subtitle: 'Common questions about document automation for restaurants & hospitality' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

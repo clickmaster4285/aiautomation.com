@@ -8,8 +8,8 @@ export const crmAutomationWithHubspot: SolutionData = {
   category: 'crm-automation',
   title: 'CRM Automation with HubSpot',
   primaryKeyword: 'hubspot CRM automation',
-  titleTag: 'CRM Automation Built on HubSpot Services | Clickmasters',
-  metaDescription: 'Teams running HubSpot use Clickmasters CRM automation to keep contacts, deals, and follow-ups current without re-keying. Book a free audit. Ask the team.',
+  titleTag: 'HubSpot CRM Automation for Growing Teams | Clickmasters',
+  metaDescription: 'HubSpot CRM automation that enriches records, routes leads, and syncs HubSpot with your wider stack so data stays clean. Book a free automation audit.',
   keywordEvidence: '14 matching keywords, ~2,950 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -17,14 +17,14 @@ export const crmAutomationWithHubspot: SolutionData = {
     'HubSpot platform page',
     'AI Automation Agency pillar',
   ],
-  heroHeading: 'CRM Automation Built on HubSpot',
-  heroSubheading: 'Keep your HubSpot CRM accurate and active automaticallywith AI workflows connected to your wider stack.',
+  heroHeading: 'HubSpot CRM Automation',
+  heroSubheading: 'HubSpot CRM automation that keeps your records accurate and active, with AI workflows connected to your wider stack.',
   heroBadge: 'CRM Automation × HubSpot',
   description: 'Clickmasters builds CRM automation on HubSpot. HubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack, and it\'s an excellent fit for teams already running sales and marketing on HubSpot. Combined with CRM automation, which makes your CRM maintain itself and work for you. Records enriched and updated automatically, activity logged without reps typing, leads routed and sequenced by rules and AI judgment, data kept clean so your pipeline reflects reality, and your CRM connected to the rest of your stack so information flows instead of being re-entered, the result is automation that runs on a platform matched to the job.',
   sections: {
-    'Why HubSpot for CRM Automation': 'HubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack. We build inside your existing instance, transparent, documented, yours. For CRM automation specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. HubSpot is the right home for this work when it matches teams already running sales and marketing on HubSpot, and when it does, this combination is hard to beat.',
+    'Why HubSpot for CRM Automation': 'HubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack. We build inside your existing instance, transparent, documented, yours. For CRM automation specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. HubSpot is the right home for this work when it matches teams already running sales and marketing on HubSpot, and when it does, this combination is hard to beat.\n\nA HubSpot build rarely stops at the CRM. We connect it to neighboring workflows so new contacts enter the right email sequences, customer support tickets appear on the contact record, and meetings from your appointment booking tool update deal stages without anyone typing.',
     'What a Production Build Includes': 'The gap between a prototype and a system you can rely on is everything that happens when things go wrong. Every CRM automation build we ship on HubSpot includes error handling on every step (failures caught and retried or escalated, never silent), monitoring and alerting (you know the system is running without checking), documentation (your team can understand and modify the build), and staged rollout (the automation proves itself on real cases with human oversight before it runs unattended).\n\nThis is the difference between automation that saves hours and automation that quietly breaks and costs trust. Most of the rescue projects we take on are builds that skipped these steps.',
-    'Typical Workflows on HubSpot': 'The CRM automation workflows we most often build on HubSpot follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is neededclassification, extraction, drafting, and the result is executed and logged. HubSpot\'s strengths make it particularly suited to teams already running sales and marketing on HubSpot, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
+    'Typical Workflows on HubSpot': 'The CRM automation workflows we most often build on HubSpot follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is needed — classification, extraction, drafting, and the result is executed and logged. HubSpot\'s strengths make it particularly suited to teams already running sales and marketing on HubSpot, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
   },
   features: [
     {
@@ -118,7 +118,7 @@ export const crmAutomationWithHubspot: SolutionData = {
   faqQuestions: [
     {
       question: 'Can HubSpot handle CRM automation?',
-      answer: 'YesHubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack, and it\'s well suited to teams already running sales and marketing on HubSpot. The build quality determines reliability, which is where an experienced partner matters.',
+      answer: 'Yes — HubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack, and it\'s well suited to teams already running sales and marketing on HubSpot. The build quality determines reliability, which is where an experienced partner matters.',
     },
     {
       question: 'What does this cost to run?',
@@ -129,7 +129,7 @@ export const crmAutomationWithHubspot: SolutionData = {
       answer: 'Completely. Everything is documented and transparent, in your own accounts, with no dependency on us for changes.',
     },
     {
-      question: 'CRM automation keeps your CRM accurate and active automaticallyis that what this does?',
+      question: 'CRM automation keeps your CRM accurate and active automatically — is that what this does?',
       answer: 'CRM automation keeps your CRM accurate and active automaticallyupdating records, logging activity, cleaning data, routing leads, and syncing with your other systems, so the pipeline reflects reality without reps doing data entry. Built on HubSpot, it runs with the platform\'s strengths: teams already running sales and marketing on HubSpot.',
     },
   ],
@@ -203,7 +203,7 @@ export const crmAutomationWithHubspot: SolutionData = {
       { type: 'PlatformComparison', props: { title: 'Is HubSpot Right for You?', subtitle: 'We\'ll tell you honestly if HubSpot is the right platform for your CRM automation needs.' } },
       { type: 'StatsSection', props: { title: 'Why Choose Clickmasters for HubSpot CRM Automation' } },
       { type: 'FAQSection', props: {
-  title: 'Frequently Asked Questions',
+  title: 'HubSpot CRM Automation FAQs',
   subtitle: 'Common questions about CRM automation on HubSpot',
   eyebrow: 'FAQ',
 } },

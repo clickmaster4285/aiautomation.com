@@ -3,9 +3,10 @@
 import Link from 'next/link';
 import { Fragment } from 'react';
 
-const TOKEN = /(\*\*[^*]+\*\*|\[[^\]]+\]\((?:\/[^)\s]*|https?:\/\/[^)\s]+)\))/g;
+// **bold**, ==keyword highlight== (lib/inline-links-core emphasizeKeyword) and [anchor](/path) links.
+const TOKEN = /(\*\*[^*]+\*\*|==[^=]+==|\[[^\]]+\]\((?:\/[^)\s]*|https?:\/\/[^)\s]+)\))/g;
 
-export function RichText({ text, linkClassName }: { text: string; linkClassName?: string }) {
+export function RichText({ text, linkClassName }: { text?: string | null; linkClassName?: string }) {
   if (!text) return null;
   const nodes: React.ReactNode[] = [];
   let last = 0;
@@ -14,7 +15,10 @@ export function RichText({ text, linkClassName }: { text: string; linkClassName?
     const start = m.index!;
     if (start > last) nodes.push(<Fragment key={key++}>{text.slice(last, start)}</Fragment>);
     const tok = m[0];
-    if (tok.startsWith('**')) {
+    if (tok.startsWith('==')) {
+      // The page's primary keyword: bold, same colour as the surrounding text.
+      nodes.push(<strong key={key++} className="font-bold text-inherit">{tok.slice(2, -2)}</strong>);
+    } else if (tok.startsWith('**')) {
       nodes.push(<strong key={key++} className="font-semibold text-inherit">{tok.slice(2, -2).trim()}</strong>);
       // Copy often has "**Title**description" with no space; add one.
       const next = text[start + tok.length];
@@ -25,7 +29,10 @@ export function RichText({ text, linkClassName }: { text: string; linkClassName?
         <Link
           key={key++}
           href={href}
-          className={linkClassName ?? 'font-semibold text-brand underline underline-offset-4 decoration-2 decoration-brand/50 hover:decoration-brand hover:text-brand/80 transition-colors'}
+          className={
+            linkClassName ??
+            'ctx-link font-semibold text-brand underline decoration-brand/40 decoration-2 underline-offset-4 hover:decoration-brand transition-colors'
+          }
         >
           {label}
         </Link>
@@ -39,4 +46,7 @@ export function RichText({ text, linkClassName }: { text: string; linkClassName?
 
 /** Plain-text version (for places that must not contain markup, e.g. aria labels or icon matching). */
 export const stripMarkup = (text: string) =>
-  text.replace(/\*\*([^*]+)\*\*/g, '$1').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
+  text
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .replace(/==([^=]+)==/g, '$1')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');

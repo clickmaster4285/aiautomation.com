@@ -9,7 +9,7 @@ export const customerSupportAutomationForManufacturing: SolutionData = {
   title: 'Customer Support Automation for Manufacturing',
   primaryKeyword: 'support automation for manufacturing',
   titleTag: 'Customer Support Automation for Manufacturing | Clickmasters',
-  metaDescription: 'Manufacturers use Clickmasters customer support automation to resolve routine requests and escalate the cases that need a person. Book a free audit.',
+  metaDescription: 'Support automation for manufacturing that handles order status, parts, and warranty requests and routes technical cases to the right expert. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const customerSupportAutomationForManufacturing: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Customer Support Automation for Manufacturing',
-  heroSubheading: 'Automation that resolves, routes, and escalates, built for how manufacturing operations actually run.',
+  heroSubheading: 'Support automation for manufacturing that resolves routine customer and distributor requests, routes the rest, and escalates technical cases.',
   heroBadge: 'Customer Support Automation',
   description:
     'Clickmasters builds Customer Support Automation for manufacturing. Automation that resolves, routes, and escalates automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of manufacturing, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for manufacturing: the routine han
 
     'Built for Manufacturing\'s Realities': `Manufacturing data spans pricing, supplier terms, and operational details that competitors would value. Automation is scoped with appropriate access controls, and anything touching production decisions keeps human oversight. The automation moves the data; your team runs the operation.
 
-We integrate with the systems your operation already runsERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your operation already runs — ERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For manufacturing, the return shows up as: order-processing time cut from hours to minutes, fewer entry errors reaching the floor or the invoice, reorder points watched automatically, reports that assemble themselves, and office headcount that doesn't scale linearly with order volume. On the support automation side specifically, the headline metric is tickets deflected and response time cut.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is support automation for manufacturing?',
       answer:
-        'Customer support automation uses AI agents and workflows to answer common questions from your documentation, triage and route tickets, and draft replieswhile escalating complex cases to human agents with context. For a operation in manufacturing, that means applying it to the workflows that consume your teamsales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alertswith the specifics of your industry built in.',
+        'Customer support automation uses AI agents and workflows to answer common questions from your documentation, triage and route tickets, and draft replies — while escalating complex cases to human agents with context. For a operation in manufacturing, that means applying it to the workflows that consume your team — sales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alerts — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our operation already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about customer support automation for manufacturing' } },
+      { type: 'FAQSection', props: { title: 'Support Automation for Manufacturing FAQs', subtitle: 'Common questions about customer support automation for manufacturing' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

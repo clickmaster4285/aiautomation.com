@@ -8,8 +8,8 @@ export const appointmentBookingAutomationForManufacturing: SolutionData = {
   category: 'appointment-booking-automation',
   title: 'Appointment & Booking Automation for Manufacturing',
   primaryKeyword: 'booking automation for manufacturing',
-  titleTag: 'Booking Automation for Manufacturing | Clickmasters AI',
-  metaDescription: 'Manufacturers use Clickmasters appointment booking automation to schedule, confirm, and remind so booked time is not missed. Book a free audit.',
+  titleTag: 'Booking Automation for Manufacturing | Clickmasters',
+  metaDescription: 'Booking automation for manufacturing that schedules supplier visits, service calls, and client meetings, with reminders sent automatically. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const appointmentBookingAutomationForManufacturing: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Appointment & Booking Automation for Manufacturing',
-  heroSubheading: 'Automation that books, confirms, and reminds, built for how manufacturing operations actually run.',
+  heroSubheading: 'Booking automation for manufacturing that books, confirms, and reminds, built for how manufacturing operations actually run.',
   heroBadge: 'Appointment & Booking Automation',
   description:
     'Clickmasters builds Appointment & Booking Automation for manufacturing. Automation that books, confirms, and reminds automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of manufacturing, delivered as a system your team owns and relies on.',
   sections: {
     'Why Manufacturing Needs Appointment & Booking Automation': `Manufacturers live and die by operational efficiency on the floor, yet the office side: order processing, purchasing, inventory updates, shipping coordination, reporting. Often runs on manual re-keying between systems that don't connect. Orders arrive by email and get typed into the ERP; inventory counts live in spreadsheets; production reports are assembled by hand. The result is lag, errors, and office overhead that grows with every increase in volume.
 
-Appointment & Booking Automation addresses this directly. It books, confirms, and protects your calendar automaticallyavailability checked in real time, appointments scheduled through chat, voice, or web without back-and-forth, confirmations and reminders that cut no-shows, and rescheduling handled without a phone call. Every booking that used to require a conversation happens on its own. For a operation, that capability lands exactly where the hours are currently going.`,
+Appointment & Booking Automation addresses this directly. It books, confirms, and protects your calendar automatically — availability checked in real time, appointments scheduled through chat, voice, or web without back-and-forth, confirmations and reminders that cut no-shows, and rescheduling handled without a phone call. Every booking that used to require a conversation happens on its own. For a operation, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Manufacturing': `**Order entry lag and errors.** Orders arriving by email or portal get manually keyed into the ERP, adding delay and transcription errors to every order.
 **Disconnected systems.** ERP, inventory, shipping, and accounting systems that don't talk mean the same data is entered multiple times.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for manufacturing: the routine han
 
     'Built for Manufacturing\'s Realities': `Manufacturing data spans pricing, supplier terms, and operational details that competitors would value. Automation is scoped with appropriate access controls, and anything touching production decisions keeps human oversight. The automation moves the data; your team runs the operation.
 
-We integrate with the systems your operation already runsERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your operation already runs — ERP systems, inventory management, shipping platforms, accounting software, and supplier portals, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For manufacturing, the return shows up as: order-processing time cut from hours to minutes, fewer entry errors reaching the floor or the invoice, reorder points watched automatically, reports that assemble themselves, and office headcount that doesn't scale linearly with order volume. On the booking automation side specifically, the headline metric is bookings captured after hours and no-show rate reduction.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is booking automation for manufacturing?',
       answer:
-        'Appointment and booking automation schedules appointments automatically across chat, voice, and webchecking real availability, sending confirmations and reminders that reduce no-shows, and handling rescheduling without staff involvement. For a operation in manufacturing, that means applying it to the workflows that consume your teamsales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alertswith the specifics of your industry built in.',
+        'Appointment and booking automation schedules appointments automatically across chat, voice, and web — checking real availability, sending confirmations and reminders that reduce no-shows, and handling rescheduling without staff involvement. For a operation in manufacturing, that means applying it to the workflows that consume your team — sales order entry and confirmation, purchase order creation and tracking, and inventory level monitoring and reorder alerts — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our operation already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about appointment & booking automation for manufacturing' } },
+      { type: 'FAQSection', props: { title: 'Booking Automation for Manufacturing FAQs', subtitle: 'Common questions about appointment & booking automation for manufacturing' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

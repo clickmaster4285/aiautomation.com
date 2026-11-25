@@ -9,7 +9,7 @@ export const businessProcessAutomationForEducation: SolutionData = {
   title: 'Business Process Automation for Education',
   primaryKeyword: 'process automation for education',
   titleTag: 'Business Process Automation for Education | Clickmasters',
-  metaDescription: 'Education teams use Clickmasters business process automation to take repetitive operations off the people who currently chase them. Book a free audit.',
+  metaDescription: 'Process automation for education teams that handles admissions paperwork, enrollment updates, and staff approvals without manual chasing. Book a free audit.',
   keywordEvidence: '1 matching keywords, ~50 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const businessProcessAutomationForEducation: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Business Process Automation for Education',
-  heroSubheading: 'Automation that runs, coordinates, and completes, built for how educational institutions actually operate.',
+  heroSubheading: 'Business process automation for education that runs, coordinates, and completes the admin work behind admissions, enrollment, and operations.',
   heroBadge: 'Business Process Automation',
   description:
     'Clickmasters builds Business Process Automation for education. Automation that runs, coordinates, and completes automatically, built around how a institution in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of education, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for education: the routine handled
 
     'Built for Education\'s Realities': `Student dataespecially involving minorsdemands careful, restricted handling. Automation is built with strict access controls and appropriate data practices, handling administrative communication while anything sensitive or judgment-based stays with staff.
 
-We integrate with the systems your institution already runsstudent information systems, CRMs, scheduling tools, communication platforms, and payment systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your institution already runs — student information systems, CRMs, scheduling tools, communication platforms, and payment systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For education, the return shows up as: higher inquiry-to-enrollment conversion from fast consistent follow-up, seasonal crunches absorbed without temp staffing, staff hours reclaimed from repetitive questions, and reporting that assembles itself. On the process automation side specifically, the headline metric is end-to-end process time cut and hand-off delays eliminated.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is process automation for education?',
       answer:
-        'Business process automation (BPA) uses software and AI to run an entire business processall its steps, systems, and hand-offs. Automatically, rather than automating just one task. For a institution in education, that means applying it to the workflows that consume your teaminquiry response and enrollment nurture, application and document collection, and student and parent FAQ handlingwith the specifics of your industry built in.',
+        'Business process automation (BPA) uses software and AI to run an entire business process — all its steps, systems, and hand-offs. Automatically, rather than automating just one task. For a institution in education, that means applying it to the workflows that consume your team — inquiry response and enrollment nurture, application and document collection, and student and parent FAQ handling — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our institution already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about business process automation for education' } },
+      { type: 'FAQSection', props: { title: 'Process Automation for Education FAQs', subtitle: 'Common questions about business process automation for education' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

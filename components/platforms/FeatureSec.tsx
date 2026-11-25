@@ -5,6 +5,7 @@ import { motion, Variants } from 'framer-motion';
 import Image from 'next/image';
 import * as Icons from 'lucide-react';
 import type { Section } from '@/content/type';
+import { RichText } from '@/components/solutions/sections/variants/RichText';
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -199,7 +200,7 @@ function InteractiveCard({ item, idx, isWhySection }: { item: any; idx: number; 
             {item.title}
           </h3>
           <p className="mt-2 text-sm leading-relaxed text-neutral-400 group-hover:text-neutral-300 transition-colors duration-500 font-light text-justify font-sans">
-            {item.description}
+            <RichText text={item.description} />
           </p>
         </div>
         <div className="flex items-center gap-1.5 text-xs font-medium text-brand/0 group-hover:text-brand/100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500 opacity-0 group-hover:opacity-100 font-sans">

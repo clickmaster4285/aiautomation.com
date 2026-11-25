@@ -8,8 +8,8 @@ export const documentAutomationForEcommerce: SolutionData = {
   category: 'document-automation',
   title: 'Document & Data Automation for E-commerce',
   primaryKeyword: 'document automation for ecommerce',
-  titleTag: 'Document & Data Automation for E-commerce | Clickmasters',
-  metaDescription: 'E-commerce teams use Clickmasters document automation to extract, check, and route data from invoices, forms, and files. Book a free audit. Ask the team.',
+  titleTag: 'Document Automation for Ecommerce | Clickmasters',
+  metaDescription: 'Document automation for ecommerce that reads supplier invoices, packing slips, and return forms and syncs the data to your store. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,8 +18,8 @@ export const documentAutomationForEcommerce: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'Document & Data Automation for E-commerce',
-  heroSubheading: 'Automation that reads, validates, and files, built for how e-commerce stores actually operate.',
+  heroHeading: 'Document Automation for Ecommerce',
+  heroSubheading: 'Document automation for ecommerce that reads, validates, and files supplier and order paperwork, built for how online stores actually operate.',
   heroBadge: 'Document & Data Automation',
   description:
     'Clickmasters builds Document & Data Automation for e-commerce. Automation that reads, validates, and files automatically, built around how a store in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of e-commerce, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for e-commerce: the routine handle
 
     'Built for E-commerce\'s Realities': `Customer and payment-adjacent data is handled with scoped access, and customer-facing AI answers from your actual store policies and order data so responses are accurate rather than generic.
 
-We integrate with the systems your store already runsstore platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your store already runs — store platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For e-commerce, the return shows up as: tickets deflected around the clock, cart revenue recovered automatically, faster responses lifting conversion and reviews, and a store that grows sales without growing operational headcount in lockstep. On the document automation side specifically, the headline metric is documents processed hands-free and entry errors eliminated.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is document automation for e-commerce?',
       answer:
-        'Document and data automation uses OCR and AI to read documents, extract and validate structured data, and route it into business systems automaticallyreplacing manual reading and data entry. For a store in e-commerce, that means applying it to the workflows that consume your teamcustomer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updateswith the specifics of your industry built in.',
+        'Document and data automation uses OCR and AI to read documents, extract and validate structured data, and route it into business systems automatically — replacing manual reading and data entry. For a store in e-commerce, that means applying it to the workflows that consume your team — customer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updates — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our store already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about document automation for e-commerce' } },
+      { type: 'FAQSection', props: { title: 'Document Automation for Ecommerce FAQs', subtitle: 'Common questions about document automation for e-commerce' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

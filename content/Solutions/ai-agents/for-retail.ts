@@ -8,8 +8,8 @@ export const aiAgentsForRetail: SolutionData = {
   category: 'ai-agents',
   title: 'AI Agent Development for Retail',
   primaryKeyword: 'AI agent for retail',
-  titleTag: 'AI Agent Development for Retail Services | Clickmasters',
-  metaDescription: 'Retailers use Clickmasters AI agents to carry multi-step work inside the tools the team already uses. People keep the exceptions that need judgment.',
+  titleTag: 'AI Agents for Retail Businesses | Clickmasters',
+  metaDescription: 'AI agents for retail businesses that handle stock checks, order updates, and vendor follow-ups across your POS and inventory. Book a free automation audit.',
   keywordEvidence: 'pattern-based',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,8 +18,8 @@ export const aiAgentsForRetail: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'AI Agent Development for Retail',
-  heroSubheading: 'Automation that reasons, acts, and completes, built for how retail businesses actually work.',
+  heroHeading: 'AI Agents for Retail',
+  heroSubheading: 'AI agents for retail businesses that reason, act, and finish multi-step work inside the tools your team already uses.',
   heroBadge: 'AI Agent Development',
   description: 'Clickmasters builds AI Agent Development for retail. Automation that reasons, acts, and completes automatically, built around how a business in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of retail, delivered as a system your team owns and relies on.',
   sections: {
@@ -63,7 +63,7 @@ That's the pattern across everything we build for retail: the routine handled in
 
     'Built for Retail\'s Realities': `Sales data and supplier terms are commercially sensitive; automation is scoped appropriately, and buying decisions stay with your team. The automation supplies timely, accurate data instead of stale spreadsheets.
 
-We integrate with the systems your business already runsPOS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your business already runs — POS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For retail, the return shows up as: fewer stockouts and less dead stock, customer questions answered fast across channels, reports that arrive in time to matter, and office hours reclaimed from re-keying. On the AI agent side specifically, the headline metric is complete tasks handled end to end without human touches.
 
@@ -167,7 +167,7 @@ We start with a free audit that identifies your highest-return workflow, automat
   faqQuestions: [
     {
       question: 'What is AI agent for retail?',
-      answer: 'An AI agent is software that uses an AI model to reason about a goal, use tools, and take multi-step action inside real systemsunlike a chatbot, which mainly answers questions. For a business in retail, that means applying it to the workflows that consume your teaminventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reportingwith the specifics of your industry built in.',
+      answer: 'An AI agent is software that uses an AI model to reason about a goal, use tools, and take multi-step action inside real systemsunlike a chatbot, which mainly answers questions. For a business in retail, that means applying it to the workflows that consume your team — inventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reporting — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our business already uses?',
@@ -264,7 +264,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI agents for retail' } },
+      { type: 'FAQSection', props: { title: 'AI Agents for Retail FAQs', subtitle: 'Common questions about AI agents for retail' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

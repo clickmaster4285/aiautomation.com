@@ -15,9 +15,16 @@ import { aiWorkflowAutomation } from './ai-workflow-automation';
 import { businessProcessAutomation } from './business-process-automation';
 import { leadGenerationAutomation } from './lead-generation-automation';
 import { reportingAutomation } from './reporting-automation';
+import { appointmentBookingAutomation } from './appointment-booking-automation';
+import { crmAutomation } from './crm-automation';
+import { customerSupportAutomation } from './customer-support-automation';
+import { documentAutomation } from './document-automation';
+import { invoiceAutomation } from './invoice-automation';
+import { marketingAutomation } from './marketing-automation';
+import { salesAutomation } from './sales-automation';
 import { salesAutomationWithSalesforce } from './sales-automation/with-salesforce';
 
-/** Solution type pages rendered from content. (Hand-built hubs live in components/solutions/hubs.) */
+/** Every solution type page (/solutions/<service>), rendered from content. */
 export const SOLUTION_HUBS: Record<string, SolutionPageContent> = {
   'ai-agents': aiAgents,
   'ai-chatbots': aiChatbots,
@@ -26,18 +33,14 @@ export const SOLUTION_HUBS: Record<string, SolutionPageContent> = {
   'business-process-automation': businessProcessAutomation,
   'lead-generation-automation': leadGenerationAutomation,
   'reporting-automation': reportingAutomation,
+  'appointment-booking-automation': appointmentBookingAutomation,
+  'crm-automation': crmAutomation,
+  'customer-support-automation': customerSupportAutomation,
+  'document-automation': documentAutomation,
+  'invoice-automation': invoiceAutomation,
+  'marketing-automation': marketingAutomation,
+  'sales-automation': salesAutomation,
 };
-
-/** Solution type pages that are hand-built components (registered in components/solutions/hubs). */
-export const CUSTOM_HUB_SERVICES = [
-  'appointment-booking-automation',
-  'crm-automation',
-  'customer-support-automation',
-  'document-automation',
-  'invoice-automation',
-  'marketing-automation',
-  'sales-automation',
-] as const;
 
 /** Every /solutions/<service>/<slug> page, keyed "<service>/<slug>". */
 export const SOLUTION_DETAILS: Record<string, SolutionPageContent> = {
@@ -57,4 +60,4 @@ export const solutionDetailParams = () =>
 
 /** Every solution page path below /solutions, e.g. "ai-agents" and "ai-agents/for-construction" (sitemap). */
 export const allSolutionPaths = () =>
-  [...Object.keys(SOLUTION_HUBS), ...CUSTOM_HUB_SERVICES, ...Object.keys(SOLUTION_DETAILS)].sort();
+  [...Object.keys(SOLUTION_HUBS), ...Object.keys(SOLUTION_DETAILS)].sort();

@@ -8,8 +8,8 @@ export const aiVoiceAgentsForRestaurants: SolutionData = {
   category: 'ai-voice-agents',
   title: 'AI Voice Agents for Restaurants & Hospitality',
   primaryKeyword: 'voice agent for restaurants',
-  titleTag: 'AI Voice Agents for Restaurants & Hospitality | Clickmasters',
-  metaDescription: 'Restaurants use Clickmasters AI voice agents to answer and place calls, then hand off with the context captured. Start with one high-volume workflow.',
+  titleTag: 'AI Voice Agents for Restaurants | Clickmasters',
+  metaDescription: 'AI voice agents for restaurants that take reservations, answer menu and hours questions, and handle takeout calls during the rush. Book a free automation audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,16 +19,16 @@ export const aiVoiceAgentsForRestaurants: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Voice Agents for Restaurants & Hospitality',
-  heroSubheading: 'Automation that answers, books, and routes, built for how hospitality businesses actually operate.',
+  heroSubheading: 'Voice agents for restaurants and hospitality that answer, book, and route calls, built for how service actually runs.',
   heroBadge: 'AI Voice Agents',
   description:
     'Clickmasters builds AI Voice Agents for restaurants & hospitality. Automation that answers, books, and routes automatically, built around how a business in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of restaurants & hospitality, delivered as a system your team owns and relies on.',
   sections: {
     'Why Restaurants & Hospitality Need AI Voice Agents': `Restaurants and hospitality businesses run at full speed during service, which is exactly when calls, reservation requests, and questions pour in. Phones ring unanswered during the rush; reservation no-shows leave tables empty; review responses pile up; and marketing to fill slow periods never quite happens. The operational reality is that the people are busy hosting, so the communication layer has to run itself.
 
-AI Voice Agents addresses this directly. It answers and makes phone calls in natural speechgreeting callers, answering questions, booking appointments, qualifying leads, and routing to your team, at every hour your staff can't pick up. For any business that loses opportunities to missed calls, this recovers revenue that currently vanishes silently. For a business, that capability lands exactly where the hours are currently going.`,
+AI Voice Agents addresses this directly. It answers and makes phone calls in natural speech — greeting callers, answering questions, booking appointments, qualifying leads, and routing to your team, at every hour your staff can't pick up. For any business that loses opportunities to missed calls, this recovers revenue that currently vanishes silently. For a business, that capability lands exactly where the hours are currently going.`,
 
-    'The Problems This Solves for Restaurants & Hospitality': `**Calls missed during service.** Reservation and inquiry calls during the rush go unansweredeach one potentially a lost table or event booking.
+    'The Problems This Solves for Restaurants & Hospitality': `**Calls missed during service.** Reservation and inquiry calls during the rush go unanswered — each one potentially a lost table or event booking.
 **No-shows.** Unconfirmed reservations that don't arrive cost revenue that automated confirmations would have protected.
 **Review response neglect.** Reviews decide local search visibility, but responding consistently rarely survives contact with a busy week.
 **Event and catering inquiry lag.** High-value private event inquiries need prompt, detailed responses that busy managers deliver late.
@@ -62,9 +62,9 @@ What it is: the routine work. The automation that answers, books, and routes, ha
 
 That's the pattern across everything we build for restaurants & hospitality: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
-    'Built for Restaurants & Hospitality\'s Realities': `Guest data is handled with appropriate care, and the automation covers communication logisticshospitality itself stays human, which is the whole point of freeing your people to deliver it.
+    'Built for Restaurants & Hospitality\'s Realities': `Guest data is handled with appropriate care, and the automation covers communication logistics — hospitality itself stays human, which is the whole point of freeing your people to deliver it.
 
-We integrate with the systems your business already runsreservation platforms, POS systems, review platforms, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your business already runs — reservation platforms, POS systems, review platforms, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For restaurants & hospitality, the return shows up as: bookings captured during rushes and after hours, no-shows cut by systematic confirmation, reviews responded to consistently, and event inquiries converted while interest is hot. On the voice agent side specifically, the headline metric is calls answered and bookings captured that would have been missed.
 
@@ -95,7 +95,7 @@ We start with a free audit that identifies your highest-return workflow, automat
       description: 'Real availability checked and booked during the call.',
     },
     {
-      icon: 'PhoneOutgoing',
+      icon: 'Phone — Outgoing',
       title: 'Outbound & Follow-up Calls',
       description: 'Reminders, confirmations, and qualification at scale.',
     },
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is voice agent for restaurants & hospitality?',
       answer:
-        'An AI voice agent holds natural spoken phone conversationsunderstanding callers, answering questions, booking appointments, and routing callsusing AI speech and language models. For a business in restaurants & hospitality, that means applying it to the workflows that consume your teamreservation booking and confirmation, call answering for hours/menu/booking questions, and no-show reduction reminderswith the specifics of your industry built in.',
+        'An AI voice agent holds natural spoken phone conversationsunderstanding callers, answering questions, booking appointments, and routing calls — using AI speech and language models. For a business in restaurants & hospitality, that means applying it to the workflows that consume your team — reservation booking and confirmation, call answering for hours/menu/booking questions, and no-show reduction reminders — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our business already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI voice agents for restaurants & hospitality' } },
+      { type: 'FAQSection', props: { title: 'Voice Agents for Restaurants FAQs', subtitle: 'Common questions about AI voice agents for restaurants & hospitality' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

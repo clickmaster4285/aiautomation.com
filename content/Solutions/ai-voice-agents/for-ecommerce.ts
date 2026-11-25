@@ -8,8 +8,8 @@ export const aiVoiceAgentsForEcommerce: SolutionData = {
   category: 'ai-voice-agents',
   title: 'AI Voice Agents for E-commerce',
   primaryKeyword: 'voice agent for ecommerce',
-  titleTag: 'AI Voice Agents for E-commerce Services | Clickmasters',
-  metaDescription: 'E-commerce teams use Clickmasters AI voice agents to answer and place calls, then hand off with the context captured. Book a free audit. Ask the team.',
+  titleTag: 'AI Voice Agents for Ecommerce | Clickmasters',
+  metaDescription: 'AI voice agents for ecommerce that handle order status, returns, and product questions by phone, then hand off with context. Book a free automation audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,15 +18,15 @@ export const aiVoiceAgentsForEcommerce: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'AI Voice Agents for E-commerce',
-  heroSubheading: 'Automation that answers, books, and routes, built for how e-commerce stores actually operate.',
+  heroHeading: 'AI Voice Agents for Ecommerce',
+  heroSubheading: 'Voice agents for ecommerce stores that answer, route, and resolve customer calls, built for how online retail actually runs.',
   heroBadge: 'AI Voice Agents',
   description:
     'Clickmasters builds AI Voice Agents for e-commerce. Automation that answers, books, and routes automatically, built around how a store in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of e-commerce, delivered as a system your team owns and relies on.',
   sections: {
     'Why E-commerce Needs AI Voice Agents': `E-commerce generates relentless operational volume that scales directly with sales: support tickets about orders and shipping, cart abandonment eating revenue, order exceptions needing attention, review management, and marketing that needs constant feeding. For a lean team, every increase in traffic means more of everything, unless the operational layer runs on automation, which is exactly how small stores punch far above their weight.
 
-AI Voice Agents addresses this directly. It answers and makes phone calls in natural speechgreeting callers, answering questions, booking appointments, qualifying leads, and routing to your team, at every hour your staff can't pick up. For any business that loses opportunities to missed calls, this recovers revenue that currently vanishes silently. For a store, that capability lands exactly where the hours are currently going.`,
+AI Voice Agents addresses this directly. It answers and makes phone calls in natural speech — greeting callers, answering questions, booking appointments, qualifying leads, and routing to your team, at every hour your staff can't pick up. For any business that loses opportunities to missed calls, this recovers revenue that currently vanishes silently. For a store, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for E-commerce': `**Support volume tied to sales.** Where's my order, returns, sizingmostly repetitive questions, arriving around the clock, drowning small teams.
 **Abandoned cart revenue loss.** A large share of carts are abandoned; without automated recovery, that revenue simply evaporates.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for e-commerce: the routine handle
 
     'Built for E-commerce\'s Realities': `Customer and payment-adjacent data is handled with scoped access, and customer-facing AI answers from your actual store policies and order data so responses are accurate rather than generic.
 
-We integrate with the systems your store already runsstore platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your store already runs — store platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For e-commerce, the return shows up as: tickets deflected around the clock, cart revenue recovered automatically, faster responses lifting conversion and reviews, and a store that grows sales without growing operational headcount in lockstep. On the voice agent side specifically, the headline metric is calls answered and bookings captured that would have been missed.
 
@@ -95,7 +95,7 @@ We start with a free audit that identifies your highest-return workflow, automat
       description: 'Real availability checked and booked during the call.',
     },
     {
-      icon: 'PhoneOutgoing',
+      icon: 'Phone — Outgoing',
       title: 'Outbound & Follow-up Calls',
       description: 'Reminders, confirmations, and qualification at scale.',
     },
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is voice agent for e-commerce?',
       answer:
-        'An AI voice agent holds natural spoken phone conversationsunderstanding callers, answering questions, booking appointments, and routing callsusing AI speech and language models. For a store in e-commerce, that means applying it to the workflows that consume your teamcustomer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updateswith the specifics of your industry built in.',
+        'An AI voice agent holds natural spoken phone conversationsunderstanding callers, answering questions, booking appointments, and routing calls — using AI speech and language models. For a store in e-commerce, that means applying it to the workflows that consume your team — customer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updates — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our store already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI voice agents for e-commerce' } },
+      { type: 'FAQSection', props: { title: 'Voice Agents for Ecommerce FAQs', subtitle: 'Common questions about AI voice agents for e-commerce' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

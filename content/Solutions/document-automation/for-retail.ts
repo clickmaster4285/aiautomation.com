@@ -8,8 +8,8 @@ export const documentAutomationForRetail: SolutionData = {
   category: 'document-automation',
   title: 'Document & Data Automation for Retail',
   primaryKeyword: 'document automation for retail',
-  titleTag: 'Document & Data Automation for Retail | Clickmasters AI',
-  metaDescription: 'Retailers use Clickmasters document automation to extract, check, and route data from invoices, forms, and files. Start with one high-volume workflow.',
+  titleTag: 'Document Automation for Retail | Clickmasters',
+  metaDescription: 'Document automation for retail that processes vendor invoices, purchase orders, and receiving documents without manual data entry. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,8 +18,8 @@ export const documentAutomationForRetail: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'Document & Data Automation for Retail',
-  heroSubheading: 'Automation that reads, validates, and files, built for how retail businesses actually operate.',
+  heroHeading: 'Document Automation for Retail',
+  heroSubheading: 'Document automation for retail that reads, validates, and files vendor and inventory paperwork, built for how retail businesses actually operate.',
   heroBadge: 'Document & Data Automation',
   description:
     'Clickmasters builds Document & Data Automation for retail. Automation that reads, validates, and files automatically, built around how a business in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of retail, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for retail: the routine handled in
 
     'Built for Retail\'s Realities': `Sales data and supplier terms are commercially sensitive; automation is scoped appropriately, and buying decisions stay with your team. The automation supplies timely, accurate data instead of stale spreadsheets.
 
-We integrate with the systems your business already runsPOS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your business already runs — POS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For retail, the return shows up as: fewer stockouts and less dead stock, customer questions answered fast across channels, reports that arrive in time to matter, and office hours reclaimed from re-keying. On the document automation side specifically, the headline metric is documents processed hands-free and entry errors eliminated.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is document automation for retail?',
       answer:
-        'Document and data automation uses OCR and AI to read documents, extract and validate structured data, and route it into business systems automaticallyreplacing manual reading and data entry. For a business in retail, that means applying it to the workflows that consume your teaminventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reportingwith the specifics of your industry built in.',
+        'Document and data automation uses OCR and AI to read documents, extract and validate structured data, and route it into business systems automatically — replacing manual reading and data entry. For a business in retail, that means applying it to the workflows that consume your team — inventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reporting — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our business already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about document automation for retail' } },
+      { type: 'FAQSection', props: { title: 'Document Automation for Retail FAQs', subtitle: 'Common questions about document automation for retail' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

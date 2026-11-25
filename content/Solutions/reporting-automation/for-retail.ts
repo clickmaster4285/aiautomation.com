@@ -8,8 +8,8 @@ export const reportingAutomationForRetail: SolutionData = {
   category: 'reporting-automation',
   title: 'Reporting Automation for Retail',
   primaryKeyword: 'reporting automation for retail',
-  titleTag: 'Reporting Automation for Retail Services | Clickmasters',
-  metaDescription: 'Retailers use Clickmasters reporting automation to assemble the numbers teams already ask for, on a schedule. Start with one high-volume workflow.',
+  titleTag: 'Reporting Automation for Retail | Clickmasters',
+  metaDescription: 'Reporting automation for retail that merges POS, inventory, and online sales data into store and category reports on schedule. Book a free automation audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const reportingAutomationForRetail: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Reporting Automation for Retail',
-  heroSubheading: 'Automation that aggregates, builds, and delivers, built for how retail businesses actually operate.',
+  heroSubheading: 'Reporting automation for retail that aggregates your data, builds the reports, and delivers them on schedule, designed around how retail businesses actually operate.',
   heroBadge: 'Reporting Automation',
   description:
     'Clickmasters builds Reporting Automation for retail. Automation that aggregates, builds, and delivers automatically, built around how a business in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of retail, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for retail: the routine handled in
 
     'Built for Retail\'s Realities': `Sales data and supplier terms are commercially sensitive; automation is scoped appropriately, and buying decisions stay with your team. The automation supplies timely, accurate data instead of stale spreadsheets.
 
-We integrate with the systems your business already runsPOS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your business already runs — POS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For retail, the return shows up as: fewer stockouts and less dead stock, customer questions answered fast across channels, reports that arrive in time to matter, and office hours reclaimed from re-keying. On the reporting automation side specifically, the headline metric is reporting hours eliminated and decision lag removed.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is reporting automation for retail?',
       answer:
-        'Reporting automation assembles recurring reports and dashboards from live data automaticallypulling from multiple systems, generating the report, and delivering it on schedulereplacing the manual export-copy-format cycle. For a business in retail, that means applying it to the workflows that consume your teaminventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reportingwith the specifics of your industry built in.',
+        'Reporting automation assembles recurring reports and dashboards from live data automatically — pulling from multiple systems, generating the report, and delivering it on schedule — replacing the manual export-copy-format cycle. For a business in retail, that means applying it to the workflows that consume your team — inventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reporting — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our business already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about reporting automation for retail' } },
+      { type: 'FAQSection', props: { title: 'Reporting Automation for Retail FAQs', subtitle: 'Common questions about reporting automation for retail' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

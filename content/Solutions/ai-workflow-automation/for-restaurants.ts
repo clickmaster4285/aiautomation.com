@@ -8,8 +8,8 @@ export const aiWorkflowAutomationForRestaurants: SolutionData = {
   category: 'ai-workflow-automation',
   title: 'AI Workflow Automation for Restaurants & Hospitality',
   primaryKeyword: 'workflow automation for restaurants',
-  titleTag: 'AI Workflow for Restaurants & Hospitality | Clickmasters',
-  metaDescription: 'Restaurants use Clickmasters AI workflow automation to move multi-step work across systems without manual handoffs. Book a free audit. Ask the team.',
+  titleTag: 'AI Workflow Automation for Restaurants | Clickmasters',
+  metaDescription: 'Workflow automation for restaurants that connects POS, inventory, scheduling, and vendor orders so less of the work runs on spreadsheets. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,16 +19,16 @@ export const aiWorkflowAutomationForRestaurants: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Workflow Automation for Restaurants & Hospitality',
-  heroSubheading: 'Automation that moves, routes, and processes, built for how hospitality businesses actually operate.',
+  heroSubheading: 'AI workflow automation for restaurants that moves, routes, and processes back-of-house work, built for how hospitality actually runs.',
   heroBadge: 'AI Workflow Automation',
   description:
     'Clickmasters builds AI Workflow Automation for restaurants & hospitality. Automation that moves, routes, and processes automatically, built around how a business in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of restaurants & hospitality, delivered as a system your team owns and relies on.',
   sections: {
     'Why Restaurants & Hospitality Need AI Workflow Automation': `Restaurants and hospitality businesses run at full speed during service, which is exactly when calls, reservation requests, and questions pour in. Phones ring unanswered during the rush; reservation no-shows leave tables empty; review responses pile up; and marketing to fill slow periods never quite happens. The operational reality is that the people are busy hosting, so the communication layer has to run itself.
 
-AI Workflow Automation addresses this directly. It connects your apps and runs multi-step processes automaticallydata moves, decisions get made, and actions fire without manual hand-offs. Where basic automation follows fixed rules, the AI layer reads unstructured information, classifies it, drafts responses, and chooses between paths, handling the judgment calls a person used to make. For a business, that capability lands exactly where the hours are currently going.`,
+AI Workflow Automation addresses this directly. It connects your apps and runs multi-step processes automatically — data moves, decisions get made, and actions fire without manual hand-offs. Where basic automation follows fixed rules, the AI layer reads unstructured information, classifies it, drafts responses, and chooses between paths, handling the judgment calls a person used to make. For a business, that capability lands exactly where the hours are currently going.`,
 
-    'The Problems This Solves for Restaurants & Hospitality': `**Calls missed during service.** Reservation and inquiry calls during the rush go unansweredeach one potentially a lost table or event booking.
+    'The Problems This Solves for Restaurants & Hospitality': `**Calls missed during service.** Reservation and inquiry calls during the rush go unanswered — each one potentially a lost table or event booking.
 **No-shows.** Unconfirmed reservations that don't arrive cost revenue that automated confirmations would have protected.
 **Review response neglect.** Reviews decide local search visibility, but responding consistently rarely survives contact with a busy week.
 **Event and catering inquiry lag.** High-value private event inquiries need prompt, detailed responses that busy managers deliver late.
@@ -62,9 +62,9 @@ What it is: the routine work. The automation that moves, routes, and processes, 
 
 That's the pattern across everything we build for restaurants & hospitality: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
-    'Built for Restaurants & Hospitality\'s Realities': `Guest data is handled with appropriate care, and the automation covers communication logisticshospitality itself stays human, which is the whole point of freeing your people to deliver it.
+    'Built for Restaurants & Hospitality\'s Realities': `Guest data is handled with appropriate care, and the automation covers communication logistics — hospitality itself stays human, which is the whole point of freeing your people to deliver it.
 
-We integrate with the systems your business already runsreservation platforms, POS systems, review platforms, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your business already runs — reservation platforms, POS systems, review platforms, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For restaurants & hospitality, the return shows up as: bookings captured during rushes and after hours, no-shows cut by systematic confirmation, reviews responded to consistently, and event inquiries converted while interest is hot. On the workflow automation side specifically, the headline metric is hours of manual hand-offs eliminated per week.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is workflow automation for restaurants & hospitality?',
       answer:
-        'AI workflow automation uses software and AI to run multi-step processes automaticallymoving data between apps, making routine decisions, and triggering actions, so sequences of tasks happen without manual effort. For a business in restaurants & hospitality, that means applying it to the workflows that consume your teamreservation booking and confirmation, call answering for hours/menu/booking questions, and no-show reduction reminderswith the specifics of your industry built in.',
+        'AI workflow automation uses software and AI to run multi-step processes automatically — moving data between apps, making routine decisions, and triggering actions, so sequences of tasks happen without manual effort. For a business in restaurants & hospitality, that means applying it to the workflows that consume your team — reservation booking and confirmation, call answering for hours/menu/booking questions, and no-show reduction reminders — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our business already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI workflow automation for restaurants & hospitality' } },
+      { type: 'FAQSection', props: { title: 'Workflow Automation for Restaurants FAQs', subtitle: 'Common questions about AI workflow automation for restaurants & hospitality' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

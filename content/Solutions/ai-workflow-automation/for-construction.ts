@@ -9,7 +9,7 @@ export const aiWorkflowAutomationForConstruction: SolutionData = {
   title: 'AI Workflow Automation for Construction',
   primaryKeyword: 'workflow automation for construction',
   titleTag: 'AI Workflow Automation for Construction | Clickmasters',
-  metaDescription: 'Construction companies use Clickmasters AI workflow automation to move multi-step work across systems without manual handoffs. Book a free audit.',
+  metaDescription: 'Workflow automation for construction that keeps RFIs, change orders, and subcontractor paperwork moving between office and field. Book a free automation audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const aiWorkflowAutomationForConstruction: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Workflow Automation for Construction',
-  heroSubheading: 'Automation that moves, routes, and processes, built for how construction companies actually operate.',
+  heroSubheading: 'AI workflow automation for construction that moves, routes, and processes project paperwork, built for how contractors actually operate.',
   heroBadge: 'AI Workflow Automation',
   description:
     'Clickmasters builds AI Workflow Automation for construction. Automation that moves, routes, and processes automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of construction, delivered as a system your team owns and relies on.',
   sections: {
     'Why Construction Needs AI Workflow Automation': `Construction companies coordinate crews, subs, suppliers, clients, and paperwork across simultaneous projects, with the office side often running on phone calls, paper, and re-typed data. Bids need fast turnaround, project documents pile up, change orders and invoices need tracking, and clients want updates. The administrative load grows with every project, and it competes directly with the estimating and project management that actually wins and delivers work.
 
-AI Workflow Automation addresses this directly. It connects your apps and runs multi-step processes automaticallydata moves, decisions get made, and actions fire without manual hand-offs. Where basic automation follows fixed rules, the AI layer reads unstructured information, classifies it, drafts responses, and chooses between paths, handling the judgment calls a person used to make. For a company, that capability lands exactly where the hours are currently going.`,
+AI Workflow Automation addresses this directly. It connects your apps and runs multi-step processes automatically — data moves, decisions get made, and actions fire without manual hand-offs. Where basic automation follows fixed rules, the AI layer reads unstructured information, classifies it, drafts responses, and chooses between paths, handling the judgment calls a person used to make. For a company, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Construction': `**Lead and bid response lag.** Project inquiries and bid opportunities that aren't answered fast go to competitors who responded first.
 **Document and photo chaos.** Plans, permits, photos, and change orders scatter across email, phones, and folders.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for construction: the routine hand
 
     'Built for Construction\'s Realities': `Bid pricing and project data are competitively sensitive; automation is scoped accordingly, and anything contractual keeps human review. The automation handles the paperwork flow, your team runs the projects.
 
-We integrate with the systems your company already runsconstruction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your company already runs — construction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For construction, the return shows up as: more bids won from faster response, office hours reclaimed from chasing documents and sending updates, invoicing that keeps pace with the work, and clients who feel informed instead of ignored. On the workflow automation side specifically, the headline metric is hours of manual hand-offs eliminated per week.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is workflow automation for construction?',
       answer:
-        'AI workflow automation uses software and AI to run multi-step processes automaticallymoving data between apps, making routine decisions, and triggering actions, so sequences of tasks happen without manual effort. For a company in construction, that means applying it to the workflows that consume your teamlead intake and estimate follow-up, bid request handling, and project document collection and organizationwith the specifics of your industry built in.',
+        'AI workflow automation uses software and AI to run multi-step processes automatically — moving data between apps, making routine decisions, and triggering actions, so sequences of tasks happen without manual effort. For a company in construction, that means applying it to the workflows that consume your team — lead intake and estimate follow-up, bid request handling, and project document collection and organization — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our company already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI workflow automation for construction' } },
+      { type: 'FAQSection', props: { title: 'Workflow Automation for Construction FAQs', subtitle: 'Common questions about AI workflow automation for construction' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

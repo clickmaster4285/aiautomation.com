@@ -9,7 +9,7 @@ export const marketingAutomationForLawFirms: SolutionData = {
   title: 'AI Marketing Automation for Law Firms',
   primaryKeyword: 'marketing automation for law firms',
   titleTag: 'AI Marketing Automation for Law Firms | Clickmasters AI',
-  metaDescription: 'Law firms use Clickmasters marketing automation to run nurture and campaign follow-up without a manual queue. Start with one high-volume workflow.',
+  metaDescription: 'Marketing automation for law firms that nurtures potential clients from first inquiry to consultation and keeps referral sources engaged. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const marketingAutomationForLawFirms: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Marketing Automation for Law Firms',
-  heroSubheading: 'Automation that produces, nurtures, and reports, built for how law firms actually operate.',
+  heroSubheading: 'Marketing automation for law firms that drafts content, nurtures potential clients, and reports on campaigns, built for how your firm actually operates.',
   heroBadge: 'AI Marketing Automation',
   description:
     'Clickmasters builds AI Marketing Automation for law firms. Automation that produces, nurtures, and reports automatically, built around how a firm in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of law firms, delivered as a system your team owns and relies on.',
   sections: {
     'Why Law Firms Need AI Marketing Automation': `Legal work is wrapped in administration: intake, conflict checks, engagement letters, document drafting from repeated patterns, deadline tracking with serious consequences, and clients who want updates. Attorney time is expensive, so every hour spent on administrative work costs twice: once in salary, once in unbilled opportunity. And the stakes make consistency essential: a missed date or dropped intake isn't just inefficiency, it's risk.
 
-AI Marketing Automation addresses this directly. It runs the production and follow-through that consumes marketing teamscontent drafted at scale with human review, nurture sequences that adapt to behavior, campaigns that trigger and segment themselves, and reporting that assembles automatically. The strategy stays human; the relentless execution becomes automatic. For a firm, that capability lands exactly where the hours are currently going.`,
+AI Marketing Automation addresses this directly. It runs the production and follow-through that consumes marketing teams — content drafted at scale with human review, nurture sequences that adapt to behavior, campaigns that trigger and segment themselves, and reporting that assembles automatically. The strategy stays human; the relentless execution becomes automatic. For a firm, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Law Firms': `**Intake that leaks prospects.** Prospective clients who don't get fast, organized intake often retain the firm that responded first.
 **Repetitive document production.** Routine documents get drafted from scratch or hand-edited templates, consuming hours per matter.
@@ -58,13 +58,13 @@ For most, that points to client intake and qualification or engagement letter ge
 
 What it is: the routine work. The automation that produces, nurtures, and reports, handled automatically, consistently, at any hour, so your firm runs on systems instead of memory and heroics.`,
 
-    'A Worked Example': `Consider what happens when a prospective client submits an inquiry about a matter. In a manual operation, this waits for someone to be free, and often that's too late. Automated: intake information is gathered through a structured conversation, the matter type is classified, conflicts data is collected, a summary lands with the right attorney, and if the firm accepts, the engagement letter is generated from the intake data for attorney reviewhours of intake admin becomes minutes of review.
+    'A Worked Example': `Consider what happens when a prospective client submits an inquiry about a matter. In a manual operation, this waits for someone to be free, and often that's too late. Automated: intake information is gathered through a structured conversation, the matter type is classified, conflicts data is collected, a summary lands with the right attorney, and if the firm accepts, the engagement letter is generated from the intake data for attorney review — hours of intake admin becomes minutes of review.
 
 That's the pattern across everything we build for law firms: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
     "Built for Law Firms' Realities": `Confidentiality and privilege are paramount, and the line between administration and legal judgment must stay bright: automation drafts, tracks, and communicates logistics. Every legal decision and every outgoing document remains with an attorney's review. We build workflows specifically to keep that boundary clear.
 
-We integrate with the systems your firm already runspractice management platforms, document management systems, e-signature tools, and billing systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your firm already runs — practice management platforms, document management systems, e-signature tools, and billing systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For law firms, the return shows up as: attorney and staff hours redirected from administration to billable work, prospects captured before they call the next firm, deadlines tracked systematically instead of anxiously, and document production accelerated with professional review retained. On the marketing automation side specifically, the headline metric is content and campaign output multiplied without added headcount.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is marketing automation for law firms?',
       answer:
-        'AI marketing automation uses AI and workflows to run marketing tasks automaticallygenerating content, personalizing nurture sequences, managing campaigns, and reporting, so teams produce more without proportionally more staff. For a firm in law firms, that means applying it to the workflows that consume your teamclient intake and qualification, engagement letter generation, and document assembly from templates and matter datawith the specifics of your industry built in.',
+        'AI marketing automation uses AI and workflows to run marketing tasks automatically — generating content, personalizing nurture sequences, managing campaigns, and reporting, so teams produce more without proportionally more staff. For a firm in law firms, that means applying it to the workflows that consume your team — client intake and qualification, engagement letter generation, and document assembly from templates and matter data — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our firm already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI marketing automation for law firms' } },
+      { type: 'FAQSection', props: { title: 'Marketing Automation for Law Firms FAQs', subtitle: 'Common questions about AI marketing automation for law firms' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

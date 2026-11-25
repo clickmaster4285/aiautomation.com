@@ -8,8 +8,8 @@ export const salesAutomationWithHubspot: SolutionData = {
   category: 'sales-automation',
   title: 'AI Sales Automation with HubSpot',
   primaryKeyword: 'hubspot sales automation',
-  titleTag: 'AI Sales Automation Built on HubSpot | Clickmasters AI',
-  metaDescription: 'Teams running HubSpot use Clickmasters sales automation to enrich leads, follow up, and log activity so reps can sell. Book a free audit. Ask the team.',
+  titleTag: 'HubSpot Sales Automation Built with AI | Clickmasters',
+  metaDescription: 'HubSpot sales automation that enriches and scores leads, keeps follow-up sequences on schedule, and updates CRM records for your reps. Book a free audit.',
   keywordEvidence: '2 matching keywords, ~1,000 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -17,14 +17,14 @@ export const salesAutomationWithHubspot: SolutionData = {
     'HubSpot platform page',
     'AI Automation Agency pillar',
   ],
-  heroHeading: 'AI Sales Automation Built on HubSpot',
-  heroSubheading: 'Enrich, follow up, and log automaticallywith AI-powered sequences and CRM hygiene that let your reps focus on closing.',
+  heroHeading: 'AI-Powered HubSpot Sales Automation',
+  heroSubheading: 'HubSpot sales automation that enriches, follows up, and logs activity automatically, with AI-powered sequences and CRM hygiene that let reps focus on closing.',
   heroBadge: 'Sales Automation × HubSpot',
-  description: 'Clickmasters builds sales automation on HubSpot. HubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack, and it\'s an excellent fit for teams already running sales and marketing on HubSpot. Combined with sales automation, which removes the administrative grind around sellingleads enriched and scored the moment they arrive, follow-up sequences that never slip, CRM records that update themselves, and reports that assemble automatically. Your reps spend their time on conversations that close, not on data entry, the result is automation that runs on a platform matched to the job.',
+  description: 'Clickmasters builds sales automation on HubSpot. HubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack, and it\'s an excellent fit for teams already running sales and marketing on HubSpot. Combined with sales automation, which removes the administrative grind around selling — leads enriched and scored the moment they arrive, follow-up sequences that never slip, CRM records that update themselves, and reports that assemble automatically. Your reps spend their time on conversations that close, not on data entry, the result is automation that runs on a platform matched to the job.',
   sections: {
-    'Why HubSpot for AI Sales Automation': 'HubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack. We build inside your existing instance, transparent, documented, yours. For sales automation specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. HubSpot is the right home for this work when it matches teams already running sales and marketing on HubSpot, and when it does, this combination is hard to beat.',
+    'Why HubSpot for AI Sales Automation': 'HubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack. We build inside your existing instance, transparent, documented, yours. For sales automation specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. HubSpot is the right home for this work when it matches teams already running sales and marketing on HubSpot, and when it does, this combination is hard to beat.\n\nBecause HubSpot already holds your contacts and deals, the same build can feed the workflows around sales. We apply lead scoring to decide which prospects enter email sequences, closed deals can trigger invoices in your billing tool, and pipeline reporting stays current without manual exports.',
     'What a Production Build Includes': 'The gap between a prototype and a system you can rely on is everything that happens when things go wrong. Every sales automation build we ship on HubSpot includes error handling on every step (failures caught and retried or escalated, never silent), monitoring and alerting (you know the system is running without checking), documentation (your team can understand and modify the build), and staged rollout (the automation proves itself on real cases with human oversight before it runs unattended).\n\nThis is the difference between automation that saves hours and automation that quietly breaks and costs trust. Most of the rescue projects we take on are builds that skipped these steps.',
-    'Typical Workflows on HubSpot': 'The sales automation workflows we most often build on HubSpot follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is neededclassification, extraction, drafting, and the result is executed and logged. HubSpot\'s strengths make it particularly suited to teams already running sales and marketing on HubSpot, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
+    'Typical Workflows on HubSpot': 'The sales automation workflows we most often build on HubSpot follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is needed — classification, extraction, drafting, and the result is executed and logged. HubSpot\'s strengths make it particularly suited to teams already running sales and marketing on HubSpot, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
   },
   features: [
     {
@@ -118,7 +118,7 @@ export const salesAutomationWithHubspot: SolutionData = {
   faqQuestions: [
     {
       question: 'Can HubSpot handle sales automation?',
-      answer: 'YesHubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack, and it\'s well suited to teams already running sales and marketing on HubSpot. The build quality determines reliability, which is where an experienced partner matters.',
+      answer: 'Yes — HubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack, and it\'s well suited to teams already running sales and marketing on HubSpot. The build quality determines reliability, which is where an experienced partner matters.',
     },
     {
       question: 'What does this cost to run?',
@@ -129,8 +129,8 @@ export const salesAutomationWithHubspot: SolutionData = {
       answer: 'Completely. Everything is documented and transparent, in your own accounts, with no dependency on us for changes.',
     },
     {
-      question: 'AI sales automation handles repetitive sales tasksis that what this does?',
-      answer: 'AI sales automation handles repetitive sales taskslead enrichment, scoring, follow-up, CRM updates, proposals, and reporting, so reps spend their time selling rather than on administration. Built on HubSpot, it runs with the platform\'s strengths: teams already running sales and marketing on HubSpot.',
+      question: 'AI sales automation handles repetitive sales tasks — is that what this does?',
+      answer: 'AI sales automation handles repetitive sales tasks — lead enrichment, scoring, follow-up, CRM updates, proposals, and reporting, so reps spend their time selling rather than on administration. Built on HubSpot, it runs with the platform\'s strengths: teams already running sales and marketing on HubSpot.',
     },
   ],
   cta: 'Want sales automation running on HubSpot?',
@@ -203,7 +203,7 @@ export const salesAutomationWithHubspot: SolutionData = {
       { type: 'PlatformComparison', props: { title: 'Is HubSpot Right for You?', subtitle: 'We\'ll tell you honestly if HubSpot is the right platform for your sales automation needs.' } },
       { type: 'StatsSection', props: { title: 'Why Choose Clickmasters for HubSpot Sales Automation' } },
       { type: 'FAQSection', props: {
-  title: 'Frequently Asked Questions',
+  title: 'HubSpot Sales Automation FAQs',
   subtitle: 'Common questions about sales automation on HubSpot',
   eyebrow: 'FAQ',
 } },

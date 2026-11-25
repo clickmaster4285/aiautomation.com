@@ -8,8 +8,8 @@ export const leadGenerationAutomationForConstruction: SolutionData = {
   category: 'lead-generation-automation',
   title: 'Lead Generation Automation for Construction',
   primaryKeyword: 'lead generation system for construction',
-  titleTag: 'Lead Generation Automation for Construction | Clickmasters',
-  metaDescription: 'Construction companies use Clickmasters lead generation automation to capture, qualify, and route new demand while it is still warm. Ask the team.',
+  titleTag: 'Lead Generation Systems for Construction | Clickmasters',
+  metaDescription: 'Lead generation systems for construction companies that capture project inquiries, qualify scope and budget, and route bids to estimators. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,15 +18,15 @@ export const leadGenerationAutomationForConstruction: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'Lead Generation Automation for Construction',
-  heroSubheading: 'Automation that captures, qualifies, and routes, built for how construction companies actually operate.',
+  heroHeading: 'Lead Generation Systems for Construction Companies',
+  heroSubheading: 'A lead generation system for construction that helps you capture, qualify, and route project inquiries, built for how construction companies actually operate.',
   heroBadge: 'Lead Generation Automation',
   description:
     'Clickmasters builds Lead Generation Automation for construction. Automation that captures, qualifies, and routes automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of construction, delivered as a system your team owns and relies on.',
   sections: {
     'Why Construction Needs Lead Generation Automation': `Construction companies coordinate crews, subs, suppliers, clients, and paperwork across simultaneous projects, with the office side often running on phone calls, paper, and re-typed data. Bids need fast turnaround, project documents pile up, change orders and invoices need tracking, and clients want updates. The administrative load grows with every project, and it competes directly with the estimating and project management that actually wins and delivers work.
 
-Lead Generation Automation addresses this directly. It captures, qualifies, and works leads automaticallyinstant response the moment interest shows, conversational qualification, enrichment and scoring, and routing that puts sales-ready leads in front of the right person with context. Speed and consistency are what convert leads, and both are exactly what automation delivers. For a company, that capability lands exactly where the hours are currently going.`,
+Lead Generation Automation addresses this directly. It captures, qualifies, and works leads automatically — instant response the moment interest shows, conversational qualification, enrichment and scoring, and routing that puts sales-ready leads in front of the right person with context. Speed and consistency are what convert leads, and both are exactly what automation delivers. For a company, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Construction': `**Lead and bid response lag.** Project inquiries and bid opportunities that aren't answered fast go to competitors who responded first.
 **Document and photo chaos.** Plans, permits, photos, and change orders scatter across email, phones, and folders.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for construction: the routine hand
 
     'Built for Construction\'s Realities': `Bid pricing and project data are competitively sensitive; automation is scoped accordingly, and anything contractual keeps human review. The automation handles the paperwork flow, your team runs the projects.
 
-We integrate with the systems your company already runsconstruction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your company already runs — construction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For construction, the return shows up as: more bids won from faster response, office hours reclaimed from chasing documents and sending updates, invoicing that keeps pace with the work, and clients who feel informed instead of ignored. On the lead generation system side specifically, the headline metric is lead response time in seconds and conversion lift from consistency.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is lead generation system for construction?',
       answer:
-        'Lead generation automation captures and responds to leads instantly, qualifies them conversationally, enriches and scores them, and routes sales-ready prospects to the right personwhile nurturing the rest until they\'re ready. For a company in construction, that means applying it to the workflows that consume your teamlead intake and estimate follow-up, bid request handling, and project document collection and organizationwith the specifics of your industry built in.',
+        'Lead generation automation captures and responds to leads instantly, qualifies them conversationally, enriches and scores them, and routes sales-ready prospects to the right person — while nurturing the rest until they\'re ready. For a company in construction, that means applying it to the workflows that consume your team — lead intake and estimate follow-up, bid request handling, and project document collection and organization — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our company already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about lead generation automation for construction' } },
+      { type: 'FAQSection', props: { title: 'Lead Generation Systems for Construction FAQs', subtitle: 'Common questions about lead generation automation for construction' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

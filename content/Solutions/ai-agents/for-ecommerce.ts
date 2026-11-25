@@ -8,8 +8,8 @@ export const aiAgentsForEcommerce: SolutionData = {
   category: 'ai-agents',
   title: 'AI Agent Development for E-commerce',
   primaryKeyword: 'AI agent for ecommerce',
-  titleTag: 'AI Agent Development for E-commerce | Clickmasters AI',
-  metaDescription: 'E-commerce teams use Clickmasters AI agents to carry multi-step work inside the tools the team already uses. It runs on the tools the team already has.',
+  titleTag: 'AI Agents for Ecommerce Brands | Clickmasters',
+  metaDescription: 'AI agents for ecommerce brands that handle order issues, returns, and inventory follow-ups across your store and support tools. Book a free automation audit.',
   keywordEvidence: 'pattern-based',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,8 +18,8 @@ export const aiAgentsForEcommerce: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'AI Agent Development for E-commerce',
-  heroSubheading: 'Automation that reasons, acts, and completes, built for how e-commerce stores actually work.',
+  heroHeading: 'AI Agents for Ecommerce',
+  heroSubheading: 'AI agents for ecommerce stores that reason, act, and finish multi-step work inside the tools your team already uses.',
   heroBadge: 'AI Agent Development',
   description: 'Clickmasters builds AI Agent Development for e-commerce. Automation that reasons, acts, and completes automatically, built around how a store in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of e-commerce, delivered as a system your team owns and relies on.',
   sections: {
@@ -63,7 +63,7 @@ That's the pattern across everything we build for e-commerce: the routine handle
 
     'Built for E-commerce\'s Realities': `Customer and payment-adjacent data is handled with scoped access, and customer-facing AI answers from your actual store policies and order data so responses are accurate rather than generic.
 
-We integrate with the systems your store already runsstore platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your store already runs — store platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For e-commerce, the return shows up as: tickets deflected around the clock, cart revenue recovered automatically, faster responses lifting conversion and reviews, and a store that grows sales without growing operational headcount in lockstep. On the AI agent side specifically, the headline metric is complete tasks handled end to end without human touches.
 
@@ -167,7 +167,7 @@ We start with a free audit that identifies your highest-return workflow, automat
   faqQuestions: [
     {
       question: 'What is AI agent for e-commerce?',
-      answer: 'An AI agent is software that uses an AI model to reason about a goal, use tools, and take multi-step action inside real systemsunlike a chatbot, which mainly answers questions. For a store in e-commerce, that means applying it to the workflows that consume your teamcustomer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updateswith the specifics of your industry built in.',
+      answer: 'An AI agent is software that uses an AI model to reason about a goal, use tools, and take multi-step action inside real systemsunlike a chatbot, which mainly answers questions. For a store in e-commerce, that means applying it to the workflows that consume your team — customer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updates — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our store already uses?',
@@ -264,7 +264,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI agents for e-commerce' } },
+      { type: 'FAQSection', props: { title: 'AI Agents for Ecommerce FAQs', subtitle: 'Common questions about AI agents for e-commerce' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

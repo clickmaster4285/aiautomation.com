@@ -8,8 +8,8 @@ export const aiChatbotsForAccountingFirms: SolutionData = {
   category: 'ai-chatbots',
   title: 'AI Chatbots for Accounting Firms',
   primaryKeyword: 'chatbot for accounting firms',
-  titleTag: 'AI Chatbots for Accounting Firms Systems | Clickmasters',
-  metaDescription: 'Accounting firms use Clickmasters AI chatbots to answer questions, qualify leads, and book appointments. It runs on the tools the team already has.',
+  titleTag: 'AI Chatbots for Accounting Firms | Clickmasters',
+  metaDescription: 'An AI chatbot for accounting firms that answers client questions, collects intake details, and books consultations. Book a free automation audit.',
   keywordEvidence: 'pattern-based',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const aiChatbotsForAccountingFirms: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Chatbots for Accounting Firms',
-  heroSubheading: 'Automation that answers, qualifies, and books, built for how accounting firms actually work.',
+  heroSubheading: 'An AI chatbot for accounting firms that answers, qualifies, and books, built for how your team actually works.',
   heroBadge: 'AI Chatbots',
   description: 'Clickmasters builds AI Chatbots for accounting firms. Automation that answers, qualifies, and books automatically, built around how a firm in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of accounting firms, delivered as a system your team owns and relies on.',
   sections: {
@@ -31,7 +31,7 @@ AI Chatbots addresses this directly. It holds real conversations and takes real 
 **Manual data entry.** Keying transactions, statements, and receipts into accounting software consumes junior staff hours and introduces errors that seniors then find.
 **Deadline and status tracking.** Tracking dozens or hundreds of client deadlines manually creates risk; a missed filing has real consequences.
 **Repetitive client questions.** Status inquiries and routine questions interrupt production work throughout the day.
-**Onboarding friction.** New client setupengagement letters, document requests, system setupis repetitive and slow.
+**Onboarding friction.** New client setup — engagement letters, document requests, system setup — is repetitive and slow.
 
 Every one of these is a workflow problem, not a people problem, and workflow problems are what automation eliminates.`,
 
@@ -63,7 +63,7 @@ That's the pattern across everything we build for accounting firms: the routine 
 
     'Built for Accounting Firms\' Realities': `Financial data demands accuracy and confidentiality. Automation here is built with validation at every step where an error would be costly, human review on exceptions, and secure handling throughout the automation does the keying and matching; the accountant's judgment stays in charge of anything that matters.
 
-We integrate with the systems your firm already runsaccounting platforms like QuickBooks and Xero, practice management tools, document portals, and tax software, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your firm already runs — accounting platforms like QuickBooks and Xero, practice management tools, document portals, and tax software, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For accounting firms, the return shows up as: junior-staff hours redirected from data entry to review work, faster turnaround on engagements, fewer errors reaching senior review, deadlines tracked automatically instead of anxiously, and busy-season capacity without busy-season burnout. On the chatbot side specifically, the headline metric is conversations handled and leads captured around the clock.
 
@@ -167,7 +167,7 @@ We start with a free audit that identifies your highest-return workflow, automat
   faqQuestions: [
     {
       question: 'What is chatbot for accounting firms?',
-      answer: 'An AI chatbot uses a language model to understand and respond in natural language, answering from a business\'s own content and taking actions like booking or routing, far beyond old script-based bots. For a firm in accounting, that means applying it to the workflows that consume your teamclient document collection, transaction and statement data entry, and bank and account reconciliationwith the specifics of your industry built in.',
+      answer: 'An AI chatbot uses a language model to understand and respond in natural language, answering from a business\'s own content and taking actions like booking or routing, far beyond old script-based bots. For a firm in accounting, that means applying it to the workflows that consume your team — client document collection, transaction and statement data entry, and bank and account reconciliation — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our firm already uses?',
@@ -268,7 +268,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI chatbots for accounting firms' } },
+      { type: 'FAQSection', props: { title: 'Chatbots for Accounting Firms FAQs', subtitle: 'Common questions about AI chatbots for accounting firms' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

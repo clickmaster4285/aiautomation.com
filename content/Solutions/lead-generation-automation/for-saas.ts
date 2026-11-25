@@ -8,8 +8,8 @@ export const leadGenerationAutomationForSaaS: SolutionData = {
   category: 'lead-generation-automation',
   title: 'Lead Generation Automation for SaaS Companies',
   primaryKeyword: 'lead generation system for SaaS',
-  titleTag: 'Lead Generation Automation for SaaS Companies | Clickmasters',
-  metaDescription: 'SaaS companies use Clickmasters lead generation automation to capture, qualify, and route new demand while it is still warm. Book a free audit.',
+  titleTag: 'Lead Generation Systems for SaaS Companies | Clickmasters',
+  metaDescription: 'Lead generation systems for SaaS companies that capture trial and demo requests, qualify account fit, and route them to the right rep. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,15 +18,15 @@ export const leadGenerationAutomationForSaaS: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'Lead Generation Automation for SaaS Companies',
-  heroSubheading: 'Automation that captures, qualifies, and routes, built for how SaaS companies actually operate.',
+  heroHeading: 'Lead Generation Systems for SaaS Companies',
+  heroSubheading: 'A lead generation system for SaaS that helps you capture, qualify, and route trial and demo requests, built for how SaaS companies actually operate.',
   heroBadge: 'Lead Generation Automation',
   description:
     'Clickmasters builds Lead Generation Automation for SaaS companies. Automation that captures, qualifies, and routes automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of saas companies, delivered as a system your team owns and relies on.',
   sections: {
     'Why SaaS Companies Need Lead Generation Automation': `SaaS growth strains everything around the product: support tickets scale with users, onboarding quality drives retention but is impossible to do manually at scale, churn signals hide in usage data nobody has time to watch, and revenue operations grow more complex every quarter. The whole business model depends on scaling revenue faster than headcount, which means the operational layer has to run on automation, not hiring.
 
-Lead Generation Automation addresses this directly. It captures, qualifies, and works leads automaticallyinstant response the moment interest shows, conversational qualification, enrichment and scoring, and routing that puts sales-ready leads in front of the right person with context. Speed and consistency are what convert leads, and both are exactly what automation delivers. For a company, that capability lands exactly where the hours are currently going.`,
+Lead Generation Automation addresses this directly. It captures, qualifies, and works leads automatically — instant response the moment interest shows, conversational qualification, enrichment and scoring, and routing that puts sales-ready leads in front of the right person with context. Speed and consistency are what convert leads, and both are exactly what automation delivers. For a company, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for SaaS Companies': `**Support volume scaling with users.** A large share of tickets are variations on the same how-do-I questions, consuming a team that can't hire fast enough.
 **Onboarding that doesn't scale.** Activation drives retention, but manual onboarding attention is impossible past a certain signup volume.
@@ -58,13 +58,13 @@ For most, that points to support ticket triage and resolution or user onboarding
 
 What it is: the routine work. The automation that captures, qualifies, and routes, handled automatically, consistently, at any hour, so your company runs on systems instead of memory and heroics.`,
 
-    'A Worked Example': `Consider what happens when a support ticket arrives asking how to configure a feature. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the ticket is classified, the answer is drawn from your actual product documentation, an accurate response is sent within seconds, the ticket is logged and tagged, and only genuinely complex or sensitive cases route to your team with full contextsupport that scales with usage instead of headcount.
+    'A Worked Example': `Consider what happens when a support ticket arrives asking how to configure a feature. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the ticket is classified, the answer is drawn from your actual product documentation, an accurate response is sent within seconds, the ticket is logged and tagged, and only genuinely complex or sensitive cases route to your team with full context — support that scales with usage instead of headcount.
 
 That's the pattern across everything we build for SaaS companies: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
     'Built for SaaS Companies\' Realities': `Customer data and usage information require careful handling. Automation is built with scoped access and, where needed, infrastructure that keeps sensitive data in your environment, and customer-facing AI is grounded in your real documentation so it answers accurately rather than guessing.
 
-We integrate with the systems your company already runssupport platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slackconnecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your company already runs — support platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slack — connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For saas companies, the return shows up as: ticket deflection that preserves efficient scaling, activation and retention lift from consistent onboarding, churn caught early enough to act on, and revenue operations that run without manual drag. On the lead generation system side specifically, the headline metric is lead response time in seconds and conversion lift from consistency.
 
@@ -169,12 +169,12 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is lead generation system for SaaS companies?',
       answer:
-        'Lead generation automation captures and responds to leads instantly, qualifies them conversationally, enriches and scores them, and routes sales-ready prospects to the right personwhile nurturing the rest until they\'re ready. For a company in saas companies, that means applying it to the workflows that consume your teamsupport ticket triage and resolution, user onboarding and activation sequences, and churn-risk monitoring and alertswith the specifics of your industry built in.',
+        'Lead generation automation captures and responds to leads instantly, qualifies them conversationally, enriches and scores them, and routes sales-ready prospects to the right person — while nurturing the rest until they\'re ready. For a company in saas companies, that means applying it to the workflows that consume your team — support ticket triage and resolution, user onboarding and activation sequences, and churn-risk monitoring and alerts — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our company already uses?',
       answer:
-        'Yes. We build into the systems saas companies actually run onsupport platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slackconnecting rather than replacing them, so the automation fits your existing operation.',
+        'Yes. We build into the systems saas companies actually run onsupport platforms like Intercom and Zendesk, CRMs, billing systems like Stripe, product analytics, and internal tools like Slack — connecting rather than replacing them, so the automation fits your existing operation.',
     },
     {
       question: 'How is this different from generic automation?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about lead generation automation for SaaS companies' } },
+      { type: 'FAQSection', props: { title: 'Lead Generation Systems for SaaS FAQs', subtitle: 'Common questions about lead generation automation for SaaS companies' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

@@ -8,8 +8,8 @@ export const crmAutomationForRealEstate: SolutionData = {
   category: 'crm-automation',
   title: 'CRM Automation for Real Estate',
   primaryKeyword: 'CRM automation for real estate',
-  titleTag: 'CRM Automation for Real Estate Services | Clickmasters',
-  metaDescription: 'Real estate brokerages use Clickmasters CRM automation to keep contacts, deals, and follow-ups current without re-keying. Book a free audit. Ask the team.',
+  titleTag: 'CRM Automation for Real Estate Teams | Clickmasters',
+  metaDescription: 'CRM automation for real estate that captures leads, logs agent activity, and keeps nurture follow-ups on schedule. Book a free automation audit.',
   keywordEvidence: '1 matching keywords, ~500 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const crmAutomationForRealEstate: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'CRM Automation for Real Estate',
-  heroSubheading: 'Automation that updates, cleans, and routes, built for how real estate teams actually operate.',
+  heroSubheading: 'CRM automation for real estate that updates records, cleans data, and routes leads, designed around how brokerages and teams actually operate.',
   heroBadge: 'CRM Automation',
   description:
     'Clickmasters builds CRM Automation for real estate. Automation that updates, cleans, and routes automatically, built around how a team in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of real estate, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for real estate: the routine handl
 
     'Built for Real Estate\'s Realities': `Client financial details and transaction information warrant careful handling, and automation keeps agents in control of relationships and negotiationsit handles the response speed and the follow-up consistency, while the human handles the human part.
 
-We integrate with the systems your team already runsreal estate CRMs, lead sources and portals, showing management tools, transaction management platforms, and calendar systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your team already runs — real estate CRMs, lead sources and portals, showing management tools, transaction management platforms, and calendar systems, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For real estate, the return shows up as: more leads converted from instant response, revenue recovered from long-tail nurture that actually happens, hours reclaimed from scheduling ping-pong, and transactions that close without deadline scares. On the CRM automation side specifically, the headline metric is CRM accuracy restored and rep admin time eliminated.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is CRM automation for real estate?',
       answer:
-        'CRM automation keeps your CRM accurate and active automaticallyupdating records, logging activity, cleaning data, routing leads, and syncing with your other systems, so the pipeline reflects reality without reps doing data entry. For a team in real estate, that means applying it to the workflows that consume your teaminstant lead response and qualification, long-term nurture and reactivation sequences, and showing scheduling and reminderswith the specifics of your industry built in.',
+        'CRM automation keeps your CRM accurate and active automaticallyupdating records, logging activity, cleaning data, routing leads, and syncing with your other systems, so the pipeline reflects reality without reps doing data entry. For a team in real estate, that means applying it to the workflows that consume your team — instant lead response and qualification, long-term nurture and reactivation sequences, and showing scheduling and reminders — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our team already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about CRM automation for real estate' } },
+      { type: 'FAQSection', props: { title: 'CRM Automation for Real Estate FAQs', subtitle: 'Common questions about CRM automation for real estate' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

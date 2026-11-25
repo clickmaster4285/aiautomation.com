@@ -8,8 +8,8 @@ export const aiVoiceAgentsForLogistics: SolutionData = {
   category: 'ai-voice-agents',
   title: 'AI Voice Agents for Logistics & Transportation',
   primaryKeyword: 'voice agent for logistics',
-  titleTag: 'AI Voice for Logistics & Transportation | Clickmasters',
-  metaDescription: 'Logistics teams use Clickmasters AI voice agents to answer and place calls, then hand off with the context captured. Book a free audit. Ask the team.',
+  titleTag: 'AI Voice Agents for Logistics | Clickmasters',
+  metaDescription: 'AI voice agents for logistics that answer shipment status calls, confirm pickups, and route carrier and driver questions with context. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const aiVoiceAgentsForLogistics: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Voice Agents for Logistics & Transportation',
-  heroSubheading: 'Automation that answers, books, and routes, built for how logistics operations actually run.',
+  heroSubheading: 'Voice agents for logistics and transportation teams that answer, confirm, and route calls, built for how freight operations actually run.',
   heroBadge: 'AI Voice Agents',
   description:
     'Clickmasters builds AI Voice Agents for logistics & transportation. Automation that answers, books, and routes automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of logistics & transportation, delivered as a system your team owns and relies on.',
   sections: {
     'Why Logistics & Transportation Need AI Voice Agents': `Logistics runs on coordination: orders, dispatch, tracking, exceptions, proof of delivery, invoicing, a constant flow of time-sensitive information across shippers, carriers, drivers, and customers. Much of it still moves by phone, email, and manual entry, which means status calls interrupt dispatchers, paperwork lags behind freight, and billing waits on documents. Every manual touch adds delay and error to an industry priced on speed and reliability.
 
-AI Voice Agents addresses this directly. It answers and makes phone calls in natural speechgreeting callers, answering questions, booking appointments, qualifying leads, and routing to your team, at every hour your staff can't pick up. For any business that loses opportunities to missed calls, this recovers revenue that currently vanishes silently. For a operation, that capability lands exactly where the hours are currently going.`,
+AI Voice Agents addresses this directly. It answers and makes phone calls in natural speech — greeting callers, answering questions, booking appointments, qualifying leads, and routing to your team, at every hour your staff can't pick up. For any business that loses opportunities to missed calls, this recovers revenue that currently vanishes silently. For a operation, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Logistics & Transportation': `**Status inquiry interruptions.** Where's my shipment? calls and emails consume dispatcher time that should go to actual coordination.
 **Document lag.** PODs, BOLs, and paperwork trail the freight, delaying billing and disputes.
@@ -58,13 +58,13 @@ For most, that points to order and tender intake or shipment status updates to c
 
 What it is: the routine work. The automation that answers, books, and routes, handled automatically, consistently, at any hour, so your operation runs on systems instead of memory and heroics.`,
 
-    'A Worked Example': `Consider what happens when a customer emails asking where their shipment is. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the shipment is identified, current status and location are pulled from tracking, an accurate update is sent within seconds, and the interaction is loggeddispatchers stop fielding status calls and customers stop waiting for answers.
+    'A Worked Example': `Consider what happens when a customer emails asking where their shipment is. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the shipment is identified, current status and location are pulled from tracking, an accurate update is sent within seconds, and the interaction is logged — dispatchers stop fielding status calls and customers stop waiting for answers.
 
 That's the pattern across everything we build for logistics & transportation: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
     'Built for Logistics & Transportation\'s Realities': `Shipment and pricing data is commercially sensitive; automation is scoped with appropriate access, and operational decisions stay with dispatch. The automation moves the information so your people move the freight.
 
-We integrate with the systems your operation already runsTMS platforms, tracking systems, document management, accounting software, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your operation already runs — TMS platforms, tracking systems, document management, accounting software, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For logistics & transportation, the return shows up as: dispatcher hours reclaimed from status calls, billing accelerated by documents that process themselves, fewer entry errors in orders, and customer communication that builds retention instead of frustration. On the voice agent side specifically, the headline metric is calls answered and bookings captured that would have been missed.
 
@@ -95,7 +95,7 @@ We start with a free audit that identifies your highest-return workflow, automat
       description: 'Real availability checked and booked during the call.',
     },
     {
-      icon: 'PhoneOutgoing',
+      icon: 'Phone — Outgoing',
       title: 'Outbound & Follow-up Calls',
       description: 'Reminders, confirmations, and qualification at scale.',
     },
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is voice agent for logistics & transportation?',
       answer:
-        'An AI voice agent holds natural spoken phone conversationsunderstanding callers, answering questions, booking appointments, and routing callsusing AI speech and language models. For a operation in logistics & transportation, that means applying it to the workflows that consume your teamorder and tender intake, shipment status updates to customers, and document collection and processing (POD, BOL)with the specifics of your industry built in.',
+        'An AI voice agent holds natural spoken phone conversationsunderstanding callers, answering questions, booking appointments, and routing calls — using AI speech and language models. For a operation in logistics & transportation, that means applying it to the workflows that consume your team — order and tender intake, shipment status updates to customers, and document collection and processing (POD, BOL)with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our operation already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI voice agents for logistics & transportation' } },
+      { type: 'FAQSection', props: { title: 'Voice Agents for Logistics FAQs', subtitle: 'Common questions about AI voice agents for logistics & transportation' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

@@ -9,7 +9,7 @@ export const reportingAutomationForAccountingFirms: SolutionData = {
   title: 'Reporting Automation for Accounting Firms',
   primaryKeyword: 'reporting automation for accounting firms',
   titleTag: 'Reporting Automation for Accounting Firms | Clickmasters',
-  metaDescription: 'Accounting firms use Clickmasters reporting automation to assemble the numbers teams already ask for, on a schedule. Book a free audit. Ask the team.',
+  metaDescription: 'Reporting automation for accounting firms that compiles client, billing, and engagement data into scheduled reports partners can trust. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const reportingAutomationForAccountingFirms: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Reporting Automation for Accounting Firms',
-  heroSubheading: 'Automation that aggregates, builds, and delivers, built for how accounting firms actually operate.',
+  heroSubheading: 'Reporting automation for accounting firms that aggregates your data, builds the reports, and delivers them on schedule, designed around how firms like yours actually operate.',
   heroBadge: 'Reporting Automation',
   description:
     'Clickmasters builds Reporting Automation for accounting firms. Automation that aggregates, builds, and delivers automatically, built around how a firm in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of accounting firms, delivered as a system your team owns and relies on.',
@@ -32,7 +32,7 @@ Reporting Automation addresses this directly. It assembles your recurring report
 **Manual data entry.** Keying transactions, statements, and receipts into accounting software consumes junior staff hours and introduces errors that seniors then find.
 **Deadline and status tracking.** Tracking dozens or hundreds of client deadlines manually creates risk; a missed filing has real consequences.
 **Repetitive client questions.** Status inquiries and routine questions interrupt production work throughout the day.
-**Onboarding friction.** New client setupengagement letters, document requests, system setupis repetitive and slow.
+**Onboarding friction.** New client setup — engagement letters, document requests, system setup — is repetitive and slow.
 
 Every one of these is a workflow problem, not a people problem, and workflow problems are what automation eliminates.`,
 
@@ -64,7 +64,7 @@ That's the pattern across everything we build for accounting firms: the routine 
 
     'Built for Accounting Firms\' Realities': `Financial data demands accuracy and confidentiality. Automation here is built with validation at every step where an error would be costly, human review on exceptions, and secure handling throughout the automation does the keying and matching; the accountant's judgment stays in charge of anything that matters.
 
-We integrate with the systems your firm already runsaccounting platforms like QuickBooks and Xero, practice management tools, document portals, and tax software, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your firm already runs — accounting platforms like QuickBooks and Xero, practice management tools, document portals, and tax software, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For accounting firms, the return shows up as: junior-staff hours redirected from data entry to review work, faster turnaround on engagements, fewer errors reaching senior review, deadlines tracked automatically instead of anxiously, and busy-season capacity without busy-season burnout. On the reporting automation side specifically, the headline metric is reporting hours eliminated and decision lag removed.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is reporting automation for accounting firms?',
       answer:
-        'Reporting automation assembles recurring reports and dashboards from live data automaticallypulling from multiple systems, generating the report, and delivering it on schedulereplacing the manual export-copy-format cycle. For a firm in accounting firms, that means applying it to the workflows that consume your teamclient document collection, transaction and statement data entry, and bank and account reconciliationwith the specifics of your industry built in.',
+        'Reporting automation assembles recurring reports and dashboards from live data automatically — pulling from multiple systems, generating the report, and delivering it on schedule — replacing the manual export-copy-format cycle. For a firm in accounting firms, that means applying it to the workflows that consume your team — client document collection, transaction and statement data entry, and bank and account reconciliation — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our firm already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about reporting automation for accounting firms' } },
+      { type: 'FAQSection', props: { title: 'Reporting Automation for Accounting Firms FAQs', subtitle: 'Common questions about reporting automation for accounting firms' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

@@ -8,8 +8,8 @@ export const businessProcessAutomationForRetail: SolutionData = {
   category: 'business-process-automation',
   title: 'Business Process Automation for Retail',
   primaryKeyword: 'process automation for retail',
-  titleTag: 'Business Process Automation for Retail | Clickmasters AI',
-  metaDescription: 'Retailers use Clickmasters business process automation to take repetitive operations off the people who currently chase them. Book a free audit.',
+  titleTag: 'Process Automation for Retail Businesses | Clickmasters',
+  metaDescription: 'Process automation for retail businesses that keeps inventory, purchasing, store operations, and vendor follow-ups in sync. Book a free automation audit.',
   keywordEvidence: '1 matching keywords, ~50 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const businessProcessAutomationForRetail: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'Business Process Automation for Retail',
-  heroSubheading: 'Automation that runs, coordinates, and completes, built for how retail businesses actually operate.',
+  heroSubheading: 'Business process automation for retail that runs, coordinates, and completes the inventory, purchasing, and store operations work behind each sale.',
   heroBadge: 'Business Process Automation',
   description:
     'Clickmasters builds Business Process Automation for retail. Automation that runs, coordinates, and completes automatically, built around how a business in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of retail, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for retail: the routine handled in
 
     'Built for Retail\'s Realities': `Sales data and supplier terms are commercially sensitive; automation is scoped appropriately, and buying decisions stay with your team. The automation supplies timely, accurate data instead of stale spreadsheets.
 
-We integrate with the systems your business already runsPOS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your business already runs — POS and inventory systems, e-commerce platforms, accounting software, and supplier communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For retail, the return shows up as: fewer stockouts and less dead stock, customer questions answered fast across channels, reports that arrive in time to matter, and office hours reclaimed from re-keying. On the process automation side specifically, the headline metric is end-to-end process time cut and hand-off delays eliminated.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is process automation for retail?',
       answer:
-        'Business process automation (BPA) uses software and AI to run an entire business processall its steps, systems, and hand-offs. Automatically, rather than automating just one task. For a business in retail, that means applying it to the workflows that consume your teaminventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reportingwith the specifics of your industry built in.',
+        'Business process automation (BPA) uses software and AI to run an entire business process — all its steps, systems, and hand-offs. Automatically, rather than automating just one task. For a business in retail, that means applying it to the workflows that consume your team — inventory monitoring and reorder alerts, customer inquiry handling across channels, and sales and inventory reporting — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our business already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about business process automation for retail' } },
+      { type: 'FAQSection', props: { title: 'Process Automation for Retail FAQs', subtitle: 'Common questions about business process automation for retail' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

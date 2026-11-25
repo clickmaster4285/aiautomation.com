@@ -1,7 +1,7 @@
 // content/Solutions/reporting-automation.ts
 export const reportingAutomation = {
   url: '/solutions/reporting-automation',
-  titleTag: 'Reporting Automation Solutions for Faster, More Reliable',
+  titleTag: 'Reporting Automation Solutions | Clickmasters',
   metaDescription: 'Operations teams use Clickmasters Reporting Automation Solutions for Faster, More Reliable Business Reporting to remove repetitive work from the current.',
   primaryKeyword: 'reporting automation',
   bookingLink: '/free-automation-audit',
@@ -17,10 +17,10 @@ export const reportingAutomation = {
       'Reporting automation removes the manual steps between data and decision-making. Reports are generated from a single source of truth, delivered on a schedule, and kept consistent across teams and departments.',
     ],
     'The Problems This Solves': [
-      'Eliminate manual data collection and copy-paste report building',
-      'Prevent version mismatches and outdated reports circulating across teams',
-      'Reduce time spent preparing recurring reports each week or month',
-      'Keep dashboards and stakeholder reports aligned with live business data',
+      '**Eliminate manual data collection and copy-paste report building** We pull figures straight from your source systems into ready templates, so your team stops exporting spreadsheets and stitching them together.',
+      '**Prevent version mismatches and outdated reports circulating across teams** Every stakeholder receives the same current file from one source of truth, replacing scattered attachments with conflicting numbers.',
+      '**Reduce time spent preparing recurring reports each week or month** Scheduled workflows assemble and send routine packs on their own, freeing your team to review results instead of compiling them.',
+      '**Keep dashboards and stakeholder reports aligned with live business data** Connected sources refresh on a set schedule, so the figures leaders see match what is actually happening in the business.',
     ],
     'Where to Start: Your First Automation': [
       'Start with the report your team builds most often — usually a weekly or monthly recurring report that involves multiple data sources. Automating this single report usually delivers the fastest visible return and builds confidence for wider adoption.',
@@ -40,10 +40,10 @@ export const reportingAutomation = {
       'Teams typically recover hours of manual reporting time each week, reduce rework caused by incorrect or outdated numbers, and gain confidence that reports reflect current business data. The return scales as more recurring reports move into the automated workflow.',
     ],
     'Why Clickmasters': [
-      'Custom reporting workflows designed around your actual data sources and report formats',
-      'Integration with CRM, ERP, databases, spreadsheets, and BI tools',
-      'Scheduled generation, automated distribution, and exception alerts',
-      'Practical automation — we automate what saves time, not what sounds impressive',
+      '**Custom reporting workflows designed around your actual data sources and report formats** We build around the systems you already use and the layouts your stakeholders expect, so nobody has to relearn how to read them.',
+      '**Integration with CRM, ERP, databases, spreadsheets, and BI tools** We connect your platforms through APIs and native connectors, so figures flow into reports without manual exports or uploads.',
+      '**Scheduled generation, automated distribution, and exception alerts** Reports build and send on your timetable, and the owner is notified right away if a source fails or returns unexpected values.',
+      '**Practical automation — we automate what saves time, not what sounds impressive** We start with the recurring reports that take your team the most effort and leave analysis and interpretation with your people.',
     ],
   },
 

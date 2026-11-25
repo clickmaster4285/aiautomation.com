@@ -8,8 +8,8 @@ export const businessProcessAutomationForEcommerce: SolutionData = {
   category: 'business-process-automation',
   title: 'Business Process Automation for E-commerce',
   primaryKeyword: 'process automation for ecommerce',
-  titleTag: 'Business Process Automation for E-commerce | Clickmasters',
-  metaDescription: 'E-commerce teams use Clickmasters business process automation to take repetitive operations off the people who currently chase them. Ask the team.',
+  titleTag: 'Process Automation for Ecommerce Brands | Clickmasters',
+  metaDescription: 'Process automation for ecommerce brands that syncs orders, inventory, returns, and supplier updates across your stack. Book a free automation audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,8 +18,8 @@ export const businessProcessAutomationForEcommerce: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'Business Process Automation for E-commerce',
-  heroSubheading: 'Automation that runs, coordinates, and completes, built for how e-commerce stores actually operate.',
+  heroHeading: 'Business Process Automation for Ecommerce',
+  heroSubheading: 'Business process automation for ecommerce that runs, coordinates, and completes the order, inventory, and fulfillment work behind your store.',
   heroBadge: 'Business Process Automation',
   description:
     'Clickmasters builds Business Process Automation for e-commerce. Automation that runs, coordinates, and completes automatically, built around how a store in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of e-commerce, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for e-commerce: the routine handle
 
     'Built for E-commerce\'s Realities': `Customer and payment-adjacent data is handled with scoped access, and customer-facing AI answers from your actual store policies and order data so responses are accurate rather than generic.
 
-We integrate with the systems your store already runsstore platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your store already runs — store platforms like Shopify and WooCommerce, help desks like Gorgias and Zendesk, email platforms like Klaviyo, and fulfillment tools, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For e-commerce, the return shows up as: tickets deflected around the clock, cart revenue recovered automatically, faster responses lifting conversion and reviews, and a store that grows sales without growing operational headcount in lockstep. On the process automation side specifically, the headline metric is end-to-end process time cut and hand-off delays eliminated.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is process automation for e-commerce?',
       answer:
-        'Business process automation (BPA) uses software and AI to run an entire business processall its steps, systems, and hand-offs. Automatically, rather than automating just one task. For a store in e-commerce, that means applying it to the workflows that consume your teamcustomer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updateswith the specifics of your industry built in.',
+        'Business process automation (BPA) uses software and AI to run an entire business process — all its steps, systems, and hand-offs. Automatically, rather than automating just one task. For a store in e-commerce, that means applying it to the workflows that consume your team — customer support for order/shipping/product questions, abandoned cart recovery sequences, and order processing and status updates — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our store already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about business process automation for e-commerce' } },
+      { type: 'FAQSection', props: { title: 'Process Automation for Ecommerce FAQs', subtitle: 'Common questions about business process automation for e-commerce' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

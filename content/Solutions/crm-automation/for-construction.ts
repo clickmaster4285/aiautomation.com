@@ -8,8 +8,8 @@ export const crmAutomationForConstruction: SolutionData = {
   category: 'crm-automation',
   title: 'CRM Automation for Construction',
   primaryKeyword: 'CRM automation for construction',
-  titleTag: 'CRM Automation for Construction Services | Clickmasters',
-  metaDescription: 'Construction companies use Clickmasters CRM automation to keep contacts, deals, and follow-ups current without re-keying. Book a free audit. Ask the team.',
+  titleTag: 'CRM Automation for Construction Firms | Clickmasters',
+  metaDescription: 'CRM automation for construction that tracks bids, client contacts, and project follow-ups so no estimate goes cold. Book a free automation audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,7 +19,7 @@ export const crmAutomationForConstruction: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'CRM Automation for Construction',
-  heroSubheading: 'Automation that updates, cleans, and routes, built for how construction companies actually operate.',
+  heroSubheading: 'CRM automation for construction that updates records, cleans data, and routes leads, designed around how construction companies actually operate.',
   heroBadge: 'CRM Automation',
   description:
     'Clickmasters builds CRM Automation for construction. Automation that updates, cleans, and routes automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of construction, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for construction: the routine hand
 
     'Built for Construction\'s Realities': `Bid pricing and project data are competitively sensitive; automation is scoped accordingly, and anything contractual keeps human review. The automation handles the paperwork flow, your team runs the projects.
 
-We integrate with the systems your company already runsconstruction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your company already runs — construction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For construction, the return shows up as: more bids won from faster response, office hours reclaimed from chasing documents and sending updates, invoicing that keeps pace with the work, and clients who feel informed instead of ignored. On the CRM automation side specifically, the headline metric is CRM accuracy restored and rep admin time eliminated.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is CRM automation for construction?',
       answer:
-        'CRM automation keeps your CRM accurate and active automaticallyupdating records, logging activity, cleaning data, routing leads, and syncing with your other systems, so the pipeline reflects reality without reps doing data entry. For a company in construction, that means applying it to the workflows that consume your teamlead intake and estimate follow-up, bid request handling, and project document collection and organizationwith the specifics of your industry built in.',
+        'CRM automation keeps your CRM accurate and active automaticallyupdating records, logging activity, cleaning data, routing leads, and syncing with your other systems, so the pipeline reflects reality without reps doing data entry. For a company in construction, that means applying it to the workflows that consume your team — lead intake and estimate follow-up, bid request handling, and project document collection and organization — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our company already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about CRM automation for construction' } },
+      { type: 'FAQSection', props: { title: 'CRM Automation for Construction FAQs', subtitle: 'Common questions about CRM automation for construction' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

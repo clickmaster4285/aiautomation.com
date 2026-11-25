@@ -8,8 +8,8 @@ export const reportingAutomationWithN8n: SolutionData = {
   category: 'reporting-automation',
   title: 'Reporting Automation with n8n',
   primaryKeyword: 'n8n reporting automation',
-  titleTag: 'Reporting Automation Built on n8n Systems | Clickmasters',
-  metaDescription: 'Teams running n8n use Clickmasters reporting automation to assemble the numbers teams already ask for, on a schedule. Book a free audit. Ask the team.',
+  titleTag: 'n8n Reporting Automation, Self-Hosted | Clickmasters',
+  metaDescription: 'n8n reporting automation that pulls data from your stack, builds reports, and delivers them on schedule, self-hosted with no per-task fees. Book a free audit.',
   keywordEvidence: '1 matching keywords, ~500 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -17,14 +17,14 @@ export const reportingAutomationWithN8n: SolutionData = {
     'n8n platform page',
     'AI Automation Agency pillar',
   ],
-  heroHeading: 'Reporting Automation Built on n8n',
-  heroSubheading: 'Aggregate, build, and deliver reports automaticallywith open-source, self-hostable automation and no per-task fees.',
+  heroHeading: 'n8n Reporting Automation',
+  heroSubheading: 'n8n reporting automation that aggregates, builds, and delivers reports on open-source, self-hostable infrastructure with no per-task fees.',
   heroBadge: 'Reporting Automation × n8n',
   description: 'Clickmasters builds reporting automation on n8n. n8n is an open-source, self-hostable automation platform with no per-task fees and the deepest AI/LLM support of the mainstream tools, and it\'s an excellent fit for high-volume, data-sensitive, or AI-heavy production workflows. Combined with reporting automation, which assembles your recurring reports and dashboards from live data automatically. The Monday pipeline report, the monthly close pack, the operations dashboard, built and delivered on schedule without anyone exporting, copying, or formatting. Decisions get made on current numbers instead of last week\'s, and the hours spent rebuilding the same report disappear, the result is automation that runs on a platform matched to the job.',
   sections: {
-    'Why n8n for Reporting Automation': 'n8n is an open-source, self-hostable automation platform with no per-task fees and the deepest AI/LLM support of the mainstream tools. Self-hosting gives full data controlyour information never leaves your environment. For reporting automation specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. n8n is the right home for this work when it matches high-volume, data-sensitive, or AI-heavy production workflows, and when it does, this combination is hard to beat.',
+    'Why n8n for Reporting Automation': 'n8n is an open-source, self-hostable automation platform with no per-task fees and the deepest AI/LLM support of the mainstream tools. Self-hosting gives full data control — your information never leaves your environment. For reporting automation specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. n8n is the right home for this work when it matches high-volume, data-sensitive, or AI-heavy production workflows, and when it does, this combination is hard to beat.\n\nBecause n8n connects to almost any API, the same instance that builds your reports can run neighboring workflows too. We often extend a reporting build to handle data entry between systems and broader workflow automation, so every report draws from sources that stay in sync.',
     'What a Production Build Includes': 'The gap between a prototype and a system you can rely on is everything that happens when things go wrong. Every reporting automation build we ship on n8n includes error handling on every step (failures caught and retried or escalated, never silent), monitoring and alerting (you know the system is running without checking), documentation (your team can understand and modify the build), and staged rollout (the automation proves itself on real cases with human oversight before it runs unattended).\n\nThis is the difference between automation that saves hours and automation that quietly breaks and costs trust. Most of the rescue projects we take on are builds that skipped these steps.',
-    'Typical Workflows on n8n': 'The reporting automation workflows we most often build on n8n follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is neededclassification, extraction, drafting, and the result is executed and logged. n8n\'s strengths make it particularly suited to high-volume, data-sensitive, or AI-heavy production workflows, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
+    'Typical Workflows on n8n': 'The reporting automation workflows we most often build on n8n follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is needed — classification, extraction, drafting, and the result is executed and logged. n8n\'s strengths make it particularly suited to high-volume, data-sensitive, or AI-heavy production workflows, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
   },
   features: [
     {
@@ -122,15 +122,15 @@ export const reportingAutomationWithN8n: SolutionData = {
     },
     {
       question: 'What does this cost to run?',
-      answer: 'Self-hosting gives full data controlyour information never leaves your environment. We design builds to be efficient on the platform\'s pricing model, and we\'ll tell you honestly if your volume points to a cheaper platform.',
+      answer: 'Self-hosting gives full data control — your information never leaves your environment. We design builds to be efficient on the platform\'s pricing model, and we\'ll tell you honestly if your volume points to a cheaper platform.',
     },
     {
       question: 'Do we own the build?',
       answer: 'Completely. Everything is documented and transparent, in your own accounts, with no dependency on us for changes.',
     },
     {
-      question: 'Reporting automation assembles recurring reports and dashboards from live data automaticallyis that what this does?',
-      answer: 'Reporting automation assembles recurring reports and dashboards from live data automaticallypulling from multiple systems, generating the report, and delivering it on schedulereplacing the manual export-copy-format cycle. Built on n8n, it runs with the platform\'s strengths: high-volume, data-sensitive, or AI-heavy production workflows.',
+      question: 'Reporting automation assembles recurring reports and dashboards from live data automatically — is that what this does?',
+      answer: 'Reporting automation assembles recurring reports and dashboards from live data automatically — pulling from multiple systems, generating the report, and delivering it on schedule — replacing the manual export-copy-format cycle. Built on n8n, it runs with the platform\'s strengths: high-volume, data-sensitive, or AI-heavy production workflows.',
     },
   ],
   cta: 'Want reporting automation running on n8n?',
@@ -203,7 +203,7 @@ export const reportingAutomationWithN8n: SolutionData = {
       { type: 'PlatformComparison', props: { title: 'Is n8n Right for You?', subtitle: 'We\'ll tell you honestly if n8n is the right platform for your reporting automation needs.' } },
       { type: 'StatsSection', props: { title: 'Why Choose Clickmasters for n8n Reporting Automation' } },
       { type: 'FAQSection', props: {
-  title: 'Frequently Asked Questions',
+  title: 'n8n Reporting Automation FAQs',
   subtitle: 'Common questions about reporting automation on n8n',
   eyebrow: 'FAQ',
 } },

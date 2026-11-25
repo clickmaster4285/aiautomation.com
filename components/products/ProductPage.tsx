@@ -19,6 +19,7 @@ import CTA from '@/components/landingPage/CTA';
 import { Dot, SectionLabel, splitHeading } from '@/components/landingPage/Shared';
 import { HubJsonLd } from '@/components/seo/HubJsonLd';
 import ProductLeadForm from '@/components/products/ProductLeadForm';
+import { RelatedCards } from '@/components/seo/RelatedCards';
 import type { HubSeo } from '@/lib/hub-seo';
 import type { ProductPageContent } from '@/content/products/types';
 import type { RelatedProducts } from '@/content/products';
@@ -70,49 +71,6 @@ const fadeUp = (i = 0) => ({
 });
 
 // ─── Page ──────────────────────────────────────────────
-
-/** Grid of linked product cards (used by the content `related` block and the auto "related products" block). */
-function RelatedCards({
-  eyebrow,
-  heading,
-  intro,
-  items,
-  tone = 'paper',
-}: {
-  eyebrow: string;
-  heading: string;
-  intro?: string;
-  items: { title: string; description: string; href: string }[];
-  tone?: 'paper' | 'secondary';
-}) {
-  return (
-    <section className={`${tone === 'secondary' ? 'bg-secondary' : 'bg-paper'} py-16 md:py-24`}>
-      <div className="mx-auto max-w-[84vw] px-6">
-        <SectionLabel label={eyebrow} />
-        <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
-          <Heading text={heading} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl" />
-          {intro && <p className="text-sm md:text-base text-muted-foreground md:text-right md:self-end">{intro}</p>}
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
-          {items.map((r, i) => (
-            <motion.div key={r.href} {...fadeUp(i)}>
-              <Link
-                href={r.href}
-                className="related-link block h-full bg-paper p-6 md:p-8 group hover:bg-ink hover:text-white transition-colors duration-500"
-              >
-                <h3 className="display text-xl md:text-2xl mb-2">{r.title}</h3>
-                <p className="text-sm text-muted-foreground group-hover:text-white/70 leading-relaxed">{r.description}</p>
-                <span className="mt-4 inline-block eyebrow text-xs text-muted-foreground group-hover:text-brand">
-                  Explore <span aria-hidden="true">→</span>
-                </span>
-              </Link>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 export default function ProductPage({
   content: c,

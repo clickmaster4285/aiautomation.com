@@ -8,8 +8,8 @@ export const salesAutomationForConstruction: SolutionData = {
   category: 'sales-automation',
   title: 'AI Sales Automation for Construction',
   primaryKeyword: 'sales automation for construction',
-  titleTag: 'AI Sales Automation for Construction | Clickmasters AI',
-  metaDescription: 'Construction companies use Clickmasters sales automation to enrich leads, follow up, and log activity so reps can sell. Book a free audit. Ask the team.',
+  titleTag: 'AI Sales Automation for Construction | Clickmasters',
+  metaDescription: 'Sales automation for construction that captures bid requests, follows up on estimates, and keeps your pipeline current without manual entry. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const salesAutomationForConstruction: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Sales Automation for Construction',
-  heroSubheading: 'Automation that enriches, follows up, and logs, built for how construction companies actually operate.',
+  heroSubheading: 'Sales automation for construction companies that enriches leads, follows up on bids and estimates, and logs every touchpoint.',
   heroBadge: 'AI Sales Automation',
   description:
     'Clickmasters builds AI Sales Automation for construction. Automation that enriches, follows up, and logs automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of construction, delivered as a system your team owns and relies on.',
   sections: {
     'Why Construction Needs AI Sales Automation': `Construction companies coordinate crews, subs, suppliers, clients, and paperwork across simultaneous projects, with the office side often running on phone calls, paper, and re-typed data. Bids need fast turnaround, project documents pile up, change orders and invoices need tracking, and clients want updates. The administrative load grows with every project, and it competes directly with the estimating and project management that actually wins and delivers work.
 
-AI Sales Automation addresses this directly. It removes the administrative grind around sellingleads enriched and scored the moment they arrive, follow-up sequences that never slip, CRM records that update themselves, and reports that assemble automatically. Your reps spend their time on conversations that close, not on data entry. For a company, that capability lands exactly where the hours are currently going.`,
+AI Sales Automation addresses this directly. It removes the administrative grind around selling — leads enriched and scored the moment they arrive, follow-up sequences that never slip, CRM records that update themselves, and reports that assemble automatically. Your reps spend their time on conversations that close, not on data entry. For a company, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Construction': `**Lead and bid response lag.** Project inquiries and bid opportunities that aren't answered fast go to competitors who responded first.
 **Document and photo chaos.** Plans, permits, photos, and change orders scatter across email, phones, and folders.
@@ -64,7 +64,7 @@ That's the pattern across everything we build for construction: the routine hand
 
     'Built for Construction\'s Realities': `Bid pricing and project data are competitively sensitive; automation is scoped accordingly, and anything contractual keeps human review. The automation handles the paperwork flow, your team runs the projects.
 
-We integrate with the systems your company already runsconstruction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your company already runs — construction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For construction, the return shows up as: more bids won from faster response, office hours reclaimed from chasing documents and sending updates, invoicing that keeps pace with the work, and clients who feel informed instead of ignored. On the sales automation side specifically, the headline metric is selling hours recovered per rep per week.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is sales automation for construction?',
       answer:
-        'AI sales automation handles repetitive sales taskslead enrichment, scoring, follow-up, CRM updates, proposals, and reporting, so reps spend their time selling rather than on administration. For a company in construction, that means applying it to the workflows that consume your teamlead intake and estimate follow-up, bid request handling, and project document collection and organizationwith the specifics of your industry built in.',
+        'AI sales automation handles repetitive sales tasks — lead enrichment, scoring, follow-up, CRM updates, proposals, and reporting, so reps spend their time selling rather than on administration. For a company in construction, that means applying it to the workflows that consume your team — lead intake and estimate follow-up, bid request handling, and project document collection and organization — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our company already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about sales automation for construction' } },
+      { type: 'FAQSection', props: { title: 'Sales Automation for Construction FAQs', subtitle: 'Common questions about sales automation for construction' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

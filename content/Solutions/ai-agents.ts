@@ -18,11 +18,11 @@ export const aiAgents = {
       'AI agents close that gap. They can interpret unstructured inputs, plan the steps required, execute actions across connected systems, and adapt when the path changes — all within defined guardrails, with human review where it matters.',
     ],
     'The Problems This Solves': [
-      'Handle multi-step tasks that span multiple systems without manual coordination',
-      'Interpret unstructured inputs (emails, documents, requests) as the starting point',
-      'Execute follow-up actions based on what the task actually needs',
-      'Reduce manual coordination overhead between teams and tools',
-      'Keep humans in the loop for high-stakes or ambiguous cases',
+      '**Handle multi-step tasks that span multiple systems without manual coordination** The agent moves work from your CRM to email to helpdesk on its own, so nobody has to copy details between tools.',
+      '**Interpret unstructured inputs (emails, documents, requests) as the starting point** We train the agent to read free-form messages and files, pull out the key details, and decide what work comes next.',
+      '**Execute follow-up actions based on what the task actually needs** Instead of following one fixed path, the agent picks the next step from what it finds, such as chasing missing details or updating records.',
+      '**Reduce manual coordination overhead between teams and tools** Your team stops chasing handoffs, status checks, and reminders because the agent tracks each task and passes it along with full context.',
+      '**Keep humans in the loop for high-stakes or ambiguous cases** We set clear approval points so the agent pauses and routes sensitive or unclear decisions to the right person before acting.',
     ],
     'Where to Start: Your First Automation': [
       'Start with the task where your team spends the most coordination time — the one where someone reads something, decides what to do, takes three or four steps across systems, and follows up if it does not work.',
@@ -42,11 +42,11 @@ export const aiAgents = {
       'Teams typically see reduced research and coordination time, faster response to inbound requests, more consistent decisions, and better use of senior team members who previously spent time on routine tasks. The return compounds as more tasks move into the agent layer — each additional agent benefits from the same integration foundation and monitoring.',
     ],
     'Why Clickmasters': [
-      'Custom AI agents designed around your actual tasks and tools',
-      'Practical use of AI where it adds value — not AI for the sake of AI',
-      'Integrations with CRM, ERP, email, helpdesk, and cloud storage',
-      'Human-in-the-loop review for high-stakes decisions',
-      'Monitoring and iteration so agents improve after launch',
+      '**Custom AI agents designed around your actual tasks and tools** We map how your team really works today, then build each agent to fit those steps instead of forcing a generic template.',
+      '**Practical use of AI where it adds value — not AI for the sake of AI** We use simple rules where they work and reserve AI reasoning for the steps that need judgment, keeping agents dependable and affordable.',
+      '**Integrations with CRM, ERP, email, helpdesk, and cloud storage** We connect agents directly to the systems your team already uses, so they can read records and take action where work happens.',
+      '**Human-in-the-loop review for high-stakes decisions** Agents prepare the work and draft the decision, then your team approves anything sensitive before it goes out or changes a record.',
+      '**Monitoring and iteration so agents improve after launch** We log every agent action, review where it struggled or escalated, and refine its instructions and scope as your needs change.',
     ],
   },
 

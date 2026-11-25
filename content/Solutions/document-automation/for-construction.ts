@@ -8,8 +8,8 @@ export const documentAutomationForConstruction: SolutionData = {
   category: 'document-automation',
   title: 'Document & Data Automation for Construction',
   primaryKeyword: 'document automation for construction',
-  titleTag: 'Document & Data Automation for Construction | Clickmasters',
-  metaDescription: 'Construction companies use Clickmasters document automation to extract, check, and route data from invoices, forms, and files. Book a free audit.',
+  titleTag: 'Document Automation for Construction | Clickmasters',
+  metaDescription: 'Document automation for construction that pulls data from bids, change orders, lien waivers, and invoices into your project systems. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -18,8 +18,8 @@ export const documentAutomationForConstruction: SolutionData = {
     'AI Automation Agency pillar',
     'Free Automation Audit',
   ],
-  heroHeading: 'Document & Data Automation for Construction',
-  heroSubheading: 'Automation that reads, validates, and files, built for how construction companies actually operate.',
+  heroHeading: 'Document Automation for Construction',
+  heroSubheading: 'Document automation for construction that reads, validates, and files project paperwork, built for how construction companies actually operate.',
   heroBadge: 'Document & Data Automation',
   description:
     'Clickmasters builds Document & Data Automation for construction. Automation that reads, validates, and files automatically, built around how a company in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of construction, delivered as a system your team owns and relies on.',
@@ -64,7 +64,7 @@ That's the pattern across everything we build for construction: the routine hand
 
     'Built for Construction\'s Realities': `Bid pricing and project data are competitively sensitive; automation is scoped accordingly, and anything contractual keeps human review. The automation handles the paperwork flow, your team runs the projects.
 
-We integrate with the systems your company already runsconstruction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your company already runs — construction management platforms, estimating tools, accounting software, and field communication apps, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For construction, the return shows up as: more bids won from faster response, office hours reclaimed from chasing documents and sending updates, invoicing that keeps pace with the work, and clients who feel informed instead of ignored. On the document automation side specifically, the headline metric is documents processed hands-free and entry errors eliminated.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is document automation for construction?',
       answer:
-        'Document and data automation uses OCR and AI to read documents, extract and validate structured data, and route it into business systems automaticallyreplacing manual reading and data entry. For a company in construction, that means applying it to the workflows that consume your teamlead intake and estimate follow-up, bid request handling, and project document collection and organizationwith the specifics of your industry built in.',
+        'Document and data automation uses OCR and AI to read documents, extract and validate structured data, and route it into business systems automatically — replacing manual reading and data entry. For a company in construction, that means applying it to the workflows that consume your team — lead intake and estimate follow-up, bid request handling, and project document collection and organization — with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our company already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about document automation for construction' } },
+      { type: 'FAQSection', props: { title: 'Document Automation for Construction FAQs', subtitle: 'Common questions about document automation for construction' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',

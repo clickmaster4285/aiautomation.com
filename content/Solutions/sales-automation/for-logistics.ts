@@ -8,8 +8,8 @@ export const salesAutomationForLogistics: SolutionData = {
   category: 'sales-automation',
   title: 'AI Sales Automation for Logistics & Transportation',
   primaryKeyword: 'sales automation for logistics',
-  titleTag: 'AI Sales for Logistics & Transportation | Clickmasters',
-  metaDescription: 'Logistics teams use Clickmasters sales automation to enrich leads, follow up, and log activity so reps can sell. Start with one high-volume workflow.',
+  titleTag: 'Sales Automation for Logistics Companies | Clickmasters',
+  metaDescription: 'Sales automation for logistics that qualifies shipper leads, follows up on freight quotes, and keeps your CRM current without data entry. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [
@@ -19,14 +19,14 @@ export const salesAutomationForLogistics: SolutionData = {
     'Free Automation Audit',
   ],
   heroHeading: 'AI Sales Automation for Logistics & Transportation',
-  heroSubheading: 'Automation that enriches, follows up, and logs, built for how logistics operations actually run.',
+  heroSubheading: 'Sales automation for logistics and transportation teams that enriches shipper leads, follows up on quotes, and logs every touchpoint.',
   heroBadge: 'AI Sales Automation',
   description:
     'Clickmasters builds AI Sales Automation for logistics & transportation. Automation that enriches, follows up, and logs automatically, built around how a operation in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of logistics & transportation, delivered as a system your team owns and relies on.',
   sections: {
     'Why Logistics & Transportation Need AI Sales Automation': `Logistics runs on coordination: orders, dispatch, tracking, exceptions, proof of delivery, invoicing, a constant flow of time-sensitive information across shippers, carriers, drivers, and customers. Much of it still moves by phone, email, and manual entry, which means status calls interrupt dispatchers, paperwork lags behind freight, and billing waits on documents. Every manual touch adds delay and error to an industry priced on speed and reliability.
 
-AI Sales Automation addresses this directly. It removes the administrative grind around sellingleads enriched and scored the moment they arrive, follow-up sequences that never slip, CRM records that update themselves, and reports that assemble automatically. Your reps spend their time on conversations that close, not on data entry. For a operation, that capability lands exactly where the hours are currently going.`,
+AI Sales Automation addresses this directly. It removes the administrative grind around selling — leads enriched and scored the moment they arrive, follow-up sequences that never slip, CRM records that update themselves, and reports that assemble automatically. Your reps spend their time on conversations that close, not on data entry. For a operation, that capability lands exactly where the hours are currently going.`,
 
     'The Problems This Solves for Logistics & Transportation': `**Status inquiry interruptions.** Where's my shipment? calls and emails consume dispatcher time that should go to actual coordination.
 **Document lag.** PODs, BOLs, and paperwork trail the freight, delaying billing and disputes.
@@ -58,13 +58,13 @@ For most, that points to order and tender intake or shipment status updates to c
 
 What it is: the routine work. The automation that enriches, follows up, and logs, handled automatically, consistently, at any hour, so your operation runs on systems instead of memory and heroics.`,
 
-    'A Worked Example': `Consider what happens when a customer emails asking where their shipment is. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the shipment is identified, current status and location are pulled from tracking, an accurate update is sent within seconds, and the interaction is loggeddispatchers stop fielding status calls and customers stop waiting for answers.
+    'A Worked Example': `Consider what happens when a customer emails asking where their shipment is. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the shipment is identified, current status and location are pulled from tracking, an accurate update is sent within seconds, and the interaction is logged — dispatchers stop fielding status calls and customers stop waiting for answers.
 
 That's the pattern across everything we build for logistics & transportation: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
 
     'Built for Logistics & Transportation\'s Realities': `Shipment and pricing data is commercially sensitive; automation is scoped with appropriate access, and operational decisions stay with dispatch. The automation moves the information so your people move the freight.
 
-We integrate with the systems your operation already runsTMS platforms, tracking systems, document management, accounting software, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+We integrate with the systems your operation already runs — TMS platforms, tracking systems, document management, accounting software, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
 
     'What the Return Looks Like': `For logistics & transportation, the return shows up as: dispatcher hours reclaimed from status calls, billing accelerated by documents that process themselves, fewer entry errors in orders, and customer communication that builds retention instead of frustration. On the sales automation side specifically, the headline metric is selling hours recovered per rep per week.
 
@@ -169,7 +169,7 @@ We start with a free audit that identifies your highest-return workflow, automat
     {
       question: 'What is sales automation for logistics & transportation?',
       answer:
-        'AI sales automation handles repetitive sales taskslead enrichment, scoring, follow-up, CRM updates, proposals, and reporting, so reps spend their time selling rather than on administration. For a operation in logistics & transportation, that means applying it to the workflows that consume your teamorder and tender intake, shipment status updates to customers, and document collection and processing (POD, BOL)with the specifics of your industry built in.',
+        'AI sales automation handles repetitive sales tasks — lead enrichment, scoring, follow-up, CRM updates, proposals, and reporting, so reps spend their time selling rather than on administration. For a operation in logistics & transportation, that means applying it to the workflows that consume your team — order and tender intake, shipment status updates to customers, and document collection and processing (POD, BOL)with the specifics of your industry built in.',
     },
     {
       question: 'Will this work with the tools our operation already uses?',
@@ -270,7 +270,7 @@ We start with a free audit that identifies your highest-return workflow, automat
         section: 'Why Clickmasters',
         props: { title: 'Why Clickmasters' },
       },
-      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about sales automation for logistics & transportation' } },
+      { type: 'FAQSection', props: { title: 'Sales Automation for Logistics FAQs', subtitle: 'Common questions about sales automation for logistics & transportation' } },
       { type: 'RelatedSolutions' },
       {
         type: 'CTASection',
