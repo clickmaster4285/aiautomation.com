@@ -5,13 +5,19 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 import { SectionLabel } from '@/components/landingPage/Shared';
+import ProductLeadForm from '@/components/products/ProductLeadForm';
 import { canonicalUrl } from '@/lib/canonical';
 import { withSocialDefaults } from '@/lib/seo';
 import { productCategories, PRODUCTS_PATH } from '@/content/products';
+import HeroBreadcrumb from '@/components/shared/HeroBreadcrumb';
+import HeroCta from '@/components/shared/HeroCta';
+import Marquee from '@/components/landingPage/Marquee';
 
-const title = 'AI Automation Products for Every Team | Clickmasters';
+const title = 'AI Automation Products for Business Teams | Clickmasters';
 const description =
-  'AI automation products for sales, support, marketing, HR, finance, e-commerce, documents and AI agents, built inside the tools your team already uses.';
+  'Explore AI automation products for sales, support, marketing, HR, finance, e-commerce and AI agents—built around your existing tools and workflows.';
+const heroDescription =
+  'Find AI automation products for sales, customer support, marketing, HR, finance, e-commerce, document processing, and AI agents. Built around your existing software, these solutions reduce repetitive work, improve response times, and help your team scale.';
 
 export const metadata: Metadata = withSocialDefaults({
   title,
@@ -42,22 +48,31 @@ export default function ProductsPage() {
       />
 
       {/* Hero */}
-      <section className="py-16 md:py-24">
-        <div className="mx-auto max-w-[84vw] px-6">
-          <nav aria-label="Breadcrumb" className="mb-6 eyebrow text-xs text-muted-foreground">
-            <Link href="/" className="hover:text-brand">Home</Link> <span aria-hidden="true">/</span>{' '}
-            <span className="text-ink" aria-current="page">Products</span>
-          </nav>
-          <span className="eyebrow text-brand border border-brand inline-block px-3 py-1 mb-6 text-xs md:text-sm">Products</span>
-          <h1 className="display text-5xl sm:text-6xl md:text-7xl leading-[1.05] max-w-4xl">
-            AI Automation Products <span className="display-italic text-brand">for Every Team</span>
-          </h1>
-          <p className="mt-6 text-base md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
-            Each product is an AI system we build inside the tools you already run, from your CRM to your help desk and
-            marketing platform. Pick the area that costs your team the most time.
-          </p>
-        </div>
-      </section>
+      <div className="flex min-h-[calc(100svh-4rem)] flex-col">
+        <section className="relative isolate flex-1 overflow-hidden bg-paper py-12 md:flex md:items-center md:py-10">
+          <div className="mx-auto w-full max-w-[84vw] px-6">
+            <HeroBreadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Products', href: '/products' }]} />
+            <div className="grid items-center gap-10 md:grid-cols-[1.15fr_1fr] lg:gap-16">
+              <div>
+                <span className="eyebrow mb-5 inline-block border border-brand px-3 py-1 text-xs text-brand md:mb-7 md:text-sm">
+                  Products
+                </span>
+                <h1 className="display mb-5 max-w-4xl text-4xl leading-[1.05] sm:text-5xl md:mb-7 md:text-6xl lg:text-7xl">
+                  AI Automation Products <span className="display-italic text-brand">for Business Teams</span>
+                </h1>
+                <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+                  {heroDescription}
+                </p>
+                <HeroCta />
+              </div>
+              <div className="flex md:justify-end">
+                <ProductLeadForm product="AI automation products" variant="hero" id="get-started" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <Marquee items={live.map((c) => c.title)} />
+      </div>
 
       {/* Live categories */}
       {live.map((cat, ci) => (

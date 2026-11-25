@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer, scaleUp, blowOut } from './Shared/animation';
 import { AlertTriangle, TrendingUp } from 'lucide-react';
-import { playfair } from '@/lib/fonts';
 import type { Section } from '@/content/type';
 
 /* ─── Top horizontal tech pattern ─────────────────────────────────────────
@@ -146,16 +145,15 @@ function TopTechPattern({ isBlack }: { isBlack: boolean }) {
   );
 }
 
-export default function PainPoint({ section, bg = 'bg-orange-50' }: { section: Section; bg?: string }) {
+export default function PainPoint({ section, bg = 'bg-secondary' }: { section: Section; bg?: string }) {
   const content = Array.isArray(section.content) ? section.content : [section.content];
-  const isBlack = bg === 'bg-black';
+  const isBlack = bg === 'bg-ink';
   const painPoints = content.slice(0, -1);
   const solutionHint = content[content.length - 1];
 
   return (
     <>
-      <section className={`relative py-24 md:py-32 overflow-hidden ${bg}`}>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_50%_0%,rgba(249,115,22,0.08),transparent)]" />
+      <section className={`relative overflow-hidden py-16 md:py-24 ${bg}`}>
         <motion.div
           className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-brand/5 rounded-full blur-3xl"
           animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.6, 0.3] }}
@@ -171,18 +169,10 @@ export default function PainPoint({ section, bg = 'bg-orange-50' }: { section: S
           >
             {/* Heading block */}
             <motion.div variants={blowOut} className="mb-6">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="h-px w-12 bg-brand" />
-                <span className="text-brand text-sm font-semibold tracking-widest uppercase font-sans">The Problem</span>
-              </div>
+              <p className="eyebrow mb-4 text-brand">The Problem</p>
               {section.heading && (
                 <h2
-                  className={`tracking-tight leading-tight max-w-3xl ${isBlack ? 'text-white' : 'text-gray-900'}`}
-                  style={{
-                    fontFamily: `${playfair.style.fontFamily}, Georgia, serif`,
-                    fontWeight: 900,
-                    fontSize: 'clamp(2rem, 5vw, 3.5rem)',
-                  }}
+                  className={`display max-w-3xl text-4xl leading-tight sm:text-5xl md:text-6xl ${isBlack ? 'text-white' : 'text-ink'}`}
                 >
                   {section.heading}
                 </h2>
@@ -200,14 +190,14 @@ export default function PainPoint({ section, bg = 'bg-orange-50' }: { section: S
                     key={idx}
                     variants={scaleUp}
                     whileHover={{ x: 8, scale: 1.02, boxShadow: '0 12px 40px rgba(0,0,0,0.06)' }}
-                    className={`flex gap-4 p-6 rounded-2xl border transition-all duration-300 ${
+                    className={`flex gap-4 border p-5 transition-colors duration-300 md:p-6 ${
                       isBlack
                         ? 'bg-red-500/5 border-red-500/10 hover:border-red-500/20'
                         : 'bg-red-50 border-red-100 hover:border-red-200'
                     }`}
                   >
                     <AlertTriangle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
-                    <p className={`text-sm leading-relaxed font-sans ${isBlack ? 'text-gray-300' : 'text-gray-700'}`}>
+                    <p className={`text-sm leading-relaxed ${isBlack ? 'text-white/70' : 'text-ink/80'}`}>
                       {para}
                     </p>
                   </motion.div>
@@ -217,19 +207,19 @@ export default function PainPoint({ section, bg = 'bg-orange-50' }: { section: S
               <motion.div
                 variants={blowOut}
                 whileHover={{ scale: 1.02, boxShadow: '0 20px 60px rgba(80,80,80,0.15)' }}
-                className={`p-8 rounded-2xl border flex flex-col justify-center ${
+                className={`flex flex-col justify-center border p-6 md:p-8 ${
                   isBlack
-                    ? 'bg-[oklch(0.5_0.01_0)]/10 border-[oklch(0.5_0.01_0)]/30'
-                    : 'bg-[oklch(0.5_0.01_0)]/10 border-[oklch(0.5_0.01_0)]/20'
+                    ? 'border-brand/30 bg-brand/10'
+                    : 'border-brand/20 bg-brand/5'
                 }`}
               >
-                <div className="w-12 h-12 rounded-xl bg-[oklch(0.5_0.01_0)]/20 flex items-center justify-center mb-6">
-                  <TrendingUp className="h-6 w-6 text-[oklch(0.5_0.01_0)]" />
+                <div className="mb-6 flex h-12 w-12 items-center justify-center border border-brand/30 bg-brand/10">
+                  <TrendingUp className="h-6 w-6 text-brand" />
                 </div>
-                <h3 className={`text-xl font-bold mb-3 font-sans ${isBlack ? 'text-white' : 'text-gray-900'}`}>
-                  There's a better way.
+                <h3 className={`display mb-3 text-xl ${isBlack ? 'text-white' : 'text-ink'}`}>
+                  There&apos;s a better way.
                 </h3>
-                <p className={`text-sm leading-relaxed font-sans ${isBlack ? 'text-gray-300' : 'text-gray-700'}`}>
+                <p className={`text-sm leading-relaxed ${isBlack ? 'text-white/70' : 'text-ink/80'}`}>
                   {solutionHint || 'AI automation removes the manual layer while keeping humans firmly in control of the decisions that matter.'}
                 </p>
               </motion.div>

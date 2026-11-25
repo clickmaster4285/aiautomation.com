@@ -4,7 +4,6 @@ import { useId } from 'react';
 import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer } from './Shared/animation';
 import { Zap } from 'lucide-react';
-import { playfair } from '@/lib/fonts';
 import { CONTENT_ICONS } from '@/components/shared/content-icons';
 import type { Section } from '@/content/type';
 
@@ -249,16 +248,13 @@ function RightSideDecor({ isBlack }: { isBlack: boolean }) {
   );
 }
 
-export default function FeatureSec({ section, bg = 'bg-gray-50' }: { section: Section; bg?: string }) {
+export default function FeatureSec({ section, bg = 'bg-secondary' }: { section: Section; bg?: string }) {
   const items = section.items || [];
-  const isBlack = bg === 'bg-black';
+  const isBlack = bg === 'bg-ink';
 
   return (
     <>
-      <section className={`relative py-24 md:py-32 overflow-hidden ${bg}`}>
-
-        {/* Original ambient gradient */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_80%_20%,rgba(249,115,22,0.06),transparent)]" />
+      <section className={`relative overflow-hidden py-16 md:py-24 ${bg}`}>
 
         {/* Full right-side decor */}
         <RightSideDecor isBlack={isBlack} />
@@ -270,25 +266,17 @@ export default function FeatureSec({ section, bg = 'bg-gray-50' }: { section: Se
             viewport={{ once: true, amount: 0.1 }}
             variants={staggerContainer}
           >
-            <motion.div variants={fadeInUp} className="mb-16">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="h-px w-12 bg-brand" />
-                <span className="text-brand text-sm font-semibold tracking-widest uppercase font-sans">What We Do</span>
-              </div>
+            <motion.div variants={fadeInUp} className="mb-10 md:mb-14">
+              <p className="eyebrow mb-4 text-brand">What We Do</p>
               {section.heading && (
                 <h2
-                  className={`tracking-tight leading-tight max-w-2xl ${isBlack ? 'text-white' : 'text-gray-900'}`}
-                  style={{
-                    fontFamily: `${playfair.style.fontFamily}, Georgia, serif`,
-                    fontWeight: 900,
-                    fontSize: 'clamp(2rem, 5vw, 3.5rem)',
-                  }}
+                  className={`display max-w-2xl text-4xl leading-tight sm:text-5xl md:text-6xl ${isBlack ? 'text-white' : 'text-ink'}`}
                 >
                   {section.heading}
                 </h2>
               )}
               {section.subheading && (
-                <p className={`mt-4 text-lg max-w-2xl leading-relaxed font-sans ${isBlack ? 'text-gray-400' : 'text-gray-500'}`}>
+                <p className={`mt-4 max-w-2xl text-base leading-relaxed sm:text-lg ${isBlack ? 'text-white/60' : 'text-muted-foreground'}`}>
                   {section.subheading}
                 </p>
               )}
@@ -301,28 +289,28 @@ export default function FeatureSec({ section, bg = 'bg-gray-50' }: { section: Se
                   <motion.div
                     key={idx}
                     variants={fadeInUp}
-                    whileHover={{ y: -6, boxShadow: '0 20px 60px rgba(80,80,80,0.12)' }}
+                    whileHover={{ y: -3 }}
                     transition={{ duration: 0.3 }}
-                    className={`group relative p-8 rounded-2xl border transition-all duration-300 cursor-default ${
+                    className={`group relative border p-6 transition-colors duration-300 cursor-default md:p-8 ${
                       isBlack
-                        ? 'bg-gray-900 border-gray-800 hover:border-[oklch(0.5_0.01_0)]/40'
-                        : 'bg-white border-gray-100 hover:border-[oklch(0.5_0.01_0)]/30 shadow-sm hover:shadow-lg'
+                        ? 'border-white/10 bg-ink hover:border-brand/50'
+                        : 'border-border bg-paper hover:border-brand/50'
                     }`}
                   >
                     <div className="mb-5">
-                      <div className="w-12 h-12 rounded-xl bg-[oklch(0.5_0.01_0)]/10 border border-[oklch(0.5_0.01_0)]/20 flex items-center justify-center group-hover:bg-brand group-hover:border-brand transition-all duration-300">
+                      <div className="flex h-12 w-12 items-center justify-center border border-brand/30 bg-brand/10 transition-colors duration-300 group-hover:border-brand group-hover:bg-brand">
                         {IconComponent && (
-                          <IconComponent className="h-5 w-5 text-[oklch(0.5_0.01_0)] group-hover:text-white transition-colors duration-300" />
+                          <IconComponent className="h-5 w-5 text-brand transition-colors duration-300 group-hover:text-white" />
                         )}
                       </div>
                     </div>
-                    <h3 className={`text-lg font-bold mb-3 font-sans ${isBlack ? 'text-white' : 'text-gray-900'}`}>
+                    <h3 className={`display mb-3 text-lg ${isBlack ? 'text-white' : 'text-ink'}`}>
                       {item.title}
                     </h3>
-                    <p className={`text-sm leading-relaxed font-sans ${isBlack ? 'text-gray-400' : 'text-gray-500'}`}>
+                    <p className={`text-sm leading-relaxed ${isBlack ? 'text-white/60' : 'text-muted-foreground'}`}>
                       {item.description}
                     </p>
-                    <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[oklch(0.5_0.01_0)] to-[oklch(0.5_0.01_0)]/60 rounded-b-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute bottom-0 left-0 right-0 h-px bg-brand opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                   </motion.div>
                 );
               })}

@@ -10,6 +10,7 @@ import { INDUSTRY_SOLUTION_LINKS, INDUSTRY_PRODUCT_LINKS } from '@/lib/internal-
 import { RelatedCards } from '@/components/seo/RelatedCards';
 import { productCards } from '@/lib/product-cards';
 import { HubJsonLd } from '@/components/seo/HubJsonLd';
+import type { Section } from '@/content/type';
 
 const Hero = dynamic(() => import('@/components/industries/Hero').then((mod) => mod.default));
 const TextSec = dynamic(() => import('@/components/industries/TextSec').then((mod) => mod.default));
@@ -20,7 +21,7 @@ const CTASec = dynamic(() => import('@/components/industries/CTASec').then((mod)
 const PainPoint = dynamic(() => import('@/components/industries/PainPoint').then((mod) => mod.default));
 const StepSec = dynamic(() => import('@/components/industries/StepSec').then((mod) => mod.default));
 
-const sectionMap: Record<string, ComponentType<{ section: any; bg?: string }>> = {
+const sectionMap: Record<string, ComponentType<{ section: Section; bg?: string }>> = {
   hero: Hero,
   text: TextSec,
   features: FeatureSec,

@@ -2,9 +2,15 @@
 
 import Link from 'next/link';
 import { HubJsonLd } from '@/components/seo/HubJsonLd';
+import HeroBreadcrumb from '@/components/shared/HeroBreadcrumb';
+import HeroCta from '@/components/shared/HeroCta';
+import Marquee from '@/components/landingPage/Marquee';
+import CtaBand from '@/components/landingPage/CtaBand';
+import { SectionLabel } from '@/components/landingPage/Shared';
+import ProductLeadForm from '@/components/products/ProductLeadForm';
 import { hubSeo } from '@/lib/hub-seo';
 import { motion, Variants } from 'framer-motion';
-import { ArrowRight, CheckCircle2, Zap, Workflow, GitBranch, Mail, Rocket, Database, Cloud, BrainCircuit, Cpu, Layers, GitMerge, Server, Globe, Shield, BarChart3, Users, Settings, Code, RefreshCw } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Zap, Workflow, GitBranch, Mail, Rocket, Database, Cloud, Server, Shield, Users, Settings, Code } from 'lucide-react';
 
 const platforms = [
   {
@@ -89,9 +95,6 @@ const platforms = [
   },
 ];
 
-const stats = [
-  { value: String(platforms.length), label: 'Platforms we implement' },
-];
 
 const features = [
   {
@@ -134,23 +137,19 @@ const testimonials = [
 ];
 
 // ── Animations ──
-const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+
+// Hero text slides in without starting invisible (keeps LCP fast).
+const heroIn: Variants = {
+  hidden: { y: 24 },
+  visible: { y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
 };
 
-const staggerContainer: Variants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.1, delayChildren: 0.2 },
-  },
+const heroStagger: Variants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.1, delayChildren: 0.1 } },
 };
 
-const cardVariants: Variants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
-};
+
 
 const platformPaths: Record<string, string> = {
   zapier: '/platforms/zapier-automation-services',
@@ -163,427 +162,176 @@ const platformPaths: Record<string, string> = {
 
 export default function PlatformsClient() {
   return (
-    <div className="bg-white text-gray-900 overflow-x-hidden">
+    <div className="overflow-x-clip bg-white text-gray-900">
       <HubJsonLd hub={hubSeo.platforms} />
-      {/* ── HERO ── */}
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
-        variants={fadeUp}
-        className="relative pt-32 pb-24 overflow-hidden bg-gradient-to-br from-gray-950 via-gray-900 to-black"
-      >
-        <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_40%_40%_at_20%_80%,rgba(249,115,22,0.15),transparent_70%)]" />
-          <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(ellipse_40%_40%_at_80%_20%,rgba(249,115,22,0.1),transparent_70%)]" />
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23ffffff%22 fill-opacity=%220.03%22%3E%3Cpath d=%22M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50" />
-        </div>
-
-        <div className="relative max-w-[84vw] px-6 mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* ── LEFT COLUMN: Text ── */}
-            <div>
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full border border-orange-800/60 bg-orange-950/30 backdrop-blur-sm"
-              >
-                <motion.span 
-                  className="w-1.5 h-1.5 rounded-full bg-brand"
-                  animate={{ scale: [1, 1.5, 1] }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                />
-                <span className="eyebrow text-brand text-[11px]">Platforms</span>
-              </motion.div>
-
-              <motion.h1 
-                className="display text-5xl md:text-6xl lg:text-7xl text-white mb-6 leading-[0.95]"
-                variants={fadeUp}
-              >
-                Connect your<br />
-                <span className="text-brand">
-                  entire stack.
-                </span>
-              </motion.h1>
-              <motion.p 
-                className="text-lg md:text-xl text-gray-300 max-w-2xl leading-relaxed mb-10"
-                variants={fadeUp}
-              >
-                We build automations across your existing platforms—no rip and replace. Connect your favorite tools and watch your workflows run themselves.
-              </motion.p>
-              <motion.div 
-                className="flex flex-wrap items-center gap-4"
-                variants={fadeUp}
-              >
-                <Link
-                  href="/contact"
-                  className="group relative inline-flex items-center gap-2 bg-brand hover:bg-orange-600 text-white px-8 py-4 rounded-full font-semibold text-sm transition-all shadow-lg shadow-brand/30 hover:shadow-orange-500/50 hover:scale-[1.02]"
-                >
-                  <span>Connect your stack</span>
-                  <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  <motion.span 
-                    className="absolute inset-0 rounded-full bg-white/10"
-                    initial={{ scale: 0 }}
-                    whileHover={{ scale: 1 }}
-                    transition={{ duration: 0.3 }}
-                  />
-                </Link>
-              </motion.div>
-            </div>
-
-            {/* ── RIGHT COLUMN: Animated Grid ── */}
-            <motion.div
-              variants={fadeUp}
-              className="relative"
-            >
-              <div className="grid grid-cols-2 gap-4">
-                {platforms.slice(0, 4).map((platform, i) => {
-                  const Icon = platform.icon;
-                  return (
-                    <motion.div
-                      key={i}
-                      initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
-                      animate={{ opacity: 1, scale: 1, rotate: 0 }}
-                      transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
-                      whileHover={{ 
-                        y: -8,
-                        scale: 1.05,
-                        transition: { duration: 0.2 }
-                      }}
-                      className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 text-center hover:border-brand/40 group cursor-default"
-                    >
-                      <div className="w-12 h-12 mx-auto rounded-xl bg-gradient-to-br from-brand/20 to-brand/5 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                        <Icon className="h-6 w-6 text-brand" />
-                      </div>
-                      <p className="text-xs font-semibold text-white">{platform.title}</p>
-                    </motion.div>
-                  );
-                })}
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </motion.section>
-
-      {/* ── STATS ── */}
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeUp}
-        className="border-y border-gray-100 bg-gradient-to-r from-gray-50 to-white"
-      >
-        <div className="max-w-[84vw] px-6 mx-auto py-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {stats.map((s, i) => (
-              <motion.div 
-                key={i} 
-                variants={fadeUp} 
-                custom={i} 
-                className="flex flex-col items-center gap-1 relative"
-                whileHover={{ y: -4 }}
-              >
-                <motion.span 
-                  className="text-4xl font-bold text-brand font-sans"
-                  whileHover={{ scale: 1.1 }}
-                >
-                  {s.value}
-                </motion.span>
-                <span className="text-xs text-gray-500 uppercase tracking-widest font-medium">{s.label}</span>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </motion.section>
-
-      {/* ── PLATFORMS GRID ── */}
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
-        variants={staggerContainer}
-        className="py-24 bg-white relative"
-      >
-        <div className="max-w-[84vw] px-6 mx-auto">
-          <motion.div variants={fadeUp} className="mb-14 text-center">
-            <motion.p 
-              className="eyebrow text-brand text-[11px] mb-3"
-              animate={{ opacity: [0.5, 1, 0.5] }}
-              transition={{ duration: 3, repeat: Infinity }}
-            >
-              Our Platform Expertise
-            </motion.p>
-            <h2 className="display text-4xl md:text-5xl text-gray-900">
-              We speak your <br className="md:hidden" />
-              <span className="text-brand">platform&apos;s language.</span>
-            </h2>
-            <p className="text-lg text-gray-500 max-w-2xl mx-auto mt-4">
-              Deep expertise across the most powerful automation and CRM platforms in the market.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {platforms.map((platform, i) => {
-              const Icon = platform.icon;
-              return (
-                <motion.div 
-                  key={i} 
-                  variants={cardVariants}
-                  whileHover={{ y: -8 }}
-                  className="group"
-                >
-                  <div className="relative flex flex-col p-8 border border-gray-200 rounded-2xl hover:border-brand/40 hover:shadow-xl hover:shadow-orange-50/50 transition-all duration-300 bg-white overflow-hidden h-full">
-                    <div className={`absolute inset-0 bg-gradient-to-br ${platform.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
-                    
-                    {/* Badge */}
-                    {platform.badge && (
-                      <motion.div 
-                        className="absolute top-4 right-4 z-10"
-                        initial={{ rotate: 0 }}
-                        whileHover={{ rotate: 12 }}
-                      >
-                        <span className="text-[10px] font-bold bg-brand text-white px-3 py-1 rounded-full">
-                          {platform.badge}
-                        </span>
-                      </motion.div>
-                    )}
-
-                    <div className="relative">
-                      <motion.div 
-                        className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand/20 to-brand/10 border border-brand/20 flex items-center justify-center mb-5 group-hover:bg-brand group-hover:border-brand transition-all duration-300"
-                        whileHover={{ rotate: -8, scale: 1.1 }}
-                      >
-                        <Icon className="h-7 w-7 text-brand group-hover:text-white transition-colors" />
-                      </motion.div>
-
-                      <motion.h3 
-                        className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-brand transition-colors"
-                        whileHover={{ x: 4 }}
-                      >
-                        {platform.title}
-                      </motion.h3>
-                      <p className="text-sm text-gray-500 leading-relaxed mb-5 flex-1">
-                        {platform.description}
-                      </p>
-
-                      <ul className="space-y-2">
-                        {platform.capabilities.map((cap, j) => (
-                          <motion.li 
-                            key={j} 
-                            className="flex items-center gap-2 text-xs text-gray-600"
-                            initial={{ opacity: 0, x: -10 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.5 + j * 0.1 }}
-                          >
-                            <CheckCircle2 className="h-3.5 w-3.5 text-brand flex-shrink-0" />
-                            {cap}
-                          </motion.li>
-                        ))}
-                      </ul>
-                      {platformPaths[platform.slug] ? (
-                        <Link
-                          href={platformPaths[platform.slug]}
-                          className="relative mt-5 inline-flex items-center gap-1 text-sm font-semibold text-brand"
-                        >
-                          View {platform.title} automation
-                          <ArrowRight className="h-4 w-4" />
-                        </Link>
-                      ) : null}
-                    </div>
-                  </div>
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
-      </motion.section>
-
-      {/* ── FEATURES ── */}
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
-        variants={staggerContainer}
-        className="py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden"
-      >
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_50%_30%,rgba(249,115,22,0.03),transparent)]" />
-        <div className="relative max-w-[84vw] px-6 mx-auto">
-          <motion.div variants={fadeUp} className="text-center mb-14">
-            <p className="eyebrow text-brand text-[11px] mb-3">Why Choose Us</p>
-            <h2 className="display text-4xl md:text-5xl text-gray-900">
-              Built for <span className="text-brand">production</span>
-            </h2>
-            <p className="text-lg text-gray-500 max-w-2xl mx-auto mt-4">
-              Every automation we build is designed for real-world reliability, scale, and easy maintenance.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {features.map((feature, i) => {
-              const Icon = feature.icon;
-              return (
+      {/* ── HERO: same layout as the other hubs; hero + marquee fill the first screen ── */}
+      <div className="flex min-h-[calc(100svh-4rem)] flex-col">
+        <section className="relative isolate flex flex-1 items-center overflow-hidden bg-paper py-12 md:py-10">
+          <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-dot-pattern opacity-30" />
+          <div className="relative mx-auto w-full max-w-[84vw] px-6">
+            <HeroBreadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Platforms', href: '/platforms' }]} />
+            <div className="grid w-full grid-cols-1 items-center gap-10 md:grid-cols-[1.15fr_1fr] lg:gap-16">
+              <motion.div initial="hidden" animate="visible" variants={heroStagger}>
                 <motion.div
-                  key={i}
-                  variants={cardVariants}
-                  whileHover={{ 
-                    y: -8,
-                    transition: { duration: 0.2 }
-                  }}
-                  className="relative group bg-white border border-gray-200 rounded-2xl p-6 text-center hover:border-brand/40 hover:shadow-xl hover:shadow-orange-50/30 transition-all duration-300"
+                  variants={heroIn}
+                  className="eyebrow mb-5 inline-flex items-center gap-2 border border-brand px-3 py-1 text-xs text-brand md:mb-7 md:text-sm"
                 >
-                  <motion.div 
-                    className="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-br from-brand/20 to-brand/10 flex items-center justify-center mb-4 group-hover:bg-brand group-hover:scale-110 transition-all duration-300"
-                    whileHover={{ rotate: 8 }}
-                  >
-                    <Icon className="h-6 w-6 text-brand group-hover:text-white transition-colors" />
-                  </motion.div>
-                  <h3 className="text-sm font-semibold text-gray-900 mb-2">{feature.title}</h3>
-                  <p className="text-xs text-gray-500 leading-relaxed">{feature.desc}</p>
+                  <span>Platforms</span>
                 </motion.div>
+                <motion.h1
+                  variants={heroIn}
+                  className="display mb-5 max-w-4xl text-4xl leading-[1.05] sm:text-5xl md:mb-7 md:text-6xl lg:text-7xl"
+                >
+                  AI Automation on <span className="display-italic text-brand">Your Existing Platforms</span>
+                </motion.h1>
+                <motion.p
+                  variants={heroIn}
+                  className="max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl"
+                >
+                  We build and maintain automations on Zapier, Make, n8n, HubSpot, GoHighLevel and Airtable, and connect
+                  them to Salesforce or any tool with an API. No rip-and-replace: your workflows run on the stack your
+                  team already knows.
+                </motion.p>
+                <motion.div variants={heroIn}>
+                  <HeroCta />
+                </motion.div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
+                className="flex md:justify-end"
+              >
+                <ProductLeadForm product="AI automation platforms" variant="hero" id="get-started" />
+              </motion.div>
+            </div>
+          </div>
+        </section>
+        <Marquee items={platforms.map((p) => p.title)} />
+      </div>
+
+      {/* ── 01 PLATFORMS (homepage bordered-grid layout) ── */}
+      <section className="bg-paper py-16 md:py-24">
+        <div className="mx-auto max-w-[84vw] px-6">
+          <SectionLabel label="Platforms we implement" marker="01" />
+          <div className="mb-8 flex flex-col gap-6 md:mb-10 md:grid md:grid-cols-2 md:gap-8">
+            <h2 className="display text-4xl sm:text-5xl md:text-6xl">
+              We speak your <span className="display-italic text-brand">platform&apos;s language</span>
+            </h2>
+            <p className="text-base leading-relaxed text-muted-foreground md:self-end md:text-right md:text-lg">
+              Hands-on delivery on the automation and CRM platforms most teams already run, plus custom API work
+              for everything else.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-px border border-border bg-border md:grid-cols-2 lg:grid-cols-4">
+            {platforms.map((platform) => {
+              const Icon = platform.icon;
+              const href = platformPaths[platform.slug] ?? '/free-automation-audit';
+              const linkText = platformPaths[platform.slug] ? `View ${platform.title.split(' (')[0]} automation` : 'Discuss your setup';
+              return (
+                <Link
+                  key={platform.slug}
+                  href={href}
+                  className="group flex h-full flex-col bg-paper p-6 transition-colors duration-300 hover:bg-ink hover:text-white md:p-8"
+                >
+                  <div className="mb-6 flex items-start justify-between gap-3">
+                    <span className="flex h-11 w-11 items-center justify-center border border-brand/30 bg-brand/10 transition-colors duration-300 group-hover:border-brand group-hover:bg-brand">
+                      <Icon className="h-5 w-5 text-brand transition-colors duration-300 group-hover:text-white" aria-hidden="true" />
+                    </span>
+                    <span className="eyebrow text-right text-[11px] text-muted-foreground transition-colors duration-300 group-hover:text-white/50">
+                      {platform.badge}
+                    </span>
+                  </div>
+                  <h3 className="display mb-3 text-2xl">{platform.title}</h3>
+                  <p className="mb-6 text-sm leading-relaxed text-muted-foreground transition-colors duration-300 group-hover:text-white/70">
+                    {platform.description}
+                  </p>
+                  <ul className="mt-auto divide-y divide-border border-t border-border transition-colors duration-300 group-hover:divide-white/10 group-hover:border-white/10">
+                    {platform.capabilities.map((c) => (
+                      <li key={c} className="flex items-center gap-2.5 py-2.5 text-sm text-ink transition-colors duration-300 group-hover:text-white/80">
+                        <CheckCircle2 className="h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
+                        {c}
+                      </li>
+                    ))}
+                  </ul>
+                  <span className="eyebrow mt-6 inline-flex items-center gap-2 text-xs text-muted-foreground transition-colors duration-300 group-hover:text-brand">
+                    {linkText}
+                    <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
+                  </span>
+                </Link>
               );
             })}
           </div>
         </div>
-      </motion.section>
+      </section>
 
-      {/* ── TESTIMONIALS ── */}
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
-        variants={staggerContainer}
-        className="py-24 bg-white relative"
-      >
-        <div className="max-w-[84vw] px-6 mx-auto">
-          <motion.div variants={fadeUp} className="text-center mb-14">
-            <p className="eyebrow text-brand text-[11px] mb-3">Testimonials</p>
-            <h2 className="display text-4xl md:text-5xl text-gray-900">
-              Trusted by <span className="text-brand">teams</span> like yours
+      {/* ── 02 BUILT FOR PRODUCTION (homepage dark section) ── */}
+      <section className="bg-ink py-16 text-white md:py-24">
+        <div className="mx-auto max-w-[84vw] px-6">
+          <SectionLabel label="Why Clickmasters" marker="02" dark />
+          <div className="mb-8 flex flex-col gap-6 md:mb-10 md:grid md:grid-cols-2 md:gap-8">
+            <h2 className="display text-4xl sm:text-5xl md:text-6xl">
+              Built for <span className="display-italic text-brand">production</span>
             </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, i) => (
-              <motion.div
-                key={i}
-                variants={cardVariants}
-                whileHover={{ 
-                  y: -4,
-                  boxShadow: '0 20px 60px rgba(249,115,22,0.1)',
-                  transition: { duration: 0.2 }
-                }}
-                className="relative bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-2xl p-8 hover:border-brand/30 transition-all duration-300"
-              >
-                <div className="absolute top-0 right-0 p-4">
-                  <span className="text-xs font-medium text-brand bg-brand/10 px-3 py-1 rounded-full">
-                    {testimonial.platform}
-                  </span>
-                </div>
-                <div className="relative">
-                  <motion.div
-                    initial={{ scale: 0.8, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
-                    transition={{ delay: 0.3 }}
-                    className="text-4xl text-brand/20 font-serif mb-3"
-                  >
-                    &quot;
-                  </motion.div>
-                  <p className="text-sm text-gray-600 leading-relaxed mb-4 italic">
-                    {testimonial.quote}
-                  </p>
-                  <div className="flex items-center gap-3">
-                    <div>
-                      <p className="text-sm font-semibold text-gray-900">{testimonial.author}</p>
-                      <p className="text-xs text-gray-500">{testimonial.role}, {testimonial.company}</p>
-                    </div>
+            <p className="text-base leading-relaxed text-white/70 md:self-end md:text-right md:text-lg">
+              Every automation we build is designed for real-world reliability, scale and easy maintenance.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
+            {features.map((f, i) => {
+              const Icon = f.icon;
+              return (
+                <div key={f.title} className="flex h-full flex-col bg-ink p-6 md:p-8">
+                  <div className="mb-6 flex items-start justify-between">
+                    <Icon className="h-6 w-6 text-brand" aria-hidden="true" />
+                    <span className="eyebrow text-xs text-white/40">{String(i + 1).padStart(2, '0')}</span>
                   </div>
+                  <h3 className="display mb-3 text-2xl">{f.title}</h3>
+                  <p className="text-sm leading-relaxed text-white/70">{f.desc}</p>
                 </div>
-              </motion.div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 03 TESTIMONIALS ── */}
+      <section className="bg-paper py-16 md:py-24">
+        <div className="mx-auto max-w-[84vw] px-6">
+          <SectionLabel label="Testimonials" marker="03" />
+          <h2 className="display mb-8 text-4xl sm:text-5xl md:mb-10 md:text-6xl">
+            Trusted by teams <span className="display-italic text-brand">like yours</span>
+          </h2>
+          <div className="grid grid-cols-1 gap-px border border-border bg-border md:grid-cols-2">
+            {testimonials.map((t) => (
+              <figure key={t.author} className="flex h-full flex-col bg-paper p-6 md:p-10">
+                <span className="eyebrow mb-6 text-xs text-brand">{t.platform}</span>
+                <blockquote className="display-italic mb-8 text-2xl leading-snug md:text-3xl">
+                  &ldquo;{t.quote}&rdquo;
+                </blockquote>
+                <figcaption className="mt-auto border-t border-border pt-5">
+                  <p className="font-medium text-ink">{t.author}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {t.role}, {t.company}
+                  </p>
+                </figcaption>
+              </figure>
             ))}
           </div>
         </div>
-      </motion.section>
+      </section>
 
-      {/* ── CTA ── */}
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
-        variants={fadeUp}
-        className="py-24 relative overflow-hidden bg-gradient-to-br from-gray-950 via-gray-900 to-black"
-      >
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_30%,rgba(249,115,22,0.08),transparent)]" />
-        <div className={`absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.03"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30`} />
-
-        <div className="relative max-w-[84vw] px-6 mx-auto">
-          <motion.div 
-            className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl px-8 py-16 md:px-16 md:py-20 text-center"
-            whileHover={{ borderColor: 'rgba(249,115,22,0.3)' }}
-          >
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[2px] bg-gradient-to-r from-transparent via-brand/40 to-transparent" />
-
-            <div className="relative">
-              <motion.div
-                animate={{ 
-                  scale: [1, 1.1, 1],
-                  opacity: [0.5, 1, 0.5]
-                }}
-                transition={{ duration: 3, repeat: Infinity }}
-                className="text-brand/20 text-6xl mb-4"
-              >
-                <Cpu className="h-16 w-16 mx-auto" />
-              </motion.div>
-
-              <motion.p 
-                className="text-sm font-mono text-brand/70 uppercase tracking-[0.2em] mb-4 flex items-center justify-center gap-3"
-                animate={{ letterSpacing: ['0.2em', '0.3em', '0.2em'] }}
-                transition={{ duration: 3, repeat: Infinity }}
-              >
-                <span className="inline-block w-2 h-2 rounded-full bg-brand animate-pulse" />
-                READY TO CONNECT YOUR STACK?
-                <span className="inline-block w-2 h-2 rounded-full bg-brand animate-pulse delay-75" />
-              </motion.p>
-
-              <motion.h2 
-                className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6 text-white"
-                variants={fadeUp}
-              >
-                Let&apos;s build your <br />
-                <span className="text-brand">
-                  automation stack.
-                </span>
-              </motion.h2>
-
-              <motion.p 
-                className="text-lg text-gray-400 max-w-xl mx-auto leading-relaxed mb-10"
-                variants={fadeUp}
-              >
-                We&apos;ll map your current platforms, identify integration opportunities, and design a workflow that runs itself.
-              </motion.p>
-
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.2 }}
-              >
-                <Link
-                  href="/contact"
-                  className="group relative inline-flex items-center gap-3 bg-brand hover:bg-orange-600 text-white px-10 py-4 rounded-full font-semibold text-base transition-all shadow-lg shadow-brand/30 hover:shadow-brand/50"
-                >
-                  <span>Start your integration</span>
-                  <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  <motion.span 
-                    className="absolute inset-0 rounded-full bg-white/10"
-                    initial={{ scale: 0 }}
-                    whileHover={{ scale: 1 }}
-                    transition={{ duration: 0.3 }}
-                  />
-                </Link>
-              </motion.div>
-            </div>
-          </motion.div>
-        </div>
-      </motion.section>
+      <CtaBand
+        data={{
+          heading: "Let's build your automation stack.",
+          subheading:
+            "We'll map your current platforms, find the integration opportunities and design a workflow that runs itself.",
+          cta: { text: 'Book Your Free Automation Audit', link: '/free-automation-audit' },
+        }}
+        ctaPosition="page-end"
+      />
     </div>
   );
 }

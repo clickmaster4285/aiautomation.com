@@ -20,16 +20,21 @@ import {
   Bot,
   TrendingUp,
 } from 'lucide-react';
+import HeroBreadcrumb from '@/components/shared/HeroBreadcrumb';
+import HeroCta from '@/components/shared/HeroCta';
 
 type ContactPageProps = {
   /** H1: plain lead words, then the accented words. Defaults to the /contact heading. */
   heading?: { lead: string; accent: string };
   intro?: string;
+  /** Last breadcrumb item; defaults to Contact. */
+  crumb?: { label: string; href: string };
 };
 
 export default function ContactPage({
   heading = { lead: "Let's talk", accent: 'automation.' },
   intro = "Whether you're ready to automate something specific or just want to know if it's worth it we're easy to reach and we'll give you a straight answer either way.",
+  crumb = { label: 'Contact', href: '/contact' },
 }: ContactPageProps) {
   // State for the main (middle) form
   const [formData, setFormData] = useState({
@@ -158,6 +163,7 @@ export default function ContactPage({
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-dot-pattern opacity-30" />
 
         <div className="relative mx-auto w-full max-w-[84vw] px-6">
+          <HeroBreadcrumb items={[{ label: 'Home', href: '/' }, crumb]} />
           <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12 xl:gap-16">
             
             {/* Left: Text */}
@@ -198,6 +204,9 @@ export default function ContactPage({
                 <p className="text-sm text-muted-foreground">
                   Every enquiry is saved straight to our CRM, so nothing gets lost.
                 </p>
+              </motion.div>
+              <motion.div variants={fadeInUp}>
+                <HeroCta href="#leadForm" text="Send us a message" />
               </motion.div>
             </motion.div>
 

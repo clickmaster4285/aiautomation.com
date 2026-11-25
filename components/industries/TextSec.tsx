@@ -14,12 +14,11 @@ import {
   Link2,
 } from 'lucide-react';
 import type { Section } from '@/content/type';
-import { playfair } from '@/lib/fonts';
 
-export default function TextSec({ section, bg = 'bg-white' }: { section: Section; bg?: string }) {
+export default function TextSec({ section, bg = 'bg-paper' }: { section: Section; bg?: string }) {
   const rawContent = Array.isArray(section.content) ? section.content : [section.content];
   const content = rawContent.filter((p): p is string => typeof p === 'string' && p.trim().length > 0);
-  const isBlack = bg === 'bg-black';
+  const isBlack = bg === 'bg-ink';
   const heading = section.heading || '';
 
   const isReturnSection = content.length === 1 && /return|results|value/i.test(heading);
@@ -31,8 +30,7 @@ export default function TextSec({ section, bg = 'bg-white' }: { section: Section
   return (
     <>
       <section
-        className={`relative py-24 md:py-32 overflow-hidden`}
-        style={{ background: isBlack ? '#000' : 'oklch(0.95 0.01 0)' }}
+        className={`relative overflow-hidden py-16 md:py-24 ${bg}`}
       >
         <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-transparent via-brand/30 to-transparent" />
 
@@ -48,17 +46,9 @@ export default function TextSec({ section, bg = 'bg-white' }: { section: Section
             {/* Heading & Badge */}
             {heading && (
               <motion.div variants={fadeInUp} className="mb-12">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="h-px w-12 bg-brand" />
-                  <span className="text-brand text-sm font-semibold tracking-widest uppercase font-sans">Insight</span>
-                </div>
+                <p className="eyebrow mb-4 text-brand">Insight</p>
                 <h2
-                  className={`tracking-tight leading-tight ${isBlack ? 'text-white' : 'text-gray-900'}`}
-                  style={{
-                    fontFamily: `${playfair.style.fontFamily}, Georgia, serif`,
-                    fontWeight: 900,
-                    fontSize: 'clamp(2rem, 5vw, 3.5rem)',
-                  }}
+                  className={`display text-4xl leading-tight sm:text-5xl md:text-6xl ${isBlack ? 'text-white' : 'text-ink'}`}
                 >
                   {heading}
                 </h2>
@@ -79,8 +69,8 @@ export default function TextSec({ section, bg = 'bg-white' }: { section: Section
               // ── Integration Section ──
               <motion.div variants={fadeInUp} className="relative">
                 <div
-                  className={`relative rounded-3xl p-8 md:p-12 overflow-hidden border ${
-                    isBlack ? 'bg-gray-800/30 border-gray-700' : 'bg-white border-gray-200 shadow-sm'
+                  className={`relative overflow-hidden border p-6 md:p-10 ${
+                    isBlack ? 'border-white/10 bg-white/5' : 'border-border bg-paper'
                   }`}
                 >
                   <div className="absolute -top-20 -right-20 w-64 h-64 bg-brand/5 rounded-full blur-3xl" />
@@ -112,10 +102,10 @@ export default function TextSec({ section, bg = 'bg-white' }: { section: Section
                       ].map((item, idx) => (
                         <div
                           key={idx}
-                          className={`p-4 rounded-xl border ${
+                          className={`border p-4 ${
                             isBlack
-                              ? 'bg-gray-800/40 border-gray-700'
-                              : 'bg-gray-50 border-gray-200'
+                              ? 'border-white/10 bg-ink'
+                              : 'border-border bg-secondary'
                           }`}
                         >
                           <div className="flex items-center gap-2 mb-1">
@@ -144,8 +134,8 @@ export default function TextSec({ section, bg = 'bg-white' }: { section: Section
               // ── Start Section ──
               <motion.div variants={fadeInUp} className="relative">
                 <div
-                  className={`relative rounded-3xl p-8 md:p-12 overflow-hidden border ${
-                    isBlack ? 'bg-gray-800/30 border-gray-700' : 'bg-white border-gray-200 shadow-sm'
+                  className={`relative overflow-hidden border p-6 md:p-10 ${
+                    isBlack ? 'border-white/10 bg-white/5' : 'border-border bg-paper'
                   }`}
                 >
                   <div className="absolute -top-20 -right-20 w-64 h-64 bg-brand/5 rounded-full blur-3xl" />
@@ -207,8 +197,8 @@ export default function TextSec({ section, bg = 'bg-white' }: { section: Section
               // ── Admin Section ──
               <motion.div variants={fadeInUp} className="relative">
                 <div
-                  className={`relative rounded-3xl p-8 md:p-12 overflow-hidden border ${
-                    isBlack ? 'bg-gray-800/30 border-gray-700' : 'bg-white border-gray-200 shadow-sm'
+                  className={`relative overflow-hidden border p-6 md:p-10 ${
+                    isBlack ? 'border-white/10 bg-white/5' : 'border-border bg-paper'
                   }`}
                 >
                   <div className="absolute -top-20 -right-20 w-64 h-64 bg-brand/5 rounded-full blur-3xl" />
@@ -267,8 +257,8 @@ export default function TextSec({ section, bg = 'bg-white' }: { section: Section
               // ── Privacy Section ──
               <motion.div variants={fadeInUp} className="relative">
                 <div
-                  className={`relative rounded-3xl p-8 md:p-12 overflow-hidden border ${
-                    isBlack ? 'bg-gray-800/30 border-gray-700' : 'bg-white border-gray-200 shadow-sm'
+                  className={`relative overflow-hidden border p-6 md:p-10 ${
+                    isBlack ? 'border-white/10 bg-white/5' : 'border-border bg-paper'
                   }`}
                 >
                   <div className="absolute -top-20 -right-20 w-64 h-64 bg-[oklch(0.5_0.01_0)]/5 rounded-full blur-3xl" />
@@ -312,10 +302,10 @@ export default function TextSec({ section, bg = 'bg-white' }: { section: Section
               // ── Return/Results Section ──
               <motion.div variants={fadeInUp} className="relative">
                 <div
-                  className={`relative rounded-3xl p-8 md:p-12 overflow-hidden border ${
+                  className={`relative overflow-hidden border p-6 md:p-10 ${
                     isBlack
-                      ? 'bg-gray-800/30 border-gray-700'
-                      : 'bg-[oklch(0.5_0.01_0)]/10 border-[oklch(0.5_0.01_0)]/20'
+                      ? 'border-white/10 bg-white/5'
+                      : 'border-brand/20 bg-brand/5'
                   }`}
                 >
                   <div className="absolute -top-20 -right-20 w-64 h-64 bg-[oklch(0.5_0.01_0)]/5 rounded-full blur-3xl" />

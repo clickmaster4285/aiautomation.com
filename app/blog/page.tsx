@@ -10,6 +10,7 @@ import { ArrowRight, Calendar, Clock, User, Tag, BrainCircuit, BookOpen } from '
 import { PageWrapper } from '@/components/solutions/layout/PageWrapper';
 import { Section } from '@/components/solutions/layout/Section';
 import { BLOG_RESOURCE_LINKS } from '@/lib/internal-links';
+import HeroBreadcrumb from '@/components/shared/HeroBreadcrumb';
 
 // Dot component - declared directly in the page
 const Dot = ({ className }: { className?: string }) => {
@@ -110,10 +111,11 @@ export default function BlogPage() {
       {/* Hero Section - Matching the homepage style with larger main heading */}
       <section
         ref={ref}
-        className="relative pt-10 pb-14 md:pt-16 md:pb-20 overflow-hidden bg-paper isolate"
+        className="relative flex min-h-[calc(100svh-4rem)] items-center overflow-hidden bg-paper isolate py-12 md:py-16"
       >
-        <div className="mx-auto max-w-[84vw] px-6 relative z-10">
-          <div className="relative grid md:grid-cols-[1fr] gap-4 md:gap-6 mt-4 md:mt-6 text-center">
+        <div className="mx-auto w-full max-w-[84vw] px-6 relative z-10">
+          <HeroBreadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Blog', href: '/blog' }]} className="mb-4 justify-center md:mb-6" />
+          <div className="relative grid md:grid-cols-[1fr] gap-4 md:gap-6 text-center">
             {/* TEXT - Centered with larger main heading */}
             <div className="relative z-10 py-4 md:py-6">
               <h1 className="display text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-[1.05]">

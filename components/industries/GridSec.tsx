@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer } from './Shared/animation';
 import { Star } from 'lucide-react';
-import { playfair } from '@/lib/fonts';
 import { CONTENT_ICONS } from '@/components/shared/content-icons';
 import type { Section } from '@/content/type';
 
@@ -140,14 +139,13 @@ function PeekingRobot({ isBlack }: { isBlack: boolean }) {
   );
 }
 
-export default function GridSec({ section, bg = 'bg-white' }: { section: Section; bg?: string }) {
+export default function GridSec({ section, bg = 'bg-paper' }: { section: Section; bg?: string }) {
   const items = section.items || [];
-  const isBlack = bg === 'bg-black';
+  const isBlack = bg === 'bg-ink';
 
   return (
     <>
-      <section className={`relative py-16 sm:py-20 md:py-24 lg:py-32 overflow-hidden ${bg}`}>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_50%_at_20%_80%,rgba(249,115,22,0.05),transparent)]" />
+      <section className={`relative overflow-hidden py-16 sm:py-20 md:py-24 ${bg}`}>
 
         <div className="mx-auto max-w-[84vw] px-6">
           <motion.div
@@ -158,26 +156,20 @@ export default function GridSec({ section, bg = 'bg-white' }: { section: Section
           >
             {/* Heading */}
             <motion.div variants={fadeInUp} className="mb-10 sm:mb-12 md:mb-16">
-              <div className="flex items-center gap-3 mb-3 sm:mb-4">
-                <div className="h-px w-8 sm:w-12 bg-brand" />
-                <span className="text-brand text-xs sm:text-sm font-semibold tracking-widest uppercase font-sans">
+              <div className="mb-3 sm:mb-4">
+                <span className="eyebrow text-brand">
                   Overview
                 </span>
               </div>
               {section.heading && (
                 <h2
-                  className={`tracking-tight leading-tight max-w-2xl ${isBlack ? 'text-white' : 'text-gray-900'}`}
-                  style={{
-                    fontFamily: `${playfair.style.fontFamily}, Georgia, serif`,
-                    fontWeight: 900,
-                    fontSize: 'clamp(1.8rem, 5vw, 3.5rem)',
-                  }}
+                  className={`display max-w-2xl text-4xl leading-tight sm:text-5xl md:text-6xl ${isBlack ? 'text-white' : 'text-ink'}`}
                 >
                   {section.heading}
                 </h2>
               )}
               {section.subheading && (
-                <p className={`mt-3 sm:mt-4 text-base sm:text-lg max-w-2xl leading-relaxed font-sans ${isBlack ? 'text-gray-400' : 'text-gray-500'}`}>
+                <p className={`mt-3 max-w-2xl text-base leading-relaxed sm:mt-4 sm:text-lg ${isBlack ? 'text-white/60' : 'text-muted-foreground'}`}>
                   {section.subheading}
                 </p>
               )}
@@ -196,22 +188,22 @@ export default function GridSec({ section, bg = 'bg-white' }: { section: Section
                       variants={fadeInUp}
                       whileHover={{ scale: 1.02 }}
                       transition={{ duration: 0.2 }}
-                      className={`group flex gap-4 sm:gap-5 p-5 sm:p-7 rounded-2xl border transition-all duration-300 ${
+                      className={`group flex gap-4 border p-5 transition-colors duration-300 sm:gap-5 sm:p-7 ${
                         isBlack
-                          ? 'bg-gray-900/60 border-gray-800 hover:border-[oklch(0.5_0.01_0)]/30 hover:bg-gray-900'
-                          : 'bg-gray-50 border-gray-100 hover:border-[oklch(0.5_0.01_0)]/30 hover:bg-[oklch(0.5_0.01_0)]/5'
+                          ? 'border-white/10 bg-ink hover:border-brand/50'
+                          : 'border-border bg-paper hover:border-brand/50'
                       }`}
                     >
-                      <div className="flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[oklch(0.5_0.01_0)]/10 flex items-center justify-center mt-0.5 group-hover:bg-brand transition-colors duration-300">
+                      <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center border border-brand/30 bg-brand/10 transition-colors duration-300 group-hover:bg-brand sm:h-10 sm:w-10">
                         {IconComponent && (
-                          <IconComponent className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[oklch(0.5_0.01_0)] group-hover:text-white transition-colors duration-300" />
+                          <IconComponent className="h-3.5 w-3.5 text-brand transition-colors duration-300 group-hover:text-white sm:h-4 sm:w-4" />
                         )}
                       </div>
                       <div>
-                        <h3 className={`font-bold mb-1.5 sm:mb-2 font-sans text-sm sm:text-base ${isBlack ? 'text-white' : 'text-gray-900'}`}>
+                        <h3 className={`display mb-1.5 text-sm sm:mb-2 sm:text-base ${isBlack ? 'text-white' : 'text-ink'}`}>
                           {item.title}
                         </h3>
-                        <p className={`text-xs sm:text-sm leading-relaxed font-sans ${isBlack ? 'text-gray-400' : 'text-gray-500'}`}>
+                        <p className={`text-xs leading-relaxed sm:text-sm ${isBlack ? 'text-white/60' : 'text-muted-foreground'}`}>
                           {item.description}
                         </p>
                       </div>

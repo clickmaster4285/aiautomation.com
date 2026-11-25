@@ -4,24 +4,15 @@ import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer, scaleUp } from './Shared/animation';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import { playfair } from '@/lib/fonts';
 import type { Section } from '@/content/type';
 
-export default function CTASec({ section, bg = 'bg-black' }: { section: Section; bg?: string }) {
-  const isBlack = bg === 'bg-black';
+export default function CTASec({ section, bg = 'bg-ink' }: { section: Section; bg?: string }) {
+  const isBlack = bg === 'bg-ink';
 
   return (
     <>
-      <section className={`relative py-16 sm:py-20 md:py-24 lg:py-32 overflow-hidden ${bg} text-center`}>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,rgba(249,115,22,0.08),transparent)]" />
-        <motion.div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] sm:w-[700px] h-[500px] sm:h-[700px] bg-brand/8 rounded-full blur-3xl"
-          animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.6, 0.3] }}
-          transition={{ duration: 6, repeat: Infinity }}
-        />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
-
-        <div className="mx-auto max-w-[84vw] px-6 relative">
+      <section className={`relative overflow-hidden py-16 text-center sm:py-20 md:py-24 ${bg}`}>
+        <div className="relative mx-auto max-w-[84vw] px-6">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -29,19 +20,14 @@ export default function CTASec({ section, bg = 'bg-black' }: { section: Section;
             variants={staggerContainer}
             className="max-w-3xl mx-auto text-center"
           >
-            <motion.div variants={fadeInUp} className="brand-badge inline-flex items-center gap-2 rounded-full border border-brand/30 bg-brand/10 px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm text-brand backdrop-blur-sm mb-4 sm:mb-6">
+            <motion.div variants={fadeInUp} className="eyebrow mb-4 inline-flex items-center gap-2 border border-brand/30 bg-brand/10 px-3 py-1.5 text-xs text-brand sm:mb-6 sm:px-4 sm:py-2">
               <span>Get Started</span>
             </motion.div>
 
             {section.heading && (
               <motion.h2
                 variants={scaleUp}
-                className={`tracking-tight leading-tight mb-4 sm:mb-6 ${isBlack ? 'text-white' : 'text-gray-900'}`}
-                style={{
-                  fontFamily: `${playfair.style.fontFamily}, Georgia, serif`,
-                  fontWeight: 900,
-                  fontSize: 'clamp(1.8rem, 5vw, 3.5rem)',
-                }}
+                className={`display mb-4 text-4xl leading-tight sm:mb-6 sm:text-5xl md:text-6xl ${isBlack ? 'text-white' : 'text-ink'}`}
               >
                 {section.heading}
               </motion.h2>
@@ -50,7 +36,7 @@ export default function CTASec({ section, bg = 'bg-black' }: { section: Section;
             {section.subheading && (
               <motion.p
                 variants={fadeInUp}
-                className={`text-sm sm:text-base md:text-lg mb-6 sm:mb-8 md:mb-10 leading-relaxed font-sans ${isBlack ? 'text-gray-400' : 'text-gray-600'}`}
+                className={`mb-6 text-sm leading-relaxed sm:mb-8 sm:text-base md:mb-10 md:text-lg ${isBlack ? 'text-white/60' : 'text-muted-foreground'}`}
               >
                 {section.subheading}
               </motion.p>
@@ -59,14 +45,13 @@ export default function CTASec({ section, bg = 'bg-black' }: { section: Section;
             {section.cta && (
               <motion.div variants={scaleUp}>
                 <motion.div
-                  whileHover={{ scale: 1.06, boxShadow: '0 0 40px rgba(249,115,22,0.4)' }}
+                  whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.95 }}
-                  className="inline-block relative group"
+                  className="inline-block"
                 >
-                  <div className="absolute inset-0 bg-brand/30 blur-xl rounded-full group-hover:blur-2xl transition-all" />
                   <Button
                     size="lg"
-                    className="relative bg-brand hover:bg-brand-dark text-white px-6 sm:px-8 md:px-10 py-4 sm:py-5 md:py-6 text-sm sm:text-base md:text-lg rounded-full font-semibold shadow-lg shadow-brand/25 font-sans"
+                    className="h-auto rounded-none bg-ink px-6 py-4 text-sm font-medium text-white shadow-none transition-colors hover:bg-brand sm:px-8 sm:py-5 sm:text-base md:px-10 md:text-lg"
                   >
                     {section.cta.text}
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />

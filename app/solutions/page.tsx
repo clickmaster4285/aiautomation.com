@@ -33,8 +33,9 @@ import {
   Store,
   Cloud,
   ArrowRight,
-  BrainCircuit
+  BrainCircuit,
 } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 
 export const metadata: Metadata = withSocialDefaults({
   title: 'AI Automation Solutions for Business Teams | Clickmasters',
@@ -45,7 +46,7 @@ export const metadata: Metadata = withSocialDefaults({
 });
 
 // Icon mapping for solution cards - Expanded with all icons
-const iconMap: Record<string, any> = {
+const iconMap: Record<string, LucideIcon> = {
   // Main Solutions
   'AI Chatbots': MessageSquare,
   'AI Chatbot Solutions': MessageSquare,
@@ -97,15 +98,14 @@ export default function SolutionsPage() {
   const heroData = {
     badge: 'Solutions',
     heading: 'AI Automation Solutions',
-    subheading: 'Intelligent automation systems built on the platforms you already use.',
+    subheading:
+      'Explore AI automation solutions built around the way your business works—from AI chatbots and AI agents to workflow, CRM, sales, customer support, document, and reporting automation. We connect your existing tools with practical, human-reviewed workflows that reduce repetitive tasks, improve response times, and help your team scale with confidence.',
     primaryCta: {
       text: 'Book a Free Audit',
       href: '/free-automation-audit',
     },
-    image: '/images/solution.jpg',
-    imageAlt: 'Glowing AI brain connected to robotic arms, machines and data dashboards',
-    imageWidth: 700,
-    imageHeight: 580,
+    leadName: 'AI automation solutions',
+    subheadingClassName: 'lg:text-[1.625rem]',
     textSize: 'xlarge' as const,
     breadcrumb: [
       { label: 'Home', href: '/' },

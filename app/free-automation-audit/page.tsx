@@ -15,6 +15,7 @@ export default function FreeAutomationAuditPage() {
   return (
     <ContactPage
       heading={{ lead: 'Book your free', accent: 'automation audit.' }}
+      crumb={{ label: 'Free automation audit', href: '/free-automation-audit' }}
       intro="We map one workflow with you, show where the hours go, and give you a straight answer on whether automation, and Clickmasters, is the right fit."
     />
   );

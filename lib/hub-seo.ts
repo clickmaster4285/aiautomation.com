@@ -84,10 +84,10 @@ export const hubSeo = {
     ],
   } satisfies HubSeo,
   industries: {
-    title: "AI Automation by Industry for Operating Teams | Clickmasters",
+    title: "AI Automation for Every Industry | Clickmasters",
     description:
-      "AI automation for healthcare, finance and accounting, e-commerce, SaaS, real estate, law firms and professional services, built around how each works.",
-    name: "AI Automation by Industry",
+      "Explore AI automation for healthcare, finance, law, e-commerce, SaaS, real estate and professional services—built around your industry's tools and workflows.",
+    name: "AI Automation for Every Industry",
     path: "/industries",
     crumbs: [
       { name: "Home", path: "/" },

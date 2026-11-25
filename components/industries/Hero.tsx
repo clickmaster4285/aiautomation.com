@@ -12,7 +12,7 @@ interface HeroProps {
   form?: {
     fields: Array<{ name: string; type: string; placeholder: string; required?: boolean }>;
     submitText?: string;
-    onSubmit?: (data: any) => void;
+    onSubmit?: (data: Record<string, FormDataEntryValue>) => void;
   };
 }
 
@@ -47,7 +47,7 @@ export default function Hero({ section, form, bg = 'bg-paper' }: HeroProps) {
       { name: 'message', type: 'textarea', placeholder: 'What do you want to automate?', required: true },
     ],
     submitText: 'Send Message',
-    onSubmit: (data: any) => console.log('Form submitted:', data),
+    onSubmit: (data: Record<string, FormDataEntryValue>) => console.log('Form submitted:', data),
   };
 
   const activeForm = form || defaultForm;
@@ -111,7 +111,7 @@ export default function Hero({ section, form, bg = 'bg-paper' }: HeroProps) {
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Button
                     size="lg"
-                    className="h-auto max-w-full whitespace-normal text-center sm:whitespace-nowrap bg-brand hover:bg-brand-dark text-white px-6 py-5 text-sm rounded-xl font-medium shadow-lg shadow-brand/30 transition-all"
+                    className="h-auto max-w-full rounded-none bg-ink px-6 py-4 text-sm font-medium text-white shadow-none transition-colors hover:bg-brand sm:whitespace-nowrap sm:py-5"
                   >
                     {primaryCta.text}
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -124,7 +124,7 @@ export default function Hero({ section, form, bg = 'bg-paper' }: HeroProps) {
                   key={idx}
                   href="#"
                   whileHover={{ x: 4 }}
-                  className="inline-flex items-center gap-1.5 text-white font-semibold text-base hover:text-brand transition-colors"
+                  className={`inline-flex items-center gap-1.5 text-base font-semibold transition-colors hover:text-brand ${isBlack ? 'text-white' : 'text-ink'}`}
                 >
                   {cta.text}
                   <ArrowRight className="h-4 w-4" />
@@ -140,18 +140,14 @@ export default function Hero({ section, form, bg = 'bg-paper' }: HeroProps) {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="w-full relative"
           >
-            <div className="absolute -inset-4 bg-brand/20 blur-3xl rounded-3xl opacity-70" />
-            <div className="absolute -inset-2 bg-brand/10 blur-2xl rounded-3xl" />
-
-            {/* Container: border-brand/10 instead of white */}
-            <div className="relative p-6 md:p-8 rounded-2xl border border-brand/10 bg-transparent backdrop-blur-sm shadow-xl">
-              <p className="text-2xl font-bold text-white mb-1">Quick Message</p>
-              <p className="text-gray-300 text-sm mb-6">We'll reply within a few hours.</p>
+            <div className={`relative border p-6 md:p-8 ${isBlack ? 'border-white/10 bg-ink' : 'border-border bg-paper'}`}>
+              <p className={`display mb-1 text-2xl ${isBlack ? 'text-white' : 'text-ink'}`}>Quick Message</p>
+              <p className={`mb-6 text-sm ${isBlack ? 'text-white/60' : 'text-muted-foreground'}`}>We&apos;ll reply within a few hours.</p>
 
               <form onSubmit={handleSubmit} className="space-y-4">
                 {activeForm.fields.map((field, idx) => (
                   <div key={idx}>
-                    <label className="block text-sm text-gray-200 mb-1 font-medium">
+                    <label className={`mb-1 block text-sm font-medium ${isBlack ? 'text-white/80' : 'text-ink'}`}>
                       {field.name.charAt(0).toUpperCase() + field.name.slice(1)}
                     </label>
                     {field.type === 'textarea' ? (
@@ -160,7 +156,7 @@ export default function Hero({ section, form, bg = 'bg-paper' }: HeroProps) {
                         placeholder={field.placeholder}
                         required={field.required}
                         rows={3}
-                        className="w-full bg-white/10 border border-brand/20 rounded-xl px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/30 transition-all duration-200 text-sm resize-none"
+                        className={`w-full resize-none border px-4 py-3 text-sm transition-colors focus:border-brand focus:outline-none ${isBlack ? 'border-white/15 bg-white/5 text-white placeholder:text-white/50' : 'border-border bg-paper text-ink placeholder:text-muted-foreground'}`}
                       />
                     ) : (
                       <input
@@ -168,18 +164,17 @@ export default function Hero({ section, form, bg = 'bg-paper' }: HeroProps) {
                         name={field.name}
                         placeholder={field.placeholder}
                         required={field.required}
-                        className="w-full bg-white/10 border border-brand/20 rounded-xl px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/30 transition-all duration-200 text-sm"
+                        className={`w-full border px-4 py-3 text-sm transition-colors focus:border-brand focus:outline-none ${isBlack ? 'border-white/15 bg-white/5 text-white placeholder:text-white/50' : 'border-border bg-paper text-ink placeholder:text-muted-foreground'}`}
                       />
                     )}
                   </div>
                 ))}
 
                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="relative group">
-                  <div className="absolute inset-0 bg-brand/20 blur-xl rounded-xl group-hover:blur-2xl transition-all" />
                   <Button
                     type="submit"
                     size="lg"
-                    className="relative w-full bg-brand hover:bg-brand-dark text-white py-6 text-base rounded-xl font-medium shadow-lg shadow-brand/30 transition-all"
+                    className="relative h-auto w-full rounded-none bg-ink py-4 text-sm font-medium text-white shadow-none transition-colors hover:bg-brand sm:py-5 sm:text-base"
                   >
                     <span className="flex items-center gap-2">
                       <Send className="h-4 w-4" />
@@ -189,7 +184,7 @@ export default function Hero({ section, form, bg = 'bg-paper' }: HeroProps) {
                   </Button>
                 </motion.div>
 
-                <p className="text-xs text-gray-400 text-center">
+                <p className={`text-center text-xs ${isBlack ? 'text-white/50' : 'text-muted-foreground'}`}>
                   We never share your data. Your details are used only to respond to your enquiry.
                 </p>
               </form>

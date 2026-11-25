@@ -16,11 +16,12 @@ const stagger: Variants = {
 
 interface Props {
   section: Section;
+  bg?: string;
   variant?: 'dark' | 'light';
 }
 
 /* ─── Animated right-side decorative background ─────────────────────────── */
-function RightPattern() {
+function RightPattern({ isBlack }: { isBlack: boolean }) {
   return (
     <div
       aria-hidden
@@ -158,7 +159,7 @@ function RightPattern() {
       <div
         className="absolute inset-y-0 left-0 w-32"
         style={{
-          background: 'linear-gradient(to right, var(--background), transparent)',
+          background: `linear-gradient(to right, ${isBlack ? '#1a1a1a' : 'var(--background)'}, transparent)`,
         }}
       />
     </div>
@@ -166,15 +167,16 @@ function RightPattern() {
 }
 
 /* ─── Main component ─────────────────────────────────────────────────────── */
-export default function FaqSec({ section, variant = 'light' }: Props) {
+export default function FaqSec({ section, bg = 'bg-paper' }: Props) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const items = section.items || [];
+  const isBlack = bg === 'bg-ink';
 
   return (
-    <section className="relative py-24 md:py-32 bg-background border-t border-border overflow-hidden">
+    <section className={`relative overflow-hidden border-t py-16 md:py-24 ${bg} ${isBlack ? 'border-white/10' : 'border-border'}`}>
 
       {/* Animated right-side patterns */}
-      <RightPattern />
+      <RightPattern isBlack={isBlack} />
 
       {/* Content */}
       <div className="relative mx-auto max-w-[84vw] px-6">
@@ -196,7 +198,7 @@ export default function FaqSec({ section, variant = 'light' }: Props) {
           {/* Title. Last word stays italic so each industry can use its own heading. */}
           <motion.h2
             variants={fadeUp}
-            className="display text-foreground mb-3"
+            className={`display mb-3 ${isBlack ? 'text-white' : 'text-ink'}`}
             style={{ fontSize: 'clamp(2.2rem, 5vw, 3.25rem)' }}
           >
             {(() => {
@@ -219,15 +221,15 @@ export default function FaqSec({ section, variant = 'light' }: Props) {
 
           <motion.p
             variants={fadeUp}
-            className="text-muted-foreground font-sans mb-12"
+            className={`mb-12 font-sans ${isBlack ? 'text-white/60' : 'text-muted-foreground'}`}
             style={{ fontSize: '0.9375rem', lineHeight: 1.65, maxWidth: '480px' }}
           >
-            Everything you need to know before getting started. Can't find what
-            you're looking for? We're here to help.
+            Everything you need to know before getting started. Can&apos;t find what
+            you&apos;re looking for? We&apos;re here to help.
           </motion.p>
 
           {/* Divider */}
-          <motion.div variants={fadeUp} className="border-t border-border" />
+          <motion.div variants={fadeUp} className={`border-t ${isBlack ? 'border-white/10' : 'border-border'}`} />
 
           {/* Accordion */}
           <motion.div variants={stagger}>
@@ -237,7 +239,7 @@ export default function FaqSec({ section, variant = 'light' }: Props) {
                 <motion.div
                   key={idx}
                   variants={fadeUp}
-                  className="border-b border-border"
+                  className={`border-b ${isBlack ? 'border-white/10' : 'border-border'}`}
                 >
                   <button
                     onClick={() => setOpenIndex(isOpen ? null : idx)}
@@ -246,7 +248,7 @@ export default function FaqSec({ section, variant = 'light' }: Props) {
                   >
                     <span
                       className={`font-semibold font-sans transition-colors duration-200 leading-snug text-[0.9375rem] ${
-                        isOpen ? 'text-brand' : 'text-foreground'
+                        isOpen ? 'text-brand' : isBlack ? 'text-white' : 'text-ink'
                       }`}
                     >
                       {item.title}
@@ -254,10 +256,10 @@ export default function FaqSec({ section, variant = 'light' }: Props) {
                     <span
                       className="flex-shrink-0 mt-0.5 w-[22px] h-[22px] flex items-center justify-center rounded-full border transition-all duration-[280ms]"
                       style={{
-                        borderColor: isOpen ? 'var(--brand)' : 'var(--border)',
+                        borderColor: isOpen ? 'var(--brand)' : isBlack ? 'rgba(255,255,255,.2)' : 'var(--border)',
                         background: isOpen ? 'color-mix(in oklch, var(--brand) 12%, transparent)' : 'transparent',
                         transform: isOpen ? 'rotate(45deg)' : 'rotate(0deg)',
-                        color: isOpen ? 'var(--brand)' : 'var(--muted-foreground)',
+                        color: isOpen ? 'var(--brand)' : isBlack ? 'rgba(255,255,255,.6)' : 'var(--muted-foreground)',
                       }}
                     >
                       {isOpen ? <X className="h-3 w-3" /> : <Plus className="h-3 w-3" />}
@@ -275,7 +277,7 @@ export default function FaqSec({ section, variant = 'light' }: Props) {
                         style={{ overflow: 'hidden' }}
                       >
                         <p
-                          className="pb-5 font-sans text-muted-foreground"
+                          className={`pb-5 font-sans ${isBlack ? 'text-white/60' : 'text-muted-foreground'}`}
                           style={{ fontSize: '0.9375rem', lineHeight: 1.75 }}
                         >
                           {item.description}
@@ -293,16 +295,16 @@ export default function FaqSec({ section, variant = 'light' }: Props) {
             variants={fadeUp}
             className="mt-9 flex items-center justify-between gap-4 rounded-[var(--radius)] px-6 py-5"
             style={{
-              background: 'color-mix(in oklch, var(--brand) 6%, transparent)',
+              background: isBlack ? 'color-mix(in oklch, var(--brand) 12%, transparent)' : 'color-mix(in oklch, var(--brand) 6%, transparent)',
               border: '1px solid color-mix(in oklch, var(--brand) 20%, transparent)',
             }}
           >
-            <p className="text-sm text-muted-foreground font-sans">
-              <strong className="text-foreground font-semibold">Still have questions?</strong>{' '}
+            <p className={`text-sm font-sans ${isBlack ? 'text-white/60' : 'text-muted-foreground'}`}>
+              <strong className={`font-semibold ${isBlack ? 'text-white' : 'text-ink'}`}>Still have questions?</strong>{' '}
               Our support team usually replies within a few hours.
             </p>
             <button
-              className="text-[0.8125rem] font-semibold text-brand border rounded-full px-4 py-1.5 whitespace-nowrap transition-colors hover:bg-[color-mix(in_oklch,var(--brand)_10%,transparent)]"
+              className="whitespace-nowrap border border-brand/40 px-4 py-1.5 text-[0.8125rem] font-semibold text-brand transition-colors hover:bg-brand/10"
               style={{ borderColor: 'color-mix(in oklch, var(--brand) 35%, transparent)' }}
             >
               Get in touch

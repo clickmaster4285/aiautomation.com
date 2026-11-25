@@ -1,6 +1,6 @@
 {
   "origin": "http://127.0.0.1:3456",
-  "crawledAt": "2026-11-25T12:00:25.200Z",
+  "crawledAt": "2026-11-25T13:12:36.440Z",
   "robotsTxt": "User-agent: *\r\nDisallow: /admin\r\nDisallow: /api\r\nDisallow: /login\r\n\r\nSitemap: https://clickmastersaiautomation.com/sitemap.xml",
   "sitemaps": [
     {
@@ -13,19 +13,19 @@
       "sitemap": "https://clickmastersaiautomation.com/sitemap_services.xml",
       "status": 200,
       "urls": 11,
-      "ttfb": 10
+      "ttfb": 13
     },
     {
       "sitemap": "https://clickmastersaiautomation.com/sitemap_solutions.xml",
       "status": 200,
       "urls": 217,
-      "ttfb": 12
+      "ttfb": 13
     },
     {
       "sitemap": "https://clickmastersaiautomation.com/sitemap_industries.xml",
       "status": 200,
       "urls": 7,
-      "ttfb": 12
+      "ttfb": 11
     },
     {
       "sitemap": "https://clickmastersaiautomation.com/sitemap_platforms.xml",
@@ -49,65 +49,66 @@
   "trailingSlashLinks": [],
   "externalBlankNoRel": [],
   "issueCounts": {
-    "thin main content": 4,
+    "thin main content": 3,
+    "long description": 1,
     "no contextual inbound links": 3,
     "noindex": 1,
     "not in sitemap": 1
   },
   "timing": {
-    "p50": 39,
-    "p90": 77,
-    "max": 557,
+    "p50": 41,
+    "p90": 62,
+    "max": 90,
     "slowest": [
       {
-        "path": "/services/ai-chatbots",
-        "ttfbMs": 557,
-        "bytes": 238680
+        "path": "/solutions/business-process-automation/for-saas",
+        "ttfbMs": 90,
+        "bytes": 272906
       },
       {
-        "path": "/services/ai-voice-agents",
-        "ttfbMs": 543,
-        "bytes": 265593
+        "path": "/about",
+        "ttfbMs": 87,
+        "bytes": 178658
       },
       {
-        "path": "/services/ai-knowledge-assistants",
-        "ttfbMs": 529,
-        "bytes": 226021
+        "path": "/contact",
+        "ttfbMs": 87,
+        "bytes": 183368
       },
       {
-        "path": "/services/ai-reporting-automation",
-        "ttfbMs": 510,
-        "bytes": 218313
+        "path": "/",
+        "ttfbMs": 87,
+        "bytes": 280173
       },
       {
-        "path": "/services/ai-agent-development",
-        "ttfbMs": 501,
-        "bytes": 269375
+        "path": "/platforms",
+        "ttfbMs": 86,
+        "bytes": 207850
       },
       {
-        "path": "/services/robotic-process-automation",
-        "ttfbMs": 497,
-        "bytes": 243489
+        "path": "/industries",
+        "ttfbMs": 86,
+        "bytes": 202658
       },
       {
-        "path": "/services/ai-lead-generation",
-        "ttfbMs": 492,
-        "bytes": 228953
+        "path": "/case-studies",
+        "ttfbMs": 86,
+        "bytes": 189814
       },
       {
-        "path": "/services/business-process-automation",
-        "ttfbMs": 456,
-        "bytes": 282002
+        "path": "/services",
+        "ttfbMs": 86,
+        "bytes": 234761
       },
       {
-        "path": "/services/ai-strategy-advisory",
-        "ttfbMs": 190,
-        "bytes": 217097
+        "path": "/solutions",
+        "ttfbMs": 86,
+        "bytes": 1009764
       },
       {
-        "path": "/solutions/ai-agents",
-        "ttfbMs": 178,
-        "bytes": 269090
+        "path": "/solutions/marketing-automation/with-hubspot",
+        "ttfbMs": 86,
+        "bytes": 255895
       }
     ]
   }

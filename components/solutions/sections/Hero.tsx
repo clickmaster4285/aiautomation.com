@@ -2,12 +2,13 @@
 'use client';
 
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
-import { ArrowRight, ChevronRight, Home } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { splitHeading } from '@/components/landingPage/Shared';
+import ProductLeadForm from '@/components/products/ProductLeadForm';
+import HeroBreadcrumb from '@/components/shared/HeroBreadcrumb';
 
 interface HeroSectionProps {
   badge?: string;
@@ -23,12 +24,14 @@ interface HeroSectionProps {
     href: string;
   };
   image?: string;
+  leadName?: string;
   /** Descriptive alt text for the hero image. Falls back to the heading. */
   imageAlt?: string;
   visual?: ReactNode;
   breadcrumb?: Array<{ label: string; href: string }>;
   stats?: Array<{ label: string; value: string }>;
   className?: string;
+  subheadingClassName?: string;
   imageWidth?: number;
   imageHeight?: number;
   textSize?: 'normal' | 'large' | 'xlarge' | 'xxlarge';
@@ -43,11 +46,13 @@ export function HeroSection({
   primaryCta,
   secondaryCta,
   image,
+  leadName,
   imageAlt,
   visual,
   breadcrumb,
   stats,
   className = '',
+  subheadingClassName = '',
   imageWidth = 700,
   imageHeight = 580,
   textSize = 'xlarge',
@@ -62,8 +67,6 @@ export function HeroSection({
     'Sales Enablement',
   ],
 }: HeroSectionProps) {
-  const router = useRouter();
-
   // Determine text sizes based on textSize prop
   const headingSize = {
     normal: 'text-3xl md:text-4xl lg:text-5xl',
@@ -96,22 +99,14 @@ export function HeroSection({
 
   const breadcrumbItems = breadcrumb || defaultBreadcrumb;
 
-  // Handle primary CTA click - navigate to contact page for "Book a Free Audit"
-  const handlePrimaryCtaClick = (
-    e: React.MouseEvent<HTMLAnchorElement>
-  ) => {
-    e.preventDefault();
-    router.push('/contact');
-  };
-
   return (
-    <>
+    <div className="flex flex-col min-h-[calc(100svh-4rem)]">
       <section
-        className={`relative isolate overflow-hidden bg-paper pt-6 pb-12 md:py-10 ${className}`}
+        className={`relative isolate flex-1 overflow-hidden bg-paper pt-6 pb-12 md:flex md:items-center md:py-10 ${className}`}
       >
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-dot-pattern opacity-30" />
 
-        <div className="mx-auto max-w-[84vw] px-6 relative z-20">
+        <div className="mx-auto w-full max-w-[84vw] px-6 relative z-20">
           {/* Breadcrumb Navigation */}
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -119,43 +114,7 @@ export function HeroSection({
             transition={{ duration: 0.4, delay: 0.1 }}
             className="mb-4 md:mb-6"
           >
-            <nav
-              className="eyebrow flex flex-wrap items-center gap-2 text-xs text-muted-foreground"
-              aria-label="Breadcrumb"
-            >
-              {breadcrumbItems.map((item, index) => {
-                const isLast = index === breadcrumbItems.length - 1;
-                const isHome = item.label === 'Home';
-
-                return (
-                  <div key={index} className="flex items-center">
-                    {isLast ? (
-                      <span className="text-ink">
-                        {item.label}
-                      </span>
-                    ) : (
-                      <>
-                        <Link
-                          href={item.href}
-                          className={`flex items-center gap-1 transition-colors hover:text-brand ${
-                            isHome ? 'hover:no-underline' : ''
-                          }`}
-                        >
-                          {isHome && (
-                            <Home className="h-3.5 w-3.5 md:h-4 md:w-4" />
-                          )}
-                          <span>{item.label}</span>
-                        </Link>
-
-                        <span className="text-border">
-                          /
-                        </span>
-                      </>
-                    )}
-                  </div>
-                );
-              })}
-            </nav>
+            <HeroBreadcrumb items={breadcrumbItems} className="" />
           </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center min-h-[400px] md:min-h-[480px]">
@@ -191,7 +150,7 @@ export function HeroSection({
               </motion.h1>
 
               <motion.p
-                className={`${subheadingSize} text-muted-foreground leading-relaxed mb-4 max-w-xl text-left`}
+                className={`${subheadingSize} ${subheadingClassName} mb-4 max-w-xl text-left leading-relaxed text-muted-foreground`}
                 initial={{ y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.6 }}
@@ -230,7 +189,6 @@ export function HeroSection({
               >
                 <Link
                   href={primaryCta.href}
-                  onClick={handlePrimaryCtaClick}
                   className="group inline-flex items-center gap-2 bg-ink px-5 py-3 text-sm text-white transition-colors hover:bg-brand md:px-7 md:py-4 md:text-base"
                 >
                   {primaryCta.text}
@@ -280,7 +238,9 @@ export function HeroSection({
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative z-10 flex justify-center lg:justify-end"
             >
-              {visual ? (
+              {leadName ? (
+                <ProductLeadForm product={leadName} variant="hero" id="get-started" />
+              ) : visual ? (
                 visual
               ) : image ? (
                 <div className="relative w-full max-w-lg md:max-w-xl lg:max-w-2xl">
@@ -304,9 +264,6 @@ export function HeroSection({
           </div>
         </div>
       </section>
-
-      {/* Gap between hero and ticker */}
-      <div className="h-4 md:h-6" />
 
       {/* Ticker / Marquee Section */}
       <div className="relative overflow-hidden border-y border-white/10 bg-ink py-3 md:py-4">
@@ -346,6 +303,6 @@ export function HeroSection({
           </motion.div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -3,16 +3,14 @@
 import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer, scaleUp } from './Shared/animation';
 import type { Section } from '@/content/type';
-import { playfair } from '@/lib/fonts';
 
-export default function StepSec({ section, bg = 'bg-gray-50' }: { section: Section; bg?: string }) {
+export default function StepSec({ section, bg = 'bg-secondary' }: { section: Section; bg?: string }) {
   const items = section.items || [];
-  const isBlack = bg === 'bg-black';
+  const isBlack = bg === 'bg-ink';
 
   return (
     <>
-      <section className={`relative py-24 md:py-32 overflow-hidden ${bg}`}>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_50%_at_80%_50%,rgba(249,115,22,0.05),transparent)]" />
+      <section className={`relative overflow-hidden py-16 md:py-24 ${bg}`}>
 
         {/* ── Updated container ── */}
         <div className="mx-auto max-w-[84vw] px-6">
@@ -22,53 +20,40 @@ export default function StepSec({ section, bg = 'bg-gray-50' }: { section: Secti
             viewport={{ once: true, amount: 0.1 }}
             variants={staggerContainer}
           >
-            <motion.div variants={fadeInUp} className="mb-16">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="h-px w-12 bg-brand" />
-                <span className="text-brand text-sm font-semibold tracking-widest uppercase font-sans">How We Work</span>
-              </div>
+            <motion.div variants={fadeInUp} className="mb-10 md:mb-14">
+              <p className="eyebrow mb-4 text-brand">How We Work</p>
               {section.heading && (
                 <h2
-                  className={`tracking-tight leading-tight max-w-2xl ${isBlack ? 'text-white' : 'text-gray-900'}`}
-                  style={{
-                    fontFamily: `${playfair.style.fontFamily}, Georgia, serif`,
-                    fontWeight: 900,
-                    fontSize: 'clamp(2rem, 5vw, 3.5rem)',
-                  }}
+                  className={`display max-w-2xl text-4xl leading-tight sm:text-5xl md:text-6xl ${isBlack ? 'text-white' : 'text-ink'}`}
                 >
                   {section.heading}
                 </h2>
               )}
               {section.subheading && (
-                <p className={`mt-4 text-lg max-w-2xl leading-relaxed font-sans ${isBlack ? 'text-gray-400' : 'text-gray-500'}`}>
+                <p className={`mt-4 max-w-2xl text-base leading-relaxed sm:text-lg ${isBlack ? 'text-white/60' : 'text-muted-foreground'}`}>
                   {section.subheading}
                 </p>
               )}
             </motion.div>
 
             <div className="relative">
-              <div className={`absolute left-6 top-0 bottom-0 w-px ${isBlack ? 'bg-gray-800' : 'bg-gray-200'} hidden lg:block`} />
-              <div className="space-y-6">
+              <div className={`divide-y border-y ${isBlack ? 'divide-white/10 border-white/10' : 'divide-border border-border'}`}>
                 {items.map((item, idx) => (
                   <motion.div
                     key={idx}
                     variants={scaleUp}
-                    whileHover={{ x: 10, scale: 1.01, boxShadow: '0 20px 40px rgba(80,80,80,0.08)' }}
+                    whileHover={{ x: 5 }}
                     transition={{ duration: 0.2 }}
-                    className={`relative flex gap-8 p-8 rounded-2xl border transition-all duration-300 ${
-                      isBlack
-                        ? 'bg-gray-900/50 border-gray-800 hover:border-[oklch(0.5_0.01_0)]/30'
-                        : 'bg-white border-gray-100 hover:border-[oklch(0.5_0.01_0)]/30 shadow-sm hover:shadow-md'
-                    }`}
+                    className="group relative flex gap-6 py-6 md:gap-8 md:py-8"
                   >
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-brand flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-brand/30 z-10 font-sans">
+                    <div className="eyebrow shrink-0 pt-1 text-brand tabular-nums">
                       {String(idx + 1).padStart(2, '0')}
                     </div>
                     <div className="flex-1">
-                      <h3 className={`text-lg font-bold mb-2 font-sans ${isBlack ? 'text-white' : 'text-gray-900'}`}>
+                      <h3 className={`display mb-2 text-xl transition-colors group-hover:text-brand md:text-2xl ${isBlack ? 'text-white' : 'text-ink'}`}>
                         {item.title}
                       </h3>
-                      <p className={`text-sm leading-relaxed font-sans ${isBlack ? 'text-gray-400' : 'text-gray-500'}`}>
+                      <p className={`text-sm leading-relaxed ${isBlack ? 'text-white/60' : 'text-muted-foreground'}`}>
                         {item.description}
                       </p>
                     </div>

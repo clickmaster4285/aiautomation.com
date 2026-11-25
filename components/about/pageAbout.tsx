@@ -11,9 +11,12 @@ import {
   Zap,
 } from 'lucide-react';
 import Image from 'next/image';
+import ProductLeadForm from '@/components/products/ProductLeadForm';
 import Script from 'next/script';
-import { LOCATION_STATEMENT, SERVICE_AREA, SITE_URL } from '@/lib/site-contact';
+import { SERVICE_AREA, SITE_URL } from '@/lib/site-contact';
 import { ORGANIZATION_ID } from '@/lib/organization';
+import HeroBreadcrumb from '@/components/shared/HeroBreadcrumb';
+import HeroCta from '@/components/shared/HeroCta';
 
 export default function AboutPage() {
   return (
@@ -49,10 +52,11 @@ export default function AboutPage() {
         }}
       />
 
-      {/* ====== HERO – Light with Image ====== */}
+      {/* ====== HERO – Light with audit form ====== */}
       <section className="relative flex min-h-[calc(100svh-4rem)] items-center overflow-hidden bg-paper isolate py-12 md:py-16">
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-dot-pattern opacity-30" />
         <div className="relative mx-auto w-full max-w-[84vw] px-6">
+          <HeroBreadcrumb items={[{ label: 'Home', href: '/' }, { label: 'About', href: '/about' }]} />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <motion.div initial="hidden" animate="visible" variants={heroStaggerContainer} className="max-w-3xl">
               <motion.div
@@ -66,7 +70,7 @@ export default function AboutPage() {
                 variants={heroFadeInUp}
                 className="display mb-5 text-4xl leading-[1.05] sm:text-5xl md:mb-7 md:text-6xl lg:text-7xl"
               >
-                Build AI automation{' '}
+                We build AI automation{' '}
                 <span className="display-italic text-brand">
                   you actually own.
                 </span>
@@ -75,25 +79,19 @@ export default function AboutPage() {
                 variants={heroFadeInUp}
                 className="max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg md:text-xl"
               >
-                Clickmasters builds production AI automation for businesses in the United States, the United Kingdom, and Pakistan. The systems are owned by the client, not left as a prototype. {LOCATION_STATEMENT}
+                Clickmasters is an AI automation agency for businesses in the United States, the United Kingdom and Pakistan. We build production systems inside the tools you already use, document every workflow and hand it all over, so nothing is left as a prototype or locked to us.
               </motion.p>
+              <motion.div variants={heroFadeInUp}>
+                <HeroCta />
+              </motion.div>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="relative aspect-[4/3] w-full max-h-[500px]"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
+              className="flex lg:justify-end"
             >
-              <div className="absolute inset-8 bg-brand/10 blur-3xl" aria-hidden="true" />
-              <Image
-                src="/images/about.png"
-                alt="White humanoid robot with glowing cyan eyes, standing"
-                width={433}
-                height={577}
-                className="absolute inset-0 h-full w-full object-contain"
-                preload
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
+              <ProductLeadForm product="AI automation (about page)" variant="hero" id="get-started" />
             </motion.div>
           </div>
         </div>
