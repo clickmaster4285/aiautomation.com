@@ -2,12 +2,12 @@
 export const reportingAutomation = {
   url: '/solutions/reporting-automation',
   titleTag: 'Reporting Automation Solutions | Clickmasters',
-  metaDescription: 'Operations teams use Clickmasters Reporting Automation Solutions for Faster, More Reliable Business Reporting to remove repetitive work from the current.',
+  metaDescription: 'Reporting automation that collects data, builds and sends reports and keeps dashboards current, so teams act on the numbers instead of compiling them.',
   primaryKeyword: 'reporting automation',
   bookingLink: '/free-automation-audit',
 
   heroBadge: 'Reporting Automation',
-  heroHeading: 'Reporting Automation Solutions for Faster, More Reliable Business Reporting',
+  heroHeading: 'Reporting Automation for Faster, More Reliable Business Reporting',
   heroSubheading:
     'Reporting automation from Clickmasters replaces manual report building with a structured digital workflow. We automate data collection, report generation, distribution, and dashboard updates so teams spend less time compiling numbers and more time acting on them.',
 

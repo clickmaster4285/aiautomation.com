@@ -2,7 +2,7 @@
 export const appointmentBookingAutomation = {
   url: '/solutions/appointment-booking-automation',
   titleTag: 'Appointment Booking Automation for Busy Teams | Clickmasters',
-  metaDescription: 'Appointment booking automation that schedules, confirms, and reminds so the calendar stays full without a manual chase. Book a free audit. Ask today.',
+  metaDescription: 'Appointment booking automation that schedules, confirms, and reminds so the calendar stays full without a manual chase. Book a free audit.',
   primaryKeyword: 'appointment booking automation',
   bookingLink: '/free-automation-audit',
 

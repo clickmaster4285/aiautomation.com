@@ -51,7 +51,7 @@ export const internalLinks = [
 export const aiLeadManagementSoftware: ProductPageContent = {
   hero: {
     badge: 'AI Lead Management',
-    heading: 'AI Lead Management Software That Gives Every Lead an Owner and a Next Step',
+    heading: 'AI Lead Management Software That Gives Every Lead an Owner',
     accentWords: 5,
     subheading:
       'Clickmasters builds AI lead management software inside the CRM you already use. It scores each new lead against your ideal customer profile, assigns it by your rules and follows up until the lead is ready for a sales conversation.',

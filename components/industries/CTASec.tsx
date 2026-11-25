@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer, scaleUp } from './Shared/animation';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { playfair } from '@/lib/fonts';
 import type { Section } from '@/content/type';
 
 export default function CTASec({ section, bg = 'bg-black' }: { section: Section; bg?: string }) {
@@ -11,7 +12,6 @@ export default function CTASec({ section, bg = 'bg-black' }: { section: Section;
 
   return (
     <>
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');`}</style>
       <section className={`relative py-16 sm:py-20 md:py-24 lg:py-32 overflow-hidden ${bg} text-center`}>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,rgba(249,115,22,0.08),transparent)]" />
         <motion.div
@@ -38,7 +38,7 @@ export default function CTASec({ section, bg = 'bg-black' }: { section: Section;
                 variants={scaleUp}
                 className={`tracking-tight leading-tight mb-4 sm:mb-6 ${isBlack ? 'text-white' : 'text-gray-900'}`}
                 style={{
-                  fontFamily: "'Playfair Display', Georgia, serif",
+                  fontFamily: `${playfair.style.fontFamily}, Georgia, serif`,
                   fontWeight: 900,
                   fontSize: 'clamp(1.8rem, 5vw, 3.5rem)',
                 }}

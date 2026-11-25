@@ -15,14 +15,15 @@ import {
 import { HeroSection } from '@/components/solutions/sections/Hero';
 import { Section, SectionHeading } from '@/components/solutions/layout/Section';
 import { canonicalUrl } from '@/lib/canonical';
+import { withSocialDefaults } from '@/lib/seo';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocialDefaults({
   title: 'Clickmasters AI Automation Case Studies | Clickmasters',
   description: 'Clickmasters case studies document the brief, the gaps closed, the rules a system cannot break, and the limits designed around the work. Book a free audit.',
   alternates: {
     canonical: canonicalUrl('/case-studies'),
   },
-};
+});
 
 // ── Icon per case study ──
 const caseStudyIconMap: Record<string, ElementType> = {
@@ -59,6 +60,7 @@ const heroData = {
     href: '/free-automation-audit',
   },
   image: '/images/hero-robot.jpg',
+  imageAlt: 'Profile of a white humanoid robot head with a glowing blue circuit at the ear',
   imageWidth: 700,
   imageHeight: 580,
   textSize: 'xlarge' as const,

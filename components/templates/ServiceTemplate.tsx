@@ -39,8 +39,8 @@ export default function ServiceTemplate({ data }: { data: ServiceContent }) {
   };
 
   return (
-    <main className="min-h-screen bg-black text-white overflow-x-hidden">
+    <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {data.sections.map((section, index) => renderSection(section, index))}
-    </main>
+    </div>
   );
 }

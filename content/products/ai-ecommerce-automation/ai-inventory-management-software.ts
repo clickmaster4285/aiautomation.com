@@ -66,7 +66,7 @@ export const aiInventoryManagementSoftware: ProductPageContent = {
 
   hero: {
     badge: 'AI Inventory Management Software',
-    heading: 'AI Inventory Management Software That Keeps Your Stock Records Straight',
+    heading: 'AI Inventory Management Software That Keeps Stock Records Straight',
     accentWords: 3,
     subheading:
       'We build workflows that keep product and stock information consistent between your store and your spreadsheets, warn you when items fall below the levels you set, clean up messy SKU data and draft supplier reorder emails for a person to approve. Less stock admin, fewer surprises, and your team still makes the buying decisions.',

@@ -14,6 +14,7 @@ import {
   Link2,
 } from 'lucide-react';
 import type { Section } from '@/content/type';
+import { playfair } from '@/lib/fonts';
 
 export default function TextSec({ section, bg = 'bg-white' }: { section: Section; bg?: string }) {
   const rawContent = Array.isArray(section.content) ? section.content : [section.content];
@@ -29,7 +30,6 @@ export default function TextSec({ section, bg = 'bg-white' }: { section: Section
 
   return (
     <>
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');`}</style>
       <section
         className={`relative py-24 md:py-32 overflow-hidden`}
         style={{ background: isBlack ? '#000' : 'oklch(0.95 0.01 0)' }}
@@ -55,7 +55,7 @@ export default function TextSec({ section, bg = 'bg-white' }: { section: Section
                 <h2
                   className={`tracking-tight leading-tight ${isBlack ? 'text-white' : 'text-gray-900'}`}
                   style={{
-                    fontFamily: "'Playfair Display', Georgia, serif",
+                    fontFamily: `${playfair.style.fontFamily}, Georgia, serif`,
                     fontWeight: 900,
                     fontSize: 'clamp(2rem, 5vw, 3.5rem)',
                   }}

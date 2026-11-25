@@ -2,7 +2,7 @@
 export const marketingAutomation = {
   url: '/solutions/marketing-automation',
   titleTag: 'Marketing Automation for Growth Teams | Clickmasters',
-  metaDescription: 'Marketing automation for nurture, campaigns, and follow-up that keeps moving when nobody is watching the queue. Book a free audit. Ask today.',
+  metaDescription: 'Marketing automation for nurture, campaigns, and follow-up that keeps moving when nobody is watching the queue. Book a free audit.',
   primaryKeyword: 'marketing automation',
   bookingLink: '/free-automation-audit',
 

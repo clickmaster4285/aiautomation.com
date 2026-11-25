@@ -438,7 +438,7 @@ export default function PlatformsClient() {
                   >
                     <Icon className="h-6 w-6 text-brand group-hover:text-white transition-colors" />
                   </motion.div>
-                  <h4 className="text-sm font-semibold text-gray-900 mb-2">{feature.title}</h4>
+                  <h3 className="text-sm font-semibold text-gray-900 mb-2">{feature.title}</h3>
                   <p className="text-xs text-gray-500 leading-relaxed">{feature.desc}</p>
                 </motion.div>
               );

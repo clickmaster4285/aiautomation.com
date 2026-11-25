@@ -2,7 +2,7 @@
 export const invoiceAutomation = {
   url: '/solutions/invoice-automation',
   titleTag: 'Invoice Automation for Finance Teams | Clickmasters AI',
-  metaDescription: 'Invoice automation that captures, checks, and posts bills so finance closes with fewer re-keys and fewer missed exceptions. Book a free audit. Ask today.',
+  metaDescription: 'Invoice automation that captures, checks, and posts bills so finance closes with fewer re-keys and fewer missed exceptions. Book a free audit.',
   primaryKeyword: 'invoice automation',
   bookingLink: '/free-automation-audit',
 

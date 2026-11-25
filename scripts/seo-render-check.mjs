@@ -68,10 +68,12 @@ async function openTarget() {
       msg.error ? reject(new Error(msg.error.message)) : resolve(msg.result);
     } else if (msg.method) listeners.forEach((l) => l(msg));
   };
+  // Every DevTools command times out, so one stuck page cannot hang the whole run.
   const send = (method, params = {}) =>
     new Promise((resolve, reject) => {
       const i = ++id;
-      pending.set(i, { resolve, reject });
+      const timer = setTimeout(() => { pending.delete(i); reject(new Error(`timeout: ${method}`)); }, 30000);
+      pending.set(i, { resolve: (v) => { clearTimeout(timer); resolve(v); }, reject: (e) => { clearTimeout(timer); reject(e); } });
       ws.send(JSON.stringify({ id: i, method, params }));
     });
   return { send, on: (f) => listeners.push(f), close: () => { ws.close(); return fetch(`http://127.0.0.1:${port}/json/close/${t.id}`); } };
@@ -198,7 +200,7 @@ await Promise.all(
     while (queue.length) {
       const p = queue.shift();
       try {
-        out.push(await check(p));
+        out.push(await Promise.race([check(p), new Promise((_, rej) => setTimeout(() => rej(new Error('page timeout (90s)')), 90000))]));
       } catch (e) {
         out.push({ path: p, error: String(e) });
       }

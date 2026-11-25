@@ -21,17 +21,18 @@ import {
   BrainCircuit,
 } from 'lucide-react';
 import { canonicalUrl } from '@/lib/canonical';
+import { withSocialDefaults } from '@/lib/seo';
 import { HubJsonLd } from '@/components/seo/HubJsonLd';
 import { hubSeo } from '@/lib/hub-seo';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocialDefaults({
   title: 'AI Automation Services for Operating Teams | Clickmasters',
   description:
     'Clickmasters AI automation services cover workflows, process automation, agents, chatbots, voice, reporting, and custom development. Book a free audit.',
   alternates: {
     canonical: canonicalUrl('/services'),
   },
-};
+});
 
 // ── Icon per service subpage ──
 const serviceIconMap: Record<string, ElementType> = {
@@ -58,6 +59,7 @@ const heroData = {
     href: '/free-automation-audit',
   },
   image: '/images/hero-robot.jpg',
+  imageAlt: 'Profile of a white humanoid robot head with a glowing blue circuit at the ear',
   imageWidth: 700,
   imageHeight: 580,
   textSize: 'xlarge' as const,

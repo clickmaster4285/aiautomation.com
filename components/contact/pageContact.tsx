@@ -20,7 +20,16 @@ import {
   TrendingUp,
 } from 'lucide-react';
 
-export default function ContactPage() {
+type ContactPageProps = {
+  /** H1: plain lead words, then the accented words. Defaults to the /contact heading. */
+  heading?: { lead: string; accent: string };
+  intro?: string;
+};
+
+export default function ContactPage({
+  heading = { lead: "Let's talk", accent: 'automation.' },
+  intro = "Whether you're ready to automate something specific or just want to know if it's worth it we're easy to reach and we'll give you a straight answer either way.",
+}: ContactPageProps) {
   // State for the main (middle) form
   const [formData, setFormData] = useState({
     name: '',
@@ -141,7 +150,7 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="bg-white text-gray-900 overflow-hidden">
+    <div className="bg-white text-gray-900 overflow-hidden">
       {/* ====== HERO – BLACK with ANIMATED GRAPHICS ====== */}
       <section className="relative min-h-[50vh] flex items-center py-8 md:py-12 lg:py-16 bg-black">
         {/* Background decorations */}
@@ -189,15 +198,15 @@ export default function ContactPage() {
                 variants={fadeInUp}
                 className="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-4 md:mb-6 text-white"
               >
-                Let's talk{' '}
-                <span className="display-italic text-brand">automation.</span>
+                {heading.lead}{' '}
+                <span className="display-italic text-brand">{heading.accent}</span>
               </motion.h1>
 
               <motion.p
                 variants={fadeInUp}
                 className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl text-justify"
               >
-                Whether you're ready to automate something specific or just want to know if it's worth it we're easy to reach and we'll give you a straight answer either way.
+                {intro}
               </motion.p>
               
               {/* Added CRM notice */}
@@ -652,6 +661,6 @@ export default function ContactPage() {
           </motion.div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

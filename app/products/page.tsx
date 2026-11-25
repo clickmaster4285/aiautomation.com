@@ -6,19 +6,20 @@ import Link from 'next/link';
 
 import { SectionLabel } from '@/components/landingPage/Shared';
 import { canonicalUrl } from '@/lib/canonical';
+import { withSocialDefaults } from '@/lib/seo';
 import { productCategories, PRODUCTS_PATH } from '@/content/products';
 
 const title = 'AI Automation Products for Every Team | Clickmasters';
 const description =
-  'Explore Clickmasters AI automation products for sales, customer support and marketing, built inside the tools your team already uses. Book a free audit.';
+  'AI automation products for sales, support, marketing, HR, finance, e-commerce, documents and AI agents, built inside the tools your team already uses.';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocialDefaults({
   title,
   description,
   alternates: { canonical: canonicalUrl(PRODUCTS_PATH) },
   robots: { index: true, follow: true },
   openGraph: { title, description, url: canonicalUrl(PRODUCTS_PATH), type: 'website', siteName: 'Clickmasters AI Automation' },
-};
+});
 
 export default function ProductsPage() {
   const live = productCategories.filter((c) => c.live || c.products.some((p) => p.live));

@@ -16,7 +16,9 @@ interface HeroProps {
 }
 
 const wordVariants: Variants = {
-  hidden: { opacity: 0, y: 60 },
+  // Hero-only variants. No opacity: 0 start, so the H1 and intro (the likely LCP element) paint
+  // before hydration instead of after it.
+  hidden: { y: 60 },
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
@@ -88,8 +90,8 @@ export default function Hero({ section, form }: HeroProps) {
             initial="hidden"
             animate="visible"
             variants={{
-              hidden: { opacity: 0 },
-              visible: { opacity: 1, transition: { staggerChildren: 0.08 } },
+              hidden: {},
+              visible: { transition: { staggerChildren: 0.08 } },
             }}
             className="flex flex-col justify-center"
           >
@@ -176,7 +178,7 @@ export default function Hero({ section, form }: HeroProps) {
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Button
                     size="lg"
-                    className="bg-brand hover:bg-brand-dark text-white px-6 py-5 text-sm rounded-xl font-medium shadow-lg shadow-brand/30 transition-all"
+                    className="h-auto max-w-full whitespace-normal text-center sm:whitespace-nowrap bg-brand hover:bg-brand-dark text-white px-6 py-5 text-sm rounded-xl font-medium shadow-lg shadow-brand/30 transition-all"
                   >
                     {primaryCta.text}
                     <ArrowRight className="ml-2 h-4 w-4" />

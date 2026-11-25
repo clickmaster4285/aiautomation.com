@@ -2,6 +2,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { canonicalPath, canonicalUrl } from '@/lib/canonical';
+import { withSocialDefaults } from '@/lib/seo';
 import { HubJsonLd } from '@/components/seo/HubJsonLd';
 import { hubSeo } from '@/lib/hub-seo';
 import { getAllSolutions } from '@/content/Solutions';
@@ -35,13 +36,13 @@ import {
   BrainCircuit
 } from 'lucide-react';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocialDefaults({
   title: 'AI Automation Solutions for Business Teams | Clickmasters',
   description: 'Explore Clickmasters AI automation solutions for sales, support, documents, reporting, and the tools your team already uses. Book a free audit.',
   alternates: {
     canonical: canonicalUrl('/solutions'),
   },
-};
+});
 
 // Icon mapping for solution cards - Expanded with all icons
 const iconMap: Record<string, any> = {
@@ -102,6 +103,7 @@ export default function SolutionsPage() {
       href: '/free-automation-audit',
     },
     image: '/images/solution.jpg',
+    imageAlt: 'Glowing AI brain connected to robotic arms, machines and data dashboards',
     imageWidth: 700,
     imageHeight: 580,
     textSize: 'xlarge' as const,

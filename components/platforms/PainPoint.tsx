@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, Variants, useInView } from 'framer-motion';
-import * as Icons from 'lucide-react';
+import { CONTENT_ICONS } from '@/components/shared/content-icons';
 import type { Section } from '@/content/type';
 import { useRef } from 'react';
 import { RichText } from '@/components/solutions/sections/variants/RichText';
@@ -31,7 +31,7 @@ const cardVariants: Variants = {
 };
 
 function LucideIcon({ name }: { name: string }) {
-  const Icon = (Icons as unknown as Record<string, Icons.LucideIcon>)[name];
+  const Icon = CONTENT_ICONS[name];
   return Icon ? <Icon className="h-[18px] w-[18px]" style={{ color: 'var(--brand)' }} /> : null;
 }
 

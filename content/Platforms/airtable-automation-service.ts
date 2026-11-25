@@ -35,7 +35,7 @@ export const airtableAutomationService: ServiceContent = {
     {
       type: 'text',
       heading: 'Airtable Automation Built Around Your Business Data',
-      image: '/images/rob.png',
+      image: { src: '/images/rob.png', alt: 'Friendly white robot with a smiling digital face' },
       content: [
         'Airtable becomes more powerful when database structure and automation are designed together. Our Airtable automation consultants help businesses organize information and automate repetitive actions around projects, customers, operations, and internal processes.',
         'We first review your tables, records, relationships, statuses, and user requirements. This helps us determine which processes should be automated. The result is a cleaner and more scalable Airtable environment.',

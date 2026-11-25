@@ -2,7 +2,9 @@
 
 import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer } from './Shared/animation';
-import * as Icons from 'lucide-react';
+import { Star } from 'lucide-react';
+import { playfair } from '@/lib/fonts';
+import { CONTENT_ICONS } from '@/components/shared/content-icons';
 import type { Section } from '@/content/type';
 
 function PeekingRobot({ isBlack }: { isBlack: boolean }) {
@@ -144,7 +146,6 @@ export default function GridSec({ section, bg = 'bg-white' }: { section: Section
 
   return (
     <>
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');`}</style>
       <section className={`relative py-16 sm:py-20 md:py-24 lg:py-32 overflow-hidden ${bg}`}>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_50%_at_20%_80%,rgba(249,115,22,0.05),transparent)]" />
 
@@ -167,7 +168,7 @@ export default function GridSec({ section, bg = 'bg-white' }: { section: Section
                 <h2
                   className={`tracking-tight leading-tight max-w-2xl ${isBlack ? 'text-white' : 'text-gray-900'}`}
                   style={{
-                    fontFamily: "'Playfair Display', Georgia, serif",
+                    fontFamily: `${playfair.style.fontFamily}, Georgia, serif`,
                     fontWeight: 900,
                     fontSize: 'clamp(1.8rem, 5vw, 3.5rem)',
                   }}
@@ -188,7 +189,7 @@ export default function GridSec({ section, bg = 'bg-white' }: { section: Section
 
               <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
                 {items.map((item, idx) => {
-                  const IconComponent = item.icon ? (Icons as any)[item.icon] : Icons.Star;
+                  const IconComponent = item.icon ? CONTENT_ICONS[item.icon] : Star;
                   return (
                     <motion.div
                       key={idx}

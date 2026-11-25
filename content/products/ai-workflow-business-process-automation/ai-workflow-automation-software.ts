@@ -60,7 +60,7 @@ export const aiWorkflowAutomationSoftware: ProductPageContent = {
 
   hero: {
     badge: 'AI Workflow Automation Software',
-    heading: 'AI Workflow Automation Software That Runs Multi-Step Work Across Your Apps',
+    heading: 'AI Workflow Automation Software for Multi-Step Work Across Apps',
     accentWords: 4,
     subheading:
       'We build AI workflow automation software on platforms you own, such as n8n, Make or Zapier. Each workflow starts from a real event, moves through your apps step by step, branches on conditions, pauses for approvals and tells you when something goes wrong.',

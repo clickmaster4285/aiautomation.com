@@ -30,7 +30,7 @@ export const aiRealEstateAutomationSeo: HubSeo = {
   path: AI_REAL_ESTATE_AUTOMATION_PATH,
   title: 'Real Estate Automation Software on Your CRM | Clickmasters',
   description:
-    'Real estate automation software built on your existing CRM: lead follow-up, showings, transaction checklists and nurture, with agents approving. Book an audit.',
+    'Real estate automation software built on your existing CRM: lead follow-up, showings, transaction checklists and nurture, with agents approving.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'Industry-Specific AI Automation', path: '/products/industry-specific-ai-automation' },

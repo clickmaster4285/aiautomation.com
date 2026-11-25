@@ -164,8 +164,6 @@ export const aiChatbotsWithSalesforce: SolutionData = {
         props: {
           id: 'why-salesforce',
           title: 'Why Salesforce for AI Chatbots',
-          image: '/images/salesforce-platform.png',
-          imageAlt: 'Salesforce platform',
           imageRight: true,
           stats: [
             { label: 'Enterprise Grade', value: '✓' },
@@ -186,8 +184,6 @@ export const aiChatbotsWithSalesforce: SolutionData = {
         props: {
           id: 'production-build',
           title: 'What a Production Build Includes',
-          image: '/images/production-build.png',
-          imageAlt: 'Production build process',
           cta: { text: 'See Our Process', href: '#how-we-work' },
           background: 'paper',
         },
@@ -198,8 +194,6 @@ export const aiChatbotsWithSalesforce: SolutionData = {
         props: {
           id: 'workflows',
           title: 'Typical Workflows on Salesforce',
-          image: '/images/salesforce-workflow.png',
-          imageAlt: 'Salesforce workflow pattern',
           imageRight: true,
         },
       },

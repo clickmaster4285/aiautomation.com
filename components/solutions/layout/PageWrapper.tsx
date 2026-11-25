@@ -9,15 +9,16 @@ interface PageWrapperProps {
   className?: string;
 }
 
+// Renders a <div>: the root layout already provides the page's single <main>.
 export function PageWrapper({ children, className = '' }: PageWrapperProps) {
   return (
-    <motion.main
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
       className={`min-h-screen ${className}`}
     >
       {children}
-    </motion.main>
+    </motion.div>
   );
 }

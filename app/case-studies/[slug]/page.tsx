@@ -15,6 +15,7 @@ import {
   TrendingUp,
 } from 'lucide-react';
 import { getCaseStudy } from '@/content/case-studies';
+import { SITE_URL } from '@/lib/site-contact';
 import type { CaseStudy } from '@/content/case-studies/clickmasters-ai-lead-response-case-study';
 import { Marker, splitHeading } from '../../../components/caseStudies/Shared';
 import { PartsTabs } from '../../../components/caseStudies/parts-tabs';
@@ -60,7 +61,7 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
     '@type': 'Article',
     headline: hero.h1,
     description: seo.description,
-    image: seo.og?.image ? [seo.og.image] : undefined,
+    image: seo.og?.image ? [new URL(seo.og.image, SITE_URL).href] : undefined,
     datePublished: cs.meta.publishedAt,
     dateModified: cs.meta.updatedAt,
     author: { '@id': ORGANIZATION_ID },
@@ -87,7 +88,7 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
   };
 
   return (
-    <main className="bg-paper text-ink overflow-hidden">
+    <div className="bg-paper text-ink overflow-hidden">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
@@ -122,7 +123,7 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
       {/* ── Left: headline + copy ── */}
       <div className="md:col-span-7">
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           className="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05]"
@@ -133,7 +134,7 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15 }}
           className="text-white/70 mt-6 md:mt-8 max-w-xl text-sm md:text-base leading-relaxed"
@@ -165,7 +166,7 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
           className="rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur p-6 md:p-8"
         >
           <div className="mb-6">
-            <h3 className="display text-xl md:text-2xl mb-1">Get the full breakdown</h3>
+            <h2 className="display text-xl md:text-2xl mb-1">Get the full breakdown</h2>
             <p className="text-white/50 text-xs md:text-sm">
               No pitch. Just the playbook we used.
             </p>
@@ -278,7 +279,7 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
     >
       <Image
         src="/images/robo-side.jpg"
-        alt="Robot illustration"
+        alt="Robot peeking around a wall and waving"
         width={480}
         height={541}
         sizes="160px"
@@ -406,6 +407,7 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
                   alt={challenge.image.alt || 'Challenge illustration'}
                   width={challenge.image.width || 1600}
                   height={challenge.image.height || 1000}
+                  sizes="(min-width: 1024px) 600px, 100vw"
                   className="w-full h-auto object-cover"
                 />
               </div>
@@ -467,9 +469,10 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
         <div className="overflow-hidden rounded-2xl border border-border bg-white shadow-[0_0_0_1px_rgba(15,23,42,0.02)]">
           <Image
             src={gaps.image.src}
-            alt={gaps.image.alt || 'Process illustration'}
+            alt={gaps.image.alt || ''}
             width={gaps.image.width || 1600}
             height={gaps.image.height || 1000}
+            sizes="(min-width: 1024px) 600px, 100vw"
             className="w-full h-auto object-cover"
           />
         </div>
@@ -513,9 +516,10 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
         >
           <Image
             src="/images/process.png"
-            alt="Solution illustration"
+            alt="Friendly assistant robot wearing a headset and waving"
             width={640}
             height={640}
+            sizes="(min-width: 1024px) 448px, (min-width: 768px) 288px, 224px"
             className="w-40 sm:w-56 md:w-72 lg:w-[28rem] h-auto mx-auto md:mx-0"
           />
         </motion.div>
@@ -685,6 +689,7 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
                       alt={timeline.image.alt || 'Lead timeline illustration'}
                       width={timeline.image.width || 1600}
                       height={timeline.image.height || 1000}
+                      sizes="(min-width: 1024px) 600px, 100vw"
                       className="w-full h-auto object-cover"
                     />
                   </div>
@@ -797,6 +802,7 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
                   alt={stack.image.alt || 'Stack architecture illustration'}
                   width={stack.image.width || 1600}
                   height={stack.image.height || 1000}
+                  sizes="(min-width: 1024px) 600px, 100vw"
                   className="w-full h-auto object-cover"
                 />
               </div>
@@ -867,6 +873,7 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
                   alt={results.image.alt || 'Results illustration'}
                   width={results.image.width || 1600}
                   height={results.image.height || 1000}
+                  sizes="(min-width: 1024px) 600px, 100vw"
                   className="w-full h-auto object-cover"
                 />
               </div>
@@ -1007,6 +1014,6 @@ function CaseStudyView({ cs }: { cs: CaseStudy }) {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

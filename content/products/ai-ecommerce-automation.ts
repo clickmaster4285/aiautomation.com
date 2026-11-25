@@ -67,7 +67,7 @@ export const aiEcommerceAutomation: ProductPageContent = {
 
   hero: {
     badge: 'AI E-commerce Automation',
-    heading: 'AI E-commerce Automation That Keeps Your Store Running Behind the Scenes',
+    heading: 'AI E-commerce Automation That Runs Your Store Behind the Scenes',
     accentWords: 3,
     subheading:
       'Clickmasters builds automation inside the store platform, helpdesk, email tool and spreadsheets you already run. Routine work such as catalog upkeep, order admin, stock checks, customer questions and follow-up emails runs on its own, and your team reviews anything that affects money or customers.',

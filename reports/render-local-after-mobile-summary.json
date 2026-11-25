@@ -1,0 +1,118 @@
+{
+  "pages": 13,
+  "failed": [
+    "/",
+    "/industries/ai-automation-for-healthcare",
+    "/products/ai-sales-crm/ai-sales-assistant"
+  ],
+  "imgsMissingAlt": [],
+  "imgsEmptyAltVisible": [],
+  "imgsBroken": [],
+  "imgsOversized": [],
+  "multipleMain": [],
+  "h1NotOne": [],
+  "overflow": [
+    {
+      "path": "/platforms/zapier-automation-services",
+      "scrollWidth": 413,
+      "els": [
+        "div right=412",
+        "button.inline-flex.items-center.justify-center right=412"
+      ]
+    }
+  ],
+  "smallTaps": [
+    {
+      "path": "/contact",
+      "taps": [
+        "View Work 92x20"
+      ]
+    },
+    {
+      "path": "/products/ai-customer-support/ai-chatbot-software",
+      "taps": [
+        "Home 41x15"
+      ]
+    },
+    {
+      "path": "/products/ai-customer-support/ai-virtual-assistant",
+      "taps": [
+        "Home 41x15"
+      ]
+    },
+    {
+      "path": "/services/ai-chatbots",
+      "taps": [
+        "Build Your AI Chatbot 219x21"
+      ]
+    },
+    {
+      "path": "/solutions",
+      "taps": [
+        "Home 56x20"
+      ]
+    },
+    {
+      "path": "/solutions/ai-voice-agents",
+      "taps": [
+        "Home 41x15",
+        "Solutions 81x15"
+      ]
+    },
+    {
+      "path": "/solutions/crm-automation/for-healthcare",
+      "taps": [
+        "Home 41x15",
+        "Solutions 81x15",
+        "CRM Automation 129x15"
+      ]
+    }
+  ],
+  "consoleErrors": [],
+  "lcpOver2500": [
+    {
+      "path": "/about",
+      "lcp": 3492,
+      "el": "P Clickmasters builds production AI automation for businesses "
+    },
+    {
+      "path": "/platforms/zapier-automation-services",
+      "lcp": 2820,
+      "el": "P Our Zapier automation services help U.S. businesses connect "
+    },
+    {
+      "path": "/products/ai-customer-support/ai-chatbot-software",
+      "lcp": 2528,
+      "el": "P Our AI chatbot software reads each message for intent, keeps"
+    },
+    {
+      "path": "/products/ai-customer-support/ai-virtual-assistant",
+      "lcp": 2548,
+      "el": "P An AI virtual assistant from Clickmasters talks with custome"
+    },
+    {
+      "path": "/solutions",
+      "lcp": 5136,
+      "el": "IMG image?url=%2Fimages%2Fsolution.jpg&w=1080&q=60"
+    }
+  ],
+  "clsOver01": [],
+  "thirdParty": [
+    "www.googletagmanager.com",
+    "www.clarity.ms",
+    "www.google.com",
+    "scripts.clarity.ms",
+    "l.clarity.ms",
+    "www.google-analytics.com",
+    "c.clarity.ms"
+  ],
+  "medians": {
+    "lcp": 2528,
+    "cls": 0,
+    "ttfb": 153,
+    "load": 2903,
+    "jsKB": 303,
+    "totalKB": 639,
+    "requests": 84
+  }
+}

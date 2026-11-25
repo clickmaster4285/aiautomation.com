@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer, scaleUp, blowOut } from './Shared/animation';
 import { AlertTriangle, TrendingUp } from 'lucide-react';
+import { playfair } from '@/lib/fonts';
 import type { Section } from '@/content/type';
 
 /* ─── Top horizontal tech pattern ─────────────────────────────────────────
@@ -153,7 +154,6 @@ export default function PainPoint({ section, bg = 'bg-orange-50' }: { section: S
 
   return (
     <>
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');`}</style>
       <section className={`relative py-24 md:py-32 overflow-hidden ${bg}`}>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_50%_0%,rgba(249,115,22,0.08),transparent)]" />
         <motion.div
@@ -179,7 +179,7 @@ export default function PainPoint({ section, bg = 'bg-orange-50' }: { section: S
                 <h2
                   className={`tracking-tight leading-tight max-w-3xl ${isBlack ? 'text-white' : 'text-gray-900'}`}
                   style={{
-                    fontFamily: "'Playfair Display', Georgia, serif",
+                    fontFamily: `${playfair.style.fontFamily}, Georgia, serif`,
                     fontWeight: 900,
                     fontSize: 'clamp(2rem, 5vw, 3.5rem)',
                   }}

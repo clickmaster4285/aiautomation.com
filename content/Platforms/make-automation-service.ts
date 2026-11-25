@@ -39,7 +39,7 @@ export const makeAutomationService: ServiceContent = {
     {
       type: 'text',
       heading: 'Make Automation for Complex Business Workflows',
-      image: '/images/rob.png',
+      image: { src: '/images/rob.png', alt: 'Friendly white robot with a smiling digital face' },
       content: [
         'Manual business processes become harder to manage as your company grows. Our Make automation services turn repetitive processes into connected visual workflows that can handle multiple actions and decision paths.',
         'We start by understanding the complete workflow rather than immediately building individual scenarios. Our Make consultants identify data sources, workflow rules, triggers, outputs, and exceptions before implementation. This creates automation that is easier to manage and scale.',

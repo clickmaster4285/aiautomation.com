@@ -59,7 +59,7 @@ export const aiSocialMediaAutomation: ProductPageContent = {
 
   hero: {
     badge: 'AI Social Media Automation',
-    heading: 'AI Social Media Automation That Keeps Your Channels Active and On Brand',
+    heading: 'AI Social Media Automation That Keeps Your Channels On Brand',
     accentWords: 5,
     subheading:
       'We build social media workflows that plan your content calendar, draft posts in your brand voice, turn existing content into new posts and schedule them once your team approves. Your channels stay active without someone writing and posting by hand every day.',

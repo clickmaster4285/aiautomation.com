@@ -38,7 +38,7 @@ export const zapierAutomationService: ServiceContent = {
     {
       type: 'text',
       heading: 'Zapier Automation Solutions Built Around Your Business',
-      image: '/images/rob.png',
+      image: { src: '/images/rob.png', alt: 'Friendly white robot with a smiling digital face' },
       content: [
         'Businesses lose valuable time when employees repeatedly copy data, send routine notifications, update records, or move information between disconnected applications. Our Zapier automation company helps turn those repetitive processes into structured workflows.',
         'We analyze your existing operations before building automation. This allows our Zapier consultants to identify practical opportunities to save time, improve consistency, and avoid unnecessary work.',

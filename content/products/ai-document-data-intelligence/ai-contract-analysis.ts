@@ -26,7 +26,7 @@ export const aiContractAnalysisSeo: HubSeo = {
   path: AI_CONTRACT_ANALYSIS_PATH,
   title: 'AI Contract Analysis for Key Terms and Dates | Clickmasters',
   description:
-    'AI contract analysis that extracts key terms, dates and figures into a searchable contract register, adds clause search, and leaves legal judgment with your lawyers.',
+    'AI contract analysis that extracts key terms, dates and figures into a searchable contract register with clause search. Legal judgment stays with you.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Document & Data Intelligence', path: '/products/ai-document-data-intelligence' },
@@ -63,7 +63,7 @@ export const aiContractAnalysis: ProductPageContent = {
 
   hero: {
     badge: 'AI Contract Analysis',
-    heading: 'AI Contract Analysis That Turns Signed Agreements Into a Searchable Register',
+    heading: 'AI Contract Analysis That Builds a Searchable Contract Register',
     accentWords: 2,
     subheading:
       'We build AI contract analysis workflows that read your agreements, extract parties, key terms, dates and figures, and keep them in a structured contract register your team can search and filter. The AI organizes and surfaces information. Interpreting it, negotiating it and advising on it stays with your lawyers and contract owners.',

@@ -78,7 +78,7 @@ export const aiEducationAutomation: ProductPageContent = {
 
   hero: {
     badge: 'AI Education Automation',
-    heading: 'AI Education Automation for School, College and Training Administration',
+    heading: 'AI Education Automation for Schools, Colleges and Training',
     accentWords: 3,
     subheading:
       'Admissions teams, registrars and school offices spend much of their week answering the same questions, chasing the same documents and copying the same details between systems. AI education automation takes on that administrative load: enquiries, applications, enrollment follow-up, scheduling, reminders and reporting. Clickmasters builds these workflows inside your existing tools, and staff approve anything that affects a student or a decision.',

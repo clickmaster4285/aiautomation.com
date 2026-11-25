@@ -2,7 +2,7 @@
 export const documentAutomation = {
   url: '/solutions/document-automation',
   titleTag: 'Document Automation for Operations Teams | Clickmasters',
-  metaDescription: 'Document automation that extracts, checks, and routes data from invoices, forms, and files into the systems you use. Book a free audit. Ask today.',
+  metaDescription: 'Document automation that extracts, checks, and routes data from invoices, forms, and files into the systems you use. Book a free audit.',
   primaryKeyword: 'document automation',
   bookingLink: '/free-automation-audit',
 

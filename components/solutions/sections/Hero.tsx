@@ -250,8 +250,8 @@ export function HeroSection({
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center min-h-[400px] md:min-h-[480px]">
             {/* Left Content */}
             <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 24 }}
+              animate={{ y: 0 }}
               transition={{
                 duration: 0.6,
                 ease: [0.16, 1, 0.3, 1],
@@ -271,7 +271,7 @@ export function HeroSection({
 
               <motion.h1
                 className={`${bodoni.className} ${headingSize} text-ink leading-[1.1] mb-4 font-black text-left`}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
               >
@@ -280,7 +280,7 @@ export function HeroSection({
 
               <motion.p
                 className={`${subheadingSize} text-muted-foreground leading-relaxed mb-4 max-w-xl text-left`}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.6 }}
               >

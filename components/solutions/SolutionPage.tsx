@@ -45,6 +45,8 @@ import { solutionBreadcrumbs, TOPICS, SEGMENTS, PLATFORMS } from '@/lib/link-gra
 import { RelatedCards } from '@/components/seo/RelatedCards';
 import { SOLUTION_DETAILS } from '@/content/Solutions/pages';
 import { canonicalUrl } from '@/lib/canonical';
+import { withSocialDefaults } from '@/lib/seo';
+import { productCards } from '@/lib/product-cards';
 import type { SolutionBlock, SolutionPageContent } from '@/content/type';
 
 type AnyProps = Record<string, unknown>;
@@ -176,8 +178,30 @@ function ChildPages({ url }: { url: string }) {
   );
 }
 
+/**
+ * Product pages for the software behind this solution (TOPICS[topic].products). On a
+ * /solutions/<topic>/for-<segment> page the segment's own product page (e.g. AI Healthcare Automation)
+ * comes first. Hubs list every related product; detail pages the three most relevant.
+ */
+function RelatedProducts({ url }: { url: string }) {
+  const [, , topic, child = ''] = url.split('/');
+  const segment = child.startsWith('for-') ? SEGMENTS[child.slice(4)] : undefined;
+  const segmentProducts = (segment?.products ?? []).filter((p) => p.split('/').length === 4);
+  const items = productCards([...segmentProducts, ...(TOPICS[topic]?.products ?? [])], child ? 3 : 6);
+  if (items.length === 0) return null;
+  return (
+    <RelatedCards
+      eyebrow="Products"
+      heading="Related AI Products"
+      intro="Product pages for the software this solution is built on."
+      items={items}
+      tone="secondary"
+    />
+  );
+}
+
 export function solutionMetadata(content: SolutionPageContent): Metadata {
-  return {
+  return withSocialDefaults({
     title: content.titleTag,
     description: content.metaDescription,
     alternates: { canonical: canonicalUrl(content.url) },
@@ -188,7 +212,7 @@ export function solutionMetadata(content: SolutionPageContent): Metadata {
       type: 'website',
     },
     keywords: content.primaryKeyword,
-  };
+  });
 }
 
 export function SolutionPage({ content: source }: { content: SolutionPageContent }) {
@@ -235,7 +259,12 @@ export function SolutionPage({ content: source }: { content: SolutionPageContent
       )}
       {blocks.map((block, i) => (
         <Fragment key={i}>
-          {block.type === 'FAQSection' && <ChildPages url={content.url} />}
+          {block.type === 'FAQSection' && (
+            <>
+              <ChildPages url={content.url} />
+              <RelatedProducts url={content.url} />
+            </>
+          )}
           {renderBlock(block, i, ctx, tones[i], markers[i])}
         </Fragment>
       ))}

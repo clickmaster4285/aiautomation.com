@@ -34,7 +34,7 @@ export const industrySpecificAiAutomationSeo: HubSeo = {
   path: INDUSTRY_SPECIFIC_AI_AUTOMATION_PATH,
   title: 'Industry-Specific AI Solutions for Operations | Clickmasters',
   description:
-    'Industry-specific AI solutions for healthcare, real estate, logistics, education and legal teams, built around your sector’s rules and approvals. Book an audit.',
+    'Industry-specific AI solutions for healthcare, real estate, logistics, education and legal teams, built around your sector’s rules and approvals.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'Industry-Specific AI Automation', path: INDUSTRY_SPECIFIC_AI_AUTOMATION_PATH },

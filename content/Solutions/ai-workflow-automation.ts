@@ -1,14 +1,14 @@
 // content/Solutions/ai-workflow-automation.ts
 export const aiWorkflowAutomation = {
   url: '/solutions/ai-workflow-automation',
-  titleTag: 'AI Workflow Automation for Smarter, Context-Aware Business',
-  metaDescription: 'Operations teams use Clickmasters AI Workflow Automation for Smarter, Context-Aware Business Processes to remove repetitive work from the current process.',
+  titleTag: 'AI Workflow Automation Solutions | Clickmasters',
+  metaDescription: 'AI workflow automation that classifies inputs, reads context and picks the next step, replacing brittle rule chains while keeping human review in place.',
   primaryKeyword: 'ai workflow automation',
   bookingLink: '/free-automation-audit',
 
   heroBadge: 'AI Workflow Automation',
   heroHeading:
-    'AI Workflow Automation for Smarter, Context-Aware Business Processes',
+    'AI Workflow Automation Solutions | Clickmasters Processes',
   heroSubheading:
     'AI workflow automation from Clickmasters adds intelligence to your business workflows. Instead of brittle rule chains that break when inputs vary, AI can interpret context, classify inputs, and decide the next step — while keeping human review available for important decisions.',
 

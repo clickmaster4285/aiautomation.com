@@ -2,7 +2,7 @@
 export const crmAutomation = {
   url: '/solutions/crm-automation',
   titleTag: 'CRM Automation Solutions for Sales Teams | Clickmasters',
-  metaDescription: 'CRM automation that keeps contacts, deals, and follow-ups accurate without asking reps to re-key the same record. Book a free audit. Ask today.',
+  metaDescription: 'CRM automation that keeps contacts, deals, and follow-ups accurate without asking reps to re-key the same record. Book a free audit.',
   primaryKeyword: 'crm automation',
   bookingLink: '/free-automation-audit',
 

@@ -66,7 +66,7 @@ export const aiInvoiceProcessingSoftware: ProductPageContent = {
 
   hero: {
     badge: 'AI Invoice Processing Software',
-    heading: 'AI Invoice Processing Software That Gets Supplier Invoices Checked, Approved and Posted',
+    heading: 'AI Invoice Processing Software: Checked, Approved and Posted',
     accentWords: 3,
     subheading:
       'We build AI invoice processing inside the tools your finance team already uses. Supplier invoices are collected from the inbox, read line by line, checked for duplicates, matched to purchase orders and routed for approval, then posted to your accounting system once someone signs them off. Paying the supplier stays with your team.',

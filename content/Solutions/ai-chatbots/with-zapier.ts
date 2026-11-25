@@ -164,8 +164,6 @@ export const aiChatbotsWithZapier: SolutionData = {
         props: {
           id: 'why-zapier',
           title: 'Why Zapier for AI Chatbots',
-          image: '/images/zapier-platform.png',
-          imageAlt: 'Zapier platform',
           imageRight: true,
           stats: [
             { label: 'Apps Integrated', value: '6,000+' },
@@ -186,8 +184,6 @@ export const aiChatbotsWithZapier: SolutionData = {
         props: {
           id: 'production-build',
           title: 'What a Production Build Includes',
-          image: '/images/production-build.png',
-          imageAlt: 'Production build process',
           cta: { text: 'See Our Process', href: '#how-we-work' },
           background: 'paper',
         },
@@ -198,8 +194,6 @@ export const aiChatbotsWithZapier: SolutionData = {
         props: {
           id: 'workflows',
           title: 'Typical Workflows on Zapier',
-          image: '/images/zapier-workflow.png',
-          imageAlt: 'Zapier workflow pattern',
           imageRight: true,
         },
       },

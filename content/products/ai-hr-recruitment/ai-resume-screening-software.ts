@@ -65,7 +65,7 @@ export const aiResumeScreeningSoftware: ProductPageContent = {
 
   hero: {
     badge: 'AI Resume Screening',
-    heading: 'AI Resume Screening Software That Prepares the Shortlist and Leaves the Decision to You',
+    heading: 'AI Resume Screening Software That Shortlists, While You Decide',
     accentWords: 6,
     subheading:
       'We build AI resume screening software inside the hiring tools you already use. Your team writes the criteria. AI reads each application against them, writes a short summary with the evidence it found and suggests a shortlist. A person reviews every recommendation before a candidate moves forward or is turned down.',

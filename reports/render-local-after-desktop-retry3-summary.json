@@ -1,0 +1,173 @@
+{
+  "pages": 22,
+  "failed": [],
+  "imgsMissingAlt": [],
+  "imgsEmptyAltVisible": [],
+  "imgsBroken": [],
+  "imgsOversized": [],
+  "multipleMain": [],
+  "h1NotOne": [],
+  "overflow": [],
+  "smallTaps": [
+    {
+      "path": "/products/ai-agents-platforms/ai-agent-development",
+      "taps": [
+        "Home 41x15",
+        "AI Agents & Platforms 178x15"
+      ]
+    },
+    {
+      "path": "/products/ai-agents-platforms/ai-agent-platform",
+      "taps": [
+        "Home 41x15",
+        "AI Agents & Platforms 178x15"
+      ]
+    },
+    {
+      "path": "/products/ai-customer-support/ai-customer-service-automation",
+      "taps": [
+        "Home 41x15",
+        "AI Customer Support 167x15"
+      ]
+    },
+    {
+      "path": "/products/ai-document-data-intelligence",
+      "taps": [
+        "Home 41x15"
+      ]
+    },
+    {
+      "path": "/products/ai-document-data-intelligence/ai-contract-analysis",
+      "taps": [
+        "Home 41x15",
+        "AI Document & Data Intelligenc 258x15"
+      ]
+    },
+    {
+      "path": "/products/ai-document-data-intelligence/intelligent-document-processing",
+      "taps": [
+        "Home 41x15",
+        "AI Document & Data Intelligenc 258x15"
+      ]
+    },
+    {
+      "path": "/products/ai-ecommerce-automation/ai-inventory-management-software",
+      "taps": [
+        "Home 41x15",
+        "AI E-commerce Automation 213x15"
+      ]
+    },
+    {
+      "path": "/products/ai-ecommerce-automation/ai-product-recommendation-software",
+      "taps": [
+        "Home 41x15",
+        "AI E-commerce Automation 213x15"
+      ]
+    },
+    {
+      "path": "/products/ai-ecommerce-automation/ai-shopping-assistant",
+      "taps": [
+        "Home 41x15",
+        "AI E-commerce Automation 213x15"
+      ]
+    },
+    {
+      "path": "/products/ai-finance-accounting",
+      "taps": [
+        "Home 41x15"
+      ]
+    },
+    {
+      "path": "/products/ai-finance-accounting/ai-bookkeeping-software",
+      "taps": [
+        "Home 41x15",
+        "AI Finance & Accounting 193x15"
+      ]
+    },
+    {
+      "path": "/products/ai-finance-accounting/ai-expense-management-software",
+      "taps": [
+        "Home 41x15",
+        "AI Finance & Accounting 193x15"
+      ]
+    },
+    {
+      "path": "/products/ai-finance-accounting/ai-invoice-processing-software",
+      "taps": [
+        "Home 41x15",
+        "AI Finance & Accounting 193x15"
+      ]
+    },
+    {
+      "path": "/products/ai-hr-recruitment",
+      "taps": [
+        "Home 41x15"
+      ]
+    },
+    {
+      "path": "/products/ai-marketing-automation/ai-campaign-management-software",
+      "taps": [
+        "Home 41x15",
+        "AI Marketing Automation 199x15"
+      ]
+    },
+    {
+      "path": "/products/ai-workflow-business-process-automation",
+      "taps": [
+        "Home 41x15"
+      ]
+    },
+    {
+      "path": "/products/general-ai-automation/ai-powered-business-software",
+      "taps": [
+        "Home 41x15",
+        "General AI Automation 182x15"
+      ]
+    },
+    {
+      "path": "/products/general-ai-automation/enterprise-ai-automation-solutions",
+      "taps": [
+        "Home 41x15",
+        "General AI Automation 182x15"
+      ]
+    },
+    {
+      "path": "/products/industry-specific-ai-automation",
+      "taps": [
+        "Home 41x15"
+      ]
+    },
+    {
+      "path": "/products/industry-specific-ai-automation/ai-healthcare-automation",
+      "taps": [
+        "Home 41x15",
+        "Industry-Specific AI Automatio 259x15"
+      ]
+    },
+    {
+      "path": "/services/ai-workflow-automation",
+      "taps": [
+        "Automate Your Workflow 266x21"
+      ]
+    }
+  ],
+  "consoleErrors": [],
+  "lcpOver2500": [],
+  "clsOver01": [],
+  "thirdParty": [
+    "www.googletagmanager.com",
+    "www.google.com",
+    "ad.doubleclick.net",
+    "www.clarity.ms",
+    "scripts.clarity.ms"
+  ],
+  "medians": {
+    "lcp": 368,
+    "cls": 0,
+    "ttfb": 21,
+    "load": 392,
+    "jsKB": 447,
+    "totalKB": 1045,
+    "requests": 251
+  }
+}

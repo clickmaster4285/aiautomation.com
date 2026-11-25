@@ -363,8 +363,8 @@ export default function TextSec({ section }: { section: Section }) {
                       src={src}
                       alt={alt}
                       fill
+                      sizes="200px"
                       className="object-contain drop-shadow-lg"
-                      priority
                     />
                   </motion.div>
                 </motion.div>
@@ -416,12 +416,12 @@ export default function TextSec({ section }: { section: Section }) {
                         {getIcon(card.icon)}
                       </div>
                       <div>
-                        <h4
+                        <h3
                           className="font-semibold text-sm font-sans"
                           style={{ color: '#111' }}
                         >
                           {card.title}
-                        </h4>
+                        </h3>
                         <p
                           className="text-xs leading-relaxed mt-0.5 text-justify font-sans"
                           style={{ color: 'rgba(0,0,0,0.5)' }}

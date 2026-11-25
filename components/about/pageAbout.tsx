@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { fadeInUp, staggerContainer } from '@/components/services/Shared/animation';
+import { fadeInUp, heroFadeInUp, heroStaggerContainer, staggerContainer } from '@/components/services/Shared/animation';
 import {
   BrainCircuit,
   Code,
@@ -65,7 +65,7 @@ export default function AboutPage() {
         </div>
         <div className="relative mx-auto max-w-[84vw] px-6 pt-4 pb-4 sm:pt-6 sm:pb-6 md:pt-8 md:pb-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
-            <motion.div initial="hidden" animate="visible" variants={staggerContainer} className="max-w-3xl">
+            <motion.div initial="hidden" animate="visible" variants={heroStaggerContainer} className="max-w-3xl">
               <motion.div
                 variants={fadeInUp}
                 className="inline-flex items-center gap-2 rounded-full border border-brand/30 bg-brand/10 px-3 py-1.5 md:px-4 md:py-2 text-xs md:text-sm text-brand backdrop-blur-sm mb-4 md:mb-6"
@@ -76,7 +76,7 @@ export default function AboutPage() {
                 <span className="text-brand/70 animate-pulse">TRUSTED PARTNER</span>
               </motion.div>
               <motion.h1
-                variants={fadeInUp}
+                variants={heroFadeInUp}
                 className="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-4 md:mb-6 text-gray-900"
               >
                 Build AI automation{' '}
@@ -85,7 +85,7 @@ export default function AboutPage() {
                 </span>
               </motion.h1>
               <motion.p
-                variants={fadeInUp}
+                variants={heroFadeInUp}
                 className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl text-justify"
               >
                 Clickmasters builds production AI automation for businesses in the United States, the United Kingdom, and Pakistan. The systems are owned by the client, not left as a prototype. {LOCATION_STATEMENT}
@@ -101,7 +101,7 @@ export default function AboutPage() {
               <div className="absolute inset-0 -m-2 sm:-m-3 md:-m-4 rounded-full bg-brand/10 blur-xl" />
               <Image
                 src="/images/about.png"
-                alt="AI Automation Agency"
+                alt="White humanoid robot with glowing cyan eyes, standing"
                 width={433}
                 height={577}
                 className="absolute inset-0 w-full h-full object-contain drop-shadow-[0_0_60px rgba(249,115,22,0.35)]"

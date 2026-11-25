@@ -2,6 +2,10 @@
 import { getBlogPosts } from '../sitemap_utils';
 import { canonicalUrl } from '@/lib/canonical';
 
+// Generated once at build time: the URL list only changes with a deploy, so lastmod is the build time
+// (not the request time, which told crawlers every URL changed on every fetch).
+export const dynamic = 'force-static';
+
 export async function GET() {
   const lastModified = new Date().toISOString();
   const blogPosts = getBlogPosts(); // This now returns only the main blog page data

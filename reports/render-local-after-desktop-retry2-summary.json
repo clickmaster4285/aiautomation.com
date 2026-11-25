@@ -1,0 +1,80 @@
+{
+  "pages": 9,
+  "failed": [
+    "/case-studies/ai-receptionist-lead-response-automation"
+  ],
+  "imgsMissingAlt": [],
+  "imgsEmptyAltVisible": [],
+  "imgsBroken": [],
+  "imgsOversized": [],
+  "multipleMain": [],
+  "h1NotOne": [],
+  "overflow": [],
+  "smallTaps": [
+    {
+      "path": "/products/ai-agents-platforms",
+      "taps": [
+        "Home 41x15"
+      ]
+    },
+    {
+      "path": "/products/ai-agents-platforms/ai-agent-development",
+      "taps": [
+        "Home 41x15",
+        "AI Agents & Platforms 178x15"
+      ]
+    },
+    {
+      "path": "/products/ai-document-data-intelligence/ai-ocr-software",
+      "taps": [
+        "Home 41x15",
+        "AI Document & Data Intelligenc 258x15"
+      ]
+    },
+    {
+      "path": "/products/ai-finance-accounting/ai-expense-management-software",
+      "taps": [
+        "Home 41x15",
+        "AI Finance & Accounting 193x15"
+      ]
+    },
+    {
+      "path": "/products/ai-marketing-automation",
+      "taps": [
+        "Home 41x15"
+      ]
+    },
+    {
+      "path": "/products/ai-workflow-business-process-automation/intelligent-process-automation",
+      "taps": [
+        "Home 41x15",
+        "AI Workflow & Business Process 359x15"
+      ]
+    },
+    {
+      "path": "/products/general-ai-automation/end-to-end-ai-automation",
+      "taps": [
+        "Home 41x15",
+        "General AI Automation 182x15"
+      ]
+    }
+  ],
+  "consoleErrors": [],
+  "lcpOver2500": [],
+  "clsOver01": [],
+  "thirdParty": [
+    "www.googletagmanager.com",
+    "www.clarity.ms",
+    "www.google.com",
+    "scripts.clarity.ms"
+  ],
+  "medians": {
+    "lcp": 1468,
+    "cls": 0,
+    "ttfb": 25,
+    "load": 400,
+    "jsKB": 447,
+    "totalKB": 1052,
+    "requests": 251
+  }
+}

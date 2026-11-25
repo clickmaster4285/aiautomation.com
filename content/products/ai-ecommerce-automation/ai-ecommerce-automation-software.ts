@@ -67,7 +67,7 @@ export const aiEcommerceAutomationSoftware: ProductPageContent = {
 
   hero: {
     badge: 'AI Ecommerce Automation Software',
-    heading: 'AI Ecommerce Automation Software That Runs Your Store’s Daily Workflows',
+    heading: 'AI Ecommerce Automation Software for Daily Store Workflows',
     accentWords: 3,
     subheading:
       'We build the operations layer behind your online store: workflows that draft product copy, tidy attributes, tag orders, log return requests, ask for reviews, recover carts and report on the week. They run inside your store, helpdesk, email platform and spreadsheets, and your team approves anything customer-facing.',

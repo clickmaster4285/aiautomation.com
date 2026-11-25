@@ -285,12 +285,12 @@ export default function IndustriesSec({ section }: { section: Section }) {
                       <Icon className="h-4 w-4" />
                     </div>
                     <div>
-                      <h4
+                      <h3
                         className="font-semibold text-sm font-sans"
                         style={{ color: '#111' }}
                       >
                         {item.title}
-                      </h4>
+                      </h3>
                       <p
                         className="text-xs leading-relaxed mt-0.5 text-justify font-sans"
                         style={{ color: 'rgba(0,0,0,0.5)' }}

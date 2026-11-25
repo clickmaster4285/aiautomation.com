@@ -69,7 +69,7 @@ export const aiAutomationToolsForBusinesses: ProductPageContent = {
 
   hero: {
     badge: 'AI Automation Tools',
-    heading: 'AI Automation Tools for Business: How to Choose, Combine and Implement Them',
+    heading: 'AI Automation Tools for Business: How to Choose and Combine Them',
     accentWords: 4,
     subheading:
       'There is no shortage of AI automation tools for business. The harder question is which ones belong in your stack, how they should connect, and who will keep them running. This guide is vendor-neutral, and it ends with how we implement on them.',

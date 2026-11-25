@@ -8,7 +8,7 @@ export const salesAutomationWithSalesforce = {
 
   heroBadge: 'Sales Automation with Salesforce',
   heroHeading:
-    'Sales Automation with Salesforce: Clean Data, Faster Pipeline, Less Manual Entry',
+    'Sales Automation with Salesforce: Clean Data and a Faster Pipeline',
   heroSubheading:
     'Salesforce is the center of your sales process — but it only delivers value when data is accurate and up to date. Sales automation with Salesforce from Clickmasters captures leads, enriches records, routes opportunities, and keeps Salesforce synchronized with the systems around it — so reps spend time on deals, not on data entry.',
 

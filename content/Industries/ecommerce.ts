@@ -4,7 +4,7 @@ import { ServiceContent } from '../type';
 export const ecommerce: ServiceContent = {
   slug: 'ecommerce',
   title: 'AI Automation for E-commerce Teams | Clickmasters AI',
-  metaDescription: 'AI automation for e-commerce covers orders, support, and the updates that should not wait on a person. Book a free audit. People keep the exceptions.',
+  metaDescription: 'AI automation for e-commerce stores: order updates, customer support, inventory and the routine updates that should not wait on a person. Book an audit.',
   keywords: 'ai automation for ecommerce, ecommerce automation',
   sections: [
     // ========== HERO ==========

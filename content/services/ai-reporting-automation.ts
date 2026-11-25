@@ -4,7 +4,7 @@ import { ServiceContent } from '../type';
 export const aiReportingAutomation: ServiceContent = {
   slug: 'ai-reporting-automation',
   title: 'AI Reporting Automation for Finance Teams | Clickmasters',
-  metaDescription: 'Clickmasters automates the reports your team already asks for and pulls the numbers on a set schedule. Book a free audit. People keep the exceptions.',
+  metaDescription: 'Clickmasters automates the reports your team already asks for and pulls the numbers on a set schedule. Book a free audit.',
   keywords: 'reporting automation, ai reporting automation',
 
   sections: [

@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer, scaleUp } from './Shared/animation';
 import type { Section } from '@/content/type';
+import { playfair } from '@/lib/fonts';
 
 export default function StepSec({ section, bg = 'bg-gray-50' }: { section: Section; bg?: string }) {
   const items = section.items || [];
@@ -10,7 +11,6 @@ export default function StepSec({ section, bg = 'bg-gray-50' }: { section: Secti
 
   return (
     <>
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');`}</style>
       <section className={`relative py-24 md:py-32 overflow-hidden ${bg}`}>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_50%_at_80%_50%,rgba(249,115,22,0.05),transparent)]" />
 
@@ -31,7 +31,7 @@ export default function StepSec({ section, bg = 'bg-gray-50' }: { section: Secti
                 <h2
                   className={`tracking-tight leading-tight max-w-2xl ${isBlack ? 'text-white' : 'text-gray-900'}`}
                   style={{
-                    fontFamily: "'Playfair Display', Georgia, serif",
+                    fontFamily: `${playfair.style.fontFamily}, Georgia, serif`,
                     fontWeight: 900,
                     fontSize: 'clamp(2rem, 5vw, 3.5rem)',
                   }}

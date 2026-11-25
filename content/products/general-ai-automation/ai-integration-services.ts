@@ -75,7 +75,7 @@ export const aiIntegrationServices: ProductPageContent = {
 
   hero: {
     badge: 'AI Integration Services',
-    heading: 'AI Integration Services That Connect AI Models to Your Business Systems',
+    heading: 'AI Integration Services That Connect AI to Your Business Systems',
     accentWords: 3,
     subheading:
       'An AI model on its own knows nothing about your customers, orders or policies. We connect models such as GPT, Claude and Gemini to your CRM, ERP, helpdesk, databases and documents, with the access controls, error handling and logging a live business system needs.',

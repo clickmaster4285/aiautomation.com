@@ -142,3 +142,125 @@ export const BLOG_RESOURCE_LINKS = [
   { href: "/case-studies/ai-receptionist-lead-response-automation", label: "AI receptionist case study" },
   { href: "/free-automation-audit", label: "Free automation audit" },
 ];
+
+// ─────────────────────────────────────────────────────────────
+// Product pages linked from service and industry pages.
+// Product pages were only reachable through the navbar and /products; these give each one
+// in-content links from the service or industry page whose work it actually covers.
+// Solution pages get theirs from TOPICS[topic].products in lib/link-graph.ts.
+// ─────────────────────────────────────────────────────────────
+const PR = "/products";
+
+export const SERVICE_PRODUCT_LINKS: Record<string, string[]> = {
+  "ai-workflow-automation": [
+    `${PR}/ai-workflow-business-process-automation/ai-workflow-automation-software`,
+    `${PR}/ai-workflow-business-process-automation/ai-task-automation`,
+    `${PR}/ai-workflow-business-process-automation/enterprise-workflow-automation`,
+    `${PR}/ai-hr-recruitment/ai-employee-management-software`,
+  ],
+  "business-process-automation": [
+    `${PR}/ai-workflow-business-process-automation/business-process-automation-software`,
+    `${PR}/ai-workflow-business-process-automation/intelligent-process-automation`,
+    `${PR}/ai-hr-recruitment/ai-hr-automation`,
+    `${PR}/ai-hr-recruitment/ai-recruitment-software`,
+    `${PR}/ai-hr-recruitment/ai-resume-screening-software`,
+    `${PR}/ai-finance-accounting/ai-expense-management-software`,
+  ],
+  "robotic-process-automation": [
+    `${PR}/ai-workflow-business-process-automation/intelligent-process-automation`,
+    `${PR}/ai-document-data-intelligence/ai-data-extraction-software`,
+    `${PR}/ai-document-data-intelligence/ai-ocr-software`,
+    `${PR}/ai-finance-accounting/ai-invoice-processing-software`,
+  ],
+  "ai-reporting-automation": [
+    `${PR}/ai-finance-accounting/ai-financial-automation`,
+    `${PR}/ai-marketing-automation/ai-campaign-management-software`,
+    `${PR}/ai-document-data-intelligence/ai-data-extraction-software`,
+  ],
+  "ai-agent-development": [
+    `${PR}/ai-agents-platforms/ai-agent-development`,
+    `${PR}/ai-agents-platforms/autonomous-ai-agents`,
+    `${PR}/ai-agents-platforms/multi-agent-systems`,
+    `${PR}/ai-agents-platforms/enterprise-ai-agents`,
+    `${PR}/ai-agents-platforms/ai-agent-platform`,
+  ],
+  "ai-chatbots": [
+    `${PR}/ai-customer-support/ai-chatbot-software`,
+    `${PR}/ai-customer-support/ai-customer-support-software`,
+    `${PR}/ai-customer-support/ai-virtual-assistant`,
+    `${PR}/ai-ecommerce-automation/ai-shopping-assistant`,
+  ],
+  "ai-voice-agents": [
+    `${PR}/ai-customer-support/ai-voice-agent`,
+    `${PR}/ai-customer-support/ai-customer-service-automation`,
+    `${PR}/ai-customer-support/ai-virtual-assistant`,
+  ],
+  "ai-lead-generation": [
+    `${PR}/ai-sales-crm/ai-lead-generation-tools`,
+    `${PR}/ai-sales-crm/ai-lead-management-software`,
+    `${PR}/ai-sales-crm/ai-sales-automation-software`,
+    `${PR}/ai-sales-crm/ai-crm-software`,
+    `${PR}/ai-sales-crm/ai-sales-assistant`,
+    `${PR}/ai-marketing-automation/ai-email-automation`,
+  ],
+  "ai-knowledge-assistants": [
+    `${PR}/ai-customer-support/ai-virtual-assistant`,
+    `${PR}/ai-customer-support/ai-customer-support-software`,
+    `${PR}/ai-document-data-intelligence/ai-document-processing-software`,
+  ],
+  "ai-strategy-advisory": [
+    `${PR}/general-ai-automation/ai-process-optimization`,
+    `${PR}/general-ai-automation/ai-automation-solutions`,
+    `${PR}/general-ai-automation/ai-automation-tools-for-businesses`,
+    `${PR}/general-ai-automation/enterprise-ai-automation-solutions`,
+  ],
+  "custom-ai-development": [
+    `${PR}/general-ai-automation/custom-ai-automation-software`,
+    `${PR}/general-ai-automation/ai-integration-services`,
+    `${PR}/general-ai-automation/ai-powered-business-software`,
+    `${PR}/general-ai-automation/end-to-end-ai-automation`,
+    `${PR}/general-ai-automation/intelligent-business-automation`,
+  ],
+};
+
+export const INDUSTRY_PRODUCT_LINKS: Record<string, string[]> = {
+  "ai-automation-for-healthcare": [
+    `${PR}/industry-specific-ai-automation/ai-healthcare-automation`,
+    `${PR}/ai-customer-support/ai-virtual-assistant`,
+    `${PR}/ai-document-data-intelligence/intelligent-document-processing`,
+  ],
+  "ai-automation-for-law-firms": [
+    `${PR}/industry-specific-ai-automation/ai-legal-automation`,
+    `${PR}/ai-document-data-intelligence/ai-contract-analysis`,
+    `${PR}/ai-document-data-intelligence/ai-document-processing-software`,
+  ],
+  "ai-automation-for-ecommerce": [
+    `${PR}/ai-ecommerce-automation/ai-ecommerce-automation-software`,
+    `${PR}/ai-ecommerce-automation/ai-order-processing-automation`,
+    `${PR}/ai-ecommerce-automation/ai-inventory-management-software`,
+    `${PR}/ai-ecommerce-automation/ai-product-recommendation-software`,
+    `${PR}/ai-ecommerce-automation/ai-shopping-assistant`,
+  ],
+  "ai-automation-for-saas": [
+    `${PR}/ai-customer-support/ai-customer-support-software`,
+    `${PR}/ai-sales-crm/ai-crm-software`,
+    `${PR}/ai-agents-platforms/ai-agent-platform`,
+  ],
+  "ai-automation-for-real-estate": [
+    `${PR}/industry-specific-ai-automation/ai-real-estate-automation`,
+    `${PR}/ai-sales-crm/ai-lead-management-software`,
+    `${PR}/ai-customer-support/ai-voice-agent`,
+  ],
+  "ai-automation-for-finance-accounting": [
+    `${PR}/ai-finance-accounting/ai-accounting-automation`,
+    `${PR}/ai-finance-accounting/ai-invoice-processing-software`,
+    `${PR}/ai-finance-accounting/ai-bookkeeping-software`,
+    `${PR}/ai-finance-accounting/ai-expense-management-software`,
+    `${PR}/ai-finance-accounting/ai-financial-automation`,
+  ],
+  "ai-automation-for-professional-services": [
+    `${PR}/industry-specific-ai-automation/ai-legal-automation`,
+    `${PR}/ai-document-data-intelligence/ai-contract-analysis`,
+    `${PR}/ai-customer-support/ai-virtual-assistant`,
+  ],
+};

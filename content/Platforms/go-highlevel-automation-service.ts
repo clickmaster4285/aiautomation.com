@@ -40,7 +40,7 @@ export const gohighlevelAutomationService : ServiceContent = {
     {
       type: 'text',
       heading: 'GoHighLevel Workflow Automation for Lead-Driven Businesses',
-      image: '/images/rob.png',
+      image: { src: '/images/rob.png', alt: 'Friendly white robot with a smiling digital face' },
       content: [
         'Lead-driven companies lose opportunities when follow-up depends entirely on manual processes. Our GHL automation services help create structured customer journeys from the first inquiry through booking, sales, onboarding, and reactivation.',
         'We analyze your current pipeline, calendars, forms, lead sources, and communication processes. Our GoHighLevel experts then build automation around those customer stages. The goal is a more consistent sales process.',

@@ -11,6 +11,17 @@ export const fadeInUp: Variants = {
   },
 };
 
+// Hero headings and intro copy: slide up without starting invisible. Text hidden at opacity 0
+// until hydration delays Largest Contentful Paint (about 4 s on a throttled phone), so hero text
+// that is likely the LCP element must paint on first render.
+export const heroFadeInUp: Variants = {
+  hidden: { y: 30 },
+  visible: {
+    y: 0,
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+  },
+};
+
 // Fade in from left
 export const fadeInLeft: Variants = {
   hidden: { opacity: 0, x: -30 },
@@ -32,6 +43,12 @@ export const fadeInRight: Variants = {
 };
 
 // Stagger children animations
+// Stagger for hero content: same timing as staggerContainer, without hiding the hero (see heroFadeInUp).
+export const heroStaggerContainer: Variants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.1, delayChildren: 0.2 } },
+};
+
 export const staggerContainer: Variants = {
   hidden: { opacity: 0 },
   visible: {

@@ -40,7 +40,7 @@ export const n8nAutomationService: ServiceContent = {
     {
       type: 'text',
       heading: 'Custom n8n Workflow Automation for Growing Businesses',
-      image: '/images/rob.png',
+      image: { src: '/images/rob.png', alt: 'Friendly white robot with a smiling digital face' },
       content: [
         'Complex business processes often require more flexibility than basic point-to-point automation provides. Our n8n workflow automation services help companies create advanced processes that combine business applications, APIs, structured data, and custom logic.',
         'We first analyze how data enters, moves through, and exits your workflow. Our n8n consultants then design the automation architecture around those requirements. This makes workflows easier to maintain and expand.',

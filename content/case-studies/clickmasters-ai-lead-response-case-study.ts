@@ -62,9 +62,10 @@ seo: {
     description:
       "An AI phone agent, missed-call text-back and instant replies for trades businesses, tested on 40 test leads. See how the build works.",
     image:
-      "/images/case-studies/ai-receptionist-lead-response-automation/og-ai-receptionist-case-study.jpg",
-    imageWidth: 1200,
-    imageHeight: 630,
+      "/case-study/ai-reception.jpeg",
+    imageAlt: "AI Receptionist That Turns Missed Calls Into Booked Jobs: a dashboard of handled calls, qualified leads and booked appointments",
+    imageWidth: 1408,
+    imageHeight: 768,
   },
 
     twitter: {
@@ -234,9 +235,9 @@ challenge: {
     },
     image: {
       src: "/case-study/ai-reception.jpeg",
-      alt: "AI receptionist platform answering calls, texts and emails for a trades business",
-      width: 1600,
-      height: 1000
+      alt: "AI Receptionist That Turns Missed Calls Into Booked Jobs: dashboard with handled calls, qualified leads, booked appointments and response times",
+      width: 1408,
+      height: 768
     }
   },
   gaps: {
@@ -282,9 +283,9 @@ challenge: {
 
        image: {
       src: "/case-study/steps.jpeg",
-      alt: "AI receptionist platform answering calls, texts and emails for a trades business",
-      width: 1600,
-      height: 1000
+      alt: "Flow diagram: calls, texts and emails go to the AI receptionist, then a lead response engine, ending as responded, qualified or booked",
+      width: 1408,
+      height: 768
     }
   },
   solution: {
@@ -363,9 +364,9 @@ challenge: {
     ],
      image: {
       src: "/case-study/dashboard.jpeg",
-      alt: "AI receptionist platform answering calls, texts and emails for a trades business",
-      width: 1600,
-      height: 1000
+      alt: "AI receptionist dashboard showing 30-day answered calls, response time, leads captured, appointments booked and a call outcomes chart",
+      width: 1408,
+      height: 768
     }
   },
   stack: {
@@ -430,9 +431,9 @@ challenge: {
     ],
      image: {
       src: "/case-study/conversations.jpeg",
-      alt: "AI receptionist platform answering calls, texts and emails for a trades business",
-      width: 1600,
-      height: 1000
+      alt: "Text conversation in which the AI assistant follows up a missed call, offers consultation times and confirms the booking",
+      width: 1408,
+      height: 768
     }
   },
   results: {
@@ -497,9 +498,9 @@ challenge: {
     ],
      image: {
       src: "/case-study/stages.jpeg",
-      alt: "AI receptionist platform answering calls, texts and emails for a trades business",
-      width: 1600,
-      height: 1000
+      alt: "Lead journey timeline in four stages: incoming call, call transcript, AI summary and appointment booked",
+      width: 1408,
+      height: 768
     }
   },
   faq: {
@@ -724,7 +725,7 @@ challenge: {
          {
           kind: "image",
    src: "/case-study/solution.png",
-   alt: "Architecture diagram showing communication channels feeding a lead core, with AI agents, business rules and a knowledge base connected to integrations and analytics.",
+   alt: "Architecture diagram: every channel feeds one lead core, with AI agents, coded business rules and a knowledge base above integrations and analytics",
    width: 1016,
    height: 748,
  },
@@ -746,7 +747,7 @@ challenge: {
          {
           kind: "image",
    src: "/case-study/lifecycle.png",
-   alt: "Architecture diagram showing communication channels feeding a lead core, with AI agents, business rules and a knowledge base connected to integrations and analytics.",
+   alt: "Lead lifecycle in five steps: capture, understand, convert, persist and grow, with dormant leads and past customers re-entering",
    width: 1016,
    height: 748,
  },
@@ -901,7 +902,7 @@ challenge: {
          {
           kind: "image",
    src: "/case-study/architecture.png",
-   alt: "Architecture diagram showing communication channels feeding a lead core, with AI agents, business rules and a knowledge base connected to integrations and analytics.",
+   alt: "One engine behind every channel in four steps: capture, decide, act and record, with a reliability layer under every step",
    width: 1016,
    height: 748,
  },
@@ -1212,8 +1213,8 @@ challenge: {
         },
          {
           kind: "image",
-   src: "/case-study/AI voice agent.png",
-   alt: "Architecture diagram showing communication channels feeding a lead core, with AI agents, business rules and a knowledge base connected to integrations and analytics.",
+   src: "/case-study/voice-agent.png",
+   alt: "Call flow: the owner gets 15 seconds to answer, then the AI agent answers, transfers emergencies, qualifies the job and books a slot",
    width: 1016,
    height: 748,
  },
@@ -2867,7 +2868,7 @@ challenge: {
                {
           kind: "image",
    src: "/case-study/system-architecture.png",
-   alt: "Architecture diagram showing communication channels feeding a lead core, with AI agents, business rules and a knowledge base connected to integrations and analytics.",
+   alt: "System diagram: calls go to the AI phone agent, texts and emails to the reply engine, ending booked, handed to a person or queued",
    width: 1016,
    height: 748,
  },
@@ -3418,7 +3419,7 @@ Business profile
                {
           kind: "image",
    src: "/case-study/build.png",
-   alt: "Architecture diagram showing communication channels feeding a lead core, with AI agents, business rules and a knowledge base connected to integrations and analytics.",
+   alt: "Fifteen-day build plan in four phases, foundations, text engine, voice agent and proof, each ending at a test gate",
    width: 1016,
    height: 748,
  },

@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import { canonicalUrl } from '@/lib/canonical';
+import { withSocialDefaults } from '@/lib/seo';
 
 // page.tsx is a client component, so its metadata lives here.
-export const metadata: Metadata = {
+export const metadata: Metadata = withSocialDefaults({
   title: 'Clickmasters AI Automation Blog and Guides | Clickmasters',
-  description: 'Guides from Clickmasters on AI workflows, agents, chatbots, CRM automation, and document automation for operating teams. People keep the exceptions.',
+  description: 'Guides from Clickmasters on AI workflows, agents, chatbots, CRM automation and document automation, written for the teams that run operations.',
   alternates: {
     canonical: canonicalUrl('/blog'),
   },
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     index: false,
     follow: true,
   },
-};
+});
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return children;

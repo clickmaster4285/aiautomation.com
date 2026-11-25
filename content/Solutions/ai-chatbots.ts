@@ -2,7 +2,7 @@
 export const aiChatbots = {
   url: '/solutions/ai-chatbots',
   titleTag: 'AI Chatbots That Answer, Qualify, and Route | Clickmasters',
-  metaDescription: 'Operations teams use Clickmasters AI Chatbots That Answer, Qualify, and Route Every Conversation to remove repetitive work from the current process.',
+  metaDescription: 'AI chatbots that answer customer questions, qualify leads, book appointments and hand complex conversations to your team, around the clock.',
   primaryKeyword: 'ai chatbots',
   bookingLink: '/free-automation-audit',
 

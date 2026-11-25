@@ -41,7 +41,7 @@ export const hubspotAutomationService: ServiceContent = {
       type: 'text',
       heading:
         'HubSpot Workflow Automation for Marketing, Sales, and Customer Success',
-      image: '/images/rob.png',
+      image: { src: '/images/rob.png', alt: 'Friendly white robot with a smiling digital face' },
       content: [
         'HubSpot becomes more valuable when customer information actively drives your sales and marketing processes. Our HubSpot workflow automation services help businesses turn CRM activity into structured actions.',
         'We review your lifecycle stages, pipelines, CRM properties, ownership rules, and customer journey before creating automation. This prevents disconnected workflows from becoming difficult to manage. The result is a more organized HubSpot environment.',

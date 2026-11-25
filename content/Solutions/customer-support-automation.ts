@@ -2,7 +2,7 @@
 export const customerSupportAutomation = {
   url: '/solutions/customer-support-automation',
   titleTag: 'Customer Support Automation for Service Teams | Clickmasters',
-  metaDescription: 'Customer support automation that resolves routine tickets and escalates the cases that still need a person on the team. Book a free audit. Ask today.',
+  metaDescription: 'Customer support automation that resolves routine tickets and escalates the cases that still need a person on the team. Book a free audit.',
   primaryKeyword: 'customer support automation',
   bookingLink: '/free-automation-audit',
 

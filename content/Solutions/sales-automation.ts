@@ -2,7 +2,7 @@
 export const salesAutomation = {
   url: '/solutions/sales-automation',
   titleTag: 'Sales Automation Solutions for Revenue Teams | Clickmasters',
-  metaDescription: 'Sales automation that enriches leads, follows up, and logs activity so representatives spend their time selling. Book a free audit. Ask today.',
+  metaDescription: 'Sales automation that enriches leads, follows up, and logs activity so representatives spend their time selling. Book a free audit.',
   primaryKeyword: 'sales automation',
   bookingLink: '/free-automation-audit',
 

@@ -21,7 +21,7 @@ export const aiCampaignManagementSoftwareSeo: HubSeo = {
   path: AI_CAMPAIGN_MANAGEMENT_SOFTWARE_PATH,
   title: 'AI Campaign Management Software | Clickmasters',
   description:
-    'AI campaign management software that plans, runs and reports on email, social and website campaigns inside your stack, with your team approving. Book an audit.',
+    'AI campaign management software that plans, runs and reports on email, social and website campaigns inside your stack, with your team approving.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Marketing Automation', path: '/products/ai-marketing-automation' },

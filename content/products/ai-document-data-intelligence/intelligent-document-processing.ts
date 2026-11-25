@@ -67,7 +67,7 @@ export const intelligentDocumentProcessing: ProductPageContent = {
 
   hero: {
     badge: 'Intelligent Document Processing',
-    heading: 'Intelligent Document Processing (IDP) With Confidence Checks and Human Review',
+    heading: 'Intelligent Document Processing (IDP) With Human Review',
     accentWords: 3,
     subheading:
       'Intelligent document processing combines OCR, AI classification, extraction by meaning, validation and human review so documents can be trusted as data. Clickmasters designs and builds IDP on platforms you own, and tells you plainly when a simpler approach would do the job.',

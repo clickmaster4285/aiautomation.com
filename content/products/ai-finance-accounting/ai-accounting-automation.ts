@@ -70,7 +70,7 @@ export const aiAccountingAutomation: ProductPageContent = {
 
   hero: {
     badge: 'AI Accounting Automation',
-    heading: 'AI Accounting Automation for Coding, Reconciliation and a Steadier Month-End Close',
+    heading: 'AI Accounting Automation for Coding, Reconciliation and Close',
     accentWords: 4,
     subheading:
       'We automate the repeatable work of the accounting cycle: suggesting account codes for transactions, matching payments to invoices, preparing journal entries for review and running the close checklist. It is built in your own accounting system and spreadsheets, and nothing is posted until a person approves it.',

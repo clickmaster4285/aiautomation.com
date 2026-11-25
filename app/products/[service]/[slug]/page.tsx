@@ -8,6 +8,7 @@ import ProductPage from '@/components/products/ProductPage';
 import { productMetadata } from '@/lib/product-metadata';
 import { getChildPage, childParams } from '@/content/products/registry';
 import { getRelatedProducts } from '@/content/products';
+import { serviceCardsForProduct } from '@/lib/product-cards';
 
 type Props = { params: Promise<{ service: string; slug: string }> };
 
@@ -29,6 +30,11 @@ export default async function ChildProductPage({ params }: Props) {
   const page = getChildPage(service, slug);
   if (!page) notFound();
   return (
-    <ProductPage content={page.content} seo={page.seo} relatedProducts={getRelatedProducts(service, slug)} />
+    <ProductPage
+      content={page.content}
+      seo={page.seo}
+      relatedProducts={getRelatedProducts(service, slug)}
+      relatedServices={await serviceCardsForProduct(`/products/${service}/${slug}`)}
+    />
   );
 }

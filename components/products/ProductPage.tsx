@@ -19,7 +19,7 @@ import CTA from '@/components/landingPage/CTA';
 import { Dot, SectionLabel, splitHeading } from '@/components/landingPage/Shared';
 import { HubJsonLd } from '@/components/seo/HubJsonLd';
 import ProductLeadForm from '@/components/products/ProductLeadForm';
-import { RelatedCards } from '@/components/seo/RelatedCards';
+import { RelatedCards, type RelatedCardItem } from '@/components/seo/RelatedCards';
 import type { HubSeo } from '@/lib/hub-seo';
 import type { ProductPageContent } from '@/content/products/types';
 import type { RelatedProducts } from '@/content/products';
@@ -76,11 +76,14 @@ export default function ProductPage({
   content: c,
   seo,
   relatedProducts,
+  relatedServices,
 }: {
   content: ProductPageContent;
   seo: HubSeo;
   /** Three related product pages, shown as cards just before the final CTA. */
   relatedProducts?: RelatedProducts;
+  /** Service pages that deliver this product (links the product up to its service). */
+  relatedServices?: RelatedCardItem[];
 }) {
   const AUDIT = c.hero.primaryCta.href;
   // H1 = homepage pattern: display text + italic brand tail.
@@ -128,7 +131,7 @@ export default function ProductPage({
                 </motion.span>
 
                 <motion.h1
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
                   className="display text-[9vw] sm:text-6xl md:text-[4.2vw] xl:text-[4.4vw] leading-[1.05]"
@@ -138,7 +141,7 @@ export default function ProductPage({
                 </motion.h1>
 
                 <motion.p
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
                   className="mt-5 md:mt-7 text-base md:text-xl text-muted-foreground max-w-2xl leading-relaxed"
@@ -563,6 +566,16 @@ export default function ProductPage({
           heading={relatedProducts.heading}
           items={relatedProducts.items}
           tone="secondary"
+        />
+      )}
+
+      {/* ── SERVICE BEHIND THE PRODUCT (links up the hierarchy to /services) ─ */}
+      {relatedServices && relatedServices.length > 0 && (
+        <RelatedCards
+          eyebrow="Service"
+          heading="The Service Behind It"
+          intro="We design, build and maintain this as part of these services."
+          items={relatedServices}
         />
       )}
 

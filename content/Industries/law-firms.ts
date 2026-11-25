@@ -4,7 +4,7 @@ import { ServiceContent } from '../type';
 export const lawFirms: ServiceContent = {
   slug: 'law-firms',
   title: 'AI Automation Built for Law Firms | Clickmasters AI',
-  metaDescription: 'AI automation for law firms covers intake, document routing, follow-up, and scheduling while attorneys keep the legal judgment. Ask the team today.',
+  metaDescription: 'AI automation for law firms covers client intake, document routing, follow-up and scheduling, while attorneys keep the legal judgment. Book a free audit.',
   keywords: 'ai automation for law firms, legal automation',
   sections: [
     // ========== HERO ==========

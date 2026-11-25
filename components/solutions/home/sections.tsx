@@ -124,7 +124,7 @@ export function HeroSection({
                 </motion.span>
               )}
               <motion.h1
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
                 className="display text-[9vw] sm:text-6xl md:text-[4.2vw] xl:text-[4.4vw] leading-[1.05]"
@@ -134,7 +134,7 @@ export function HeroSection({
                 <span className="display-italic font-normal text-brand">{title.tail}</span>
               </motion.h1>
               <motion.p
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
                 className="mt-5 md:mt-7 text-base md:text-xl text-muted-foreground max-w-2xl leading-relaxed"

@@ -2,7 +2,9 @@
 
 import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer } from './Shared/animation';
-import * as Icons from 'lucide-react';
+import { Zap } from 'lucide-react';
+import { playfair } from '@/lib/fonts';
+import { CONTENT_ICONS } from '@/components/shared/content-icons';
 import type { Section } from '@/content/type';
 
 function RightSideDecor({ isBlack }: { isBlack: boolean }) {
@@ -250,7 +252,6 @@ export default function FeatureSec({ section, bg = 'bg-gray-50' }: { section: Se
 
   return (
     <>
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');`}</style>
       <section className={`relative py-24 md:py-32 overflow-hidden ${bg}`}>
 
         {/* Original ambient gradient */}
@@ -275,7 +276,7 @@ export default function FeatureSec({ section, bg = 'bg-gray-50' }: { section: Se
                 <h2
                   className={`tracking-tight leading-tight max-w-2xl ${isBlack ? 'text-white' : 'text-gray-900'}`}
                   style={{
-                    fontFamily: "'Playfair Display', Georgia, serif",
+                    fontFamily: `${playfair.style.fontFamily}, Georgia, serif`,
                     fontWeight: 900,
                     fontSize: 'clamp(2rem, 5vw, 3.5rem)',
                   }}
@@ -292,7 +293,7 @@ export default function FeatureSec({ section, bg = 'bg-gray-50' }: { section: Se
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {items.map((item, idx) => {
-                const IconComponent = item.icon ? (Icons as any)[item.icon] : Icons.Zap;
+                const IconComponent = item.icon ? CONTENT_ICONS[item.icon] : Zap;
                 return (
                   <motion.div
                     key={idx}

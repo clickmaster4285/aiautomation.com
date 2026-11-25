@@ -4,7 +4,7 @@ import { ServiceContent } from '../type';
 export const aiDataDocumentAutomation: ServiceContent = {
   slug: 'ai-data-document-automation',
   title: 'Document and Data Automation Services | Clickmasters AI',
-  metaDescription: 'Clickmasters extracts, checks, and routes data from documents so teams stop re-keying the same files. Book a free audit. People keep the exceptions.',
+  metaDescription: 'Clickmasters extracts, checks, and routes data from documents so teams stop re-keying the same files. Book a free audit.',
   keywords: 'ai document processing, data extraction, document automation, ocr automation',
   sections: [
     // ========== HERO ==========

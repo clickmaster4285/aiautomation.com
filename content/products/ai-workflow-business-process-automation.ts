@@ -61,7 +61,7 @@ export const aiWorkflowBpa: ProductPageContent = {
 
   hero: {
     badge: 'AI Workflow & Business Process Automation',
-    heading: 'AI Workflow and Business Process Automation That Moves Work Without Manual Hand-Offs',
+    heading: 'AI Workflow and Business Process Automation Without Manual Hand-Offs',
     accentWords: 4,
     subheading:
       'Clickmasters connects the tools your teams already use and turns the steps between them into automated workflows. Rules handle the predictable parts, AI handles the messy inputs, and people stay in charge of the decisions that carry real risk.',

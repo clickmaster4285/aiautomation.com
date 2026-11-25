@@ -68,7 +68,7 @@ export const aiDocumentDataIntelligence: ProductPageContent = {
 
   hero: {
     badge: 'AI Document & Data Intelligence',
-    heading: 'AI Document and Data Intelligence That Turns Paperwork Into Usable Data',
+    heading: 'AI Document and Data Intelligence: Paperwork Into Usable Data',
     accentWords: 3,
     subheading:
       'Clickmasters builds document automation inside the systems you already run. Documents are collected as they arrive, read by OCR and language models, checked against your records and sent where they belong. Anything the AI is unsure about goes to a person with the doubtful field marked.',

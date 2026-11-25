@@ -71,7 +71,7 @@ export const aiAgentsPlatforms: ProductPageContent = {
 
   hero: {
     badge: 'AI Agents & Platforms',
-    heading: 'AI Agents for Business That Do Real Work Inside the Systems You Already Run',
+    heading: 'AI Agents for Business That Work Inside Your Existing Systems',
     accentWords: 4,
     subheading:
       'Clickmasters designs and builds AI agents around your workflow, your data and your tools. An agent reads the request, gathers what it needs from your CRM, inbox or ERP, takes the next sensible step within limits you set, and asks a person before anything important or sensitive happens.',

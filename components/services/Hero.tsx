@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle2, Send } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
 import { useState } from 'react';
 import { Section } from '@/content/type';
-import { fadeInUp, staggerContainer } from '../services/Shared/animation';
+import { fadeInUp, heroFadeInUp, heroStaggerContainer } from '../services/Shared/animation';
 import Link from 'next/link';
 
 interface HeroProps {
@@ -43,7 +43,8 @@ export default function Hero({ section }: HeroProps) {
   );
 
   const wordVariants: Variants = {
-    hidden: { opacity: 0, y: 24 },
+    // No opacity: 0 start, so the H1 paints before hydration (see heroFadeInUp).
+    hidden: { y: 24 },
     visible: (i: number) => ({
       opacity: 1,
       y: 0,
@@ -82,7 +83,7 @@ export default function Hero({ section }: HeroProps) {
           <motion.div
             initial="hidden"
             animate="visible"
-            variants={staggerContainer}
+            variants={heroStaggerContainer}
             className="lg:col-span-7 relative z-10 flex flex-col"
           >
             {/* Eyebrow */}
@@ -114,7 +115,7 @@ export default function Hero({ section }: HeroProps) {
             {/* Subheading */}
             {subheading && (
               <motion.p
-                variants={fadeInUp}
+                variants={heroFadeInUp}
                 className="mb-8 text-sm sm:text-base text-gray-400 max-w-xl leading-relaxed font-light"
               >
                 {subheading}
@@ -202,9 +203,9 @@ export default function Hero({ section }: HeroProps) {
           >
             <div className="w-full flex flex-col border border-white/10 bg-white/[0.02] p-6 sm:p-8">
               <div className="mb-8">
-                <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
+                <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
                   Get a Free Consultation
-                </h3>
+                </h2>
                 <p className="text-xs sm:text-sm text-gray-400 mt-2">
                   Tell us about your project. We will respond within 24 hours.
                 </p>

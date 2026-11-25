@@ -3,7 +3,8 @@
 import React, { useState, useRef, MouseEvent } from 'react';
 import { motion, Variants } from 'framer-motion';
 import Image from 'next/image';
-import * as Icons from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
+import { CONTENT_ICONS } from '@/components/shared/content-icons';
 import type { Section } from '@/content/type';
 import { RichText } from '@/components/solutions/sections/variants/RichText';
 
@@ -29,7 +30,7 @@ function LucideIcon({
   className,
   ...rest
 }: { name: string; className?: string } & React.SVGProps<SVGSVGElement>) {
-  const Icon = (Icons as any)[name];
+  const Icon = CONTENT_ICONS[name];
   return Icon ? <Icon className={className} {...rest} /> : null;
 }
 
@@ -205,7 +206,7 @@ function InteractiveCard({ item, idx, isWhySection }: { item: any; idx: number; 
         </div>
         <div className="flex items-center gap-1.5 text-xs font-medium text-brand/0 group-hover:text-brand/100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500 opacity-0 group-hover:opacity-100 font-sans">
           <span>{isWhySection ? 'Learn More' : 'Explore System Blueprint'}</span>
-          <Icons.ArrowUpRight className="w-3.5 h-3.5" />
+          <ArrowUpRight className="w-3.5 h-3.5" />
         </div>
       </div>
     </motion.div>

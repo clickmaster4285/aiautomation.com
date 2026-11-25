@@ -1,0 +1,1934 @@
+[
+ {
+  "path": "/case-studies/ai-receptionist-lead-response-automation",
+  "mode": "desktop",
+  "h1": [
+   "AI Receptionist for Small Business:Every Call, Text and Email Answered in Seconds"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobo-side.jpg&w=256&q=60",
+    "alt": "Robot peeking around a wall and waving",
+    "hidden": false,
+    "natural": "160x180",
+    "shown": "160x181",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fcase-study%2Fai-reception.jpeg&w=640&q=75",
+    "alt": "AI Receptionist That Turns Missed Calls Into Booked Jobs: dashboard with handled calls, qualified leads, booked appointments and response times",
+    "hidden": false,
+    "natural": "599x327",
+    "shown": "1160x632",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fcase-study%2Fsteps.jpeg&w=640&q=75",
+    "alt": "Flow diagram: calls, texts and emails go to the AI receptionist, then a lead response engine, ending as responded, qualified or booked",
+    "hidden": false,
+    "natural": "599x327",
+    "shown": "1160x632",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "245x245",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fcase-study%2Fdashboard.jpeg&w=640&q=75",
+    "alt": "AI receptionist dashboard showing 30-day answered calls, response time, leads captured, appointments booked and a call outcomes chart",
+    "hidden": false,
+    "natural": "599x327",
+    "shown": "547x298",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fcase-study%2Fconversations.jpeg&w=640&q=75",
+    "alt": "Text conversation in which the AI assistant follows up a missed call, offers consultation times and confirms the booking",
+    "hidden": false,
+    "natural": "599x327",
+    "shown": "1160x632",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fcase-study%2Fstages.jpeg&w=640&q=75",
+    "alt": "Lead journey timeline in four stages: incoming call, call transcript, AI summary and appointment booked",
+    "hidden": false,
+    "natural": "599x327",
+    "shown": "1160x632",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fcase-study%2Fsolution.png&w=1080&q=75",
+    "alt": "Architecture diagram: every channel feeds one lead core, with AI agents, coded business rules and a knowledge base above integrations and analytics",
+    "hidden": false,
+    "natural": "842x620",
+    "shown": "896x660",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fcase-study%2Flifecycle.png&w=1080&q=75",
+    "alt": "Lead lifecycle in five steps: capture, understand, convert, persist and grow, with dormant leads and past customers re-entering",
+    "hidden": false,
+    "natural": "842x256",
+    "shown": "896x273",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fcase-study%2Fimplementation.png&w=1080&q=75",
+    "alt": "Implementation roadmap showing six phases with exit gates",
+    "hidden": false,
+    "natural": "842x368",
+    "shown": "896x392",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot2.jpg&w=256&q=60",
+    "alt": "Clickmasters robot mascot",
+    "hidden": false,
+    "natural": "176x176",
+    "shown": "179x179",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot2.jpg&w=256&q=60",
+    "alt": "Clickmasters robot mascot",
+    "hidden": false,
+    "natural": "176x176",
+    "shown": "179x179",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [],
+  "bodyFontPx": 16,
+  "ttfb": 21,
+  "domContentLoaded": 60,
+  "load": 382,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 200,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1232,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.google.com",
+   "ad.doubleclick.net"
+  ],
+  "vitals": {
+   "lcp": 956,
+   "lcpEl": "H1 AI Receptionist for Small Business:Every Call, Text and Emai",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-agents-platforms/ai-agent-development",
+  "mode": "desktop",
+  "h1": [
+   "AI Agent Development, From First Workshop to Production"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "388x388",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "AI Agents & Platforms 178x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 27,
+  "domContentLoaded": 83,
+  "load": 439,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1038,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms",
+   "www.google.com",
+   "scripts.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 392,
+   "lcpEl": "H1 AI Agent Development, From First Workshop to Production",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-agents-platforms/ai-agent-platform",
+  "mode": "desktop",
+  "h1": [
+   "AI Agent Platform Components, Assembled Inside Your Own Environment"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "AI Agents & Platforms 178x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 28,
+  "domContentLoaded": 69,
+  "load": 401,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1039,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms",
+   "www.google.com",
+   "scripts.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 376,
+   "lcpEl": "H1 AI Agent Platform Components, Assembled Inside Your Own Envi",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-customer-support/ai-customer-service-automation",
+  "mode": "desktop",
+  "h1": [
+   "AI Customer Service Automation From First Request to Follow-Up"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "AI Customer Support 167x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 27,
+  "domContentLoaded": 73,
+  "load": 371,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1045,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 356,
+   "lcpEl": "H1 AI Customer Service Automation From First Request to Follow-",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-document-data-intelligence",
+  "mode": "desktop",
+  "h1": [
+   "AI Document and Data Intelligence: Paperwork Into Usable Data"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 18,
+  "domContentLoaded": 57,
+  "load": 387,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1051,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 368,
+   "lcpEl": "H1 AI Document and Data Intelligence: Paperwork Into Usable Dat",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-document-data-intelligence/ai-contract-analysis",
+  "mode": "desktop",
+  "h1": [
+   "AI Contract Analysis That Builds a Searchable Contract Register"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "AI Document & Data Intelligenc 258x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 21,
+  "domContentLoaded": 64,
+  "load": 365,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1049,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 352,
+   "lcpEl": "H1 AI Contract Analysis That Builds a Searchable Contract Regis",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-document-data-intelligence/intelligent-document-processing",
+  "mode": "desktop",
+  "h1": [
+   "Intelligent Document Processing (IDP) With Human Review"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "AI Document & Data Intelligenc 258x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 21,
+  "domContentLoaded": 62,
+  "load": 380,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1041,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 352,
+   "lcpEl": "H1 Intelligent Document Processing (IDP) With Human Review",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-ecommerce-automation/ai-inventory-management-software",
+  "mode": "desktop",
+  "h1": [
+   "AI Inventory Management Software That Keeps Stock Records Straight"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "AI E-commerce Automation 213x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 18,
+  "domContentLoaded": 69,
+  "load": 389,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1039,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 380,
+   "lcpEl": "H1 AI Inventory Management Software That Keeps Stock Records St",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-ecommerce-automation/ai-product-recommendation-software",
+  "mode": "desktop",
+  "h1": [
+   "AI Product Recommendation Software for the Right Next Product"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "448x448",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "AI E-commerce Automation 213x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 21,
+  "domContentLoaded": 62,
+  "load": 374,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1036,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms",
+   "www.google.com",
+   "scripts.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 344,
+   "lcpEl": "H1 AI Product Recommendation Software for the Right Next Produc",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-ecommerce-automation/ai-shopping-assistant",
+  "mode": "desktop",
+  "h1": [
+   "AI Shopping Assistant That Answers Shoppers Before They Leave"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "411x411",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "AI E-commerce Automation 213x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 20,
+  "domContentLoaded": 55,
+  "load": 392,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1057,
+  "requests": 251,
+  "thirdParty": [],
+  "vitals": {
+   "lcp": 332,
+   "lcpEl": "H1 AI Shopping Assistant That Answers Shoppers Before They Leav",
+   "cls": 0.0006153648986012791
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-finance-accounting",
+  "mode": "desktop",
+  "h1": [
+   "AI Finance and Accounting Automation, With People in Control"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 21,
+  "domContentLoaded": 67,
+  "load": 416,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1050,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 376,
+   "lcpEl": "H1 AI Finance and Accounting Automation, With People in Control",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-finance-accounting/ai-bookkeeping-software",
+  "mode": "desktop",
+  "h1": [
+   "AI Bookkeeping Software That Keeps Records Accountant-Ready"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "401x401",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "AI Finance & Accounting 193x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 18,
+  "domContentLoaded": 62,
+  "load": 435,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1048,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 388,
+   "lcpEl": "H1 AI Bookkeeping Software That Keeps Records Accountant-Ready",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-finance-accounting/ai-expense-management-software",
+  "mode": "desktop",
+  "h1": [
+   "AI Expense Management Software, From Receipt to Approval"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "AI Finance & Accounting 193x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 15,
+  "domContentLoaded": 49,
+  "load": 393,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1049,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 324,
+   "lcpEl": "H1 AI Expense Management Software, From Receipt to Approval",
+   "cls": 0.0010002222222222222
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-finance-accounting/ai-invoice-processing-software",
+  "mode": "desktop",
+  "h1": [
+   "AI Invoice Processing Software: Checked, Approved and Posted"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "AI Finance & Accounting 193x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 13,
+  "domContentLoaded": 47,
+  "load": 465,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1049,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 392,
+   "lcpEl": "H1 AI Invoice Processing Software: Checked, Approved and Posted",
+   "cls": 0.0010047080640196984
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-hr-recruitment",
+  "mode": "desktop",
+  "h1": [
+   "AI HR and Recruitment Automation for Busy People Teams"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "372x372",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 21,
+  "domContentLoaded": 56,
+  "load": 363,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1048,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 336,
+   "lcpEl": "H1 AI HR and Recruitment Automation for Busy People Teams",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-marketing-automation/ai-campaign-management-software",
+  "mode": "desktop",
+  "h1": [
+   "AI Campaign Management Software That Keeps Every Launch on Track"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "390x390",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "AI Marketing Automation 199x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 25,
+  "domContentLoaded": 67,
+  "load": 359,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1044,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 352,
+   "lcpEl": "H1 AI Campaign Management Software That Keeps Every Launch on T",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-workflow-business-process-automation",
+  "mode": "desktop",
+  "h1": [
+   "AI Workflow and Business Process Automation Without Manual Hand-Offs"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 21,
+  "domContentLoaded": 61,
+  "load": 431,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1038,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms",
+   "www.google.com",
+   "ad.doubleclick.net",
+   "scripts.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 388,
+   "lcpEl": "H1 AI Workflow and Business Process Automation Without Manual H",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/general-ai-automation/ai-powered-business-software",
+  "mode": "desktop",
+  "h1": [
+   "AI-Powered Business Software for the Systems You Already Use"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "General AI Automation 182x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 29,
+  "domContentLoaded": 70,
+  "load": 394,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1035,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 368,
+   "lcpEl": "H1 AI-Powered Business Software for the Systems You Already Use",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/general-ai-automation/enterprise-ai-automation-solutions",
+  "mode": "desktop",
+  "h1": [
+   "Enterprise AI Automation Solutions with Governance Built In"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "General AI Automation 182x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 36,
+  "domContentLoaded": 139,
+  "load": 472,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1033,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 452,
+   "lcpEl": "H1 Enterprise AI Automation Solutions with Governance Built In",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/industry-specific-ai-automation",
+  "mode": "desktop",
+  "h1": [
+   "Industry-Specific AI Solutions Built Around How Your Sector Works"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 13,
+  "domContentLoaded": 53,
+  "load": 361,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1037,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 344,
+   "lcpEl": "H1 Industry-Specific AI Solutions Built Around How Your Sector ",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/industry-specific-ai-automation/ai-healthcare-automation",
+  "mode": "desktop",
+  "h1": [
+   "Medical Practice Automation with AI for Clinics and Care Teams"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "Industry-Specific AI Automatio 259x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 20,
+  "domContentLoaded": 73,
+  "load": 434,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1045,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com"
+  ],
+  "vitals": {
+   "lcp": 372,
+   "lcpEl": "H1 Medical Practice Automation with AI for Clinics and Care Tea",
+   "cls": 0.0007715979104681782
+  },
+  "errors": []
+ },
+ {
+  "path": "/services/ai-workflow-automation",
+  "mode": "desktop",
+  "h1": [
+   "AIWorkflowAutomationServicestoSaveTimeandReduceManualWork"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot2.jpg&w=256&q=60",
+    "alt": "Clickmasters robot mascot",
+    "hidden": false,
+    "natural": "256x256",
+    "shown": "256x256",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Automate Your Workflow 266x21"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 13,
+  "domContentLoaded": 67,
+  "load": 341,
+  "jsKB": 444,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1034,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com"
+  ],
+  "vitals": {
+   "lcp": 324,
+   "lcpEl": "P Improve how your business operates with AI workflow automati",
+   "cls": 0.016842105263157894
+  },
+  "errors": []
+ }
+]

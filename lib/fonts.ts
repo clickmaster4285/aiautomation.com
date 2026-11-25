@@ -1,9 +1,17 @@
 // lib/fonts.ts
-import { Bodoni_Moda } from 'next/font/google';
+import { Bodoni_Moda, Playfair_Display } from 'next/font/google';
 
 export const bodoni = Bodoni_Moda({
   subsets: ['latin'],
   weight: ['700', '900'],
+  display: 'swap',
+});
+
+// Industry page display headings. Self-hosted by next/font (preloaded, with a metric-matched fallback)
+// instead of a runtime @import from fonts.googleapis.com in each section.
+export const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['900'],
   display: 'swap',
 });
 

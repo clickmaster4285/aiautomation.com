@@ -188,7 +188,7 @@ export default function IndustriesClient() {
 
                 <motion.img
                   src="/images/mini.png"
-                  alt="Industries illustration"
+                  alt="Blue robot with a smiling face, waving"
                   className="w-full h-auto rounded-2xl shadow-2xl shadow-brand/10 object-cover"
                   style={{
                     maskImage: 'linear-gradient(to left, transparent 0%, black 25%, black 100%)',
