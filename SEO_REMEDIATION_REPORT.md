@@ -28,6 +28,8 @@ The site's technical foundation was already sound. Every URL returned HTTP 200, 
 | Alt text that was a page heading, a generic label, or repeated across different images | 20 alt values | **0** |
 | JavaScript shipped to industry and platform pages | +634 KB (the entire icon library) | **removed** |
 | Sitemaps | regenerated on every request; `lastmod` = request time | **static**, `lastmod` = build time |
+| Median LCP, desktop (all pages) / mobile throttled (sample) | 576 ms / 4148 ms | **344 ms / 2528 ms** |
+| Mobile horizontal overflow at 390 px | footer on every page + hero CTAs | **0** |
 
 **Not yet live.** None of this is deployed. Production keeps serving the old version until the branch is deployed. Live findings in this report describe production as it stands today.
 
@@ -188,11 +190,16 @@ O-3 long descriptions · N-6 duplicate verification tag · N-8 heading skips · 
 17. Sitemaps static (`force-static`, 7 routes).
 18. `sizes` and correct dimensions on oversized images; removed needless `priority` on a below-the-fold image.
 19. Broken image references removed (2 solution pages) and corrected (case-study tab).
+20. `sizes` added to all 9 case-study images.
+21. Footer column `min-w-[340px]` → `sm:min-w-[340px]`: the footer was 5 px wider than a 390 px phone screen on every page.
+22. Platform and industry hero CTA buttons can wrap on mobile (`whitespace-normal`, `sm:whitespace-nowrap`), so they no longer overflow the screen.
+23. Hero text on service, about, platform, industry, solution, product and case-study pages no longer starts at `opacity: 0`. It still animates (slides in), but it is visible in the server HTML, so LCP doesn't wait for hydration (mobile median LCP 4148 → 2528 ms).
+24. `/blog` wrapper `motion.main` → `motion.div` (last nested `<main>`).
 
 **Tooling (new)**
-20. `scripts/seo-audit-crawl.mjs`: full-site crawler (JSON and CSV).
-21. `scripts/seo-render-check.mjs`: headless-Chrome rendered-DOM, Web Vitals and mobile checker (no new dependencies).
-22. `scripts/build-url-audit-csv.mjs`: builds `SEO_URL_AUDIT.csv`.
+25. `scripts/seo-audit-crawl.mjs`: full-site crawler (JSON and CSV).
+26. `scripts/seo-render-check.mjs`: headless-Chrome rendered-DOM, Web Vitals and mobile checker (no new dependencies).
+27. `scripts/build-url-audit-csv.mjs`: builds `SEO_URL_AUDIT.csv`.
 
 No dependencies were added. No design, framework, analytics, chat or CRM integration was changed.
 
@@ -204,7 +211,7 @@ No dependencies were added. No design, framework, analytics, chat or CRM integra
 
 **Libraries:** `lib/cms.ts`, `lib/fonts.ts`, `lib/hub-seo.ts`, `lib/inline-links-core.ts`, `lib/internal-links.ts`, `lib/product-metadata.ts`.
 
-**Components:** `components/solutions/SolutionPage.tsx`, `components/products/ProductPage.tsx`, `components/contact/pageContact.tsx`, `components/templates/ServiceTemplate.tsx`, `components/services/{Hero,StepSec}.tsx`, `components/about/pageAbout.tsx`, `components/industries/{CTASec,FeaturesSec,GridSec,PainPoint,StepSec,TextSec}.tsx`, `components/platforms/{FeatureSec,GridSec,IndustriesSec,PainPoint,TextSec}.tsx`.
+**Components:** `components/solutions/SolutionPage.tsx`, `components/products/ProductPage.tsx`, `components/contact/pageContact.tsx`, `components/templates/ServiceTemplate.tsx`, `components/services/{Hero,StepSec}.tsx`, `components/about/pageAbout.tsx`, `components/industries/{CTASec,FeaturesSec,GridSec,PainPoint,StepSec,TextSec}.tsx`, `components/platforms/{FeatureSec,GridSec,IndustriesSec,PainPoint,TextSec}.tsx`, `components/industries/Hero.tsx`, `components/platforms/Hero.tsx`, `components/services/Shared/animation.ts`, `components/solutions/home/sections.tsx`, `components/solutions/sections/Hero.tsx`, `components/solutions/layout/PageWrapper.tsx`, `components/landingPage/Footer.tsx`.
 
 **Content:** 14 solution hub files and 3 solution detail files under `content/Solutions/`; 16 files under `content/services/`; 6 under `content/Industries/`; 6 under `content/Platforms/`; 34 under `content/products/`; `content/case-studies/clickmasters-ai-lead-response-case-study.ts`.
 
@@ -255,6 +262,7 @@ The CSV carries the before value for every changed title, description and H1.
 | Explicit icon map instead of `import * as Icons` | 13 industry and platform pages | Removed a 634 KB (uncompressed) JavaScript chunk containing every lucide icon |
 | Playfair Display via `next/font` | 7 industry pages | 6 render-time third-party CSS imports removed; font preloaded with a size-matched fallback (less layout shift) |
 | Static sitemaps | 7 sitemap URLs | Served from cache instead of rebuilt per request (production measured 2–4.3 s for these) |
+| Hero text visible before hydration (no `opacity: 0` start) | all hero templates | Mobile median LCP 4148 → 2528 ms (throttled lab test) |
 | `sizes`, true dimensions, no needless `priority` | 6 platform pages, case study | The 200 px image now downloads at roughly 200–400 px instead of 1920 px; no preload competing with LCP; no layout shift from wrong dimensions |
 
 Desktop measurements (headless Chrome, local production build, all pages) are in §18. Field Core Web Vitals (CrUX / Search Console) need production traffic (§20).
@@ -273,7 +281,33 @@ Desktop measurements (headless Chrome, local production build, all pages) are in
 | 404 handling | 10 unknown URLs: 404 + `noindex`, under 0.1 s, branded page |
 | robots.txt, sitemap XML | Served correctly; all 5 child sitemaps parse as XML; 324 `<loc>`s, all HTTPS apex with no trailing slash; `lastmod` = build time |
 
-RENDER_RESULTS_PLACEHOLDER
+**Rendered DOM, desktop, all 325 pages (local production build, before → after)**
+
+| Metric | Before | After |
+|---|---|---|
+| `<img>` without alt | 0 | 0 |
+| Broken images | 4 | **0** |
+| Console errors | 2 | **0** |
+| Pages with more than one `<main>` | 28 | **0** |
+| Pages with 0 or 2+ H1s | 0 | 0 |
+| Pages with LCP > 2.5 s / CLS > 0.1 | 0 / 0 | 0 / 0 |
+| Median LCP | 576 ms | **344 ms** |
+| Median JS transferred | 595 KB | **447 KB** |
+| Median total transferred | 1175 KB | **1054 KB** |
+
+In the full run, 22 pages hit the checker's own 30 s `Runtime.evaluate` timeout because three browser tabs ran at once on this machine. All 22 were re-run one at a time (`reports/render-local-after-desktop-retry3*.json`): 0 failures, 0 broken images, 0 missing alts, 0 LCP/CLS problems, 0 console errors.
+
+**Rendered DOM, mobile (390 px, 4× CPU slowdown, 1.6 Mbps), sample of 13 representative pages**
+
+| Metric | Before | After |
+|---|---|---|
+| Median LCP | 4148 ms | **2528 ms** |
+| Horizontal overflow | footer (5 px, every page) + platform/industry CTA | **0** (rechecked on 2 platform and 2 industry pages after the last build) |
+| Broken images / multiple `<main>` / console errors | 0 / 0 / 0 | 0 / 0 / 0 |
+
+The biggest mobile gain came from the hero text: it started at `opacity: 0` and only appeared after JavaScript hydrated, so LCP waited on the whole bundle. It now slides in without fading (fix 23 in §12). Pages still over 2.5 s under this heavy throttling: `/solutions` 5.1 s (LCP is the hero photo, already `priority`), `/about` 3.5 s, and three pages at about 2.5–2.8 s. Under throttling, the checker timed out on `/`, the healthcare industry page and the AI Sales Assistant product; on desktop the same pages load normally. These are lab numbers from a slowed-down local browser, so use field data after deploy (§20) as the real measure.
+
+**Final crawl after the last build:** 325 URLs, all 200. The only findings left are the accepted ones (4 thin utility pages, 3 pages without contextual inbound links: `/terms-conditions`, `/products`, `/blog`, 1 long H1 and `/blog` noindex). `SEO_URL_AUDIT.csv`: 325 rows, 318 OK and 7 OK (accepted), 0 needing attention.
 
 ## 19. Issues that remain unresolved
 
@@ -288,6 +322,8 @@ RENDER_RESULTS_PLACEHOLDER
 | `/services/ai-reporting-automation` title | REQUIRES MANUAL ACTION | ERP override (§20) |
 | Production TTFB variance | REQUIRES MANUAL ACTION | Server or network (§20) |
 | Field Core Web Vitals | REQUIRES MANUAL ACTION | Needs production field data |
+| Mobile lab LCP over 2.5 s on `/solutions` (5.1 s) and `/about` (3.5 s) under 4× CPU / 1.6 Mbps throttling | INTENTIONALLY LEFT UNCHANGED | `/solutions` LCP is its hero photo, already `priority`; going further means changing the design. Confirm with field data. |
+| Robot mascot on solution pages downloaded at 640 px, shown at 288 px | INTENTIONALLY LEFT UNCHANGED | That's the right size for 2× screens; no waste |
 | Everything in §6 marked FIXED | FIXED AND VERIFIED locally; **not deployed** | Production updates on deploy |
 
 ## 20. External actions requiring manual access
