@@ -9,7 +9,7 @@ export const aiChatbotsForLogistics: SolutionData = {
   title: 'AI Chatbots for Logistics & Transportation',
   primaryKeyword: 'chatbot for logistics',
   titleTag: 'AI Chatbots for Logistics & Transportation | Clickmasters',
-  metaDescription: 'An AI chatbot for logistics companies that answers shipment status questions, captures quote requests, and flags delivery issues. Book a free automation audit.',
+  metaDescription: 'An AI chatbot for logistics companies that answers shipment status questions, captures quote requests, and flags delivery issues. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

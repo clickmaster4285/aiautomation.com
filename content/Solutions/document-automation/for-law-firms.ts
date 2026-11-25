@@ -9,7 +9,7 @@ export const documentAutomationForLawFirms: SolutionData = {
   title: 'Document & Data Automation for Law Firms',
   primaryKeyword: 'document automation for law firms',
   titleTag: 'Document Automation for Law Firms | Clickmasters',
-  metaDescription: 'Document automation for law firms that drafts from templates, pulls key terms from contracts, and files intake forms to the right matter. Book a free audit.',
+  metaDescription: 'Document automation for law firms that drafts from templates, pulls key terms from contracts and files intake forms to the right matter. Book a free audit.',
   keywordEvidence: '5 matching keywords, ~250 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

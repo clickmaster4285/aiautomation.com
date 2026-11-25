@@ -53,7 +53,7 @@ seo: {
   canonical: "https://clickmastersaiautomation.com/case-studies/ai-receptionist-lead-response-automation",
    title: "AI Receptionist for Small Business | Clickmasters Case Study",
     description: "How Clickmasters built an AI receptionist that answers calls, texts back missed calls, replies to emails and books jobs for trades. Book a free audit.",
-    h1: "AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds",
+    h1: "Small Business AI Receptionist: Every Call, Text and Email Answered",
     robots: "index, follow",
   og: {
     type: "article",
@@ -168,7 +168,7 @@ seo: {
   
     hero: {
     eyebrow: "Case study",
-    h1: "AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds",
+    h1: "Small Business AI Receptionist: Every Call, Text and Email Answered",
     intro: "Clickmasters built an AI receptionist and lead response system for trades and service businesses such as plumbers, electricians and HVAC contractors. It answers the phone when the owner cannot, texts back missed calls, replies to texts and emails within seconds, qualifies the job and books it into the calendar. Emergencies go straight to a person, and every lead lands in one record with the recording, the transcript and a summary.",
     disclaimer: "",
     atAGlance: [
@@ -3837,7 +3837,7 @@ Business profile
         },
         {
           kind: "para",
-          text: "AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds"
+          text: "Small Business AI Receptionist: Every Call, Text and Email Answered"
         },
         {
           kind: "para",
@@ -4286,7 +4286,7 @@ Business profile
             ["Canonical", "Same as the URL: absolute, self-referencing, no trailing slash"],
             ["Title tag (60 characters)", "AI Receptionist for Small Business | Clickmasters Case Study"],
             ["Meta description (151 characters)", "How Clickmasters built an AI receptionist that answers calls, texts back missed calls, replies to emails and books jobs for trades. Book a free audit."],
-            ["H1", "AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds"],
+            ["H1", "Small Business AI Receptionist: Every Call, Text and Email Answered"],
             ["Robots", "index, follow"],
             ["og:type", "article"],
             ["og:title", "We built an AI receptionist that answers every call, text and email in seconds"],
@@ -4344,7 +4344,7 @@ Business profile
   kind: 'code',
   language: 'text',
   filename: 'article outline · AI receptionist',
-  code: `H1  AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds
+  code: `H1  Small Business AI Receptionist: Every Call, Text and Email Answered
 
 H2  The challenge: the job goes to whoever answers first
 H3    Why speed to lead is hard for a small business
@@ -4523,7 +4523,7 @@ H2  Want every lead answered in seconds?`,
     {
       "@type": "Article",
       "@id": "https://clickmastersaiautomation.com/case-studies/ai-receptionist-lead-response-automation#article",
-      "headline": "AI Receptionist for Small Business: Every Call, Text and Email Answered in Seconds",
+      "headline": "Small Business AI Receptionist: Every Call, Text and Email Answered",
       "description": "How Clickmasters built an AI receptionist that answers calls, texts back missed calls, replies to emails and books jobs for trades. Book a free audit.",
       "image": "https://clickmastersaiautomation.com/images/case-studies/ai-receptionist-lead-response-automation/og-ai-receptionist-case-study.jpg",
       "datePublished": "[YYYY-MM-DD]",

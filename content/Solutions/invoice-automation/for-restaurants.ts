@@ -9,7 +9,7 @@ export const invoiceAutomationForRestaurants: SolutionData = {
   title: 'Invoice & Finance Automation for Restaurants & Hospitality',
   primaryKeyword: 'finance automation for restaurants',
   titleTag: 'Invoice & Finance Automation for Restaurants | Clickmasters',
-  metaDescription: 'Finance automation for restaurants that captures food and supplier invoices, validates prices, and posts them to your books before close. Book a free audit.',
+  metaDescription: 'Finance automation for restaurants that captures food and supplier invoices, validates prices and posts them to your books before close. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

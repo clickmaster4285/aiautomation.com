@@ -9,7 +9,7 @@ export const leadGenerationAutomationForHealthcare: SolutionData = {
   title: 'Lead Generation Automation for Healthcare',
   primaryKeyword: 'lead generation system for healthcare',
   titleTag: 'Lead Generation Systems for Healthcare | Clickmasters',
-  metaDescription: 'Lead generation systems for healthcare practices that capture patient inquiries, qualify service fit, and route new patients to scheduling. Book a free audit.',
+  metaDescription: 'Lead generation for healthcare practices that captures patient inquiries, qualifies service fit and routes new patients to scheduling. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

@@ -32,7 +32,7 @@ export const aiAccountingAutomationSeo: HubSeo = {
   path: AI_ACCOUNTING_AUTOMATION_PATH,
   title: 'AI Accounting Automation for Coding and Close | Clickmasters',
   description:
-    'AI accounting automation for transaction coding, reconciliation matching, journal-entry prep and month-end close checklists, all reviewed by your accountants.',
+    'AI accounting automation for transaction coding, reconciliation matching, journal-entry prep and month-end close checklists, reviewed by your accountants.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Finance & Accounting', path: '/products/ai-finance-accounting' },

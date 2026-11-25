@@ -9,7 +9,7 @@ export const marketingAutomationForLawFirms: SolutionData = {
   title: 'AI Marketing Automation for Law Firms',
   primaryKeyword: 'marketing automation for law firms',
   titleTag: 'AI Marketing Automation for Law Firms | Clickmasters AI',
-  metaDescription: 'Marketing automation for law firms that nurtures potential clients from first inquiry to consultation and keeps referral sources engaged. Book a free audit.',
+  metaDescription: 'Marketing automation for law firms that nurtures prospects from first inquiry to consultation and keeps referral sources engaged. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

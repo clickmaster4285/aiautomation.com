@@ -9,7 +9,7 @@ export const aiVoiceAgentsForHealthcare: SolutionData = {
   title: 'AI Voice Agents for Healthcare',
   primaryKeyword: 'voice agent for healthcare',
   titleTag: 'AI Voice Agents for Healthcare | Clickmasters',
-  metaDescription: 'AI voice agents for healthcare that answer patient calls, schedule appointments, and route urgent requests to staff with context. Book a free automation audit.',
+  metaDescription: 'AI voice agents for healthcare that answer patient calls, schedule appointments, and route urgent requests to staff with context. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

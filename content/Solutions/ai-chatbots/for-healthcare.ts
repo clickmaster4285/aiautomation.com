@@ -9,7 +9,7 @@ export const aiChatbotsForHealthcare: SolutionData = {
   title: 'AI Chatbots for Healthcare',
   primaryKeyword: 'chatbot for healthcare',
   titleTag: 'AI Chatbots for Healthcare Practices | Clickmasters',
-  metaDescription: 'An AI chatbot for healthcare practices that answers patient questions, books appointments, and routes clinical issues to staff. Book a free automation audit.',
+  metaDescription: 'An AI chatbot for healthcare practices that answers patient questions, books appointments, and routes clinical issues to staff. Book a free audit.',
   keywordEvidence: '23 matching keywords, ~2,300 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

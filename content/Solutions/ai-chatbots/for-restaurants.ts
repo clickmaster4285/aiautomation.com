@@ -9,7 +9,7 @@ export const aiChatbotsForRestaurants: SolutionData = {
   title: 'AI Chatbots for Restaurants & Hospitality',
   primaryKeyword: 'chatbot for restaurants',
   titleTag: 'AI Chatbots for Restaurants & Hospitality | Clickmasters',
-  metaDescription: 'An AI chatbot for restaurants that takes reservations, answers menu and hours questions, and handles catering and event inquiries. Book a free automation audit.',
+  metaDescription: 'An AI chatbot for restaurants that takes reservations, answers menu and hours questions, and handles catering and event inquiries. Book a free audit.',
   keywordEvidence: '4 matching keywords, ~200 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

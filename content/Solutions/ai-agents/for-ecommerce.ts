@@ -9,7 +9,7 @@ export const aiAgentsForEcommerce: SolutionData = {
   title: 'AI Agent Development for E-commerce',
   primaryKeyword: 'AI agent for ecommerce',
   titleTag: 'AI Agents for Ecommerce Brands | Clickmasters',
-  metaDescription: 'AI agents for ecommerce brands that handle order issues, returns, and inventory follow-ups across your store and support tools. Book a free automation audit.',
+  metaDescription: 'AI agents for ecommerce brands that handle order issues, returns, and inventory follow-ups across your store and support tools. Book a free audit.',
   keywordEvidence: 'pattern-based',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

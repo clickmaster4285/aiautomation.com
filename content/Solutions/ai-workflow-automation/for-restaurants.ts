@@ -9,7 +9,7 @@ export const aiWorkflowAutomationForRestaurants: SolutionData = {
   title: 'AI Workflow Automation for Restaurants & Hospitality',
   primaryKeyword: 'workflow automation for restaurants',
   titleTag: 'AI Workflow Automation for Restaurants | Clickmasters',
-  metaDescription: 'Workflow automation for restaurants that connects POS, inventory, scheduling, and vendor orders so less of the work runs on spreadsheets. Book a free audit.',
+  metaDescription: 'Workflow automation for restaurants that connects POS, inventory, scheduling and vendor orders so less of the work runs on spreadsheets. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

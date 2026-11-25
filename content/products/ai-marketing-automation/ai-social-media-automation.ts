@@ -23,7 +23,7 @@ export const aiSocialMediaAutomationSeo: HubSeo = {
   path: AI_SOCIAL_MEDIA_AUTOMATION_PATH,
   title: 'AI Social Media Automation for Content Teams | Clickmasters',
   description:
-    'AI social media automation that plans, drafts, repurposes and schedules on-brand posts, with your team approving each one before it posts. Book a free audit.',
+    'AI social media automation that plans, drafts, repurposes and schedules on-brand posts, with your team approving each one first. Book a free audit.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Marketing Automation', path: '/products/ai-marketing-automation' },

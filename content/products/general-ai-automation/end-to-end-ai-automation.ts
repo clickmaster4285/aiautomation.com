@@ -29,7 +29,7 @@ export const endToEndAiAutomationSeo: HubSeo = {
   path: END_TO_END_AI_AUTOMATION_PATH,
   title: 'End-to-End AI Automation, Audit to Launch | Clickmasters',
   description:
-    'End-to-end AI automation from one team: discovery, mapping, build, testing and launch in your accounts, with your sign-off at each stage. Book a free audit.',
+    'End-to-end AI automation from one team: discovery, mapping, build, testing and launch in your accounts, with your sign-off at each stage.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'General AI Automation', path: '/products/general-ai-automation' },

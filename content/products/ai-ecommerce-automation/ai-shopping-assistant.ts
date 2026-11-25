@@ -31,7 +31,7 @@ export const aiShoppingAssistantSeo: HubSeo = {
   path: AI_SHOPPING_ASSISTANT_PATH,
   title: 'AI Shopping Assistant for Online Stores | Clickmasters',
   description:
-    'An AI shopping assistant for your store that answers sizing, material and returns questions from your own catalog, compares options and hands off to your team.',
+    'An AI shopping assistant that answers sizing, material and returns questions from your own catalog, compares options and hands off to your team.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI E-commerce Automation', path: '/products/ai-ecommerce-automation' },

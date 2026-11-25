@@ -9,7 +9,7 @@ export const appointmentBookingAutomationForManufacturing: SolutionData = {
   title: 'Appointment & Booking Automation for Manufacturing',
   primaryKeyword: 'booking automation for manufacturing',
   titleTag: 'Booking Automation for Manufacturing | Clickmasters',
-  metaDescription: 'Booking automation for manufacturing that schedules supplier visits, service calls, and client meetings, with reminders sent automatically. Book a free audit.',
+  metaDescription: 'Booking automation for manufacturing that schedules supplier visits, service calls and client meetings, with automatic reminders. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

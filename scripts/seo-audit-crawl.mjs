@@ -320,11 +320,11 @@ for (const r of rows) {
   if (r.status === 200) {
     if (!r.title) issues.push("missing title");
     if ((r.titles || []).length > 1) issues.push("multiple titles");
-    if (r.title && r.title.length > 65) issues.push(`long title (${r.title.length})`);
+    if (r.title && r.title.length > 60) issues.push(`long title (${r.title.length})`);
     if (r.title && r.title.length < 25) issues.push(`short title (${r.title.length})`);
     if (!r.description) issues.push("missing description");
     if ((r.descriptions || []).length > 1) issues.push("multiple descriptions");
-    if (r.description && r.description.length > 160) issues.push(`long description (${r.description.length})`);
+    if (r.description && r.description.length > 155) issues.push(`long description (${r.description.length})`);
     if (r.description && r.description.length < 70) issues.push(`short description (${r.description.length})`);
     if (dupTitleSet.has(r.path)) issues.push("duplicate title");
     if (dupDescSet.has(r.path)) issues.push("duplicate description");

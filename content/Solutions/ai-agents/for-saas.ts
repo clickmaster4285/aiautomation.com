@@ -9,7 +9,7 @@ export const aiAgentsForSaaS: SolutionData = {
   title: 'AI Agent Development for SaaS Companies',
   primaryKeyword: 'AI agent for SaaS',
   titleTag: 'AI Agents for SaaS Companies | Clickmasters',
-  metaDescription: 'AI agents for SaaS companies that handle onboarding steps, support triage, and account research across your product and CRM stack. Book a free automation audit.',
+  metaDescription: 'AI agents for SaaS companies that handle onboarding steps, support triage, and account research across your product and CRM stack. Book a free audit.',
   keywordEvidence: 'pattern-based',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

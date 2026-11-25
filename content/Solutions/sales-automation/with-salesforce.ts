@@ -2,7 +2,7 @@
 export const salesAutomationWithSalesforce = {
   url: '/solutions/sales-automation/with-salesforce',
   titleTag: 'Sales Automation with Salesforce | Clickmasters',
-  metaDescription: 'Sales automation with Salesforce that captures, enriches, and routes leads, logs activity, and keeps records in sync so reps skip data entry. Book a free audit.',
+  metaDescription: 'Salesforce sales automation that captures, enriches and routes leads, logs activity and keeps records in sync, so reps skip data entry. Book a free audit.',
   primaryKeyword: 'sales automation with salesforce',
   bookingLink: '/free-automation-audit',
 

@@ -29,7 +29,7 @@ export const aiDocumentProcessingSoftwareSeo: HubSeo = {
   path: AI_DOCUMENT_PROCESSING_SOFTWARE_PATH,
   title: 'AI Document Processing Software & Workflows | Clickmasters',
   description:
-    'AI document processing software built in your tools: documents captured, classified, read, checked, approved, filed and sent to your systems, with human review.',
+    'AI document processing software in your tools: documents captured, classified, read, checked, approved, filed and sent to your systems, with human review.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Document & Data Intelligence', path: '/products/ai-document-data-intelligence' },

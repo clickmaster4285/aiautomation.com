@@ -33,7 +33,7 @@ export const generalAiAutomationSeo: HubSeo = {
   path: GENERAL_AI_AUTOMATION_PATH,
   title: 'AI Automation for Business, Planned and Built | Clickmasters',
   description:
-    'AI automation for business, from one repetitive workflow to company-wide systems. Find the right starting point for your team and book a free automation audit.',
+    'AI automation for business, from one repetitive workflow to company-wide systems. Find the right starting point for your team and book a free audit.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'General AI Automation', path: GENERAL_AI_AUTOMATION_PATH },

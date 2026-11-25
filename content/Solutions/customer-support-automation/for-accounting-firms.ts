@@ -9,7 +9,7 @@ export const customerSupportAutomationForAccountingFirms: SolutionData = {
   title: 'Customer Support Automation for Accounting Firms',
   primaryKeyword: 'support automation for accounting firms',
   titleTag: 'Support Automation for Accounting Firms | Clickmasters',
-  metaDescription: 'Support automation for accounting firms that answers routine client questions on deadlines, documents, and billing, then escalates the rest. Book a free audit.',
+  metaDescription: 'Support automation for accounting firms that answers routine client questions on deadlines, documents and billing, then escalates. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

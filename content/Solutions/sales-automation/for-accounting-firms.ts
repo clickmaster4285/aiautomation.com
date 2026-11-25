@@ -9,7 +9,7 @@ export const salesAutomationForAccountingFirms: SolutionData = {
   title: 'AI Sales Automation for Accounting Firms',
   primaryKeyword: 'sales automation for accounting firms',
   titleTag: 'AI Sales Automation for Accounting Firms | Clickmasters',
-  metaDescription: 'Sales automation for accounting firms that enriches prospect data, follows up on proposals, and logs every touchpoint in your CRM. Book a free automation audit.',
+  metaDescription: 'Sales automation for accounting firms that enriches prospect data, follows up on proposals, and logs every touchpoint in your CRM. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

@@ -9,7 +9,7 @@ export const leadGenerationAutomationForEcommerce: SolutionData = {
   title: 'Lead Generation Automation for E-commerce',
   primaryKeyword: 'lead generation system for ecommerce',
   titleTag: 'Lead Generation Systems for Ecommerce | Clickmasters',
-  metaDescription: 'Lead generation systems for ecommerce brands that capture shoppers, qualify wholesale and B2B inquiries, and route each one to follow-up. Book a free audit.',
+  metaDescription: 'Lead generation systems for ecommerce brands that capture shoppers, qualify wholesale and B2B inquiries and route each one to follow-up. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

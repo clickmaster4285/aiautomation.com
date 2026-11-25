@@ -9,7 +9,7 @@ export const appointmentBookingAutomationForRealEstate: SolutionData = {
   title: 'Appointment & Booking Automation for Real Estate',
   primaryKeyword: 'booking automation for real estate',
   titleTag: 'Booking Automation for Real Estate Teams | Clickmasters',
-  metaDescription: 'Booking automation for real estate that schedules showings and consultations, syncs agent calendars, and reminds buyers before they arrive. Book a free audit.',
+  metaDescription: 'Booking automation for real estate that schedules showings and consultations, syncs agent calendars and reminds buyers ahead. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

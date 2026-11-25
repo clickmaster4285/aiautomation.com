@@ -9,7 +9,7 @@ export const aiAgentsForLawFirms: SolutionData = {
   title: 'AI Agent Development for Law Firms',
   primaryKeyword: 'AI agent for law firms',
   titleTag: 'AI Agents for Law Firms | Clickmasters',
-  metaDescription: 'AI agents for law firms that handle client intake, document collection, and deadline follow-ups, leaving judgment to attorneys. Book a free automation audit.',
+  metaDescription: 'AI agents for law firms that handle client intake, document collection, and deadline follow-ups, leaving judgment to attorneys. Book a free audit.',
   keywordEvidence: 'pattern-based',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

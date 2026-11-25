@@ -9,7 +9,7 @@ export const aiChatbotsForRetail: SolutionData = {
   title: 'AI Chatbots for Retail',
   primaryKeyword: 'chatbot for retail',
   titleTag: 'AI Chatbots for Retail Businesses | Clickmasters',
-  metaDescription: 'An AI chatbot for retail stores that answers product and stock questions, tracks orders, and handles returns online and in store. Book a free automation audit.',
+  metaDescription: 'An AI chatbot for retail stores that answers product and stock questions, tracks orders, and handles returns online and in store. Book a free audit.',
   keywordEvidence: '7 matching keywords, ~1,250 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

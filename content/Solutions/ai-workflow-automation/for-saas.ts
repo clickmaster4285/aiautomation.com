@@ -9,7 +9,7 @@ export const aiWorkflowAutomationForSaaS: SolutionData = {
   title: 'AI Workflow Automation for SaaS Companies',
   primaryKeyword: 'workflow automation for SaaS',
   titleTag: 'AI Workflow Automation for SaaS Companies | Clickmasters',
-  metaDescription: 'Workflow automation for SaaS that connects signups, billing, onboarding, and support tools so customer data moves without manual handoffs. Book a free audit.',
+  metaDescription: 'Workflow automation for SaaS that connects signups, billing, onboarding and support tools so customer data moves without manual work. Book a free audit.',
   keywordEvidence: '9 matching keywords, ~450 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

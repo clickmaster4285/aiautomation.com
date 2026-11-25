@@ -9,7 +9,7 @@ export const documentAutomationForLogistics: SolutionData = {
   title: 'Document & Data Automation for Logistics & Transportation',
   primaryKeyword: 'document automation for logistics',
   titleTag: 'Document Automation for Logistics Teams | Clickmasters',
-  metaDescription: 'Document automation for logistics that reads bills of lading, proofs of delivery, and carrier invoices and keeps shipment records current. Book a free audit.',
+  metaDescription: 'Document automation for logistics that reads bills of lading, proofs of delivery and carrier invoices to keep shipment records current. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

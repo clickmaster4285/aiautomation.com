@@ -9,7 +9,7 @@ export const documentAutomationWithAirtable: SolutionData = {
   title: 'Document & Data Automation with Airtable',
   primaryKeyword: 'airtable document automation',
   titleTag: 'Airtable Document Automation for Ops Teams | Clickmasters',
-  metaDescription: 'Airtable document automation that reads, checks, and files invoices, forms, and contracts straight into your bases, no custom app needed. Book a free audit.',
+  metaDescription: 'Airtable document automation that reads, checks and files invoices, forms and contracts straight into your bases, no custom app needed. Book a free audit.',
   keywordEvidence: '3 matching keywords, ~1,050 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

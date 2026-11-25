@@ -9,7 +9,7 @@ export const marketingAutomationForLogistics: SolutionData = {
   title: 'AI Marketing Automation for Logistics & Transportation',
   primaryKeyword: 'marketing automation for logistics',
   titleTag: 'Marketing Automation for Logistics Companies | Clickmasters',
-  metaDescription: 'Marketing automation for logistics providers that nurtures shipper leads, follows up on quotes, and keeps key accounts engaged. Book a free automation audit.',
+  metaDescription: 'Marketing automation for logistics providers that nurtures shipper leads, follows up on quotes, and keeps key accounts engaged. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

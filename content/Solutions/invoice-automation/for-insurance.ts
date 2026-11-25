@@ -9,7 +9,7 @@ export const invoiceAutomationForInsurance: SolutionData = {
   title: 'Invoice & Finance Automation for Insurance Agencies',
   primaryKeyword: 'finance automation for insurance',
   titleTag: 'Invoice & Finance Automation for Insurance | Clickmasters',
-  metaDescription: 'Finance automation for insurance agencies that captures invoices, checks them against expected values, and posts clean entries to your books. Book a free audit.',
+  metaDescription: 'Finance automation for insurance agencies that captures invoices, checks them against expected values and posts clean entries. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

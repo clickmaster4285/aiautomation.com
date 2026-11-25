@@ -26,7 +26,7 @@ export const enterpriseAiAutomationSolutionsSeo: HubSeo = {
   path: ENTERPRISE_AI_AUTOMATION_SOLUTIONS_PATH,
   title: 'Enterprise AI Automation with Governance | Clickmasters',
   description:
-    'Enterprise AI automation run as a governed program: portfolio priorities, access, logging, approvals and phased rollout in your own cloud. Book a free audit.',
+    'Enterprise AI automation run as a governed program: portfolio priorities, access, logging, approvals and phased rollout in your cloud. Book a free audit.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'General AI Automation', path: '/products/general-ai-automation' },

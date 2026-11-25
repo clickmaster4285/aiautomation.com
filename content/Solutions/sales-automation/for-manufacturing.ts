@@ -9,7 +9,7 @@ export const salesAutomationForManufacturing: SolutionData = {
   title: 'AI Sales Automation for Manufacturing',
   primaryKeyword: 'sales automation for manufacturing',
   titleTag: 'AI Sales Automation for Manufacturing | Clickmasters',
-  metaDescription: 'Sales automation for manufacturing that enriches distributor and buyer leads, follows up on RFQs, and logs activity in your CRM. Book a free automation audit.',
+  metaDescription: 'Sales automation for manufacturing that enriches distributor and buyer leads, follows up on RFQs, and logs activity in your CRM. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

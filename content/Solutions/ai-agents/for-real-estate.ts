@@ -9,7 +9,7 @@ export const aiAgentsForRealEstate: SolutionData = {
   title: 'AI Agent Development for Real Estate',
   primaryKeyword: 'AI agent for real estate',
   titleTag: 'AI Agents for Real Estate Teams | Clickmasters',
-  metaDescription: 'AI agents for real estate teams that follow up with leads, coordinate showings, and keep transaction paperwork moving on schedule. Book a free automation audit.',
+  metaDescription: 'AI agents for real estate teams that follow up with leads, coordinate showings, and keep transaction paperwork moving on schedule. Book a free audit.',
   keywordEvidence: 'pattern-based',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

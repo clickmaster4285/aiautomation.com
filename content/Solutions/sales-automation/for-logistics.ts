@@ -9,7 +9,7 @@ export const salesAutomationForLogistics: SolutionData = {
   title: 'AI Sales Automation for Logistics & Transportation',
   primaryKeyword: 'sales automation for logistics',
   titleTag: 'Sales Automation for Logistics Companies | Clickmasters',
-  metaDescription: 'Sales automation for logistics that qualifies shipper leads, follows up on freight quotes, and keeps your CRM current without data entry. Book a free audit.',
+  metaDescription: 'Sales automation for logistics that qualifies shipper leads, follows up on freight quotes and keeps your CRM current without data entry. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

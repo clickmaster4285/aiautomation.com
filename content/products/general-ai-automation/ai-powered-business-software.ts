@@ -24,7 +24,7 @@ export const aiPoweredBusinessSoftwareSeo: HubSeo = {
   path: AI_POWERED_BUSINESS_SOFTWARE_PATH,
   title: 'AI-Powered Business Software for Your Team | Clickmasters',
   description:
-    'AI-powered business software built into the CRM, helpdesk and internal tools you already use, with people approving the output. Book a free automation audit.',
+    'AI-powered business software built into the CRM, helpdesk and internal tools you already use, with people approving the output. Book a free audit.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'General AI Automation', path: '/products/general-ai-automation' },

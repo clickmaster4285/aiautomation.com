@@ -9,7 +9,7 @@ export const appointmentBookingAutomationForSaaS: SolutionData = {
   title: 'Appointment & Booking Automation for SaaS Companies',
   primaryKeyword: 'booking automation for SaaS',
   titleTag: 'Booking Automation for SaaS Companies | Clickmasters',
-  metaDescription: 'Booking automation for SaaS that routes demo requests to the right rep, confirms meetings, and sends reminders before each call. Book a free automation audit.',
+  metaDescription: 'Booking automation for SaaS that routes demo requests to the right rep, confirms meetings, and sends reminders before each call. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

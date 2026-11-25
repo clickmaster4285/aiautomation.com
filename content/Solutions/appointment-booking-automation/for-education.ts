@@ -9,7 +9,7 @@ export const appointmentBookingAutomationForEducation: SolutionData = {
   title: 'Appointment & Booking Automation for Education',
   primaryKeyword: 'booking automation for education',
   titleTag: 'Booking Automation for Education Teams | Clickmasters',
-  metaDescription: 'Booking automation for education that schedules advising, campus tours, and parent meetings, with reminders that keep calendars on track. Book a free audit.',
+  metaDescription: 'Booking automation for education that schedules advising, campus tours and parent meetings, with reminders that keep calendars on track. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

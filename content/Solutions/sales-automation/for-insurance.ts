@@ -9,7 +9,7 @@ export const salesAutomationForInsurance: SolutionData = {
   title: 'AI Sales Automation for Insurance Agencies',
   primaryKeyword: 'sales automation for insurance',
   titleTag: 'AI Sales Automation for Insurance Agencies | Clickmasters',
-  metaDescription: 'Sales automation for insurance agencies that enriches leads, follows up on quotes, and tracks renewals so producers can focus on selling. Book a free audit.',
+  metaDescription: 'Sales automation for insurance agencies that enriches leads, follows up on quotes and tracks renewals so producers can focus on selling. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

@@ -25,7 +25,7 @@ export const aiWorkflowBpaSeo: HubSeo = {
   path: AI_WORKFLOW_BPA_PATH,
   title: 'AI Workflow and Business Process Automation | Clickmasters',
   description:
-    'AI workflow and business process automation built in your tools: connected apps, routed approvals, AI steps for messy inputs and human review where it counts.',
+    'AI workflow and business process automation in your tools: connected apps, routed approvals, AI steps for messy inputs and human review where it counts.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Workflow & Business Process Automation', path: AI_WORKFLOW_BPA_PATH },

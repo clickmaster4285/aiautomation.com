@@ -9,7 +9,7 @@ export const aiWorkflowAutomationWithHubspot: SolutionData = {
   title: 'AI Workflow Automation with HubSpot',
   primaryKeyword: 'hubspot workflow automation',
   titleTag: 'HubSpot Workflow Automation with AI | Clickmasters',
-  metaDescription: 'HubSpot workflow automation extended with AI: classify leads, draft replies, and sync data with the rest of your stack, built in your portal. Book a free audit.',
+  metaDescription: 'HubSpot workflow automation with AI: classify leads, draft replies and sync data with the rest of your stack, built in your portal. Book a free audit.',
   keywordEvidence: '5 matching keywords, ~700 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

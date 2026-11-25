@@ -9,7 +9,7 @@ export const leadGenerationAutomationWithSalesforce: SolutionData = {
   title: 'Lead Generation Automation with Salesforce',
   primaryKeyword: 'salesforce lead generation system',
   titleTag: 'Salesforce Lead Generation System Builds | Clickmasters',
-  metaDescription: 'A Salesforce lead generation system that captures, qualifies, and routes new demand inside your org, with AI handling the judgment calls. Book a free audit.',
+  metaDescription: 'A Salesforce lead generation system that captures, qualifies and routes new demand inside your org, with AI handling the judgment calls. Book a free audit.',
   keywordEvidence: '5 matching keywords, ~700 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

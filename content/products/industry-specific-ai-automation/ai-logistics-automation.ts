@@ -29,7 +29,7 @@ export const aiLogisticsAutomationSeo: HubSeo = {
   path: AI_LOGISTICS_AUTOMATION_PATH,
   title: 'AI Logistics Automation for Freight & 3PL | Clickmasters',
   description:
-    'AI logistics automation for freight forwarders, 3PLs and carriers: documents, status updates, carrier emails and billing, staff-approved. Book a free audit.',
+    'AI logistics automation for freight forwarders, 3PLs and carriers: documents, status updates, carrier emails and billing, with staff approving each step.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'Industry-Specific AI Automation', path: '/products/industry-specific-ai-automation' },

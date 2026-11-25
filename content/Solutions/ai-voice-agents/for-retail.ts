@@ -9,7 +9,7 @@ export const aiVoiceAgentsForRetail: SolutionData = {
   title: 'AI Voice Agents for Retail',
   primaryKeyword: 'voice agent for retail',
   titleTag: 'AI Voice Agents for Retail | Clickmasters',
-  metaDescription: 'AI voice agents for retail that answer store hours, stock, and order questions by phone, then route complex calls with context. Book a free automation audit.',
+  metaDescription: 'AI voice agents for retail that answer store hours, stock, and order questions by phone, then route complex calls with context. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

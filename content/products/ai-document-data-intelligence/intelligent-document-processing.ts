@@ -29,7 +29,7 @@ export const intelligentDocumentProcessingSeo: HubSeo = {
   path: INTELLIGENT_DOCUMENT_PROCESSING_PATH,
   title: 'Intelligent Document Processing (IDP) | Clickmasters',
   description:
-    'Intelligent document processing (IDP) built on your platforms: OCR, classification, AI extraction, confidence checks and human review, plus IDP vs OCR and RPA.',
+    'Intelligent document processing (IDP) on your platforms: OCR, classification, AI extraction, confidence checks and human review, plus IDP vs OCR and RPA.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Document & Data Intelligence', path: '/products/ai-document-data-intelligence' },

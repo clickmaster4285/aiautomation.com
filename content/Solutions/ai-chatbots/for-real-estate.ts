@@ -9,7 +9,7 @@ export const aiChatbotsForRealEstate: SolutionData = {
   title: 'AI Chatbots for Real Estate',
   primaryKeyword: 'chatbot for real estate',
   titleTag: 'AI Chatbots for Real Estate Teams | Clickmasters',
-  metaDescription: 'An AI chatbot for real estate teams that answers listing questions, qualifies buyers and renters, and books showings day or night. Book a free automation audit.',
+  metaDescription: 'An AI chatbot for real estate teams that answers listing questions, qualifies buyers and renters, and books showings day or night. Book a free audit.',
   keywordEvidence: '4 matching keywords, ~1,100 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

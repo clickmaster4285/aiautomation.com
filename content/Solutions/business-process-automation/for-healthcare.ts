@@ -9,7 +9,7 @@ export const businessProcessAutomationForHealthcare: SolutionData = {
   title: 'Business Process Automation for Healthcare',
   primaryKeyword: 'process automation for healthcare',
   titleTag: 'Business Process Automation for Healthcare | Clickmasters',
-  metaDescription: 'Process automation for healthcare practices that moves intake, referrals, prior authorizations, and billing handoffs without manual chasing. Book a free audit.',
+  metaDescription: 'Process automation for healthcare practices that moves intake, referrals, prior authorizations and billing handoffs without chasing. Book a free audit.',
   keywordEvidence: '10 matching keywords, ~1,850 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

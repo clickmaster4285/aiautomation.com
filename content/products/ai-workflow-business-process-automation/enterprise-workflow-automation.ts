@@ -25,7 +25,7 @@ export const enterpriseWorkflowAutomationSeo: HubSeo = {
   path: ENTERPRISE_WORKFLOW_AUTOMATION_PATH,
   title: 'Enterprise Workflow Automation Across Teams | Clickmasters',
   description:
-    'Enterprise workflow automation for processes that cross departments, with clear owners, documented workflows, scoped access, change control and staged rollout.',
+    'Enterprise workflow automation for processes that cross departments, with clear owners, documented workflows, scoped access and staged rollout.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Workflow & Business Process Automation', path: '/products/ai-workflow-business-process-automation' },

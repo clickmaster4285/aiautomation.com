@@ -27,7 +27,7 @@ export const aiOcrSoftwareSeo: HubSeo = {
   path: AI_OCR_SOFTWARE_PATH,
   title: 'AI OCR Software for Scans and Image PDFs | Clickmasters',
   description:
-    'AI OCR software that reads scans, photos and image-only PDFs into searchable text, keeps tables and page layout intact, and flags unclear pages for a person.',
+    'AI OCR software that reads scans, photos and image-only PDFs into searchable text, keeps tables and layout intact, and flags unclear pages for a person.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Document & Data Intelligence', path: '/products/ai-document-data-intelligence' },

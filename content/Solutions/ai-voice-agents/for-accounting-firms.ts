@@ -9,7 +9,7 @@ export const aiVoiceAgentsForAccountingFirms: SolutionData = {
   title: 'AI Voice Agents for Accounting Firms',
   primaryKeyword: 'voice agent for accounting firms',
   titleTag: 'AI Voice Agents for Accounting Firms | Clickmasters',
-  metaDescription: 'Voice agents for accounting firms that answer client calls, book meetings, and route tax-season questions with context attached. Book a free automation audit.',
+  metaDescription: 'Voice agents for accounting firms that answer client calls, book meetings, and route tax-season questions with context attached. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

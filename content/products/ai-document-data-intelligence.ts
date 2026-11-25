@@ -32,7 +32,7 @@ export const aiDocumentDataIntelligenceSeo: HubSeo = {
   path: AI_DOCUMENT_DATA_INTELLIGENCE_PATH,
   title: 'AI Document and Data Intelligence Solutions | Clickmasters',
   description:
-    'AI document and data intelligence built in your tools: documents captured, classified and read, data checked and sent to your systems, with people reviewing.',
+    'AI document and data intelligence in your tools: documents captured, classified and read, data checked and sent to your systems, with people reviewing.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Document & Data Intelligence', path: AI_DOCUMENT_DATA_INTELLIGENCE_PATH },

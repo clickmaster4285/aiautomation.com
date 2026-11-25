@@ -9,7 +9,7 @@ export const aiChatbotsForInsurance: SolutionData = {
   title: 'AI Chatbots for Insurance Agencies',
   primaryKeyword: 'chatbot for insurance',
   titleTag: 'AI Chatbots for Insurance Agencies | Clickmasters',
-  metaDescription: 'An AI chatbot for insurance agencies that answers policy questions, collects quote details, and routes claims to the right agent. Book a free automation audit.',
+  metaDescription: 'An AI chatbot for insurance agencies that answers policy questions, collects quote details, and routes claims to the right agent. Book a free audit.',
   keywordEvidence: '9 matching keywords, ~900 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

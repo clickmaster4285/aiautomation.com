@@ -9,7 +9,7 @@ export const aiWorkflowAutomationForInsurance: SolutionData = {
   title: 'AI Workflow Automation for Insurance Agencies',
   primaryKeyword: 'workflow automation for insurance',
   titleTag: 'AI Workflow Automation for Insurance Agencies | Clickmasters',
-  metaDescription: 'Workflow automation for insurance agencies that moves quotes, renewals, and claims paperwork between your systems and carriers. Book a free automation audit.',
+  metaDescription: 'Workflow automation for insurance agencies that moves quotes, renewals, and claims paperwork between your systems and carriers. Book a free audit.',
   keywordEvidence: '5 matching keywords, ~250 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

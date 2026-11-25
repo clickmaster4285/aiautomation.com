@@ -9,7 +9,7 @@ export const customerSupportAutomationForEducation: SolutionData = {
   title: 'Customer Support Automation for Education',
   primaryKeyword: 'support automation for education',
   titleTag: 'Customer Support Automation for Education | Clickmasters',
-  metaDescription: 'Support automation for education that answers enrollment, financial aid, and schedule questions for students and parents and routes the rest. Book a free audit.',
+  metaDescription: 'Support automation for education that answers enrollment, financial aid and schedule questions from students and parents. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

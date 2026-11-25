@@ -20,7 +20,8 @@ The site's technical foundation was already sound. Every URL returned HTTP 200, 
 | Pages with no Open Graph image | 255 | **0** |
 | Pages with no OG title/description or Twitter card | 24 | **0** |
 | Duplicate `google-site-verification` tag | every page | **0** |
-| H1s over 70 characters | 34 | **1** (kept on purpose, see §19) |
+| H1s over 70 characters | 34 | **0** |
+| Meta descriptions over 155 characters | 134 | **0** |
 | Duplicate H1 (`/contact` = `/free-automation-audit`) | 1 pair | **0** |
 | Heading-level skips (H1→H3, H2→H4) | 19 pages (229 on production) | **0** |
 | Pages with nested `<main>` elements (invalid HTML) | 28 | **0** |
@@ -85,8 +86,8 @@ The audit file itself isn't in the repository or this conversation. These are th
 | # | Affected URLs | Issue | Severity | Root cause | Fix implemented | Validation | Status |
 |---|---|---|---|---|---|---|---|
 | O-1 | 40 product pages (e.g. `/products/ai-sales-crm/ai-sales-assistant`, all of `/products/ai-hr-recruitment/*`, `/products/ai-agents-platforms/*`, `/products/general-ai-automation/*`) | "No link from outside /products" | High | The nav mega-menu links every product from every page, but nothing in page content did. `lib/link-graph.ts` already mapped each solution topic to its products (`TOPICS[topic].products`), but nothing rendered that map. | 1) Solution hubs and all 216 solution detail pages render a "Related AI Products" card block from that existing map, with the industry's own product first on `for-<industry>` pages. 2) Service pages get a curated "Software We Build for This" block (`SERVICE_PRODUCT_LINKS`). 3) Industry pages get "AI Software for This Industry" (`INDUSTRY_PRODUCT_LINKS`). 4) Product pages link back up to the service that delivers them ("The Service Behind It"). 5) HR phrases added to the inline linker. | Crawl counts in-content links from other sections: 40 products had 0 before, 0 products have 0 after; median rose from 0 to 15 | FIXED AND VERIFIED |
-| O-2 | 34 pages, including all 7 named products | Long H1s | Medium | Hero headings combined the keyword with a full benefit clause (up to 87 characters) | 33 H1s rewritten to 53–68 characters, primary keyword first (examples in §14). The case-study H1 is kept on purpose. | Crawl: 1 H1 over 70 characters (the case study); 0 pages with 0 or 2+ H1s in raw or rendered HTML | FIXED AND VERIFIED |
-| O-3 | 3 product pages | Meta descriptions over 155 characters (162–165) | Low | Copy written past the display limit | Rewritten to 150–153 characters with the same meaning | Crawl: 0 descriptions over 160 | FIXED AND VERIFIED |
+| O-2 | 34 pages, including all 7 named products | Long H1s | Medium | Hero headings combined the keyword with a full benefit clause (up to 87 characters) | 33 H1s rewritten to 53–68 characters, primary keyword first (examples in §14). The case-study H1 (82) became "Small Business AI Receptionist: Every Call, Text and Email Answered" (67), updated everywhere the study quotes it, including the Article `headline`. | Crawl: 0 H1s over 70 characters; 0 pages with 0 or 2+ H1s in raw or rendered HTML | FIXED AND VERIFIED |
+| O-3 | 134 pages (3 products at 162–165 named in the audit, plus 131 product and solution pages at 156–160) | Meta descriptions over 155 characters | Low | Copy written past the display limit; the crawler's limit was 160, so the 156–160 group was missed in the first pass | Every description rewritten to 137–155 characters with the same meaning: mostly "Book a free automation audit." shortened to "Book a free audit." (the site's standard CTA) and redundant words cut. Crawler limit tightened to 155 (titles to 60). | Rebuild + full crawl: 0 descriptions over 155, 0 duplicates | FIXED AND VERIFIED |
 | O-4 | Homepage | Image without alt text | Medium | Already fixed by in-progress work before this session; current code gives every homepage image an alt | Verified only. The one empty alt on the homepage is the second copy of a decorative mascot, which is correct. Alt text was then audited site-wide (N-9). | Headless Chrome on all 325 pages: 0 `<img>` without an alt attribute | FIXED AND VERIFIED (by earlier work) |
 | O-5 | AI Sales Assistant, AI Chatbot Software, AI Virtual Assistant | Slow response time | Low | Not reproducible. Production TTFB was 280, 789 and 285 ms, in line with the rest of the site. Local TTFB is 20–60 ms. Production timing from the audit machine varied between 0.3 s and 21 s on identical static, cached pages because of the network (see N-17). | No page-specific bottleneck exists. Site-wide page weight was reduced instead (N-13, N-14, N-15). | Local TTFB and LCP measured per page (CSV columns); production TTFB recorded | NOT APPLICABLE (no page-level fault); site-wide improvements FIXED AND VERIFIED |
 
@@ -307,13 +308,12 @@ In the full run, 22 pages hit the checker's own 30 s `Runtime.evaluate` timeout 
 
 The biggest mobile gain came from the hero text: it started at `opacity: 0` and only appeared after JavaScript hydrated, so LCP waited on the whole bundle. It now slides in without fading (fix 23 in §12). Pages still over 2.5 s under this heavy throttling: `/solutions` 5.1 s (LCP is the hero photo, already `priority`), `/about` 3.5 s, and three pages at about 2.5–2.8 s. Under throttling, the checker timed out on `/`, the healthcare industry page and the AI Sales Assistant product; on desktop the same pages load normally. These are lab numbers from a slowed-down local browser, so use field data after deploy (§20) as the real measure.
 
-**Final crawl after the last build:** 325 URLs, all 200. The only findings left are the accepted ones (4 thin utility pages, 3 pages without contextual inbound links: `/terms-conditions`, `/products`, `/blog`, 1 long H1 and `/blog` noindex). `SEO_URL_AUDIT.csv`: 325 rows, 318 OK and 7 OK (accepted), 0 needing attention.
+**Final crawl after the last build:** 325 URLs, all 200. Limits checked: title ≤60, description ≤155, H1 ≤70. The only findings left are the accepted ones (4 thin utility pages; 3 pages without contextual inbound links: `/terms-conditions`, `/products`, `/blog`; `/blog` noindex) plus the 61-character ERP title on `/services/ai-reporting-automation` (§20). `SEO_URL_AUDIT.csv`: 325 rows, 318 OK, 6 OK (accepted), 1 needing attention (that ERP title).
 
 ## 19. Issues that remain unresolved
 
 | Item | Status | Reason |
 |---|---|---|
-| Case-study H1 (82 characters) | INTENTIONALLY LEFT UNCHANGED | Long-form article headline; `Article.headline` allows 110 characters, and the H1 matches the schema headline and the study's on-page documentation |
 | Thin utility pages (`/contact`, `/free-automation-audit`, `/case-studies`) | INTENTIONALLY LEFT UNCHANGED | Their job is conversion or listing; padding them would hurt |
 | `/blog` noindex and out of the sitemap | INTENTIONALLY LEFT UNCHANGED | No posts exist yet |
 | Decorative empty alt (second homepage mascot) | INTENTIONALLY LEFT UNCHANGED | Correct practice for a duplicated decorative image |

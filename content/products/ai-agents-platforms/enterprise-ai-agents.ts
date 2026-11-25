@@ -29,7 +29,7 @@ export const enterpriseAiAgentsSeo: HubSeo = {
   path: ENTERPRISE_AI_AGENTS_PATH,
   title: 'Enterprise AI Agents With Governance Built In | Clickmasters',
   description:
-    'Enterprise AI agents built in your cloud and connected to SAP, NetSuite, Oracle or Salesforce, with named owners, role-based access, action logs and approvals.',
+    'Enterprise AI agents built in your cloud and connected to SAP, NetSuite, Oracle or Salesforce, with named owners, role-based access, logs and approvals.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Agents & Platforms', path: '/products/ai-agents-platforms' },

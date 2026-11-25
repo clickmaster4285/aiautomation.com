@@ -9,7 +9,7 @@ export const aiVoiceAgentsForConstruction: SolutionData = {
   title: 'AI Voice Agents for Construction',
   primaryKeyword: 'voice agent for construction',
   titleTag: 'AI Voice Agents for Construction | Clickmasters',
-  metaDescription: 'AI voice agents for construction that answer bid inquiries, schedule site visits, and log subcontractor calls with full context. Book a free automation audit.',
+  metaDescription: 'AI voice agents for construction that answer bid inquiries, schedule site visits, and log subcontractor calls with full context. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

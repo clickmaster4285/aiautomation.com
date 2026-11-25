@@ -9,7 +9,7 @@ export const aiAgentsForInsurance: SolutionData = {
   title: 'AI Agent Development for Insurance Agencies',
   primaryKeyword: 'AI agent for insurance',
   titleTag: 'AI Agents for Insurance Agencies | Clickmasters',
-  metaDescription: 'AI agents for insurance agencies that gather quote details, chase renewal documents, and route claims updates to the right person. Book a free automation audit.',
+  metaDescription: 'AI agents for insurance agencies that gather quote details, chase renewal documents, and route claims updates to the right person. Book a free audit.',
   keywordEvidence: 'pattern-based',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

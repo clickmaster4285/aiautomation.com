@@ -9,7 +9,7 @@ export const customerSupportAutomationForRestaurants: SolutionData = {
   title: 'Customer Support Automation for Restaurants & Hospitality',
   primaryKeyword: 'support automation for restaurants',
   titleTag: 'Customer Support Automation for Restaurants | Clickmasters',
-  metaDescription: 'Support automation for restaurants that answers reservation, hours, and order questions and passes complaints or catering requests to staff. Book a free audit.',
+  metaDescription: 'Support automation for restaurants that answers reservation, hours and order questions and passes complaints or catering to staff. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

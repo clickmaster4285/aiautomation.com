@@ -31,7 +31,7 @@ export const aiEcommerceAutomationSeo: HubSeo = {
   path: AI_ECOMMERCE_AUTOMATION_PATH,
   title: 'AI E-commerce Automation for Online Stores | Clickmasters',
   description:
-    'AI e-commerce automation built in your store and tools: catalog upkeep, order and stock admin, customer questions, returns and cart recovery, with human review.',
+    'AI e-commerce automation in your store and tools: catalog upkeep, order and stock admin, customer questions, returns and cart recovery, with human review.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI E-commerce Automation', path: AI_ECOMMERCE_AUTOMATION_PATH },

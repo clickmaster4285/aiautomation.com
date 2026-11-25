@@ -33,7 +33,7 @@ export const aiBookkeepingSoftwareSeo: HubSeo = {
   path: AI_BOOKKEEPING_SOFTWARE_PATH,
   title: 'AI Bookkeeping Software for Small Business | Clickmasters',
   description:
-    'AI bookkeeping software built in QuickBooks, Xero or spreadsheets: source documents gathered, transactions categorized and unclear items flagged for review.',
+    'AI bookkeeping software in QuickBooks, Xero or spreadsheets: source documents gathered, transactions categorized and unclear items flagged for review.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Finance & Accounting', path: '/products/ai-finance-accounting' },

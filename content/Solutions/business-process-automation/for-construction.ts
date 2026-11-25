@@ -9,7 +9,7 @@ export const businessProcessAutomationForConstruction: SolutionData = {
   title: 'Business Process Automation for Construction',
   primaryKeyword: 'process automation for construction',
   titleTag: 'Business Process Automation for Construction | Clickmasters',
-  metaDescription: 'Process automation for construction companies that keeps RFIs, change orders, and subcontractor paperwork moving between office and site. Book a free audit.',
+  metaDescription: 'Process automation for construction companies that keeps RFIs, change orders and subcontractor paperwork moving between office and site. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

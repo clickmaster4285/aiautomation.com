@@ -9,7 +9,7 @@ export const appointmentBookingAutomationForConstruction: SolutionData = {
   title: 'Appointment & Booking Automation for Construction',
   primaryKeyword: 'booking automation for construction',
   titleTag: 'Booking Automation for Construction Teams | Clickmasters',
-  metaDescription: 'Booking automation for construction that schedules site visits, estimates, and inspections, with reminders that reduce no-shows. Book a free automation audit.',
+  metaDescription: 'Booking automation for construction that schedules site visits, estimates, and inspections, with reminders that reduce no-shows. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

@@ -9,7 +9,7 @@ export const reportingAutomationWithN8n: SolutionData = {
   title: 'Reporting Automation with n8n',
   primaryKeyword: 'n8n reporting automation',
   titleTag: 'n8n Reporting Automation, Self-Hosted | Clickmasters',
-  metaDescription: 'n8n reporting automation that pulls data from your stack, builds reports, and delivers them on schedule, self-hosted with no per-task fees. Book a free audit.',
+  metaDescription: 'n8n reporting automation that pulls data from your stack, builds reports and delivers them on schedule, self-hosted, no per-task fees. Book a free audit.',
   keywordEvidence: '1 matching keywords, ~500 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

@@ -9,7 +9,7 @@ export const businessProcessAutomationForEducation: SolutionData = {
   title: 'Business Process Automation for Education',
   primaryKeyword: 'process automation for education',
   titleTag: 'Business Process Automation for Education | Clickmasters',
-  metaDescription: 'Process automation for education teams that handles admissions paperwork, enrollment updates, and staff approvals without manual chasing. Book a free audit.',
+  metaDescription: 'Process automation for education teams that handles admissions paperwork, enrollment updates and staff approvals without manual chasing. Book a free audit.',
   keywordEvidence: '1 matching keywords, ~50 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

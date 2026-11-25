@@ -9,7 +9,7 @@ export const appointmentBookingAutomationForAccountingFirms: SolutionData = {
   title: 'Appointment & Booking Automation for Accounting Firms',
   primaryKeyword: 'booking automation for accounting firms',
   titleTag: 'Booking Automation for Accounting Firms | Clickmasters',
-  metaDescription: 'Booking automation for accounting firms that schedules client meetings, sends reminders, and keeps tax-season calendars organized. Book a free automation audit.',
+  metaDescription: 'Booking automation for accounting firms that schedules client meetings, sends reminders, and keeps tax-season calendars organized. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

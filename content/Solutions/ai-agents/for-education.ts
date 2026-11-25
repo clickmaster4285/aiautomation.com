@@ -9,7 +9,7 @@ export const aiAgentsForEducation: SolutionData = {
   title: 'AI Agent Development for Education',
   primaryKeyword: 'AI agent for education',
   titleTag: 'AI Agents for Education Institutions | Clickmasters',
-  metaDescription: 'AI agents for education teams that handle enrollment questions, records requests, and staff admin across your existing systems. Book a free automation audit.',
+  metaDescription: 'AI agents for education teams that handle enrollment questions, records requests, and staff admin across your existing systems. Book a free audit.',
   keywordEvidence: 'pattern-based',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

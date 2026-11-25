@@ -28,7 +28,7 @@ export const aiProcessOptimizationSeo: HubSeo = {
   path: AI_PROCESS_OPTIMIZATION_PATH,
   title: 'AI Process Optimization Before You Automate | Clickmasters',
   description:
-    'AI process optimization that maps how work really flows, removes wasted steps and redesigns the process before it is automated. Book a free automation audit.',
+    'AI process optimization that maps how work really flows, removes wasted steps and redesigns the process before it is automated. Book a free audit.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'General AI Automation', path: '/products/general-ai-automation' },

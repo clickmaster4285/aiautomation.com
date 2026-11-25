@@ -9,7 +9,7 @@ export const leadGenerationAutomationForLogistics: SolutionData = {
   title: 'Lead Generation Automation for Logistics & Transportation',
   primaryKeyword: 'lead generation system for logistics',
   titleTag: 'Lead Generation Systems for Logistics | Clickmasters',
-  metaDescription: 'Lead generation systems for logistics companies that capture shipper inquiries, qualify lanes and volume, and route opportunities to sales. Book a free audit.',
+  metaDescription: 'Lead generation for logistics companies that captures shipper inquiries, qualifies lanes and volume, and routes deals to sales. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

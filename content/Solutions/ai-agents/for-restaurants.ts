@@ -9,7 +9,7 @@ export const aiAgentsForRestaurants: SolutionData = {
   title: 'AI Agent Development for Restaurants & Hospitality',
   primaryKeyword: 'AI agent for restaurants',
   titleTag: 'AI Agents for Restaurants & Hospitality | Clickmasters',
-  metaDescription: 'AI agents for restaurants that handle reservations, supplier orders, and staff scheduling tasks across the tools you already run. Book a free automation audit.',
+  metaDescription: 'AI agents for restaurants that handle reservations, supplier orders, and staff scheduling tasks across the tools you already run. Book a free audit.',
   keywordEvidence: 'pattern-based',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

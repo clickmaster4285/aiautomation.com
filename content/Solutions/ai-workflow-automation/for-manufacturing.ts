@@ -9,7 +9,7 @@ export const aiWorkflowAutomationForManufacturing: SolutionData = {
   title: 'AI Workflow Automation for Manufacturing',
   primaryKeyword: 'workflow automation for manufacturing',
   titleTag: 'AI Workflow Automation for Manufacturing | Clickmasters',
-  metaDescription: 'Workflow automation for manufacturing that connects orders, purchasing, quality records, and ERP updates without manual handoffs. Book a free automation audit.',
+  metaDescription: 'Workflow automation for manufacturing that connects orders, purchasing, quality records, and ERP updates without manual handoffs. Book a free audit.',
   keywordEvidence: '2 matching keywords, ~100 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

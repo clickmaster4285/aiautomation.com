@@ -9,7 +9,7 @@ export const customerSupportAutomationForLawFirms: SolutionData = {
   title: 'Customer Support Automation for Law Firms',
   primaryKeyword: 'support automation for law firms',
   titleTag: 'Customer Support Automation for Law Firms | Clickmasters',
-  metaDescription: 'Support automation for law firms that handles intake, case status, and scheduling questions and escalates anything legal to your attorneys. Book a free audit.',
+  metaDescription: 'Support automation for law firms that handles intake, case status and scheduling questions and escalates legal matters to attorneys. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

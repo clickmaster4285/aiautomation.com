@@ -33,7 +33,7 @@ export const aiProductRecommendationSoftwareSeo: HubSeo = {
   path: AI_PRODUCT_RECOMMENDATION_SOFTWARE_PATH,
   title: 'AI Product Recommendation Software for Stores | Clickmasters',
   description:
-    'AI product recommendation software explained: related products, bought-together and similar items, plus email and assistant suggestions built from your catalog.',
+    'AI product recommendation software explained: related, bought-together and similar items, plus email and assistant suggestions built from your catalog.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI E-commerce Automation', path: '/products/ai-ecommerce-automation' },

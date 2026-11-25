@@ -9,7 +9,7 @@ export const marketingAutomationWithSalesforce: SolutionData = {
   title: 'AI Marketing Automation with Salesforce',
   primaryKeyword: 'salesforce marketing automation',
   titleTag: 'Salesforce Marketing Automation with AI | Clickmasters',
-  metaDescription: 'Salesforce marketing automation extended with AI: content drafts, nurture that adapts to behavior, and dashboards built on your CRM data. Book a free audit.',
+  metaDescription: 'Salesforce marketing automation with AI: content drafts, nurture that adapts to behavior, and dashboards built on your CRM data. Book a free audit.',
   keywordEvidence: '4 matching keywords, ~650 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

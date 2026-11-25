@@ -9,7 +9,7 @@ export const invoiceAutomationForManufacturing: SolutionData = {
   title: 'Invoice & Finance Automation for Manufacturing',
   primaryKeyword: 'finance automation for manufacturing',
   titleTag: 'Finance Automation for Manufacturing | Clickmasters',
-  metaDescription: 'Finance automation for manufacturing that captures supplier invoices, validates them against purchase orders, and posts them to your ERP. Book a free audit.',
+  metaDescription: 'Finance automation for manufacturing that captures supplier invoices, validates them against purchase orders and posts them to your ERP. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

@@ -9,7 +9,7 @@ export const aiAgentsForAccountingFirms: SolutionData = {
   title: 'AI Agent Development for Accounting Firms',
   primaryKeyword: 'AI agent for accounting firms',
   titleTag: 'AI Agents for Accounting Firms | Clickmasters',
-  metaDescription: 'AI agents for accounting firms that chase client documents, prep reconciliations, and draft follow-ups inside your existing tools. Book a free automation audit.',
+  metaDescription: 'AI agents for accounting firms that chase client documents, prep reconciliations, and draft follow-ups inside your existing tools. Book a free audit.',
   keywordEvidence: 'pattern-based',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

@@ -28,7 +28,7 @@ export const aiInvoiceProcessingSoftwareSeo: HubSeo = {
   path: AI_INVOICE_PROCESSING_SOFTWARE_PATH,
   title: 'AI Invoice Processing Software for AP Teams | Clickmasters',
   description:
-    'AI invoice processing software for supplier invoices: inbox intake, line-item extraction, duplicate checks, PO matching and approval routing before posting.',
+    'AI invoice processing software for supplier invoices: inbox intake, line-item extraction, duplicate checks, PO matching and approvals before posting.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Finance & Accounting', path: '/products/ai-finance-accounting' },

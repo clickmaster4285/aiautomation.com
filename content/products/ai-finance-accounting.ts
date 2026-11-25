@@ -31,7 +31,7 @@ export const aiFinanceAccountingSeo: HubSeo = {
   path: AI_FINANCE_ACCOUNTING_PATH,
   title: 'AI Finance and Accounting Automation | Clickmasters',
   description:
-    'AI finance and accounting automation built in the tools you use: invoice capture, expense routing, reconciliation matching and reports, with people approving.',
+    'AI finance and accounting automation in the tools you use: invoice capture, expense routing, reconciliation matching and reports, with people approving.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Finance & Accounting', path: AI_FINANCE_ACCOUNTING_PATH },

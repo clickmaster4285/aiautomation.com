@@ -29,7 +29,7 @@ export const aiIntegrationServicesSeo: HubSeo = {
   path: AI_INTEGRATION_SERVICES_PATH,
   title: 'AI Integration Services for Your Systems | Clickmasters',
   description:
-    'AI integration services that connect GPT, Claude or Gemini to your CRM, ERP, helpdesk and data through APIs, with logging and cost control. Book a free audit.',
+    'AI integration services that connect GPT, Claude or Gemini to your CRM, ERP, helpdesk and data via APIs, with logging and cost control. Book a free audit.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'General AI Automation', path: '/products/general-ai-automation' },

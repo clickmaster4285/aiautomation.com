@@ -9,7 +9,7 @@ export const salesAutomationForConstruction: SolutionData = {
   title: 'AI Sales Automation for Construction',
   primaryKeyword: 'sales automation for construction',
   titleTag: 'AI Sales Automation for Construction | Clickmasters',
-  metaDescription: 'Sales automation for construction that captures bid requests, follows up on estimates, and keeps your pipeline current without manual entry. Book a free audit.',
+  metaDescription: 'Sales automation for construction that captures bid requests, follows up on estimates and keeps your pipeline current, no manual entry. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

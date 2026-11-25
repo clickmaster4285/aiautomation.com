@@ -9,7 +9,7 @@ export const aiVoiceAgentsForSaaS: SolutionData = {
   title: 'AI Voice Agents for SaaS Companies',
   primaryKeyword: 'voice agent for SaaS',
   titleTag: 'AI Voice Agents for SaaS Companies | Clickmasters',
-  metaDescription: 'AI voice agents for SaaS that qualify inbound demo calls, answer support questions, and hand off to sales or success with context. Book a free automation audit.',
+  metaDescription: 'AI voice agents for SaaS that qualify inbound demo calls, answer support questions, and hand off to sales or success with context. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

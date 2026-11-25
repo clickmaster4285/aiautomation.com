@@ -9,7 +9,7 @@ export const reportingAutomationForRetail: SolutionData = {
   title: 'Reporting Automation for Retail',
   primaryKeyword: 'reporting automation for retail',
   titleTag: 'Reporting Automation for Retail | Clickmasters',
-  metaDescription: 'Reporting automation for retail that merges POS, inventory, and online sales data into store and category reports on schedule. Book a free automation audit.',
+  metaDescription: 'Reporting automation for retail that merges POS, inventory, and online sales data into store and category reports on schedule. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

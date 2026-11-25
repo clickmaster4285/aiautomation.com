@@ -9,7 +9,7 @@ export const documentAutomationForRealEstate: SolutionData = {
   title: 'Document & Data Automation for Real Estate',
   primaryKeyword: 'document automation for real estate',
   titleTag: 'Document Automation for Real Estate | Clickmasters',
-  metaDescription: 'Document automation for real estate that extracts data from contracts, disclosures, and leases and keeps every transaction file complete. Book a free audit.',
+  metaDescription: 'Document automation for real estate that extracts data from contracts, disclosures and leases and keeps every transaction file complete. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

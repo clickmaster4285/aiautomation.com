@@ -34,7 +34,7 @@ export const aiAgentsPlatformsSeo: HubSeo = {
   path: AI_AGENTS_PLATFORMS_PATH,
   title: 'AI Agents for Business, Built in Your Tools | Clickmasters',
   description:
-    'AI agents for business that research, update records and handle multi-step tasks in your CRM, ERP and inbox, with guardrails, approvals and full action logs.',
+    'AI agents for business that research, update records and handle multi-step tasks in your CRM, ERP and inbox, with guardrails, approvals and action logs.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Agents & Platforms', path: AI_AGENTS_PLATFORMS_PATH },

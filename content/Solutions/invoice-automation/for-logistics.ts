@@ -9,7 +9,7 @@ export const invoiceAutomationForLogistics: SolutionData = {
   title: 'Invoice & Finance Automation for Logistics & Transportation',
   primaryKeyword: 'finance automation for logistics',
   titleTag: 'Invoice & Finance Automation for Logistics | Clickmasters',
-  metaDescription: 'Finance automation for logistics that captures carrier invoices, checks charges against purchase orders, and flags exceptions before payment. Book a free audit.',
+  metaDescription: 'Finance automation for logistics that captures carrier invoices, checks charges against POs and flags exceptions before payment. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

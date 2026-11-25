@@ -9,7 +9,7 @@ export const leadGenerationAutomationForEducation: SolutionData = {
   title: 'Lead Generation Automation for Education',
   primaryKeyword: 'lead generation system for education',
   titleTag: 'Lead Generation Systems for Education | Clickmasters',
-  metaDescription: 'Lead generation systems for education teams that capture prospective student inquiries, qualify program fit, and route them to admissions. Book a free audit.',
+  metaDescription: 'Lead generation for education teams that captures prospective student inquiries, qualifies program fit and routes them to admissions. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

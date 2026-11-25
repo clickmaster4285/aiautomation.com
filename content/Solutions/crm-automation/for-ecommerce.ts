@@ -9,7 +9,7 @@ export const crmAutomationForEcommerce: SolutionData = {
   title: 'CRM Automation for E-commerce',
   primaryKeyword: 'CRM automation for ecommerce',
   titleTag: 'CRM Automation for Ecommerce Brands | Clickmasters',
-  metaDescription: 'CRM automation for ecommerce that syncs orders, customer profiles, and segments so every message reflects what shoppers bought. Book a free automation audit.',
+  metaDescription: 'CRM automation for ecommerce that syncs orders, customer profiles, and segments so every message reflects what shoppers bought. Book a free audit.',
   keywordEvidence: '2 matching keywords, ~100 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

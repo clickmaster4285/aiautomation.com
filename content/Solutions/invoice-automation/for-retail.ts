@@ -9,7 +9,7 @@ export const invoiceAutomationForRetail: SolutionData = {
   title: 'Invoice & Finance Automation for Retail',
   primaryKeyword: 'finance automation for retail',
   titleTag: 'Invoice & Finance Automation for Retail | Clickmasters',
-  metaDescription: 'Finance automation for retail that captures supplier invoices, validates quantities and totals, and posts entries to your accounting system. Book a free audit.',
+  metaDescription: 'Finance automation for retail that captures supplier invoices, validates quantities and totals, and posts entries to your books. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

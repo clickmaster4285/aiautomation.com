@@ -25,7 +25,7 @@ export const intelligentProcessAutomationSeo: HubSeo = {
   path: INTELLIGENT_PROCESS_AUTOMATION_PATH,
   title: 'Intelligent Process Automation (IPA) | Clickmasters',
   description:
-    'Intelligent process automation that pairs AI with rules and RPA bots, so documents and decisions move faster while exceptions and approvals stay with your team.',
+    'Intelligent process automation pairing AI with rules and RPA bots, so documents and decisions move faster while your team keeps exceptions and approvals.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Workflow & Business Process Automation', path: '/products/ai-workflow-business-process-automation' },

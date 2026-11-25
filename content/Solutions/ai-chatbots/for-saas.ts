@@ -9,7 +9,7 @@ export const aiChatbotsForSaaS: SolutionData = {
   title: 'AI Chatbots for SaaS Companies',
   primaryKeyword: 'chatbot for SaaS',
   titleTag: 'AI Chatbots for SaaS Companies | Clickmasters',
-  metaDescription: 'An AI chatbot for SaaS companies that answers product questions from your docs, qualifies trial users, and books demos for sales. Book a free automation audit.',
+  metaDescription: 'An AI chatbot for SaaS companies that answers product questions from your docs, qualifies trial users, and books demos for sales. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

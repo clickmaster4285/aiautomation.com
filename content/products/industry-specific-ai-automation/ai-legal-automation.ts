@@ -31,7 +31,7 @@ export const aiLegalAutomationSeo: HubSeo = {
   path: AI_LEGAL_AUTOMATION_PATH,
   title: 'Legal Workflow Automation for Law Firms | Clickmasters',
   description:
-    'Legal workflow automation for law firms and in-house teams: intake, conflict prep, engagement letters and billing, with lawyers approving. Book a free audit.',
+    'Legal workflow automation for law firms and in-house teams: intake, conflict prep, engagement letters and billing, with lawyers approving each step.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'Industry-Specific AI Automation', path: '/products/industry-specific-ai-automation' },

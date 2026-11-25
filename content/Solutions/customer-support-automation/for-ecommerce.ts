@@ -9,7 +9,7 @@ export const customerSupportAutomationForEcommerce: SolutionData = {
   title: 'Customer Support Automation for E-commerce',
   primaryKeyword: 'support automation for ecommerce',
   titleTag: 'Customer Support Automation for Ecommerce | Clickmasters',
-  metaDescription: 'Support automation for ecommerce that resolves order status, returns, and shipping questions instantly and hands complex cases to agents. Book a free audit.',
+  metaDescription: 'Support automation for ecommerce that resolves order status, returns and shipping questions instantly and hands complex cases to agents. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

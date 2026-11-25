@@ -9,7 +9,7 @@ export const reportingAutomationForEducation: SolutionData = {
   title: 'Reporting Automation for Education',
   primaryKeyword: 'reporting automation for education',
   titleTag: 'Reporting Automation for Education Teams | Clickmasters',
-  metaDescription: 'Reporting automation for education that gathers enrollment, attendance, and program data into scheduled reports for leadership. Book a free automation audit.',
+  metaDescription: 'Reporting automation for education that gathers enrollment, attendance, and program data into scheduled reports for leadership. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

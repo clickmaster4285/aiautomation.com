@@ -9,7 +9,7 @@ export const aiWorkflowAutomationForEducation: SolutionData = {
   title: 'AI Workflow Automation for Education',
   primaryKeyword: 'workflow automation for education',
   titleTag: 'AI Workflow Automation for Education | Clickmasters',
-  metaDescription: 'Workflow automation for education that moves admissions, enrollment, and student records between systems without manual re-entry. Book a free automation audit.',
+  metaDescription: 'Workflow automation for education that moves admissions, enrollment, and student records between systems without manual re-entry. Book a free audit.',
   keywordEvidence: '1 matching keywords, ~50 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

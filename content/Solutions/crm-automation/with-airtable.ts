@@ -9,7 +9,7 @@ export const crmAutomationWithAirtable: SolutionData = {
   title: 'CRM Automation with Airtable',
   primaryKeyword: 'airtable CRM automation',
   titleTag: 'Airtable CRM Automation for Ops Teams | Clickmasters',
-  metaDescription: 'Airtable CRM automation that keeps contacts, deals, and follow-ups current in the base your team already uses, without re-keying. Book a free automation audit.',
+  metaDescription: 'Airtable CRM automation that keeps contacts, deals, and follow-ups current in the base your team already uses, without re-keying. Book a free audit.',
   keywordEvidence: '15 matching keywords, ~2,550 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

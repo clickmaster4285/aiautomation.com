@@ -9,7 +9,7 @@ export const salesAutomationForEcommerce: SolutionData = {
   title: 'AI Sales Automation for E-commerce',
   primaryKeyword: 'sales automation for ecommerce',
   titleTag: 'AI Sales Automation for Ecommerce | Clickmasters',
-  metaDescription: 'Sales automation for ecommerce that scores leads, runs abandoned cart and follow-up sequences, and keeps customer records current. Book a free automation audit.',
+  metaDescription: 'Sales automation for ecommerce that scores leads, runs abandoned cart and follow-up sequences, and keeps customer records current. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

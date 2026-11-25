@@ -9,7 +9,7 @@ export const documentAutomationForHealthcare: SolutionData = {
   title: 'Document & Data Automation for Healthcare',
   primaryKeyword: 'document automation for healthcare',
   titleTag: 'Document Automation for Healthcare | Clickmasters',
-  metaDescription: 'Document automation for healthcare that extracts data from intake forms, referrals, and insurance paperwork with privacy controls built in. Book a free audit.',
+  metaDescription: 'Document automation for healthcare that extracts data from intake forms, referrals and insurance paperwork, with privacy controls. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

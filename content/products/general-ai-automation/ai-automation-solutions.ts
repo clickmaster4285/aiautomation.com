@@ -28,7 +28,7 @@ export const aiAutomationSolutionsSeo: HubSeo = {
   path: AI_AUTOMATION_SOLUTIONS_PATH,
   title: 'AI Automation for Small Business Teams | Clickmasters',
   description:
-    'AI automation for small business teams: start with one high-value workflow, built in the tools you already use, with you approving key steps. Book a free audit.',
+    'AI automation for small business teams: start with one high-value workflow, built in the tools you already use, with you approving key steps.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'General AI Automation', path: '/products/general-ai-automation' },

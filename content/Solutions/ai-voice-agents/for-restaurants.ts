@@ -9,7 +9,7 @@ export const aiVoiceAgentsForRestaurants: SolutionData = {
   title: 'AI Voice Agents for Restaurants & Hospitality',
   primaryKeyword: 'voice agent for restaurants',
   titleTag: 'AI Voice Agents for Restaurants | Clickmasters',
-  metaDescription: 'AI voice agents for restaurants that take reservations, answer menu and hours questions, and handle takeout calls during the rush. Book a free automation audit.',
+  metaDescription: 'AI voice agents for restaurants that take reservations, answer menu and hours questions, and handle takeout calls during the rush. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

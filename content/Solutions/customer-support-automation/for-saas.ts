@@ -9,7 +9,7 @@ export const customerSupportAutomationForSaaS: SolutionData = {
   title: 'Customer Support Automation for SaaS Companies',
   primaryKeyword: 'support automation for SaaS',
   titleTag: 'Customer Support Automation for SaaS | Clickmasters',
-  metaDescription: 'Support automation for SaaS that answers how-to and account questions from your docs, triages bug reports, and escalates the rest. Book a free automation audit.',
+  metaDescription: 'Support automation for SaaS that answers how-to and account questions from your docs, triages bug reports, and escalates the rest. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

@@ -17,7 +17,6 @@ const SITE = "https://clickmastersaiautomation.com";
 // Findings that are expected and documented in SEO_REMEDIATION_REPORT.md, not defects.
 const ACCEPTED = {
   "/blog": "Intentionally noindex until real posts exist; kept out of the sitemap",
-  "/case-studies/ai-receptionist-lead-response-automation": "Long-form article headline kept (Article headline limit is 110 characters)",
   "/contact": "Utility page; short copy is appropriate",
   "/free-automation-audit": "Utility page; short copy is appropriate",
   "/case-studies": "Listing page with one case study; grows as studies are published",

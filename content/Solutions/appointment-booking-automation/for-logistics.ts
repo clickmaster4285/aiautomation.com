@@ -9,7 +9,7 @@ export const appointmentBookingAutomationForLogistics: SolutionData = {
   title: 'Appointment & Booking Automation for Logistics & Transportation',
   primaryKeyword: 'booking automation for logistics',
   titleTag: 'Booking Automation for Logistics Teams | Clickmasters',
-  metaDescription: 'Booking automation for logistics that schedules pickups, deliveries, and customer appointments, then confirms each slot and sends reminders. Book a free audit.',
+  metaDescription: 'Booking automation for logistics that schedules pickups, deliveries and customer appointments, then confirms each slot with reminders. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

@@ -9,7 +9,7 @@ export const customerSupportAutomationForConstruction: SolutionData = {
   title: 'Customer Support Automation for Construction',
   primaryKeyword: 'support automation for construction',
   titleTag: 'Customer Support Automation for Construction | Clickmasters',
-  metaDescription: 'Support automation for construction companies that handles project status and scheduling requests and routes urgent site issues to your team. Book a free audit.',
+  metaDescription: 'Support automation for construction that handles project status and scheduling requests and routes urgent site issues to your team. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

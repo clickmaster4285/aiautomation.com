@@ -9,7 +9,7 @@ export const aiChatbotsForEducation: SolutionData = {
   title: 'AI Chatbots for Education',
   primaryKeyword: 'chatbot for education',
   titleTag: 'AI Chatbots for Education Institutions | Clickmasters',
-  metaDescription: 'An AI chatbot for education teams that answers admissions and enrollment questions, captures inquiries, and books campus tours. Book a free automation audit.',
+  metaDescription: 'An AI chatbot for education teams that answers admissions and enrollment questions, captures inquiries, and books campus tours. Book a free audit.',
   keywordEvidence: '6 matching keywords, ~750 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

@@ -9,7 +9,7 @@ export const aiAgentsForManufacturing: SolutionData = {
   title: 'AI Agent Development for Manufacturing',
   primaryKeyword: 'AI agent for manufacturing',
   titleTag: 'AI Agents for Manufacturing Teams | Clickmasters',
-  metaDescription: 'AI agents for manufacturing teams that process purchase orders, chase supplier updates, and flag production exceptions for review. Book a free automation audit.',
+  metaDescription: 'AI agents for manufacturing teams that process purchase orders, chase supplier updates, and flag production exceptions for review. Book a free audit.',
   keywordEvidence: 'pattern-based',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

@@ -9,7 +9,7 @@ export const customerSupportAutomationForRealEstate: SolutionData = {
   title: 'Customer Support Automation for Real Estate',
   primaryKeyword: 'support automation for real estate',
   titleTag: 'Customer Support Automation for Real Estate | Clickmasters',
-  metaDescription: 'Support automation for real estate teams that answers listing, showing, and tenant questions around the clock and routes the rest to agents. Book a free audit.',
+  metaDescription: 'Support automation for real estate that answers listing, showing and tenant questions around the clock and routes the rest to agents. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

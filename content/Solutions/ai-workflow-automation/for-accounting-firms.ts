@@ -9,7 +9,7 @@ export const aiWorkflowAutomationForAccountingFirms: SolutionData = {
   title: 'AI Workflow Automation for Accounting Firms',
   primaryKeyword: 'workflow automation for accounting firms',
   titleTag: 'AI Workflow Automation for Accounting Firms | Clickmasters',
-  metaDescription: 'Workflow automation for accounting firms that moves client documents, approvals, and close tasks between systems without manual handoffs. Book a free audit.',
+  metaDescription: 'Workflow automation for accounting firms that moves client documents, approvals and close tasks between systems without manual handoffs. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

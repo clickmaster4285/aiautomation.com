@@ -9,7 +9,7 @@ export const aiWorkflowAutomationForConstruction: SolutionData = {
   title: 'AI Workflow Automation for Construction',
   primaryKeyword: 'workflow automation for construction',
   titleTag: 'AI Workflow Automation for Construction | Clickmasters',
-  metaDescription: 'Workflow automation for construction that keeps RFIs, change orders, and subcontractor paperwork moving between office and field. Book a free automation audit.',
+  metaDescription: 'Workflow automation for construction that keeps RFIs, change orders, and subcontractor paperwork moving between office and field. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

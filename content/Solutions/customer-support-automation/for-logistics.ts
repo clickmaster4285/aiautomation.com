@@ -9,7 +9,7 @@ export const customerSupportAutomationForLogistics: SolutionData = {
   title: 'Customer Support Automation for Logistics & Transportation',
   primaryKeyword: 'support automation for logistics',
   titleTag: 'Customer Support Automation for Logistics | Clickmasters',
-  metaDescription: 'Support automation for logistics teams that answers tracking, delivery, and exception questions and escalates urgent shipments to dispatch. Book a free audit.',
+  metaDescription: 'Support automation for logistics that answers tracking, delivery and exception questions and escalates urgent shipments to dispatch. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

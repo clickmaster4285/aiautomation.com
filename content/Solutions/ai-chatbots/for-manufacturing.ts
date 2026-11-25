@@ -9,7 +9,7 @@ export const aiChatbotsForManufacturing: SolutionData = {
   title: 'AI Chatbots for Manufacturing',
   primaryKeyword: 'chatbot for manufacturing',
   titleTag: 'AI Chatbots for Manufacturing Teams | Clickmasters',
-  metaDescription: 'An AI chatbot for manufacturing companies that answers product and spec questions, qualifies RFQs, and routes orders to sales. Book a free automation audit.',
+  metaDescription: 'An AI chatbot for manufacturing companies that answers product and spec questions, qualifies RFQs, and routes orders to sales. Book a free audit.',
   keywordEvidence: '1 matching keywords, ~50 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

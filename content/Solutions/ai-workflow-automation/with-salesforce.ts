@@ -9,7 +9,7 @@ export const aiWorkflowAutomationWithSalesforce: SolutionData = {
   title: 'AI Workflow Automation with Salesforce',
   primaryKeyword: 'salesforce workflow automation',
   titleTag: 'Salesforce Workflow Automation with AI | Clickmasters',
-  metaDescription: 'Salesforce workflow automation that adds AI decision steps to your org, keeps records clean, and connects Salesforce to the tools around it. Book a free audit.',
+  metaDescription: 'Salesforce workflow automation that adds AI decision steps to your org, keeps records clean and connects the tools around it. Book a free audit.',
   keywordEvidence: '6 matching keywords, ~750 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

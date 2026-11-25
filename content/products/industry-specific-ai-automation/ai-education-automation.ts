@@ -31,7 +31,7 @@ export const aiEducationAutomationSeo: HubSeo = {
   path: AI_EDUCATION_AUTOMATION_PATH,
   title: 'AI Education Automation for School Admin | Clickmasters',
   description:
-    'AI education automation for schools, colleges and training providers: admissions, enrollment, enquiries and reporting, with staff approving. Book a free audit.',
+    'AI education automation for schools, colleges and training providers: admissions, enrollment, enquiries and reporting, with staff approving each step.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'Industry-Specific AI Automation', path: '/products/industry-specific-ai-automation' },

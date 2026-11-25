@@ -9,7 +9,7 @@ export const leadGenerationAutomationForRealEstate: SolutionData = {
   title: 'Lead Generation Automation for Real Estate',
   primaryKeyword: 'lead generation system for real estate',
   titleTag: 'Lead Generation Systems for Real Estate | Clickmasters',
-  metaDescription: 'Lead generation systems for real estate teams that capture buyer and seller inquiries, qualify timelines, and route them to the right agent. Book a free audit.',
+  metaDescription: 'Lead generation for real estate teams that captures buyer and seller inquiries, qualifies timelines and routes each to the right agent. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

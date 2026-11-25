@@ -9,7 +9,7 @@ export const leadGenerationAutomationForLawFirms: SolutionData = {
   title: 'Lead Generation Automation for Law Firms',
   primaryKeyword: 'lead generation system for law firms',
   titleTag: 'Lead Generation Systems for Law Firms | Clickmasters',
-  metaDescription: 'Lead generation systems for law firms that capture case inquiries, screen matter type, and route qualified prospects to your intake team. Book a free audit.',
+  metaDescription: 'Lead generation systems for law firms that capture case inquiries, screen matter type and route qualified prospects to your intake team. Book a free audit.',
   keywordEvidence: '6 matching keywords, ~1,650 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

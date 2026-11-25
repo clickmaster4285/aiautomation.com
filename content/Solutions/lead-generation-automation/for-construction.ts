@@ -9,7 +9,7 @@ export const leadGenerationAutomationForConstruction: SolutionData = {
   title: 'Lead Generation Automation for Construction',
   primaryKeyword: 'lead generation system for construction',
   titleTag: 'Lead Generation Systems for Construction | Clickmasters',
-  metaDescription: 'Lead generation systems for construction companies that capture project inquiries, qualify scope and budget, and route bids to estimators. Book a free audit.',
+  metaDescription: 'Lead generation for construction companies that captures project inquiries, qualifies scope and budget, and routes bids to estimators. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

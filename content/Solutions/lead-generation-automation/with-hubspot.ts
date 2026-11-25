@@ -9,7 +9,7 @@ export const leadGenerationAutomationWithHubspot: SolutionData = {
   title: 'Lead Generation Automation with HubSpot',
   primaryKeyword: 'hubspot lead generation system',
   titleTag: 'HubSpot Lead Generation System Builds | Clickmasters',
-  metaDescription: 'A HubSpot lead generation system that captures, qualifies, and routes new demand inside your existing portal, with AI on the judgment steps. Book a free audit.',
+  metaDescription: 'A HubSpot lead generation system that captures, qualifies and routes new demand in your existing portal, with AI on judgment steps. Book a free audit.',
   keywordEvidence: '5 matching keywords, ~700 bucketed volume',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

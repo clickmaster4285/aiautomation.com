@@ -9,7 +9,7 @@ export const customerSupportAutomationForManufacturing: SolutionData = {
   title: 'Customer Support Automation for Manufacturing',
   primaryKeyword: 'support automation for manufacturing',
   titleTag: 'Customer Support Automation for Manufacturing | Clickmasters',
-  metaDescription: 'Support automation for manufacturing that handles order status, parts, and warranty requests and routes technical cases to the right expert. Book a free audit.',
+  metaDescription: 'Support automation for manufacturing that handles order status, parts and warranty requests and routes technical cases to experts. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

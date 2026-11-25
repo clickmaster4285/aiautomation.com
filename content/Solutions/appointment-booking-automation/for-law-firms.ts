@@ -9,7 +9,7 @@ export const appointmentBookingAutomationForLawFirms: SolutionData = {
   title: 'Appointment & Booking Automation for Law Firms',
   primaryKeyword: 'booking automation for law firms',
   titleTag: 'Booking Automation for Law Firms | Clickmasters',
-  metaDescription: 'Booking automation for law firms that schedules client consultations, sends confirmations and reminders, and logs every booking in your CRM. Book a free audit.',
+  metaDescription: 'Booking automation for law firms that schedules consultations, sends confirmations and reminders, and logs every booking in your CRM. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

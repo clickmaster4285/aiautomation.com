@@ -9,7 +9,7 @@ export const invoiceAutomationForEducation: SolutionData = {
   title: 'Invoice & Finance Automation for Education',
   primaryKeyword: 'finance automation for education',
   titleTag: 'Invoice & Finance Automation for Education | Clickmasters',
-  metaDescription: 'Finance automation for education that captures vendor invoices, routes approvals across departments, and posts entries with fewer errors. Book a free audit.',
+  metaDescription: 'Finance automation for education that captures vendor invoices, routes approvals across departments and posts entries with fewer errors. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

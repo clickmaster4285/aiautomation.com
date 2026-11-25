@@ -9,7 +9,7 @@ export const crmAutomationForInsurance: SolutionData = {
   title: 'CRM Automation for Insurance Agencies',
   primaryKeyword: 'CRM automation for insurance',
   titleTag: 'CRM Automation for Insurance Agencies | Clickmasters AI',
-  metaDescription: 'CRM automation for insurance agencies that keeps leads, policies, and renewal follow-ups current so producers spend time selling. Book a free automation audit.',
+  metaDescription: 'CRM automation for insurance agencies that keeps leads, policies, and renewal follow-ups current so producers spend time selling. Book a free audit.',
   keywordEvidence: 'pattern-based (no direct keyword match in datasetvalidate)',
   schema: 'Service, FAQPage, BreadcrumbList',
   internalLinks: [

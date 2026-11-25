@@ -31,7 +31,7 @@ export const aiFinancialAutomationSeo: HubSeo = {
   path: AI_FINANCIAL_AUTOMATION_PATH,
   title: 'AI Financial Automation for Finance Teams | Clickmasters',
   description:
-    'AI financial automation that keeps CRM, billing and accounting data in step, follows up receivables, routes approvals and builds recurring financial reports.',
+    'AI financial automation that keeps CRM, billing and accounting data in step, follows up receivables, routes approvals and builds recurring reports.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Finance & Accounting', path: '/products/ai-finance-accounting' },

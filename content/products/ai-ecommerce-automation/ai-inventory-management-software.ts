@@ -29,7 +29,7 @@ export const aiInventoryManagementSoftwareSeo: HubSeo = {
   path: AI_INVENTORY_MANAGEMENT_SOFTWARE_PATH,
   title: 'AI Inventory Management Software for Sellers | Clickmasters',
   description:
-    'AI inventory management software for online sellers: consistent stock records, low-stock alerts at your thresholds, SKU clean-up and reorder drafts you approve.',
+    'AI inventory management software for online sellers: consistent stock records, low-stock alerts at your thresholds, SKU clean-up and reorder drafts.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI E-commerce Automation', path: '/products/ai-ecommerce-automation' },
