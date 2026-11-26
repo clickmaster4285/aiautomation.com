@@ -23,7 +23,7 @@ export default function Process({ data, marker }: { data: ProcessData; marker?: 
   const { head, tail } = splitHeading(data.heading, 1);
 
   return (
-    <section id="process" className="bg-ink text-white py-12 md:py-24">
+    <section id="process" className="scroll-mt-24 bg-ink text-white py-12 md:py-24">
       <div className="mx-auto max-w-[90vw] md:max-w-[84vw] px-4 md:px-6">
         <SectionLabel label={data.label} marker={marker} dark />
 

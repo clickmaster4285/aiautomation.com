@@ -3,6 +3,7 @@ import path from 'path';
 import { LIVE_PRODUCT_PATH_LIST } from '@/content/products/routes';
 import { allSolutionPaths } from '@/content/Solutions/pages';
 import { blogArticles } from '@/content/blog';
+import { isIndexableSolutionPath } from '@/lib/solution-indexing';
 
 // Get all routes from the app directory
 export function getAllRoutes(): string[] {
@@ -151,8 +152,9 @@ export function getServices(): { path: string; subPages: string[] }[] {
 
 // Get solutions: every page below /solutions comes from the route registry
 // (app/solutions/[service] and [service]/[slug] are dynamic, so there are no folders to scan).
+// Only solution pages offered for indexing (lib/solution-indexing.ts) go in the sitemap.
 export function getSolutions(): string[] {
-  return allSolutionPaths();
+  return allSolutionPaths().filter(isIndexableSolutionPath);
 }
 
 // Industries that are linked in the UI but do not have a published page yet.

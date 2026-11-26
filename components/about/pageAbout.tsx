@@ -98,7 +98,7 @@ export default function AboutPage() {
       </section>
 
       {/* ====== WHO WE ARE – Dark ====== */}
-      <section className="relative border-t border-white/10 bg-ink py-16 text-white sm:py-20 md:py-24">
+      <section id="who-we-are" className="relative scroll-mt-24 border-t border-white/10 bg-ink py-16 text-white sm:py-20 md:py-24">
         <div className="mx-auto max-w-[84vw] px-6">
           <motion.div
             initial="hidden"
@@ -131,7 +131,7 @@ export default function AboutPage() {
       </section>
 
       {/* ====== OUR APPROACH – Light ====== */}
-      <section className="bg-paper py-16 sm:py-20 md:py-24">
+      <section id="our-approach" className="scroll-mt-24 bg-paper py-16 sm:py-20 md:py-24">
         <div className="mx-auto max-w-[84vw] px-6">
           <motion.div
             initial="hidden"
@@ -285,7 +285,7 @@ export default function AboutPage() {
       </section>
 
       {/* ====== WHY IT MATTERS – Dark ====== */}
-      <section className="border-t border-white/10 bg-ink py-16 text-white sm:py-20 md:py-24">
+      <section id="why-clickmasters" className="scroll-mt-24 border-t border-white/10 bg-ink py-16 text-white sm:py-20 md:py-24">
         <div className="mx-auto max-w-[84vw] px-6">
           <motion.div
             initial="hidden"

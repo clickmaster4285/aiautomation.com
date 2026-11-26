@@ -7,7 +7,7 @@ export const n8nVsZapierVsMake: BlogArticle = {
   slug: 'n8n-vs-zapier-vs-make',
   title: 'n8n vs Zapier vs Make: Which Should You Use? | Clickmasters',
   metaDescription:
-    'n8n vs Zapier vs Make compared on billing, AI features, error handling, hosting and fit, from an agency that builds on all three. With a decision checklist.',
+    'n8n vs Zapier vs Make compared on billing, AI features, error handling, hosting and fit, from a team that builds on all three. With a decision checklist.',
   keywords:
     'n8n vs zapier vs make, n8n vs zapier, make vs zapier, n8n vs make, zapier alternative, best workflow automation platform',
   h1: 'n8n vs Zapier vs Make: Which Automation Platform Fits Your Team?',

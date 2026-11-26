@@ -15,7 +15,7 @@
 ## Executive summary
 
 1. **Crawling and technical setup are not what's holding the site back.** The live site serves 325 URLs, all with HTTP 200. 324 are indexable, the sitemaps match the crawl exactly, there are 0 broken links and 0 duplicate titles, descriptions or H1s, and the JSON-LD has 0 errors. The 25 November remediation is live.
-2. **The biggest ranking risk is duplicate content on the 182 `/solutions/<service>/for-<industry>` pages, which are 56% of all URLs.** Two pages for the same industry share **79–81%** of their text word for word (5-word sequences). Sections such as "A Worked Example" and "Built for Healthcare's Realities" are 100% identical between, for example, CRM Automation for Healthcare and AI Chatbots for Healthcare. Google treats this pattern as scaled or doorway content. Pages like these usually end up "Crawled – currently not indexed", and they can lower how Google judges the whole site. **This needs a decision from you (§F.4).**
+2. **The biggest ranking risk is duplicate content on the 182 `/solutions/<service>/for-<industry>` pages, which are 56% of all URLs.** Two pages for the same industry share **79–81%** of their text word for word (5-word sequences). Sections such as "A Worked Example" and "Built for Healthcare's Realities" are 100% identical between, for example, CRM Automation for Healthcare and AI Chatbots for Healthcare. Google treats this pattern as scaled or doorway content. Pages like these usually end up "Crawled – currently not indexed", and they can lower how Google judges the whole site. **Decision taken 26 Nov: these pages are now `noindex, follow` and out of the sitemap (§F.4).**
 3. **The site had zero informational content.** Every competitor that ranks has a blog with comparison and "vs" guides. The industry keywords you listed are all informational, and guides rank for them, not sales pages. **We have now published 2 articles, and the blog is indexable.**
 4. **For several head terms, directories decide who is visible.** "AI agent development company" returns only Clutch pages. The Zapier and Make terms are dominated by zapier.com/experts profiles and Fiverr/Upwork. Getting listed in partner directories is the fastest lever available, and it needs a person with account access (§G).
 5. **`https://www.clickmastersaiautomation.com` fails with a certificate error** (`SEC_E_WRONG_PRINCIPAL`), so any link or visit to the www version breaks. This is a server/SSL fix, not a code fix.
@@ -69,6 +69,25 @@
 | Platform pages: a "What we build on <platform>" link block to that platform's `with-<platform>` solution pages, plus the relevant hubs and the comparison guide. This gives solution pages contextual links from outside `/solutions`. | `lib/inline-links.ts` (`platformRelatedLinks`), `app/platforms/[slug]/page.tsx` |
 | Link cards: descriptions for industry, platform and blog targets, which were blank before. | `lib/page-summaries.ts` |
 | Platform pages output their `keywords` meta tag (committed earlier as `4657e29`). | `app/platforms/[slug]/page.tsx` |
+
+### Validation
+
+- **Production build** (`next build`, Next 16.2.9): passes, 340 pages generated. Both articles are prerendered as static HTML.
+- **Full crawl of the local production build** (`reports/seo-audit-local-2026-11-26*`):
+
+  | Check | Result |
+  |---|---|
+  | URLs | 328, all HTTP 200, all indexable, all in the sitemap (was 325) |
+  | Broken links | 0 |
+  | Duplicate titles, descriptions, H1s | 0 |
+  | JSON-LD errors | 0 |
+  | Blog sitemap | 3 URLs |
+  | Industries sitemap | 8 URLs |
+
+- **Two length overruns on the new articles** (a 61-character title and a 156-character description) were fixed after the crawl. That was a text-only edit, so it hasn't been re-crawled.
+- **`/blog` is still thin** (185 words) with only two posts. It will grow as articles are added.
+- **Type check:** `tsc --noEmit` is clean.
+- **Lint:** no new lint errors. The three remaining errors are in code this pass didn't touch: `sitemap_utils.ts:69`, and `components/platforms/Shared/icons.ts`, which is no longer imported.
 
 ### Not changed, on purpose
 
@@ -146,7 +165,13 @@ Volume and difficulty are **unavailable** for every keyword. "Format that wins" 
 1. **Sitemap:** ready. The index lists 6 child sitemaps, including the blog one once deployed. Submit `https://clickmastersaiautomation.com/sitemap.xml` in Search Console.
 2. **Robots.txt:** ready.
 3. **Canonicals:** ready. Self-referencing everywhere. The new pages were checked on a local build.
-4. **The decision on the 182 `for-<industry>` pages.** Options:
+4. **The 182 `for-<industry>` pages: noindexed (decided 26 November).** They stay live for visitors and internal links, carry `noindex, follow`, and are no longer in the sitemap. The rule is in `lib/solution-indexing.ts`. To re-index a page, rewrite it first, then add its path to `REINDEXED_FOR_INDUSTRY_PAGES`.
+
+   Verified on the production build: 182 URLs noindexed (exactly the `for-*` set), 146 indexable, all 146 in the sitemap, 0 broken links (`reports/seo-audit-local-2026-11-26-noindex*`).
+
+   After deploying, Search Console will report these pages as "Excluded by noindex tag". That is expected.
+
+   The options considered were:
    - **(a)** Set them to noindex and drop them from the sitemap, while keeping them live for visitors and internal links.
    - **(b)** Rewrite them one by one, starting with the industries that have real demand.
    - **(c)** Consolidate them into the 7 industry pages with 301 redirects.
@@ -180,11 +205,10 @@ Volume and difficulty are **unavailable** for every keyword. "Format that wins" 
 
 **Should stay noindex:** none currently, apart from 404s. `/privacy-policy` and `/terms-conditions` are fine to index.
 
-**Duplicate or redundant:** the 182 `for-<industry>` pages (point 4).
+**Duplicate or redundant:** the 182 `for-<industry>` pages. Now noindexed (point 4). Rewrite the ones that matter, such as accounting firms, law firms and real estate, and re-index them one by one.
 
 **Remaining blockers:**
 - The www certificate.
-- The duplicate-content decision.
 - Search Console access, without which indexing cannot be checked.
 
 ---
@@ -195,7 +219,7 @@ Volume and difficulty are **unavailable** for every keyword. "Format that wins" 
 1. Fix SSL for `www.clickmastersaiautomation.com`: issue a certificate that covers www, and 301 `https://www` to the apex domain. Hosting or server access is required.
 2. Verify the domain in Google Search Console and Bing Webmaster Tools, and submit the sitemap index. Export Pages and Performance data for `/solutions/` so the point-4 decision can be made.
 3. Deploy this branch. Request indexing for the new and changed URLs listed in §F.
-4. Decide on point 4. If you choose (a), it's a small code change: noindex and drop from the sitemap for `for-*` paths, behind a list of exceptions.
+4. Done: the `for-*` pages are noindexed. Check whether any of them had impressions in Search Console. Rewrite those first and add them to `REINDEXED_FOR_INDUSTRY_PAGES`.
 
 **Week 2 (authority, needs a person with accounts)**
 1. Apply to the partner directories, claiming only tiers that are actually held, and fill every field:
@@ -230,6 +254,7 @@ Volume and difficulty are **unavailable** for every keyword. "Format that wins" 
 
 **New:**
 - `app/blog/[slug]/page.tsx`
+- `lib/solution-indexing.ts`
 - `content/blog/types.ts`
 - `content/blog/index.ts`
 - `content/blog/n8n-vs-zapier-vs-make.ts`
@@ -251,3 +276,4 @@ Volume and difficulty are **unavailable** for every keyword. "Format that wins" 
 - `lib/inline-links.ts`
 - `lib/internal-links.ts`
 - `lib/page-summaries.ts`
+- `components/solutions/SolutionPage.tsx`

@@ -45,6 +45,7 @@ import { solutionBreadcrumbs, TOPICS, SEGMENTS, PLATFORMS } from '@/lib/link-gra
 import { RelatedCards } from '@/components/seo/RelatedCards';
 import { SOLUTION_DETAILS } from '@/content/Solutions/pages';
 import { canonicalUrl } from '@/lib/canonical';
+import { isIndexableSolutionPath } from '@/lib/solution-indexing';
 import { withSocialDefaults } from '@/lib/seo';
 import { productCards } from '@/lib/product-cards';
 import type { SolutionBlock, SolutionPageContent } from '@/content/type';
@@ -240,6 +241,8 @@ export function solutionMetadata(content: SolutionPageContent): Metadata {
       type: 'website',
     },
     keywords: content.primaryKeyword,
+    // Template-generated for-<industry> pages stay out of the index (lib/solution-indexing.ts).
+    ...(isIndexableSolutionPath(content.url) ? {} : { robots: { index: false, follow: true } }),
   });
 }
 

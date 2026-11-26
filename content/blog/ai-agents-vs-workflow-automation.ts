@@ -3,7 +3,7 @@ import type { BlogArticle } from './types';
 
 export const aiAgentsVsWorkflowAutomation: BlogArticle = {
   slug: 'ai-agents-vs-workflow-automation',
-  title: 'AI Agents vs Workflow Automation: Which to Use | Clickmasters',
+  title: 'AI Agents vs Workflow Automation Explained | Clickmasters',
   metaDescription:
     'AI agents vs workflow automation: how they differ, when a fixed workflow is the better build, when an agent earns its cost, and how to combine both safely.',
   keywords:

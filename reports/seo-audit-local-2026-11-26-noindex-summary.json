@@ -1,0 +1,120 @@
+{
+  "origin": "http://127.0.0.1:3456",
+  "crawledAt": "2026-11-26T05:07:07.895Z",
+  "robotsTxt": "User-agent: *\r\nDisallow: /admin\r\nDisallow: /api\r\nDisallow: /login\r\n\r\nSitemap: https://clickmastersaiautomation.com/sitemap.xml",
+  "sitemaps": [
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_pages.xml",
+      "status": 200,
+      "urls": 83,
+      "ttfb": 8
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_services.xml",
+      "status": 200,
+      "urls": 11,
+      "ttfb": 8
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_solutions.xml",
+      "status": 200,
+      "urls": 35,
+      "ttfb": 8
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_industries.xml",
+      "status": 200,
+      "urls": 8,
+      "ttfb": 7
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_blogs.xml",
+      "status": 200,
+      "urls": 3,
+      "ttfb": 8
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_platforms.xml",
+      "status": 200,
+      "urls": 6,
+      "ttfb": 8
+    }
+  ],
+  "sitemapUrlCount": 146,
+  "urlsDiscovered": 328,
+  "status200": 328,
+  "non200": [],
+  "indexable": 146,
+  "sitemapProblems": [],
+  "notInSitemap": [],
+  "dupTitles": [],
+  "dupDescs": [],
+  "dupH1": [],
+  "brokenLinks": [],
+  "brokenLinkCount": 0,
+  "trailingSlashLinks": [],
+  "externalBlankNoRel": [],
+  "issueCounts": {
+    "thin main content": 3,
+    "no contextual inbound links": 2,
+    "noindex": 182,
+    "not in sitemap": 182
+  },
+  "timing": {
+    "p50": 42,
+    "p90": 62,
+    "max": 112,
+    "slowest": [
+      {
+        "path": "/solutions",
+        "ttfbMs": 112,
+        "bytes": 1011530
+      },
+      {
+        "path": "/case-studies",
+        "ttfbMs": 111,
+        "bytes": 191740
+      },
+      {
+        "path": "/services",
+        "ttfbMs": 111,
+        "bytes": 236691
+      },
+      {
+        "path": "/solutions/appointment-booking-automation/for-logistics",
+        "ttfbMs": 83,
+        "bytes": 275397
+      },
+      {
+        "path": "/solutions/ai-workflow-automation/for-accounting-firms",
+        "ttfbMs": 82,
+        "bytes": 275811
+      },
+      {
+        "path": "/solutions/appointment-booking-automation/for-law-firms",
+        "ttfbMs": 79,
+        "bytes": 274470
+      },
+      {
+        "path": "/contact",
+        "ttfbMs": 77,
+        "bytes": 185134
+      },
+      {
+        "path": "/industries",
+        "ttfbMs": 76,
+        "bytes": 208683
+      },
+      {
+        "path": "/about",
+        "ttfbMs": 75,
+        "bytes": 180424
+      },
+      {
+        "path": "/platforms",
+        "ttfbMs": 75,
+        "bytes": 209736
+      }
+    ]
+  }
+}
