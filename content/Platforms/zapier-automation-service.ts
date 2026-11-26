@@ -3,16 +3,16 @@ import { ServiceContent } from '../type';
 
 export const zapierAutomationService: ServiceContent = {
   slug: 'zapier-automation-services',
-  title: 'Zapier Automation Services for Your Stack | Clickmasters',
+  title: 'Zapier Automation Services & Zapier Experts | Clickmasters',
   metaDescription:
-    'Clickmasters builds Zapier automation that connects the apps your team already runs and takes the repeated handoffs off the queue. Book a free audit.',
+    'Zapier automation services from Clickmasters: Zapier experts who connect your apps, build multi-step Zaps and fix broken ones. Book a free audit.',
   keywords:
-    'zapier automation services, zapier automation experts, zapier consultant, zapier integrations, zapier workflow automation, zapier services USA',
+    'zapier automation services, zapier experts, zapier automation agency, zapier consultant, hire a zapier expert, zapier integration services, custom zapier integrations, zapier automation USA',
   sections: [
     // ========== HERO ==========
     {
       type: 'hero',
-      heading: 'Automate Repetitive Work With Expert Zapier Automation Services',
+      heading: 'Zapier Automation Services That Take Repetitive Work Off Your Team',
       subheading:
         'Our Zapier automation services help U.S. businesses connect applications, eliminate repetitive tasks, and create reliable automated workflows.',
       content: [

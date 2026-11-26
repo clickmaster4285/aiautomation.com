@@ -4,17 +4,17 @@ import { ServiceContent } from '../type';
 
 export const n8nAutomationService: ServiceContent = {
   slug: 'n8n-automation-services',
-  title: 'n8n Workflow Automation for Your Stack | Clickmasters',
+  title: 'n8n Automation Services & n8n Developers | Clickmasters',
   metaDescription:
-    'Clickmasters builds n8n workflows that connect the APIs and data your team already uses, including steps you can host yourself. Book a free audit.',
+    'n8n automation services from Clickmasters: n8n developers who build custom and self-hosted workflows across APIs, databases and AI. Book a free audit.',
   keywords:
-    'n8n automation services, n8n automation experts, n8n developers, n8n workflow automation, n8n consultant, n8n integrations, n8n automation USA, self-hosted n8n',
+    'n8n automation services, n8n developers, n8n experts, n8n automation agency, n8n consultant, hire n8n developer, self-hosted n8n, n8n integrations, n8n automation USA',
 
   sections: [
     // ========== HERO ==========
     {
       type: 'hero',
-      heading: 'Build Flexible Workflows With n8n Automation Services',
+      heading: 'n8n Automation Services for Flexible, Custom Workflows',
       subheading:
         'Our n8n automation services help U.S. businesses build custom workflows that connect APIs, applications, databases, AI systems, and internal processes.',
       content: [

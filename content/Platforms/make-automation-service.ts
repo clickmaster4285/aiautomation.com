@@ -4,16 +4,16 @@ import { ServiceContent } from '../type';
 
 export const makeAutomationService: ServiceContent = {
   slug: 'make-automation-services',
-  title: 'Make Automation Services for Operating Teams | Clickmasters',
+  title: 'Make.com Automation Services & Make Experts | Clickmasters',
   metaDescription:
-    'Clickmasters builds Make scenarios that connect your systems and keep repeated operations moving without a person watching the queue. Book a free audit.',
+    'Make.com automation services: Clickmasters builds Make scenarios that connect your apps, process data and run complex workflows. Book a free audit.',
   keywords:
-    'make automation services, make automation experts, make automation consultant, make workflow automation, make automation USA, make scenario automation, make integrations',
+    'make automation services, make.com automation services, make.com experts, make automation agency, make consultant, make scenario development, make integrations, make.com automation USA',
   sections: [
     // ========== HERO ==========
     {
       type: 'hero',
-      heading: 'Build Powerful Workflows With Make Automation Services',
+      heading: 'Make.com Automation Services for Complex, Visual Workflows',
       subheading:
         'Our Make automation services help U.S. businesses create visual workflows that connect applications, process data, and automate complex operational tasks.',
       content: [

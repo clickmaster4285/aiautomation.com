@@ -3,15 +3,15 @@ import { ServiceContent } from '../type';
 
 export const airtableAutomationService: ServiceContent = {
   slug: 'airtable-automation-services',
-  title: 'Airtable Automation Services for Operations | Clickmasters',
+  title: 'Airtable Automation Services & Consultants | Clickmasters',
   metaDescription:
-    'Clickmasters builds Airtable automation that updates bases, routes records, and connects the tools your operations team already uses. Book a free audit.',
+    'Airtable automation services from Clickmasters: Airtable consultants who automate bases, route records and connect your ops tools. Book a free audit.',
   keywords:
-    'airtable automation services, airtable automation experts, airtable consultant, airtable integrations, airtable workflow automation, airtable database automation, airtable services USA',
+    'airtable automation services, airtable consultant, airtable experts, airtable automation agency, hire airtable expert, airtable integrations, airtable database automation, airtable automation USA',
   sections: [
     {
       type: 'hero',
-      heading: 'Build Smarter Operational Systems With Airtable Automation Services',
+      heading: 'Airtable Automation Services for Smarter Operational Systems',
       subheading:
         'Our Airtable automation services help U.S. businesses organize operational data, automate repetitive workflows, and build scalable internal systems.',
       content: [

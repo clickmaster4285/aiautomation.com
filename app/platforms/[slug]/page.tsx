@@ -56,6 +56,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return withSocialDefaults({
     title: content.title,
     description: content.metaDescription,
+    keywords: content.keywords,
     alternates: {
       canonical: canonicalUrl(`/platforms/${slug}`),
     },
