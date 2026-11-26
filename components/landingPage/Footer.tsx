@@ -176,6 +176,7 @@ export default function Footer() {
                 ['SaaS', '/industries/ai-automation-for-saas'],
                 ['Professional Services', '/industries/ai-automation-for-professional-services'],
                 ['Real Estate', '/industries/ai-automation-for-real-estate'],
+                ['Marketing Agencies', '/industries/ai-automation-for-marketing-agencies'],
               ].map(([label, href]) => (
                 <li key={href}>
                   <Link href={href} className="text-sm hover:text-brand transition-colors duration-200">

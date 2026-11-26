@@ -304,6 +304,11 @@ export const industryCategories: IndustryCategory[] = [
         path: '/industries/ai-automation-for-professional-services',
         description: 'Client onboarding, proposals, time capture, and billing',
       },
+      {
+        title: 'Marketing Agencies',
+        path: '/industries/ai-automation-for-marketing-agencies',
+        description: 'Client reporting, onboarding, budget pacing, and lead handoff',
+      },
     ],
   },
 ];

@@ -6,7 +6,8 @@ import { platformContent, platformSlugs } from '@/content/Platforms';
 import CmsRoute, { cmsRouteMetadata } from '@/components/cms/CmsRoute';
 import { canonicalUrl } from '@/lib/canonical';
 import { withSocialDefaults } from '@/lib/seo';
-import { withPlatformLinks } from '@/lib/inline-links';
+import { withPlatformLinks, platformRelatedLinks } from '@/lib/inline-links';
+import { RelatedLinks } from '@/components/seo/RelatedLinks';
 import { PLATFORMS } from '@/lib/link-graph';
 import { HubJsonLd } from '@/components/seo/HubJsonLd';
 
@@ -93,6 +94,11 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         if (!Component) return null;
         return <Component key={idx} section={section} bg={BG_RHYTHM[idx % BG_RHYTHM.length]} />;
       })}
+      <RelatedLinks
+        title={platform ? `What we build on ${platform.name}` : 'Related automation solutions'}
+        eyebrow="Solutions"
+        links={platformRelatedLinks(slug)}
+      />
     </div>
   );
 }

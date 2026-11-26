@@ -1,0 +1,114 @@
+{
+  "origin": "https://clickmastersaiautomation.com",
+  "crawledAt": "2026-11-26T04:45:09.716Z",
+  "robotsTxt": "User-agent: *\nDisallow: /admin\nDisallow: /api\nDisallow: /login\n\nSitemap: https://clickmastersaiautomation.com/sitemap.xml",
+  "sitemaps": [
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_pages.xml",
+      "status": 200,
+      "urls": 83,
+      "ttfb": 532
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_services.xml",
+      "status": 200,
+      "urls": 11,
+      "ttfb": 278
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_solutions.xml",
+      "status": 200,
+      "urls": 217,
+      "ttfb": 262
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_industries.xml",
+      "status": 200,
+      "urls": 7,
+      "ttfb": 249
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_platforms.xml",
+      "status": 200,
+      "urls": 6,
+      "ttfb": 264
+    }
+  ],
+  "sitemapUrlCount": 324,
+  "urlsDiscovered": 325,
+  "status200": 325,
+  "non200": [],
+  "indexable": 324,
+  "sitemapProblems": [],
+  "notInSitemap": [],
+  "dupTitles": [],
+  "dupDescs": [],
+  "dupH1": [],
+  "brokenLinks": [],
+  "brokenLinkCount": 0,
+  "trailingSlashLinks": [],
+  "externalBlankNoRel": [],
+  "issueCounts": {
+    "thin main content": 3,
+    "no contextual inbound links": 3,
+    "noindex": 1,
+    "not in sitemap": 1
+  },
+  "timing": {
+    "p50": 287,
+    "p90": 781,
+    "max": 1806,
+    "slowest": [
+      {
+        "path": "/solutions/appointment-booking-automation/for-restaurants",
+        "ttfbMs": 1806,
+        "bytes": 270679
+      },
+      {
+        "path": "/solutions/customer-support-automation/for-retail",
+        "ttfbMs": 1528,
+        "bytes": 271059
+      },
+      {
+        "path": "/solutions/invoice-automation/for-law-firms",
+        "ttfbMs": 1510,
+        "bytes": 271422
+      },
+      {
+        "path": "/solutions/ai-workflow-automation/with-salesforce",
+        "ttfbMs": 1467,
+        "bytes": 254913
+      },
+      {
+        "path": "/solutions/sales-automation",
+        "ttfbMs": 1349,
+        "bytes": 273789
+      },
+      {
+        "path": "/solutions/sales-automation/for-saas",
+        "ttfbMs": 1337,
+        "bytes": 271426
+      },
+      {
+        "path": "/solutions/crm-automation/for-restaurants",
+        "ttfbMs": 1297,
+        "bytes": 270477
+      },
+      {
+        "path": "/solutions/crm-automation/for-construction",
+        "ttfbMs": 1230,
+        "bytes": 270224
+      },
+      {
+        "path": "/solutions/document-automation/for-law-firms",
+        "ttfbMs": 1204,
+        "bytes": 270938
+      },
+      {
+        "path": "/about",
+        "ttfbMs": 1056,
+        "bytes": 177988
+      }
+    ]
+  }
+}

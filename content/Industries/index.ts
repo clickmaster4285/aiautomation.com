@@ -7,6 +7,7 @@ import { ecommerce } from './ecommerce';
 import { saas } from './saas';
 import { realEstate } from './real-estate';
 import { professionalServices } from './professional-services';
+import { marketingAgencies } from './marketing-agencies';
 
 
 export const industryContent: Record<string, ServiceContent> = {
@@ -17,6 +18,7 @@ export const industryContent: Record<string, ServiceContent> = {
   'ai-automation-for-saas': saas,
   'ai-automation-for-real-estate': realEstate,
   'ai-automation-for-professional-services': professionalServices,
+  'ai-automation-for-marketing-agencies': marketingAgencies,
   
 };
 

@@ -1,0 +1,120 @@
+{
+  "origin": "http://127.0.0.1:3456",
+  "crawledAt": "2026-11-26T05:26:56.684Z",
+  "robotsTxt": "User-agent: *\r\nDisallow: /admin\r\nDisallow: /api\r\nDisallow: /login\r\n\r\nSitemap: https://clickmastersaiautomation.com/sitemap.xml",
+  "sitemaps": [
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_pages.xml",
+      "status": 200,
+      "urls": 83,
+      "ttfb": 20
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_services.xml",
+      "status": 200,
+      "urls": 11,
+      "ttfb": 20
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_solutions.xml",
+      "status": 200,
+      "urls": 35,
+      "ttfb": 25
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_industries.xml",
+      "status": 200,
+      "urls": 8,
+      "ttfb": 19
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_blogs.xml",
+      "status": 200,
+      "urls": 3,
+      "ttfb": 21
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_platforms.xml",
+      "status": 200,
+      "urls": 6,
+      "ttfb": 17
+    }
+  ],
+  "sitemapUrlCount": 146,
+  "urlsDiscovered": 328,
+  "status200": 328,
+  "non200": [],
+  "indexable": 146,
+  "sitemapProblems": [],
+  "notInSitemap": [],
+  "dupTitles": [],
+  "dupDescs": [],
+  "dupH1": [],
+  "brokenLinks": [],
+  "brokenLinkCount": 0,
+  "trailingSlashLinks": [],
+  "externalBlankNoRel": [],
+  "issueCounts": {
+    "thin main content": 3,
+    "no contextual inbound links": 2,
+    "noindex": 182,
+    "not in sitemap": 182
+  },
+  "timing": {
+    "p50": 49,
+    "p90": 80,
+    "max": 134,
+    "slowest": [
+      {
+        "path": "/solutions/ai-agents/for-healthcare",
+        "ttfbMs": 134,
+        "bytes": 240765
+      },
+      {
+        "path": "/solutions/ai-agents/for-construction",
+        "ttfbMs": 129,
+        "bytes": 239900
+      },
+      {
+        "path": "/solutions/ai-agents/for-ecommerce",
+        "ttfbMs": 129,
+        "bytes": 239192
+      },
+      {
+        "path": "/solutions/ai-agents/for-education",
+        "ttfbMs": 129,
+        "bytes": 239808
+      },
+      {
+        "path": "/solutions/customer-support-automation/for-ecommerce",
+        "ttfbMs": 127,
+        "bytes": 240089
+      },
+      {
+        "path": "/solutions/ai-agents/for-accounting-firms",
+        "ttfbMs": 126,
+        "bytes": 240814
+      },
+      {
+        "path": "/solutions/ai-agents/for-insurance",
+        "ttfbMs": 124,
+        "bytes": 239244
+      },
+      {
+        "path": "/solutions/crm-automation/for-saas",
+        "ttfbMs": 122,
+        "bytes": 239203
+      },
+      {
+        "path": "/solutions/customer-support-automation/for-construction",
+        "ttfbMs": 122,
+        "bytes": 240710
+      },
+      {
+        "path": "/solutions/sales-automation/for-retail",
+        "ttfbMs": 119,
+        "bytes": 239781
+      }
+    ]
+  }
+}
