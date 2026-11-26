@@ -1,13 +1,13 @@
 // content/Solutions/reporting-automation.ts
 export const reportingAutomation = {
   url: '/solutions/reporting-automation',
-  titleTag: 'Reporting Automation Solutions for Faster, More Reliable',
-  metaDescription: 'Operations teams use Clickmasters Reporting Automation Solutions for Faster, More Reliable Business Reporting to remove repetitive work from the current.',
+  titleTag: 'Reporting Automation Solutions | Clickmasters',
+  metaDescription: 'Reporting automation that collects data, builds and sends reports and keeps dashboards current, so teams act on the numbers instead of compiling them.',
   primaryKeyword: 'reporting automation',
   bookingLink: '/free-automation-audit',
 
   heroBadge: 'Reporting Automation',
-  heroHeading: 'Reporting Automation Solutions for Faster, More Reliable Business Reporting',
+  heroHeading: 'Reporting Automation for Faster, More Reliable Business Reporting',
   heroSubheading:
     'Reporting automation from Clickmasters replaces manual report building with a structured digital workflow. We automate data collection, report generation, distribution, and dashboard updates so teams spend less time compiling numbers and more time acting on them.',
 
@@ -17,18 +17,10 @@ export const reportingAutomation = {
       'Reporting automation removes the manual steps between data and decision-making. Reports are generated from a single source of truth, delivered on a schedule, and kept consistent across teams and departments.',
     ],
     'The Problems This Solves': [
-      'Eliminate manual data collection and copy-paste report building',
-      'Prevent version mismatches and outdated reports circulating across teams',
-      'Reduce time spent preparing recurring reports each week or month',
-      'Keep dashboards and stakeholder reports aligned with live business data',
-    ],
-    'What We Automate': [
-      'Automated data collection from databases, APIs, spreadsheets, and business apps',
-      'Scheduled report generation from templates and live data sources',
-      'Automated distribution to email, shared drives, dashboards, or team channels',
-      'Dashboard refreshes and KPI updates synced to connected systems',
-      'Report formatting, validation, and pre-send quality checks',
-      'Exception alerts when data is missing, stale, or outside expected ranges',
+      '**Eliminate manual data collection and copy-paste report building** We pull figures straight from your source systems into ready templates, so your team stops exporting spreadsheets and stitching them together.',
+      '**Prevent version mismatches and outdated reports circulating across teams** Every stakeholder receives the same current file from one source of truth, replacing scattered attachments with conflicting numbers.',
+      '**Reduce time spent preparing recurring reports each week or month** Scheduled workflows assemble and send routine packs on their own, freeing your team to review results instead of compiling them.',
+      '**Keep dashboards and stakeholder reports aligned with live business data** Connected sources refresh on a set schedule, so the figures leaders see match what is actually happening in the business.',
     ],
     'Where to Start: Your First Automation': [
       'Start with the report your team builds most often — usually a weekly or monthly recurring report that involves multiple data sources. Automating this single report usually delivers the fastest visible return and builds confidence for wider adoption.',
@@ -48,17 +40,18 @@ export const reportingAutomation = {
       'Teams typically recover hours of manual reporting time each week, reduce rework caused by incorrect or outdated numbers, and gain confidence that reports reflect current business data. The return scales as more recurring reports move into the automated workflow.',
     ],
     'Why Clickmasters': [
-      'Custom reporting workflows designed around your actual data sources and report formats',
-      'Integration with CRM, ERP, databases, spreadsheets, and BI tools',
-      'Scheduled generation, automated distribution, and exception alerts',
-      'Practical automation — we automate what saves time, not what sounds impressive',
+      '**Custom reporting workflows designed around your actual data sources and report formats** We build around the systems you already use and the layouts your stakeholders expect, so nobody has to relearn how to read them.',
+      '**Integration with CRM, ERP, databases, spreadsheets, and BI tools** We connect your platforms through APIs and native connectors, so figures flow into reports without manual exports or uploads.',
+      '**Scheduled generation, automated distribution, and exception alerts** Reports build and send on your timetable, and the owner is notified right away if a source fails or returns unexpected values.',
+      '**Practical automation — we automate what saves time, not what sounds impressive** We start with the recurring reports that take your team the most effort and leave analysis and interpretation with your people.',
     ],
   },
 
   stats: [
-    { value: '80%', label: 'reduction in manual reporting time' },
-    { value: '3x', label: 'faster report delivery cycles' },
-    { value: '100%', label: 'report consistency across teams' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
+    { value: '100%', label: 'Ownership Guaranteed' },
   ],
 
   faqQuestions: [
@@ -116,4 +109,88 @@ relatedSolutions: [
 ],
 
   cta: 'Automate Your Reporting Workflow',
+
+  // Page layout for app/solutions/[service]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'Reporting Automation', serviceType: 'Reporting Automation Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-reporting-automation' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Reporting',
+              triggerLabel: 'New Data Available',
+              actionLabels: ['Generate Reports', 'Distribute Dashboards', 'Sync Business Systems'],
+              metricValue: '1000',
+              metricLabel: 'reports generated automatically each month',
+              submetric: '40% increase in reporting productivity',
+              platform: 'Reporting Automation + Business Intelligence',
+              accent: '#F59E0B',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'Reporting Automation', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Businesses Need Reporting Automation',
+        props: { title: 'Why Businesses Need Reporting Automation' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves',
+        props: { title: 'The Problems This Solves' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Real Business Operations',
+        props: { title: 'Built for Real Business Operations' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about reporting automation' } },
+      { type: 'RelatedSolutions', props: { title: 'Explore Other Solutions', subtitle: 'More ways we can help you automate' } },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit — 30 minutes, no obligation, and an honest read on where reporting automation pays off for your business.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };

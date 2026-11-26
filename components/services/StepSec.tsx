@@ -10,7 +10,7 @@ export default function StepSec({ section }: { section: Section }) {
   const { head, tail } = splitHeading(section.heading || '', 1);
 
   return (
-    <section id="process" className="bg-ink text-white py-12 md:py-24">
+    <section className="bg-ink text-white py-12 md:py-24">
       <div className="mx-auto max-w-[90vw] md:max-w-[84vw] px-4 md:px-6">
        
 
@@ -42,7 +42,7 @@ export default function StepSec({ section }: { section: Section }) {
             >
               <Image
                 src="/images/process.png"
-                alt="Process illustration"
+                alt="Friendly assistant robot wearing a headset and waving"
                 width={640}
                 height={640}
                 className="w-40 sm:w-56 md:w-72 lg:w-[28rem] h-auto mx-auto md:mx-0"

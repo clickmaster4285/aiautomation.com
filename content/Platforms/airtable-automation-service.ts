@@ -3,15 +3,15 @@ import { ServiceContent } from '../type';
 
 export const airtableAutomationService: ServiceContent = {
   slug: 'airtable-automation-services',
-  title: 'Airtable Automation Services for Operations | Clickmasters',
+  title: 'Airtable Automation Services & Consultants | Clickmasters',
   metaDescription:
-    'Clickmasters builds Airtable automation that updates bases, routes records, and connects the tools your operations team already uses. Book a free audit.',
+    'Airtable automation services from Clickmasters: Airtable consultants who automate bases, route records and connect your ops tools. Book a free audit.',
   keywords:
-    'airtable automation services, airtable automation experts, airtable consultant, airtable integrations, airtable workflow automation, airtable database automation, airtable services USA',
+    'airtable automation services, airtable consultant, airtable experts, airtable automation agency, hire airtable expert, airtable integrations, airtable database automation, airtable automation USA',
   sections: [
     {
       type: 'hero',
-      heading: 'Build Smarter Operational Systems With Airtable Automation Services',
+      heading: 'Airtable Automation Services for Smarter Operational Systems',
       subheading:
         'Our Airtable automation services help U.S. businesses organize operational data, automate repetitive workflows, and build scalable internal systems.',
       content: [
@@ -35,7 +35,7 @@ export const airtableAutomationService: ServiceContent = {
     {
       type: 'text',
       heading: 'Airtable Automation Built Around Your Business Data',
-      image: '/images/rob.png',
+      image: { src: '/images/rob.png', alt: 'Friendly white robot with a smiling digital face' },
       content: [
         'Airtable becomes more powerful when database structure and automation are designed together. Our Airtable automation consultants help businesses organize information and automate repetitive actions around projects, customers, operations, and internal processes.',
         'We first review your tables, records, relationships, statuses, and user requirements. This helps us determine which processes should be automated. The result is a cleaner and more scalable Airtable environment.',

@@ -29,7 +29,7 @@ export const aiDataExtractionSoftwareSeo: HubSeo = {
   path: AI_DATA_EXTRACTION_SOFTWARE_PATH,
   title: 'AI Data Extraction Software for PDFs & Forms | Clickmasters',
   description:
-    'AI data extraction software that pulls fields, tables and line items from PDFs, emails, forms and spreadsheets, then validates them and loads them into your systems.',
+    'AI data extraction software that pulls fields, tables and line items from PDFs, emails, forms and spreadsheets, validates them and loads your systems.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Document & Data Intelligence', path: '/products/ai-document-data-intelligence' },
@@ -67,7 +67,7 @@ export const aiDataExtractionSoftware: ProductPageContent = {
 
   hero: {
     badge: 'AI Data Extraction Software',
-    heading: 'AI Data Extraction Software That Turns Documents Into Clean, Validated Records',
+    heading: 'AI Data Extraction Software for Clean, Validated Records',
     accentWords: 3,
     subheading:
       'We build AI data extraction inside the systems you already run. Fields, tables and line items are pulled from PDFs, emails, forms and spreadsheets, put into the format each system expects, checked against your records and delivered to your CRM, ERP, accounting tool or database. Anything the AI is unsure about goes to a person first.',

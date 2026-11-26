@@ -32,7 +32,7 @@ export const aiDocumentDataIntelligenceSeo: HubSeo = {
   path: AI_DOCUMENT_DATA_INTELLIGENCE_PATH,
   title: 'AI Document and Data Intelligence Solutions | Clickmasters',
   description:
-    'AI document and data intelligence built in your tools: documents captured, classified and read, data checked and sent to your systems, with people reviewing.',
+    'AI document and data intelligence in your tools: documents captured, classified and read, data checked and sent to your systems, with people reviewing.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Document & Data Intelligence', path: AI_DOCUMENT_DATA_INTELLIGENCE_PATH },
@@ -68,7 +68,7 @@ export const aiDocumentDataIntelligence: ProductPageContent = {
 
   hero: {
     badge: 'AI Document & Data Intelligence',
-    heading: 'AI Document and Data Intelligence That Turns Paperwork Into Usable Data',
+    heading: 'AI Document and Data Intelligence: Paperwork Into Usable Data',
     accentWords: 3,
     subheading:
       'Clickmasters builds document automation inside the systems you already run. Documents are collected as they arrive, read by OCR and language models, checked against your records and sent where they belong. Anything the AI is unsure about goes to a person with the doubtful field marked.',

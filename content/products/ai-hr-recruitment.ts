@@ -65,7 +65,7 @@ export const aiHrRecruitment: ProductPageContent = {
 
   hero: {
     badge: 'AI HR & Recruitment',
-    heading: 'AI HR and Recruitment Automation That Gives Your People Team Its Time Back',
+    heading: 'AI HR and Recruitment Automation for Busy People Teams',
     accentWords: 6,
     subheading:
       'Clickmasters builds AI HR and recruitment workflows inside the tools your team already uses. Applications are logged and routed, hiring managers stay informed, interviews are coordinated and HR admin runs on repeatable steps, while every hiring and people decision stays with a person.',

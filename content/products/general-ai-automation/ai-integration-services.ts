@@ -29,7 +29,7 @@ export const aiIntegrationServicesSeo: HubSeo = {
   path: AI_INTEGRATION_SERVICES_PATH,
   title: 'AI Integration Services for Your Systems | Clickmasters',
   description:
-    'AI integration services that connect GPT, Claude or Gemini to your CRM, ERP, helpdesk and data through APIs, with logging and cost control. Book a free audit.',
+    'AI integration services that connect GPT, Claude or Gemini to your CRM, ERP, helpdesk and data via APIs, with logging and cost control. Book a free audit.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'General AI Automation', path: '/products/general-ai-automation' },
@@ -75,7 +75,7 @@ export const aiIntegrationServices: ProductPageContent = {
 
   hero: {
     badge: 'AI Integration Services',
-    heading: 'AI Integration Services That Connect AI Models to Your Business Systems',
+    heading: 'AI Integration Services That Connect AI to Your Business Systems',
     accentWords: 3,
     subheading:
       'An AI model on its own knows nothing about your customers, orders or policies. We connect models such as GPT, Claude and Gemini to your CRM, ERP, helpdesk, databases and documents, with the access controls, error handling and logging a live business system needs.',

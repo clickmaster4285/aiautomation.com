@@ -3,6 +3,7 @@
 import type { Metadata } from 'next';
 import { unstable_cache } from 'next/cache';
 import { canonicalUrl } from '@/lib/canonical';
+import { withSocialDefaults } from '@/lib/seo';
 
 // The public API only ever returns the *published* snapshot of a page, so
 // drafts / unpublished pages come back as 404 and are never rendered here.
@@ -107,14 +108,14 @@ const fetchCmsPageCached =
 
 /** Next.js metadata built from the page's CMS SEO fields. */
 export function buildCmsMetadata(page: CmsPage | null): Metadata {
-  if (!page) return { title: 'Page Not Found' };
+  if (!page) return { title: 'Page Not Found', robots: { index: false, follow: true } };
 
   const { seo } = page;
   const title = seo.title || page.title;
   const description = seo.metaDescription || undefined;
   const ogImage = /^https?:\/\//i.test(seo.ogImage) ? seo.ogImage : undefined;
 
-  return {
+  return withSocialDefaults({
     title,
     description,
     keywords: seo.focusKeyword ? [seo.focusKeyword] : undefined,
@@ -130,7 +131,7 @@ export function buildCmsMetadata(page: CmsPage | null): Metadata {
       type: page.pageType === 'blog' ? 'article' : 'website',
       ...(ogImage ? { images: [ogImage] } : {}),
     },
-  };
+  });
 }
 
 /* ------------------------- defensive parsing ------------------------- */

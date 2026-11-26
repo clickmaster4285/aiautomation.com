@@ -31,7 +31,7 @@ export const aiFinanceAccountingSeo: HubSeo = {
   path: AI_FINANCE_ACCOUNTING_PATH,
   title: 'AI Finance and Accounting Automation | Clickmasters',
   description:
-    'AI finance and accounting automation built in the tools you use: invoice capture, expense routing, reconciliation matching and reports, with people approving.',
+    'AI finance and accounting automation in the tools you use: invoice capture, expense routing, reconciliation matching and reports, with people approving.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Finance & Accounting', path: AI_FINANCE_ACCOUNTING_PATH },
@@ -68,7 +68,7 @@ export const aiFinanceAccounting: ProductPageContent = {
 
   hero: {
     badge: 'AI Finance & Accounting',
-    heading: 'AI Finance and Accounting Automation That Keeps People in Control of the Numbers',
+    heading: 'AI Finance and Accounting Automation, With People in Control',
     accentWords: 4,
     subheading:
       'Clickmasters builds finance automation inside the accounting, billing and spreadsheet tools you already use. AI reads the invoices, receipts and emails, workflows move the data and chase the approvals, and your team signs off on every step that touches money.',

@@ -25,7 +25,7 @@ export const aiSeoAutomationToolsSeo: HubSeo = {
   path: AI_SEO_AUTOMATION_TOOLS_PATH,
   title: 'AI SEO Automation Tools for Content Teams | Clickmasters',
   description:
-    'AI SEO automation tools built around your stack: keyword and brief workflows, AI-drafted content you approve, CMS publishing and SEO reports. Book a free audit.',
+    'AI SEO automation tools for your stack: keyword and brief workflows, AI-drafted content you approve, CMS publishing and SEO reports. Book a free audit.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Marketing Automation', path: '/products/ai-marketing-automation' },

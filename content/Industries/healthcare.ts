@@ -18,8 +18,8 @@ export const healthcare: ServiceContent = {
         'This page explains where healthcare automation delivers value, what we build, and how we approach the privacy and oversight that healthcare rightly demands.',
       ],
       stats: [
-        { label: 'NO‑SHOW REDUCTION', value: '40%+' },
-        { label: 'STAFF HOURS SAVED', value: '1,200+' },
+        { label: 'AUTOMATION AUDIT', value: 'Free' },
+        { label: 'OWNERSHIP OF THE BUILD', value: '100%' },
       ],
       ctas: [
         { text: 'Book a Free Audit', link: '/free-automation-audit', primary: true },

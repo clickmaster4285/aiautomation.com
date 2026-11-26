@@ -56,11 +56,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/images/logo.png" />
         <meta name="theme-color" content="#000000" />
 
-        {/* ✅ Google Site Verification - Updated */}
-        <meta 
-          name="google-site-verification" 
-          content="XPXXRYsg2bKfReQLyHZhOsB8dU1GpKj2JGnGyNwf0xM" 
-        />
+        {/* Google site verification is emitted once, from metadata.verification above. */}
 
         {/* Google Tag Manager */}
         <Script id="gtm-script" strategy="afterInteractive">

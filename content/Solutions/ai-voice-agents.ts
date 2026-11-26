@@ -1,8 +1,8 @@
 // content/Solutions/ai-voice-agents.ts
 export const aiVoiceAgents = {
   url: '/solutions/ai-voice-agents',
-  titleTag: 'AI Voice Agents That Answer, Qualify, and | Clickmasters',
-  metaDescription: 'Operations teams use Clickmasters AI Voice Agents That Answer, Qualify, and Route Every Call to remove repetitive work from the current process.',
+  titleTag: 'AI Voice Agents That Answer and Route Calls | Clickmasters',
+  metaDescription: 'AI voice agents that answer and place calls, qualify callers, book appointments and route to the right person, so leads stop going to voicemail.',
   primaryKeyword: 'ai voice agents',
   bookingLink: '/free-automation-audit',
 
@@ -18,19 +18,11 @@ export const aiVoiceAgents = {
       'AI voice agents close that gap. They answer instantly, understand what the caller needs, and either resolve the request or hand off to a human — without the caller waiting, and without adding headcount to cover every hour of the day.',
     ],
     'The Problems This Solves': [
-      'Answer calls instantly instead of letting them roll to voicemail',
-      'Qualify callers and route to the right team before a human picks up',
-      'Capture caller details and create records in CRM automatically',
-      'Handle after-hours, overflow, and peak-volume calls without additional staff',
-      'Reduce hold times and abandoned calls without expanding the phone team',
-    ],
-    'What We Automate': [
-      'Inbound call answering with intent recognition and natural conversation',
-      'Lead qualification and appointment booking during the call',
-      'Caller data capture synced to CRM, helpdesk, or scheduling systems',
-      'Warm transfer to the right human when the AI cannot resolve the request',
-      'Outbound calls for follow-ups, reminders, and confirmations',
-      'Call summaries, transcripts, and post-call updates to connected systems',
+      '**Answer calls instantly instead of letting them roll to voicemail** The voice agent picks up on the first ring, greets callers naturally, and starts helping before they think about hanging up.',
+      '**Qualify callers and route to the right team before a human picks up** We script the questions that matter for your business, so each caller reaches sales, support, or billing with context attached.',
+      '**Capture caller details and create records in CRM automatically** Names, phone numbers, service needs, and call reasons are logged during the conversation, so nobody transcribes voicemails or notes afterward.',
+      '**Handle after-hours, overflow, and peak-volume calls without additional staff** The agent answers multiple calls at once and covers evenings and weekends, while urgent matters still reach your on-call person.',
+      '**Reduce hold times and abandoned calls without expanding the phone team** Routine requests like booking, rescheduling, and status checks get handled directly, so your staff only take calls needing their attention.',
     ],
     'Where to Start: Your First Automation': [
       'Start with the call flow that costs you the most when it goes unanswered. For most businesses that is either inbound lead qualification (sales) or inbound support triage (customer service).',
@@ -50,18 +42,19 @@ export const aiVoiceAgents = {
       'Businesses typically see missed-call rates drop sharply, first-response times shorten to seconds, more qualified appointments get booked, and staff stop spending hours on routine calls. The return scales as more call types move into the automated layer.',
     ],
     'Why Clickmasters': [
-      'Custom voice agents designed around your actual call types and business rules',
-      'Integration with CRM, scheduling, helpdesk, and telephony systems',
-      'Natural hand-off to humans for calls outside the agent scope',
-      'Call summaries, transcripts, and post-call updates to connected systems',
-      'Monitoring and iteration so call quality improves after launch',
+      '**Custom voice agents designed around your actual call types and business rules** We study your real call recordings and policies, then build conversation flows that match how your team handles each request.',
+      '**Integration with CRM, scheduling, helpdesk, and telephony systems** We connect the agent to your phone lines and business tools, so it can look up records, book slots, and open tickets mid-call.',
+      '**Natural hand-off to humans for calls outside the agent scope** When a caller needs a person, the agent warm-transfers them with a spoken summary so your staff pick up already informed.',
+      '**Call summaries, transcripts, and post-call updates to connected systems** After every conversation, we push a concise recap and full transcript to the right record, giving your team instant visibility.',
+      '**Monitoring and iteration so call quality improves after launch** We review recordings for misunderstood requests and awkward moments, then tune prompts, voice settings, and routing rules accordingly.',
     ],
   },
 
   stats: [
-    { value: '85%', label: 'faster first-response time to inbound calls' },
-    { value: '3x', label: 'more qualified appointments booked' },
-    { value: '24/7', label: 'call coverage without added headcount' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
+    { value: '100%', label: 'Ownership Guaranteed' },
   ],
 
   faqQuestions: [
@@ -119,4 +112,88 @@ export const aiVoiceAgents = {
   ],
 
   cta: 'Answer Every Call with AI Voice Agents',
+
+  // Page layout for app/solutions/[service]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'AI Voice Agents', serviceType: 'AI Voice Agent Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-ai-voice-agents' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Voice',
+              triggerLabel: 'Incoming Call',
+              actionLabels: ['Understand Intent', 'Answer Questions', 'Book & Route'],
+              metricValue: '4,800',
+              metricLabel: 'inbound calls handled automatically this week',
+              submetric: '85% faster response time',
+              platform: 'AI Voice Agent + Business Systems',
+              accent: '#F97316',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'AI Voice Agents', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Businesses Need AI Voice Agents',
+        props: { title: 'Why Businesses Need AI Voice Agents' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves',
+        props: { title: 'The Problems This Solves' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Real Business Operations',
+        props: { title: 'Built for Real Business Operations' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI voice agents' } },
+      { type: 'RelatedSolutions', props: { title: 'Explore Other Solutions', subtitle: 'More ways we can help you automate' } },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit — 30 minutes, no obligation, and an honest read on where AI voice agents pay off for your business.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };

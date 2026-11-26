@@ -24,7 +24,7 @@ export const aiWorkflowAutomationSoftwareSeo: HubSeo = {
   path: AI_WORKFLOW_AUTOMATION_SOFTWARE_PATH,
   title: 'AI Workflow Automation Software Across Apps | Clickmasters',
   description:
-    'AI workflow automation software built on n8n, Make or Zapier: triggers, branching, approvals, error handling and monitoring for multi-step work across apps.',
+    'AI workflow automation software on n8n, Make or Zapier: triggers, branching, approvals, error handling and monitoring for multi-step work across apps.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Workflow & Business Process Automation', path: '/products/ai-workflow-business-process-automation' },
@@ -60,7 +60,7 @@ export const aiWorkflowAutomationSoftware: ProductPageContent = {
 
   hero: {
     badge: 'AI Workflow Automation Software',
-    heading: 'AI Workflow Automation Software That Runs Multi-Step Work Across Your Apps',
+    heading: 'AI Workflow Automation Software for Multi-Step Work Across Apps',
     accentWords: 4,
     subheading:
       'We build AI workflow automation software on platforms you own, such as n8n, Make or Zapier. Each workflow starts from a real event, moves through your apps step by step, branches on conditions, pauses for approvals and tells you when something goes wrong.',

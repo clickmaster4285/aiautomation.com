@@ -3,16 +3,16 @@ import { ServiceContent } from '../type';
 
 export const zapierAutomationService: ServiceContent = {
   slug: 'zapier-automation-services',
-  title: 'Zapier Automation Services for Your Stack | Clickmasters',
+  title: 'Zapier Automation Services & Zapier Experts | Clickmasters',
   metaDescription:
-    'Clickmasters builds Zapier automation that connects the apps your team already runs and takes the repeated handoffs off the queue. Book a free audit.',
+    'Zapier automation services from Clickmasters: Zapier experts who connect your apps, build multi-step Zaps and fix broken ones. Book a free audit.',
   keywords:
-    'zapier automation services, zapier automation experts, zapier consultant, zapier integrations, zapier workflow automation, zapier services USA',
+    'zapier automation services, zapier experts, zapier automation agency, zapier consultant, hire a zapier expert, zapier integration services, custom zapier integrations, zapier automation USA',
   sections: [
     // ========== HERO ==========
     {
       type: 'hero',
-      heading: 'Automate Repetitive Work With Expert Zapier Automation Services',
+      heading: 'Zapier Automation Services That Take Repetitive Work Off Your Team',
       subheading:
         'Our Zapier automation services help U.S. businesses connect applications, eliminate repetitive tasks, and create reliable automated workflows.',
       content: [
@@ -38,7 +38,7 @@ export const zapierAutomationService: ServiceContent = {
     {
       type: 'text',
       heading: 'Zapier Automation Solutions Built Around Your Business',
-      image: '/images/rob.png',
+      image: { src: '/images/rob.png', alt: 'Friendly white robot with a smiling digital face' },
       content: [
         'Businesses lose valuable time when employees repeatedly copy data, send routine notifications, update records, or move information between disconnected applications. Our Zapier automation company helps turn those repetitive processes into structured workflows.',
         'We analyze your existing operations before building automation. This allows our Zapier consultants to identify practical opportunities to save time, improve consistency, and avoid unnecessary work.',

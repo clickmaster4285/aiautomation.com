@@ -26,7 +26,7 @@ export const intelligentBusinessAutomationSeo: HubSeo = {
   path: INTELLIGENT_BUSINESS_AUTOMATION_PATH,
   title: 'Intelligent Business Automation Services | Clickmasters',
   description:
-    'Intelligent business automation that splits work between rules, AI and people, with escalation and approvals for judgment calls. Book a free automation audit.',
+    'Intelligent business automation that splits work between rules, AI and people, with escalation and approvals for judgment calls. Book a free audit.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'General AI Automation', path: '/products/general-ai-automation' },

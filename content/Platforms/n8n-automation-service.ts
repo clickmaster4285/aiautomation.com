@@ -4,17 +4,17 @@ import { ServiceContent } from '../type';
 
 export const n8nAutomationService: ServiceContent = {
   slug: 'n8n-automation-services',
-  title: 'n8n Workflow Automation for Your Stack | Clickmasters',
+  title: 'n8n Automation Services & n8n Developers | Clickmasters',
   metaDescription:
-    'Clickmasters builds n8n workflows that connect the APIs and data your team already uses, including steps you can host yourself. Book a free audit.',
+    'n8n automation services from Clickmasters: n8n developers who build custom and self-hosted workflows across APIs, databases and AI. Book a free audit.',
   keywords:
-    'n8n automation services, n8n automation experts, n8n developers, n8n workflow automation, n8n consultant, n8n integrations, n8n automation USA, self-hosted n8n',
+    'n8n automation services, n8n developers, n8n experts, n8n automation agency, n8n consultant, hire n8n developer, self-hosted n8n, n8n integrations, n8n automation USA',
 
   sections: [
     // ========== HERO ==========
     {
       type: 'hero',
-      heading: 'Build Flexible Workflows With n8n Automation Services',
+      heading: 'n8n Automation Services for Flexible, Custom Workflows',
       subheading:
         'Our n8n automation services help U.S. businesses build custom workflows that connect APIs, applications, databases, AI systems, and internal processes.',
       content: [
@@ -40,7 +40,7 @@ export const n8nAutomationService: ServiceContent = {
     {
       type: 'text',
       heading: 'Custom n8n Workflow Automation for Growing Businesses',
-      image: '/images/rob.png',
+      image: { src: '/images/rob.png', alt: 'Friendly white robot with a smiling digital face' },
       content: [
         'Complex business processes often require more flexibility than basic point-to-point automation provides. Our n8n workflow automation services help companies create advanced processes that combine business applications, APIs, structured data, and custom logic.',
         'We first analyze how data enters, moves through, and exits your workflow. Our n8n consultants then design the automation architecture around those requirements. This makes workflows easier to maintain and expand.',

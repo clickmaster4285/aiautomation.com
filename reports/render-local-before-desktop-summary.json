@@ -1,0 +1,338 @@
+{
+  "pages": 325,
+  "failed": [],
+  "imgsMissingAlt": [],
+  "imgsEmptyAltVisible": [
+    "/ http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot2.jpg&w=2048&q=60 208x208"
+  ],
+  "imgsBroken": [
+    "/solutions/ai-chatbots/with-salesforce http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fsalesforce-platform.png&w=1080&q=75",
+    "/solutions/ai-chatbots/with-salesforce http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fproduction-build.png&w=1080&q=75",
+    "/solutions/ai-chatbots/with-salesforce http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fsalesforce-workflow.png&w=1080&q=75",
+    "/solutions/ai-chatbots/with-zapier http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fzapier-platform.png&w=1080&q=75"
+  ],
+  "imgsOversized": [
+    "/case-studies/ai-receptionist-lead-response-automation http://127.0.0.1:3456/_next/image?url=%2Fcase-study%2Fdashboard.jpeg&w=1920&q=75 natural=1408x768 shown=547x298",
+    "/platforms/airtable-automation-services http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frob.png&w=1920&q=75 natural=469x469 shown=200x200",
+    "/platforms/gohighlevel-automation-services http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frob.png&w=1920&q=75 natural=469x469 shown=200x200",
+    "/platforms/hubspot-automation-services http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frob.png&w=1920&q=75 natural=469x469 shown=200x200",
+    "/platforms/make-automation-services http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frob.png&w=1920&q=75 natural=469x469 shown=200x200",
+    "/platforms/n8n-automation-services http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frob.png&w=1920&q=75 natural=469x469 shown=200x200",
+    "/platforms/zapier-automation-services http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frob.png&w=1920&q=75 natural=469x469 shown=200x200",
+    "/solutions/ai-agents http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-agents http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-astronaut.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-agents/for-accounting-firms http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-agents/for-construction http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-agents/for-ecommerce http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-agents/for-education http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-agents/for-healthcare http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-agents/for-insurance http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-agents/for-law-firms http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-agents/for-logistics http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-agents/for-manufacturing http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-agents/for-real-estate http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-agents/for-restaurants http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-agents/for-retail http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-agents/for-saas http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-chatbots http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-chatbots/for-accounting-firms http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-chatbots/for-construction http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-chatbots/for-ecommerce http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-chatbots/for-education http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-chatbots/for-healthcare http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-chatbots/for-insurance http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-chatbots/for-law-firms http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-chatbots/for-logistics http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-chatbots/for-manufacturing http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-chatbots/for-real-estate http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-chatbots/for-restaurants http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-chatbots/for-retail http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-chatbots/for-saas http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-voice-agents http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-voice-agents/for-accounting-firms http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-voice-agents/for-construction http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288",
+    "/solutions/ai-voice-agents/for-ecommerce http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot.png&w=640&q=75 natural=640x640 shown=288x288"
+  ],
+  "multipleMain": [
+    "/blog",
+    "/case-studies/ai-receptionist-lead-response-automation",
+    "/contact",
+    "/free-automation-audit",
+    "/industries/ai-automation-for-ecommerce",
+    "/industries/ai-automation-for-finance-accounting",
+    "/industries/ai-automation-for-healthcare",
+    "/industries/ai-automation-for-law-firms",
+    "/industries/ai-automation-for-professional-services",
+    "/industries/ai-automation-for-real-estate",
+    "/industries/ai-automation-for-saas",
+    "/platforms/airtable-automation-services",
+    "/platforms/gohighlevel-automation-services",
+    "/platforms/hubspot-automation-services",
+    "/platforms/make-automation-services",
+    "/platforms/n8n-automation-services",
+    "/platforms/zapier-automation-services",
+    "/services/ai-agent-development",
+    "/services/ai-chatbots",
+    "/services/ai-knowledge-assistants",
+    "/services/ai-lead-generation",
+    "/services/ai-reporting-automation",
+    "/services/ai-strategy-advisory",
+    "/services/ai-voice-agents",
+    "/services/ai-workflow-automation",
+    "/services/business-process-automation",
+    "/services/custom-ai-development",
+    "/services/robotic-process-automation"
+  ],
+  "h1NotOne": [],
+  "overflow": [],
+  "smallTaps": [
+    {
+      "path": "/",
+      "taps": [
+        "See all platforms → 207x20",
+        "View all work → 166x20",
+        "Explore Real estate → 103x20",
+        "Explore E-commerce and retail  103x20",
+        "Explore Healthcare and clinics 103x20"
+      ]
+    },
+    {
+      "path": "/platforms",
+      "taps": [
+        "View Zapier automation 178x20",
+        "View Make (Integromat) automat 258x20",
+        "View n8n automation 161x20",
+        "View HubSpot automation 194x20",
+        "View GoHighLevel automation 220x20"
+      ]
+    },
+    {
+      "path": "/products",
+      "taps": [
+        "Home 41x14"
+      ]
+    },
+    {
+      "path": "/products/ai-agents-platforms",
+      "taps": [
+        "Home 41x15"
+      ]
+    },
+    {
+      "path": "/products/ai-agents-platforms/ai-agent-development",
+      "taps": [
+        "Home 41x15",
+        "AI Agents & Platforms 178x15"
+      ]
+    },
+    {
+      "path": "/products/ai-agents-platforms/ai-agent-platform",
+      "taps": [
+        "Home 41x15",
+        "AI Agents & Platforms 178x15"
+      ]
+    },
+    {
+      "path": "/products/ai-agents-platforms/autonomous-ai-agents",
+      "taps": [
+        "Home 41x15",
+        "AI Agents & Platforms 178x15"
+      ]
+    },
+    {
+      "path": "/products/ai-agents-platforms/enterprise-ai-agents",
+      "taps": [
+        "Home 41x15",
+        "AI Agents & Platforms 178x15"
+      ]
+    },
+    {
+      "path": "/products/ai-agents-platforms/multi-agent-systems",
+      "taps": [
+        "Home 41x15",
+        "AI Agents & Platforms 178x15"
+      ]
+    },
+    {
+      "path": "/products/ai-customer-support",
+      "taps": [
+        "Home 41x15"
+      ]
+    },
+    {
+      "path": "/products/ai-customer-support/ai-chatbot-software",
+      "taps": [
+        "Home 41x15",
+        "AI Customer Support 167x15"
+      ]
+    },
+    {
+      "path": "/products/ai-customer-support/ai-customer-service-automation",
+      "taps": [
+        "Home 41x15",
+        "AI Customer Support 167x15"
+      ]
+    },
+    {
+      "path": "/products/ai-customer-support/ai-customer-support-software",
+      "taps": [
+        "Home 41x15",
+        "AI Customer Support 167x15"
+      ]
+    },
+    {
+      "path": "/products/ai-customer-support/ai-virtual-assistant",
+      "taps": [
+        "Home 41x15",
+        "AI Customer Support 167x15"
+      ]
+    },
+    {
+      "path": "/products/ai-customer-support/ai-voice-agent",
+      "taps": [
+        "Home 41x15",
+        "AI Customer Support 167x15"
+      ]
+    },
+    {
+      "path": "/products/ai-document-data-intelligence",
+      "taps": [
+        "Home 41x15"
+      ]
+    },
+    {
+      "path": "/products/ai-document-data-intelligence/ai-contract-analysis",
+      "taps": [
+        "Home 41x15",
+        "AI Document & Data Intelligenc 258x15"
+      ]
+    },
+    {
+      "path": "/products/ai-document-data-intelligence/ai-data-extraction-software",
+      "taps": [
+        "Home 41x15",
+        "AI Document & Data Intelligenc 258x15"
+      ]
+    },
+    {
+      "path": "/products/ai-document-data-intelligence/ai-document-processing-software",
+      "taps": [
+        "Home 41x15",
+        "AI Document & Data Intelligenc 258x15"
+      ]
+    },
+    {
+      "path": "/products/ai-document-data-intelligence/ai-ocr-software",
+      "taps": [
+        "Home 41x15",
+        "AI Document & Data Intelligenc 258x15"
+      ]
+    },
+    {
+      "path": "/products/ai-document-data-intelligence/intelligent-document-processing",
+      "taps": [
+        "Home 41x15",
+        "AI Document & Data Intelligenc 258x15"
+      ]
+    },
+    {
+      "path": "/products/ai-ecommerce-automation",
+      "taps": [
+        "Home 41x15"
+      ]
+    },
+    {
+      "path": "/products/ai-ecommerce-automation/ai-ecommerce-automation-software",
+      "taps": [
+        "Home 41x15",
+        "AI E-commerce Automation 213x15"
+      ]
+    },
+    {
+      "path": "/products/ai-ecommerce-automation/ai-inventory-management-software",
+      "taps": [
+        "Home 41x15",
+        "AI E-commerce Automation 213x15"
+      ]
+    },
+    {
+      "path": "/products/ai-ecommerce-automation/ai-order-processing-automation",
+      "taps": [
+        "Home 41x15",
+        "AI E-commerce Automation 213x15"
+      ]
+    },
+    {
+      "path": "/products/ai-ecommerce-automation/ai-product-recommendation-software",
+      "taps": [
+        "Home 41x15",
+        "AI E-commerce Automation 213x15"
+      ]
+    },
+    {
+      "path": "/products/ai-ecommerce-automation/ai-shopping-assistant",
+      "taps": [
+        "Home 41x15",
+        "AI E-commerce Automation 213x15"
+      ]
+    },
+    {
+      "path": "/products/ai-finance-accounting",
+      "taps": [
+        "Home 41x15"
+      ]
+    },
+    {
+      "path": "/products/ai-finance-accounting/ai-accounting-automation",
+      "taps": [
+        "Home 41x15",
+        "AI Finance & Accounting 193x15"
+      ]
+    },
+    {
+      "path": "/products/ai-finance-accounting/ai-bookkeeping-software",
+      "taps": [
+        "Home 41x15",
+        "AI Finance & Accounting 193x15"
+      ]
+    }
+  ],
+  "consoleErrors": [
+    {
+      "path": "/solutions/ai-chatbots/with-salesforce",
+      "errors": [
+        "log: Failed to load resource: the server responded with a status of 400 (Bad Request) http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fsalesforce-platform.png&w=1080&q=75",
+        "log: Failed to load resource: the server responded with a status of 400 (Bad Request) http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fproduction-build.png&w=1080&q=75",
+        "log: Failed to load resource: the server responded with a status of 400 (Bad Request) http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fsalesforce-workflow.png&w=1080&q=75"
+      ]
+    },
+    {
+      "path": "/solutions/ai-chatbots/with-zapier",
+      "errors": [
+        "log: Failed to load resource: the server responded with a status of 400 (Bad Request) http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fzapier-platform.png&w=1080&q=75"
+      ]
+    }
+  ],
+  "lcpOver2500": [],
+  "clsOver01": [],
+  "thirdParty": [
+    "www.googletagmanager.com",
+    "www.clarity.ms",
+    "www.google.com",
+    "www.google-analytics.com",
+    "scripts.clarity.ms",
+    "c.clarity.ms",
+    "fonts.googleapis.com",
+    "l.clarity.ms",
+    "ad.doubleclick.net"
+  ],
+  "medians": {
+    "lcp": 576,
+    "cls": 0,
+    "ttfb": 17,
+    "load": 386,
+    "jsKB": 595,
+    "totalKB": 1175,
+    "requests": 251
+  }
+}

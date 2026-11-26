@@ -4,7 +4,7 @@ import { ServiceContent } from '../type';
 export const aiWorkflowAutomationService: ServiceContent = {
   slug: 'ai-workflow-automation',
   title: 'Workflow Automation Service for Teams | Clickmasters',
-  metaDescription: 'Clickmasters designs and ships workflow automation that connects the tools your team already uses. Book a free audit. It uses tools you already run.',
+  metaDescription: 'Clickmasters designs and ships workflow automation that connects the tools your team already uses. Book a free audit.',
   keywords: 'ai workflow automation, workflow automation services, business automation, zapier automation',
   sections: [
     // ========== HERO ==========

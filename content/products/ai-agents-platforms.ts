@@ -34,7 +34,7 @@ export const aiAgentsPlatformsSeo: HubSeo = {
   path: AI_AGENTS_PLATFORMS_PATH,
   title: 'AI Agents for Business, Built in Your Tools | Clickmasters',
   description:
-    'AI agents for business that research, update records and handle multi-step tasks in your CRM, ERP and inbox, with guardrails, approvals and full action logs.',
+    'AI agents for business that research, update records and handle multi-step tasks in your CRM, ERP and inbox, with guardrails, approvals and action logs.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Agents & Platforms', path: AI_AGENTS_PLATFORMS_PATH },
@@ -71,7 +71,7 @@ export const aiAgentsPlatforms: ProductPageContent = {
 
   hero: {
     badge: 'AI Agents & Platforms',
-    heading: 'AI Agents for Business That Do Real Work Inside the Systems You Already Run',
+    heading: 'AI Agents for Business That Work Inside Your Existing Systems',
     accentWords: 4,
     subheading:
       'Clickmasters designs and builds AI agents around your workflow, your data and your tools. An agent reads the request, gathers what it needs from your CRM, inbox or ERP, takes the next sensible step within limits you set, and asks a person before anything important or sensitive happens.',

@@ -27,7 +27,7 @@ export const multiAgentSystemsSeo: HubSeo = {
   path: MULTI_AGENT_SYSTEMS_PATH,
   title: 'Multi-Agent Systems and Agent Orchestration | Clickmasters',
   description:
-    'Multi-agent systems explained: orchestrator, pipeline and reviewer patterns, when specialized agents beat one agent, and how we scope each design per project.',
+    'Multi-agent systems explained: orchestrator, pipeline and reviewer patterns, when specialized agents beat one agent, and how we scope each design.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Agents & Platforms', path: '/products/ai-agents-platforms' },

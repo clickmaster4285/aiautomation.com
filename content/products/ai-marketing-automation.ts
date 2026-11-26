@@ -22,7 +22,7 @@ export const aiMarketingAutomationSeo: HubSeo = {
   path: AI_MARKETING_AUTOMATION_PATH,
   title: 'AI Marketing Automation for Lead Nurture | Clickmasters',
   description:
-    'AI marketing automation built on your stack: segmentation, behavior-based nurture, AI-drafted content you approve and live campaign reports. Book a free audit.',
+    'AI marketing automation on your stack: segmentation, behavior-based nurture, AI-drafted content you approve and live campaign reports. Book a free audit.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Marketing Automation', path: AI_MARKETING_AUTOMATION_PATH },

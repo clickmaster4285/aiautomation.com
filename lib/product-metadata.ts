@@ -3,13 +3,14 @@
 // gets the same canonical / Open Graph / Twitter / robots treatment.
 import type { Metadata } from 'next';
 import { canonicalUrl } from '@/lib/canonical';
+import { withSocialDefaults } from '@/lib/seo';
 import type { HubSeo } from '@/lib/hub-seo';
 import type { ProductPageContent } from '@/content/products/types';
 
 export function productMetadata(seo: HubSeo, keywords: string[], content: ProductPageContent): Metadata {
   const url = canonicalUrl(seo.path);
   const { image, imageAlt, imageWidth, imageHeight } = content.hero;
-  return {
+  return withSocialDefaults({
     title: seo.title,
     description: seo.description,
     keywords,
@@ -29,5 +30,5 @@ export function productMetadata(seo: HubSeo, keywords: string[], content: Produc
       description: seo.description,
       images: [image],
     },
-  };
+  });
 }

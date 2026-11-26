@@ -4,8 +4,13 @@ import type { ComponentType } from 'react';
 import { industryContent, industrySlugs } from '@/content/Industries';
 import CmsRoute, { cmsRouteMetadata } from '@/components/cms/CmsRoute';
 import { canonicalUrl } from '@/lib/canonical';
+import { withSocialDefaults } from '@/lib/seo';
 import { RelatedLinks } from '@/components/seo/RelatedLinks';
-import { INDUSTRY_SOLUTION_LINKS } from '@/lib/internal-links';
+import { INDUSTRY_SOLUTION_LINKS, INDUSTRY_PRODUCT_LINKS } from '@/lib/internal-links';
+import { RelatedCards } from '@/components/seo/RelatedCards';
+import { productCards } from '@/lib/product-cards';
+import { HubJsonLd } from '@/components/seo/HubJsonLd';
+import type { Section } from '@/content/type';
 
 const Hero = dynamic(() => import('@/components/industries/Hero').then((mod) => mod.default));
 const TextSec = dynamic(() => import('@/components/industries/TextSec').then((mod) => mod.default));
@@ -16,7 +21,7 @@ const CTASec = dynamic(() => import('@/components/industries/CTASec').then((mod)
 const PainPoint = dynamic(() => import('@/components/industries/PainPoint').then((mod) => mod.default));
 const StepSec = dynamic(() => import('@/components/industries/StepSec').then((mod) => mod.default));
 
-const sectionMap: Record<string, ComponentType<{ section: any; bg?: string }>> = {
+const sectionMap: Record<string, ComponentType<{ section: Section; bg?: string }>> = {
   hero: Hero,
   text: TextSec,
   features: FeatureSec,
@@ -36,13 +41,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const content = industryContent[slug];
   // Not a code-owned industry → a Nexus CMS page may live here.
   if (!content) return cmsRouteMetadata(`/industries/${slug}`);
-  return {
+  return withSocialDefaults({
     title: content.title,
     description: content.metaDescription,
     alternates: {
       canonical: canonicalUrl(`/industries/${slug}`),
     },
-  };
+  });
 }
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
@@ -51,20 +56,37 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   if (!content) return <CmsRoute path={`/industries/${slug}`} />;
 
   // ── Background alternation ──
-  // Hero (index 0) will be 'bg-black' – all sections follow the array order.
+  // Keep the industry pages on the landing page's paper / ink / secondary rhythm.
   const bgColors = [
-    'bg-black',        // hero – black
-    'bg-gray-50',      // text section
-    'bg-black',        // features
-    'bg-white',        // grid
-    'bg-orange-50',    // painpoint
-    'bg-gray-100',     // next section
-    'bg-black',        // ...
-    'bg-white',
+    'bg-paper',
+    'bg-ink',
+    'bg-secondary',
+    'bg-paper',
+    'bg-ink',
+    'bg-secondary',
+    'bg-paper',
+    'bg-ink',
   ];
 
+  const path = `/industries/${slug}`;
+  const hero = content.sections.find((s) => s.type === 'hero') as { heading?: string } | undefined;
+  const name = hero?.heading ?? content.title.split('|')[0].trim();
+
   return (
-    <main className="text-gray-900">
+    <div className="bg-paper text-ink">
+      <HubJsonLd
+        hub={{
+          name,
+          title: content.title,
+          description: content.metaDescription ?? "",
+          path,
+          crumbs: [
+            { name: 'Home', path: '/' },
+            { name: 'Industries', path: '/industries' },
+            { name, path },
+          ],
+        }}
+      />
       {content.sections.map((section, idx) => {
         const Component = sectionMap[section.type];
         if (!Component) {
@@ -79,6 +101,13 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         title="Solutions for this industry"
         links={INDUSTRY_SOLUTION_LINKS[slug] || []}
       />
-    </main>
+      <RelatedCards
+        eyebrow="Products"
+        heading="AI Software for This Industry"
+        intro="Product pages for the software we most often build in this sector."
+        items={productCards(INDUSTRY_PRODUCT_LINKS[slug] ?? [])}
+        tone="secondary"
+      />
+    </div>
   );
 }

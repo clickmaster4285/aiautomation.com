@@ -4,7 +4,7 @@ import { ServiceContent } from '../type';
 export const realEstate: ServiceContent = {
   slug: 'real-estate',
   title: 'AI Automation for Real Estate Teams | Clickmasters AI',
-  metaDescription: 'AI automation for real estate covers inquiries, follow-up, CRM updates, and the paperwork that piles up. Book a free audit. Start with one workflow.',
+  metaDescription: 'AI automation for real estate teams: instant inquiry response, lead follow-up, CRM updates and the transaction paperwork that piles up. Book an audit.',
   keywords: 'ai automation for real estate, real estate automation',
   sections: [
     {
@@ -17,8 +17,8 @@ export const realEstate: ServiceContent = {
         'This page covers where real estate work stalls, what we automate, and how it connects to the CRM and tools you already use.',
       ],
       stats: [
-        { label: 'FIRST RESPONSE', value: 'Under 2 min' },
-        { label: 'FOLLOW-UPS HANDLED', value: '24/7' },
+        { label: 'AUTOMATION AUDIT', value: 'Free' },
+        { label: 'OWNERSHIP OF THE BUILD', value: '100%' },
       ],
       ctas: [
         { text: 'Book a Free Audit', link: '/free-automation-audit', primary: true },

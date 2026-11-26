@@ -25,7 +25,7 @@ export const aiWorkflowBpaSeo: HubSeo = {
   path: AI_WORKFLOW_BPA_PATH,
   title: 'AI Workflow and Business Process Automation | Clickmasters',
   description:
-    'AI workflow and business process automation built in your tools: connected apps, routed approvals, AI steps for messy inputs and human review where it counts.',
+    'AI workflow and business process automation in your tools: connected apps, routed approvals, AI steps for messy inputs and human review where it counts.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Workflow & Business Process Automation', path: AI_WORKFLOW_BPA_PATH },
@@ -61,7 +61,7 @@ export const aiWorkflowBpa: ProductPageContent = {
 
   hero: {
     badge: 'AI Workflow & Business Process Automation',
-    heading: 'AI Workflow and Business Process Automation That Moves Work Without Manual Hand-Offs',
+    heading: 'AI Workflow and Business Process Automation Without Manual Hand-Offs',
     accentWords: 4,
     subheading:
       'Clickmasters connects the tools your teams already use and turns the steps between them into automated workflows. Rules handle the predictable parts, AI handles the messy inputs, and people stay in charge of the decisions that carry real risk.',

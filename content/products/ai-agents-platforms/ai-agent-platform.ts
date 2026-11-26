@@ -29,7 +29,7 @@ export const aiAgentPlatformSeo: HubSeo = {
   path: AI_AGENT_PLATFORM_PATH,
   title: 'AI Agent Platform: Components and Stack | Clickmasters',
   description:
-    'What an AI agent platform is made of: model, tools, retrieval, guardrails, monitoring and deployment, plus how to evaluate one and run it in your own cloud.',
+    'What an AI agent platform is made of: model, tools, retrieval, guardrails, monitoring and deployment, plus how to evaluate one and run it in your cloud.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Agents & Platforms', path: '/products/ai-agents-platforms' },

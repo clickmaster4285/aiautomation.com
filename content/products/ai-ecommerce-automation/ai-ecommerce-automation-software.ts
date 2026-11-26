@@ -30,7 +30,7 @@ export const aiEcommerceAutomationSoftwareSeo: HubSeo = {
   path: AI_ECOMMERCE_AUTOMATION_SOFTWARE_PATH,
   title: 'AI Ecommerce Automation Software for Stores | Clickmasters',
   description:
-    'AI ecommerce automation software for daily store work: product copy drafts, order admin, returns, reviews and cart recovery, linked to your helpdesk and email.',
+    'AI ecommerce automation software for store work: product copy drafts, order admin, returns, reviews and cart recovery, linked to your helpdesk and email.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI E-commerce Automation', path: '/products/ai-ecommerce-automation' },
@@ -67,7 +67,7 @@ export const aiEcommerceAutomationSoftware: ProductPageContent = {
 
   hero: {
     badge: 'AI Ecommerce Automation Software',
-    heading: 'AI Ecommerce Automation Software That Runs Your Store’s Daily Workflows',
+    heading: 'AI Ecommerce Automation Software for Daily Store Workflows',
     accentWords: 3,
     subheading:
       'We build the operations layer behind your online store: workflows that draft product copy, tidy attributes, tag orders, log return requests, ask for reviews, recover carts and report on the week. They run inside your store, helpdesk, email platform and spreadsheets, and your team approves anything customer-facing.',

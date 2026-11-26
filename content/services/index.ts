@@ -238,6 +238,16 @@ export const platformCategories: PlatformCategory[] = [
       },
     ],
   },
+  {
+    title: 'Airtable',
+    platforms: [
+      {
+        title: 'Airtable Automation',
+        path: '/platforms/airtable-automation-services',
+        description: 'Custom operational systems and AI-connected bases',
+      },
+    ],
+  },
 ];
 
 // ──────────────────────────────────────────────
@@ -285,10 +295,15 @@ export const industryCategories: IndustryCategory[] = [
         description: 'Onboarding, support deflection, churn signals, and revenue ops',
       },
       {
-  title: 'Real Estate',
-  path: '/industries/ai-automation-for-real-estate',
-  description: 'Lead qualification, property listings, appointment scheduling, and client communication',
-},
+        title: 'Real Estate',
+        path: '/industries/ai-automation-for-real-estate',
+        description: 'Lead qualification, showings, and client communication',
+      },
+      {
+        title: 'Professional Services',
+        path: '/industries/ai-automation-for-professional-services',
+        description: 'Client onboarding, proposals, time capture, and billing',
+      },
     ],
   },
 ];

@@ -1,14 +1,14 @@
 // content/Solutions/ai-workflow-automation.ts
 export const aiWorkflowAutomation = {
   url: '/solutions/ai-workflow-automation',
-  titleTag: 'AI Workflow Automation for Smarter, Context-Aware Business',
-  metaDescription: 'Operations teams use Clickmasters AI Workflow Automation for Smarter, Context-Aware Business Processes to remove repetitive work from the current process.',
+  titleTag: 'AI Workflow Automation Solutions | Clickmasters',
+  metaDescription: 'AI workflow automation that classifies inputs, reads context and picks the next step, replacing brittle rule chains while keeping human review in place.',
   primaryKeyword: 'ai workflow automation',
   bookingLink: '/free-automation-audit',
 
   heroBadge: 'AI Workflow Automation',
   heroHeading:
-    'AI Workflow Automation for Smarter, Context-Aware Business Processes',
+    'AI Workflow Automation Solutions | Clickmasters Processes',
   heroSubheading:
     'AI workflow automation from Clickmasters adds intelligence to your business workflows. Instead of brittle rule chains that break when inputs vary, AI can interpret context, classify inputs, and decide the next step — while keeping human review available for important decisions.',
 
@@ -18,19 +18,11 @@ export const aiWorkflowAutomation = {
       'AI workflow automation brings interpretation to the workflow. It can read an inbound email and identify the intent, classify a document by type, extract key fields, or decide which approval path applies — then hand off to standard workflow logic for the rest of the process.',
     ],
     'The Problems This Solves': [
-      'Handle variable inputs that break traditional rule-based workflows',
-      'Reduce manual triage of emails, documents, and unstructured requests',
-      'Route work to the right team without keyword-matching complexity',
-      'Add intelligence to workflows without replacing your existing systems',
-      'Keep humans in the loop where decisions carry real risk or cost',
-    ],
-    'What We Automate': [
-      'Inbound email and message triage with intent classification',
-      'Document-driven workflows: classification, extraction, and routing',
-      'Multi-step business processes that require context to decide the next step',
-      'Approval workflows with AI-assisted routing and priority',
-      'CRM, ERP, and helpdesk workflows with AI-driven update logic',
-      'Exception handling and escalation based on content, not just rules',
+      '**Handle variable inputs that break traditional rule-based workflows** AI reads messy, inconsistent submissions and normalizes them, so downstream steps receive clean data even when formats change.',
+      '**Reduce manual triage of emails, documents, and unstructured requests** Instead of someone reading every item, the workflow identifies what each one is about and sorts it before your team looks.',
+      '**Route work to the right team without keyword-matching complexity** AI understands what a request actually means, so items reach sales, support, or finance correctly without fragile filter lists.',
+      '**Add intelligence to workflows without replacing your existing systems** We layer AI steps onto the tools and automations you already run, keeping your CRM, ERP, and helpdesk in place.',
+      '**Keep humans in the loop where decisions carry real risk or cost** We build approval steps and confidence thresholds, so uncertain or sensitive items pause for a person to review.',
     ],
     'Where to Start: Your First Automation': [
       'Start with the process where your team spends the most time on manual triage or hand-offs. Typical starting points: inbound email routing, document intake for a specific business process, or lead qualification that requires understanding the inquiry, not just matching a keyword.',
@@ -50,18 +42,19 @@ export const aiWorkflowAutomation = {
       'Teams typically see reduced manual triage time, faster response to inbound requests, fewer routing errors, and more consistent handling of exceptions. The return compounds as more workflows move into the AI-assisted layer — each additional workflow benefits from the same foundation of integrations, review processes, and monitoring.',
     ],
     'Why Clickmasters': [
-      'Custom AI workflows designed around your actual processes and tools',
-      'Practical use of AI where it adds value — not AI for the sake of AI',
-      'Integrations with CRM, ERP, email, helpdesk, and cloud storage',
-      'Human-in-the-loop review and exception handling built in',
-      'Monitoring and iteration so workflows improve after launch',
+      '**Custom AI workflows designed around your actual processes and tools** We map each handoff and decision point your team handles today, then design the automation to fit that reality.',
+      '**Practical use of AI where it adds value — not AI for the sake of AI** We keep fixed rules for predictable steps and apply AI only to classification, extraction, and judgment calls that need it.',
+      '**Integrations with CRM, ERP, email, helpdesk, and cloud storage** We connect workflows to the platforms your business relies on, so data moves between them and records stay in sync.',
+      '**Human-in-the-loop review and exception handling built in** Unusual cases land in a clear review queue with the AI reasoning attached, so your team can approve or correct quickly.',
+      '**Monitoring and iteration so workflows improve after launch** We track misroutes, escalations, and corrections, then refine prompts and rules so handling gets more consistent over time.',
     ],
   },
 
   stats: [
-    { value: '75%', label: 'less manual triage and hand-off time' },
-    { value: '3x', label: 'faster routing of inbound work' },
-    { value: '24/7', label: 'processing of incoming requests' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
+    { value: '100%', label: 'Ownership Guaranteed' },
   ],
 
   faqQuestions: [
@@ -119,4 +112,88 @@ relatedSolutions: [
 ],
 
   cta: 'Automate Your Workflows with AI',
+
+  // Page layout for app/solutions/[service]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'AI Workflow Automation', serviceType: 'AI Workflow Automation Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-ai-workflow-automation' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Workflow',
+              triggerLabel: 'New Business Event',
+              actionLabels: ['Interpret Context', 'Route Tasks', 'Update Systems'],
+              metricValue: '3,200',
+              metricLabel: 'workflow actions executed automatically this week',
+              submetric: '75% less manual handoffs',
+              platform: 'AI Workflow Automation + Business Systems',
+              accent: '#3B82F6',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'AI Workflow Automation', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Businesses Need AI Workflow Automation',
+        props: { title: 'Why Businesses Need AI Workflow Automation' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves',
+        props: { title: 'The Problems This Solves' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Real Business Operations',
+        props: { title: 'Built for Real Business Operations' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI workflow automation' } },
+      { type: 'RelatedSolutions', props: { title: 'Explore Other Solutions', subtitle: 'More ways we can help you automate' } },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit — 30 minutes, no obligation, and an honest read on where AI workflow automation pays off for your business.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };

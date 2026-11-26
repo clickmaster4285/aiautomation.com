@@ -1,8 +1,33 @@
+/**
+ * Section copy arrives as one multi-line string per section. Split it into its real lines
+ * (paragraphs / list items) so each "**Title**description" item is parsed on its own.
+ * Strips list markers ("- ") and drops blank lines.
+ */
+export function toLines(content: unknown[] | undefined): string[] {
+  return (content || [])
+    .filter((c): c is string => typeof c === 'string')
+    .flatMap((c) => c.split(/\r?\n/))
+    .map((l) => l.replace(/^\s*[-•]\s+/, '').trim())
+    .filter(Boolean);
+}
+
 function splitSentences(text: string) {
   return text
     .split(/(?<=[.!?])\s+/)
     .map((part) => part.trim())
     .filter(Boolean);
+}
+
+/**
+ * "**Title.** description" or "**Title**description" → { title, description }.
+ * Falls back to first sentence as the title. Description keeps inline markup (links/bold).
+ */
+export function splitTitled(line: string) {
+  const bold = line.match(/^\*\*(.+?)\*\*\s*([\s\S]*)$/);
+  if (bold) return { title: bold[1].replace(/[.:]\s*$/, '').trim(), description: bold[2].trim() };
+  const m = line.match(/^(.+?[.!?])\s+([\s\S]*)$/);
+  if (m) return { title: m[1].replace(/[.]\s*$/, '').trim(), description: m[2].trim() };
+  return { title: line.trim(), description: '' };
 }
 
 export function splitBoldItem(line: string) {

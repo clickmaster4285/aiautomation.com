@@ -1,0 +1,283 @@
+// content/Solutions/ai-agents/for-restaurants.ts
+import { SolutionData } from '@/content/type';
+
+export const aiAgentsForRestaurants: SolutionData = {
+  slug: 'ai-agents/for-restaurants',
+  url: '/solutions/ai-agents/for-restaurants',
+  platform: 'Custom AI Agents',
+  category: 'ai-agents',
+  title: 'AI Agent Development for Restaurants & Hospitality',
+  primaryKeyword: 'AI agent for restaurants',
+  titleTag: 'AI Agents for Restaurants & Hospitality | Clickmasters',
+  metaDescription: 'AI agents for restaurants that handle reservations, supplier orders, and staff scheduling tasks across the tools you already run. Book a free audit.',
+  keywordEvidence: 'pattern-based',
+  schema: 'Service, FAQPage, BreadcrumbList',
+  internalLinks: [
+    'AI Agent Development service page',
+    'Restaurants & Hospitality industry page',
+    'AI Automation Agency pillar',
+    'Free Automation Audit',
+  ],
+  heroHeading: 'AI Agents for Restaurants & Hospitality',
+  heroSubheading: 'AI agents for restaurants and hospitality businesses that reason, act, and finish multi-step work inside the tools your team already uses.',
+  heroBadge: 'AI Agent Development',
+  description: 'Clickmasters builds AI Agent Development for restaurants & hospitality. Automation that reasons, acts, and completes automatically, built around how a business in your industry actually operates. Not generic software with your logo on it: automation designed for the workflows, tools, and constraints of restaurants & hospitality, delivered as a system your team owns and relies on.',
+  sections: {
+    'Why Restaurants & Hospitality Need AI Agent Development': `Restaurants and hospitality businesses run at full speed during service, which is exactly when calls, reservation requests, and questions pour in. Phones ring unanswered during the rush; reservation no-shows leave tables empty; review responses pile up; and marketing to fill slow periods never quite happens. The operational reality is that the people are busy hosting, so the communication layer has to run itself.
+
+AI Agent Development addresses this directly. It builds software that pursues goals, not just answers questions: reasoning about a task, using your tools, taking multiple steps, and acting inside your systems. An agent doesn't just tell someone the status; it looks it up, drafts the response, sends it, and logs the activity. It closes the loop, which is the part that actually removes work. For a business, that capability lands exactly where the hours are currently going.`,
+
+    'The Problems This Solves for Restaurants & Hospitality': `**Calls missed during service.** Reservation and inquiry calls during the rush go unanswered — each one potentially a lost table or event booking.
+**No-shows.** Unconfirmed reservations that don't arrive cost revenue that automated confirmations would have protected.
+**Review response neglect.** Reviews decide local search visibility, but responding consistently rarely survives contact with a busy week.
+**Event and catering inquiry lag.** High-value private event inquiries need prompt, detailed responses that busy managers deliver late.
+**Slow-period marketing.** Campaigns to fill quiet nights require production time nobody has.
+
+Every one of these is a workflow problem, not a people problem, and workflow problems are what automation eliminates.`,
+
+    'What We Automate for Restaurants & Hospitality': `**Custom goal-driven agents for reservation booking and confirmation**built around your specific workflows and connected to your specific tools, applied to your business's reservation booking and confirmation, so this runs consistently instead of depending on whoever has time.
+**Multi-step task execution for call answering for hours/menu/booking questions**agents that plan, act, observe, and adjust, applied to your business's call answering for hours/menu/booking questions, so this runs consistently instead of depending on whoever has time.
+**Grounding in your data (RAG) for no-show reduction reminders**decisions and answers based on your real content, applied to your business's no-show reduction reminders, so this runs consistently instead of depending on whoever has time.
+**Guardrails and human-in-the-loop for event and catering inquiry handling**clear boundaries with escalation for anything outside them, applied to your business's event and catering inquiry handling, so this runs consistently instead of depending on whoever has time.
+**Monitoring and logging for review requests and responses**full visibility into what the agent did and why, applied to your business's review requests and responses, so this runs consistently instead of depending on whoever has time.
+
+And the same automation pattern extends across the rest of your business's recurring work:
+
+- **Waitlist communication**automated with the same pattern: triggered by the event, executed against your systems, exceptions routed to your team.
+- **Slow-period promotions**automated with the same pattern: triggered by the event, executed against your systems, exceptions routed to your team.
+- **Loyalty outreach**automated with the same pattern: triggered by the event, executed against your systems, exceptions routed to your team.
+
+Each of these is mapped in the audit and automated in priority order, highest return first.`,
+
+    'Where to Start: Your First Automation': `The mistake most teams in restaurants & hospitality make with automation is starting with the most ambitious workflow instead of the most valuable one. The right first project has three properties: it happens frequently (daily, not quarterly), it follows a recognizable pattern (so the automation has something to learn from your team's handling of it), and its current manual cost is visible (so the return is measurable against a real baseline).
+
+For most, that points to reservation booking and confirmation or call answering for hours/menu/booking questions. High-frequency, pattern-heavy, and expensive in staff hours right now. We automate that first, measure the result against your own baseline, and only then expand. A business that proves the return on one workflow makes every subsequent decision with evidence instead of hope.`,
+
+    'What This Is and Isn\'t': `Worth being clear about the boundaries, because automation earns trust by respecting them. This is not about replacing your managers and staff. It's about removing the repetitive layer that keeps them from the work that actually needs them. It's not a rip-and-replace of your systems. We connect reservation platforms, POS systems, review platforms, and communication channels rather than asking you to migrate. And it's not a black box. Every workflow is documented, visible, and owned by you, with humans in the loop wherever judgment or sensitivity requires it.
+
+What it is: the routine work. The automation that reasons, acts, and completes, handled automatically, consistently, at any hour, so your business runs on systems instead of memory and heroics.`,
+
+    'A Worked Example': `Consider what happens when a guest calls to book a table during the Friday rush. In a manual operation, this waits for someone to be free, and often that's too late. Automated: the call is answered instantly in a natural voice, availability is checked, the booking is made and confirmed by text with a reminder scheduled, and any special requests are logged for the host. The table that used to be lost to a ring-out is booked, without pulling anyone off the floor.
+
+That's the pattern across everything we build for restaurants & hospitality: the routine handled instantly and consistently, the exceptions routed to your people with context, and nothing depending on whoever happens to be least busy.`,
+
+    'Built for Restaurants & Hospitality\'s Realities': `Guest data is handled with appropriate care, and the automation covers communication logistics — hospitality itself stays human, which is the whole point of freeing your people to deliver it.
+
+We integrate with the systems your business already runs — reservation platforms, POS systems, review platforms, and communication channels, connecting them rather than asking you to replace anything. The automation fits your operation; your operation doesn't bend to the automation.`,
+
+    'What the Return Looks Like': `For restaurants & hospitality, the return shows up as: bookings captured during rushes and after hours, no-shows cut by systematic confirmation, reviews responded to consistently, and event inquiries converted while interest is hot. On the AI agent side specifically, the headline metric is complete tasks handled end to end without human touches.
+
+We start with a free audit that identifies your highest-return workflow, automate that first, and prove the result before expanding, so the value is proven with your own numbers, not our claims.`,
+
+    'Why Clickmasters': `**Built for your industry's workflows.** We automate restaurants & hospitality's real processes, not generic approximations.
+
+**Human-in-the-loop where it matters.** Judgment, sensitivity, and decisions stay with your people; the automation handles the routine around them.
+
+**Integrated, not rip-and-replace.** We connect the tools your business already uses.
+
+**You own everything.** Documented, transparent systems with no lock-in.`,
+  },
+  features: [
+    {
+      icon: 'Brain',
+      title: 'Custom Goal-Driven Agents',
+      description: 'Agents built around your specific workflows for reservations.',
+    },
+    {
+      icon: 'Workflow',
+      title: 'Multi-Step Task Execution',
+      description: 'Agents that plan, act, observe, and adjust for call answering.',
+    },
+    {
+      icon: 'Database',
+      title: 'RAG Grounding',
+      description: 'Decisions based on your real content for no-show reminders.',
+    },
+    {
+      icon: 'Shield',
+      title: 'Guardrails & Human-in-the-Loop',
+      description: 'Clear boundaries with escalation for event inquiries.',
+    },
+    {
+      icon: 'BarChart3',
+      title: 'Monitoring & Logging',
+      description: 'Full visibility into what the agent did and why.',
+    },
+    {
+      icon: 'BrainCircuit',
+      title: 'Production-Ready',
+      description: 'Staged rollout, documentation, and reliability engineering.',
+    },
+  ],
+  processSteps: [
+    {
+      number: '01',
+      title: 'Free Audit',
+      description: 'We map your highest-return workflow and confirm AI agent fit.',
+    },
+    {
+      number: '02',
+      title: 'Build in Sprints',
+      description: 'Constructed against your real tools and data, with error handling and monitoring.',
+    },
+    {
+      number: '03',
+      title: 'Documented Hand-off',
+      description: 'You own the build; nothing is a black box.',
+    },
+    {
+      number: '04',
+      title: 'Optimize',
+      description: 'We monitor, refine, and expand as the system proves itself.',
+    },
+  ],
+  stats: [
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
+    { value: '100%', label: 'Ownership Guaranteed' },
+  ],
+  bestFor: [
+    'Businesses with high reservation volume',
+    'Teams spending hours on phone calls and follow-up',
+    'Businesses looking to scale without adding headcount',
+  ],
+  considerAlternatives: [
+    'If your reservation volume is very low',
+    'If you have already automated most workflows',
+    'If you prefer to keep everything manual',
+  ],
+  relatedSolutions: [
+    {
+      title: 'AI Agent Development',
+      slug: 'ai-agents',
+      description: 'Custom AI agents that reason, act, and complete tasks automatically.',
+    },
+    {
+      title: 'AI Workflow Automation',
+      slug: 'ai-workflow-automation',
+      description: 'Multi-step processes that run automatically across your tools.',
+    },
+    {
+      title: 'AI Chatbot Solutions',
+      slug: 'ai-chatbots',
+      description: 'Intelligent chatbots that answer, qualify, and book automatically.',
+    },
+  ],
+  faqQuestions: [
+    {
+      question: 'What is AI agent for restaurants & hospitality?',
+      answer: 'An AI agent is software that uses an AI model to reason about a goal, use tools, and take multi-step action inside real systemsunlike a chatbot, which mainly answers questions. For a business in restaurants & hospitality, that means applying it to the workflows that consume your team — reservation booking and confirmation, call answering for hours/menu/booking questions, and no-show reduction reminders — with the specifics of your industry built in.',
+    },
+    {
+      question: 'Will this work with the tools our business already uses?',
+      answer: 'Yes. We build into the systems restaurants & hospitality businesses actually run on: reservation platforms, POS systems, review platforms, and communication channels, connecting rather than replacing them, so the automation fits your existing operation.',
+    },
+    {
+      question: 'How is this different from generic automation?',
+      answer: 'Generic automation ignores what makes restaurants & hospitality different. We build around your industry\'s real workflows, terminology, and constraints, and around the sensitivities that matter in your field, so the automation handles your actual work, not a generic approximation of it.',
+    },
+    {
+      question: 'What results should we expect?',
+      answer: 'The measurable outcome is complete tasks handled end to end without human touches, and for restaurants & hospitality specifically: bookings captured during rushes and after hours, no-shows cut by systematic confirmation, reviews responded to consistently, and event inquiries converted while interest is hot. We start with the highest-return workflow and prove the result before expanding.',
+    },
+    {
+      question: 'Do we lose control of anything?',
+      answer: 'No. The opposite. Every workflow is documented and owned by you, humans stay in the loop wherever judgment or sensitivity requires it, and you get more visibility into your operations, not less.',
+    },
+  ],
+  cta: 'See what your business could stop doing by hand.',
+  bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'AI Agent Development for Restaurants & Hospitality', serviceType: 'AI Agent Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-restaurants-need-ai-agent-development' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Restaurants & Hospitality',
+              triggerLabel: 'New Customer Inquiry',
+              actionLabels: ['Send Menu Details', 'Book Table', 'Provide Recommendations'],
+              metricValue: '3,200',
+              metricLabel: 'customer inquiries handled automatically this week',
+              submetric: '85% improved satisfaction rate',
+              platform: 'CRM + Restaurant Management System',
+              accent: '#F97316',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'AI Agents', href: '/solutions/ai-agents' },
+            { label: 'Restaurants & Hospitality', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Restaurants & Hospitality Need AI Agent Development',
+        props: { title: 'Why Restaurants & Hospitality Need AI Agent Development' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves for Restaurants & Hospitality',
+        props: { title: 'The Problems This Solves for Restaurants & Hospitality' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate for Restaurants & Hospitality',
+        props: { title: 'What We Automate for Restaurants & Hospitality' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Restaurants & Hospitality\'s Realities',
+        props: { title: 'Built for Restaurants & Hospitality\'s Realities' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'AI Agents for Restaurants FAQs', subtitle: 'Common questions about AI agents for restaurants & hospitality' } },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. 30 minutes, no obligation, and an honest read on where AI agent pays off for restaurants & hospitality.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
+};
+
+export default aiAgentsForRestaurants;

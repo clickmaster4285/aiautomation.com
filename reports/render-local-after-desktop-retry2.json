@@ -1,0 +1,627 @@
+[
+ {
+  "path": "/blog",
+  "mode": "desktop",
+  "h1": [
+   "AUTOMATIONINSIGHTS& News."
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [],
+  "bodyFontPx": 16,
+  "ttfb": 16,
+  "domContentLoaded": 55,
+  "load": 264,
+  "jsKB": 438,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1011,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms",
+   "www.google.com",
+   "scripts.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 1296,
+   "lcpEl": "P Articles are not published yet. This page stays out of searc",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/case-studies/ai-receptionist-lead-response-automation",
+  "error": "Error: timeout: Runtime.evaluate"
+ },
+ {
+  "path": "/products/ai-agents-platforms",
+  "mode": "desktop",
+  "h1": [
+   "AI Agents for Business That Work Inside Your Existing Systems"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 25,
+  "domContentLoaded": 192,
+  "load": 525,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1054,
+  "requests": 251,
+  "thirdParty": [],
+  "vitals": {
+   "lcp": 1736,
+   "lcpEl": "H1 AI Agents for Business That Work Inside Your Existing System",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-agents-platforms/ai-agent-development",
+  "mode": "desktop",
+  "h1": [
+   "AI Agent Development, From First Workshop to Production"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "388x388",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "AI Agents & Platforms 178x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 19,
+  "domContentLoaded": 59,
+  "load": 357,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1051,
+  "requests": 251,
+  "thirdParty": [],
+  "vitals": {
+   "lcp": 524,
+   "lcpEl": "H1 AI Agent Development, From First Workshop to Production",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-document-data-intelligence/ai-ocr-software",
+  "mode": "desktop",
+  "h1": [
+   "AI OCR Software That Turns Scans and Photos Into Usable Text"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "AI Document & Data Intelligenc 258x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 33,
+  "domContentLoaded": 88,
+  "load": 361,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1051,
+  "requests": 251,
+  "thirdParty": [],
+  "vitals": {
+   "lcp": 1460,
+   "lcpEl": "H1 AI OCR Software That Turns Scans and Photos Into Usable Text",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-finance-accounting/ai-expense-management-software",
+  "mode": "desktop",
+  "h1": [
+   "AI Expense Management Software, From Receipt to Approval"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "AI Finance & Accounting 193x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 29,
+  "domContentLoaded": 79,
+  "load": 412,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1052,
+  "requests": 251,
+  "thirdParty": [],
+  "vitals": {
+   "lcp": 1468,
+   "lcpEl": "H1 AI Expense Management Software, From Receipt to Approval",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-marketing-automation",
+  "mode": "desktop",
+  "h1": [
+   "AI Marketing Automation That Nurtures Every Lead at the Right Moment"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=1400&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "0x0",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 21,
+  "domContentLoaded": 68,
+  "load": 412,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1058,
+  "requests": 251,
+  "thirdParty": [],
+  "vitals": {
+   "lcp": 1488,
+   "lcpEl": "H1 AI Marketing Automation That Nurtures Every Lead at the Righ",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/ai-workflow-business-process-automation/intelligent-process-automation",
+  "mode": "desktop",
+  "h1": [
+   "Intelligent Process Automation for the Steps That Need Judgment"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "AI Workflow & Business Process 359x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 33,
+  "domContentLoaded": 79,
+  "load": 400,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1056,
+  "requests": 251,
+  "thirdParty": [],
+  "vitals": {
+   "lcp": 1476,
+   "lcpEl": "H1 Intelligent Process Automation for the Steps That Need Judgm",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/products/general-ai-automation/end-to-end-ai-automation",
+  "mode": "desktop",
+  "h1": [
+   "End-to-End AI Automation: One Team From Audit to Launch and Beyond"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "146x20",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fprocess.png&w=640&q=75",
+    "alt": "Friendly assistant robot wearing a headset and waving",
+    "hidden": false,
+    "natural": "350x350",
+    "shown": "371x371",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "Clickmasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "351x48",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=256&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "256x35",
+    "shown": "205x28",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 1425,
+  "viewport": 1425,
+  "smallTaps": [
+   "Home 41x15",
+   "General AI Automation 182x15"
+  ],
+  "bodyFontPx": 16,
+  "ttfb": 25,
+  "domContentLoaded": 70,
+  "load": 400,
+  "jsKB": 447,
+  "cssKB": 32,
+  "imgKB": 0,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 1043,
+  "requests": 251,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms"
+  ],
+  "vitals": {
+   "lcp": 556,
+   "lcpEl": "H1 End-to-End AI Automation: One Team From Audit to Launch and ",
+   "cls": 0
+  },
+  "errors": []
+ }
+]

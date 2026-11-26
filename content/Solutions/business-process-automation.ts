@@ -1,8 +1,8 @@
 // content/Solutions/business-process-automation.ts
 export const businessProcessAutomation = {
   url: '/solutions/business-process-automation',
-  titleTag: 'Business for Faster, More Reliable Operations | Clickmasters',
-  metaDescription: 'Operations teams use Clickmasters Business Process Automation for Faster, More Reliable Operations to remove repetitive work from the current process.',
+  titleTag: 'Business Process Automation Solutions | Clickmasters',
+  metaDescription: 'Business process automation for the handoffs, updates, notifications and data syncing that slow teams down, with fewer errors and no extra headcount.',
   primaryKeyword: 'business process automation',
   bookingLink: '/free-automation-audit',
 
@@ -18,20 +18,20 @@ export const businessProcessAutomation = {
       'Business process automation replaces manual handoffs with a structured digital workflow. Data moves between systems automatically, approvals happen in sequence, and records stay consistent — without anyone re-typing the same information into three different tools.',
     ],
     'The Problems This Solves': [
-      'Reduce repetitive data entry across multiple systems',
-      'Eliminate manual handoffs between teams and tools',
-      'Prevent tasks from falling through the cracks during busy periods',
-      'Speed up approval and review cycles',
-      'Keep records consistent across CRM, ERP, and connected systems',
+      '**Reduce repetitive data entry across multiple systems** We capture information once at the source and push it into every connected tool, so your team stops retyping the same details.',
+      '**Eliminate manual handoffs between teams and tools** Each completed step triggers the next one automatically, passing context along so nobody waits on an email or chases a status update.',
+      '**Prevent tasks from falling through the cracks during busy periods** Every request gets logged, assigned, and tracked with reminders, so work keeps moving even when your team is stretched thin.',
+      '**Speed up approval and review cycles** We send each item to the right approver in sequence, nudge them when it stalls, and record every decision for later reference.',
+      '**Keep records consistent across CRM, ERP, and connected systems** Field updates flow between platforms on defined rules, so customer, order, and billing details match wherever your team looks them up.',
     ],
     'What We Automate': [
-      'Client onboarding and offboarding workflows',
-      'Lead intake, qualification, and assignment',
-      'Order processing and fulfillment handoffs',
-      'Support ticket routing and escalation',
-      'Document approvals and multi-step review processes',
-      'Cross-system data syncing and record updates',
-      'Internal notifications, reminders, and follow-ups',
+      '**Client onboarding and offboarding workflows** A signed agreement or cancellation kicks off account setup or closure, welcome or exit messages, and access changes in every relevant tool.',
+      '**Lead intake, qualification, and assignment** New inquiries are checked against your criteria, tagged with the right details, and handed to the correct owner without manual sorting.',
+      '**Order processing and fulfillment handoffs** Confirmed purchases move straight to warehouse, shipping, and billing steps, with status updates sent back to sales and the customer.',
+      '**Support ticket routing and escalation** Incoming requests are categorized by topic and urgency, sent to the right queue, and raised to a manager when deadlines approach.',
+      '**Document approvals and multi-step review processes** Contracts, policies, and requests travel through each reviewer in order, with comments, versions, and sign-offs kept in one trail.',
+      '**Cross-system data syncing and record updates** When a detail changes in one platform, we push that change to every linked tool so your team works from matching information.',
+      '**Internal notifications, reminders, and follow-ups** Your team gets timely alerts in email or chat when something needs attention, plus scheduled nudges for anything still waiting.',
     ],
     'Where to Start: Your First Automation': [
       'Start with the process where your team spends the most time on repetitive handoffs or data entry. Typical starting points: client onboarding, lead routing, invoice processing, or support ticket triage.',
@@ -51,18 +51,19 @@ export const businessProcessAutomation = {
       'Teams typically recover several hours of manual work per week, see fewer errors caused by copy-paste, and get faster approvals and handoffs. The return compounds as more processes move into the automated layer.',
     ],
     'Why Clickmasters': [
-      'Custom workflows designed around your actual processes and tools',
-      'Integrations with CRM, ERP, accounting, project management, and other business systems',
-      'Exception handling and audit trails for real-world process variance',
-      'Ongoing monitoring and iteration so workflows improve after launch',
-      'Practical automation — we automate what saves time, not what sounds impressive',
+      '**Custom workflows designed around your actual processes and tools** We map how work really moves through your business today, then build automation that fits those steps instead of forcing a template.',
+      '**Integrations with CRM, ERP, accounting, project management, and other business systems** We connect the platforms your team already relies on through APIs and native connectors, so information flows without exports or uploads.',
+      '**Exception handling and audit trails for real-world process variance** Missing fields, failed steps, and unusual cases get flagged for a person to review, and every action is logged for later checks.',
+      '**Ongoing monitoring and iteration so workflows improve after launch** We watch for errors and slowdowns after go-live and adjust the logic as your processes, tools, and team structure change.',
+      '**Practical automation — we automate what saves time, not what sounds impressive** We prioritize the steps that cost your team the most effort and leave judgment-heavy work with the people best placed to handle it.',
     ],
   },
 
   stats: [
-    { value: '70%', label: 'reduction in manual handoffs' },
-    { value: '3x', label: 'faster process cycle times' },
-    { value: '100%', label: 'record consistency across connected systems' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
+    { value: '100%', label: 'Ownership Guaranteed' },
   ],
 
   faqQuestions: [
@@ -120,4 +121,93 @@ export const businessProcessAutomation = {
   ],
 
   cta: 'Automate Your Business Processes',
+
+  // Page layout for app/solutions/[service]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'Business Process Automation', serviceType: 'Business Process Automation Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-business-process-automation' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Process',
+              triggerLabel: 'New Business Event',
+              actionLabels: ['Trigger Workflow', 'Sync Systems', 'Notify Team'],
+              metricValue: '2,400',
+              metricLabel: 'process steps executed automatically this month',
+              submetric: '70% reduction in manual handoffs',
+              platform: 'Business Process Automation + Connected Systems',
+              accent: '#3B82F6',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'Business Process Automation', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Businesses Need Business Process Automation',
+        props: { title: 'Why Businesses Need Business Process Automation' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves',
+        props: { title: 'The Problems This Solves' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate',
+        props: { title: 'What We Automate' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Real Business Operations',
+        props: { title: 'Built for Real Business Operations' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about business process automation' } },
+      { type: 'RelatedSolutions', props: { title: 'Explore Other Solutions', subtitle: 'More ways we can help you automate' } },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit — 30 minutes, no obligation, and an honest read on where business process automation pays off for your business.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };

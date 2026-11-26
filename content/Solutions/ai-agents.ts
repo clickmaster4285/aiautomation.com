@@ -1,8 +1,8 @@
 // content/Solutions/ai-agents.ts
 export const aiAgents = {
   url: '/solutions/ai-agents',
-  titleTag: 'AI Agents That Execute Multi-Step Business | Clickmasters',
-  metaDescription: 'Operations teams use Clickmasters AI Agents That Execute Multi-Step Business Workflows End to End to remove repetitive work from the current process.',
+  titleTag: 'AI Agents for Multi-Step Business Workflows | Clickmasters',
+  metaDescription: 'AI agents that read context, run multi-step tasks across your systems within set guardrails and report back, while people approve key decisions.',
   primaryKeyword: 'ai agents',
   bookingLink: '/free-automation-audit',
 
@@ -18,20 +18,11 @@ export const aiAgents = {
       'AI agents close that gap. They can interpret unstructured inputs, plan the steps required, execute actions across connected systems, and adapt when the path changes — all within defined guardrails, with human review where it matters.',
     ],
     'The Problems This Solves': [
-      'Handle multi-step tasks that span multiple systems without manual coordination',
-      'Interpret unstructured inputs (emails, documents, requests) as the starting point',
-      'Execute follow-up actions based on what the task actually needs',
-      'Reduce manual coordination overhead between teams and tools',
-      'Keep humans in the loop for high-stakes or ambiguous cases',
-    ],
-    'What We Automate': [
-      'Lead research and qualification across web, CRM, and enrichment sources',
-      'Customer onboarding with multi-system account setup',
-      'Document-driven processes: read, classify, extract, and act',
-      'Support triage with investigation, response drafting, and routing',
-      'Sales research: account analysis, contact discovery, and outreach preparation',
-      'Back-office tasks: invoice processing, reconciliation, and record updates',
-      'Exception handling and escalation when normal paths fail',
+      '**Handle multi-step tasks that span multiple systems without manual coordination** The agent moves work from your CRM to email to helpdesk on its own, so nobody has to copy details between tools.',
+      '**Interpret unstructured inputs (emails, documents, requests) as the starting point** We train the agent to read free-form messages and files, pull out the key details, and decide what work comes next.',
+      '**Execute follow-up actions based on what the task actually needs** Instead of following one fixed path, the agent picks the next step from what it finds, such as chasing missing details or updating records.',
+      '**Reduce manual coordination overhead between teams and tools** Your team stops chasing handoffs, status checks, and reminders because the agent tracks each task and passes it along with full context.',
+      '**Keep humans in the loop for high-stakes or ambiguous cases** We set clear approval points so the agent pauses and routes sensitive or unclear decisions to the right person before acting.',
     ],
     'Where to Start: Your First Automation': [
       'Start with the task where your team spends the most coordination time — the one where someone reads something, decides what to do, takes three or four steps across systems, and follows up if it does not work.',
@@ -51,18 +42,19 @@ export const aiAgents = {
       'Teams typically see reduced research and coordination time, faster response to inbound requests, more consistent decisions, and better use of senior team members who previously spent time on routine tasks. The return compounds as more tasks move into the agent layer — each additional agent benefits from the same integration foundation and monitoring.',
     ],
     'Why Clickmasters': [
-      'Custom AI agents designed around your actual tasks and tools',
-      'Practical use of AI where it adds value — not AI for the sake of AI',
-      'Integrations with CRM, ERP, email, helpdesk, and cloud storage',
-      'Human-in-the-loop review for high-stakes decisions',
-      'Monitoring and iteration so agents improve after launch',
+      '**Custom AI agents designed around your actual tasks and tools** We map how your team really works today, then build each agent to fit those steps instead of forcing a generic template.',
+      '**Practical use of AI where it adds value — not AI for the sake of AI** We use simple rules where they work and reserve AI reasoning for the steps that need judgment, keeping agents dependable and affordable.',
+      '**Integrations with CRM, ERP, email, helpdesk, and cloud storage** We connect agents directly to the systems your team already uses, so they can read records and take action where work happens.',
+      '**Human-in-the-loop review for high-stakes decisions** Agents prepare the work and draft the decision, then your team approves anything sensitive before it goes out or changes a record.',
+      '**Monitoring and iteration so agents improve after launch** We log every agent action, review where it struggled or escalated, and refine its instructions and scope as your needs change.',
     ],
   },
 
   stats: [
-    { value: '80%', label: 'less manual coordination time' },
-    { value: '3x', label: 'faster research and prep work' },
-    { value: '24/7', label: 'execution of routine business tasks' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
+    { value: '100%', label: 'Ownership Guaranteed' },
   ],
 
   faqQuestions: [
@@ -120,4 +112,88 @@ export const aiAgents = {
   ],
 
   cta: 'Put AI Agents to Work in Your Business',
+
+  // Page layout for app/solutions/[service]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'AI Agent Development', serviceType: 'AI Agent Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-ai-agents' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'AI Agents',
+              triggerLabel: 'New Business Task',
+              actionLabels: ['Interpret Context', 'Execute Steps', 'Report Outcomes'],
+              metricValue: '1,200',
+              metricLabel: 'business tasks executed end-to-end this week',
+              submetric: '80% less manual coordination',
+              platform: 'AI Agents + Connected Business Systems',
+              accent: '#F97316',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'AI Agents', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Businesses Need AI Agents',
+        props: { title: 'Why Businesses Need AI Agents' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves',
+        props: { title: 'The Problems This Solves' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Real Business Operations',
+        props: { title: 'Built for Real Business Operations' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about AI agents' } },
+      { type: 'RelatedSolutions', props: { title: 'Explore Other Solutions', subtitle: 'More ways we can help you automate' } },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit — 30 minutes, no obligation, and an honest read on where AI agents pay off for your business.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };

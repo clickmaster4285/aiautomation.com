@@ -1,0 +1,225 @@
+// content/Solutions/lead-generation-automation/with-hubspot.ts
+import { SolutionData } from '@/content/type';
+
+export const leadGenerationAutomationWithHubspot: SolutionData = {
+  slug: 'lead-generation-automation/with-hubspot',
+  url: '/solutions/lead-generation-automation/with-hubspot',
+  platform: 'HubSpot',
+  category: 'lead-generation-automation',
+  title: 'Lead Generation Automation with HubSpot',
+  primaryKeyword: 'hubspot lead generation system',
+  titleTag: 'HubSpot Lead Generation System Builds | Clickmasters',
+  metaDescription: 'A HubSpot lead generation system that captures, qualifies and routes new demand in your existing portal, with AI on judgment steps. Book a free audit.',
+  keywordEvidence: '5 matching keywords, ~700 bucketed volume',
+  schema: 'Service, FAQPage, BreadcrumbList',
+  internalLinks: [
+    'Lead Generation Automation service page',
+    'HubSpot platform page',
+    'AI Automation Agency pillar',
+  ],
+  heroHeading: 'Automated HubSpot Lead Generation Systems',
+  heroSubheading: 'A HubSpot lead generation system that captures, qualifies, and routes leads with AI, extending HubSpot workflows and connecting them to your wider stack.',
+  heroBadge: 'Lead Generation × HubSpot',
+  description: 'Clickmasters builds lead generation system on HubSpot. HubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack, and it\'s an excellent fit for teams already running sales and marketing on HubSpot. Combined with lead generation system, which captures, qualifies, and works leads automatically — instant response the moment interest shows, conversational qualification, enrichment and scoring, and routing that puts sales-ready leads in front of the right person with context. Speed and consistency are what convert leads, and both are exactly what automation delivers, the result is automation that runs on a platform matched to the job.',
+  sections: {
+    'Why HubSpot for Lead Generation Automation': 'HubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack. We build inside your existing instance, transparent, documented, yours. For lead generation system specifically, that means your automation gets the platform strengths, while we handle the design, build, and reliability engineering that separates a production system from a fragile prototype.\n\nWe\'re platform-honest: if your volume, data requirements, or complexity actually point to a different platform, we\'ll say so. HubSpot is the right home for this work when it matches teams already running sales and marketing on HubSpot, and when it does, this combination is hard to beat.\n\nOnce a lead lands in HubSpot, the same build can hand off to the rest of your operation: lead scoring that updates deal priority, CRM automation that keeps owners and lifecycle stages accurate, and email sequences that pick up where qualification leaves off. That keeps marketing, sales, and service working from one record instead of patching gaps by hand.',
+    'What a Production Build Includes': 'The gap between a prototype and a system you can rely on is everything that happens when things go wrong. Every lead generation system build we ship on HubSpot includes error handling on every step (failures caught and retried or escalated, never silent), monitoring and alerting (you know the system is running without checking), documentation (your team can understand and modify the build), and staged rollout (the automation proves itself on real cases with human oversight before it runs unattended).\n\nThis is the difference between automation that saves hours and automation that quietly breaks and costs trust. Most of the rescue projects we take on are builds that skipped these steps.',
+    'Typical Workflows on HubSpot': 'The lead generation system workflows we most often build on HubSpot follow a consistent pattern: an event triggers (a form fill, an inbound message, a record change, a schedule), the workflow gathers context from your systems, AI handles the judgment step where one is needed — classification, extraction, drafting, and the result is executed and logged. HubSpot\'s strengths make it particularly suited to teams already running sales and marketing on HubSpot, and the platform\'s ecosystem means your existing tools almost certainly connect without custom code.',
+  },
+  features: [
+    {
+      icon: 'Zap',
+      title: 'Instant Lead Response',
+      description: 'Every inquiry engaged within seconds, at any hour, built on HubSpot.',
+    },
+    {
+      icon: 'MessageSquare',
+      title: 'Conversational Qualification',
+      description: 'Needs, fit, and timeline established naturally, built on HubSpot.',
+    },
+    {
+      icon: 'Brain',
+      title: 'Enrichment & Scoring',
+      description: 'Leads researched and prioritized automatically, built on HubSpot.',
+    },
+    {
+      icon: 'TrendingUp',
+      title: 'Nurture for the Not-Yet-Ready',
+      description: 'Long-tail sequences that convert over months, built on HubSpot.',
+    },
+    {
+      icon: 'GitBranch',
+      title: 'Routing with Context',
+      description: 'Sales-ready leads delivered to the right person, briefed, built on HubSpot.',
+    },
+    {
+      icon: 'BrainCircuit',
+      title: 'Production-Ready',
+      description: 'Staged rollout, documentation, and reliability engineering, built for scale on HubSpot.',
+    },
+  ],
+  processSteps: [
+    {
+      number: '01',
+      title: 'Free Audit',
+      description: 'We map your workflow and confirm HubSpot is genuinely the right platform for your lead generation needs.',
+    },
+    {
+      number: '02',
+      title: 'Build in Sprints',
+      description: 'Constructed against your real tools and data, with error handling and monitoring built in.',
+    },
+    {
+      number: '03',
+      title: 'Documented Hand-off',
+      description: 'You own the build; nothing is a black box. Your team can understand and modify it.',
+    },
+    {
+      number: '04',
+      title: 'Optimize',
+      description: 'We monitor, refine, and expand as the system proves itself on real leads.',
+    },
+  ],
+  stats: [
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
+    { value: '100%', label: 'Ownership Guaranteed' },
+  ],
+  bestFor: [
+    'Teams already running sales and marketing on HubSpot',
+    'Businesses wanting to extend HubSpot\'s native lead generation capabilities',
+    'AI-powered lead scoring and qualification',
+    'Cross-system lead routing and enrichment',
+  ],
+  considerAlternatives: [
+    'Organizations without HubSpot as their primary CRM',
+    'Teams needing lightweight lead generation without HubSpot complexity',
+    'Budget-conscious projects',
+    'Self-hosted lead management preferences',
+  ],
+  relatedSolutions: [
+    {
+      title: 'Lead Generation Automation with Salesforce',
+      slug: 'lead-generation-automation/with-salesforce',
+      description: 'Enterprise-grade lead generation on Salesforce.',
+    },
+    {
+      title: 'Marketing Automation with HubSpot',
+      slug: 'marketing-automation/with-hubspot',
+      description: 'Marketing automation built on HubSpot.',
+    },
+    {
+      title: 'Sales Automation with HubSpot',
+      slug: 'sales-automation/with-hubspot',
+      description: 'Sales automation built on HubSpot.',
+    },
+  ],
+  faqQuestions: [
+    {
+      question: 'Can HubSpot handle lead generation system?',
+      answer: 'Yes — HubSpot is a leading CRM and marketing platform whose real power emerges when its workflows are extended with AI and connected to your wider stack, and it\'s well suited to teams already running sales and marketing on HubSpot. The build quality determines reliability, which is where an experienced partner matters.',
+    },
+    {
+      question: 'What does this cost to run?',
+      answer: 'We build inside your existing instance, transparent, documented, yours. We design builds to be efficient on the platform\'s pricing model, and we\'ll tell you honestly if your volume points to a cheaper platform.',
+    },
+    {
+      question: 'Do we own the build?',
+      answer: 'Completely. Everything is documented and transparent, in your own accounts, with no dependency on us for changes.',
+    },
+    {
+      question: 'Lead generation automation captures and responds to leads instantly and routes sales-ready prospects to the right person — is that what this does?',
+      answer: 'Lead generation automation captures and responds to leads instantly, qualifies them conversationally, enriches and scores them, and routes sales-ready prospects to the right person — while nurturing the rest until they\'re ready. Built on HubSpot, it runs with the platform\'s strengths: teams already running sales and marketing on HubSpot.',
+    },
+  ],
+  cta: 'Want lead generation system running on HubSpot?',
+  bookingLink: '/free-automation-audit',
+
+  // Page layout for app/solutions/[service]/[slug]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'Lead Generation Automation with HubSpot', serviceType: 'Lead Generation Automation' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: '/free-automation-audit' },
+          secondaryCta: { text: 'Learn More', href: '#why-hubspot' },
+          visual: { $element: 'ChatbotHeroMockup', props: { platform: 'hubspot' } },
+          stats: {
+            $ref: 'stats',
+            slice: [0, 3],
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'Lead generation automation', href: '/solutions/lead-generation-automation' },
+            { label: 'With hubspot', href: '/solutions/lead-generation-automation/with-hubspot' },
+          ],
+        },
+      },
+      {
+        type: 'ContentSection',
+        section: 'Why HubSpot for Lead Generation Automation',
+        props: {
+          id: 'why-hubspot',
+          title: 'Why HubSpot for Lead Generation Automation',
+          stats: [
+            { value: 'Free', label: 'Automation Audit' },
+            { value: '30 min', label: 'Audit Call, No Obligation' },
+            { value: '1st', label: 'Highest-Return Workflow First' },
+            { value: '100%', label: 'Ownership Guaranteed' },
+          ],
+          cta: { text: 'See Our Process', href: '#how-we-work' },
+          background: 'muted',
+        },
+      },
+      { type: 'FeatureGrid', props: {
+  title: 'What We Build',
+  subtitle: 'Comprehensive lead generation solutions on HubSpot',
+  eyebrow: 'Capabilities',
+  columns: 3,
+  background: 'dark',
+} },
+      {
+        type: 'ContentSection',
+        section: 'What a Production Build Includes',
+        props: {
+          id: 'production-build',
+          title: 'What a Production Build Includes',
+          cta: { text: 'See Our Process', href: '#how-we-work' },
+          background: 'muted',
+        },
+      },
+      {
+        type: 'ContentSection',
+        section: 'Typical Workflows on HubSpot',
+        props: { id: 'workflows', title: 'Typical Workflows on HubSpot' },
+      },
+      { type: 'ProcessSteps', props: {
+  title: 'How We Work',
+  subtitle: 'Our proven methodology for building lead generation on HubSpot',
+  background: 'muted',
+} },
+      { type: 'PlatformComparison', props: { title: 'Is HubSpot Right for You?', subtitle: 'We\'ll tell you honestly if HubSpot is the right platform for your lead generation needs.' } },
+      { type: 'StatsSection', props: { title: 'Why Choose Clickmasters for HubSpot Lead Generation' } },
+      { type: 'FAQSection', props: {
+  title: 'HubSpot Lead Generation System FAQs',
+  subtitle: 'Common questions about lead generation on HubSpot',
+  eyebrow: 'FAQ',
+} },
+      { type: 'RelatedSolutions' },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit. We\'ll scope the build and confirm the platform fit honestly.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'gradient',
+        },
+      },
+    ],
+  },
+};
+
+export default leadGenerationAutomationWithHubspot;

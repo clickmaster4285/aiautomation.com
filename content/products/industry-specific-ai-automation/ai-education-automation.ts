@@ -31,7 +31,7 @@ export const aiEducationAutomationSeo: HubSeo = {
   path: AI_EDUCATION_AUTOMATION_PATH,
   title: 'AI Education Automation for School Admin | Clickmasters',
   description:
-    'AI education automation for schools, colleges and training providers: admissions, enrollment, enquiries and reporting, with staff approving. Book a free audit.',
+    'AI education automation for schools, colleges and training providers: admissions, enrollment, enquiries and reporting, with staff approving each step.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'Industry-Specific AI Automation', path: '/products/industry-specific-ai-automation' },
@@ -78,7 +78,7 @@ export const aiEducationAutomation: ProductPageContent = {
 
   hero: {
     badge: 'AI Education Automation',
-    heading: 'AI Education Automation for School, College and Training Administration',
+    heading: 'AI Education Automation for Schools, Colleges and Training',
     accentWords: 3,
     subheading:
       'Admissions teams, registrars and school offices spend much of their week answering the same questions, chasing the same documents and copying the same details between systems. AI education automation takes on that administrative load: enquiries, applications, enrollment follow-up, scheduling, reminders and reporting. Clickmasters builds these workflows inside your existing tools, and staff approve anything that affects a student or a decision.',

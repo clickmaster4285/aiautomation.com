@@ -1,14 +1,14 @@
 // content/Solutions/lead-generation-automation.ts
 export const leadGenerationAutomation = {
   url: '/solutions/lead-generation-automation',
-  titleTag: 'Lead Generation Automation That Captures, | Clickmasters',
-  metaDescription: 'Operations teams use Clickmasters Lead Generation Automation That Captures, Qualifies, and Routes Every Lead to remove repetitive work from the current.',
+  titleTag: 'Lead Generation Automation Solutions | Clickmasters',
+  metaDescription: 'Lead generation automation that captures, qualifies, enriches and routes every lead into your CRM, so sales reaches qualified leads without delay.',
   primaryKeyword: 'lead generation automation',
   bookingLink: '/free-automation-audit',
 
   heroBadge: 'Lead Generation Automation',
   heroHeading:
-    'Lead Generation Automation That Captures, Qualifies, and Routes Every Lead',
+    'Lead Generation Automation That Captures, Qualifies and Routes Leads',
   heroSubheading:
     'Lead generation automation from Clickmasters removes the manual work between a lead coming in and a sales conversation starting. We automate lead capture, qualification, enrichment, routing, and CRM updates — so every qualified lead reaches the right person without delay.',
 
@@ -18,20 +18,20 @@ export const leadGenerationAutomation = {
       'Lead generation automation closes that gap. Leads are captured from every channel, qualified automatically based on your rules, enriched with data, and routed to the right salesperson — often within seconds. Nothing sits unanswered. Nothing gets lost.',
     ],
     'The Problems This Solves': [
-      'Stop losing leads to slow response times and manual triage',
-      'Consolidate leads from multiple channels into one qualified stream',
-      'Enrich leads automatically with company and contact data',
-      'Route leads to the right salesperson based on clear criteria',
-      'Keep CRM records accurate and up to date without manual entry',
+      '**Stop losing leads to slow response times and manual triage** New inquiries are picked up and acted on the moment they arrive, so prospects hear back while their interest is still high.',
+      '**Consolidate leads from multiple channels into one qualified stream** We pull form fills, ad responses, chat conversations, and inbound emails into a single pipeline your sales team can work from.',
+      '**Enrich leads automatically with company and contact data** Each record is filled in with firmographics, job titles, and other useful details before a rep ever opens it.',
+      '**Route leads to the right salesperson based on clear criteria** Territory, industry, deal size, and availability rules decide ownership, so every prospect lands with the rep best suited to help.',
+      '**Keep CRM records accurate and up to date without manual entry** Contact details, lead status, and activity history are written into your CRM automatically, giving reps a reliable view of every prospect.',
     ],
     'What We Automate': [
-      'Lead capture from forms, landing pages, ads, chat, and inbound email',
-      'Lead qualification based on fit criteria and behavioral signals',
-      'Data enrichment (company details, firmographics) before routing',
-      'Lead assignment to sales team members based on rules',
-      'CRM record creation and updates in real time',
-      'Automated follow-up sequences based on lead status',
-      'Alerts to sales reps when a high-priority lead arrives',
+      '**Lead capture from forms, landing pages, ads, chat, and inbound email** Every inquiry is collected the moment it is submitted and stored in one place, regardless of which channel it came through.',
+      '**Lead qualification based on fit criteria and behavioral signals** We score each prospect against your ideal customer profile and engagement activity, so reps know which conversations to prioritize first.',
+      '**Data enrichment (company details, firmographics) before routing** Records are filled in with industry, size, and location details up front, so assignment rules work from complete information.',
+      '**Lead assignment to sales team members based on rules** Round robin, territory, or account ownership logic hands each prospect to the right rep and notifies them right away.',
+      '**CRM record creation and updates in real time** New contacts, companies, and deals appear in your CRM as soon as a prospect engages, with status changes written back automatically.',
+      '**Automated follow-up sequences based on lead status** Prospects receive timely emails and reminders that match where they are in the funnel, and sequences pause once a rep steps in.',
+      '**Alerts to sales reps when a high-priority lead arrives** Reps get an instant message in email, chat, or their CRM when a strong-fit prospect comes in, so they can reach out first.',
     ],
     'Where to Start: Your First Automation': [
       'Start with the lead source that produces the highest volume or the biggest time waste. For most businesses that is either form-based lead capture or inbound email inquiries.',
@@ -51,18 +51,19 @@ export const leadGenerationAutomation = {
       'Businesses typically see faster response times to inbound leads, higher qualified-lead conversion rates, fewer leads lost to manual triage, and clean CRM data that sales can trust. The return compounds as more lead channels move into the automated pipeline.',
     ],
     'Why Clickmasters': [
-      'Custom automation designed around your actual lead sources and qualification criteria',
-      'Integration with CRM platforms, form tools, ad platforms, and email systems',
-      'Enrichment, scoring, and routing that reflect how your sales team actually works',
-      'Duplicate detection and data quality safeguards',
-      'Ongoing monitoring and iteration so the pipeline improves over time',
+      '**Custom automation designed around your actual lead sources and qualification criteria** We build the pipeline around the channels you already use and the rules your sales team trusts, rather than a generic template.',
+      '**Integration with CRM platforms, form tools, ad platforms, and email systems** We connect HubSpot, Salesforce, Pipedrive, form builders, ad accounts, and inboxes so prospect data moves without exports or uploads.',
+      '**Enrichment, scoring, and routing that reflect how your sales team actually works** Qualification and assignment logic mirrors your territories, roles, and priorities, so reps receive prospects they are equipped to close.',
+      '**Duplicate detection and data quality safeguards** We match incoming records against existing contacts, merge repeats, and flag incomplete entries before they clutter your CRM.',
+      '**Ongoing monitoring and iteration so the pipeline improves over time** We track failed steps and routing gaps after launch, then refine rules as your channels, offers, and sales team change.',
     ],
   },
 
   stats: [
-    { value: '70%', label: 'increase in qualified lead conversion rates' },
-    { value: '<5 min', label: 'average response time to inbound leads' },
-    { value: '100%', label: 'of leads routed to the correct rep' },
+    { value: 'Free', label: 'Automation Audit' },
+    { value: '30 min', label: 'Audit Call, No Obligation' },
+    { value: '1st', label: 'Highest-Return Workflow First' },
+    { value: '100%', label: 'Ownership Guaranteed' },
   ],
 
   faqQuestions: [
@@ -121,4 +122,93 @@ export const leadGenerationAutomation = {
   ],
 
   cta: 'Automate Your Lead Generation Pipeline',
+
+  // Page layout for app/solutions/[service]: section order, titles and page-specific props.
+  page: {
+    schema: { name: 'Lead Generation Automation', serviceType: 'Lead Generation Automation Development' },
+    blocks: [
+      {
+        type: 'HeroSection',
+        props: {
+          primaryCta: { text: 'Book a Free Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'Learn More', href: '#why-lead-generation-automation' },
+          visual: {
+            $element: 'AutomationHeroMockup',
+            props: {
+              industry: 'Leads',
+              triggerLabel: 'New Lead Captured',
+              actionLabels: ['Enrich & Qualify', 'Route to Sales', 'Sync to CRM'],
+              metricValue: '2,200',
+              metricLabel: 'leads generated and qualified automatically each month',
+              submetric: '70% increase in conversion rates',
+              platform: 'Lead Generation Automation + CRM',
+              accent: '#3B82F6',
+            },
+          },
+          breadcrumb: [
+            { label: 'Home', href: '/' },
+            { label: 'Solutions', href: '/solutions' },
+            { label: 'Lead Generation Automation', href: { $ref: 'url' } },
+          ],
+        },
+      },
+      {
+        type: 'WhySection',
+        section: 'Why Businesses Need Lead Generation Automation',
+        props: { title: 'Why Businesses Need Lead Generation Automation' },
+      },
+      {
+        type: 'ProblemsSection',
+        section: 'The Problems This Solves',
+        props: { title: 'The Problems This Solves' },
+      },
+      {
+        type: 'AutomationSection',
+        section: 'What We Automate',
+        props: { title: 'What We Automate' },
+      },
+      {
+        type: 'StartSection',
+        section: 'Where to Start: Your First Automation',
+        props: { title: 'Where to Start: Your First Automation' },
+      },
+      {
+        type: 'ExampleSection',
+        section: 'A Worked Example',
+        props: { title: 'A Worked Example' },
+      },
+      {
+        type: 'BoundariesSection',
+        section: 'What This Is and Isn\'t',
+        props: { title: 'What This Is and Isn\'t' },
+      },
+      {
+        type: 'RealitiesSection',
+        section: 'Built for Real Business Operations',
+        props: { title: 'Built for Real Business Operations' },
+      },
+      {
+        type: 'ReturnSection',
+        section: 'What the Return Looks Like',
+        props: { title: 'What the Return Looks Like' },
+      },
+      {
+        type: 'WhyUsSection',
+        section: 'Why Clickmasters',
+        props: { title: 'Why Clickmasters' },
+      },
+      { type: 'FAQSection', props: { title: 'Frequently Asked Questions', subtitle: 'Common questions about lead generation automation' } },
+      { type: 'RelatedSolutions', props: { title: 'Explore Other Solutions', subtitle: 'More ways we can help you automate' } },
+      {
+        type: 'CTASection',
+        props: {
+          subtitle: 'Book a free automation audit — 30 minutes, no obligation, and an honest read on where lead generation automation pays off for your business.',
+          primaryCta: { text: 'Book a Free Automation Audit', href: { $ref: 'bookingLink' } },
+          secondaryCta: { text: 'View All Solutions', href: '/solutions' },
+          background: 'light',
+          showForm: true,
+        },
+      },
+    ],
+  },
 };

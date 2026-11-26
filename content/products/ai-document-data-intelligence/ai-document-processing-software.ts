@@ -29,7 +29,7 @@ export const aiDocumentProcessingSoftwareSeo: HubSeo = {
   path: AI_DOCUMENT_PROCESSING_SOFTWARE_PATH,
   title: 'AI Document Processing Software & Workflows | Clickmasters',
   description:
-    'AI document processing software built in your tools: documents captured, classified, read, checked, approved, filed and sent to your systems, with human review.',
+    'AI document processing software in your tools: documents captured, classified, read, checked, approved, filed and sent to your systems, with human review.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Document & Data Intelligence', path: '/products/ai-document-data-intelligence' },
@@ -67,7 +67,7 @@ export const aiDocumentProcessingSoftware: ProductPageContent = {
 
   hero: {
     badge: 'AI Document Processing Software',
-    heading: 'AI Document Processing Software That Takes Each Document From Inbox to System',
+    heading: 'AI Document Processing Software, From Inbox to System',
     accentWords: 3,
     subheading:
       'We build document workflows inside the tools you already use. Each document is collected, identified, read, checked, sent for approval where needed, filed and delivered to the system that needs its data. Your team sees only the documents that need a decision.',

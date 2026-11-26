@@ -1,0 +1,195 @@
+{
+  "pages": 28,
+  "failed": [
+    "/products/ai-agents-platforms",
+    "/products/ai-agents-platforms/ai-agent-development",
+    "/products/ai-document-data-intelligence/ai-ocr-software",
+    "/products/ai-finance-accounting/ai-expense-management-software",
+    "/products/ai-marketing-automation",
+    "/products/ai-workflow-business-process-automation/intelligent-process-automation",
+    "/products/general-ai-automation/end-to-end-ai-automation"
+  ],
+  "imgsMissingAlt": [],
+  "imgsEmptyAltVisible": [
+    "/ http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frobot-mascot2.jpg&w=256&q=60 214x214"
+  ],
+  "imgsBroken": [],
+  "imgsOversized": [
+    "/case-studies/ai-receptionist-lead-response-automation http://127.0.0.1:3456/_next/image?url=%2Fcase-study%2Fdashboard.jpeg&w=1920&q=75 natural=1408x768 shown=547x298"
+  ],
+  "multipleMain": [],
+  "h1NotOne": [],
+  "overflow": [],
+  "smallTaps": [
+    {
+      "path": "/",
+      "taps": [
+        "See all platforms → 207x20",
+        "View all work → 166x20",
+        "Explore Real estate → 103x20",
+        "Explore E-commerce and retail  103x20",
+        "Explore Healthcare and clinics 103x20"
+      ]
+    },
+    {
+      "path": "/products/ai-agents-platforms/enterprise-ai-agents",
+      "taps": [
+        "Home 41x15",
+        "AI Agents & Platforms 178x15"
+      ]
+    },
+    {
+      "path": "/products/ai-customer-support/ai-chatbot-software",
+      "taps": [
+        "Home 41x15",
+        "AI Customer Support 167x15"
+      ]
+    },
+    {
+      "path": "/products/ai-document-data-intelligence",
+      "taps": [
+        "Home 41x15"
+      ]
+    },
+    {
+      "path": "/products/ai-document-data-intelligence/ai-contract-analysis",
+      "taps": [
+        "Home 41x15",
+        "AI Document & Data Intelligenc 258x15"
+      ]
+    },
+    {
+      "path": "/products/ai-ecommerce-automation/ai-shopping-assistant",
+      "taps": [
+        "Home 41x15",
+        "AI E-commerce Automation 213x15"
+      ]
+    },
+    {
+      "path": "/products/ai-finance-accounting/ai-bookkeeping-software",
+      "taps": [
+        "Home 41x15",
+        "AI Finance & Accounting 193x15"
+      ]
+    },
+    {
+      "path": "/products/ai-finance-accounting/ai-financial-automation",
+      "taps": [
+        "Home 41x15",
+        "AI Finance & Accounting 193x15"
+      ]
+    },
+    {
+      "path": "/products/ai-hr-recruitment",
+      "taps": [
+        "Home 41x15"
+      ]
+    },
+    {
+      "path": "/products/ai-marketing-automation/ai-campaign-management-software",
+      "taps": [
+        "Home 41x15",
+        "AI Marketing Automation 199x15"
+      ]
+    },
+    {
+      "path": "/products/ai-workflow-business-process-automation/ai-workflow-automation-software",
+      "taps": [
+        "Home 41x15",
+        "AI Workflow & Business Process 359x15"
+      ]
+    },
+    {
+      "path": "/products/ai-workflow-business-process-automation/business-process-automation-software",
+      "taps": [
+        "Home 41x15",
+        "AI Workflow & Business Process 359x15"
+      ]
+    },
+    {
+      "path": "/products/general-ai-automation/ai-process-optimization",
+      "taps": [
+        "Home 41x15",
+        "General AI Automation 182x15"
+      ]
+    },
+    {
+      "path": "/products/general-ai-automation/enterprise-ai-automation-solutions",
+      "taps": [
+        "Home 41x15",
+        "General AI Automation 182x15"
+      ]
+    },
+    {
+      "path": "/products/industry-specific-ai-automation/ai-education-automation",
+      "taps": [
+        "Home 41x15",
+        "Industry-Specific AI Automatio 259x15"
+      ]
+    },
+    {
+      "path": "/products/industry-specific-ai-automation/ai-logistics-automation",
+      "taps": [
+        "Home 41x15",
+        "Industry-Specific AI Automatio 259x15"
+      ]
+    },
+    {
+      "path": "/services/ai-workflow-automation",
+      "taps": [
+        "Automate Your Workflow 266x21"
+      ]
+    },
+    {
+      "path": "/services/business-process-automation",
+      "taps": [
+        "Improve Your Business Processe 331x21"
+      ]
+    }
+  ],
+  "consoleErrors": [
+    {
+      "path": "/products/ai-customer-support/ai-chatbot-software",
+      "errors": [
+        "log: Failed to load resource: net::ERR_NAME_NOT_RESOLVED https://www.googletagmanager.com/gtm.js?id=GTM-5KDWQXP7"
+      ]
+    },
+    {
+      "path": "/products/ai-document-data-intelligence",
+      "errors": [
+        "log: Failed to load resource: net::ERR_INTERNET_DISCONNECTED https://www.googletagmanager.com/gtm.js?id=GTM-5KDWQXP7"
+      ]
+    },
+    {
+      "path": "/products/ai-document-data-intelligence/ai-contract-analysis",
+      "errors": [
+        "log: Failed to load resource: net::ERR_INTERNET_DISCONNECTED https://www.googletagmanager.com/gtm.js?id=GTM-5KDWQXP7"
+      ]
+    },
+    {
+      "path": "/products/ai-ecommerce-automation/ai-shopping-assistant",
+      "errors": [
+        "log: Failed to load resource: net::ERR_NAME_NOT_RESOLVED https://www.googletagmanager.com/gtm.js?id=GTM-5KDWQXP7"
+      ]
+    }
+  ],
+  "lcpOver2500": [],
+  "clsOver01": [],
+  "thirdParty": [
+    "www.googletagmanager.com",
+    "www.clarity.ms",
+    "www.google.com",
+    "scripts.clarity.ms",
+    "g.clarity.ms",
+    "www.google-analytics.com"
+  ],
+  "medians": {
+    "lcp": 1392,
+    "cls": 0,
+    "ttfb": 23,
+    "load": 395,
+    "jsKB": 447,
+    "totalKB": 1045,
+    "requests": 251
+  }
+}

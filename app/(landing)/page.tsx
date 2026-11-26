@@ -16,12 +16,14 @@ import FAQ from "@/components/landingPage/FAQ";
 import CTA from "@/components/landingPage/CTA";
 
 import { homepageData } from "@/content/services/homepage";
+import { withSocialDefaults } from "@/lib/seo";
+import { canonicalUrl } from "@/lib/canonical";
 
 // SEO metadata comes straight from the content file (handover 2.1).
 // No meta keywords tag. Canonical comes from the root layout.
 export function generateMetadata(): Metadata {
   const { meta } = homepageData;
-  return {
+  return withSocialDefaults({
     title: meta.title,
     description: meta.description,
     metadataBase: new URL(meta.siteUrl),
@@ -30,12 +32,12 @@ export function generateMetadata(): Metadata {
       siteName: meta.ogSiteName,
       title: meta.ogTitle,
       description: meta.ogDescription,
-      url: meta.siteUrl,
+      url: canonicalUrl("/"),
     },
     twitter: {
       card: "summary_large_image",
     },
-  };
+  });
 }
 
 // The root layout already renders the single <main> element, so this page uses a <div>.

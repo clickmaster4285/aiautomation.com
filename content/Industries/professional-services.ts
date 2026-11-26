@@ -4,7 +4,7 @@ import { ServiceContent } from '../type';
 export const professionalServices: ServiceContent = {
   slug: 'professional-services',
   title: 'AI Automation for Professional Services | Clickmasters',
-  metaDescription: 'AI automation for professional services covers intake, scheduling, documents, and follow-up, with judgment left to the firm. Start with one workflow.',
+  metaDescription: 'AI automation for professional services firms covers client intake, scheduling, documents and follow-up, with the professional judgment left to you.',
   keywords: 'ai automation for professional services, consulting automation',
   sections: [
     {
@@ -17,8 +17,8 @@ export const professionalServices: ServiceContent = {
         'This page explains where professional-services admin piles up, what we automate, and how it fits the tools you already run.',
       ],
       stats: [
-        { label: 'ADMIN TIME RECLAIMED', value: '10+ hrs/wk' },
-        { label: 'ONBOARDING STEPS', value: 'Tracked' },
+        { label: 'AUTOMATION AUDIT', value: 'Free' },
+        { label: 'OWNERSHIP OF THE BUILD', value: '100%' },
       ],
       ctas: [
         { text: 'Book a Free Audit', link: '/free-automation-audit', primary: true },

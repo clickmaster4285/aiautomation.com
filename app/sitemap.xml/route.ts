@@ -2,6 +2,10 @@ import { getStaticPages, getServices, getSolutions, getIndustries, getBlogPosts,
 
 const siteUrl = "https://clickmastersaiautomation.com";
 
+// Generated once at build time: the URL list only changes with a deploy, so lastmod is the build time
+// (not the request time, which told crawlers every URL changed on every fetch).
+export const dynamic = 'force-static';
+
 export async function GET() {
   const lastModified = new Date().toISOString();
   

@@ -4,17 +4,17 @@ import { ServiceContent } from '../type';
 
 export const hubspotAutomationService: ServiceContent = {
   slug: 'hubspot-automation-services',
-  title: 'HubSpot Automation Services for Sales Teams | Clickmasters',
+  title: 'HubSpot Automation Services & Consultants | Clickmasters',
   metaDescription:
-    'Clickmasters builds HubSpot automation for lead routing, follow-up, and CRM updates so the sales team spends time on conversations. Book a free audit.',
+    'HubSpot automation services from Clickmasters: HubSpot consultants who automate CRM, marketing, sales, lead routing and follow-up. Book a free audit.',
   keywords:
-    'hubspot automation services, hubspot automation experts, hubspot consultant, hubspot workflow automation, hubspot CRM automation, hubspot marketing automation, hubspot automation USA',
+    'hubspot automation services, hubspot automation consultant, hubspot experts, hubspot automation agency, hubspot workflow setup, hubspot CRM automation services, hubspot automation USA',
 
   sections: [
     // ========== HERO ==========
     {
       type: 'hero',
-      heading: 'Grow Faster With HubSpot Automation Services',
+      heading: 'HubSpot Automation Services That Help Your Team Grow Faster',
       subheading:
         'Our HubSpot automation services help U.S. businesses automate CRM, marketing, sales, and customer processes.',
       content: [
@@ -41,7 +41,7 @@ export const hubspotAutomationService: ServiceContent = {
       type: 'text',
       heading:
         'HubSpot Workflow Automation for Marketing, Sales, and Customer Success',
-      image: '/images/rob.png',
+      image: { src: '/images/rob.png', alt: 'Friendly white robot with a smiling digital face' },
       content: [
         'HubSpot becomes more valuable when customer information actively drives your sales and marketing processes. Our HubSpot workflow automation services help businesses turn CRM activity into structured actions.',
         'We review your lifecycle stages, pipelines, CRM properties, ownership rules, and customer journey before creating automation. This prevents disconnected workflows from becoming difficult to manage. The result is a more organized HubSpot environment.',

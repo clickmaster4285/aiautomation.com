@@ -15,11 +15,11 @@ type WhyChooseUsData = {
 };
 
 // Why Clickmasters (handover 4.12)
-export default function WhyChooseUs({ data, marker }: { data: WhyChooseUsData; marker?: string }) {
+export default function WhyChooseUs({ data, marker, id = 'why-us' }: { data: WhyChooseUsData; marker?: string; id?: string }) {
   const { head, tail } = splitHeading(data.heading);
 
   return (
-    <section id="why-us" className="bg-paper py-12 md:py-24">
+    <section id={id} className="bg-paper py-12 md:py-24">
       <div className="mx-auto max-w-[84vw] px-6">
         <SectionLabel label={data.label} marker={marker} />
 

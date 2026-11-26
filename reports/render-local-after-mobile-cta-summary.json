@@ -1,0 +1,45 @@
+{
+  "pages": 4,
+  "failed": [],
+  "imgsMissingAlt": [],
+  "imgsEmptyAltVisible": [],
+  "imgsBroken": [],
+  "imgsOversized": [],
+  "multipleMain": [],
+  "h1NotOne": [],
+  "overflow": [],
+  "smallTaps": [],
+  "consoleErrors": [],
+  "lcpOver2500": [
+    {
+      "path": "/industries/ai-automation-for-ecommerce",
+      "lcp": 2520,
+      "el": "H1 AI Automation forE-commerce"
+    },
+    {
+      "path": "/platforms/hubspot-automation-services",
+      "lcp": 2740,
+      "el": "P Our HubSpot automation services help U.S. businesses automat"
+    }
+  ],
+  "clsOver01": [],
+  "thirdParty": [
+    "www.googletagmanager.com",
+    "www.clarity.ms",
+    "www.google.com",
+    "scripts.clarity.ms",
+    "e.clarity.ms",
+    "www.google-analytics.com",
+    "ad.doubleclick.net",
+    "c.clarity.ms"
+  ],
+  "medians": {
+    "lcp": 2520,
+    "cls": 0,
+    "ttfb": 153,
+    "load": 4198,
+    "jsKB": 304,
+    "totalKB": 625,
+    "requests": 73
+  }
+}

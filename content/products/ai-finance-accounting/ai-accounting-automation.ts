@@ -32,7 +32,7 @@ export const aiAccountingAutomationSeo: HubSeo = {
   path: AI_ACCOUNTING_AUTOMATION_PATH,
   title: 'AI Accounting Automation for Coding and Close | Clickmasters',
   description:
-    'AI accounting automation for transaction coding, reconciliation matching, journal-entry prep and month-end close checklists, all reviewed by your accountants.',
+    'AI accounting automation for transaction coding, reconciliation matching, journal-entry prep and month-end close checklists, reviewed by your accountants.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Finance & Accounting', path: '/products/ai-finance-accounting' },
@@ -70,7 +70,7 @@ export const aiAccountingAutomation: ProductPageContent = {
 
   hero: {
     badge: 'AI Accounting Automation',
-    heading: 'AI Accounting Automation for Coding, Reconciliation and a Steadier Month-End Close',
+    heading: 'AI Accounting Automation for Coding, Reconciliation and Close',
     accentWords: 4,
     subheading:
       'We automate the repeatable work of the accounting cycle: suggesting account codes for transactions, matching payments to invoices, preparing journal entries for review and running the close checklist. It is built in your own accounting system and spreadsheets, and nothing is posted until a person approves it.',

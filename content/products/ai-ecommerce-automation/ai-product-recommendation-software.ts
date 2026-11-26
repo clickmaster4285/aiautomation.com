@@ -33,7 +33,7 @@ export const aiProductRecommendationSoftwareSeo: HubSeo = {
   path: AI_PRODUCT_RECOMMENDATION_SOFTWARE_PATH,
   title: 'AI Product Recommendation Software for Stores | Clickmasters',
   description:
-    'AI product recommendation software explained: related products, bought-together and similar items, plus email and assistant suggestions built from your catalog.',
+    'AI product recommendation software explained: related, bought-together and similar items, plus email and assistant suggestions built from your catalog.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI E-commerce Automation', path: '/products/ai-ecommerce-automation' },
@@ -70,7 +70,7 @@ export const aiProductRecommendationSoftware: ProductPageContent = {
 
   hero: {
     badge: 'AI Product Recommendation Software',
-    heading: 'AI Product Recommendation Software That Helps Customers Find the Right Next Product',
+    heading: 'AI Product Recommendation Software for the Right Next Product',
     accentWords: 3,
     subheading:
       'We design recommendation workflows around your own catalog and order data: related items on product pages, sensible add-ons in the cart, follow-up suggestions in post-purchase emails and answers from an on-site assistant. Built with your store’s own features, the apps you already use and AI models, not a black box we rent you.',

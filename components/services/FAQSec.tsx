@@ -52,14 +52,14 @@ export default function FAQSec({ section }: FAQSecProps) {
 
             <div className="mt-7 flex flex-wrap gap-3">
               <a
-                href="#contact"
+                href="/free-automation-audit"
                 className="inline-flex items-center gap-2 bg-foreground hover:bg-brand text-background font-medium px-6 py-3 rounded-lg transition-all duration-200 text-sm"
               >
                 <Phone className="w-4 h-4" />
                 Book a Call
               </a>
               <a
-                href="#contact"
+                href="/contact"
                 className="inline-flex items-center gap-2 border border-border hover:border-brand/40 text-foreground font-medium px-6 py-3 rounded-lg transition-all duration-200 text-sm"
               >
                 <MessageCircle className="w-4 h-4 text-brand" />

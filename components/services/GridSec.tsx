@@ -34,7 +34,7 @@ export default function GridSec({ section }: { section: Section }) {
   const { head, tail } = splitHeading(section.heading || '', 1);
 
   return (
-    <section id="grid" className="bg-paper py-12 md:py-24">
+    <section className="bg-paper py-12 md:py-24">
       <div className="mx-auto max-w-[90vw] md:max-w-[84vw] px-4 md:px-6">
      
         {/* Title */}

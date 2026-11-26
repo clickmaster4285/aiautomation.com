@@ -4,7 +4,7 @@ import { ServiceContent } from '../type';
 export const lawFirms: ServiceContent = {
   slug: 'law-firms',
   title: 'AI Automation Built for Law Firms | Clickmasters AI',
-  metaDescription: 'AI automation for law firms covers intake, document routing, follow-up, and scheduling while attorneys keep the legal judgment. Ask the team today.',
+  metaDescription: 'AI automation for law firms covers client intake, document routing, follow-up and scheduling, while attorneys keep the legal judgment. Book a free audit.',
   keywords: 'ai automation for law firms, legal automation',
   sections: [
     // ========== HERO ==========
@@ -18,8 +18,8 @@ export const lawFirms: ServiceContent = {
         'This page explains where law firms lose time to administration, what we automate, and how we keep the boundary between automation and legal judgment clear.',
       ],
       stats: [
-        { label: 'INTAKE TIME SAVED', value: '60%+' },
-        { label: 'DOCUMENT DRAFT TIME', value: '70%+' },
+        { label: 'AUTOMATION AUDIT', value: 'Free' },
+        { label: 'OWNERSHIP OF THE BUILD', value: '100%' },
       ],
       ctas: [
         { text: 'Book a Free Audit', link: '/free-automation-audit', primary: true },

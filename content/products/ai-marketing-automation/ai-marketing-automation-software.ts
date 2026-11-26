@@ -60,7 +60,7 @@ export const aiMarketingAutomationSoftware: ProductPageContent = {
 
   hero: {
     badge: 'AI Marketing Automation Software',
-    heading: 'AI Marketing Automation Software Built Into the Tools You Already Pay For',
+    heading: 'AI Marketing Automation Software Built Into Your Existing Tools',
     accentWords: 7,
     subheading:
       'Instead of adding another platform, we build AI marketing automation software on top of your CRM, email tools and website. Workflows connect them, AI drafts the content your team approves and reports update on their own.',

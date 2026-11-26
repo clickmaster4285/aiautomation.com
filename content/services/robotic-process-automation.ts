@@ -4,7 +4,7 @@ import { ServiceContent } from '../type';
 export const roboticProcessAutomation: ServiceContent = {
   slug: 'robotic-process-automation',
   title: 'Robotic Process Automation Services | Clickmasters AI',
-  metaDescription: 'Clickmasters builds robotic process automation for stable, rules-based work that should not need a person. Book a free audit. Start with one workflow.',
+  metaDescription: 'Robotic process automation (RPA) services for stable, rules-based digital tasks, including legacy systems and ERPs. Start with one workflow.',
   keywords: 'robotic process automation services, rpa services company, rpa consulting, custom rpa solutions, rpa development, rpa integration',
   sections: [
     // ========== HERO ==========

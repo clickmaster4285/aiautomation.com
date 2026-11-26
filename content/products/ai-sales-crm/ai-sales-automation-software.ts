@@ -69,7 +69,7 @@ export const internalLinks = [
 export const aiSalesAutomationSoftware: ProductPageContent = {
   hero: {
     badge: 'AI Sales Automation',
-    heading: 'AI Sales Automation Software That Runs the Busywork Between Conversations',
+    heading: 'AI Sales Automation Software for the Busywork Between Calls',
     accentWords: 4,
     subheading:
       'AI sales automation software from Clickmasters takes over the repetitive steps of selling, from logging an inquiry to booking the meeting, drafting the proposal and updating the deal. We build it inside the CRM and inbox your team already uses.',

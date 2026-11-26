@@ -5,6 +5,13 @@ import { HubJsonLd } from '@/components/seo/HubJsonLd';
 import { hubSeo } from '@/lib/hub-seo';
 import { motion, Variants } from 'framer-motion';
 import { ArrowRight, CheckCircle2, Building2, Banknote, Heart, Scale, ShoppingBag, Cloud, Briefcase, BarChart3, Users, Shield, Truck, Building, GraduationCap, Home, Utensils, Plane, Factory, Gavel, Stethoscope } from 'lucide-react';
+import ProductLeadForm from '@/components/products/ProductLeadForm';
+import Marquee from '@/components/landingPage/Marquee';
+import HeroBreadcrumb from '@/components/shared/HeroBreadcrumb';
+import HeroCta from '@/components/shared/HeroCta';
+
+const heroDescription =
+  "Explore AI automation solutions for healthcare, finance and accounting, law firms, e-commerce, SaaS, real estate, and professional services. Automate intake, scheduling, documents, customer support, reporting, and routine workflows with systems designed around your industry's tools, processes, and compliance needs.";
 
 const industries = [
   {
@@ -90,9 +97,6 @@ const industries = [
   // },
 ];
 
-const stats = [
-  { value: String(industries.length), label: 'Industry pages' },
-];
 
 const howItWorks = [
   {
@@ -134,110 +138,52 @@ const cardVariants: Variants = {
 
 export default function IndustriesClient() {
   return (
-    <div className="bg-white text-gray-900 overflow-x-hidden">
+    <div className="overflow-x-clip bg-paper text-ink">
       <HubJsonLd hub={hubSeo.industries} />
-      {/* ── HERO ── */}
+      {/* ── HERO: hero + marquee fill the first screen, marquee on its bottom edge (as on /) ── */}
+      <div className="flex min-h-[calc(100svh-4rem)] flex-col">
       <motion.section
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
         variants={fadeUp}
-        className="relative pt-32 pb-24 overflow-hidden bg-black"
+        className="relative isolate flex flex-1 items-center overflow-hidden bg-paper py-12 md:py-10"
       >
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:56px_56px]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_60%_at_100%_50%,rgba(249,115,22,0.12),transparent)]" />
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-dot-pattern opacity-30" />
 
-        <div className="relative max-w-[84vw] px-6 mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="relative mx-auto w-full max-w-[84vw] px-6">
+          <HeroBreadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Industries', href: '/industries' }]} />
+          <div className="grid w-full grid-cols-1 items-center gap-10 md:grid-cols-[1.15fr_1fr] lg:gap-16">
             {/* ── LEFT COLUMN: Text ── */}
             <div>
-              <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full border border-orange-800/60 bg-orange-950/30">
-                <span className="w-1.5 h-1.5 rounded-full bg-brand" />
-                <span className="eyebrow text-brand text-[11px]">Industries</span>
+              <div className="eyebrow mb-5 inline-flex items-center gap-2 border border-brand px-3 py-1 text-xs text-brand md:mb-7 md:text-sm">
+                <span>Industries</span>
               </div>
 
-              <h1 className="display text-5xl md:text-6xl lg:text-7xl text-white mb-6 leading-[0.95]">
-                Industry-specific<br />
-                <span className="display-italic text-brand">AI automation.</span>
+              <h1 className="display mb-5 max-w-4xl text-4xl leading-[1.05] sm:text-5xl md:mb-7 md:text-6xl lg:text-7xl">
+                AI Automation for <span className="display-italic text-brand">Every Industry</span>
               </h1>
-              <p className="text-lg md:text-xl text-gray-300 max-w-2xl leading-relaxed mb-10">
-                Every industry has its own unique challenges, workflows, and compliance requirements. We build tailored automation solutions designed specifically for how your industry actually operates—so you can work smarter, not harder.
+              <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground md:mt-7 md:text-xl lg:text-2xl">
+                {heroDescription}
               </p>
-              <div className="flex flex-wrap items-center gap-4">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2 bg-brand hover:bg-black text-white px-8 py-4 rounded-full font-semibold text-sm transition-colors shadow-lg shadow-brand/30 hover:shadow-black/30"
-                >
-                  Explore your industry <ArrowRight className="h-4 w-4" />
-                </Link>
-              </div>
+              <HeroCta />
             </div>
 
-            {/* ── RIGHT COLUMN: Image ── */}
+            {/* ── RIGHT COLUMN: Audit CTA ── */}
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
-              className="flex justify-center lg:justify-end"
+              className="flex md:justify-end"
             >
-              <div className="relative w-full max-w-5xl">
-                <div className="absolute -inset-8 rounded-3xl blur-3xl opacity-70"
-                  style={{ background: 'radial-gradient(circle, rgba(249,115,22,0.35) 0%, rgba(249,115,22,0) 70%)' }} />
-                <div className="absolute -inset-4 rounded-2xl blur-2xl opacity-50"
-                  style={{ background: 'radial-gradient(circle, rgba(249,115,22,0.2) 0%, transparent 70%)' }} />
-
-                <motion.img
-                  src="/images/mini.png"
-                  alt="Industries illustration"
-                  className="w-full h-auto rounded-2xl shadow-2xl shadow-brand/10 object-cover"
-                  style={{
-                    maskImage: 'linear-gradient(to left, transparent 0%, black 25%, black 100%)',
-                    WebkitMaskImage: 'linear-gradient(to left, transparent 0%, black 25%, black 100%)',
-                  }}
-                  animate={{ y: [0, -12, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                    const parent = target.parentElement;
-                    if (parent) {
-                      const fallback = document.createElement('div');
-                      fallback.className = 'w-full aspect-[4/3] flex items-center justify-center text-5xl font-black text-brand/30';
-                      fallback.textContent = '🏭';
-                      parent.appendChild(fallback);
-                    }
-                  }}
-                />
-              </div>
+              <ProductLeadForm product="AI automation by industry" variant="hero" id="get-started" />
             </motion.div>
           </div>
         </div>
       </motion.section>
 
-      {/* ── STATS ── */}
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeUp}
-        className="border-y border-gray-100 bg-gray-50"
-      >
-        <div className="max-w-[84vw] px-6 mx-auto py-10">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {stats.map((s, i) => (
-              <motion.div 
-                key={i} 
-                variants={fadeUp} 
-                custom={i} 
-                className="flex flex-col items-center gap-1"
-              >
-                <span className="text-4xl font-bold text-brand font-sans">{s.value}</span>
-                <span className="text-xs text-gray-500 uppercase tracking-widest font-medium">{s.label}</span>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </motion.section>
+        <Marquee items={industries.map((i) => i.title)} />
+      </div>
 
       {/* ── INDUSTRIES GRID ── */}
       <motion.section
@@ -245,51 +191,58 @@ export default function IndustriesClient() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
         variants={staggerContainer}
-        className="py-24 bg-white"
+        className="bg-paper py-16 md:py-24"
       >
         <div className="max-w-[84vw] px-6 mx-auto">
-          <motion.div variants={fadeUp} className="mb-14">
-            <p className="eyebrow text-brand text-[11px] mb-3">By Industry</p>
-            <h2 className="display text-4xl md:text-5xl text-gray-900">
-              Choose your industry
-            </h2>
-            <p className="text-lg text-gray-500 max-w-2xl mt-4">
-              We build AI automation tailored to how your industry actually operates—from compliance to unique workflows.
+          <motion.div variants={fadeUp} className="mb-8 flex flex-col gap-6 md:mb-10 md:grid md:grid-cols-2 md:gap-8">
+            <div>
+              <p className="eyebrow mb-3 text-xs text-brand md:text-sm">By industry</p>
+              <h2 className="display text-4xl sm:text-5xl md:text-6xl">
+                Choose your <span className="display-italic text-brand">industry</span>
+              </h2>
+            </div>
+            <p className="text-base leading-relaxed text-muted-foreground md:self-end md:text-right md:text-lg">
+              AI automation built around how your industry actually operates, from compliance rules to the
+              workflows that make your business different.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid gap-px border border-border bg-border md:grid-cols-2 lg:grid-cols-3">
             {industries.map((ind, i) => {
               const Icon = ind.icon;
               return (
-                <motion.div key={i} variants={cardVariants}>
+                <motion.div key={ind.slug} variants={cardVariants} className="h-full">
                   <Link
                     href={`/industries/${ind.slug}`}
-                    className="group relative flex flex-col p-7 border border-gray-200 rounded-2xl hover:border-brand/40 hover:shadow-lg hover:shadow-orange-50 transition-all duration-300 bg-white overflow-hidden h-full"
+                    className="group flex h-full flex-col bg-paper p-6 transition-colors duration-300 hover:bg-ink hover:text-white md:p-8"
                   >
-                    <div className={`absolute inset-0 bg-gradient-to-br ${ind.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
-
-                    <div className="relative">
-                      <div className="w-11 h-11 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center mb-5 group-hover:bg-brand group-hover:border-brand transition-colors">
-                        <Icon className="h-5 w-5 text-brand group-hover:text-white transition-colors" />
-                      </div>
-
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-brand transition-colors">
-                        {ind.title}
-                      </h3>
-                      <p className="text-sm text-gray-500 leading-relaxed mb-5 flex-1">
-                        {ind.description}
-                      </p>
-
-                      <ul className="space-y-1.5">
-                        {ind.outcomes.map((o, j) => (
-                          <li key={j} className="flex items-center gap-2 text-xs text-gray-600">
-                            <CheckCircle2 className="h-3.5 w-3.5 text-brand flex-shrink-0" />
-                            {o}
-                          </li>
-                        ))}
-                      </ul>
+                    <div className="mb-6 flex items-start justify-between">
+                      <span className="flex h-11 w-11 items-center justify-center border border-brand/30 bg-brand/10 transition-colors duration-300 group-hover:border-brand group-hover:bg-brand">
+                        <Icon className="h-5 w-5 text-brand transition-colors duration-300 group-hover:text-white" aria-hidden="true" />
+                      </span>
+                      <span className="eyebrow text-xs text-muted-foreground transition-colors duration-300 group-hover:text-white/50">
+                        {String(i + 1).padStart(2, '0')}
+                      </span>
                     </div>
+
+                    <h3 className="display mb-3 text-2xl md:text-3xl">{ind.title}</h3>
+                    <p className="mb-6 text-sm leading-relaxed text-muted-foreground transition-colors duration-300 group-hover:text-white/70 md:text-base">
+                      {ind.description}
+                    </p>
+
+                    <ul className="mt-auto divide-y divide-border border-t border-border transition-colors duration-300 group-hover:divide-white/10 group-hover:border-white/10">
+                      {ind.outcomes.map((o) => (
+                        <li key={o} className="flex items-center gap-2.5 py-2.5 text-sm text-ink transition-colors duration-300 group-hover:text-white/80">
+                          <CheckCircle2 className="h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
+                          {o}
+                        </li>
+                      ))}
+                    </ul>
+
+                    <span className="eyebrow mt-6 inline-flex items-center gap-2 text-xs text-muted-foreground transition-colors duration-300 group-hover:text-brand md:text-sm">
+                      Explore {ind.title}
+                      <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
+                    </span>
                   </Link>
                 </motion.div>
               );
@@ -304,46 +257,32 @@ export default function IndustriesClient() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
         variants={staggerContainer}
-        className="py-24 bg-gray-950 text-white relative overflow-hidden"
+        className="relative overflow-hidden bg-ink py-16 text-white md:py-24"
       >
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_70%_at_0%_50%,rgba(249,115,22,0.08),transparent)]" />
         <div className="relative max-w-[84vw] px-6 mx-auto">
-          <motion.div variants={fadeUp} className="mb-14">
-            <p className="eyebrow text-brand text-[11px] mb-3">Our Process</p>
-            <h2 className="display text-4xl md:text-5xl text-white">
+          <motion.div variants={fadeUp} className="mb-10 md:mb-14">
+            <p className="eyebrow mb-3 text-brand">Our Process</p>
+            <h2 className="display text-4xl text-white md:text-5xl">
               From industry challenges<br />
               <span className="display-italic text-brand">to automated solutions.</span>
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-px bg-gray-800 border border-gray-800 rounded-2xl overflow-hidden">
+          <div className="grid gap-px border border-white/10 bg-white/10 md:grid-cols-2">
             {howItWorks.map((step, i) => (
               <motion.div
                 key={i}
                 variants={fadeUp}
                 custom={i}
-                whileHover={{
-                  scale: 1.02,
-                  backgroundColor: 'rgba(249,115,22,0.10)',
-                  borderColor: 'var(--brand)',
-                  transition: { duration: 0.2, ease: 'easeInOut' },
-                }}
-                className="bg-gray-950 p-10 flex flex-col gap-4 border border-transparent rounded-lg transition-all duration-200 cursor-default"
+                className="group flex cursor-default flex-col gap-4 bg-ink p-6 transition-colors duration-200 hover:bg-white/5 md:p-8"
               >
-                <motion.span
-                  whileHover={{
-                    color: 'var(--brand)',
-                    scale: 1.05,
-                    transition: { duration: 0.2 },
-                  }}
-                  className="text-5xl font-bold text-gray-700 font-sans transition-colors duration-200"
-                >
+                <span className="display text-4xl text-brand/70 transition-colors duration-200 group-hover:text-brand md:text-5xl">
                   {String(i + 1).padStart(2, '0')}
-                </motion.span>
-                <h3 className="text-xl font-semibold text-white group-hover:text-brand transition-colors duration-200">
+                </span>
+                <h3 className="display text-xl text-white transition-colors duration-200 group-hover:text-brand">
                   {step.title}
                 </h3>
-                <p className="text-sm text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-200">
+                <p className="text-sm leading-relaxed text-white/60 transition-colors duration-200 group-hover:text-white/80">
                   {step.desc}
                 </p>
               </motion.div>
@@ -358,42 +297,35 @@ export default function IndustriesClient() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
         variants={fadeUp}
-        className="py-24 relative overflow-hidden bg-gray-100"
+        className="relative overflow-hidden bg-secondary py-16 md:py-24"
       >
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_30%,rgba(249,115,22,0.04),transparent)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.02)_1px,transparent_1px),linear-gradient(to_right,rgba(0,0,0,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
-
         <div className="relative max-w-[84vw] px-6 mx-auto">
-          <div className="relative bg-white shadow-xl shadow-gray-200/60 border border-gray-200/60 rounded-3xl px-8 py-16 md:px-16 md:py-20 text-center">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[2px] bg-gradient-to-r from-transparent via-brand/40 to-transparent" />
-
+          <div className="border border-border bg-paper px-6 py-12 text-center sm:px-8 md:px-16 md:py-16">
             <div className="relative">
-              <p className="text-sm font-mono text-brand/70 uppercase tracking-[0.2em] mb-4 flex items-center justify-center gap-3">
-                <span className="inline-block w-2 h-2 rounded-full bg-brand animate-pulse" />
+              <p className="eyebrow mb-4 flex items-center justify-center gap-3 text-brand">
+                <span className="inline-block h-2 w-2 bg-brand" />
                 READY TO TRANSFORM YOUR INDUSTRY?
-                <span className="inline-block w-2 h-2 rounded-full bg-brand animate-pulse delay-75" />
+                <span className="inline-block h-2 w-2 bg-brand" />
               </p>
 
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6">
-                <span className="text-gray-900">Free industry audit.</span>
+              <h2 className="display mb-6 text-4xl leading-[1.1] md:text-5xl lg:text-6xl">
+                <span className="text-ink">Free industry audit.</span>
                 <br />
-                <span className="text-brand relative inline-block">
+                <span className="display-italic text-brand">
                   Custom to your business.
-                  <span className="absolute -bottom-1 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-brand/60 to-transparent" />
                 </span>
               </h2>
 
-              <p className="text-lg text-gray-600 max-w-xl mx-auto leading-relaxed mb-10">
-                In 30 minutes we'll map your biggest industry-specific bottlenecks and show you what automation would look like for your business.
+              <p className="mx-auto mb-8 max-w-xl text-base leading-relaxed text-muted-foreground sm:mb-10 sm:text-lg">
+                In 30 minutes we&apos;ll map your biggest industry-specific bottlenecks and show you what automation would look like for your business.
               </p>
 
               <Link
                 href="/contact"
-                className="group relative inline-flex items-center gap-3 bg-brand hover:bg-orange-600 text-white px-10 py-4 rounded-full font-semibold text-base transition-all shadow-lg shadow-brand/30 hover:shadow-brand/50 hover:scale-[1.02]"
+                className="group inline-flex items-center gap-3 bg-ink px-7 py-4 text-sm text-white transition-colors hover:bg-brand sm:px-10 sm:text-base"
               >
                 <span>Book your free audit</span>
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                <span className="absolute inset-0 rounded-full bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
               </Link>
             </div>
           </div>

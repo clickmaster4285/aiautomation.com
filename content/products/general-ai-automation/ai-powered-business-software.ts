@@ -24,7 +24,7 @@ export const aiPoweredBusinessSoftwareSeo: HubSeo = {
   path: AI_POWERED_BUSINESS_SOFTWARE_PATH,
   title: 'AI-Powered Business Software for Your Team | Clickmasters',
   description:
-    'AI-powered business software built into the CRM, helpdesk and internal tools you already use, with people approving the output. Book a free automation audit.',
+    'AI-powered business software built into the CRM, helpdesk and internal tools you already use, with people approving the output. Book a free audit.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'General AI Automation', path: '/products/general-ai-automation' },
@@ -68,7 +68,7 @@ export const aiPoweredBusinessSoftware: ProductPageContent = {
 
   hero: {
     badge: 'AI-Powered Business Software',
-    heading: 'AI-Powered Business Software: Add AI to the Systems Your Team Already Uses',
+    heading: 'AI-Powered Business Software for the Systems You Already Use',
     accentWords: 4,
     subheading:
       'Most teams do not need another app. They need the CRM, helpdesk and shared drive they already use to do a little more of the reading, sorting and drafting for them. We add AI features to the systems your team already works in, and a person approves anything that matters.',

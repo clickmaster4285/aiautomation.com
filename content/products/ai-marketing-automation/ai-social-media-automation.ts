@@ -23,7 +23,7 @@ export const aiSocialMediaAutomationSeo: HubSeo = {
   path: AI_SOCIAL_MEDIA_AUTOMATION_PATH,
   title: 'AI Social Media Automation for Content Teams | Clickmasters',
   description:
-    'AI social media automation that plans, drafts, repurposes and schedules on-brand posts, with your team approving each one before it posts. Book a free audit.',
+    'AI social media automation that plans, drafts, repurposes and schedules on-brand posts, with your team approving each one first. Book a free audit.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Marketing Automation', path: '/products/ai-marketing-automation' },
@@ -59,7 +59,7 @@ export const aiSocialMediaAutomation: ProductPageContent = {
 
   hero: {
     badge: 'AI Social Media Automation',
-    heading: 'AI Social Media Automation That Keeps Your Channels Active and On Brand',
+    heading: 'AI Social Media Automation That Keeps Your Channels On Brand',
     accentWords: 5,
     subheading:
       'We build social media workflows that plan your content calendar, draft posts in your brand voice, turn existing content into new posts and schedule them once your team approves. Your channels stay active without someone writing and posting by hand every day.',

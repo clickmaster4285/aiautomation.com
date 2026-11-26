@@ -1,0 +1,114 @@
+{
+  "origin": "http://127.0.0.1:3456",
+  "crawledAt": "2026-11-25T13:28:37.886Z",
+  "robotsTxt": "User-agent: *\r\nDisallow: /admin\r\nDisallow: /api\r\nDisallow: /login\r\n\r\nSitemap: https://clickmastersaiautomation.com/sitemap.xml",
+  "sitemaps": [
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_pages.xml",
+      "status": 200,
+      "urls": 83,
+      "ttfb": 21
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_services.xml",
+      "status": 200,
+      "urls": 11,
+      "ttfb": 13
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_solutions.xml",
+      "status": 200,
+      "urls": 217,
+      "ttfb": 13
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_industries.xml",
+      "status": 200,
+      "urls": 7,
+      "ttfb": 10
+    },
+    {
+      "sitemap": "https://clickmastersaiautomation.com/sitemap_platforms.xml",
+      "status": 200,
+      "urls": 6,
+      "ttfb": 9
+    }
+  ],
+  "sitemapUrlCount": 324,
+  "urlsDiscovered": 325,
+  "status200": 325,
+  "non200": [],
+  "indexable": 324,
+  "sitemapProblems": [],
+  "notInSitemap": [],
+  "dupTitles": [],
+  "dupDescs": [],
+  "dupH1": [],
+  "brokenLinks": [],
+  "brokenLinkCount": 0,
+  "trailingSlashLinks": [],
+  "externalBlankNoRel": [],
+  "issueCounts": {
+    "thin main content": 3,
+    "no contextual inbound links": 3,
+    "noindex": 1,
+    "not in sitemap": 1
+  },
+  "timing": {
+    "p50": 38,
+    "p90": 71,
+    "max": 606,
+    "slowest": [
+      {
+        "path": "/services/ai-agent-development",
+        "ttfbMs": 606,
+        "bytes": 269455
+      },
+      {
+        "path": "/services/ai-voice-agents",
+        "ttfbMs": 550,
+        "bytes": 265673
+      },
+      {
+        "path": "/services/ai-lead-generation",
+        "ttfbMs": 542,
+        "bytes": 229033
+      },
+      {
+        "path": "/services/ai-reporting-automation",
+        "ttfbMs": 540,
+        "bytes": 218393
+      },
+      {
+        "path": "/services/ai-knowledge-assistants",
+        "ttfbMs": 530,
+        "bytes": 226061
+      },
+      {
+        "path": "/services/ai-chatbots",
+        "ttfbMs": 521,
+        "bytes": 238760
+      },
+      {
+        "path": "/services/robotic-process-automation",
+        "ttfbMs": 458,
+        "bytes": 243529
+      },
+      {
+        "path": "/services/business-process-automation",
+        "ttfbMs": 424,
+        "bytes": 282082
+      },
+      {
+        "path": "/services/ai-strategy-advisory",
+        "ttfbMs": 290,
+        "bytes": 217137
+      },
+      {
+        "path": "/services/custom-ai-development",
+        "ttfbMs": 289,
+        "bytes": 219978
+      }
+    ]
+  }
+}

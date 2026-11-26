@@ -28,7 +28,7 @@ export const AI_AGENT_DEVELOPMENT_PATH = '/products/ai-agents-platforms/ai-agent
 export const aiAgentDevelopmentSeo: HubSeo = {
   name: 'AI Agent Development',
   path: AI_AGENT_DEVELOPMENT_PATH,
-  title: 'AI Agent Development Services for Business | Clickmasters',
+  title: 'AI Agent Development Process and Deliverables | Clickmasters',
   description:
     'Custom AI agent development from discovery and a prototype to integration, testing and launch in your environment, with guardrails and approvals built in.',
   crumbs: [
@@ -67,7 +67,7 @@ export const aiAgentDevelopment: ProductPageContent = {
 
   hero: {
     badge: 'AI Agent Development',
-    heading: 'AI Agent Development, From First Workshop to an Agent Your Team Relies On',
+    heading: 'AI Agent Development, From First Workshop to Production',
     accentWords: 4,
     subheading:
       'We design, build and launch custom AI agents for one clearly defined job in your business. Each agent is shaped around your workflow, connected to your systems, tested on your real cases and handed over running in your environment, with approvals and escalation designed in from the first draft.',

@@ -22,7 +22,7 @@ export const aiTaskAutomationSeo: HubSeo = {
   path: AI_TASK_AUTOMATION_PATH,
   title: 'AI Task Automation for Repetitive Work | Clickmasters',
   description:
-    'AI task automation for the recurring jobs your team repeats every day: data entry, exports, status updates, reminders and inbox sorting, built on n8n, Make or Zapier.',
+    'AI task automation for recurring jobs your team repeats daily: data entry, exports, status updates, reminders and inbox sorting, on n8n, Make or Zapier.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Workflow & Business Process Automation', path: '/products/ai-workflow-business-process-automation' },

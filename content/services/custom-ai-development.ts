@@ -4,7 +4,7 @@ import { ServiceContent } from '../type';
 export const customAiDevelopment: ServiceContent = {
   slug: 'custom-ai-development',
 title: 'Custom AI Development for Your Systems | Clickmasters',
-metaDescription: 'Clickmasters designs custom AI systems around your data, tools, and the exceptions your team still needs. Book a free audit. Start with one workflow.',
+metaDescription: 'Custom AI development services: AI systems designed around your data, tools and the exceptions your team still handles. Start with one workflow.',
 keywords: 'ai development services, custom ai development, ai development companies',
 
 sections: [

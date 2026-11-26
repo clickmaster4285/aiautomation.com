@@ -1,0 +1,275 @@
+[
+ {
+  "path": "/industries/ai-automation-for-ecommerce",
+  "mode": "mobile",
+  "h1": [
+   "AI Automation forE-commerce"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=384&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "192x26",
+    "shown": "116x16",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=384&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "192x26",
+    "shown": "174x24",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 390,
+  "viewport": 390,
+  "smallTaps": [],
+  "bodyFontPx": 16,
+  "ttfb": 152,
+  "domContentLoaded": 2624,
+  "load": 3012,
+  "jsKB": 304,
+  "cssKB": 30,
+  "imgKB": 0,
+  "fontKB": 99,
+  "mediaKB": 0,
+  "totalKB": 526,
+  "requests": 73,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms",
+   "www.google.com",
+   "scripts.clarity.ms",
+   "e.clarity.ms",
+   "www.google-analytics.com"
+  ],
+  "vitals": {
+   "lcp": 2520,
+   "lcpEl": "H1 AI Automation forE-commerce",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/industries/ai-automation-for-healthcare",
+  "mode": "mobile",
+  "h1": [
+   "AI Automation forHealthcare"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=384&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "192x26",
+    "shown": "116x16",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=384&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "192x26",
+    "shown": "174x24",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 390,
+  "viewport": 390,
+  "smallTaps": [],
+  "bodyFontPx": 16,
+  "ttfb": 153,
+  "domContentLoaded": 1351,
+  "load": 4732,
+  "jsKB": 304,
+  "cssKB": 32,
+  "imgKB": 65,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 616,
+  "requests": 71,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms",
+   "www.google.com",
+   "scripts.clarity.ms",
+   "e.clarity.ms",
+   "www.google-analytics.com"
+  ],
+  "vitals": {
+   "lcp": 0,
+   "lcpEl": "",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/platforms/hubspot-automation-services",
+  "mode": "mobile",
+  "h1": [
+   "Grow Faster With HubSpot Automation Services"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=384&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "192x26",
+    "shown": "116x16",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frob.png&w=640&q=75",
+    "alt": "Friendly white robot with a smiling digital face",
+    "hidden": false,
+    "natural": "195x195",
+    "shown": "200x200",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": false,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=384&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "192x26",
+    "shown": "174x24",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 390,
+  "viewport": 390,
+  "smallTaps": [],
+  "bodyFontPx": 16,
+  "ttfb": 153,
+  "domContentLoaded": 726,
+  "load": 2940,
+  "jsKB": 316,
+  "cssKB": 32,
+  "imgKB": 205,
+  "fontKB": 129,
+  "mediaKB": 0,
+  "totalKB": 765,
+  "requests": 76,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms",
+   "www.google.com",
+   "ad.doubleclick.net",
+   "scripts.clarity.ms",
+   "c.clarity.ms",
+   "e.clarity.ms",
+   "www.google-analytics.com"
+  ],
+  "vitals": {
+   "lcp": 2740,
+   "lcpEl": "P Our HubSpot automation services help U.S. businesses automat",
+   "cls": 0
+  },
+  "errors": []
+ },
+ {
+  "path": "/platforms/zapier-automation-services",
+  "mode": "mobile",
+  "h1": [
+   "Automate Repetitive Work With Expert Zapier Automation Services"
+  ],
+  "mains": 1,
+  "imgs": [
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=384&q=75",
+    "alt": "ClickMasters AI Automation",
+    "hidden": false,
+    "natural": "192x26",
+    "shown": "116x16",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Frob.png&w=640&q=75",
+    "alt": "Friendly white robot with a smiling digital face",
+    "hidden": false,
+    "natural": "195x195",
+    "shown": "200x200",
+    "oversized": false,
+    "loading": "lazy",
+    "hasDims": false,
+    "broken": false
+   },
+   {
+    "src": "http://127.0.0.1:3456/_next/image?url=%2Fimages%2Fclickmasters-logo.png&w=384&q=75",
+    "alt": "ClickMasters",
+    "hidden": false,
+    "natural": "192x26",
+    "shown": "174x24",
+    "oversized": false,
+    "loading": null,
+    "hasDims": true,
+    "broken": false
+   }
+  ],
+  "svgsNoLabel": 0,
+  "overflow": [],
+  "scrollWidth": 390,
+  "viewport": 390,
+  "smallTaps": [],
+  "bodyFontPx": 16,
+  "ttfb": 153,
+  "domContentLoaded": 994,
+  "load": 4198,
+  "jsKB": 288,
+  "cssKB": 30,
+  "imgKB": 141,
+  "fontKB": 99,
+  "mediaKB": 0,
+  "totalKB": 625,
+  "requests": 60,
+  "thirdParty": [
+   "www.googletagmanager.com",
+   "www.clarity.ms",
+   "www.google.com",
+   "scripts.clarity.ms",
+   "c.clarity.ms",
+   "e.clarity.ms",
+   "www.google-analytics.com"
+  ],
+  "vitals": {
+   "lcp": 0,
+   "lcpEl": "",
+   "cls": 0
+  },
+  "errors": []
+ }
+]

@@ -23,7 +23,7 @@ export const SectionLabel = ({
     {marker && <Marker n={marker} />}
     <div className={`flex-1 h-px ${dark ? "bg-white/10" : "bg-black/10"}`} />
     <p
-      className={`eyebrow whitespace-nowrap text-xs md:text-sm ${
+      className={`eyebrow max-w-[70%] text-right text-xs md:max-w-none md:whitespace-nowrap md:text-sm ${
         dark ? "text-white/60" : "text-muted-foreground"
       }`}
     >

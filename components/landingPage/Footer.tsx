@@ -43,7 +43,7 @@ export default function Footer() {
           {/* Services - Column 2 */}
           <div className="lg:flex-shrink-0">
             <h2 className="text-foreground font-semibold text-sm uppercase tracking-wider mb-5">Services</h2>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-3 min-w-[340px]">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-3 sm:min-w-[340px]">
               <li className="sm:col-span-2">
                 <Link href="/services" className="text-sm font-semibold text-foreground hover:text-brand transition-colors duration-200">
                   View All Services
@@ -129,6 +129,11 @@ export default function Footer() {
               <li>
                 <Link href="/case-studies" className="text-sm hover:text-brand transition-colors duration-200">
                   Case studies
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="text-sm hover:text-brand transition-colors duration-200">
+                  Blog
                 </Link>
               </li>
               <li>

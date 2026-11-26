@@ -29,7 +29,7 @@ export const autonomousAiAgentsSeo: HubSeo = {
   path: AUTONOMOUS_AI_AGENTS_PATH,
   title: 'Autonomous AI Agents With Scoped Guardrails | Clickmasters',
   description:
-    'Autonomous AI agents that complete multi-step tasks inside limits you set: they act on routine steps, ask approval for sensitive ones and escalate with context.',
+    'Autonomous AI agents that complete multi-step tasks within your limits: they act on routine steps, ask approval for sensitive ones, escalate with context.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Agents & Platforms', path: '/products/ai-agents-platforms' },

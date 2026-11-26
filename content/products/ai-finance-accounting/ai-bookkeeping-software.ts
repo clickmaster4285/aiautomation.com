@@ -33,7 +33,7 @@ export const aiBookkeepingSoftwareSeo: HubSeo = {
   path: AI_BOOKKEEPING_SOFTWARE_PATH,
   title: 'AI Bookkeeping Software for Small Business | Clickmasters',
   description:
-    'AI bookkeeping software built in QuickBooks, Xero or spreadsheets: source documents gathered, transactions categorized and unclear items flagged for review.',
+    'AI bookkeeping software in QuickBooks, Xero or spreadsheets: source documents gathered, transactions categorized and unclear items flagged for review.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Finance & Accounting', path: '/products/ai-finance-accounting' },
@@ -70,7 +70,7 @@ export const aiBookkeepingSoftware: ProductPageContent = {
 
   hero: {
     badge: 'AI Bookkeeping Software',
-    heading: 'AI Bookkeeping Software That Keeps Your Records Organized and Ready for Your Accountant',
+    heading: 'AI Bookkeeping Software That Keeps Records Accountant-Ready',
     accentWords: 3,
     subheading:
       'We automate the daily recording work that small businesses fall behind on: collecting receipts and invoices, suggesting categories, attaching documents to entries and flagging anything unclear. It runs in the bookkeeping tools you already use, and your bookkeeper or accountant still reviews the books.',

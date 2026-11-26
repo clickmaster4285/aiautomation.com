@@ -33,7 +33,7 @@ export const generalAiAutomationSeo: HubSeo = {
   path: GENERAL_AI_AUTOMATION_PATH,
   title: 'AI Automation for Business, Planned and Built | Clickmasters',
   description:
-    'AI automation for business, from one repetitive workflow to company-wide systems. Find the right starting point for your team and book a free automation audit.',
+    'AI automation for business, from one repetitive workflow to company-wide systems. Find the right starting point for your team and book a free audit.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'General AI Automation', path: GENERAL_AI_AUTOMATION_PATH },
@@ -79,7 +79,7 @@ export const generalAiAutomation: ProductPageContent = {
 
   hero: {
     badge: 'General AI Automation',
-    heading: 'AI Automation for Business: From the First Workflow to Company-Wide Systems',
+    heading: 'AI Automation for Business: From One Workflow to the Whole Company',
     accentWords: 3,
     subheading:
       'Most companies do not need a grand AI plan to get started. They need one repetitive task taken off someone’s desk, built properly and handed over with documentation. AI automation for business covers that first workflow and everything that can follow: connected systems, AI steps that read and draft, and cross-department processes with clear approval points.',

@@ -60,7 +60,7 @@ export const aiRecruitmentSoftware: ProductPageContent = {
 
   hero: {
     badge: 'AI Recruitment Software',
-    heading: 'AI Recruitment Software That Keeps Every Candidate Moving Through Your Pipeline',
+    heading: 'AI Recruitment Software That Keeps Every Candidate Moving',
     accentWords: 5,
     subheading:
       'We build AI recruitment software as a set of connected workflows inside the tools your hiring team already uses. Applications become candidate records, every stage change triggers the next step, and candidates hear back on time, while recruiters and hiring managers make the decisions.',

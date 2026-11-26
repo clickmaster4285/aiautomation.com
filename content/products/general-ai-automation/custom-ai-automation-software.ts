@@ -25,7 +25,7 @@ export const customAiAutomationSoftwareSeo: HubSeo = {
   path: CUSTOM_AI_AUTOMATION_SOFTWARE_PATH,
   title: 'Custom AI Automation Software Built for You | Clickmasters',
   description:
-    'Custom AI automation software for processes off-the-shelf tools can’t handle: API connectors, self-hosted workflows and admin tools you own. Book a free audit.',
+    'Custom AI automation software for processes off-the-shelf tools can’t handle: API connectors, self-hosted workflows and admin tools you own.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'General AI Automation', path: '/products/general-ai-automation' },

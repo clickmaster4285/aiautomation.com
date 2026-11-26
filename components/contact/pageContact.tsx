@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { fadeInUp, staggerContainer } from '../services/Shared/animation';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 import { PHONES, SALES_EMAIL } from '@/lib/site-contact';
 import {
   ArrowRight,
@@ -19,8 +20,22 @@ import {
   Bot,
   TrendingUp,
 } from 'lucide-react';
+import HeroBreadcrumb from '@/components/shared/HeroBreadcrumb';
+import HeroCta from '@/components/shared/HeroCta';
 
-export default function ContactPage() {
+type ContactPageProps = {
+  /** H1: plain lead words, then the accented words. Defaults to the /contact heading. */
+  heading?: { lead: string; accent: string };
+  intro?: string;
+  /** Last breadcrumb item; defaults to Contact. */
+  crumb?: { label: string; href: string };
+};
+
+export default function ContactPage({
+  heading = { lead: "Let's talk", accent: 'automation.' },
+  intro = "Whether you're ready to automate something specific or just want to know if it's worth it we're easy to reach and we'll give you a straight answer either way.",
+  crumb = { label: 'Contact', href: '/contact' },
+}: ContactPageProps) {
   // State for the main (middle) form
   const [formData, setFormData] = useState({
     name: '',
@@ -141,73 +156,57 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="bg-white text-gray-900 overflow-hidden">
+    <div className="bg-paper text-ink overflow-hidden">
       {/* ====== HERO – BLACK with ANIMATED GRAPHICS ====== */}
-      <section className="relative min-h-[50vh] flex items-center py-8 md:py-12 lg:py-16 bg-black">
+      <section className="relative flex min-h-[calc(100svh-4rem)] items-center overflow-hidden bg-paper py-12 md:py-16">
         {/* Background decorations */}
-        <div className="absolute inset-0 overflow-hidden">
-          <motion.div
-            className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-brand/20 rounded-full blur-3xl"
-            animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}
-            transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
-          />
-          <motion.div
-            className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-brand/10 rounded-full blur-3xl"
-            animate={{ scale: [1, 1.1, 1], opacity: [0.1, 0.3, 0.1] }}
-            transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
-          />
-          <motion.div
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand/5 rounded-full blur-3xl"
-            animate={{ scale: [1, 1.3, 1], opacity: [0.05, 0.15, 0.05] }}
-            transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut' }}
-          />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(249,115,22,0.05),transparent_60%)]" />
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
-        </div>
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-dot-pattern opacity-30" />
 
-        <div className="relative mx-auto max-w-[84vw] px-6 pt-12 pb-8 md:pt-16 md:pb-12 lg:pt-20 lg:pb-16 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
+        <div className="relative mx-auto w-full max-w-[84vw] px-6">
+          <HeroBreadcrumb items={[{ label: 'Home', href: '/' }, crumb]} />
+          <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12 xl:gap-16">
             
             {/* Left: Text */}
             <motion.div
               initial="hidden"
               animate="visible"
               variants={staggerContainer}
-              className="flex flex-col justify-center"
+              className="flex max-w-3xl flex-col justify-center"
             >
               <motion.div
                 variants={fadeInUp}
-                className="inline-flex items-center gap-2 rounded-full border border-brand/30 bg-brand/10 px-3 py-1.5 md:px-4 md:py-2 text-xs md:text-sm text-brand backdrop-blur-sm mb-4 md:mb-6"
+                className="eyebrow mb-5 inline-flex items-center gap-2 self-start border border-brand px-3 py-1 text-xs text-brand md:mb-7 md:text-sm"
               >
                 <BrainCircuit className="h-3 w-3 md:h-4 md:w-4" />
-                <span>Get In Touch</span>
-                <span className="h-1 w-1 rounded-full bg-brand" />
-                <span className="text-brand/70 animate-pulse">WE REPLY FAST</span>
+                <span>Get in touch</span>
               </motion.div>
 
               <motion.h1
                 variants={fadeInUp}
-                className="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-4 md:mb-6 text-white"
+                className="display mb-5 text-4xl leading-[1.05] sm:text-5xl md:mb-7 md:text-6xl lg:text-7xl"
               >
-                Let's talk{' '}
-                <span className="display-italic text-brand">automation.</span>
+                {heading.lead}{' '}
+                <span className="display-italic text-brand">{heading.accent}</span>
               </motion.h1>
 
               <motion.p
                 variants={fadeInUp}
-                className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl text-justify"
+                className="max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg md:text-xl"
               >
-                Whether you're ready to automate something specific or just want to know if it's worth it we're easy to reach and we'll give you a straight answer either way.
+                {intro}
               </motion.p>
               
               {/* Added CRM notice */}
               <motion.div
                 variants={fadeInUp}
-                className="mt-6 p-4 rounded-xl border border-brand/20 bg-brand/5 backdrop-blur-sm"
+                className="mt-6 border-l-2 border-brand py-1 pl-4"
               >
-                <p className="text-xs text-gray-400">
-                  🔄 Every enquiry is saved straight to our CRM, so nothing gets lost.
+                <p className="text-sm text-muted-foreground">
+                  Every enquiry is saved straight to our CRM, so nothing gets lost.
                 </p>
+              </motion.div>
+              <motion.div variants={fadeInUp}>
+                <HeroCta href="#leadForm" text="Send us a message" />
               </motion.div>
             </motion.div>
 
@@ -216,11 +215,21 @@ export default function ContactPage() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="relative w-full h-[300px] md:h-[400px] lg:h-[450px] flex items-center justify-center"
+              className="relative aspect-[4/3] w-full max-h-[500px] items-center justify-center"
             >
+              <Image
+                src="/images/hero.jpg"
+                alt="Humanoid AI robot representing Clickmasters automation services"
+                width={800}
+                height={800}
+                preload
+                sizes="(max-width: 768px) 100vw, 50vw"
+                quality={60}
+                className="relative z-10 h-full w-full object-contain"
+              />
               {/* Central glowing orb */}
               <motion.div
-                className="absolute w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full bg-brand/20 blur-3xl"
+                className="hidden"
                 animate={{
                   scale: [1, 1.2, 1],
                   opacity: [0.3, 0.6, 0.3],
@@ -233,7 +242,7 @@ export default function ContactPage() {
               />
 
               {/* Floating icons container */}
-              <div className="relative w-full h-full">
+              <div className="hidden">
                 {/* Icon 1 - Rocket (top) */}
                 <motion.div
                   className="absolute top-0 left-1/2 -translate-x-1/2"
@@ -404,7 +413,7 @@ export default function ContactPage() {
       </section>
 
       {/* ====== MIDDLE SECTION – WHITE ====== */}
-      <section className="relative py-12 md:py-16 lg:py-20 bg-white">
+      <section className="relative bg-paper py-12 md:py-16 lg:py-20">
         <div className="mx-auto max-w-[84vw] px-6 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 xl:gap-20">
 
@@ -418,33 +427,32 @@ export default function ContactPage() {
             >
               <motion.div
                 variants={fadeInUp}
-                className="relative p-6 sm:p-8 rounded-2xl border border-gray-200 bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 group"
+                className="relative border border-border bg-paper p-6 transition-colors duration-300 hover:border-brand sm:p-8"
               >
                 <div className="absolute top-0 right-0 w-40 h-40 bg-brand/5 blur-2xl rounded-full" />
                 <div className="relative">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center">
+                    <div className="flex h-9 w-9 items-center justify-center border border-brand/20 bg-brand/10 sm:h-10 sm:w-10">
                       <Calendar className="h-4 w-4 sm:h-5 sm:w-5 text-brand" />
                     </div>
-                    <span className="text-xs text-brand font-medium tracking-widest uppercase">Fastest Way</span>
+                    <span className="eyebrow text-xs text-brand">Fastest Way</span>
                   </div>
-                  <h2 className="display text-xl sm:text-2xl font-bold text-gray-900 mb-3">Book a free audit</h2>
-                  <p className="text-gray-600 mb-6 leading-relaxed text-justify text-sm sm:text-base">
-                    In 30 minutes we'll map your processes and tell you the highest-ROI place to start no obligation, no sales pitch.
+                  <h2 className="display mb-3 text-2xl sm:text-3xl">Book a free audit</h2>
+                  <p className="mb-6 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                    In 30 minutes we&apos;ll map your processes and tell you the highest-ROI place to start no obligation, no sales pitch.
                   </p>
                   <div className="flex flex-wrap gap-2 sm:gap-3 mb-6">
                     {['30 minutes', 'No obligation', 'Honest advice'].map((tag) => (
-                      <span key={tag} className="flex items-center gap-1.5 text-xs text-green-700 bg-green-50 border border-green-200 px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-full">
+                      <span key={tag} className="flex items-center gap-1.5 border border-border px-2.5 py-1.5 text-xs text-muted-foreground sm:px-3">
                         <CheckCircle className="h-3 w-3 text-green-600" /> {tag}
                       </span>
                     ))}
                   </div>
                   
-                  <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} className="relative group/btn block sm:inline-block">
-                    <div className="absolute inset-0 bg-brand/20 blur-xl rounded-full group-hover/btn:blur-2xl transition-all" />
+                  <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="block sm:inline-block">
                     <Button
                       size="lg"
-                      className="relative bg-brand hover:bg-brand-dark text-white w-full sm:w-auto px-6 py-4 sm:px-8 sm:py-5 rounded-full font-medium shadow-lg shadow-brand/25 text-sm sm:text-base"
+                      className="h-auto w-full rounded-none bg-ink px-6 py-4 text-sm text-white shadow-none hover:bg-brand sm:w-auto sm:px-8 sm:py-5 sm:text-base"
                     >
                       Book Your Free Audit
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -454,7 +462,7 @@ export default function ContactPage() {
               </motion.div>
 
               <motion.div variants={fadeInUp} className="space-y-4">
-                <h3 className="display text-lg font-semibold text-gray-700">Other ways to reach us</h3>
+                <h3 className="eyebrow text-muted-foreground">Other ways to reach us</h3>
                 {[
                   { icon: Mail, label: 'Email', value: SALES_EMAIL },
                   ...PHONES.map((phone) => ({
@@ -468,14 +476,14 @@ export default function ContactPage() {
                     key={idx}
                     variants={fadeInUp}
                     whileHover={{ x: 4 }}
-                    className="flex items-center gap-4 p-3 sm:p-4 rounded-xl border border-gray-200 bg-gray-50/80 hover:border-brand transition-all duration-300"
+                    className="flex items-center gap-4 border-b border-border py-4 transition-colors duration-300 hover:border-brand"
                   >
-                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-brand/10 border border-brand/20 flex items-center justify-center flex-shrink-0">
+                    <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center border border-brand/20 bg-brand/10 sm:h-10 sm:w-10">
                       <item.icon className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-brand" />
                     </div>
                     <div>
-                      <p className="text-xs text-gray-500 uppercase tracking-widest mb-0.5">{item.label}</p>
-                      <p className="text-gray-800 font-medium text-sm sm:text-base break-all">{item.value}</p>
+                      <p className="eyebrow mb-0.5 text-[10px] text-muted-foreground">{item.label}</p>
+                      <p className="break-all text-sm font-medium text-ink sm:text-base">{item.value}</p>
                     </div>
                   </motion.div>
                 ))}
@@ -483,11 +491,11 @@ export default function ContactPage() {
 
               <motion.div
                 variants={fadeInUp}
-                className="p-5 sm:p-6 rounded-2xl border border-gray-200 bg-gray-50/50"
+                className="border-l-2 border-brand bg-muted p-5 sm:p-6"
               >
-                <h3 className="display text-base font-semibold mb-2 text-gray-800">What to expect</h3>
-                <p className="text-gray-600 leading-relaxed text-sm text-justify">
-                  A fast, honest reply and a straight answer on whether automation fits your situation. If we're not the right fit, we'll say so.
+                <h3 className="display mb-2 text-base">What to expect</h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  A fast, honest reply and a straight answer on whether automation fits your situation. If we&apos;re not the right fit, we&apos;ll say so.
                 </p>
               </motion.div>
             </motion.div>
@@ -501,11 +509,11 @@ export default function ContactPage() {
             >
               <motion.div
                 variants={fadeInUp}
-                className="relative p-6 sm:p-8 md:p-10 rounded-2xl border border-gray-200 bg-white shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="border border-border bg-paper p-6 sm:p-8 md:p-10"
               >
-                <h2 className="display text-xl sm:text-2xl font-bold mb-1 text-gray-900">Send us a message</h2>
-                <p className="text-gray-500 mb-6 sm:mb-8 text-sm text-justify">
-                  We'll get back to you within a few hours. Every enquiry is saved straight to our CRM.
+                <h2 className="display mb-2 text-2xl sm:text-3xl">Send us a message</h2>
+                <p className="mb-6 text-sm text-muted-foreground sm:mb-8">
+                  We&apos;ll get back to you within a few hours. Every enquiry is saved straight to our CRM.
                 </p>
 
                 <form id="leadForm" onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
@@ -517,7 +525,7 @@ export default function ContactPage() {
                     onChange={e => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Your Name"
                     required
-                    className="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 sm:py-3.5 text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20 transition-all duration-200 text-sm shadow-sm"
+                    className="w-full border border-border bg-paper px-4 py-3 text-ink placeholder:text-muted-foreground focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand sm:py-3.5 text-sm transition-colors"
                   />
 
                   <input
@@ -528,7 +536,7 @@ export default function ContactPage() {
                     onChange={e => setFormData({ ...formData, email: e.target.value })}
                     placeholder="Your Email"
                     required
-                    className="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 sm:py-3.5 text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20 transition-all duration-200 text-sm shadow-sm"
+                    className="w-full border border-border bg-paper px-4 py-3 text-ink placeholder:text-muted-foreground focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand sm:py-3.5 text-sm transition-colors"
                   />
 
                   <input
@@ -539,7 +547,7 @@ export default function ContactPage() {
                     onChange={e => setFormData({ ...formData, phone: e.target.value })}
                     placeholder="Phone Number"
                     required
-                    className="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 sm:py-3.5 text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20 transition-all duration-200 text-sm shadow-sm"
+                    className="w-full border border-border bg-paper px-4 py-3 text-ink placeholder:text-muted-foreground focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand sm:py-3.5 text-sm transition-colors"
                   />
 
                   <textarea
@@ -550,20 +558,19 @@ export default function ContactPage() {
                     placeholder="Your Message"
                     rows={5}
                     required
-                    className="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 sm:py-3.5 text-gray-800 placeholder-gray-400 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20 transition-all duration-200 resize-none text-sm shadow-sm"
+                    className="w-full resize-none border border-border bg-paper px-4 py-3 text-sm text-ink placeholder:text-muted-foreground transition-colors focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand sm:py-3.5"
                   />
 
                   {/* Hidden fields for CRM */}
                   <input type="hidden" id="website" name="website" value="clickmastersaiautomation.com" />
                   <input type="hidden" id="service" name="service" value="Artificial Intelligence" />
 
-                  <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="relative group">
-                    <div className="absolute inset-0 bg-brand/20 blur-xl rounded-xl group-hover:blur-2xl transition-all" />
+                  <motion.div whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}>
                     <Button
                       type="submit"
                       size="lg"
                       disabled={isSubmitting}
-                      className="relative w-full bg-brand hover:bg-brand-dark text-white py-5 sm:py-6 text-sm sm:text-base rounded-xl font-medium shadow-lg shadow-brand/20 transition-all disabled:opacity-70 disabled:cursor-not-allowed"
+                      className="h-auto w-full rounded-none bg-ink py-4 text-sm text-white shadow-none transition-colors hover:bg-brand sm:py-5 sm:text-base"
                     >
                       {isSubmitting ? (
                         <span className="flex items-center gap-2">
@@ -582,11 +589,11 @@ export default function ContactPage() {
                     </Button>
                   </motion.div>
 
-                  <p className="text-xs text-gray-500 text-center">
+                  <p className="text-center text-xs text-muted-foreground">
                     We never share your data. Your details are used only to respond to your enquiry.
                   </p>
                   
-                  <div className="flex items-center justify-center gap-2 text-xs text-gray-400 border-t border-gray-100 pt-4 mt-2">
+                  <div className="mt-2 flex items-center justify-center gap-2 border-t border-border pt-4 text-xs text-muted-foreground">
                     <span className="flex items-center gap-1">
                       <CheckCircle className="h-3 w-3 text-green-500" />
                       Synced to CRM
@@ -599,59 +606,41 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ====== BOTTOM STATS + CTA – BLACK ====== */}
-      <section className="py-12 md:py-16 lg:py-20 border-t border-gray-800 bg-black">
+      {/* ====== BOTTOM CTA ====== */}
+      <section className="border-t border-white/10 bg-ink py-16 text-white md:py-24">
         <div className="mx-auto max-w-[84vw] px-6 w-full">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={staggerContainer}
-            className="text-center max-w-3xl mx-auto mb-10 md:mb-12"
+            className="mx-auto max-w-4xl"
           >
+            <motion.p variants={fadeInUp} className="eyebrow mb-5 text-brand">Ready when you are</motion.p>
             <motion.h2
               variants={fadeInUp}
-              className="display text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight"
+              className="display text-4xl sm:text-5xl md:text-6xl"
             >
-              # WORK.
+              Have a process in mind?
             </motion.h2>
             <motion.p
               variants={fadeInUp}
-              className="mt-3 text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed text-center mx-auto"
+              className="mt-5 max-w-2xl text-base leading-relaxed text-white/60 sm:text-lg"
             >
-              Build intelligent AI systems that eliminate repetitive work,
-              <br className="hidden sm:block" />
-              supercharge your team, and scale without headcount.
+              Tell us what is slowing your team down. We will give you an honest view of what is worth automating.
             </motion.p>
-          </motion.div>
-
-          <motion.div
-            variants={fadeInUp}
-            className="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 md:gap-x-8 lg:gap-x-12"
-          >
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button
-                size="lg"
-                className="bg-brand hover:bg-brand-dark text-white px-6 py-4 sm:px-8 sm:py-5 md:px-8 md:py-6 text-sm sm:text-base md:text-lg rounded-full shadow-lg shadow-brand/25 transition-all"
-              >
-                Start Automating
-                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-              </Button>
-            </motion.div>
-
-            <span className="hidden sm:inline-block w-px h-8 bg-gray-700" />
-
             <motion.a
-              href="#"
+              variants={fadeInUp}
+              href="#leadForm"
               whileHover={{ x: 4 }}
-              className="inline-flex items-center gap-1.5 text-white font-semibold text-sm sm:text-base md:text-lg hover:text-brand transition-colors"
+              className="mt-8 inline-flex items-center gap-2 bg-brand px-7 py-4 text-sm text-white transition-colors hover:bg-white hover:text-ink sm:text-base"
             >
-              View Work
-              <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+              Send us a message
+              <ArrowRight className="h-4 w-4" />
             </motion.a>
           </motion.div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

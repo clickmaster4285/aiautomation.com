@@ -28,7 +28,7 @@ export const aiInvoiceProcessingSoftwareSeo: HubSeo = {
   path: AI_INVOICE_PROCESSING_SOFTWARE_PATH,
   title: 'AI Invoice Processing Software for AP Teams | Clickmasters',
   description:
-    'AI invoice processing software for supplier invoices: inbox intake, line-item extraction, duplicate checks, PO matching and approval routing before posting.',
+    'AI invoice processing software for supplier invoices: inbox intake, line-item extraction, duplicate checks, PO matching and approvals before posting.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Finance & Accounting', path: '/products/ai-finance-accounting' },
@@ -66,7 +66,7 @@ export const aiInvoiceProcessingSoftware: ProductPageContent = {
 
   hero: {
     badge: 'AI Invoice Processing Software',
-    heading: 'AI Invoice Processing Software That Gets Supplier Invoices Checked, Approved and Posted',
+    heading: 'AI Invoice Processing Software: Checked, Approved and Posted',
     accentWords: 3,
     subheading:
       'We build AI invoice processing inside the tools your finance team already uses. Supplier invoices are collected from the inbox, read line by line, checked for duplicates, matched to purchase orders and routed for approval, then posted to your accounting system once someone signs them off. Paying the supplier stays with your team.',

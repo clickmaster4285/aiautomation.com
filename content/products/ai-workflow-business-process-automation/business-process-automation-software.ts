@@ -28,7 +28,7 @@ export const businessProcessAutomationSoftwareSeo: HubSeo = {
   path: BUSINESS_PROCESS_AUTOMATION_SOFTWARE_PATH,
   title: 'Business Process Automation Software | Clickmasters',
   description:
-    'Business process automation software built into your own systems: whole processes run end to end, steps stay standard, and you can see where every case stands.',
+    'Business process automation software built into your systems: whole processes run end to end, steps stay standard, and you see where every case stands.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Workflow & Business Process Automation', path: '/products/ai-workflow-business-process-automation' },

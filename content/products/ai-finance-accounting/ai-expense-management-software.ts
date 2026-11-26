@@ -29,7 +29,7 @@ export const aiExpenseManagementSoftwareSeo: HubSeo = {
   path: AI_EXPENSE_MANAGEMENT_SOFTWARE_PATH,
   title: 'AI Expense Management Software for Teams | Clickmasters',
   description:
-    'AI expense management software built in your tools: receipt capture, smart categorization, policy flags, manager approvals and reminders for missing receipts.',
+    'AI expense management software in your tools: receipt capture, smart categorization, policy flags, manager approvals and reminders for missing receipts.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI Finance & Accounting', path: '/products/ai-finance-accounting' },
@@ -67,7 +67,7 @@ export const aiExpenseManagementSoftware: ProductPageContent = {
 
   hero: {
     badge: 'AI Expense Management Software',
-    heading: 'AI Expense Management Software That Turns Receipts Into Approved Expenses',
+    heading: 'AI Expense Management Software, From Receipt to Approval',
     accentWords: 3,
     subheading:
       'We build expense workflows inside the tools your team already uses. Employees snap a receipt, forward an email or fill in a short form. AI reads and categorizes it, your policy rules flag anything unusual, and the right manager approves it before it reaches your accounting system.',

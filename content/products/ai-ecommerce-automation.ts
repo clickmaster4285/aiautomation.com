@@ -31,7 +31,7 @@ export const aiEcommerceAutomationSeo: HubSeo = {
   path: AI_ECOMMERCE_AUTOMATION_PATH,
   title: 'AI E-commerce Automation for Online Stores | Clickmasters',
   description:
-    'AI e-commerce automation built in your store and tools: catalog upkeep, order and stock admin, customer questions, returns and cart recovery, with human review.',
+    'AI e-commerce automation in your store and tools: catalog upkeep, order and stock admin, customer questions, returns and cart recovery, with human review.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI E-commerce Automation', path: AI_ECOMMERCE_AUTOMATION_PATH },
@@ -67,7 +67,7 @@ export const aiEcommerceAutomation: ProductPageContent = {
 
   hero: {
     badge: 'AI E-commerce Automation',
-    heading: 'AI E-commerce Automation That Keeps Your Store Running Behind the Scenes',
+    heading: 'AI E-commerce Automation That Runs Your Store Behind the Scenes',
     accentWords: 3,
     subheading:
       'Clickmasters builds automation inside the store platform, helpdesk, email tool and spreadsheets you already run. Routine work such as catalog upkeep, order admin, stock checks, customer questions and follow-up emails runs on its own, and your team reviews anything that affects money or customers.',

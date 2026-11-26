@@ -4,7 +4,7 @@ import { ServiceContent } from '../type';
 export const aiChatbotAutomation: ServiceContent = {
 slug: 'ai-chatbot-automation',
 title: 'Custom AI Chatbots for Support Teams | Clickmasters',
-metaDescription: 'Clickmasters builds custom AI chatbots for support, lead capture, sales questions, and appointment booking. Book a free audit. Ask the team today.',
+metaDescription: 'AI chatbot development services: custom chatbots trained on your content for support, lead capture, sales questions and booking. Book a free audit.',
 keywords: 'ai chatbot, conversational ai, chatbot automation, customer service chatbot',
 sections: [
   // ========== HERO ==========

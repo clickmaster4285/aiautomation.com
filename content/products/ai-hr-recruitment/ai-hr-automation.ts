@@ -28,7 +28,7 @@ export const aiHrAutomationSeo: HubSeo = {
   path: AI_HR_AUTOMATION_PATH,
   title: 'AI HR Automation for Onboarding & HR Admin | Clickmasters',
   description:
-    'AI HR automation built in your existing tools: onboarding steps, HR requests, documents and policy answers run as workflows, with HR approving what matters.',
+    'AI HR automation in your existing tools: onboarding steps, HR requests, documents and policy answers run as workflows, with HR approving what matters.',
   crumbs: [
     { name: 'Home', path: '/' },
     { name: 'AI HR & Recruitment', path: '/products/ai-hr-recruitment' },
