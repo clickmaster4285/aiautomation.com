@@ -3,6 +3,9 @@
 import { SOLUTION_HUBS, SOLUTION_DETAILS } from '@/content/Solutions/pages';
 import { getServiceBySlug } from '@/content/services';
 import { hubSeo } from '@/lib/hub-seo';
+import { industryContent } from '@/content/Industries';
+import { platformContent } from '@/content/Platforms';
+import { blogArticleBySlug } from '@/content/blog';
 
 /** First sentence, so meta descriptions read as a short card line. */
 const firstSentence = (s?: string) => s?.match(/^.*?[.!?](?=\s|$)/)?.[0] ?? s;
@@ -21,6 +24,18 @@ export function pageSummary(href: string): string | undefined {
   if (area === 'services' && a) {
     const service = getServiceBySlug(a) as { metaDescription?: string } | undefined;
     if (service?.metaDescription) return firstSentence(service.metaDescription);
+  }
+  if (area === 'industries' && a) {
+    const industry = industryContent[a];
+    if (industry) return firstSentence(industry.metaDescription);
+  }
+  if (area === 'platforms' && a) {
+    const platform = platformContent[a];
+    if (platform) return firstSentence(platform.metaDescription);
+  }
+  if (area === 'blog' && a) {
+    const article = blogArticleBySlug[a];
+    if (article) return article.excerpt;
   }
   return firstSentence(hubDescriptions.get(path));
 }

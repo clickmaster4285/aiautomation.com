@@ -68,6 +68,15 @@ const industries = [
     outcomes: ['Project management automation', 'Resource allocation', 'Client reporting'],
     color: 'from-teal-50 to-transparent',
   },
+  {
+    icon: BarChart3,
+    title: 'Marketing Agencies',
+    slug: 'ai-automation-for-marketing-agencies',
+    description:
+      'Automate client onboarding, cross-channel reporting, budget pacing alerts, lead handoff to clients, and content approvals across your accounts.',
+    outcomes: ['Client reporting automation', 'Onboarding and access', 'Budget pacing alerts'],
+    color: 'from-pink-50 to-transparent',
+  },
   // {
   //   icon: Truck,
   //   title: 'Logistics & Supply Chain',

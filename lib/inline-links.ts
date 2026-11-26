@@ -130,3 +130,40 @@ export function relatedHeading(content: LinkableContent) {
   }
   return { title: 'Related AI Automation Solutions', subtitle: 'Solutions that work alongside this one' };
 }
+
+// Pages each platform page links to besides its own /solutions/<topic>/with-<platform> pages.
+// Platforms with few or no "with-" pages get the solution hubs their copy covers.
+const PLATFORM_EXTRA_LINKS: Record<string, { href: string; label: string }[]> = {
+  zapier: [{ href: '/blog/n8n-vs-zapier-vs-make', label: 'n8n vs Zapier vs Make' }],
+  make: [
+    { href: '/solutions/ai-workflow-automation', label: 'AI Workflow Automation' },
+    { href: '/solutions/business-process-automation', label: 'Business Process Automation' },
+    { href: '/blog/n8n-vs-zapier-vs-make', label: 'n8n vs Zapier vs Make' },
+  ],
+  n8n: [
+    { href: '/solutions/ai-agents', label: 'AI Agents' },
+    { href: '/blog/n8n-vs-zapier-vs-make', label: 'n8n vs Zapier vs Make' },
+  ],
+  hubspot: [],
+  gohighlevel: [
+    { href: '/solutions/crm-automation', label: 'CRM Automation' },
+    { href: '/solutions/lead-generation-automation', label: 'Lead Generation Automation' },
+    { href: '/solutions/appointment-booking-automation', label: 'Appointment Booking Automation' },
+    { href: '/industries/ai-automation-for-marketing-agencies', label: 'AI Automation for Marketing Agencies' },
+  ],
+  airtable: [{ href: '/solutions/business-process-automation', label: 'Business Process Automation' }],
+};
+
+/** Related links for /platforms/<slug>: its live "with-<platform>" solution pages, then curated extras. */
+export function platformRelatedLinks(slug: string): { href: string; label: string }[] {
+  const entry = Object.entries(PLATFORMS).find(([, p]) => p.page === slug);
+  if (!entry) return [];
+  const [key, platform] = entry;
+  const own = allSolutionPaths()
+    .filter((p) => p.endsWith(`/with-${key}`))
+    .map((p) => {
+      const topic = p.split('/')[0];
+      return { href: `/solutions/${p}`, label: `${TOPICS[topic]?.title ?? topic} with ${platform.name}` };
+    });
+  return [...own, ...(PLATFORM_EXTRA_LINKS[key] ?? [])].slice(0, 6);
+}

@@ -84,6 +84,14 @@ export const INDUSTRY_SOLUTION_LINKS: Record<string, { href: string; label: stri
     { href: "/solutions/invoice-automation/for-accounting-firms", label: "Invoice Automation for Accounting Firms" },
     { href: "/solutions/appointment-booking-automation/for-law-firms", label: "Booking Automation for Law Firms" },
   ],
+  "ai-automation-for-marketing-agencies": [
+    { href: "/solutions/reporting-automation", label: "Reporting Automation" },
+    { href: "/solutions/marketing-automation", label: "Marketing Automation" },
+    { href: "/solutions/lead-generation-automation", label: "Lead Generation Automation" },
+    { href: "/solutions/crm-automation/with-hubspot", label: "HubSpot CRM Automation" },
+    { href: "/services/ai-reporting-automation", label: "AI Reporting Automation service" },
+    { href: "/services/ai-lead-generation", label: "AI Lead Generation service" },
+  ],
 };
 
 export const SERVICE_SOLUTION_LINKS: Record<string, { href: string; label: string }[]> = {
@@ -262,5 +270,10 @@ export const INDUSTRY_PRODUCT_LINKS: Record<string, string[]> = {
     `${PR}/industry-specific-ai-automation/ai-legal-automation`,
     `${PR}/ai-document-data-intelligence/ai-contract-analysis`,
     `${PR}/ai-customer-support/ai-virtual-assistant`,
+  ],
+  "ai-automation-for-marketing-agencies": [
+    `${PR}/ai-marketing-automation/ai-campaign-management-software`,
+    `${PR}/ai-marketing-automation/ai-social-media-automation`,
+    `${PR}/ai-marketing-automation/ai-seo-automation-tools`,
   ],
 };

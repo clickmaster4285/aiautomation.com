@@ -38,6 +38,7 @@ import {
   ShoppingBag,
   Cloud,
   Briefcase,
+  Megaphone,
   BarChart3,
   Lightbulb,
   Target,
@@ -104,6 +105,7 @@ const industryIconMap: Record<string, React.ElementType> = {
   'SaaS': Cloud,
   'Real Estate': Building2,
   'Professional Services': Briefcase,
+  'Marketing Agencies': Megaphone,
   'AI Logistics Automation': Truck,
   'AI Education Automation': GraduationCap,
 };

@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { LIVE_PRODUCT_PATH_LIST } from '@/content/products/routes';
 import { allSolutionPaths } from '@/content/Solutions/pages';
+import { blogArticles } from '@/content/blog';
 
 // Get all routes from the app directory
 export function getAllRoutes(): string[] {
@@ -237,9 +238,13 @@ export function getIndustries(): { slug: string; subPages: string[] }[] {
   ];
 }
 
-// /blog is noindexed until real posts exist, so it stays out of the sitemap.
+// The blog hub plus every code-owned article (content/blog). lastmod is the article's dateModified.
 export function getBlogPosts(): { slug: string; subPages: string[]; date?: string }[] {
-  return [];
+  const latest = blogArticles.reduce((d, a) => (a.dateModified > d ? a.dateModified : d), '');
+  return [
+    { slug: '', subPages: [], date: latest || undefined },
+    ...blogArticles.map((a) => ({ slug: a.slug, subPages: [], date: a.dateModified })),
+  ];
 }
 
 // Get platforms
