@@ -1,323 +1,94 @@
 'use client';
 
-import { useId } from 'react';
+// Industry "items" section (features and grid types) in the homepage layout: label row, heading with
+// italic tail + subheading, then a bordered grid of numbered cards (sharp corners, gap-px borders).
 import { motion } from 'framer-motion';
-import { fadeInUp, staggerContainer } from './Shared/animation';
 import { Zap } from 'lucide-react';
-import { CONTENT_ICONS } from '@/components/shared/content-icons';
 import type { Section } from '@/content/type';
+import { SectionLabel, splitHeading } from '@/components/landingPage/Shared';
+import { RichText } from '@/components/solutions/sections/variants/RichText';
+import { contentIcon } from '@/components/shared/content-icons';
 
-function RightSideDecor({ isBlack }: { isBlack: boolean }) {
-  // Unique per instance: the section can render more than once on a page.
-  const uid = useId().replace(/[^a-zA-Z0-9]/g, '');
-  return (
-    <div className="absolute top-0 right-0 pointer-events-none overflow-hidden" style={{ width: 600, height: '100%', minHeight: 600 }}>
-      <svg width="600" height="100%" viewBox="0 0 600 800" preserveAspectRatio="xMaxYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+const fadeUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' as const } },
+};
 
-        {/* ── Large radial glow blobs ── */}
-        <radialGradient id={`blob1-${uid}`} cx="80%" cy="20%" r="55%">
-          <stop offset="0%" stopColor="var(--brand)" stopOpacity="0.18" />
-          <stop offset="100%" stopColor="var(--brand)" stopOpacity="0" />
-        </radialGradient>
-        <radialGradient id={`blob2-${uid}`} cx="90%" cy="65%" r="45%">
-          <stop offset="0%" stopColor="var(--brand)" stopOpacity="0.13" />
-          <stop offset="100%" stopColor="var(--brand)" stopOpacity="0" />
-        </radialGradient>
-        <radialGradient id={`blob3-${uid}`} cx="70%" cy="90%" r="40%">
-          <stop offset="0%" stopColor="var(--brand)" stopOpacity="0.10" />
-          <stop offset="100%" stopColor="var(--brand)" stopOpacity="0" />
-        </radialGradient>
-        <rect x="0" y="0" width="600" height="800" fill={`url(#blob1-${uid})`} />
-        <rect x="0" y="0" width="600" height="800" fill={`url(#blob2-${uid})`} />
-        <rect x="0" y="0" width="600" height="800" fill={`url(#blob3-${uid})`} />
-
-        {/* ── Full-height vertical stripe lines ── */}
-        {[520, 548, 570, 588, 600].map((x, i) => (
-          <line key={x} x1={x} y1="0" x2={x} y2="800"
-            stroke="var(--brand)" strokeWidth={i === 4 ? 2 : 0.8}
-            opacity={[0.35, 0.22, 0.16, 0.10, 0.40][i]}
-          />
-        ))}
-
-        {/* ── Horizontal tick marks on the right edge stripe ── */}
-        {Array.from({ length: 28 }).map((_, i) => (
-          <line key={i}
-            x1={i % 4 === 0 ? 570 : 582} y1={30 + i * 27} x2={600} y2={30 + i * 27}
-            stroke="var(--brand)" strokeWidth="0.8"
-            opacity={i % 4 === 0 ? 0.45 : 0.22}
-          />
-        ))}
-
-        {/* ── Dense dot grid full right panel ── */}
-        {Array.from({ length: 22 }).map((_, row) =>
-          Array.from({ length: 14 }).map((_, col) => {
-            const x = 310 + col * 22;
-            const y = 30 + row * 34;
-            const distFromRight = (13 - col) / 13;
-            const opacity = 0.12 + distFromRight * 0.42;
-            return (
-              <motion.circle
-                key={`${row}-${col}`}
-                cx={x} cy={y} r="1.8"
-                fill="var(--brand)"
-                opacity={opacity}
-                animate={{ opacity: [opacity, opacity * 0.4, opacity] }}
-                transition={{
-                  duration: 3 + (row + col) % 3,
-                  repeat: Infinity,
-                  ease: 'easeInOut',
-                  delay: (row * 0.12 + col * 0.18) % 2.5,
-                }}
-              />
-            );
-          })
-        )}
-
-        {/* ── Concentric arcs from top-right ── */}
-        {[80, 150, 220, 300, 390, 480, 570].map((r, i) => (
-          <circle key={r} cx="600" cy="0" r={r}
-            fill="none"
-            stroke="var(--brand)"
-            strokeWidth={i < 2 ? 1.2 : 0.7}
-            strokeDasharray={i % 2 === 0 ? '8 14' : '3 18'}
-            opacity={0.32 - i * 0.033}
-          />
-        ))}
-
-        {/* ── Concentric arcs from bottom-right ── */}
-        {[100, 190, 280, 370].map((r, i) => (
-          <circle key={`br-${r}`} cx="600" cy="800" r={r}
-            fill="none"
-            stroke="var(--brand)"
-            strokeWidth="0.7"
-            strokeDasharray="5 16"
-            opacity={0.18 - i * 0.03}
-          />
-        ))}
-
-        {/* ── Large rotating ring mid right ── */}
-        <motion.circle cx="560" cy="400" r="120"
-          fill="none" stroke="var(--brand)" strokeWidth="0.8"
-          strokeDasharray="12 20"
-          opacity="0.22"
-          animate={{ rotate: [0, 360] }}
-          transition={{ duration: 40, repeat: Infinity, ease: 'linear' }}
-          style={{ transformOrigin: '560px 400px' }}
-        />
-        <motion.circle cx="560" cy="400" r="90"
-          fill="none" stroke="var(--brand)" strokeWidth="1"
-          strokeDasharray="6 24"
-          opacity="0.18"
-          animate={{ rotate: [360, 0] }}
-          transition={{ duration: 28, repeat: Infinity, ease: 'linear' }}
-          style={{ transformOrigin: '560px 400px' }}
-        />
-
-        {/* ── Floating geometric shapes ── */}
-
-        {/* Top area large rotated square */}
-        <motion.rect x="470" y="40" width="90" height="90" rx="10"
-          fill="none" stroke="var(--brand)" strokeWidth="1.2" opacity="0.28"
-          animate={{ rotate: [10, 28, 10], opacity: [0.28, 0.45, 0.28] }}
-          transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
-          style={{ transformOrigin: '515px 85px' }}
-        />
-        {/* Top area inner square */}
-        <motion.rect x="490" y="60" width="50" height="50" rx="6"
-          fill="var(--brand)" opacity="0.07"
-          animate={{ rotate: [10, 28, 10], opacity: [0.07, 0.14, 0.07] }}
-          transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
-          style={{ transformOrigin: '515px 85px' }}
-        />
-
-        {/* Mid-top triangle */}
-        <motion.polygon points="555,180 585,230 525,230"
-          fill="none" stroke="var(--brand)" strokeWidth="1.2" opacity="0.30"
-          animate={{ opacity: [0.30, 0.50, 0.30], rotate: [0, 12, 0] }}
-          transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
-          style={{ transformOrigin: '555px 205px' }}
-        />
-        <motion.polygon points="555,192 575,222 535,222"
-          fill="var(--brand)" opacity="0.08"
-          animate={{ opacity: [0.08, 0.16, 0.08], rotate: [0, 12, 0] }}
-          transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
-          style={{ transformOrigin: '555px 207px' }}
-        />
-
-        {/* Mid hexagon via polygon */}
-        <motion.polygon points="530,340 558,325 586,340 586,370 558,385 530,370"
-          fill="none" stroke="var(--brand)" strokeWidth="1.2" opacity="0.26"
-          animate={{ rotate: [0, 30, 0], opacity: [0.26, 0.42, 0.26] }}
-          transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-          style={{ transformOrigin: '558px 355px' }}
-        />
-
-        {/* Lower-mid diamond */}
-        <motion.polygon points="548,520 580,552 548,584 516,552"
-          fill="none" stroke="var(--brand)" strokeWidth="1.2" opacity="0.28"
-          animate={{ rotate: [0, 45, 0], opacity: [0.28, 0.46, 0.28] }}
-          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 1.4 }}
-          style={{ transformOrigin: '548px 552px' }}
-        />
-        <motion.polygon points="548,534 566,552 548,570 530,552"
-          fill="var(--brand)" opacity="0.09"
-          animate={{ rotate: [0, 45, 0], opacity: [0.09, 0.18, 0.09] }}
-          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 1.4 }}
-          style={{ transformOrigin: '548px 552px' }}
-        />
-
-        {/* Bottom rotated square */}
-        <motion.rect x="460" y="660" width="80" height="80" rx="8"
-          fill="none" stroke="var(--brand)" strokeWidth="1.2" opacity="0.24"
-          animate={{ rotate: [-8, 14, -8], opacity: [0.24, 0.40, 0.24] }}
-          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
-          style={{ transformOrigin: '500px 700px' }}
-        />
-
-        {/* ── Pulsing circles scattered ── */}
-        {([
-          [540, 130, 22, 0],
-          [490, 290, 16, 0.6],
-          [570, 460, 28, 1.2],
-          [510, 620, 18, 0.3],
-          [555, 730, 24, 0.9],
-        ] as [number, number, number, number][]).map(([cx, cy, r, delay], i) => (
-          <motion.circle key={i} cx={cx} cy={cy} r={r}
-            fill="none" stroke="var(--brand)" strokeWidth="1"
-            opacity="0.25"
-            animate={{ r: [r, r + 10, r], opacity: [0.25, 0.45, 0.25] }}
-            transition={{ duration: 4 + i, repeat: Infinity, ease: 'easeInOut', delay }}
-          />
-        ))}
-
-        {/* ── Solid accent dots ── */}
-        {([
-          [530, 60, 5, 0.55],
-          [575, 155, 4, 0.45],
-          [510, 260, 6, 0.50],
-          [560, 320, 3.5, 0.40],
-          [535, 430, 5, 0.55],
-          [580, 500, 4, 0.45],
-          [515, 590, 6, 0.50],
-          [550, 680, 4, 0.42],
-          [520, 760, 5, 0.48],
-        ] as [number, number, number, number][]).map(([cx, cy, r, op], i) => (
-          <motion.circle key={i} cx={cx} cy={cy} r={r}
-            fill="var(--brand)" opacity={op}
-            animate={{ opacity: [op, op * 0.35, op], r: [r, r + 2, r] }}
-            transition={{ duration: 2.5 + i * 0.4, repeat: Infinity, ease: 'easeInOut', delay: i * 0.3 }}
-          />
-        ))}
-
-        {/* ── Cross / plus marks ── */}
-        {([
-          [500, 110, 8, 0.40],
-          [575, 270, 7, 0.32],
-          [520, 390, 9, 0.36],
-          [560, 550, 7, 0.30],
-          [495, 700, 8, 0.34],
-        ] as [number, number, number, number][]).map(([cx, cy, s, op], i) => (
-          <g key={i} opacity={op}>
-            <line x1={cx - s} y1={cy} x2={cx + s} y2={cy} stroke="var(--brand)" strokeWidth="1.2" strokeLinecap="round" />
-            <line x1={cx} y1={cy - s} x2={cx} y2={cy + s} stroke="var(--brand)" strokeWidth="1.2" strokeLinecap="round" />
-          </g>
-        ))}
-
-        {/* ── Diagonal slash lines decorative ── */}
-        {Array.from({ length: 8 }).map((_, i) => (
-          <line key={i}
-            x1={320 + i * 32} y1="0"
-            x2={280 + i * 32} y2="80"
-            stroke="var(--brand)" strokeWidth="0.6"
-            opacity={0.10 + i * 0.012}
-          />
-        ))}
-
-        {/* ── Corner bracket top right ── */}
-        <line x1="600" y1="0" x2="600" y2="120" stroke="var(--brand)" strokeWidth="2" opacity="0.50" />
-        <line x1="480" y1="0" x2="600" y2="0" stroke="var(--brand)" strokeWidth="2" opacity="0.50" />
-        <line x1="600" y1="0" x2="600" y2="60" stroke="var(--brand)" strokeWidth="1" opacity="0.28" />
-        <line x1="540" y1="0" x2="600" y2="0" stroke="var(--brand)" strokeWidth="1" opacity="0.28" />
-
-        {/* ── Corner bracket bottom right ── */}
-        <line x1="600" y1="680" x2="600" y2="800" stroke="var(--brand)" strokeWidth="2" opacity="0.40" />
-        <line x1="480" y1="800" x2="600" y2="800" stroke="var(--brand)" strokeWidth="2" opacity="0.40" />
-
-      </svg>
-    </div>
-  );
+function labelFor(heading: string): string {
+  if (/worked example|example/i.test(heading)) return 'Worked example';
+  if (/why clickmasters|why us/i.test(heading)) return 'Why Clickmasters';
+  if (/what we automate|we automate|what we build/i.test(heading)) return 'What we automate';
+  if (/integration|connect/i.test(heading)) return 'Integrations';
+  return 'In practice';
 }
 
-export default function FeatureSec({ section, bg = 'bg-secondary' }: { section: Section; bg?: string }) {
-  const items = section.items || [];
-  const isBlack = bg === 'bg-ink';
+type Item = { title?: string; description?: string; icon?: string };
+
+export default function FeatureSec({ section, bg = 'bg-paper' }: { section: Section; bg?: string }) {
+  const items = (section.items || []) as Item[];
+  const heading = section.heading || '';
+  const dark = bg === 'bg-ink';
+  const { head, tail } = splitHeading(heading, 2);
+  const cols = items.length % 3 === 0 || items.length > 4 ? 'lg:grid-cols-3' : items.length === 4 ? 'lg:grid-cols-4' : 'lg:grid-cols-2';
 
   return (
-    <>
-      <section className={`relative overflow-hidden py-16 md:py-24 ${bg}`}>
+    <section className={`${bg} py-16 md:py-24 ${dark ? 'text-white' : 'text-ink'}`}>
+      <div className="mx-auto max-w-[84vw] px-6">
+        <SectionLabel label={labelFor(heading)} dark={dark} />
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeUp}
+          className="mb-8 flex flex-col gap-6 md:mb-10 md:grid md:grid-cols-2 md:gap-8"
+        >
+          <h2 className="display text-4xl sm:text-5xl md:text-6xl">
+            {head}
+            {head && ' '}
+            <span className="display-italic text-brand">{tail}</span>
+          </h2>
+          {section.subheading && (
+            <p className={`text-base leading-relaxed md:self-end md:text-right md:text-lg ${dark ? 'text-white/70' : 'text-muted-foreground'}`}>
+              {section.subheading}
+            </p>
+          )}
+        </motion.div>
 
-        {/* Full right-side decor */}
-        <RightSideDecor isBlack={isBlack} />
-
-        <div className="mx-auto max-w-[84vw] px-6">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            variants={staggerContainer}
-          >
-            <motion.div variants={fadeInUp} className="mb-10 md:mb-14">
-              <p className="eyebrow mb-4 text-brand">What We Do</p>
-              {section.heading && (
-                <h2
-                  className={`display max-w-2xl text-4xl leading-tight sm:text-5xl md:text-6xl ${isBlack ? 'text-white' : 'text-ink'}`}
-                >
-                  {section.heading}
-                </h2>
-              )}
-              {section.subheading && (
-                <p className={`mt-4 max-w-2xl text-base leading-relaxed sm:text-lg ${isBlack ? 'text-white/60' : 'text-muted-foreground'}`}>
-                  {section.subheading}
-                </p>
-              )}
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {items.map((item, idx) => {
-                const IconComponent = item.icon ? CONTENT_ICONS[item.icon] : Zap;
-                return (
-                  <motion.div
-                    key={idx}
-                    variants={fadeInUp}
-                    whileHover={{ y: -3 }}
-                    transition={{ duration: 0.3 }}
-                    className={`group relative border p-6 transition-colors duration-300 cursor-default md:p-8 ${
-                      isBlack
-                        ? 'border-white/10 bg-ink hover:border-brand/50'
-                        : 'border-border bg-paper hover:border-brand/50'
-                    }`}
-                  >
-                    <div className="mb-5">
-                      <div className="flex h-12 w-12 items-center justify-center border border-brand/30 bg-brand/10 transition-colors duration-300 group-hover:border-brand group-hover:bg-brand">
-                        {IconComponent && (
-                          <IconComponent className="h-5 w-5 text-brand transition-colors duration-300 group-hover:text-white" />
-                        )}
-                      </div>
-                    </div>
-                    <h3 className={`display mb-3 text-lg ${isBlack ? 'text-white' : 'text-ink'}`}>
-                      {item.title}
-                    </h3>
-                    <p className={`text-sm leading-relaxed ${isBlack ? 'text-white/60' : 'text-muted-foreground'}`}>
-                      {item.description}
-                    </p>
-                    <div className="absolute bottom-0 left-0 right-0 h-px bg-brand opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                  </motion.div>
-                );
-              })}
-            </div>
-          </motion.div>
+        <div
+          className={`grid grid-cols-1 gap-px border sm:grid-cols-2 ${cols} ${
+            dark ? 'border-white/10 bg-white/10' : 'border-border bg-border'
+          }`}
+        >
+          {items.map((item, i) => {
+            const Icon = contentIcon(item.icon, Zap) ?? Zap;
+            return (
+              <motion.div
+                key={`${item.title}-${i}`}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+                variants={fadeUp}
+                className={`flex h-full flex-col p-6 md:p-8 ${dark ? 'bg-ink' : bg === 'bg-secondary' ? 'bg-secondary' : 'bg-paper'}`}
+              >
+                <div className="mb-6 flex items-start justify-between">
+                  <span className="flex h-11 w-11 items-center justify-center border border-brand/30 bg-brand/10">
+                    <Icon className="h-5 w-5 text-brand" aria-hidden="true" />
+                  </span>
+                  <span className={`eyebrow text-xs ${dark ? 'text-white/40' : 'text-muted-foreground'}`}>
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                </div>
+                {item.title && <h3 className="display mb-3 text-2xl">{item.title}</h3>}
+                {item.description && (
+                  <p className={`text-sm leading-relaxed md:text-base ${dark ? 'text-white/70' : 'text-muted-foreground'}`}>
+                    <RichText text={item.description} />
+                  </p>
+                )}
+              </motion.div>
+            );
+          })}
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

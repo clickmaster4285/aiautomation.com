@@ -1,6 +1,7 @@
 // app/platforms/[slug]/page.tsx
 import dynamic from 'next/dynamic';
 import type { ComponentType } from 'react';
+import type { Section } from '@/content/type';
 import { platformContent, platformSlugs } from '@/content/Platforms';
 import CmsRoute, { cmsRouteMetadata } from '@/components/cms/CmsRoute';
 import { canonicalUrl } from '@/lib/canonical';
@@ -23,7 +24,7 @@ const CaseStudiesSec = dynamic(() => import('@/components/platforms/CaseStudiesS
 const ReviewsSec = dynamic(() => import('@/components/platforms/ReviewsSec').then((mod) => mod.default));
 
 // Map section type to component
-const sectionMap: Record<string, ComponentType<{ section: any }>> = {
+const sectionMap: Record<string, ComponentType<{ section: Section; bg?: string }>> = {
   hero: Hero,
   text: TextSec,
   features: FeatureSec,
@@ -37,6 +38,9 @@ const sectionMap: Record<string, ComponentType<{ section: any }>> = {
   casestudies: CaseStudiesSec,
   reviews: ReviewsSec,
 };
+
+// Section backgrounds follow the landing page's paper / ink / secondary rhythm (same as industries).
+const BG_RHYTHM = ['bg-paper', 'bg-ink', 'bg-secondary'];
 
 // Generate static paths for all platforms
 export async function generateStaticParams() {
@@ -69,7 +73,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const name = platform ? `${platform.name} Automation Services` : content.title.split('|')[0].trim();
 
   return (
-    <div className="bg-black text-white">
+    <div className="bg-paper text-ink">
       <HubJsonLd
         hub={{
           name,
@@ -86,7 +90,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
       {withPlatformLinks(slug, content.sections).map((section, idx) => {
         const Component = sectionMap[section.type];
         if (!Component) return null;
-        return <Component key={idx} section={section} />;
+        return <Component key={idx} section={section} bg={BG_RHYTHM[idx % BG_RHYTHM.length]} />;
       })}
     </div>
   );
